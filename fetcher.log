@@ -564,3 +564,29 @@
 [2023-06-03 01:02:14] INFO root fetch - main [MainThread]: End processing [pyzm]: success
 [2023-06-03 01:02:22] INFO root fetch - main [MainThread]: End processing [amazon-textract-idp-cdk-constructs]: success
 [2023-06-03 01:02:22] INFO root fetch - main [MainThread]: Store serial: [18354049]
+[2023-06-03 01:07:26] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18354049]
+[2023-06-03 01:07:31] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-06-03 01:07:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tmnt-cu101
+[2023-06-03 01:07:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tmnt
+[2023-06-03 01:07:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: strategais
+[2023-06-03 01:07:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: always-updates
+[2023-06-03 01:07:31] INFO root fetch - processPackages [strategais]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-06-03 01:07:31] INFO root fetch - processPackages [tmnt-cu101]: New version: [0.7.0b20230602] Old Version: [0.7.0b20230601]
+[2023-06-03 01:07:31] INFO root fetch - processPackages [tmnt]: New version: [0.7.0b20230602] Old Version: [0.7.0b20230601]
+[2023-06-03 01:07:31] INFO root fetch - processPackages [always-updates]: New version: [99.9] Old Version: [99.8]
+[2023-06-03 01:07:31] INFO root fetch - processPackages [always-updates]: executing diffoscope
+[2023-06-03 01:07:31] INFO root fetch - processPackages [always-updates]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/always_updates-99.8.tar.gz tmp/always_updates-99.9.tar.gz --markdown 20230603/a/always-updates/99.8-99.9/diff.md --exclude *.pyd
+[2023-06-03 01:07:31] INFO root fetch - processPackages [tmnt]: Downloading https://files.pythonhosted.org/packages/aa/47/2e2ba084891bac4a1fa84ad7a9e04a279416530e6fa512e64425eb6c1d7f/tmnt-0.7.0b20230602.tar.gz
+[2023-06-03 01:07:31] INFO root fetch - processPackages [strategais]: Downloading https://files.pythonhosted.org/packages/0b/c2/f84c64e1e61fb434c2d646e163dd0d060d32aa3422fa9706c2e050e03145/strategais-0.2.9.tar.gz
+[2023-06-03 01:07:31] INFO root fetch - processPackages [strategais]: executing diffoscope
+[2023-06-03 01:07:31] INFO root fetch - processPackages [strategais]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/strategais-0.2.8.tar.gz tmp/strategais-0.2.9.tar.gz --markdown 20230603/s/strategais/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2023-06-03 01:07:31] INFO root fetch - processPackages [tmnt-cu101]: Downloading https://files.pythonhosted.org/packages/d2/ce/d76fe52080388afd7fcc0d548a9e3f5a4905e0b13a657f04badaabfdc481/tmnt-cu101-0.7.0b20230602.tar.gz
+[2023-06-03 01:07:31] INFO root fetch - processPackages [tmnt]: executing diffoscope
+[2023-06-03 01:07:31] INFO root fetch - processPackages [tmnt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tmnt-0.7.0b20230601.tar.gz tmp/tmnt-0.7.0b20230602.tar.gz --markdown 20230603/t/tmnt/0.7.0b20230601-0.7.0b20230602/diff.md --exclude *.pyd
+[2023-06-03 01:07:31] INFO root fetch - processPackages [tmnt-cu101]: executing diffoscope
+[2023-06-03 01:07:31] INFO root fetch - processPackages [tmnt-cu101]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tmnt-cu101-0.7.0b20230601.tar.gz tmp/tmnt-cu101-0.7.0b20230602.tar.gz --markdown 20230603/t/tmnt-cu101/0.7.0b20230601-0.7.0b20230602/diff.md --exclude *.pyd
+[2023-06-03 01:07:32] INFO root fetch - main [MainThread]: End processing [always-updates]: success
+[2023-06-03 01:07:32] INFO root fetch - main [MainThread]: End processing [strategais]: success
+[2023-06-03 01:07:32] INFO root fetch - main [MainThread]: End processing [tmnt]: success
+[2023-06-03 01:07:32] INFO root fetch - main [MainThread]: End processing [tmnt-cu101]: success
+[2023-06-03 01:07:32] INFO root fetch - main [MainThread]: Store serial: [18354061]
