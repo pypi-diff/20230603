@@ -638,3 +638,61 @@
 [2023-06-03 01:12:43] INFO root fetch - main [MainThread]: End processing [esdbclient]: success
 [2023-06-03 01:12:50] INFO root fetch - main [MainThread]: End processing [pipen-board]: success
 [2023-06-03 01:12:50] INFO root fetch - main [MainThread]: Store serial: [18354086]
+[2023-06-03 01:17:54] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18354086]
+[2023-06-03 01:17:58] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-06-03 01:17:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ThreadlIMITE
+[2023-06-03 01:17:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: rapidfuzz
+[2023-06-03 01:17:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: loophost
+[2023-06-03 01:17:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pyAutoSummarizer
+[2023-06-03 01:17:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: returnn
+[2023-06-03 01:17:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: ThreadlIMITE
+[2023-06-03 01:17:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: lixiang90sblog
+[2023-06-03 01:17:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: rdns-reaper
+[2023-06-03 01:17:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: PyOdoo
+[2023-06-03 01:17:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: leadguru-jobs
+[2023-06-03 01:17:58] INFO root fetch - processPackages [pyAutoSummarizer]: New version: [1.0.9] Old Version: [1.0.4]
+[2023-06-03 01:17:58] INFO root fetch - processPackages [ThreadlIMITE]: New version: [0.2] Old Version: [0.1]
+[2023-06-03 01:17:58] INFO root fetch - processPackages [ThreadlIMITE]: New version: [0.2] Old Version: [0.1]
+[2023-06-03 01:17:58] INFO root fetch - processPackages [lixiang90sblog]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-06-03 01:17:58] INFO root fetch - processPackages [loophost]: New version: [1.2.7] Old Version: [1.2.4]
+[2023-06-03 01:17:58] INFO root fetch - processPackages [returnn]: New version: [1.20230603.803] Old Version: [1.20230603.5818]
+[2023-06-03 01:17:59] INFO root fetch - processPackages [rapidfuzz]: New version: [3.1.0] Old Version: [3.0.0]
+[2023-06-03 01:17:59] INFO root fetch - processPackages [loophost]: Downloading https://files.pythonhosted.org/packages/0b/89/7ad3ed0ce6ab8f76338a0baa4160e24debb85fe5d899032b43190a3d76d5/loophost-1.2.4-py3-none-any.whl
+[2023-06-03 01:17:59] INFO root fetch - processPackages [rdns-reaper]: New version: [0.1.1rc1] Old Version: [0.1.1]
+[2023-06-03 01:17:59] WARNING root fetch - processPackages [loophost]: Skipping package: exceeds size limit 37125003>=10485760
+[2023-06-03 01:17:59] INFO root fetch - main [MainThread]: End processing [loophost] error
+[2023-06-03 01:17:59] INFO root fetch - processPackages [PyOdoo]: New version: [0.5.9] Old Version: [0.5.8]
+[2023-06-03 01:17:59] ERROR root fetch - processPackages [ThreadlIMITE]: Unable to fetch info: No such project/version 'ThreadlIMITE' 0.1
+[2023-06-03 01:17:59] INFO root fetch - main [MainThread]: End processing [ThreadlIMITE] error
+[2023-06-03 01:17:59] ERROR root fetch - processPackages [ThreadlIMITE]: Unable to fetch info: No such project/version 'ThreadlIMITE' 0.1
+[2023-06-03 01:17:59] INFO root fetch - main [MainThread]: End processing [ThreadlIMITE] error
+[2023-06-03 01:17:59] INFO root fetch - processPackages [returnn]: Downloading https://files.pythonhosted.org/packages/31/58/84ca48e6ef5a7c254c6fd7439008290f6de0cd4df1ffc64afb001e314c4a/returnn-1.20230603.5818.tar.gz
+[2023-06-03 01:17:59] INFO root fetch - processPackages [leadguru-jobs]: New version: [0.99.0] Old Version: [0.98.0]
+[2023-06-03 01:17:59] INFO root fetch - processPackages [pyAutoSummarizer]: Downloading https://files.pythonhosted.org/packages/6e/e3/ca47dab3eb39e31e3cf8791e7d0cd847ce4073bc9733dfe8e42f99e11ba0/pyAutoSummarizer-1.0.9.tar.gz
+[2023-06-03 01:17:59] INFO root fetch - processPackages [lixiang90sblog]: Downloading https://files.pythonhosted.org/packages/f0/2c/09181f2ca53843e499664e791adafd0157ad1618572fa265b78514186dc0/lixiang90sblog-0.0.1.tar.gz
+[2023-06-03 01:17:59] INFO root fetch - processPackages [rdns-reaper]: Downloading https://files.pythonhosted.org/packages/81/6c/7eb51c3ea392be43055ef7b15edd7a2b963b27f108a49123b8bae07998de/rdns_reaper-0.1.1.tar.gz
+[2023-06-03 01:17:59] INFO root fetch - processPackages [rapidfuzz]: Downloading https://files.pythonhosted.org/packages/70/05/4030a8a7aa42d3e40ba7abf902de8e7e94ddcb61abda23f6a3ec5daf36df/rapidfuzz-3.0.0.tar.gz
+[2023-06-03 01:17:59] INFO root fetch - processPackages [pyAutoSummarizer]: executing diffoscope
+[2023-06-03 01:17:59] INFO root fetch - processPackages [pyAutoSummarizer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyAutoSummarizer-1.0.4.tar.gz tmp/pyAutoSummarizer-1.0.9.tar.gz --markdown 20230603/p/pyAutoSummarizer/1.0.4-1.0.9/diff.md --exclude *.pyd
+[2023-06-03 01:17:59] INFO root fetch - processPackages [rdns-reaper]: executing diffoscope
+[2023-06-03 01:17:59] INFO root fetch - processPackages [rdns-reaper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rdns_reaper-0.1.1.tar.gz tmp/rdns_reaper-0.1.1rc1.tar.gz --markdown 20230603/r/rdns-reaper/0.1.1-0.1.1rc1/diff.md --exclude *.pyd
+[2023-06-03 01:17:59] INFO root fetch - processPackages [PyOdoo]: executing diffoscope
+[2023-06-03 01:17:59] INFO root fetch - processPackages [PyOdoo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyOdoo-0.5.8.tar.gz tmp/PyOdoo-0.5.9.tar.gz --markdown 20230603/P/PyOdoo/0.5.8-0.5.9/diff.md --exclude *.pyd
+[2023-06-03 01:17:59] INFO root fetch - processPackages [lixiang90sblog]: Downloading https://files.pythonhosted.org/packages/3a/d2/b88da07ce85e3c86805adc90dd4a6b070c6f8a5025f9f8583b5b736c4d58/lixiang90sblog-0.0.2.tar.gz
+[2023-06-03 01:17:59] INFO root fetch - processPackages [returnn]: executing diffoscope
+[2023-06-03 01:17:59] INFO root fetch - processPackages [returnn]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/returnn-1.20230603.5818.tar.gz tmp/returnn-1.20230603.803.tar.gz --markdown 20230603/r/returnn/1.20230603.5818-1.20230603.803/diff.md --exclude *.pyd
+[2023-06-03 01:17:59] INFO root fetch - processPackages [lixiang90sblog]: executing diffoscope
+[2023-06-03 01:17:59] INFO root fetch - processPackages [lixiang90sblog]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lixiang90sblog-0.0.1.tar.gz tmp/lixiang90sblog-0.0.2.tar.gz --markdown 20230603/l/lixiang90sblog/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-06-03 01:17:59] INFO root fetch - processPackages [leadguru-jobs]: executing diffoscope
+[2023-06-03 01:17:59] INFO root fetch - processPackages [leadguru-jobs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/leadguru_jobs-0.98.0.tar.gz tmp/leadguru_jobs-0.99.0.tar.gz --markdown 20230603/l/leadguru-jobs/0.98.0-0.99.0/diff.md --exclude *.pyd
+[2023-06-03 01:17:59] INFO root fetch - processPackages [rapidfuzz]: Downloading https://files.pythonhosted.org/packages/d3/6c/ceccba1478424ea23a0b49bd2ce419c19dbd8b596fa7d7a652e7a53a81b4/rapidfuzz-3.1.0-pp38-pypy38_pp73-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2023-06-03 01:18:00] INFO root fetch - main [MainThread]: End processing [rdns-reaper]: success
+[2023-06-03 01:18:00] INFO root fetch - main [MainThread]: End processing [PyOdoo]: success
+[2023-06-03 01:18:00] INFO root fetch - main [MainThread]: End processing [pyAutoSummarizer]: success
+[2023-06-03 01:18:00] INFO root fetch - main [MainThread]: End processing [lixiang90sblog]: success
+[2023-06-03 01:18:01] INFO root fetch - main [MainThread]: End processing [leadguru-jobs]: success
+[2023-06-03 01:18:01] INFO root fetch - processPackages [rapidfuzz]: executing diffoscope
+[2023-06-03 01:18:01] INFO root fetch - processPackages [rapidfuzz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rapidfuzz-3.0.0.tar.gz tmp/rapidfuzz-3.1.0-pp38-pypy38_pp73-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip --markdown 20230603/r/rapidfuzz/3.0.0-3.1.0/diff.md --exclude *.pyd
+[2023-06-03 01:18:02] INFO root fetch - main [MainThread]: End processing [rapidfuzz]: success
+[2023-06-03 01:18:04] INFO root fetch - main [MainThread]: End processing [returnn]: success
+[2023-06-03 01:18:04] INFO root fetch - main [MainThread]: Store serial: [18354199]
