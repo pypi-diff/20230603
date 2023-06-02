@@ -52,3 +52,52 @@
 [2023-06-03 00:03:50] INFO root fetch - main [MainThread]: End processing [deltafi]: success
 [2023-06-03 00:03:50] INFO root fetch - main [MainThread]: End processing [salesforce-codetf]: success
 [2023-06-03 00:03:50] INFO root fetch - main [MainThread]: Store serial: [18353688]
+[2023-06-03 00:08:54] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18353688]
+[2023-06-03 00:08:58] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-06-03 00:08:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: energyplus-pet
+[2023-06-03 00:08:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: fimutil
+[2023-06-03 00:08:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: dynast
+[2023-06-03 00:08:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: landingai
+[2023-06-03 00:08:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: mtv-dl
+[2023-06-03 00:08:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: datasinda-api
+[2023-06-03 00:08:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: pepperize.cdk-serverless-cluster-from-snapshot
+[2023-06-03 00:08:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: liveports
+[2023-06-03 00:08:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: andromeda-chain
+[2023-06-03 00:08:59] INFO root fetch - processPackages [energyplus-pet]: New version: [0.50] Old Version: [0.49]
+[2023-06-03 00:08:59] INFO root fetch - processPackages [landingai]: New version: [0.0.8] Old Version: [0.0.7]
+[2023-06-03 00:08:59] INFO root fetch - processPackages [fimutil]: New version: [1.5.0rc3] Old Version: [1.5.0rc2]
+[2023-06-03 00:08:59] WARNING root fetch - processPackages [andromeda-chain]: Skipping, unable to determine old version
+[2023-06-03 00:08:59] INFO root fetch - processPackages [liveports]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-06-03 00:08:59] WARNING root fetch - processPackages [datasinda-api]: Skipping, unable to determine old version
+[2023-06-03 00:08:59] INFO root fetch - main [MainThread]: End processing [andromeda-chain] error
+[2023-06-03 00:08:59] INFO root fetch - main [MainThread]: End processing [datasinda-api] error
+[2023-06-03 00:08:59] INFO root fetch - processPackages [mtv-dl]: New version: [0.9] Old Version: [0.8]
+[2023-06-03 00:08:59] INFO root fetch - processPackages [dynast]: New version: [1.3.0rc3] Old Version: [1.3.0rc2]
+[2023-06-03 00:08:59] INFO root fetch - processPackages [pepperize.cdk-serverless-cluster-from-snapshot]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-06-03 00:08:59] INFO root fetch - processPackages [landingai]: executing diffoscope
+[2023-06-03 00:08:59] INFO root fetch - processPackages [landingai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/landingai-0.0.7.tar.gz tmp/landingai-0.0.8.tar.gz --markdown 20230603/l/landingai/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2023-06-03 00:08:59] INFO root fetch - processPackages [pepperize.cdk-serverless-cluster-from-snapshot]: executing diffoscope
+[2023-06-03 00:08:59] INFO root fetch - processPackages [pepperize.cdk-serverless-cluster-from-snapshot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pepperize.cdk-serverless-cluster-from-snapshot-0.0.98.tar.gz tmp/pepperize.cdk-serverless-cluster-from-snapshot-0.0.99.tar.gz --markdown 20230603/p/pepperize.cdk-serverless-cluster-from-snapshot/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-06-03 00:08:59] INFO root fetch - processPackages [energyplus-pet]: Downloading https://files.pythonhosted.org/packages/ff/09/fcd93df9d1e09510d5f0fc33ae620bc3aacc069ad9de6deb52aa21a34c4f/energyplus_pet-0.49.tar.gz
+[2023-06-03 00:08:59] INFO root fetch - processPackages [fimutil]: Downloading https://files.pythonhosted.org/packages/d3/f0/76fc22dc344b38b6babb7eab03f44a055bb0a7dcddca67e52f050b2a17ed/fimutil-1.5.0rc3.tar.gz
+[2023-06-03 00:08:59] INFO root fetch - processPackages [liveports]: Downloading https://files.pythonhosted.org/packages/b1/e7/1dd7dc898c5385d4d2eee83bc83dd9ba0cf6626dea19afdb29eaf31df095/liveports-0.1.3.tar.gz
+[2023-06-03 00:08:59] INFO root fetch - processPackages [dynast]: Downloading https://files.pythonhosted.org/packages/e2/45/4c9a1214481328b01d011b4e8695b8f45905803b05ca2f50e380e999e933/dynast-1.3.0rc3.tar.gz
+[2023-06-03 00:08:59] INFO root fetch - processPackages [liveports]: executing diffoscope
+[2023-06-03 00:08:59] INFO root fetch - processPackages [liveports]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/liveports-0.1.2.tar.gz tmp/liveports-0.1.3.tar.gz --markdown 20230603/l/liveports/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-06-03 00:08:59] INFO root fetch - processPackages [fimutil]: executing diffoscope
+[2023-06-03 00:08:59] INFO root fetch - processPackages [fimutil]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fimutil-1.5.0rc2.tar.gz tmp/fimutil-1.5.0rc3.tar.gz --markdown 20230603/f/fimutil/1.5.0rc2-1.5.0rc3/diff.md --exclude *.pyd
+[2023-06-03 00:08:59] INFO root fetch - processPackages [dynast]: executing diffoscope
+[2023-06-03 00:08:59] INFO root fetch - processPackages [dynast]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dynast-1.3.0rc2.tar.gz tmp/dynast-1.3.0rc3.tar.gz --markdown 20230603/d/dynast/1.3.0rc2-1.3.0rc3/diff.md --exclude *.pyd
+[2023-06-03 00:08:59] INFO root fetch - processPackages [energyplus-pet]: Downloading https://files.pythonhosted.org/packages/ea/2e/8f87bb6f5771e23efb33ca95f0e9ce1d63e7ba10896614cb15172c1c758c/energyplus_pet-0.50.tar.gz
+[2023-06-03 00:08:59] INFO root fetch - processPackages [mtv-dl]: executing diffoscope
+[2023-06-03 00:08:59] INFO root fetch - processPackages [mtv-dl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mtv_dl-0.8.tar.gz tmp/mtv_dl-0.9.tar.gz --markdown 20230603/m/mtv-dl/0.8-0.9/diff.md --exclude *.pyd
+[2023-06-03 00:08:59] INFO root fetch - processPackages [energyplus-pet]: executing diffoscope
+[2023-06-03 00:08:59] INFO root fetch - processPackages [energyplus-pet]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/energyplus_pet-0.49.tar.gz tmp/energyplus_pet-0.50.tar.gz --markdown 20230603/e/energyplus-pet/0.49-0.50/diff.md --exclude *.pyd
+[2023-06-03 00:09:00] INFO root fetch - main [MainThread]: End processing [landingai]: success
+[2023-06-03 00:09:00] INFO root fetch - main [MainThread]: End processing [liveports]: success
+[2023-06-03 00:09:00] INFO root fetch - main [MainThread]: End processing [fimutil]: success
+[2023-06-03 00:09:00] INFO root fetch - main [MainThread]: End processing [mtv-dl]: success
+[2023-06-03 00:09:00] INFO root fetch - main [MainThread]: End processing [energyplus-pet]: success
+[2023-06-03 00:09:02] INFO root fetch - main [MainThread]: End processing [dynast]: success
+[2023-06-03 00:09:57] INFO root fetch - main [MainThread]: End processing [pepperize.cdk-serverless-cluster-from-snapshot]: success
+[2023-06-03 00:09:57] INFO root fetch - main [MainThread]: Store serial: [18353722]
