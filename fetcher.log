@@ -1,0 +1,54 @@
+[2023-06-03 00:03:43] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18353658]
+[2023-06-03 00:03:48] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-06-03 00:03:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: fimutil
+[2023-06-03 00:03:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mkchain
+[2023-06-03 00:03:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: launchflow
+[2023-06-03 00:03:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: salesforce-codetf
+[2023-06-03 00:03:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: multicall
+[2023-06-03 00:03:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: deltafi
+[2023-06-03 00:03:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: python-fluepdot
+[2023-06-03 00:03:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: fimutil
+[2023-06-03 00:03:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: dcnum
+[2023-06-03 00:03:48] INFO root fetch - processPackages [launchflow]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-06-03 00:03:48] INFO root fetch - processPackages [fimutil]: New version: [1.5.0rc2] Old Version: [1.5.0rc1]
+[2023-06-03 00:03:48] INFO root fetch - processPackages [salesforce-codetf]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-06-03 00:03:48] INFO root fetch - processPackages [fimutil]: New version: [1.5.0rc2] Old Version: [1.5.0rc1]
+[2023-06-03 00:03:48] INFO root fetch - processPackages [multicall]: New version: [0.7.4] Old Version: [0.7.3]
+[2023-06-03 00:03:48] INFO root fetch - processPackages [deltafi]: New version: [1.0.0rc3] Old Version: [1.0.0rc2]
+[2023-06-03 00:03:48] INFO root fetch - processPackages [mkchain]: New version: [6.9.1] Old Version: [6.9.0]
+[2023-06-03 00:03:48] WARNING root fetch - processPackages [python-fluepdot]: Skipping, unable to determine old version
+[2023-06-03 00:03:48] INFO root fetch - main [MainThread]: End processing [python-fluepdot] error
+[2023-06-03 00:03:48] WARNING root fetch - processPackages [dcnum]: Skipping, unable to determine old version
+[2023-06-03 00:03:48] INFO root fetch - main [MainThread]: End processing [dcnum] error
+[2023-06-03 00:03:48] INFO root fetch - processPackages [multicall]: Downloading https://files.pythonhosted.org/packages/17/04/4fb063b74504f709165e27d5130f984827956deb2d69f5eccb32b3316391/multicall-0.7.3.tar.gz
+[2023-06-03 00:03:48] INFO root fetch - processPackages [fimutil]: Downloading https://files.pythonhosted.org/packages/29/2b/07a9014fbc31ad3fb5b8a599d20bd16c7705567d3bbe9fb549819401ee4f/fimutil-1.5.0rc1.tar.gz
+[2023-06-03 00:03:48] INFO root fetch - processPackages [fimutil]: Downloading https://files.pythonhosted.org/packages/29/2b/07a9014fbc31ad3fb5b8a599d20bd16c7705567d3bbe9fb549819401ee4f/fimutil-1.5.0rc1.tar.gz
+[2023-06-03 00:03:48] INFO root fetch - processPackages [salesforce-codetf]: Downloading https://files.pythonhosted.org/packages/f2/d7/09ec0b7f72f72d577172d5a4f253c244540ce35d1f0ecaba2461417e8d15/salesforce-codetf-1.0.1.tar.gz
+[2023-06-03 00:03:48] INFO root fetch - processPackages [mkchain]: Downloading https://files.pythonhosted.org/packages/22/03/7cb727c670b1e57a7cc7c46e4552245a57ae6688eaa957b8166fa23ce551/mkchain-6.9.0-py3-none-any.whl
+[2023-06-03 00:03:48] INFO root fetch - processPackages [launchflow]: Downloading https://files.pythonhosted.org/packages/2a/b0/56dc7bd9ba2263bd34aa1a371f6b9c20aea5efc162d9c5179983dcd3fd1b/launchflow-0.1.8.tar.gz
+[2023-06-03 00:03:48] WARNING root fetch - processPackages [launchflow]: Skipping package: exceeds size limit 96610312>=10485760
+[2023-06-03 00:03:48] INFO root fetch - main [MainThread]: End processing [launchflow] error
+[2023-06-03 00:03:48] INFO root fetch - processPackages [salesforce-codetf]: executing diffoscope
+[2023-06-03 00:03:48] INFO root fetch - processPackages [salesforce-codetf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/salesforce-codetf-1.0.0.tar.gz tmp/salesforce-codetf-1.0.1.tar.gz --markdown 20230603/s/salesforce-codetf/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-06-03 00:03:48] INFO root fetch - processPackages [deltafi]: Downloading https://files.pythonhosted.org/packages/9a/a4/5d71f20342daf90bb30b0cd2e733ec08034696a1e4708eb3c2211fb99a37/deltafi-1.0.0rc3.tar.gz
+[2023-06-03 00:03:48] INFO root fetch - processPackages [multicall]: Downloading https://files.pythonhosted.org/packages/89/9c/e56ae69d7c71c37105a78e22934f8e28e1ac87c3e79bff50095ca6667c1c/multicall-0.7.4.tar.gz
+[2023-06-03 00:03:49] INFO root fetch - processPackages [fimutil]: Downloading https://files.pythonhosted.org/packages/02/c6/b471148518aad28a2e2dcd50c47e0789ff09e80bbb0d125e250f6f3d5446/fimutil-1.5.0rc2.tar.gz
+[2023-06-03 00:03:49] INFO root fetch - processPackages [fimutil]: Downloading https://files.pythonhosted.org/packages/02/c6/b471148518aad28a2e2dcd50c47e0789ff09e80bbb0d125e250f6f3d5446/fimutil-1.5.0rc2.tar.gz
+[2023-06-03 00:03:49] INFO root fetch - processPackages [deltafi]: executing diffoscope
+[2023-06-03 00:03:49] INFO root fetch - processPackages [deltafi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/deltafi-1.0.0rc2.tar.gz tmp/deltafi-1.0.0rc3.tar.gz --markdown 20230603/d/deltafi/1.0.0rc2-1.0.0rc3/diff.md --exclude *.pyd
+[2023-06-03 00:03:49] INFO root fetch - processPackages [multicall]: executing diffoscope
+[2023-06-03 00:03:49] INFO root fetch - processPackages [multicall]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/multicall-0.7.3.tar.gz tmp/multicall-0.7.4.tar.gz --markdown 20230603/m/multicall/0.7.3-0.7.4/diff.md --exclude *.pyd
+[2023-06-03 00:03:49] INFO root fetch - processPackages [mkchain]: Downloading https://files.pythonhosted.org/packages/01/46/8e6718c02ffe176b4aa933331c6a69a2c5f3efae0fb42603d27cd3cfa5d0/mkchain-6.9.1-py3-none-any.whl
+[2023-06-03 00:03:49] INFO root fetch - processPackages [fimutil]: executing diffoscope
+[2023-06-03 00:03:49] INFO root fetch - processPackages [fimutil]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fimutil-1.5.0rc1.tar.gz tmp/fimutil-1.5.0rc2.tar.gz --markdown 20230603/f/fimutil/1.5.0rc1-1.5.0rc2/diff.md --exclude *.pyd
+[2023-06-03 00:03:49] INFO root fetch - processPackages [fimutil]: executing diffoscope
+[2023-06-03 00:03:49] INFO root fetch - processPackages [fimutil]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fimutil-1.5.0rc1.tar.gz tmp/fimutil-1.5.0rc2.tar.gz --markdown 20230603/f/fimutil/1.5.0rc1-1.5.0rc2/diff.md --exclude *.pyd
+[2023-06-03 00:03:49] INFO root fetch - processPackages [mkchain]: executing diffoscope
+[2023-06-03 00:03:49] INFO root fetch - processPackages [mkchain]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mkchain-6.9.0-py3-none-any.whl.zip tmp/mkchain-6.9.1-py3-none-any.whl.zip --markdown 20230603/m/mkchain/6.9.0-6.9.1/diff.md --exclude *.pyd
+[2023-06-03 00:03:50] INFO root fetch - main [MainThread]: End processing [multicall]: success
+[2023-06-03 00:03:50] INFO root fetch - main [MainThread]: End processing [mkchain]: success
+[2023-06-03 00:03:50] INFO root fetch - main [MainThread]: End processing [fimutil]: success
+[2023-06-03 00:03:50] INFO root fetch - main [MainThread]: End processing [fimutil]: success
+[2023-06-03 00:03:50] INFO root fetch - main [MainThread]: End processing [deltafi]: success
+[2023-06-03 00:03:50] INFO root fetch - main [MainThread]: End processing [salesforce-codetf]: success
+[2023-06-03 00:03:50] INFO root fetch - main [MainThread]: Store serial: [18353688]
