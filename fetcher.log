@@ -234,3 +234,58 @@
 [2023-06-03 00:26:28] INFO root fetch - main [MainThread]: End processing [andromeda-chain]: success
 [2023-06-03 00:26:29] INFO root fetch - main [MainThread]: End processing [langflow]: success
 [2023-06-03 00:26:29] INFO root fetch - main [MainThread]: Store serial: [18353840]
+[2023-06-03 00:31:33] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18353840]
+[2023-06-03 00:31:38] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-06-03 00:31:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: easymms
+[2023-06-03 00:31:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: breathXplorer
+[2023-06-03 00:31:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pyAutoSummarizer
+[2023-06-03 00:31:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: swegram
+[2023-06-03 00:31:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pytype
+[2023-06-03 00:31:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: loophost
+[2023-06-03 00:31:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: rising-plugin
+[2023-06-03 00:31:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: prodvana
+[2023-06-03 00:31:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: gdshoplib
+[2023-06-03 00:31:38] INFO root fetch - processPackages [rising-plugin]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-06-03 00:31:38] INFO root fetch - processPackages [breathXplorer]: New version: [0.1.7] Old Version: [0.1.6]
+[2023-06-03 00:31:38] INFO root fetch - processPackages [easymms]: New version: [0.1.6] Old Version: [0.1.5]
+[2023-06-03 00:31:38] INFO root fetch - processPackages [prodvana]: New version: [0.1.6] Old Version: [0.1.5]
+[2023-06-03 00:31:38] INFO root fetch - processPackages [swegram]: New version: [1.0.0.dev7] Old Version: [1.0.0.dev6]
+[2023-06-03 00:31:38] INFO root fetch - processPackages [pyAutoSummarizer]: New version: [1.0.5] Old Version: [1.0.4]
+[2023-06-03 00:31:38] INFO root fetch - processPackages [loophost]: New version: [1.2.4] Old Version: [1.2.0]
+[2023-06-03 00:31:38] INFO root fetch - processPackages [gdshoplib]: New version: [1.9.0] Old Version: [1.8.0]
+[2023-06-03 00:31:38] INFO root fetch - processPackages [pytype]: New version: [2023.6.2] Old Version: [2023.5.8]
+[2023-06-03 00:31:38] INFO root fetch - processPackages [rising-plugin]: executing diffoscope
+[2023-06-03 00:31:38] INFO root fetch - processPackages [rising-plugin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rising_plugin-0.1.1.tar.gz tmp/rising_plugin-0.1.2.tar.gz --markdown 20230603/r/rising-plugin/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-06-03 00:31:38] INFO root fetch - processPackages [loophost]: Downloading https://files.pythonhosted.org/packages/3b/c4/8fa56af021c69a70f90a5e3178a7d1eda1d6f61b3cf3e6be9b2a86ebadc8/loophost-1.2.0-py3-none-any.whl
+[2023-06-03 00:31:38] INFO root fetch - processPackages [swegram]: Downloading https://files.pythonhosted.org/packages/b4/af/976e17a176713d9aa7071338536e01fa5d12245d4d5f766f83ec486013fe/swegram-1.0.0.dev6-py3-none-any.whl
+[2023-06-03 00:31:38] INFO root fetch - processPackages [easymms]: Downloading https://files.pythonhosted.org/packages/f2/c7/ac6dbf524746d657d9fd3f7bbcf34e5f16d34b0573f3a30db18610857812/easymms-0.1.6.tar.gz
+[2023-06-03 00:31:38] INFO root fetch - processPackages [breathXplorer]: Downloading https://files.pythonhosted.org/packages/85/55/7cb3061c766ffca6e02f642f971e8fadffe563faf2fa3e6e922cb2fb1428/breathXplorer-0.1.7.tar.gz
+[2023-06-03 00:31:38] INFO root fetch - processPackages [easymms]: executing diffoscope
+[2023-06-03 00:31:38] INFO root fetch - processPackages [easymms]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/easymms-0.1.5.tar.gz tmp/easymms-0.1.6.tar.gz --markdown 20230603/e/easymms/0.1.5-0.1.6/diff.md --exclude *.pyd
+[2023-06-03 00:31:38] INFO root fetch - processPackages [prodvana]: Downloading https://files.pythonhosted.org/packages/14/1b/4b5e7a694a000fa49c35f79058ab22ad9b60ed2ed710a7ff8a8767844bac/prodvana-0.1.6.tar.gz
+[2023-06-03 00:31:38] INFO root fetch - processPackages [loophost]: Downloading https://files.pythonhosted.org/packages/0b/89/7ad3ed0ce6ab8f76338a0baa4160e24debb85fe5d899032b43190a3d76d5/loophost-1.2.4-py3-none-any.whl
+[2023-06-03 00:31:38] WARNING root fetch - processPackages [loophost]: Skipping package: exceeds size limit 37125003>=10485760
+[2023-06-03 00:31:38] INFO root fetch - main [MainThread]: End processing [loophost] error
+[2023-06-03 00:31:38] INFO root fetch - processPackages [prodvana]: executing diffoscope
+[2023-06-03 00:31:38] INFO root fetch - processPackages [prodvana]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/prodvana-0.1.5.tar.gz tmp/prodvana-0.1.6.tar.gz --markdown 20230603/p/prodvana/0.1.5-0.1.6/diff.md --exclude *.pyd
+[2023-06-03 00:31:38] INFO root fetch - processPackages [gdshoplib]: executing diffoscope
+[2023-06-03 00:31:38] INFO root fetch - processPackages [gdshoplib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gdshoplib-1.8.0.tar.gz tmp/gdshoplib-1.9.0.tar.gz --markdown 20230603/g/gdshoplib/1.8.0-1.9.0/diff.md --exclude *.pyd
+[2023-06-03 00:31:38] WARNING root fetch - processPackages [swegram]: Skipping package: exceeds size limit 58856717>=10485760
+[2023-06-03 00:31:38] INFO root fetch - main [MainThread]: End processing [swegram] error
+[2023-06-03 00:31:38] INFO root fetch - processPackages [pytype]: Downloading https://files.pythonhosted.org/packages/ee/68/a41d08ee4184b3b35f12e46e0d03e7c0f31d0fc2ce9610117b337270102b/pytype-2023.6.2.tar.gz
+[2023-06-03 00:31:38] INFO root fetch - processPackages [breathXplorer]: executing diffoscope
+[2023-06-03 00:31:38] INFO root fetch - processPackages [breathXplorer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/breathXplorer-0.1.6.tar.gz tmp/breathXplorer-0.1.7.tar.gz --markdown 20230603/b/breathXplorer/0.1.6-0.1.7/diff.md --exclude *.pyd
+[2023-06-03 00:31:38] INFO root fetch - processPackages [pyAutoSummarizer]: Downloading https://files.pythonhosted.org/packages/5e/fa/d547b96c94b9f9d5a55ff81fffbaed976bd1b940847527567739467885b9/pyAutoSummarizer-1.0.5.tar.gz
+[2023-06-03 00:31:38] INFO root fetch - processPackages [pytype]: executing diffoscope
+[2023-06-03 00:31:38] INFO root fetch - processPackages [pytype]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytype-2023.5.8.tar.gz tmp/pytype-2023.6.2.tar.gz --markdown 20230603/p/pytype/2023.5.8-2023.6.2/diff.md --exclude *.pyd
+[2023-06-03 00:31:38] INFO root fetch - processPackages [pyAutoSummarizer]: executing diffoscope
+[2023-06-03 00:31:38] INFO root fetch - processPackages [pyAutoSummarizer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyAutoSummarizer-1.0.4.tar.gz tmp/pyAutoSummarizer-1.0.5.tar.gz --markdown 20230603/p/pyAutoSummarizer/1.0.4-1.0.5/diff.md --exclude *.pyd
+[2023-06-03 00:31:39] INFO root fetch - main [MainThread]: End processing [easymms]: success
+[2023-06-03 00:31:39] INFO root fetch - main [MainThread]: End processing [breathXplorer]: success
+[2023-06-03 00:31:40] INFO root fetch - main [MainThread]: End processing [gdshoplib]: success
+[2023-06-03 00:31:40] INFO root fetch - main [MainThread]: End processing [pyAutoSummarizer]: success
+[2023-06-03 00:31:41] INFO root fetch - main [MainThread]: End processing [prodvana]: success
+[2023-06-03 00:34:06] INFO root fetch - main [MainThread]: End processing [pytype]: success
+[2023-06-03 00:34:38] ERROR root fetch - processPackages [rising-plugin]: Timeout during execution of pkgdiff
+[2023-06-03 00:34:38] INFO root fetch - main [MainThread]: End processing [rising-plugin] error
+[2023-06-03 00:34:38] INFO root fetch - main [MainThread]: Store serial: [18353864]
