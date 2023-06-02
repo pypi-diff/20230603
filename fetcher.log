@@ -900,3 +900,26 @@
 [2023-06-03 01:45:04] INFO root fetch - main [MainThread]: End processing [wordpress-auth]: success
 [2023-06-03 01:45:07] INFO root fetch - main [MainThread]: End processing [pretext]: success
 [2023-06-03 01:45:07] INFO root fetch - main [MainThread]: Store serial: [18354304]
+[2023-06-03 01:50:11] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18354304]
+[2023-06-03 01:50:16] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-06-03 01:50:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: loophost
+[2023-06-03 01:50:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: Trissotech
+[2023-06-03 01:50:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: transmission-rpc
+[2023-06-03 01:50:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: markdown-badge
+[2023-06-03 01:50:16] INFO root fetch - processPackages [loophost]: New version: [1.2.8] Old Version: [1.2.7]
+[2023-06-03 01:50:16] WARNING root fetch - processPackages [Trissotech]: Skipping, unable to determine old version
+[2023-06-03 01:50:16] INFO root fetch - main [MainThread]: End processing [Trissotech] error
+[2023-06-03 01:50:16] INFO root fetch - processPackages [transmission-rpc]: New version: [4.3.0] Old Version: [4.2.2]
+[2023-06-03 01:50:16] WARNING root fetch - processPackages [markdown-badge]: Skipping, unable to determine old version
+[2023-06-03 01:50:16] INFO root fetch - main [MainThread]: End processing [markdown-badge] error
+[2023-06-03 01:50:16] INFO root fetch - processPackages [loophost]: Downloading https://files.pythonhosted.org/packages/de/ac/26dfc3c8098845988be5bf4b9a0cb0032c3f80419a8baf6334782e8e22ca/loophost-1.2.7-py3-none-any.whl
+[2023-06-03 01:50:16] INFO root fetch - processPackages [transmission-rpc]: Downloading https://files.pythonhosted.org/packages/ca/03/ca81a2b44762c07c8a9b6c4a53b401f201317da6c266a1e370e82a4ca407/transmission_rpc-4.2.2.tar.gz
+[2023-06-03 01:50:16] INFO root fetch - processPackages [loophost]: Downloading https://files.pythonhosted.org/packages/42/1f/976304728c2e621c8daa408a08ec9ebe5b7e73ca28fafe4ae89a2a77d076/loophost-1.2.8-py3-none-any.whl
+[2023-06-03 01:50:16] INFO root fetch - processPackages [loophost]: executing diffoscope
+[2023-06-03 01:50:16] INFO root fetch - processPackages [loophost]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/loophost-1.2.7-py3-none-any.whl.zip tmp/loophost-1.2.8-py3-none-any.whl.zip --markdown 20230603/l/loophost/1.2.7-1.2.8/diff.md --exclude *.pyd
+[2023-06-03 01:50:17] INFO root fetch - processPackages [transmission-rpc]: Downloading https://files.pythonhosted.org/packages/61/15/98fcf6c008d8046b815bf56a4539c5e5c32aa35260de4c5042e6cdde5520/transmission_rpc-4.3.0.tar.gz
+[2023-06-03 01:50:17] INFO root fetch - processPackages [transmission-rpc]: executing diffoscope
+[2023-06-03 01:50:17] INFO root fetch - processPackages [transmission-rpc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/transmission_rpc-4.2.2.tar.gz tmp/transmission_rpc-4.3.0.tar.gz --markdown 20230603/t/transmission-rpc/4.2.2-4.3.0/diff.md --exclude *.pyd
+[2023-06-03 01:50:18] INFO root fetch - main [MainThread]: End processing [loophost]: success
+[2023-06-03 01:50:18] INFO root fetch - main [MainThread]: End processing [transmission-rpc]: success
+[2023-06-03 01:50:18] INFO root fetch - main [MainThread]: Store serial: [18354319]
