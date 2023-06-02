@@ -385,3 +385,74 @@
 [2023-06-03 00:42:50] ERROR root fetch - processPackages [rising-plugin]: Timeout during execution of pkgdiff
 [2023-06-03 00:42:50] INFO root fetch - main [MainThread]: End processing [rising-plugin] error
 [2023-06-03 00:42:50] INFO root fetch - main [MainThread]: Store serial: [18353923]
+[2023-06-03 00:47:54] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18353923]
+[2023-06-03 00:47:59] INFO root fetch - main [MainThread]: Found 13 changed packages
+[2023-06-03 00:47:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: clarabel
+[2023-06-03 00:47:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: swegram
+[2023-06-03 00:47:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: multidyndnscli
+[2023-06-03 00:47:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: finalynx
+[2023-06-03 00:47:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: guardshield
+[2023-06-03 00:47:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: puup
+[2023-06-03 00:47:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: rising-plugin
+[2023-06-03 00:47:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: lib-pybroker
+[2023-06-03 00:47:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: flowtask
+[2023-06-03 00:47:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: notas-musicais-kylefelipe
+[2023-06-03 00:47:59] INFO root fetch - processPackages [guardshield]: New version: [1.0.4] Old Version: [1.0.2]
+[2023-06-03 00:47:59] INFO root fetch - processPackages [swegram]: New version: [1.0.0.dev9] Old Version: [1.0.0.dev8]
+[2023-06-03 00:47:59] WARNING root fetch - processPackages [puup]: Skipping, unable to determine old version
+[2023-06-03 00:47:59] INFO root fetch - processPackages [puup]: Start processing: oslnotify
+[2023-06-03 00:47:59] INFO root fetch - main [MainThread]: End processing [puup] error
+[2023-06-03 00:47:59] INFO root fetch - processPackages [finalynx]: New version: [1.9.0] Old Version: [1.8.3]
+[2023-06-03 00:47:59] INFO root fetch - processPackages [clarabel]: New version: [0.5.1] Old Version: [0.5.0]
+[2023-06-03 00:47:59] INFO root fetch - processPackages [multidyndnscli]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-06-03 00:47:59] WARNING root fetch - processPackages [notas-musicais-kylefelipe]: Skipping, unable to determine old version
+[2023-06-03 00:47:59] INFO root fetch - processPackages [notas-musicais-kylefelipe]: Start processing: aiodiskqueue
+[2023-06-03 00:47:59] INFO root fetch - main [MainThread]: End processing [notas-musicais-kylefelipe] error
+[2023-06-03 00:47:59] INFO root fetch - processPackages [rising-plugin]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-06-03 00:47:59] INFO root fetch - processPackages [flowtask]: New version: [4.3.9] Old Version: [4.3.8]
+[2023-06-03 00:47:59] INFO root fetch - processPackages [lib-pybroker]: New version: [1.1.9] Old Version: [1.1.8]
+[2023-06-03 00:47:59] WARNING root fetch - processPackages [oslnotify]: Skipping, unable to determine old version
+[2023-06-03 00:47:59] INFO root fetch - processPackages [oslnotify]: Start processing: fashion-clip
+[2023-06-03 00:47:59] INFO root fetch - main [MainThread]: End processing [oslnotify] error
+[2023-06-03 00:47:59] INFO root fetch - processPackages [rising-plugin]: executing diffoscope
+[2023-06-03 00:47:59] INFO root fetch - processPackages [rising-plugin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rising_plugin-0.1.1.tar.gz tmp/rising_plugin-0.1.2.tar.gz --markdown 20230603/r/rising-plugin/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-06-03 00:47:59] INFO root fetch - processPackages [lib-pybroker]: executing diffoscope
+[2023-06-03 00:47:59] INFO root fetch - processPackages [lib-pybroker]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lib-pybroker-1.1.8.tar.gz tmp/lib-pybroker-1.1.9.tar.gz --markdown 20230603/l/lib-pybroker/1.1.8-1.1.9/diff.md --exclude *.pyd
+[2023-06-03 00:47:59] INFO root fetch - processPackages [aiodiskqueue]: New version: [0.1.0b7] Old Version: [0.1.0b5]
+[2023-06-03 00:47:59] INFO root fetch - processPackages [flowtask]: executing diffoscope
+[2023-06-03 00:47:59] INFO root fetch - processPackages [flowtask]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flowtask-4.3.8-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip tmp/flowtask-4.3.9-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip --markdown 20230603/f/flowtask/4.3.8-4.3.9/diff.md --exclude *.pyd
+[2023-06-03 00:47:59] INFO root fetch - processPackages [fashion-clip]: New version: [0.2.0] Old Version: [0.1.2]
+[2023-06-03 00:47:59] INFO root fetch - processPackages [swegram]: Downloading https://files.pythonhosted.org/packages/d7/bb/b958938fa5acf746699a745bc9ace5b5ef642c0442502ef3288235c80f2f/swegram-1.0.0.dev8-py3-none-any.whl
+[2023-06-03 00:47:59] INFO root fetch - processPackages [clarabel]: Downloading https://files.pythonhosted.org/packages/89/f1/70b536984898d323b867b33d480f0946a06ebffd3b32c0e524e197a0c58f/clarabel-0.5.0-cp37-abi3-win_amd64.whl
+[2023-06-03 00:47:59] INFO root fetch - processPackages [multidyndnscli]: Downloading https://files.pythonhosted.org/packages/5f/58/18fc95950b5f35245370c199d7ff747a25b99c090036a6f1f25fca0cbd2e/multidyndnscli-0.1.1.tar.gz
+[2023-06-03 00:47:59] WARNING root fetch - processPackages [swegram]: Skipping package: exceeds size limit 58856995>=10485760
+[2023-06-03 00:47:59] INFO root fetch - main [MainThread]: End processing [swegram] error
+[2023-06-03 00:47:59] INFO root fetch - processPackages [guardshield]: Downloading https://files.pythonhosted.org/packages/57/72/a9aef5a3a87bd275e256437fee3c817a9677763cfa93b51b7a2583f3f5c2/guardshield-1.0.4.tar.gz
+[2023-06-03 00:47:59] INFO root fetch - processPackages [fashion-clip]: Downloading https://files.pythonhosted.org/packages/41/33/1c7a033cab6335285eb758f609f98f9d977eba9b8a13c7126ff7c96a8a53/fashion_clip-0.1.2-py3-none-any.whl
+[2023-06-03 00:47:59] INFO root fetch - processPackages [multidyndnscli]: Downloading https://files.pythonhosted.org/packages/51/ce/f2cfea2177a8c1b71f2ab27744bd1d766c349f18a462b4b1afbd508df271/multidyndnscli-0.1.2.tar.gz
+[2023-06-03 00:47:59] INFO root fetch - processPackages [finalynx]: executing diffoscope
+[2023-06-03 00:47:59] INFO root fetch - processPackages [finalynx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/finalynx-1.8.3.tar.gz tmp/finalynx-1.9.0.tar.gz --markdown 20230603/f/finalynx/1.8.3-1.9.0/diff.md --exclude *.pyd
+[2023-06-03 00:47:59] INFO root fetch - processPackages [clarabel]: Downloading https://files.pythonhosted.org/packages/dd/e5/f12321b04b8e2afae59c2b9efc620dab08c068da996c5dc4524c4b740dc2/clarabel-0.5.1-cp37-abi3-win_amd64.whl
+[2023-06-03 00:48:00] INFO root fetch - processPackages [aiodiskqueue]: Downloading https://files.pythonhosted.org/packages/09/23/331a3dc3d56636be4e921414399abbca792ced4f780789cb1d4a86117a7c/aiodiskqueue-0.1.0b7.tar.gz
+[2023-06-03 00:48:00] INFO root fetch - processPackages [multidyndnscli]: executing diffoscope
+[2023-06-03 00:48:00] INFO root fetch - processPackages [multidyndnscli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/multidyndnscli-0.1.1.tar.gz tmp/multidyndnscli-0.1.2.tar.gz --markdown 20230603/m/multidyndnscli/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-06-03 00:48:00] INFO root fetch - processPackages [guardshield]: executing diffoscope
+[2023-06-03 00:48:00] INFO root fetch - processPackages [guardshield]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/guardshield-1.0.2.tar.gz tmp/guardshield-1.0.4.tar.gz --markdown 20230603/g/guardshield/1.0.2-1.0.4/diff.md --exclude *.pyd
+[2023-06-03 00:48:00] INFO root fetch - processPackages [clarabel]: executing diffoscope
+[2023-06-03 00:48:00] INFO root fetch - processPackages [clarabel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/clarabel-0.5.0-cp37-abi3-win_amd64.whl.zip tmp/clarabel-0.5.1-cp37-abi3-win_amd64.whl.zip --markdown 20230603/c/clarabel/0.5.0-0.5.1/diff.md --exclude *.pyd
+[2023-06-03 00:48:00] INFO root fetch - processPackages [fashion-clip]: Downloading https://files.pythonhosted.org/packages/cd/81/920970d7e753cc74710378feefe11622717038993d14610a847f5eda6980/fashion-clip-0.2.0.tar.gz
+[2023-06-03 00:48:00] INFO root fetch - processPackages [aiodiskqueue]: executing diffoscope
+[2023-06-03 00:48:00] INFO root fetch - processPackages [aiodiskqueue]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aiodiskqueue-0.1.0b5.tar.gz tmp/aiodiskqueue-0.1.0b7.tar.gz --markdown 20230603/a/aiodiskqueue/0.1.0b5-0.1.0b7/diff.md --exclude *.pyd
+[2023-06-03 00:48:00] INFO root fetch - processPackages [fashion-clip]: executing diffoscope
+[2023-06-03 00:48:00] INFO root fetch - processPackages [fashion-clip]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fashion_clip-0.1.2-py3-none-any.whl.zip tmp/fashion-clip-0.2.0.tar.gz --markdown 20230603/f/fashion-clip/0.1.2-0.2.0/diff.md --exclude *.pyd
+[2023-06-03 00:48:01] INFO root fetch - main [MainThread]: End processing [multidyndnscli]: success
+[2023-06-03 00:48:01] INFO root fetch - main [MainThread]: End processing [clarabel]: success
+[2023-06-03 00:48:01] INFO root fetch - main [MainThread]: End processing [guardshield]: success
+[2023-06-03 00:48:01] INFO root fetch - main [MainThread]: End processing [fashion-clip]: success
+[2023-06-03 00:48:01] INFO root fetch - main [MainThread]: End processing [lib-pybroker]: success
+[2023-06-03 00:48:01] INFO root fetch - main [MainThread]: End processing [finalynx]: success
+[2023-06-03 00:48:01] INFO root fetch - main [MainThread]: End processing [aiodiskqueue]: success
+[2023-06-03 00:48:02] INFO root fetch - main [MainThread]: End processing [flowtask]: success
+[2023-06-03 00:50:59] ERROR root fetch - processPackages [rising-plugin]: Timeout during execution of pkgdiff
+[2023-06-03 00:50:59] INFO root fetch - main [MainThread]: End processing [rising-plugin] error
+[2023-06-03 00:50:59] INFO root fetch - main [MainThread]: Store serial: [18353985]
