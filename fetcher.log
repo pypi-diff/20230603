@@ -590,3 +590,51 @@
 [2023-06-03 01:07:32] INFO root fetch - main [MainThread]: End processing [tmnt]: success
 [2023-06-03 01:07:32] INFO root fetch - main [MainThread]: End processing [tmnt-cu101]: success
 [2023-06-03 01:07:32] INFO root fetch - main [MainThread]: Store serial: [18354061]
+[2023-06-03 01:12:36] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18354061]
+[2023-06-03 01:12:41] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-06-03 01:12:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pipen-annotate
+[2023-06-03 01:12:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pepperize.cdk-ses-smtp-credentials
+[2023-06-03 01:12:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: apertium2ud
+[2023-06-03 01:12:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: esdbclient
+[2023-06-03 01:12:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: esdbclient
+[2023-06-03 01:12:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: nso-oc
+[2023-06-03 01:12:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: wordpress-auth
+[2023-06-03 01:12:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: pipen-board
+[2023-06-03 01:12:41] INFO root fetch - processPackages [pipen-annotate]: New version: [0.7.3] Old Version: [0.7.2]
+[2023-06-03 01:12:41] INFO root fetch - processPackages [apertium2ud]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-06-03 01:12:41] INFO root fetch - processPackages [pepperize.cdk-ses-smtp-credentials]: New version: [0.3.345] Old Version: [0.3.344]
+[2023-06-03 01:12:41] INFO root fetch - processPackages [esdbclient]: New version: [1.0a7] Old Version: [1.0a6]
+[2023-06-03 01:12:41] INFO root fetch - processPackages [nso-oc]: New version: [2.54.2] Old Version: [2.54.1]
+[2023-06-03 01:12:41] INFO root fetch - processPackages [esdbclient]: New version: [1.0a7] Old Version: [1.0a6]
+[2023-06-03 01:12:41] WARNING root fetch - processPackages [wordpress-auth]: Skipping, unable to determine old version
+[2023-06-03 01:12:41] INFO root fetch - main [MainThread]: End processing [wordpress-auth] error
+[2023-06-03 01:12:41] INFO root fetch - processPackages [pipen-board]: New version: [0.3.1] Old Version: [0.3.0]
+[2023-06-03 01:12:41] INFO root fetch - processPackages [pepperize.cdk-ses-smtp-credentials]: Downloading https://files.pythonhosted.org/packages/81/40/458983fbcc07aa9f08df18cd31f0a5f205634e137dba933d487b670a320d/pepperize.cdk-ses-smtp-credentials-0.3.345.tar.gz
+[2023-06-03 01:12:41] INFO root fetch - processPackages [apertium2ud]: Downloading https://files.pythonhosted.org/packages/f3/86/ebaaf7ced09a81d4dd172219943f417c978e0d0aeddd42e8d205fadd68ff/apertium2ud-0.0.4.tar.gz
+[2023-06-03 01:12:41] INFO root fetch - processPackages [nso-oc]: Downloading https://files.pythonhosted.org/packages/48/52/9ae24666608efa1d52201f2f6a291ba8d42cc05ef6e73e50559d318879a6/nso-oc-2.54.2.tar.gz
+[2023-06-03 01:12:41] INFO root fetch - processPackages [pepperize.cdk-ses-smtp-credentials]: executing diffoscope
+[2023-06-03 01:12:41] INFO root fetch - processPackages [pepperize.cdk-ses-smtp-credentials]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pepperize.cdk-ses-smtp-credentials-0.3.344.tar.gz tmp/pepperize.cdk-ses-smtp-credentials-0.3.345.tar.gz --markdown 20230603/p/pepperize.cdk-ses-smtp-credentials/0.3.344-0.3.345/diff.md --exclude *.pyd
+[2023-06-03 01:12:41] INFO root fetch - processPackages [pipen-annotate]: Downloading https://files.pythonhosted.org/packages/64/59/25bfeafba6bcc6f48fc18ba0e67c88b9876ec1f8416be1753e62ae1263e5/pipen_annotate-0.7.3.tar.gz
+[2023-06-03 01:12:41] INFO root fetch - processPackages [apertium2ud]: executing diffoscope
+[2023-06-03 01:12:41] INFO root fetch - processPackages [apertium2ud]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/apertium2ud-0.0.3.tar.gz tmp/apertium2ud-0.0.4.tar.gz --markdown 20230603/a/apertium2ud/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-06-03 01:12:41] INFO root fetch - processPackages [nso-oc]: executing diffoscope
+[2023-06-03 01:12:41] INFO root fetch - processPackages [nso-oc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nso-oc-2.54.1.tar.gz tmp/nso-oc-2.54.2.tar.gz --markdown 20230603/n/nso-oc/2.54.1-2.54.2/diff.md --exclude *.pyd
+[2023-06-03 01:12:41] INFO root fetch - processPackages [esdbclient]: Downloading https://files.pythonhosted.org/packages/e2/2f/4d7a74c097df41b9da1b406ba2fc8a70fe5f18e923e2cff2798a4335761a/esdbclient-1.0a7.tar.gz
+[2023-06-03 01:12:41] INFO root fetch - processPackages [esdbclient]: Downloading https://files.pythonhosted.org/packages/e2/2f/4d7a74c097df41b9da1b406ba2fc8a70fe5f18e923e2cff2798a4335761a/esdbclient-1.0a7.tar.gz
+[2023-06-03 01:12:41] INFO root fetch - processPackages [pipen-annotate]: executing diffoscope
+[2023-06-03 01:12:41] INFO root fetch - processPackages [pipen-annotate]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pipen_annotate-0.7.2.tar.gz tmp/pipen_annotate-0.7.3.tar.gz --markdown 20230603/p/pipen-annotate/0.7.2-0.7.3/diff.md --exclude *.pyd
+[2023-06-03 01:12:41] INFO root fetch - processPackages [esdbclient]: executing diffoscope
+[2023-06-03 01:12:41] INFO root fetch - processPackages [esdbclient]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/esdbclient-1.0a6.tar.gz tmp/esdbclient-1.0a7.tar.gz --markdown 20230603/e/esdbclient/1.0a6-1.0a7/diff.md --exclude *.pyd
+[2023-06-03 01:12:41] INFO root fetch - processPackages [esdbclient]: executing diffoscope
+[2023-06-03 01:12:41] INFO root fetch - processPackages [esdbclient]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/esdbclient-1.0a6.tar.gz tmp/esdbclient-1.0a7.tar.gz --markdown 20230603/e/esdbclient/1.0a6-1.0a7/diff.md --exclude *.pyd
+[2023-06-03 01:12:41] INFO root fetch - processPackages [pipen-board]: Downloading https://files.pythonhosted.org/packages/66/51/a701ca78c3134b98c8ebb24814bd0d36032a90b3f02a14713729e64d6243/pipen_board-0.3.1.tar.gz
+[2023-06-03 01:12:42] INFO root fetch - processPackages [pipen-board]: executing diffoscope
+[2023-06-03 01:12:42] INFO root fetch - processPackages [pipen-board]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pipen_board-0.3.0.tar.gz tmp/pipen_board-0.3.1.tar.gz --markdown 20230603/p/pipen-board/0.3.0-0.3.1/diff.md --exclude *.pyd
+[2023-06-03 01:12:42] INFO root fetch - main [MainThread]: End processing [pepperize.cdk-ses-smtp-credentials]: success
+[2023-06-03 01:12:43] INFO root fetch - main [MainThread]: End processing [pipen-annotate]: success
+[2023-06-03 01:12:43] INFO root fetch - main [MainThread]: End processing [apertium2ud]: success
+[2023-06-03 01:12:43] INFO root fetch - main [MainThread]: End processing [nso-oc]: success
+[2023-06-03 01:12:43] INFO root fetch - main [MainThread]: End processing [esdbclient]: success
+[2023-06-03 01:12:43] INFO root fetch - main [MainThread]: End processing [esdbclient]: success
+[2023-06-03 01:12:50] INFO root fetch - main [MainThread]: End processing [pipen-board]: success
+[2023-06-03 01:12:50] INFO root fetch - main [MainThread]: Store serial: [18354086]
