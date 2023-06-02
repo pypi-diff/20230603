@@ -289,3 +289,99 @@
 [2023-06-03 00:34:38] ERROR root fetch - processPackages [rising-plugin]: Timeout during execution of pkgdiff
 [2023-06-03 00:34:38] INFO root fetch - main [MainThread]: End processing [rising-plugin] error
 [2023-06-03 00:34:38] INFO root fetch - main [MainThread]: Store serial: [18353864]
+[2023-06-03 00:39:43] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18353864]
+[2023-06-03 00:39:48] INFO root fetch - main [MainThread]: Found 17 changed packages
+[2023-06-03 00:39:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pulumi-azure-native
+[2023-06-03 00:39:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: aipose
+[2023-06-03 00:39:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: wasm-exec
+[2023-06-03 00:39:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pyAutoSummarizer
+[2023-06-03 00:39:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: andromeda-chain
+[2023-06-03 00:39:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: tidytcells
+[2023-06-03 00:39:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: leadguru-data
+[2023-06-03 00:39:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: leadguru-common
+[2023-06-03 00:39:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: abi3info
+[2023-06-03 00:39:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: compute-strings-data
+[2023-06-03 00:39:48] INFO root fetch - processPackages [wasm-exec]: New version: [0.1.7] Old Version: [0.1.6]
+[2023-06-03 00:39:48] INFO root fetch - processPackages [andromeda-chain]: New version: [0.2a1] Old Version: [0.2a0]
+[2023-06-03 00:39:48] INFO root fetch - processPackages [pulumi-azure-native]: New version: [2.0.0a2] Old Version: [2.0.0a1685634670]
+[2023-06-03 00:39:48] INFO root fetch - processPackages [aipose]: New version: [2.1.1] Old Version: [2.1.0]
+[2023-06-03 00:39:48] WARNING root fetch - processPackages [compute-strings-data]: Skipping, unable to determine old version
+[2023-06-03 00:39:48] INFO root fetch - processPackages [pyAutoSummarizer]: New version: [1.0.7] Old Version: [1.0.4]
+[2023-06-03 00:39:48] INFO root fetch - processPackages [compute-strings-data]: Start processing: returnn
+[2023-06-03 00:39:48] INFO root fetch - main [MainThread]: End processing [compute-strings-data] error
+[2023-06-03 00:39:48] INFO root fetch - processPackages [abi3info]: New version: [2023.6.2] Old Version: [2023.6.1]
+[2023-06-03 00:39:48] INFO root fetch - processPackages [tidytcells]: New version: [1.8.2] Old Version: [1.8.1]
+[2023-06-03 00:39:48] INFO root fetch - processPackages [leadguru-common]: New version: [0.99.0] Old Version: [0.98.0]
+[2023-06-03 00:39:48] INFO root fetch - processPackages [leadguru-data]: New version: [0.99.0] Old Version: [0.98.0]
+[2023-06-03 00:39:48] INFO root fetch - processPackages [returnn]: New version: [1.20230603.803] Old Version: [1.20230601.145745]
+[2023-06-03 00:39:48] INFO root fetch - processPackages [pulumi-azure-native]: Downloading https://files.pythonhosted.org/packages/52/0d/8372bf97bc5811e45e0db85cfd9513bbca2c15cbd5a41f75bc9795d87e32/pulumi_azure_native-2.0.0a1685634670.tar.gz
+[2023-06-03 00:39:48] INFO root fetch - processPackages [aipose]: Downloading https://files.pythonhosted.org/packages/a1/ff/311a31b0beff30756a2fd34d0f3d5a1eee8cbc74068f4228599e2d0f8f4c/aipose-2.1.0.tar.gz
+[2023-06-03 00:39:48] WARNING root fetch - processPackages [pulumi-azure-native]: Skipping package: exceeds size limit 29889527>=10485760
+[2023-06-03 00:39:48] INFO root fetch - processPackages [pulumi-azure-native]: Start processing: igrade
+[2023-06-03 00:39:48] INFO root fetch - main [MainThread]: End processing [pulumi-azure-native] error
+[2023-06-03 00:39:48] WARNING root fetch - processPackages [igrade]: Skipping, unable to determine old version
+[2023-06-03 00:39:48] INFO root fetch - processPackages [igrade]: Start processing: swegram
+[2023-06-03 00:39:48] INFO root fetch - main [MainThread]: End processing [igrade] error
+[2023-06-03 00:39:48] INFO root fetch - processPackages [andromeda-chain]: Downloading https://files.pythonhosted.org/packages/0e/31/9d2cfc374e4a0b111b4cb92518872391cee4d8e20ed3e448be73d197a019/andromeda-chain-0.2a1.tar.gz
+[2023-06-03 00:39:48] INFO root fetch - processPackages [swegram]: New version: [1.0.0.dev8] Old Version: [1.0.0.dev7]
+[2023-06-03 00:39:48] INFO root fetch - processPackages [wasm-exec]: Downloading https://files.pythonhosted.org/packages/0d/1c/ee61f8cd94878e24619333f3d7fd1bc6b63b07097fa150d3c2df78a0ed9a/wasm_exec-0.1.7.tar.gz
+[2023-06-03 00:39:48] INFO root fetch - processPackages [abi3info]: Downloading https://files.pythonhosted.org/packages/1f/4c/75217eb4758f1fe02ce8f94c60c3dfce8fccb3c609aa33c4e2976d43faf8/abi3info-2023.6.2.tar.gz
+[2023-06-03 00:39:48] INFO root fetch - processPackages [pyAutoSummarizer]: Downloading https://files.pythonhosted.org/packages/62/cb/64374f1be4e44fa9f675dd741f9933e64198a6c63cd990726cf5895c497e/pyAutoSummarizer-1.0.7.tar.gz
+[2023-06-03 00:39:48] INFO root fetch - processPackages [returnn]: Downloading https://files.pythonhosted.org/packages/98/60/00d095a3b198b53f51680ba5ca036b34ab6bc0f8aea9bd44f5eb7fe4befa/returnn-1.20230603.803.tar.gz
+[2023-06-03 00:39:48] INFO root fetch - processPackages [abi3info]: executing diffoscope
+[2023-06-03 00:39:48] INFO root fetch - processPackages [abi3info]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/abi3info-2023.6.1.tar.gz tmp/abi3info-2023.6.2.tar.gz --markdown 20230603/a/abi3info/2023.6.1-2023.6.2/diff.md --exclude *.pyd
+[2023-06-03 00:39:48] INFO root fetch - processPackages [tidytcells]: Downloading https://files.pythonhosted.org/packages/9a/70/d81a7085f69f0e8e3e56efee9ca2e88fe354a7cb71cf54169b63c51f1fbc/tidytcells-1.8.2.tar.gz
+[2023-06-03 00:39:48] INFO root fetch - processPackages [leadguru-common]: executing diffoscope
+[2023-06-03 00:39:48] INFO root fetch - processPackages [leadguru-common]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/leadguru_common-0.98.0.tar.gz tmp/leadguru_common-0.99.0.tar.gz --markdown 20230603/l/leadguru-common/0.98.0-0.99.0/diff.md --exclude *.pyd
+[2023-06-03 00:39:48] INFO root fetch - processPackages [andromeda-chain]: executing diffoscope
+[2023-06-03 00:39:48] INFO root fetch - processPackages [andromeda-chain]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/andromeda-chain-0.2a0.tar.gz tmp/andromeda-chain-0.2a1.tar.gz --markdown 20230603/a/andromeda-chain/0.2a0-0.2a1/diff.md --exclude *.pyd
+[2023-06-03 00:39:48] INFO root fetch - processPackages [aipose]: Downloading https://files.pythonhosted.org/packages/59/f0/cbf820a16c2653df44ade13615d52aa6d05b7c1b79140f8c243f109dc649/aipose-2.1.1.tar.gz
+[2023-06-03 00:39:48] INFO root fetch - processPackages [swegram]: Downloading https://files.pythonhosted.org/packages/2d/e9/c19317f3c1b4538da0990e770f4bf5e0ef90690a4c507f44a642999f8cda/swegram-1.0.0.dev7-py3-none-any.whl
+[2023-06-03 00:39:48] INFO root fetch - processPackages [leadguru-data]: executing diffoscope
+[2023-06-03 00:39:48] INFO root fetch - processPackages [leadguru-data]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/leadguru_data-0.98.0.tar.gz tmp/leadguru_data-0.99.0.tar.gz --markdown 20230603/l/leadguru-data/0.98.0-0.99.0/diff.md --exclude *.pyd
+[2023-06-03 00:39:48] INFO root fetch - processPackages [pyAutoSummarizer]: executing diffoscope
+[2023-06-03 00:39:48] INFO root fetch - processPackages [pyAutoSummarizer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyAutoSummarizer-1.0.4.tar.gz tmp/pyAutoSummarizer-1.0.7.tar.gz --markdown 20230603/p/pyAutoSummarizer/1.0.4-1.0.7/diff.md --exclude *.pyd
+[2023-06-03 00:39:48] INFO root fetch - processPackages [wasm-exec]: executing diffoscope
+[2023-06-03 00:39:48] INFO root fetch - processPackages [wasm-exec]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wasm_exec-0.1.6.tar.gz tmp/wasm_exec-0.1.7.tar.gz --markdown 20230603/w/wasm-exec/0.1.6-0.1.7/diff.md --exclude *.pyd
+[2023-06-03 00:39:48] WARNING root fetch - processPackages [swegram]: Skipping package: exceeds size limit 58856718>=10485760
+[2023-06-03 00:39:48] INFO root fetch - processPackages [swegram]: Start processing: pulumi-pulumiservice
+[2023-06-03 00:39:48] INFO root fetch - main [MainThread]: End processing [swegram] error
+[2023-06-03 00:39:48] INFO root fetch - processPackages [pulumi-pulumiservice]: New version: [0.7.3a1685744332] Old Version: [0.7.3a1685724591]
+[2023-06-03 00:39:48] INFO root fetch - processPackages [returnn]: executing diffoscope
+[2023-06-03 00:39:48] INFO root fetch - processPackages [returnn]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/returnn-1.20230601.145745.tar.gz tmp/returnn-1.20230603.803.tar.gz --markdown 20230603/r/returnn/1.20230601.145745-1.20230603.803/diff.md --exclude *.pyd
+[2023-06-03 00:39:49] INFO root fetch - processPackages [tidytcells]: executing diffoscope
+[2023-06-03 00:39:49] INFO root fetch - processPackages [tidytcells]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tidytcells-1.8.1.tar.gz tmp/tidytcells-1.8.2.tar.gz --markdown 20230603/t/tidytcells/1.8.1-1.8.2/diff.md --exclude *.pyd
+[2023-06-03 00:39:49] INFO root fetch - processPackages [aipose]: executing diffoscope
+[2023-06-03 00:39:49] INFO root fetch - processPackages [aipose]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aipose-2.1.0.tar.gz tmp/aipose-2.1.1.tar.gz --markdown 20230603/a/aipose/2.1.0-2.1.1/diff.md --exclude *.pyd
+[2023-06-03 00:39:49] INFO root fetch - processPackages [pulumi-pulumiservice]: Downloading https://files.pythonhosted.org/packages/f4/22/36f554e52db24e8764b2f4e8fb1902c528f848b65657e6c01100cb2f98d7/pulumi_pulumiservice-0.7.3a1685744332.tar.gz
+[2023-06-03 00:39:49] INFO root fetch - processPackages [pulumi-pulumiservice]: executing diffoscope
+[2023-06-03 00:39:49] INFO root fetch - processPackages [pulumi-pulumiservice]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_pulumiservice-0.7.3a1685724591.tar.gz tmp/pulumi_pulumiservice-0.7.3a1685744332.tar.gz --markdown 20230603/p/pulumi-pulumiservice/0.7.3a1685724591-0.7.3a1685744332/diff.md --exclude *.pyd
+[2023-06-03 00:39:50] INFO root fetch - processPackages [leadguru-common]: Start processing: datajoint
+[2023-06-03 00:39:50] INFO root fetch - main [MainThread]: End processing [leadguru-common]: success
+[2023-06-03 00:39:50] INFO root fetch - processPackages [datajoint]: New version: [0.9.0] Old Version: [0.8.2]
+[2023-06-03 00:39:50] INFO root fetch - processPackages [abi3info]: Start processing: aipose
+[2023-06-03 00:39:50] INFO root fetch - main [MainThread]: End processing [abi3info]: success
+[2023-06-03 00:39:50] INFO root fetch - processPackages [aipose]: New version: [2.1.1] Old Version: [2.1.0]
+[2023-06-03 00:39:50] INFO root fetch - processPackages [datajoint]: Downloading https://files.pythonhosted.org/packages/bf/0d/c1db00ee72a747197d8e3189f1aa58f5eec2cc81471dce44c6b9f28c5785/datajoint-0.8.2.tar.gz
+[2023-06-03 00:39:50] INFO root fetch - processPackages [leadguru-data]: Start processing: rising-plugin
+[2023-06-03 00:39:50] INFO root fetch - main [MainThread]: End processing [leadguru-data]: success
+[2023-06-03 00:39:50] INFO root fetch - processPackages [rising-plugin]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-06-03 00:39:50] INFO root fetch - main [MainThread]: End processing [andromeda-chain]: success
+[2023-06-03 00:39:50] INFO root fetch - processPackages [aipose]: executing diffoscope
+[2023-06-03 00:39:50] INFO root fetch - processPackages [aipose]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aipose-2.1.0.tar.gz tmp/aipose-2.1.1.tar.gz --markdown 20230603/a/aipose/2.1.0-2.1.1/diff.md --exclude *.pyd
+[2023-06-03 00:39:50] INFO root fetch - processPackages [rising-plugin]: executing diffoscope
+[2023-06-03 00:39:50] INFO root fetch - processPackages [rising-plugin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rising_plugin-0.1.1.tar.gz tmp/rising_plugin-0.1.2.tar.gz --markdown 20230603/r/rising-plugin/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-06-03 00:39:50] INFO root fetch - main [MainThread]: End processing [aipose]: success
+[2023-06-03 00:39:50] INFO root fetch - processPackages [datajoint]: Downloading https://files.pythonhosted.org/packages/b4/21/81806a28f5477872b67fafe6dded8336c2df75ccf39cb0f4609e898d86f9/datajoint-0.9.0.tar.gz
+[2023-06-03 00:39:50] INFO root fetch - main [MainThread]: End processing [pulumi-pulumiservice]: success
+[2023-06-03 00:39:51] INFO root fetch - processPackages [datajoint]: executing diffoscope
+[2023-06-03 00:39:51] INFO root fetch - processPackages [datajoint]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/datajoint-0.8.2.tar.gz tmp/datajoint-0.9.0.tar.gz --markdown 20230603/d/datajoint/0.8.2-0.9.0/diff.md --exclude *.pyd
+[2023-06-03 00:39:51] INFO root fetch - main [MainThread]: End processing [pyAutoSummarizer]: success
+[2023-06-03 00:39:51] INFO root fetch - main [MainThread]: End processing [aipose]: success
+[2023-06-03 00:39:51] INFO root fetch - main [MainThread]: End processing [wasm-exec]: success
+[2023-06-03 00:39:52] INFO root fetch - main [MainThread]: End processing [tidytcells]: success
+[2023-06-03 00:39:53] INFO root fetch - main [MainThread]: End processing [datajoint]: success
+[2023-06-03 00:39:53] INFO root fetch - main [MainThread]: End processing [returnn]: success
+[2023-06-03 00:42:50] ERROR root fetch - processPackages [rising-plugin]: Timeout during execution of pkgdiff
+[2023-06-03 00:42:50] INFO root fetch - main [MainThread]: End processing [rising-plugin] error
+[2023-06-03 00:42:50] INFO root fetch - main [MainThread]: Store serial: [18353923]
