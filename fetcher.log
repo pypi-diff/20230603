@@ -923,3 +923,55 @@
 [2023-06-03 01:50:18] INFO root fetch - main [MainThread]: End processing [loophost]: success
 [2023-06-03 01:50:18] INFO root fetch - main [MainThread]: End processing [transmission-rpc]: success
 [2023-06-03 01:50:18] INFO root fetch - main [MainThread]: Store serial: [18354319]
+[2023-06-03 01:55:22] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18354319]
+[2023-06-03 01:55:27] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-06-03 01:55:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cppython-core
+[2023-06-03 01:55:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: argostranslategui
+[2023-06-03 01:55:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: tapipy
+[2023-06-03 01:55:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ironbot
+[2023-06-03 01:55:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: anime-episode-parser
+[2023-06-03 01:55:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: Trissotech
+[2023-06-03 01:55:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: markdown-badge
+[2023-06-03 01:55:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: bohra
+[2023-06-03 01:55:27] INFO root fetch - processPackages [Trissotech]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-06-03 01:55:27] INFO root fetch - processPackages [ironbot]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-06-03 01:55:27] INFO root fetch - processPackages [anime-episode-parser]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-06-03 01:55:27] WARNING root fetch - processPackages [markdown-badge]: Skipping, unable to determine old version
+[2023-06-03 01:55:27] INFO root fetch - main [MainThread]: End processing [markdown-badge] error
+[2023-06-03 01:55:27] INFO root fetch - processPackages [argostranslategui]: New version: [1.6.5] Old Version: [1.6.3]
+[2023-06-03 01:55:27] INFO root fetch - processPackages [tapipy]: New version: [1.4.0a3] Old Version: [1.4.0a2]
+[2023-06-03 01:55:27] INFO root fetch - processPackages [cppython-core]: New version: [0.6.1.dev9] Old Version: [0.6.1.dev7]
+[2023-06-03 01:55:27] INFO root fetch - processPackages [bohra]: New version: [2.3.0] Old Version: [2.2.1]
+[2023-06-03 01:55:27] INFO root fetch - processPackages [Trissotech]: Downloading https://files.pythonhosted.org/packages/c7/73/90365e8d5e4829b530546f803d387821f6d82bf9ed46728dfa24cfc3f450/trissotech-0.0.1.tar.gz
+[2023-06-03 01:55:27] INFO root fetch - processPackages [argostranslategui]: Downloading https://files.pythonhosted.org/packages/ef/2c/6b23c4f70be1289eabe96bb2db0b66ab8c49920ca5eab4b64314f38926c2/argostranslategui-1.6.3.tar.gz
+[2023-06-03 01:55:27] INFO root fetch - processPackages [tapipy]: Downloading https://files.pythonhosted.org/packages/60/18/7aed545222633daa58016da3befefe34c5ef8720d553c5b168c7db1fefb6/tapipy-1.4.0a3.tar.gz
+[2023-06-03 01:55:27] INFO root fetch - processPackages [ironbot]: Downloading https://files.pythonhosted.org/packages/5e/f1/86ca3e3aa157b561e47705dc04d7068c801388cf40a208150dfdc81f7c2a/ironbot-0.0.1.tar.gz
+[2023-06-03 01:55:27] INFO root fetch - processPackages [anime-episode-parser]: Downloading https://files.pythonhosted.org/packages/62/c2/7d657f58cc31742555ab7ad95d2360514b1b16fcfcbff845119d533eb4cd/anime_episode_parser-0.0.8.tar.gz
+[2023-06-03 01:55:27] INFO root fetch - processPackages [bohra]: Downloading https://files.pythonhosted.org/packages/b8/c4/694fe13450aa1a7176d10e5b4dec6932eeebbb1c373e991acf933a4f0ac0/bohra-2.2.1.tar.gz
+[2023-06-03 01:55:27] INFO root fetch - processPackages [tapipy]: executing diffoscope
+[2023-06-03 01:55:27] INFO root fetch - processPackages [tapipy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tapipy-1.4.0a2.tar.gz tmp/tapipy-1.4.0a3.tar.gz --markdown 20230603/t/tapipy/1.4.0a2-1.4.0a3/diff.md --exclude *.pyd
+[2023-06-03 01:55:27] INFO root fetch - processPackages [Trissotech]: Downloading https://files.pythonhosted.org/packages/19/ea/d0edba4d28a1fcf4baafcdc77f9371c00aef813c5c4907e15c065b3b9046/trissotech-0.0.2.tar.gz
+[2023-06-03 01:55:27] INFO root fetch - processPackages [ironbot]: Downloading https://files.pythonhosted.org/packages/09/4a/313323f0b24de13f92c3cc0f4bcc4f1c6f53e754232fb725397561e6bbc7/ironbot-0.0.2.tar.gz
+[2023-06-03 01:55:27] INFO root fetch - processPackages [cppython-core]: executing diffoscope
+[2023-06-03 01:55:27] INFO root fetch - processPackages [cppython-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cppython-core-0.6.1.dev7.tar.gz tmp/cppython-core-0.6.1.dev9.tar.gz --markdown 20230603/c/cppython-core/0.6.1.dev7-0.6.1.dev9/diff.md --exclude *.pyd
+[2023-06-03 01:55:27] INFO root fetch - processPackages [Trissotech]: executing diffoscope
+[2023-06-03 01:55:27] INFO root fetch - processPackages [Trissotech]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/trissotech-0.0.1.tar.gz tmp/trissotech-0.0.2.tar.gz --markdown 20230603/T/Trissotech/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-06-03 01:55:27] INFO root fetch - processPackages [ironbot]: executing diffoscope
+[2023-06-03 01:55:27] INFO root fetch - processPackages [ironbot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ironbot-0.0.1.tar.gz tmp/ironbot-0.0.2.tar.gz --markdown 20230603/i/ironbot/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-06-03 01:55:27] INFO root fetch - processPackages [argostranslategui]: Downloading https://files.pythonhosted.org/packages/df/b8/db99830f65dca049b0ffbc8763c0513be5d5b4f91aea5416628e803b34ba/argostranslategui-1.6.5.tar.gz
+[2023-06-03 01:55:27] INFO root fetch - processPackages [argostranslategui]: executing diffoscope
+[2023-06-03 01:55:27] INFO root fetch - processPackages [argostranslategui]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/argostranslategui-1.6.3.tar.gz tmp/argostranslategui-1.6.5.tar.gz --markdown 20230603/a/argostranslategui/1.6.3-1.6.5/diff.md --exclude *.pyd
+[2023-06-03 01:55:28] INFO root fetch - processPackages [anime-episode-parser]: Downloading https://files.pythonhosted.org/packages/e4/96/d5e69d781f30a6224316eb2be150067813351b8fac625bec2dc249291823/anime_episode_parser-0.0.9.tar.gz
+[2023-06-03 01:55:28] INFO root fetch - processPackages [anime-episode-parser]: executing diffoscope
+[2023-06-03 01:55:28] INFO root fetch - processPackages [anime-episode-parser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/anime_episode_parser-0.0.8.tar.gz tmp/anime_episode_parser-0.0.9.tar.gz --markdown 20230603/a/anime-episode-parser/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-06-03 01:55:28] INFO root fetch - processPackages [bohra]: Downloading https://files.pythonhosted.org/packages/d1/fd/fa96f7dd7970be2131bfebe6cd53d86aac111254747f4f905a0e6526e6e0/bohra-2.3.0.tar.gz
+[2023-06-03 01:55:28] INFO root fetch - processPackages [bohra]: executing diffoscope
+[2023-06-03 01:55:28] INFO root fetch - processPackages [bohra]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bohra-2.2.1.tar.gz tmp/bohra-2.3.0.tar.gz --markdown 20230603/b/bohra/2.2.1-2.3.0/diff.md --exclude *.pyd
+[2023-06-03 01:55:29] INFO root fetch - main [MainThread]: End processing [cppython-core]: success
+[2023-06-03 01:55:29] INFO root fetch - main [MainThread]: End processing [ironbot]: success
+[2023-06-03 01:55:29] INFO root fetch - main [MainThread]: End processing [Trissotech]: success
+[2023-06-03 01:55:29] INFO root fetch - main [MainThread]: End processing [argostranslategui]: success
+[2023-06-03 01:55:29] INFO root fetch - main [MainThread]: End processing [anime-episode-parser]: success
+[2023-06-03 01:55:29] INFO root fetch - main [MainThread]: End processing [tapipy]: success
+[2023-06-03 01:55:31] INFO root fetch - main [MainThread]: End processing [bohra]: success
+[2023-06-03 01:55:31] INFO root fetch - main [MainThread]: Store serial: [18354344]
