@@ -195,3 +195,42 @@
 [2023-06-03 00:20:31] INFO root fetch - main [MainThread]: End processing [kubernetes-stubs-elephant-fork]: success
 [2023-06-03 00:21:17] INFO root fetch - main [MainThread]: End processing [lazydev]: success
 [2023-06-03 00:21:17] INFO root fetch - main [MainThread]: Store serial: [18353818]
+[2023-06-03 00:26:21] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18353818]
+[2023-06-03 00:26:26] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-06-03 00:26:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: swegram
+[2023-06-03 00:26:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: igrade-web-scraper
+[2023-06-03 00:26:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: always-updates
+[2023-06-03 00:26:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: clown-sort
+[2023-06-03 00:26:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: langflow
+[2023-06-03 00:26:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: andromeda-chain
+[2023-06-03 00:26:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: CommandAlarm
+[2023-06-03 00:26:26] WARNING root fetch - processPackages [igrade-web-scraper]: Skipping, unable to determine old version
+[2023-06-03 00:26:26] INFO root fetch - main [MainThread]: End processing [igrade-web-scraper] error
+[2023-06-03 00:26:26] INFO root fetch - processPackages [clown-sort]: New version: [1.6.4] Old Version: [1.6.3]
+[2023-06-03 00:26:26] INFO root fetch - processPackages [swegram]: New version: [1.0.0.dev6] Old Version: [1.0.0.dev5]
+[2023-06-03 00:26:26] INFO root fetch - processPackages [langflow]: New version: [0.0.81] Old Version: [0.0.80]
+[2023-06-03 00:26:26] WARNING root fetch - processPackages [CommandAlarm]: Skipping, unable to determine old version
+[2023-06-03 00:26:26] INFO root fetch - processPackages [andromeda-chain]: New version: [0.2a0] Old Version: [0.1]
+[2023-06-03 00:26:26] INFO root fetch - main [MainThread]: End processing [CommandAlarm] error
+[2023-06-03 00:26:26] INFO root fetch - processPackages [always-updates]: New version: [99.9] Old Version: [99.8]
+[2023-06-03 00:26:27] INFO root fetch - processPackages [swegram]: Downloading https://files.pythonhosted.org/packages/7f/6a/f9c9f96f988d1e17675e8653be40d27e3a1e1a82f4ea6c90f1469cd3e416/swegram-1.0.0.dev5-py3-none-any.whl
+[2023-06-03 00:26:27] INFO root fetch - processPackages [clown-sort]: Downloading https://files.pythonhosted.org/packages/95/34/0920a3e1cb68fd8d11433b7d9c2027c088ca159ac33d6ad03bfc8cbd78e1/clown_sort-1.6.4.tar.gz
+[2023-06-03 00:26:27] WARNING root fetch - processPackages [swegram]: Skipping package: exceeds size limit 58856438>=10485760
+[2023-06-03 00:26:27] INFO root fetch - main [MainThread]: End processing [swegram] error
+[2023-06-03 00:26:27] INFO root fetch - processPackages [andromeda-chain]: Downloading https://files.pythonhosted.org/packages/e4/ea/648d3b9040cf870635d7cef189a39fe7900a4fed489016a54aed594acbba/andromeda-chain-0.1.tar.gz
+[2023-06-03 00:26:27] INFO root fetch - processPackages [always-updates]: executing diffoscope
+[2023-06-03 00:26:27] INFO root fetch - processPackages [always-updates]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/always_updates-99.8.tar.gz tmp/always_updates-99.9.tar.gz --markdown 20230603/a/always-updates/99.8-99.9/diff.md --exclude *.pyd
+[2023-06-03 00:26:27] INFO root fetch - processPackages [langflow]: Downloading https://files.pythonhosted.org/packages/cb/71/da8e8e2c1d10d6723be0b43c5bdb7c385f3ce10532e6e72ba84aa73ea2ce/langflow-0.0.80.tar.gz
+[2023-06-03 00:26:27] INFO root fetch - processPackages [clown-sort]: executing diffoscope
+[2023-06-03 00:26:27] INFO root fetch - processPackages [clown-sort]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/clown_sort-1.6.3.tar.gz tmp/clown_sort-1.6.4.tar.gz --markdown 20230603/c/clown-sort/1.6.3-1.6.4/diff.md --exclude *.pyd
+[2023-06-03 00:26:27] INFO root fetch - processPackages [andromeda-chain]: Downloading https://files.pythonhosted.org/packages/b4/63/96d8e2a21207ad6f2ee96da98e3aa8c3d6d1c8dc46935aa96279a72b57e0/andromeda-chain-0.2a0.tar.gz
+[2023-06-03 00:26:27] INFO root fetch - processPackages [langflow]: Downloading https://files.pythonhosted.org/packages/38/7b/9ecd8044df4f42bb5aad8f70f29b6a0b7ce6884e647c66edfef1396444ae/langflow-0.0.81.tar.gz
+[2023-06-03 00:26:27] INFO root fetch - processPackages [andromeda-chain]: executing diffoscope
+[2023-06-03 00:26:27] INFO root fetch - processPackages [andromeda-chain]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/andromeda-chain-0.1.tar.gz tmp/andromeda-chain-0.2a0.tar.gz --markdown 20230603/a/andromeda-chain/0.1-0.2a0/diff.md --exclude *.pyd
+[2023-06-03 00:26:27] INFO root fetch - processPackages [langflow]: executing diffoscope
+[2023-06-03 00:26:27] INFO root fetch - processPackages [langflow]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/langflow-0.0.80.tar.gz tmp/langflow-0.0.81.tar.gz --markdown 20230603/l/langflow/0.0.80-0.0.81/diff.md --exclude *.pyd
+[2023-06-03 00:26:28] INFO root fetch - main [MainThread]: End processing [always-updates]: success
+[2023-06-03 00:26:28] INFO root fetch - main [MainThread]: End processing [clown-sort]: success
+[2023-06-03 00:26:28] INFO root fetch - main [MainThread]: End processing [andromeda-chain]: success
+[2023-06-03 00:26:29] INFO root fetch - main [MainThread]: End processing [langflow]: success
+[2023-06-03 00:26:29] INFO root fetch - main [MainThread]: Store serial: [18353840]
