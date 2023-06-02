@@ -101,3 +101,59 @@
 [2023-06-03 00:09:02] INFO root fetch - main [MainThread]: End processing [dynast]: success
 [2023-06-03 00:09:57] INFO root fetch - main [MainThread]: End processing [pepperize.cdk-serverless-cluster-from-snapshot]: success
 [2023-06-03 00:09:57] INFO root fetch - main [MainThread]: Store serial: [18353722]
+[2023-06-03 00:15:00] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18353722]
+[2023-06-03 00:15:05] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-06-03 00:15:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cdk-organizer
+[2023-06-03 00:15:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dcnum
+[2023-06-03 00:15:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pyvariant
+[2023-06-03 00:15:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: mesmerize-core
+[2023-06-03 00:15:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: energyplus-python-apps
+[2023-06-03 00:15:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: nbvv
+[2023-06-03 00:15:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: gpytorch
+[2023-06-03 00:15:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: deepspeed
+[2023-06-03 00:15:05] INFO root fetch - processPackages [cdk-organizer]: New version: [1.5.0] Old Version: [1.4.0]
+[2023-06-03 00:15:05] INFO root fetch - processPackages [dcnum]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-06-03 00:15:05] INFO root fetch - processPackages [pyvariant]: New version: [2.2.1] Old Version: [2.2.0]
+[2023-06-03 00:15:05] INFO root fetch - processPackages [nbvv]: New version: [1.6.0] Old Version: [1.5.0]
+[2023-06-03 00:15:05] INFO root fetch - processPackages [mesmerize-core]: New version: [0.2.2] Old Version: [0.2.0]
+[2023-06-03 00:15:05] INFO root fetch - processPackages [energyplus-python-apps]: New version: [23.1b2] Old Version: [23.1b1]
+[2023-06-03 00:15:05] INFO root fetch - processPackages [deepspeed]: New version: [0.9.3] Old Version: [0.9.2]
+[2023-06-03 00:15:05] INFO root fetch - processPackages [gpytorch]: New version: [1.9.1] Old Version: [1.9.0]
+[2023-06-03 00:15:06] INFO root fetch - processPackages [dcnum]: Downloading https://files.pythonhosted.org/packages/05/17/e45a28378fec43e99e106dfe213da828a56ca8de5d4de048eaacb1eb41b9/dcnum-0.0.1.tar.gz
+[2023-06-03 00:15:06] INFO root fetch - processPackages [cdk-organizer]: Downloading https://files.pythonhosted.org/packages/2d/ad/251f72fe17b750f510c44a333a5f5f8bd3e58ce889ee97601f5f4320ed4e/cdk_organizer-1.4.0.tar.gz
+[2023-06-03 00:15:06] INFO root fetch - processPackages [energyplus-python-apps]: Downloading https://files.pythonhosted.org/packages/af/63/13280330dc0c56c4cfd3f3680e7caf2282d0884514f40c24b4d08faa76fb/energyplus_python_apps-23.1b2.tar.gz
+[2023-06-03 00:15:06] INFO root fetch - processPackages [mesmerize-core]: Downloading https://files.pythonhosted.org/packages/c4/59/3dec667540dae6ce417853ed7bd42b4efcb43c97a1fe0649648dbbded559/mesmerize-core-0.2.0.tar.gz
+[2023-06-03 00:15:06] INFO root fetch - processPackages [nbvv]: Downloading https://files.pythonhosted.org/packages/94/ea/47dc9f1ab7fe250bea5cd898718d1d96321ecd84e1933eeafce630d9b230/nbvv-1.5.0.tar.gz
+[2023-06-03 00:15:06] INFO root fetch - processPackages [gpytorch]: Downloading https://files.pythonhosted.org/packages/52/2b/302938fa31825c3613456993553f54824685074ad5e6451a7bad3f9f14fd/gpytorch-1.9.0.tar.gz
+[2023-06-03 00:15:06] INFO root fetch - processPackages [deepspeed]: Downloading https://files.pythonhosted.org/packages/9e/6a/ce4e9afcf36f242f55bf2c91fa1366b26f0f40653d98a96c0f64b7154c12/deepspeed-0.9.2.tar.gz
+[2023-06-03 00:15:06] INFO root fetch - processPackages [pyvariant]: Downloading https://files.pythonhosted.org/packages/df/14/5f3f5fdb01e19e716ce69c7a973c037b3a982e3b8b95371047dc3b34be11/pyvariant-2.2.1.tar.gz
+[2023-06-03 00:15:06] INFO root fetch - processPackages [dcnum]: Downloading https://files.pythonhosted.org/packages/9e/73/d8f5c67dda6e60e86611e47b13bf715540363aba3c296f96a097840d800d/dcnum-0.0.2.tar.gz
+[2023-06-03 00:15:06] INFO root fetch - processPackages [energyplus-python-apps]: executing diffoscope
+[2023-06-03 00:15:06] INFO root fetch - processPackages [energyplus-python-apps]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/energyplus_python_apps-23.1b1.tar.gz tmp/energyplus_python_apps-23.1b2.tar.gz --markdown 20230603/e/energyplus-python-apps/23.1b1-23.1b2/diff.md --exclude *.pyd
+[2023-06-03 00:15:06] INFO root fetch - processPackages [mesmerize-core]: Downloading https://files.pythonhosted.org/packages/d4/5f/6cd2867b012ab09be4f68a5733ab80fea66748f8280a28857f90fd22e85a/mesmerize-core-0.2.2.tar.gz
+[2023-06-03 00:15:06] INFO root fetch - processPackages [dcnum]: executing diffoscope
+[2023-06-03 00:15:06] INFO root fetch - processPackages [dcnum]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dcnum-0.0.1.tar.gz tmp/dcnum-0.0.2.tar.gz --markdown 20230603/d/dcnum/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-06-03 00:15:06] INFO root fetch - processPackages [mesmerize-core]: executing diffoscope
+[2023-06-03 00:15:06] INFO root fetch - processPackages [mesmerize-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mesmerize-core-0.2.0.tar.gz tmp/mesmerize-core-0.2.2.tar.gz --markdown 20230603/m/mesmerize-core/0.2.0-0.2.2/diff.md --exclude *.pyd
+[2023-06-03 00:15:06] INFO root fetch - processPackages [cdk-organizer]: Downloading https://files.pythonhosted.org/packages/65/c5/4855725dc5e8600ba96ab0b75ae187ab4d159a31fdfacf115f90b30c1805/cdk_organizer-1.5.0.tar.gz
+[2023-06-03 00:15:06] INFO root fetch - processPackages [deepspeed]: Downloading https://files.pythonhosted.org/packages/9f/64/4a3643f61b15dbfec1cab0172f4bdae1d45e1ab3cd73bb0600978d5e4e5a/deepspeed-0.9.3.tar.gz
+[2023-06-03 00:15:06] INFO root fetch - processPackages [pyvariant]: executing diffoscope
+[2023-06-03 00:15:06] INFO root fetch - processPackages [pyvariant]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyvariant-2.2.0.tar.gz tmp/pyvariant-2.2.1.tar.gz --markdown 20230603/p/pyvariant/2.2.0-2.2.1/diff.md --exclude *.pyd
+[2023-06-03 00:15:06] INFO root fetch - processPackages [gpytorch]: Downloading https://files.pythonhosted.org/packages/af/23/9683f34e84d79d5ec564548bb6c4f88e107f1a6687ea8b1615d98cfbdfcb/gpytorch-1.9.1.tar.gz
+[2023-06-03 00:15:06] INFO root fetch - processPackages [cdk-organizer]: executing diffoscope
+[2023-06-03 00:15:06] INFO root fetch - processPackages [cdk-organizer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk_organizer-1.4.0.tar.gz tmp/cdk_organizer-1.5.0.tar.gz --markdown 20230603/c/cdk-organizer/1.4.0-1.5.0/diff.md --exclude *.pyd
+[2023-06-03 00:15:06] INFO root fetch - processPackages [deepspeed]: executing diffoscope
+[2023-06-03 00:15:06] INFO root fetch - processPackages [deepspeed]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/deepspeed-0.9.2.tar.gz tmp/deepspeed-0.9.3.tar.gz --markdown 20230603/d/deepspeed/0.9.2-0.9.3/diff.md --exclude *.pyd
+[2023-06-03 00:15:06] INFO root fetch - processPackages [nbvv]: Downloading https://files.pythonhosted.org/packages/16/92/7e514e2910cd7a5561803165a0230bf134776555e1b59efa586e2c130dd5/nbvv-1.6.0.tar.gz
+[2023-06-03 00:15:06] WARNING root fetch - processPackages [nbvv]: Skipping package: exceeds size limit 47847646>=10485760
+[2023-06-03 00:15:06] INFO root fetch - main [MainThread]: End processing [nbvv] error
+[2023-06-03 00:15:06] INFO root fetch - processPackages [gpytorch]: executing diffoscope
+[2023-06-03 00:15:06] INFO root fetch - processPackages [gpytorch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gpytorch-1.9.0.tar.gz tmp/gpytorch-1.9.1.tar.gz --markdown 20230603/g/gpytorch/1.9.0-1.9.1/diff.md --exclude *.pyd
+[2023-06-03 00:15:07] INFO root fetch - main [MainThread]: End processing [energyplus-python-apps]: success
+[2023-06-03 00:15:08] INFO root fetch - main [MainThread]: End processing [cdk-organizer]: success
+[2023-06-03 00:15:08] INFO root fetch - main [MainThread]: End processing [mesmerize-core]: success
+[2023-06-03 00:15:08] INFO root fetch - main [MainThread]: End processing [pyvariant]: success
+[2023-06-03 00:15:08] INFO root fetch - main [MainThread]: End processing [dcnum]: success
+[2023-06-03 00:15:11] INFO root fetch - main [MainThread]: End processing [gpytorch]: success
+[2023-06-03 00:15:13] INFO root fetch - main [MainThread]: End processing [deepspeed]: success
+[2023-06-03 00:15:13] INFO root fetch - main [MainThread]: Store serial: [18353744]
