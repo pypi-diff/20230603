@@ -696,3 +696,47 @@
 [2023-06-03 01:18:02] INFO root fetch - main [MainThread]: End processing [rapidfuzz]: success
 [2023-06-03 01:18:04] INFO root fetch - main [MainThread]: End processing [returnn]: success
 [2023-06-03 01:18:04] INFO root fetch - main [MainThread]: Store serial: [18354199]
+[2023-06-03 01:23:08] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18354199]
+[2023-06-03 01:23:12] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-06-03 01:23:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: kubernetes-stubs-elephant-fork
+[2023-06-03 01:23:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: strategais
+[2023-06-03 01:23:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: whisper-autosrt
+[2023-06-03 01:23:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pytest-watcher
+[2023-06-03 01:23:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: swegram
+[2023-06-03 01:23:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pyutils
+[2023-06-03 01:23:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: symgt
+[2023-06-03 01:23:13] INFO root fetch - processPackages [whisper-autosrt]: New version: [0.0.7] Old Version: [0.0.6]
+[2023-06-03 01:23:13] INFO root fetch - processPackages [kubernetes-stubs-elephant-fork]: New version: [9.0.1] Old Version: [9.0.0]
+[2023-06-03 01:23:13] INFO root fetch - processPackages [pytest-watcher]: New version: [0.3.0] Old Version: [0.2.6]
+[2023-06-03 01:23:13] INFO root fetch - processPackages [strategais]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-06-03 01:23:13] INFO root fetch - processPackages [swegram]: New version: [1.0.0.dev9] Old Version: [1.0.0.dev8]
+[2023-06-03 01:23:13] INFO root fetch - processPackages [pyutils]: New version: [0.0.1b9] Old Version: [0.0.1b8]
+[2023-06-03 01:23:13] INFO root fetch - processPackages [symgt]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-06-03 01:23:13] INFO root fetch - processPackages [swegram]: Downloading https://files.pythonhosted.org/packages/d7/bb/b958938fa5acf746699a745bc9ace5b5ef642c0442502ef3288235c80f2f/swegram-1.0.0.dev8-py3-none-any.whl
+[2023-06-03 01:23:13] INFO root fetch - processPackages [kubernetes-stubs-elephant-fork]: executing diffoscope
+[2023-06-03 01:23:13] INFO root fetch - processPackages [kubernetes-stubs-elephant-fork]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kubernetes-stubs-elephant-fork-9.0.0.tar.gz tmp/kubernetes-stubs-elephant-fork-9.0.1.tar.gz --markdown 20230603/k/kubernetes-stubs-elephant-fork/9.0.0-9.0.1/diff.md --exclude *.pyd
+[2023-06-03 01:23:13] WARNING root fetch - processPackages [swegram]: Skipping package: exceeds size limit 58856995>=10485760
+[2023-06-03 01:23:13] INFO root fetch - main [MainThread]: End processing [swegram] error
+[2023-06-03 01:23:13] INFO root fetch - processPackages [strategais]: executing diffoscope
+[2023-06-03 01:23:13] INFO root fetch - processPackages [strategais]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/strategais-0.2.8.tar.gz tmp/strategais-0.2.9.tar.gz --markdown 20230603/s/strategais/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2023-06-03 01:23:13] INFO root fetch - processPackages [pytest-watcher]: Downloading https://files.pythonhosted.org/packages/b3/bb/d5c63f8827dbaa9d122e33d6c0f34007a55ca0e940a868cd1917eb6a0668/pytest-watcher-0.2.6.tar.gz
+[2023-06-03 01:23:13] INFO root fetch - processPackages [pyutils]: Downloading https://files.pythonhosted.org/packages/27/50/3ae892a4bd4fcdaa42f4a04d9bd0076733357c659cf7c794bdc24883d3cf/pyutils-0.0.1b8-py3-none-any.whl
+[2023-06-03 01:23:13] INFO root fetch - processPackages [whisper-autosrt]: Downloading https://files.pythonhosted.org/packages/c2/15/1c0412bd686552927ce326cbb9dc19ff6f354ee33d245e38d02d2271ebef/whisper_autosrt-0.0.7.tar.gz
+[2023-06-03 01:23:13] INFO root fetch - processPackages [pytest-watcher]: Downloading https://files.pythonhosted.org/packages/ef/cb/67985e271d8bba8b92ed8d41fa2d05672f2a7878a5d762dc0484376858cf/pytest-watcher-0.3.0.tar.gz
+[2023-06-03 01:23:13] INFO root fetch - processPackages [whisper-autosrt]: executing diffoscope
+[2023-06-03 01:23:13] INFO root fetch - processPackages [whisper-autosrt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/whisper_autosrt-0.0.6.tar.gz tmp/whisper_autosrt-0.0.7.tar.gz --markdown 20230603/w/whisper-autosrt/0.0.6-0.0.7/diff.md --exclude *.pyd
+[2023-06-03 01:23:13] INFO root fetch - processPackages [symgt]: Downloading https://files.pythonhosted.org/packages/70/6f/b0394529e1985b4fadce34ae7b67785fe673a9fd35698515ca1e65e72af4/symgt-0.0.9.tar.gz
+[2023-06-03 01:23:13] INFO root fetch - processPackages [pytest-watcher]: executing diffoscope
+[2023-06-03 01:23:13] INFO root fetch - processPackages [pytest-watcher]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytest-watcher-0.2.6.tar.gz tmp/pytest-watcher-0.3.0.tar.gz --markdown 20230603/p/pytest-watcher/0.2.6-0.3.0/diff.md --exclude *.pyd
+[2023-06-03 01:23:13] INFO root fetch - processPackages [symgt]: executing diffoscope
+[2023-06-03 01:23:13] INFO root fetch - processPackages [symgt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/symgt-0.0.8.tar.gz tmp/symgt-0.0.9.tar.gz --markdown 20230603/s/symgt/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-06-03 01:23:14] INFO root fetch - processPackages [pyutils]: Downloading https://files.pythonhosted.org/packages/c8/9a/0d17bafc8102fc91fad611435c794bf7de1fd2751d1710ad8a41f99a4da1/pyutils-0.0.1b9-py3-none-any.whl
+[2023-06-03 01:23:14] INFO root fetch - main [MainThread]: End processing [strategais]: success
+[2023-06-03 01:23:14] INFO root fetch - main [MainThread]: End processing [pytest-watcher]: success
+[2023-06-03 01:23:14] INFO root fetch - processPackages [pyutils]: executing diffoscope
+[2023-06-03 01:23:14] INFO root fetch - processPackages [pyutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyutils-0.0.1b8-py3-none-any.whl.zip tmp/pyutils-0.0.1b9-py3-none-any.whl.zip --markdown 20230603/p/pyutils/0.0.1b8-0.0.1b9/diff.md --exclude *.pyd
+[2023-06-03 01:23:15] INFO root fetch - main [MainThread]: End processing [whisper-autosrt]: success
+[2023-06-03 01:23:16] INFO root fetch - main [MainThread]: End processing [pyutils]: success
+[2023-06-03 01:23:18] INFO root fetch - main [MainThread]: End processing [kubernetes-stubs-elephant-fork]: success
+[2023-06-03 01:23:28] INFO root fetch - main [MainThread]: End processing [symgt]: success
+[2023-06-03 01:23:28] INFO root fetch - main [MainThread]: Store serial: [18354228]
