@@ -456,3 +456,70 @@
 [2023-06-03 00:50:59] ERROR root fetch - processPackages [rising-plugin]: Timeout during execution of pkgdiff
 [2023-06-03 00:50:59] INFO root fetch - main [MainThread]: End processing [rising-plugin] error
 [2023-06-03 00:50:59] INFO root fetch - main [MainThread]: Store serial: [18353985]
+[2023-06-03 00:56:03] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18353985]
+[2023-06-03 00:56:08] INFO root fetch - main [MainThread]: Found 12 changed packages
+[2023-06-03 00:56:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: andromeda-chain
+[2023-06-03 00:56:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: liveports
+[2023-06-03 00:56:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ofscraper
+[2023-06-03 00:56:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: msticpy
+[2023-06-03 00:56:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: act4e-mcdp
+[2023-06-03 00:56:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pyAutoSummarizer
+[2023-06-03 00:56:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: strategais
+[2023-06-03 00:56:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: fashion-clip
+[2023-06-03 00:56:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: easel-cli
+[2023-06-03 00:56:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: desc-stats
+[2023-06-03 00:56:08] INFO root fetch - processPackages [act4e-mcdp]: New version: [0.6.9] Old Version: [0.6.8]
+[2023-06-03 00:56:08] INFO root fetch - processPackages [liveports]: New version: [0.1.4] Old Version: [0.1.3]
+[2023-06-03 00:56:08] WARNING root fetch - processPackages [desc-stats]: Skipping, unable to determine old version
+[2023-06-03 00:56:08] INFO root fetch - processPackages [desc-stats]: Start processing: nbvv
+[2023-06-03 00:56:08] INFO root fetch - main [MainThread]: End processing [desc-stats] error
+[2023-06-03 00:56:08] INFO root fetch - processPackages [pyAutoSummarizer]: New version: [1.0.8] Old Version: [1.0.4]
+[2023-06-03 00:56:08] INFO root fetch - processPackages [andromeda-chain]: New version: [0.2a1] Old Version: [0.2a0]
+[2023-06-03 00:56:08] INFO root fetch - processPackages [easel-cli]: New version: [1.1.0] Old Version: [1.0.5]
+[2023-06-03 00:56:08] INFO root fetch - processPackages [fashion-clip]: New version: [0.2.1] Old Version: [0.2.0]
+[2023-06-03 00:56:08] INFO root fetch - processPackages [strategais]: New version: [0.2.8] Old Version: [0.2.7]
+[2023-06-03 00:56:08] INFO root fetch - processPackages [ofscraper]: New version: [2.2] Old Version: [2.1]
+[2023-06-03 00:56:09] INFO root fetch - processPackages [msticpy]: New version: [2.5.1] Old Version: [2.5.0]
+[2023-06-03 00:56:09] INFO root fetch - processPackages [nbvv]: New version: [1.6.1] Old Version: [1.6.0]
+[2023-06-03 00:56:09] INFO root fetch - processPackages [nbvv]: Downloading https://files.pythonhosted.org/packages/16/92/7e514e2910cd7a5561803165a0230bf134776555e1b59efa586e2c130dd5/nbvv-1.6.0.tar.gz
+[2023-06-03 00:56:09] INFO root fetch - processPackages [act4e-mcdp]: executing diffoscope
+[2023-06-03 00:56:09] INFO root fetch - processPackages [act4e-mcdp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/act4e_mcdp-0.6.8-py3-none-any.whl.zip tmp/act4e_mcdp-0.6.9-py3-none-any.whl.zip --markdown 20230603/a/act4e-mcdp/0.6.8-0.6.9/diff.md --exclude *.pyd
+[2023-06-03 00:56:09] WARNING root fetch - processPackages [nbvv]: Skipping package: exceeds size limit 47847646>=10485760
+[2023-06-03 00:56:09] INFO root fetch - processPackages [nbvv]: Start processing: igrade
+[2023-06-03 00:56:09] INFO root fetch - main [MainThread]: End processing [nbvv] error
+[2023-06-03 00:56:09] WARNING root fetch - processPackages [igrade]: Skipping, unable to determine old version
+[2023-06-03 00:56:09] INFO root fetch - main [MainThread]: End processing [igrade] error
+[2023-06-03 00:56:09] INFO root fetch - processPackages [fashion-clip]: Downloading https://files.pythonhosted.org/packages/e8/4c/37ddcd2bf459857addaf95c76f6ebcbd7fce55868f9223c7acda919ba427/fashion-clip-0.2.1.tar.gz
+[2023-06-03 00:56:09] INFO root fetch - processPackages [pyAutoSummarizer]: Downloading https://files.pythonhosted.org/packages/b8/fb/692bd2635b5ea98ad973a7c72c760e32fc5805bcd241ea15612f77365072/pyAutoSummarizer-1.0.8.tar.gz
+[2023-06-03 00:56:09] INFO root fetch - processPackages [easel-cli]: Downloading https://files.pythonhosted.org/packages/0d/9b/825bba55d7d474a17caed53a82c034da740692cc134cee72aa0eca4cdaeb/easel-cli-1.0.5.tar.gz
+[2023-06-03 00:56:09] INFO root fetch - processPackages [strategais]: Downloading https://files.pythonhosted.org/packages/69/41/16d9490f107b19f9b80196b42b68baab344b37d51e54036a9bd2e7dea8cc/strategais-0.2.8.tar.gz
+[2023-06-03 00:56:09] INFO root fetch - processPackages [fashion-clip]: executing diffoscope
+[2023-06-03 00:56:09] INFO root fetch - processPackages [fashion-clip]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fashion-clip-0.2.0.tar.gz tmp/fashion-clip-0.2.1.tar.gz --markdown 20230603/f/fashion-clip/0.2.0-0.2.1/diff.md --exclude *.pyd
+[2023-06-03 00:56:09] INFO root fetch - processPackages [liveports]: Downloading https://files.pythonhosted.org/packages/fa/01/0bdb3b4650d02a011ceeec8073bcc0257c05a33a2d598df20b4f380a2f3a/liveports-0.1.4.tar.gz
+[2023-06-03 00:56:09] INFO root fetch - processPackages [andromeda-chain]: executing diffoscope
+[2023-06-03 00:56:09] INFO root fetch - processPackages [andromeda-chain]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/andromeda-chain-0.2a0.tar.gz tmp/andromeda-chain-0.2a1.tar.gz --markdown 20230603/a/andromeda-chain/0.2a0-0.2a1/diff.md --exclude *.pyd
+[2023-06-03 00:56:09] INFO root fetch - processPackages [pyAutoSummarizer]: executing diffoscope
+[2023-06-03 00:56:09] INFO root fetch - processPackages [pyAutoSummarizer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyAutoSummarizer-1.0.4.tar.gz tmp/pyAutoSummarizer-1.0.8.tar.gz --markdown 20230603/p/pyAutoSummarizer/1.0.4-1.0.8/diff.md --exclude *.pyd
+[2023-06-03 00:56:09] INFO root fetch - processPackages [ofscraper]: Downloading https://files.pythonhosted.org/packages/5f/11/503e2b2401035a1856bee109f21911e4de69a7fddfabb1d1e3f3878cad22/ofscraper-2.2.tar.gz
+[2023-06-03 00:56:09] INFO root fetch - processPackages [strategais]: executing diffoscope
+[2023-06-03 00:56:09] INFO root fetch - processPackages [strategais]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/strategais-0.2.7.tar.gz tmp/strategais-0.2.8.tar.gz --markdown 20230603/s/strategais/0.2.7-0.2.8/diff.md --exclude *.pyd
+[2023-06-03 00:56:09] INFO root fetch - processPackages [msticpy]: Downloading https://files.pythonhosted.org/packages/87/2b/0633c4bdec4a9464fbcbddba029867f9add0627f70ece979023fd6c25715/msticpy-2.5.1.tar.gz
+[2023-06-03 00:56:09] INFO root fetch - processPackages [ofscraper]: executing diffoscope
+[2023-06-03 00:56:09] INFO root fetch - processPackages [ofscraper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ofscraper-2.1.tar.gz tmp/ofscraper-2.2.tar.gz --markdown 20230603/o/ofscraper/2.1-2.2/diff.md --exclude *.pyd
+[2023-06-03 00:56:09] INFO root fetch - processPackages [easel-cli]: Downloading https://files.pythonhosted.org/packages/8e/07/847e7f98a00003daa3b8ce39523ad3fb010a840cd68d44df729b55f21963/easel-cli-1.1.0.tar.gz
+[2023-06-03 00:56:09] INFO root fetch - processPackages [liveports]: executing diffoscope
+[2023-06-03 00:56:09] INFO root fetch - processPackages [liveports]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/liveports-0.1.3.tar.gz tmp/liveports-0.1.4.tar.gz --markdown 20230603/l/liveports/0.1.3-0.1.4/diff.md --exclude *.pyd
+[2023-06-03 00:56:09] INFO root fetch - processPackages [msticpy]: executing diffoscope
+[2023-06-03 00:56:09] INFO root fetch - processPackages [msticpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/msticpy-2.5.0.tar.gz tmp/msticpy-2.5.1.tar.gz --markdown 20230603/m/msticpy/2.5.0-2.5.1/diff.md --exclude *.pyd
+[2023-06-03 00:56:09] INFO root fetch - processPackages [easel-cli]: executing diffoscope
+[2023-06-03 00:56:09] INFO root fetch - processPackages [easel-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/easel-cli-1.0.5.tar.gz tmp/easel-cli-1.1.0.tar.gz --markdown 20230603/e/easel-cli/1.0.5-1.1.0/diff.md --exclude *.pyd
+[2023-06-03 00:56:10] INFO root fetch - main [MainThread]: End processing [andromeda-chain]: success
+[2023-06-03 00:56:10] INFO root fetch - main [MainThread]: End processing [liveports]: success
+[2023-06-03 00:56:10] INFO root fetch - main [MainThread]: End processing [fashion-clip]: success
+[2023-06-03 00:56:10] INFO root fetch - main [MainThread]: End processing [strategais]: success
+[2023-06-03 00:56:11] INFO root fetch - main [MainThread]: End processing [easel-cli]: success
+[2023-06-03 00:56:11] INFO root fetch - main [MainThread]: End processing [ofscraper]: success
+[2023-06-03 00:56:13] INFO root fetch - main [MainThread]: End processing [act4e-mcdp]: success
+[2023-06-03 00:56:15] INFO root fetch - main [MainThread]: End processing [msticpy]: success
+[2023-06-03 00:57:03] INFO root fetch - main [MainThread]: End processing [pyAutoSummarizer]: success
+[2023-06-03 00:57:03] INFO root fetch - main [MainThread]: Store serial: [18354022]
