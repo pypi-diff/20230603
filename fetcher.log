@@ -784,3 +784,39 @@
 [2023-06-03 01:28:39] INFO root fetch - main [MainThread]: End processing [tjax]: success
 [2023-06-03 01:28:39] INFO root fetch - main [MainThread]: End processing [efax]: success
 [2023-06-03 01:28:39] INFO root fetch - main [MainThread]: Store serial: [18354251]
+[2023-06-03 01:33:42] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18354251]
+[2023-06-03 01:33:47] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-06-03 01:33:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: np-vba
+[2023-06-03 01:33:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ThreadsCount
+[2023-06-03 01:33:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: bondzai.media-handler
+[2023-06-03 01:33:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: tapipy
+[2023-06-03 01:33:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: odoo-addon-account-invoice-margin
+[2023-06-03 01:33:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: strategais
+[2023-06-03 01:33:47] INFO root fetch - processPackages [odoo-addon-account-invoice-margin]: New version: [16.0.1.0.0.2] Old Version: [15.0.1.0.1]
+[2023-06-03 01:33:47] INFO root fetch - processPackages [strategais]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-06-03 01:33:48] INFO root fetch - processPackages [np-vba]: New version: [0.13.2] Old Version: [0.13.1]
+[2023-06-03 01:33:48] INFO root fetch - processPackages [bondzai.media-handler]: New version: [0.0.11] Old Version: [0.0.10]
+[2023-06-03 01:33:48] WARNING root fetch - processPackages [ThreadsCount]: Skipping, unable to determine old version
+[2023-06-03 01:33:48] INFO root fetch - main [MainThread]: End processing [ThreadsCount] error
+[2023-06-03 01:33:48] INFO root fetch - processPackages [tapipy]: New version: [1.4.0a2] Old Version: [1.4.0a1]
+[2023-06-03 01:33:48] INFO root fetch - processPackages [strategais]: executing diffoscope
+[2023-06-03 01:33:48] INFO root fetch - processPackages [strategais]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/strategais-0.2.8.tar.gz tmp/strategais-0.2.9.tar.gz --markdown 20230603/s/strategais/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2023-06-03 01:33:48] INFO root fetch - processPackages [np-vba]: Downloading https://files.pythonhosted.org/packages/df/e0/44a1d32a8140fa6c7065a1190e76e23df4b187a9044532f9baaba07debb3/np_vba-0.13.1.tar.gz
+[2023-06-03 01:33:48] INFO root fetch - processPackages [odoo-addon-account-invoice-margin]: Downloading https://files.pythonhosted.org/packages/c0/50/deb81e790cccc08c85132277d9720addfa779423c65d171ad41be7da1ce5/odoo_addon_account_invoice_margin-15.0.1.0.1-py3-none-any.whl
+[2023-06-03 01:33:48] INFO root fetch - processPackages [bondzai.media-handler]: Downloading https://files.pythonhosted.org/packages/dd/e1/e25c6c79d3249140c9937ca9d011113e91e60df14859354c455246839355/bondzai.media-handler-0.0.10.tar.gz
+[2023-06-03 01:33:48] INFO root fetch - processPackages [tapipy]: Downloading https://files.pythonhosted.org/packages/bc/25/dfe15162993b57f41f5dc8dfb8cc8ffd8b2b4dac98718566aa2e193801eb/tapipy-1.4.0a2.tar.gz
+[2023-06-03 01:33:48] WARNING root fetch - processPackages [np-vba]: Skipping package: exceeds size limit 30134006>=10485760
+[2023-06-03 01:33:48] INFO root fetch - main [MainThread]: End processing [np-vba] error
+[2023-06-03 01:33:48] INFO root fetch - processPackages [tapipy]: executing diffoscope
+[2023-06-03 01:33:48] INFO root fetch - processPackages [tapipy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tapipy-1.4.0a1.tar.gz tmp/tapipy-1.4.0a2.tar.gz --markdown 20230603/t/tapipy/1.4.0a1-1.4.0a2/diff.md --exclude *.pyd
+[2023-06-03 01:33:48] INFO root fetch - processPackages [odoo-addon-account-invoice-margin]: Downloading https://files.pythonhosted.org/packages/9d/92/1a10eb12d1d1d7fe6662b92c4645454a2d3f4f425b5e836676191cbde03d/odoo_addon_account_invoice_margin-16.0.1.0.0.2-py3-none-any.whl
+[2023-06-03 01:33:48] INFO root fetch - processPackages [bondzai.media-handler]: Downloading https://files.pythonhosted.org/packages/bd/96/4b2036bec2962738cfffc73cb78e9a95c481537d16a40643db903d920a37/bondzai.media-handler-0.0.11.tar.gz
+[2023-06-03 01:33:48] INFO root fetch - processPackages [odoo-addon-account-invoice-margin]: executing diffoscope
+[2023-06-03 01:33:48] INFO root fetch - processPackages [odoo-addon-account-invoice-margin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_account_invoice_margin-15.0.1.0.1-py3-none-any.whl.zip tmp/odoo_addon_account_invoice_margin-16.0.1.0.0.2-py3-none-any.whl.zip --markdown 20230603/o/odoo-addon-account-invoice-margin/15.0.1.0.1-16.0.1.0.0.2/diff.md --exclude *.pyd
+[2023-06-03 01:33:48] INFO root fetch - processPackages [bondzai.media-handler]: executing diffoscope
+[2023-06-03 01:33:48] INFO root fetch - processPackages [bondzai.media-handler]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bondzai.media-handler-0.0.10.tar.gz tmp/bondzai.media-handler-0.0.11.tar.gz --markdown 20230603/b/bondzai.media-handler/0.0.10-0.0.11/diff.md --exclude *.pyd
+[2023-06-03 01:33:49] INFO root fetch - main [MainThread]: End processing [strategais]: success
+[2023-06-03 01:33:49] INFO root fetch - main [MainThread]: End processing [bondzai.media-handler]: success
+[2023-06-03 01:33:49] INFO root fetch - main [MainThread]: End processing [odoo-addon-account-invoice-margin]: success
+[2023-06-03 01:34:43] INFO root fetch - main [MainThread]: End processing [tapipy]: success
+[2023-06-03 01:34:43] INFO root fetch - main [MainThread]: Store serial: [18354266]
