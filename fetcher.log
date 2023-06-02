@@ -820,3 +820,54 @@
 [2023-06-03 01:33:49] INFO root fetch - main [MainThread]: End processing [odoo-addon-account-invoice-margin]: success
 [2023-06-03 01:34:43] INFO root fetch - main [MainThread]: End processing [tapipy]: success
 [2023-06-03 01:34:43] INFO root fetch - main [MainThread]: Store serial: [18354266]
+[2023-06-03 01:39:47] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18354266]
+[2023-06-03 01:39:52] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-06-03 01:39:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: strategais
+[2023-06-03 01:39:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: odoo-addon-sale-order-invoicing-grouping-criteria
+[2023-06-03 01:39:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: odoo-addon-account-payment-purchase-stock
+[2023-06-03 01:39:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: lixiang90sblog
+[2023-06-03 01:39:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: motion-python
+[2023-06-03 01:39:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: swegram
+[2023-06-03 01:39:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: tktermwidget
+[2023-06-03 01:39:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: cwsearch-utils
+[2023-06-03 01:39:52] INFO root fetch - processPackages [strategais]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-06-03 01:39:52] INFO root fetch - processPackages [odoo-addon-account-payment-purchase-stock]: New version: [16.0.1.0.0.2] Old Version: [15.0.1.0.0.5]
+[2023-06-03 01:39:52] INFO root fetch - processPackages [lixiang90sblog]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-06-03 01:39:52] INFO root fetch - processPackages [odoo-addon-sale-order-invoicing-grouping-criteria]: New version: [16.0.1.0.0.2] Old Version: [15.0.1.0.2]
+[2023-06-03 01:39:52] INFO root fetch - processPackages [swegram]: New version: [1.0.0.dev9] Old Version: [1.0.0.dev8]
+[2023-06-03 01:39:52] INFO root fetch - processPackages [cwsearch-utils]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-06-03 01:39:52] INFO root fetch - processPackages [motion-python]: New version: [0.1.53] Old Version: [0.1.52]
+[2023-06-03 01:39:52] INFO root fetch - processPackages [tktermwidget]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-06-03 01:39:52] INFO root fetch - processPackages [swegram]: Downloading https://files.pythonhosted.org/packages/d7/bb/b958938fa5acf746699a745bc9ace5b5ef642c0442502ef3288235c80f2f/swegram-1.0.0.dev8-py3-none-any.whl
+[2023-06-03 01:39:52] WARNING root fetch - processPackages [swegram]: Skipping package: exceeds size limit 58856995>=10485760
+[2023-06-03 01:39:52] INFO root fetch - main [MainThread]: End processing [swegram] error
+[2023-06-03 01:39:52] INFO root fetch - processPackages [cwsearch-utils]: executing diffoscope
+[2023-06-03 01:39:52] INFO root fetch - processPackages [cwsearch-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cwsearch_utils-0.1.8-py3-none-any.whl.zip tmp/cwsearch_utils-0.1.9-py3-none-any.whl.zip --markdown 20230603/c/cwsearch-utils/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-06-03 01:39:52] INFO root fetch - processPackages [odoo-addon-account-payment-purchase-stock]: Downloading https://files.pythonhosted.org/packages/e4/23/53a72b060db327e24d8f7e174f142723537c5a0c0f8ae1de94ee63f27339/odoo_addon_account_payment_purchase_stock-15.0.1.0.0.5-py3-none-any.whl
+[2023-06-03 01:39:52] INFO root fetch - processPackages [odoo-addon-sale-order-invoicing-grouping-criteria]: Downloading https://files.pythonhosted.org/packages/c7/44/53bbe095c764b18901ede7bf4bc81735183790b4fdc1cd22dafc941a1fc8/odoo_addon_sale_order_invoicing_grouping_criteria-15.0.1.0.2-py3-none-any.whl
+[2023-06-03 01:39:52] INFO root fetch - processPackages [lixiang90sblog]: Downloading https://files.pythonhosted.org/packages/b2/5b/a39bac7537249d63e8aa09287374d3a280c5cc7ebe27fbccd10f288e3514/lixiang90sblog-0.1.1.tar.gz
+[2023-06-03 01:39:52] INFO root fetch - processPackages [tktermwidget]: Downloading https://files.pythonhosted.org/packages/98/ec/8efd7022229cfac3f6254f8d16e126630a18831fabb77cbd9afac20482a8/tktermwidget-0.0.1.tar.gz
+[2023-06-03 01:39:52] INFO root fetch - processPackages [strategais]: executing diffoscope
+[2023-06-03 01:39:52] INFO root fetch - processPackages [strategais]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/strategais-0.2.8.tar.gz tmp/strategais-0.2.9.tar.gz --markdown 20230603/s/strategais/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2023-06-03 01:39:52] INFO root fetch - processPackages [motion-python]: Downloading https://files.pythonhosted.org/packages/21/81/3dcc63a0dd0d5561f54761018c9419956cf4c0fc3b78d2204a159d7634c2/motion_python-0.1.53.tar.gz
+[2023-06-03 01:39:52] INFO root fetch - processPackages [lixiang90sblog]: executing diffoscope
+[2023-06-03 01:39:52] INFO root fetch - processPackages [lixiang90sblog]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lixiang90sblog-0.1.0.tar.gz tmp/lixiang90sblog-0.1.1.tar.gz --markdown 20230603/l/lixiang90sblog/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-06-03 01:39:52] INFO root fetch - processPackages [motion-python]: executing diffoscope
+[2023-06-03 01:39:52] INFO root fetch - processPackages [motion-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/motion_python-0.1.52.tar.gz tmp/motion_python-0.1.53.tar.gz --markdown 20230603/m/motion-python/0.1.52-0.1.53/diff.md --exclude *.pyd
+[2023-06-03 01:39:52] INFO root fetch - processPackages [odoo-addon-account-payment-purchase-stock]: Downloading https://files.pythonhosted.org/packages/2a/ba/b6e6b016600592111df2625d57fe9c8757e1c7e4e0af30896222e421276c/odoo_addon_account_payment_purchase_stock-16.0.1.0.0.2-py3-none-any.whl
+[2023-06-03 01:39:52] INFO root fetch - processPackages [odoo-addon-sale-order-invoicing-grouping-criteria]: Downloading https://files.pythonhosted.org/packages/09/6e/f58e891f8c166b7b71b930a8b4032e092813b51fda26786109fd533db0f8/odoo_addon_sale_order_invoicing_grouping_criteria-16.0.1.0.0.2-py3-none-any.whl
+[2023-06-03 01:39:52] INFO root fetch - processPackages [tktermwidget]: Downloading https://files.pythonhosted.org/packages/b1/d3/9a96413290a69eff6b7c40de81648586c89a628e51487a57a4d988359490/tktermwidget-0.0.2.tar.gz
+[2023-06-03 01:39:53] INFO root fetch - processPackages [odoo-addon-account-payment-purchase-stock]: executing diffoscope
+[2023-06-03 01:39:53] INFO root fetch - processPackages [odoo-addon-account-payment-purchase-stock]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_account_payment_purchase_stock-15.0.1.0.0.5-py3-none-any.whl.zip tmp/odoo_addon_account_payment_purchase_stock-16.0.1.0.0.2-py3-none-any.whl.zip --markdown 20230603/o/odoo-addon-account-payment-purchase-stock/15.0.1.0.0.5-16.0.1.0.0.2/diff.md --exclude *.pyd
+[2023-06-03 01:39:53] INFO root fetch - processPackages [odoo-addon-sale-order-invoicing-grouping-criteria]: executing diffoscope
+[2023-06-03 01:39:53] INFO root fetch - processPackages [odoo-addon-sale-order-invoicing-grouping-criteria]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_sale_order_invoicing_grouping_criteria-15.0.1.0.2-py3-none-any.whl.zip tmp/odoo_addon_sale_order_invoicing_grouping_criteria-16.0.1.0.0.2-py3-none-any.whl.zip --markdown 20230603/o/odoo-addon-sale-order-invoicing-grouping-criteria/15.0.1.0.2-16.0.1.0.0.2/diff.md --exclude *.pyd
+[2023-06-03 01:39:53] INFO root fetch - processPackages [tktermwidget]: executing diffoscope
+[2023-06-03 01:39:53] INFO root fetch - processPackages [tktermwidget]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tktermwidget-0.0.1.tar.gz tmp/tktermwidget-0.0.2.tar.gz --markdown 20230603/t/tktermwidget/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-06-03 01:39:53] INFO root fetch - main [MainThread]: End processing [cwsearch-utils]: success
+[2023-06-03 01:39:53] INFO root fetch - main [MainThread]: End processing [strategais]: success
+[2023-06-03 01:39:54] INFO root fetch - main [MainThread]: End processing [lixiang90sblog]: success
+[2023-06-03 01:39:54] INFO root fetch - main [MainThread]: End processing [motion-python]: success
+[2023-06-03 01:39:54] INFO root fetch - main [MainThread]: End processing [odoo-addon-account-payment-purchase-stock]: success
+[2023-06-03 01:39:54] INFO root fetch - main [MainThread]: End processing [tktermwidget]: success
+[2023-06-03 01:39:54] INFO root fetch - main [MainThread]: End processing [odoo-addon-sale-order-invoicing-grouping-criteria]: success
+[2023-06-03 01:39:54] INFO root fetch - main [MainThread]: Store serial: [18354288]
