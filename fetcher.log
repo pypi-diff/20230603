@@ -740,3 +740,47 @@
 [2023-06-03 01:23:18] INFO root fetch - main [MainThread]: End processing [kubernetes-stubs-elephant-fork]: success
 [2023-06-03 01:23:28] INFO root fetch - main [MainThread]: End processing [symgt]: success
 [2023-06-03 01:23:28] INFO root fetch - main [MainThread]: Store serial: [18354228]
+[2023-06-03 01:28:32] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18354228]
+[2023-06-03 01:28:37] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-06-03 01:28:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tjax
+[2023-06-03 01:28:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: wpiformat
+[2023-06-03 01:28:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: gitio-app
+[2023-06-03 01:28:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: lixiang90sblog
+[2023-06-03 01:28:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: swegram
+[2023-06-03 01:28:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: nbvv
+[2023-06-03 01:28:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: pyzm
+[2023-06-03 01:28:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: efax
+[2023-06-03 01:28:37] INFO root fetch - processPackages [wpiformat]: New version: [2023.18] Old Version: [2023.17]
+[2023-06-03 01:28:37] INFO root fetch - processPackages [lixiang90sblog]: New version: [0.1.0] Old Version: [0.0.3]
+[2023-06-03 01:28:37] WARNING root fetch - processPackages [gitio-app]: Skipping, unable to determine old version
+[2023-06-03 01:28:37] INFO root fetch - main [MainThread]: End processing [gitio-app] error
+[2023-06-03 01:28:37] INFO root fetch - processPackages [tjax]: New version: [0.9.0] Old Version: [0.8.4]
+[2023-06-03 01:28:37] INFO root fetch - processPackages [nbvv]: New version: [1.6.2] Old Version: [1.6.1]
+[2023-06-03 01:28:37] INFO root fetch - processPackages [swegram]: New version: [1.0.0.dev9] Old Version: [1.0.0.dev8]
+[2023-06-03 01:28:37] INFO root fetch - processPackages [pyzm]: New version: [0.3.9] Old Version: [0.3.8]
+[2023-06-03 01:28:37] INFO root fetch - processPackages [swegram]: Downloading https://files.pythonhosted.org/packages/d7/bb/b958938fa5acf746699a745bc9ace5b5ef642c0442502ef3288235c80f2f/swegram-1.0.0.dev8-py3-none-any.whl
+[2023-06-03 01:28:37] INFO root fetch - processPackages [efax]: New version: [1.9.1] Old Version: [1.9.0]
+[2023-06-03 01:28:37] INFO root fetch - processPackages [pyzm]: executing diffoscope
+[2023-06-03 01:28:37] INFO root fetch - processPackages [pyzm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyzm-0.3.8.tar.gz tmp/pyzm-0.3.9.tar.gz --markdown 20230603/p/pyzm/0.3.8-0.3.9/diff.md --exclude *.pyd
+[2023-06-03 01:28:37] WARNING root fetch - processPackages [swegram]: Skipping package: exceeds size limit 58856995>=10485760
+[2023-06-03 01:28:37] INFO root fetch - main [MainThread]: End processing [swegram] error
+[2023-06-03 01:28:37] INFO root fetch - processPackages [lixiang90sblog]: Downloading https://files.pythonhosted.org/packages/05/eb/507e8c058d95638ff0e27be7b4e692209adff14a6285adaa626a75425eff/lixiang90sblog-0.0.3.tar.gz
+[2023-06-03 01:28:37] INFO root fetch - processPackages [nbvv]: Downloading https://files.pythonhosted.org/packages/29/e2/9c14470e464aff843aa01442a4080e42c69e2057625656fd2d5306fa538c/nbvv-1.6.1.tar.gz
+[2023-06-03 01:28:37] INFO root fetch - processPackages [wpiformat]: Downloading https://files.pythonhosted.org/packages/3e/f8/7297ff7c750978c266b7ddb00d5ebeff3ffb3d168ffdb56a804e876869dd/wpiformat-2023.18-py3-none-any.whl
+[2023-06-03 01:28:37] WARNING root fetch - processPackages [nbvv]: Skipping package: exceeds size limit 47769946>=10485760
+[2023-06-03 01:28:37] INFO root fetch - main [MainThread]: End processing [nbvv] error
+[2023-06-03 01:28:37] INFO root fetch - processPackages [lixiang90sblog]: Downloading https://files.pythonhosted.org/packages/40/b3/d2ba105833c204e402c3208aedf8f4de3da3a1bb4b6115256779295f13dd/lixiang90sblog-0.1.0.tar.gz
+[2023-06-03 01:28:37] INFO root fetch - processPackages [tjax]: executing diffoscope
+[2023-06-03 01:28:37] INFO root fetch - processPackages [tjax]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tjax-0.8.4.tar.gz tmp/tjax-0.9.0.tar.gz --markdown 20230603/t/tjax/0.8.4-0.9.0/diff.md --exclude *.pyd
+[2023-06-03 01:28:37] INFO root fetch - processPackages [wpiformat]: executing diffoscope
+[2023-06-03 01:28:37] INFO root fetch - processPackages [wpiformat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wpiformat-2023.17-py3-none-any.whl.zip tmp/wpiformat-2023.18-py3-none-any.whl.zip --markdown 20230603/w/wpiformat/2023.17-2023.18/diff.md --exclude *.pyd
+[2023-06-03 01:28:37] INFO root fetch - processPackages [efax]: executing diffoscope
+[2023-06-03 01:28:37] INFO root fetch - processPackages [efax]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/efax-1.9.0.tar.gz tmp/efax-1.9.1.tar.gz --markdown 20230603/e/efax/1.9.0-1.9.1/diff.md --exclude *.pyd
+[2023-06-03 01:28:37] INFO root fetch - processPackages [lixiang90sblog]: executing diffoscope
+[2023-06-03 01:28:37] INFO root fetch - processPackages [lixiang90sblog]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lixiang90sblog-0.0.3.tar.gz tmp/lixiang90sblog-0.1.0.tar.gz --markdown 20230603/l/lixiang90sblog/0.0.3-0.1.0/diff.md --exclude *.pyd
+[2023-06-03 01:28:38] INFO root fetch - main [MainThread]: End processing [pyzm]: success
+[2023-06-03 01:28:38] INFO root fetch - main [MainThread]: End processing [lixiang90sblog]: success
+[2023-06-03 01:28:39] INFO root fetch - main [MainThread]: End processing [wpiformat]: success
+[2023-06-03 01:28:39] INFO root fetch - main [MainThread]: End processing [tjax]: success
+[2023-06-03 01:28:39] INFO root fetch - main [MainThread]: End processing [efax]: success
+[2023-06-03 01:28:39] INFO root fetch - main [MainThread]: Store serial: [18354251]
