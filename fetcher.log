@@ -523,3 +523,44 @@
 [2023-06-03 00:56:15] INFO root fetch - main [MainThread]: End processing [msticpy]: success
 [2023-06-03 00:57:03] INFO root fetch - main [MainThread]: End processing [pyAutoSummarizer]: success
 [2023-06-03 00:57:03] INFO root fetch - main [MainThread]: Store serial: [18354022]
+[2023-06-03 01:02:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18354022]
+[2023-06-03 01:02:12] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-06-03 01:02:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyzm
+[2023-06-03 01:02:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyrgbd
+[2023-06-03 01:02:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: dysweep
+[2023-06-03 01:02:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: rendersrt
+[2023-06-03 01:02:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: amazon-textract-idp-cdk-constructs
+[2023-06-03 01:02:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: supermorecado
+[2023-06-03 01:02:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: tmnt-cu101
+[2023-06-03 01:02:12] INFO root fetch - processPackages [dysweep]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-06-03 01:02:12] INFO root fetch - processPackages [pyrgbd]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-06-03 01:02:12] INFO root fetch - processPackages [amazon-textract-idp-cdk-constructs]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-06-03 01:02:12] INFO root fetch - processPackages [rendersrt]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-06-03 01:02:12] WARNING root fetch - processPackages [supermorecado]: Skipping, unable to determine old version
+[2023-06-03 01:02:12] INFO root fetch - main [MainThread]: End processing [supermorecado] error
+[2023-06-03 01:02:12] INFO root fetch - processPackages [pyzm]: New version: [0.3.9] Old Version: [0.3.8]
+[2023-06-03 01:02:12] INFO root fetch - processPackages [tmnt-cu101]: New version: [0.7.0b20230601] Old Version: [0.7.0b20230531]
+[2023-06-03 01:02:12] INFO root fetch - processPackages [pyrgbd]: Downloading https://files.pythonhosted.org/packages/56/f5/652727c86f57734dfb09d6b8c38a9d74967052fe32ec151a6e73761bfd55/pyrgbd-0.1.1-cp39-cp39-manylinux_2_28_x86_64.whl
+[2023-06-03 01:02:12] INFO root fetch - processPackages [rendersrt]: Downloading https://files.pythonhosted.org/packages/67/04/34deba632bc4d247c40f3e3f15fbc6f2a278d760d347f1bfe74be0857ff0/rendersrt-0.0.2.tar.gz
+[2023-06-03 01:02:12] INFO root fetch - processPackages [tmnt-cu101]: executing diffoscope
+[2023-06-03 01:02:12] INFO root fetch - processPackages [tmnt-cu101]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tmnt-cu101-0.7.0b20230531.tar.gz tmp/tmnt-cu101-0.7.0b20230601.tar.gz --markdown 20230603/t/tmnt-cu101/0.7.0b20230531-0.7.0b20230601/diff.md --exclude *.pyd
+[2023-06-03 01:02:12] INFO root fetch - processPackages [pyzm]: Downloading https://files.pythonhosted.org/packages/c9/cf/8fe1b1d982e001cec539de30c2b05cd43b20dc8c7d915faf90b699e50a72/pyzm-0.3.8.tar.gz
+[2023-06-03 01:02:12] INFO root fetch - processPackages [dysweep]: Downloading https://files.pythonhosted.org/packages/62/f0/933ecc39da893764bc76e735263b6da6e3fc3ad9c925b37cdb5938d750b0/dysweep-0.0.6.tar.gz
+[2023-06-03 01:02:12] INFO root fetch - processPackages [dysweep]: executing diffoscope
+[2023-06-03 01:02:12] INFO root fetch - processPackages [dysweep]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dysweep-0.0.5.tar.gz tmp/dysweep-0.0.6.tar.gz --markdown 20230603/d/dysweep/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-06-03 01:02:12] INFO root fetch - processPackages [amazon-textract-idp-cdk-constructs]: executing diffoscope
+[2023-06-03 01:02:12] INFO root fetch - processPackages [amazon-textract-idp-cdk-constructs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/amazon-textract-idp-cdk-constructs-0.0.8.tar.gz tmp/amazon-textract-idp-cdk-constructs-0.0.9.tar.gz --markdown 20230603/a/amazon-textract-idp-cdk-constructs/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-06-03 01:02:12] INFO root fetch - processPackages [rendersrt]: Downloading https://files.pythonhosted.org/packages/25/57/e4ab3cfa283bbf7f1f094958bf2e01b54c3db1c16385b8604c7e2801c328/rendersrt-0.0.3.tar.gz
+[2023-06-03 01:02:12] INFO root fetch - processPackages [rendersrt]: executing diffoscope
+[2023-06-03 01:02:12] INFO root fetch - processPackages [rendersrt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rendersrt-0.0.2.tar.gz tmp/rendersrt-0.0.3.tar.gz --markdown 20230603/r/rendersrt/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-06-03 01:02:13] INFO root fetch - processPackages [pyzm]: Downloading https://files.pythonhosted.org/packages/77/7a/88fa3e9fb3142e7b8ef9948fd3d23dd8298ad40acde30ff22de2afbacb1e/pyzm-0.3.9.tar.gz
+[2023-06-03 01:02:13] INFO root fetch - processPackages [pyzm]: executing diffoscope
+[2023-06-03 01:02:13] INFO root fetch - processPackages [pyzm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyzm-0.3.8.tar.gz tmp/pyzm-0.3.9.tar.gz --markdown 20230603/p/pyzm/0.3.8-0.3.9/diff.md --exclude *.pyd
+[2023-06-03 01:02:13] WARNING root fetch - processPackages [pyrgbd]: Skipping package: exceeds size limit 16710848>=10485760
+[2023-06-03 01:02:13] INFO root fetch - main [MainThread]: End processing [pyrgbd] error
+[2023-06-03 01:02:13] INFO root fetch - main [MainThread]: End processing [dysweep]: success
+[2023-06-03 01:02:13] INFO root fetch - main [MainThread]: End processing [tmnt-cu101]: success
+[2023-06-03 01:02:14] INFO root fetch - main [MainThread]: End processing [rendersrt]: success
+[2023-06-03 01:02:14] INFO root fetch - main [MainThread]: End processing [pyzm]: success
+[2023-06-03 01:02:22] INFO root fetch - main [MainThread]: End processing [amazon-textract-idp-cdk-constructs]: success
+[2023-06-03 01:02:22] INFO root fetch - main [MainThread]: Store serial: [18354049]
