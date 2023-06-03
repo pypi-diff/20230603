@@ -4497,3 +4497,33 @@
 [2023-06-03 05:01:06] WARNING root fetch - processPackages [SerizDeseriz-IGI]: Skipping, unable to determine old version
 [2023-06-03 05:01:06] INFO root fetch - main [MainThread]: End processing [SerizDeseriz-IGI] error
 [2023-06-03 05:01:06] INFO root fetch - main [MainThread]: Store serial: [18356548]
+[2023-06-03 05:06:10] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18356548]
+[2023-06-03 05:06:15] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-06-03 05:06:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: yt-fts
+[2023-06-03 05:06:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: apysc
+[2023-06-03 05:06:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: netron
+[2023-06-03 05:06:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: vector-vault
+[2023-06-03 05:06:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: mrbios
+[2023-06-03 05:06:15] INFO root fetch - processPackages [netron]: New version: [6.9.3] Old Version: [6.9.2]
+[2023-06-03 05:06:15] INFO root fetch - processPackages [yt-fts]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-06-03 05:06:15] INFO root fetch - processPackages [vector-vault]: New version: [1.7.1] Old Version: [1.7.0]
+[2023-06-03 05:06:15] INFO root fetch - processPackages [apysc]: New version: [2.8.5] Old Version: [2.8.4]
+[2023-06-03 05:06:15] WARNING root fetch - processPackages [mrbios]: Skipping, unable to determine old version
+[2023-06-03 05:06:15] INFO root fetch - main [MainThread]: End processing [mrbios] error
+[2023-06-03 05:06:15] INFO root fetch - processPackages [vector-vault]: Downloading https://files.pythonhosted.org/packages/28/4e/92fb14b1a1803800f768b775e0267cf84a02ff51ce40368748ec56cc9a62/vector_vault-1.7.1.tar.gz
+[2023-06-03 05:06:15] INFO root fetch - processPackages [apysc]: Downloading https://files.pythonhosted.org/packages/32/86/c92df25cbfea75ea73a6934602bb75a13662a0174fe35fe5b4d8a23852fe/apysc-2.8.5.tar.gz
+[2023-06-03 05:06:15] INFO root fetch - processPackages [yt-fts]: executing diffoscope
+[2023-06-03 05:06:15] INFO root fetch - processPackages [yt-fts]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yt-fts-0.1.8.tar.gz tmp/yt-fts-0.1.9.tar.gz --markdown 20230603/y/yt-fts/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-06-03 05:06:15] INFO root fetch - processPackages [vector-vault]: executing diffoscope
+[2023-06-03 05:06:15] INFO root fetch - processPackages [vector-vault]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vector_vault-1.7.0.tar.gz tmp/vector_vault-1.7.1.tar.gz --markdown 20230603/v/vector-vault/1.7.0-1.7.1/diff.md --exclude *.pyd
+[2023-06-03 05:06:15] INFO root fetch - processPackages [apysc]: executing diffoscope
+[2023-06-03 05:06:15] INFO root fetch - processPackages [apysc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/apysc-2.8.4.tar.gz tmp/apysc-2.8.5.tar.gz --markdown 20230603/a/apysc/2.8.4-2.8.5/diff.md --exclude *.pyd
+[2023-06-03 05:06:15] INFO root fetch - processPackages [netron]: Downloading https://files.pythonhosted.org/packages/2d/6d/6707019620e5dc47eef117d061fe4dca87cefc7c10321286ea44acb5bb29/netron-6.9.3-py3-none-any.whl
+[2023-06-03 05:06:15] INFO root fetch - processPackages [netron]: executing diffoscope
+[2023-06-03 05:06:15] INFO root fetch - processPackages [netron]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/netron-6.9.2-py3-none-any.whl.zip tmp/netron-6.9.3-py3-none-any.whl.zip --markdown 20230603/n/netron/6.9.2-6.9.3/diff.md --exclude *.pyd
+[2023-06-03 05:06:16] INFO root fetch - main [MainThread]: End processing [yt-fts]: success
+[2023-06-03 05:06:16] INFO root fetch - main [MainThread]: End processing [vector-vault]: success
+[2023-06-03 05:06:24] INFO root fetch - main [MainThread]: End processing [apysc]: success
+[2023-06-03 05:09:15] ERROR root fetch - processPackages [netron]: Timeout during execution of pkgdiff
+[2023-06-03 05:09:15] INFO root fetch - main [MainThread]: End processing [netron] error
+[2023-06-03 05:09:15] INFO root fetch - main [MainThread]: Store serial: [18356566]
