@@ -6439,3 +6439,31 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-06-03 09:47:51] INFO root fetch - main [MainThread]: End processing [pyduinocli]: success
 [2023-06-03 09:47:58] INFO root fetch - main [MainThread]: End processing [composabl-dev]: success
 [2023-06-03 09:47:58] INFO root fetch - main [MainThread]: Store serial: [18357788]
+[2023-06-03 09:53:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18357788]
+[2023-06-03 09:53:07] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-06-03 09:53:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: alesha
+[2023-06-03 09:53:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cncd-package
+[2023-06-03 09:53:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: homeassistant
+[2023-06-03 09:53:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: nonebot-plugin-bilichat
+[2023-06-03 09:53:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: ifastapi
+[2023-06-03 09:53:07] INFO root fetch - processPackages [nonebot-plugin-bilichat]: New version: [2.3.1] Old Version: [2.3.0]
+[2023-06-03 09:53:07] INFO root fetch - processPackages [cncd-package]: New version: [0.3.2] Old Version: [0.3.0]
+[2023-06-03 09:53:07] WARNING root fetch - processPackages [alesha]: Skipping, unable to determine old version
+[2023-06-03 09:53:07] INFO root fetch - main [MainThread]: End processing [alesha] error
+[2023-06-03 09:53:07] INFO root fetch - processPackages [ifastapi]: New version: [0.0.3.9] Old Version: [0.0.3.8]
+[2023-06-03 09:53:07] INFO root fetch - processPackages [homeassistant]: New version: [2023.6.0b4] Old Version: [2023.6.0b3]
+[2023-06-03 09:53:07] INFO root fetch - processPackages [ifastapi]: executing diffoscope
+[2023-06-03 09:53:07] INFO root fetch - processPackages [ifastapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ifastapi-0.0.3.8-py3-none-any.whl.zip tmp/ifastapi-0.0.3.9-py3-none-any.whl.zip --markdown 20230603/i/ifastapi/0.0.3.8-0.0.3.9/diff.md --exclude *.pyd
+[2023-06-03 09:53:07] INFO root fetch - processPackages [cncd-package]: Downloading https://files.pythonhosted.org/packages/3c/7d/97f395b7bcc1f9b558b4c6d9a03af1c72e562a1394a94a94e0a80219ac22/cncd_package-0.3.2.tar.gz
+[2023-06-03 09:53:07] INFO root fetch - processPackages [nonebot-plugin-bilichat]: Downloading https://files.pythonhosted.org/packages/89/88/6bee0916976d08a78d9726e530f55e0720627227e122f67c0dca2866db32/nonebot_plugin_bilichat-2.3.1.tar.gz
+[2023-06-03 09:53:07] INFO root fetch - processPackages [homeassistant]: Downloading https://files.pythonhosted.org/packages/22/fe/8c39f4539bafe986772103cce39227898f1870aeb3f3b9ba3d2bcfb22f0d/homeassistant-2023.6.0b3.tar.gz
+[2023-06-03 09:53:07] INFO root fetch - processPackages [nonebot-plugin-bilichat]: executing diffoscope
+[2023-06-03 09:53:07] INFO root fetch - processPackages [nonebot-plugin-bilichat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot_plugin_bilichat-2.3.0.tar.gz tmp/nonebot_plugin_bilichat-2.3.1.tar.gz --markdown 20230603/n/nonebot-plugin-bilichat/2.3.0-2.3.1/diff.md --exclude *.pyd
+[2023-06-03 09:53:07] INFO root fetch - processPackages [cncd-package]: executing diffoscope
+[2023-06-03 09:53:07] INFO root fetch - processPackages [cncd-package]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cncd_package-0.3.0.tar.gz tmp/cncd_package-0.3.2.tar.gz --markdown 20230603/c/cncd-package/0.3.0-0.3.2/diff.md --exclude *.pyd
+[2023-06-03 09:53:08] WARNING root fetch - processPackages [homeassistant]: Skipping package: exceeds size limit 14167881>=10485760
+[2023-06-03 09:53:08] INFO root fetch - main [MainThread]: End processing [homeassistant] error
+[2023-06-03 09:53:08] INFO root fetch - main [MainThread]: End processing [cncd-package]: success
+[2023-06-03 09:53:08] INFO root fetch - main [MainThread]: End processing [ifastapi]: success
+[2023-06-03 09:53:08] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-bilichat]: success
+[2023-06-03 09:53:08] INFO root fetch - main [MainThread]: Store serial: [18357803]
