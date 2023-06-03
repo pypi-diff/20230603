@@ -10081,3 +10081,74 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-06-03 17:45:21] INFO root fetch - main [MainThread]: End processing [PySupercell]: success
 [2023-06-03 17:45:21] INFO root fetch - main [MainThread]: End processing [odoo-addon-l10n-es-aeat-sii-oca]: success
 [2023-06-03 17:45:21] INFO root fetch - main [MainThread]: Store serial: [18360192]
+[2023-06-03 17:50:25] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18360192]
+[2023-06-03 17:50:30] INFO root fetch - main [MainThread]: Found 13 changed packages
+[2023-06-03 17:50:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: FLAI-CAUSAL
+[2023-06-03 17:50:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pysoundanalyser
+[2023-06-03 17:50:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cvxreg
+[2023-06-03 17:50:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: phidata
+[2023-06-03 17:50:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: mdx-noop
+[2023-06-03 17:50:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: xia-compiler-openapi
+[2023-06-03 17:50:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: odoo-addon-l10n-es-aeat-sii-oca
+[2023-06-03 17:50:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: Kekik
+[2023-06-03 17:50:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: qiskit-qrack-provider
+[2023-06-03 17:50:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: PyQt6-Fluent-Widgets
+[2023-06-03 17:50:30] INFO root fetch - processPackages [FLAI-CAUSAL]: New version: [1.0.7] Old Version: [1.0.6]
+[2023-06-03 17:50:30] WARNING root fetch - processPackages [cvxreg]: Skipping, unable to determine old version
+[2023-06-03 17:50:30] INFO root fetch - processPackages [cvxreg]: Start processing: cdxbasics
+[2023-06-03 17:50:30] INFO root fetch - processPackages [odoo-addon-l10n-es-aeat-sii-oca]: New version: [16.0.1.2.3] Old Version: [16.0.1.2.2.2]
+[2023-06-03 17:50:30] WARNING root fetch - processPackages [mdx-noop]: Skipping, unable to determine old version
+[2023-06-03 17:50:30] INFO root fetch - processPackages [Kekik]: New version: [1.3.1] Old Version: [1.3.0]
+[2023-06-03 17:50:30] INFO root fetch - main [MainThread]: End processing [cvxreg] error
+[2023-06-03 17:50:30] INFO root fetch - processPackages [mdx-noop]: Start processing: django-simple-notification
+[2023-06-03 17:50:30] WARNING root fetch - processPackages [pysoundanalyser]: Skipping, unable to determine old version
+[2023-06-03 17:50:30] INFO root fetch - processPackages [qiskit-qrack-provider]: New version: [0.5.2] Old Version: [0.5.1]
+[2023-06-03 17:50:30] INFO root fetch - processPackages [PyQt6-Fluent-Widgets]: New version: [0.9.3] Old Version: [0.9.2]
+[2023-06-03 17:50:30] INFO root fetch - main [MainThread]: End processing [mdx-noop] error
+[2023-06-03 17:50:30] INFO root fetch - processPackages [pysoundanalyser]: Start processing: tfliteiorewriter
+[2023-06-03 17:50:30] INFO root fetch - processPackages [xia-compiler-openapi]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-06-03 17:50:30] INFO root fetch - processPackages [phidata]: New version: [1.6.9] Old Version: [1.6.8]
+[2023-06-03 17:50:30] INFO root fetch - main [MainThread]: End processing [pysoundanalyser] error
+[2023-06-03 17:50:30] INFO root fetch - processPackages [cdxbasics]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-06-03 17:50:30] INFO root fetch - processPackages [django-simple-notification]: New version: [1.0.2] Old Version: [0.0.2]
+[2023-06-03 17:50:30] INFO root fetch - processPackages [tfliteiorewriter]: New version: [1.0.3] Old Version: [1.0.2]
+[2023-06-03 17:50:30] INFO root fetch - processPackages [odoo-addon-l10n-es-aeat-sii-oca]: executing diffoscope
+[2023-06-03 17:50:30] INFO root fetch - processPackages [odoo-addon-l10n-es-aeat-sii-oca]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_l10n_es_aeat_sii_oca-16.0.1.2.2.2-py3-none-any.whl.zip tmp/odoo_addon_l10n_es_aeat_sii_oca-16.0.1.2.3-py3-none-any.whl.zip --markdown 20230603/o/odoo-addon-l10n-es-aeat-sii-oca/16.0.1.2.2.2-16.0.1.2.3/diff.md --exclude *.pyd
+[2023-06-03 17:50:30] INFO root fetch - processPackages [Kekik]: Downloading https://files.pythonhosted.org/packages/1b/d2/5d99912d818cb910a5f19d6ba22144c3764bbf6f7a3eaf7401c59c798aa4/Kekik-1.3.0.tar.gz
+[2023-06-03 17:50:30] INFO root fetch - processPackages [FLAI-CAUSAL]: Downloading https://files.pythonhosted.org/packages/59/2c/ca2371370ccb9b64b3cdc91af1814f322b62574ac2098738876d029f40a9/FLAI_CAUSAL-1.0.7.tar.gz
+[2023-06-03 17:50:30] INFO root fetch - processPackages [qiskit-qrack-provider]: Downloading https://files.pythonhosted.org/packages/17/43/581991da0091387ccc672b53bba1c42b3c14c356bc7839bda54d1597454a/qiskit-qrack-provider-0.5.1.tar.gz
+[2023-06-03 17:50:30] INFO root fetch - processPackages [django-simple-notification]: Downloading https://files.pythonhosted.org/packages/19/b4/c4e4c0cebd60370f362f69051e55363e4973278e6be93521af4acb7e95fb/django-simple-notification-0.0.2.tar.gz
+[2023-06-03 17:50:30] INFO root fetch - processPackages [tfliteiorewriter]: Downloading https://files.pythonhosted.org/packages/73/64/51482451c30fdf798fc154bca42acfef95a6fff5781d1c3a28c550102a19/tfliteiorewriter-1.0.3.tar.gz
+[2023-06-03 17:50:30] INFO root fetch - processPackages [FLAI-CAUSAL]: executing diffoscope
+[2023-06-03 17:50:30] INFO root fetch - processPackages [FLAI-CAUSAL]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/FLAI_CAUSAL-1.0.6.tar.gz tmp/FLAI_CAUSAL-1.0.7.tar.gz --markdown 20230603/F/FLAI-CAUSAL/1.0.6-1.0.7/diff.md --exclude *.pyd
+[2023-06-03 17:50:30] INFO root fetch - processPackages [tfliteiorewriter]: executing diffoscope
+[2023-06-03 17:50:30] INFO root fetch - processPackages [tfliteiorewriter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tfliteiorewriter-1.0.2.tar.gz tmp/tfliteiorewriter-1.0.3.tar.gz --markdown 20230603/t/tfliteiorewriter/1.0.2-1.0.3/diff.md --exclude *.pyd
+[2023-06-03 17:50:30] INFO root fetch - processPackages [PyQt6-Fluent-Widgets]: Downloading https://files.pythonhosted.org/packages/89/d8/d4b5f328d09de31b9204c823397097e71a5ddc7373be68f40848808dab8d/PyQt6-Fluent-Widgets-0.9.3.tar.gz
+[2023-06-03 17:50:30] INFO root fetch - processPackages [phidata]: executing diffoscope
+[2023-06-03 17:50:30] INFO root fetch - processPackages [phidata]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/phidata-1.6.8.tar.gz tmp/phidata-1.6.9.tar.gz --markdown 20230603/p/phidata/1.6.8-1.6.9/diff.md --exclude *.pyd
+[2023-06-03 17:50:30] INFO root fetch - processPackages [PyQt6-Fluent-Widgets]: executing diffoscope
+[2023-06-03 17:50:30] INFO root fetch - processPackages [PyQt6-Fluent-Widgets]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyQt6-Fluent-Widgets-0.9.2.tar.gz tmp/PyQt6-Fluent-Widgets-0.9.3.tar.gz --markdown 20230603/P/PyQt6-Fluent-Widgets/0.9.2-0.9.3/diff.md --exclude *.pyd
+[2023-06-03 17:50:30] INFO root fetch - processPackages [Kekik]: Downloading https://files.pythonhosted.org/packages/2d/c9/aadd5e3fa998e8fb44f5a458df205e69adbae41d959b7df8126587b068ce/Kekik-1.3.1.tar.gz
+[2023-06-03 17:50:30] INFO root fetch - processPackages [xia-compiler-openapi]: executing diffoscope
+[2023-06-03 17:50:30] INFO root fetch - processPackages [xia-compiler-openapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xia_compiler_openapi-0.1.8-cp39-none-win_amd64.whl.zip tmp/xia_compiler_openapi-0.1.9-cp39-none-win_amd64.whl.zip --markdown 20230603/x/xia-compiler-openapi/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-06-03 17:50:30] INFO root fetch - processPackages [cdxbasics]: executing diffoscope
+[2023-06-03 17:50:30] INFO root fetch - processPackages [cdxbasics]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdxbasics-0.2.8.tar.gz tmp/cdxbasics-0.2.9.tar.gz --markdown 20230603/c/cdxbasics/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2023-06-03 17:50:30] INFO root fetch - processPackages [django-simple-notification]: Downloading https://files.pythonhosted.org/packages/2f/eb/4bb077264e3ae863e85638cd55a84f2b647092807d53869da9b01fc603e8/django-simple-notification-1.0.2.tar.gz
+[2023-06-03 17:50:30] INFO root fetch - processPackages [qiskit-qrack-provider]: Downloading https://files.pythonhosted.org/packages/b6/8f/0c7a1f1f791fb6331cfeb8fbe2a8d02f1d7985bd1b393952a28ce09a3a1f/qiskit-qrack-provider-0.5.2.tar.gz
+[2023-06-03 17:50:30] INFO root fetch - processPackages [Kekik]: executing diffoscope
+[2023-06-03 17:50:30] INFO root fetch - processPackages [Kekik]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Kekik-1.3.0.tar.gz tmp/Kekik-1.3.1.tar.gz --markdown 20230603/K/Kekik/1.3.0-1.3.1/diff.md --exclude *.pyd
+[2023-06-03 17:50:30] INFO root fetch - processPackages [qiskit-qrack-provider]: executing diffoscope
+[2023-06-03 17:50:30] INFO root fetch - processPackages [qiskit-qrack-provider]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qiskit-qrack-provider-0.5.1.tar.gz tmp/qiskit-qrack-provider-0.5.2.tar.gz --markdown 20230603/q/qiskit-qrack-provider/0.5.1-0.5.2/diff.md --exclude *.pyd
+[2023-06-03 17:50:30] INFO root fetch - processPackages [django-simple-notification]: executing diffoscope
+[2023-06-03 17:50:30] INFO root fetch - processPackages [django-simple-notification]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-simple-notification-0.0.2.tar.gz tmp/django-simple-notification-1.0.2.tar.gz --markdown 20230603/d/django-simple-notification/0.0.2-1.0.2/diff.md --exclude *.pyd
+[2023-06-03 17:50:32] INFO root fetch - main [MainThread]: End processing [FLAI-CAUSAL]: success
+[2023-06-03 17:50:32] INFO root fetch - main [MainThread]: End processing [xia-compiler-openapi]: success
+[2023-06-03 17:50:32] INFO root fetch - main [MainThread]: End processing [tfliteiorewriter]: success
+[2023-06-03 17:50:32] INFO root fetch - main [MainThread]: End processing [odoo-addon-l10n-es-aeat-sii-oca]: success
+[2023-06-03 17:50:32] INFO root fetch - main [MainThread]: End processing [cdxbasics]: success
+[2023-06-03 17:50:32] INFO root fetch - main [MainThread]: End processing [django-simple-notification]: success
+[2023-06-03 17:50:32] INFO root fetch - main [MainThread]: End processing [qiskit-qrack-provider]: success
+[2023-06-03 17:50:33] INFO root fetch - main [MainThread]: End processing [Kekik]: success
+[2023-06-03 17:50:34] INFO root fetch - main [MainThread]: End processing [phidata]: success
+[2023-06-03 17:50:36] INFO root fetch - main [MainThread]: End processing [PyQt6-Fluent-Widgets]: success
+[2023-06-03 17:50:36] INFO root fetch - main [MainThread]: Store serial: [18360238]
