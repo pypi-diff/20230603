@@ -4395,3 +4395,43 @@
 [2023-06-03 04:44:36] INFO root fetch - main [MainThread]: End processing [naif-eop-high-prec]: success
 [2023-06-03 04:44:36] INFO root fetch - main [MainThread]: End processing [iam-actions]: success
 [2023-06-03 04:44:36] INFO root fetch - main [MainThread]: Store serial: [18356497]
+[2023-06-03 04:49:46] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18356497]
+[2023-06-03 04:49:50] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-06-03 04:49:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: odoo-addons-oca-account-invoicing
+[2023-06-03 04:49:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: gisting-test
+[2023-06-03 04:49:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ptulsconv
+[2023-06-03 04:49:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: bosch-alarm-mode2
+[2023-06-03 04:49:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: bosch-alarm-mode2
+[2023-06-03 04:49:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: faddr
+[2023-06-03 04:49:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: fondat-hubspot
+[2023-06-03 04:49:51] INFO root fetch - processPackages [gisting-test]: New version: [0.1.4] Old Version: [0.1.3]
+[2023-06-03 04:49:51] INFO root fetch - processPackages [odoo-addons-oca-account-invoicing]: New version: [16.0.20230602.1] Old Version: [16.0.20230526.0]
+[2023-06-03 04:49:51] INFO root fetch - processPackages [faddr]: New version: [0.6.1] Old Version: [0.6.0a2]
+[2023-06-03 04:49:51] INFO root fetch - processPackages [ptulsconv]: New version: [1.0.7] Old Version: [1.0.6]
+[2023-06-03 04:49:51] INFO root fetch - processPackages [bosch-alarm-mode2]: New version: [0.3.9] Old Version: [0.3.8]
+[2023-06-03 04:49:51] INFO root fetch - processPackages [bosch-alarm-mode2]: New version: [0.3.9] Old Version: [0.3.8]
+[2023-06-03 04:49:51] WARNING root fetch - processPackages [fondat-hubspot]: Skipping, unable to determine old version
+[2023-06-03 04:49:51] INFO root fetch - main [MainThread]: End processing [fondat-hubspot] error
+[2023-06-03 04:49:51] INFO root fetch - processPackages [faddr]: executing diffoscope
+[2023-06-03 04:49:51] INFO root fetch - processPackages [faddr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/faddr-0.6.0a2.tar.gz tmp/faddr-0.6.1.tar.gz --markdown 20230603/f/faddr/0.6.0a2-0.6.1/diff.md --exclude *.pyd
+[2023-06-03 04:49:51] INFO root fetch - processPackages [ptulsconv]: Downloading https://files.pythonhosted.org/packages/f4/6b/90b0f541086bb60cc4e1cef86555bdda71005782f7d2cb7dc6ea8e37833f/ptulsconv-1.0.6.tar.gz
+[2023-06-03 04:49:51] INFO root fetch - processPackages [gisting-test]: Downloading https://files.pythonhosted.org/packages/0d/90/a2deefd451b89fd9a6d54f1aab9f4f209261a505a081dae359afbc14e30f/gisting_test-0.1.4.tar.gz
+[2023-06-03 04:49:51] INFO root fetch - processPackages [gisting-test]: executing diffoscope
+[2023-06-03 04:49:51] INFO root fetch - processPackages [gisting-test]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gisting_test-0.1.3.tar.gz tmp/gisting_test-0.1.4.tar.gz --markdown 20230603/g/gisting-test/0.1.3-0.1.4/diff.md --exclude *.pyd
+[2023-06-03 04:49:51] INFO root fetch - processPackages [odoo-addons-oca-account-invoicing]: Downloading https://files.pythonhosted.org/packages/52/5b/b894f3bfd4cee2ac236c29a8d730512064bfa7e34554adb8a9c543a13707/odoo_addons_oca_account_invoicing-16.0.20230602.1-py3-none-any.whl
+[2023-06-03 04:49:51] INFO root fetch - processPackages [bosch-alarm-mode2]: executing diffoscope
+[2023-06-03 04:49:51] INFO root fetch - processPackages [bosch-alarm-mode2]: executing diffoscope
+[2023-06-03 04:49:51] INFO root fetch - processPackages [bosch-alarm-mode2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bosch_alarm_mode2-0.3.8.tar.gz tmp/bosch_alarm_mode2-0.3.9.tar.gz --markdown 20230603/b/bosch-alarm-mode2/0.3.8-0.3.9/diff.md --exclude *.pyd
+[2023-06-03 04:49:51] INFO root fetch - processPackages [bosch-alarm-mode2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bosch_alarm_mode2-0.3.8.tar.gz tmp/bosch_alarm_mode2-0.3.9.tar.gz --markdown 20230603/b/bosch-alarm-mode2/0.3.8-0.3.9/diff.md --exclude *.pyd
+[2023-06-03 04:49:51] INFO root fetch - processPackages [odoo-addons-oca-account-invoicing]: executing diffoscope
+[2023-06-03 04:49:51] INFO root fetch - processPackages [odoo-addons-oca-account-invoicing]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addons_oca_account_invoicing-16.0.20230526.0-py3-none-any.whl.zip tmp/odoo_addons_oca_account_invoicing-16.0.20230602.1-py3-none-any.whl.zip --markdown 20230603/o/odoo-addons-oca-account-invoicing/16.0.20230526.0-16.0.20230602.1/diff.md --exclude *.pyd
+[2023-06-03 04:49:51] INFO root fetch - processPackages [ptulsconv]: Downloading https://files.pythonhosted.org/packages/06/d1/08b1212cc931af64e3461f535f9bb01bac0e03fef69e064fe4ec7706882b/ptulsconv-1.0.7.tar.gz
+[2023-06-03 04:49:51] INFO root fetch - processPackages [ptulsconv]: executing diffoscope
+[2023-06-03 04:49:51] INFO root fetch - processPackages [ptulsconv]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ptulsconv-1.0.6.tar.gz tmp/ptulsconv-1.0.7.tar.gz --markdown 20230603/p/ptulsconv/1.0.6-1.0.7/diff.md --exclude *.pyd
+[2023-06-03 04:49:52] INFO root fetch - main [MainThread]: End processing [bosch-alarm-mode2]: success
+[2023-06-03 04:49:52] INFO root fetch - main [MainThread]: End processing [bosch-alarm-mode2]: success
+[2023-06-03 04:49:52] INFO root fetch - main [MainThread]: End processing [odoo-addons-oca-account-invoicing]: success
+[2023-06-03 04:49:53] INFO root fetch - main [MainThread]: End processing [gisting-test]: success
+[2023-06-03 04:49:54] INFO root fetch - main [MainThread]: End processing [faddr]: success
+[2023-06-03 04:50:45] INFO root fetch - main [MainThread]: End processing [ptulsconv]: success
+[2023-06-03 04:50:45] INFO root fetch - main [MainThread]: Store serial: [18356518]
