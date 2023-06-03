@@ -12869,3 +12869,54 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-06-03 22:16:27] INFO root fetch - main [MainThread]: End processing [recipe-scrapers-ap-fork]: success
 [2023-06-03 22:16:30] INFO root fetch - main [MainThread]: End processing [aim]: success
 [2023-06-03 22:16:30] INFO root fetch - main [MainThread]: Store serial: [18361910]
+[2023-06-03 22:21:34] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18361910]
+[2023-06-03 22:21:39] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-06-03 22:21:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: kalm
+[2023-06-03 22:21:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mbase
+[2023-06-03 22:21:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: image-ocr
+[2023-06-03 22:21:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: DataDoctor
+[2023-06-03 22:21:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pySSRSapi
+[2023-06-03 22:21:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: spanishconjugator
+[2023-06-03 22:21:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: spanishconjugator
+[2023-06-03 22:21:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: mbase
+[2023-06-03 22:21:39] INFO root fetch - processPackages [kalm]: New version: [0.6.9] Old Version: [0.6.8]
+[2023-06-03 22:21:39] INFO root fetch - processPackages [DataDoctor]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-06-03 22:21:39] INFO root fetch - processPackages [pySSRSapi]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-06-03 22:21:39] INFO root fetch - processPackages [mbase]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-06-03 22:21:39] INFO root fetch - processPackages [image-ocr]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-06-03 22:21:39] INFO root fetch - processPackages [mbase]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-06-03 22:21:39] INFO root fetch - processPackages [spanishconjugator]: New version: [2.3.999] Old Version: [2.3.998]
+[2023-06-03 22:21:39] INFO root fetch - processPackages [spanishconjugator]: New version: [2.3.999] Old Version: [2.3.998]
+[2023-06-03 22:21:39] INFO root fetch - processPackages [mbase]: Downloading https://files.pythonhosted.org/packages/f4/c6/1b950ddbff485fccc7f711991ab8a59e8b213f3e06e3fdb05d41a8beca29/mbase-0.0.1.tar.gz
+[2023-06-03 22:21:39] INFO root fetch - processPackages [kalm]: Downloading https://files.pythonhosted.org/packages/f3/ee/21230318a80577b7a92a016e6f1cf516735d553ff6164c13ff461de986aa/kalm-0.6.9.tar.gz
+[2023-06-03 22:21:39] INFO root fetch - processPackages [spanishconjugator]: executing diffoscope
+[2023-06-03 22:21:39] INFO root fetch - processPackages [spanishconjugator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spanishconjugator-2.3.998.tar.gz tmp/spanishconjugator-2.3.999.tar.gz --markdown 20230603/s/spanishconjugator/2.3.998-2.3.999/diff.md --exclude *.pyd
+[2023-06-03 22:21:39] INFO root fetch - processPackages [mbase]: Downloading https://files.pythonhosted.org/packages/f4/c6/1b950ddbff485fccc7f711991ab8a59e8b213f3e06e3fdb05d41a8beca29/mbase-0.0.1.tar.gz
+[2023-06-03 22:21:39] INFO root fetch - processPackages [pySSRSapi]: Downloading https://files.pythonhosted.org/packages/6f/1e/d4f4b3da9e38d3453b94a623e5dca362e53c01a1f24372426a9a938ee384/pySSRSapi-0.0.1.tar.gz
+[2023-06-03 22:21:40] INFO root fetch - processPackages [kalm]: executing diffoscope
+[2023-06-03 22:21:40] INFO root fetch - processPackages [kalm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kalm-0.6.8.tar.gz tmp/kalm-0.6.9.tar.gz --markdown 20230603/k/kalm/0.6.8-0.6.9/diff.md --exclude *.pyd
+[2023-06-03 22:21:40] INFO root fetch - processPackages [spanishconjugator]: executing diffoscope
+[2023-06-03 22:21:40] INFO root fetch - processPackages [spanishconjugator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spanishconjugator-2.3.998.tar.gz tmp/spanishconjugator-2.3.999.tar.gz --markdown 20230603/s/spanishconjugator/2.3.998-2.3.999/diff.md --exclude *.pyd
+[2023-06-03 22:21:40] INFO root fetch - processPackages [DataDoctor]: executing diffoscope
+[2023-06-03 22:21:40] INFO root fetch - processPackages [DataDoctor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/DataDoctor-1.0.8.tar.gz tmp/DataDoctor-1.0.9.tar.gz --markdown 20230603/D/DataDoctor/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-06-03 22:21:40] INFO root fetch - processPackages [image-ocr]: Downloading https://files.pythonhosted.org/packages/eb/cd/ae8259ae9fdbc364ee8f0983736a4dd81f17e758771e09d86a7ab86a4d5d/image-ocr-0.0.4.tar.gz
+[2023-06-03 22:21:40] INFO root fetch - processPackages [image-ocr]: executing diffoscope
+[2023-06-03 22:21:40] INFO root fetch - processPackages [image-ocr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/image_ocr-0.0.3-py3-none-any.whl.zip tmp/image-ocr-0.0.4.tar.gz --markdown 20230603/i/image-ocr/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-06-03 22:21:40] INFO root fetch - processPackages [pySSRSapi]: Downloading https://files.pythonhosted.org/packages/7e/6b/fc34f1e8db86a585c6d0a4ed9ecafb78adfe6c2f644c7d36d1f28d7f4dd8/pySSRSapi-0.0.2.tar.gz
+[2023-06-03 22:21:40] INFO root fetch - processPackages [mbase]: Downloading https://files.pythonhosted.org/packages/b9/cc/69f0c7af2dc6c3c237518cec592349ce731fe94e02c338ed86061ba8ca1e/mbase-0.0.2.tar.gz
+[2023-06-03 22:21:40] INFO root fetch - processPackages [mbase]: Downloading https://files.pythonhosted.org/packages/b9/cc/69f0c7af2dc6c3c237518cec592349ce731fe94e02c338ed86061ba8ca1e/mbase-0.0.2.tar.gz
+[2023-06-03 22:21:40] INFO root fetch - processPackages [pySSRSapi]: executing diffoscope
+[2023-06-03 22:21:40] INFO root fetch - processPackages [pySSRSapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pySSRSapi-0.0.1.tar.gz tmp/pySSRSapi-0.0.2.tar.gz --markdown 20230603/p/pySSRSapi/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-06-03 22:21:40] INFO root fetch - processPackages [mbase]: executing diffoscope
+[2023-06-03 22:21:40] INFO root fetch - processPackages [mbase]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mbase-0.0.1.tar.gz tmp/mbase-0.0.2.tar.gz --markdown 20230603/m/mbase/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-06-03 22:21:40] INFO root fetch - processPackages [mbase]: executing diffoscope
+[2023-06-03 22:21:40] INFO root fetch - processPackages [mbase]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mbase-0.0.1.tar.gz tmp/mbase-0.0.2.tar.gz --markdown 20230603/m/mbase/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-06-03 22:21:41] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
+[2023-06-03 22:21:41] INFO root fetch - main [MainThread]: End processing [kalm]: success
+[2023-06-03 22:21:41] INFO root fetch - main [MainThread]: End processing [pySSRSapi]: success
+[2023-06-03 22:21:41] INFO root fetch - main [MainThread]: End processing [image-ocr]: success
+[2023-06-03 22:21:41] INFO root fetch - main [MainThread]: End processing [DataDoctor]: success
+[2023-06-03 22:21:41] INFO root fetch - main [MainThread]: End processing [mbase]: success
+[2023-06-03 22:21:41] INFO root fetch - main [MainThread]: End processing [mbase]: success
+[2023-06-03 22:21:42] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
+[2023-06-03 22:21:42] INFO root fetch - main [MainThread]: Store serial: [18361933]
