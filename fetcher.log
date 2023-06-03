@@ -7812,3 +7812,41 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-06-03 13:05:32] INFO root fetch - main [MainThread]: End processing [persist-queue]: success
 [2023-06-03 13:05:38] INFO root fetch - main [MainThread]: End processing [getdaft]: success
 [2023-06-03 13:05:38] INFO root fetch - main [MainThread]: Store serial: [18358652]
+[2023-06-03 13:10:42] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18358652]
+[2023-06-03 13:10:47] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-06-03 13:10:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: hathitrust-downloader
+[2023-06-03 13:10:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ScriptCollection
+[2023-06-03 13:10:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: finalynx
+[2023-06-03 13:10:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: asyncgnostic
+[2023-06-03 13:10:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: kodexa
+[2023-06-03 13:10:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pycln
+[2023-06-03 13:10:47] INFO root fetch - processPackages [ScriptCollection]: New version: [3.3.96] Old Version: [3.3.95]
+[2023-06-03 13:10:47] INFO root fetch - processPackages [hathitrust-downloader]: New version: [1.1.4rc1] Old Version: [1.1.4]
+[2023-06-03 13:10:47] INFO root fetch - processPackages [asyncgnostic]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-06-03 13:10:47] INFO root fetch - processPackages [finalynx]: New version: [1.9.0] Old Version: [1.8.3]
+[2023-06-03 13:10:47] INFO root fetch - processPackages [kodexa]: New version: [6.2.25159046000] Old Version: [6.2.25157842592]
+[2023-06-03 13:10:47] INFO root fetch - processPackages [pycln]: New version: [2.1.5] Old Version: [2.1.4]
+[2023-06-03 13:10:47] INFO root fetch - processPackages [finalynx]: executing diffoscope
+[2023-06-03 13:10:47] INFO root fetch - processPackages [finalynx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/finalynx-1.8.3.tar.gz tmp/finalynx-1.9.0.tar.gz --markdown 20230603/f/finalynx/1.8.3-1.9.0/diff.md --exclude *.pyd
+[2023-06-03 13:10:47] INFO root fetch - processPackages [kodexa]: executing diffoscope
+[2023-06-03 13:10:47] INFO root fetch - processPackages [kodexa]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kodexa-6.2.25157842592.tar.gz tmp/kodexa-6.2.25159046000.tar.gz --markdown 20230603/k/kodexa/6.2.25157842592-6.2.25159046000/diff.md --exclude *.pyd
+[2023-06-03 13:10:47] INFO root fetch - processPackages [hathitrust-downloader]: Downloading https://files.pythonhosted.org/packages/49/1e/09f3b8f4049d1cbc6484309d9b9e3b607ecf99bae6149dda73d4586849a0/hathitrust-downloader-1.1.4.tar.gz
+[2023-06-03 13:10:47] INFO root fetch - processPackages [asyncgnostic]: Downloading https://files.pythonhosted.org/packages/9f/b5/0375534182e6fe43035ed08c5f4bb2bb0b5f64036646bac547a72db982eb/asyncgnostic-0.1.0.tar.gz
+[2023-06-03 13:10:47] INFO root fetch - processPackages [hathitrust-downloader]: executing diffoscope
+[2023-06-03 13:10:47] INFO root fetch - processPackages [hathitrust-downloader]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hathitrust-downloader-1.1.4.tar.gz tmp/hathitrust-downloader-1.1.4rc1.tar.gz --markdown 20230603/h/hathitrust-downloader/1.1.4-1.1.4rc1/diff.md --exclude *.pyd
+[2023-06-03 13:10:47] INFO root fetch - processPackages [ScriptCollection]: Downloading https://files.pythonhosted.org/packages/2f/da/073cdfc44d5e8b16b6cbacd4754ae7d29160a1a1e5807c4b524b71a7ea78/ScriptCollection-3.3.96-py3-none-any.whl
+[2023-06-03 13:10:47] INFO root fetch - processPackages [ScriptCollection]: executing diffoscope
+[2023-06-03 13:10:47] INFO root fetch - processPackages [ScriptCollection]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ScriptCollection-3.3.95-py3-none-any.whl.zip tmp/ScriptCollection-3.3.96-py3-none-any.whl.zip --markdown 20230603/S/ScriptCollection/3.3.95-3.3.96/diff.md --exclude *.pyd
+[2023-06-03 13:10:47] INFO root fetch - processPackages [asyncgnostic]: Downloading https://files.pythonhosted.org/packages/b6/f7/b8362acf99e0023783812e33e7e126661e676ec46f19468040dce39b266a/asyncgnostic-0.1.1.tar.gz
+[2023-06-03 13:10:47] INFO root fetch - processPackages [asyncgnostic]: executing diffoscope
+[2023-06-03 13:10:47] INFO root fetch - processPackages [asyncgnostic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/asyncgnostic-0.1.0.tar.gz tmp/asyncgnostic-0.1.1.tar.gz --markdown 20230603/a/asyncgnostic/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-06-03 13:10:47] INFO root fetch - processPackages [pycln]: Downloading https://files.pythonhosted.org/packages/15/d0/b8164d296bcf6cd718e558e49e07932264fb543a9751910a3e576b709d93/pycln-2.1.5.tar.gz
+[2023-06-03 13:10:47] INFO root fetch - processPackages [pycln]: executing diffoscope
+[2023-06-03 13:10:47] INFO root fetch - processPackages [pycln]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pycln-2.1.4.tar.gz tmp/pycln-2.1.5.tar.gz --markdown 20230603/p/pycln/2.1.4-2.1.5/diff.md --exclude *.pyd
+[2023-06-03 13:10:48] INFO root fetch - main [MainThread]: End processing [hathitrust-downloader]: success
+[2023-06-03 13:10:48] INFO root fetch - main [MainThread]: End processing [kodexa]: success
+[2023-06-03 13:10:48] INFO root fetch - main [MainThread]: End processing [ScriptCollection]: success
+[2023-06-03 13:10:48] INFO root fetch - main [MainThread]: End processing [asyncgnostic]: success
+[2023-06-03 13:10:48] INFO root fetch - main [MainThread]: End processing [finalynx]: success
+[2023-06-03 13:10:49] INFO root fetch - main [MainThread]: End processing [pycln]: success
+[2023-06-03 13:10:49] INFO root fetch - main [MainThread]: Store serial: [18358669]
