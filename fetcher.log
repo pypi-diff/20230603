@@ -9978,3 +9978,57 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-06-03 17:34:51] INFO root fetch - main [MainThread]: End processing [werk24]: success
 [2023-06-03 17:34:57] INFO root fetch - main [MainThread]: End processing [ezbeq]: success
 [2023-06-03 17:34:57] INFO root fetch - main [MainThread]: Store serial: [18360070]
+[2023-06-03 17:40:01] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18360070]
+[2023-06-03 17:40:06] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-06-03 17:40:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: crawler-commons
+[2023-06-03 17:40:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: applyx
+[2023-06-03 17:40:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ccxtools
+[2023-06-03 17:40:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: metaphor-sqllineage
+[2023-06-03 17:40:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: phiterm
+[2023-06-03 17:40:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: crdb
+[2023-06-03 17:40:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: pyxirr
+[2023-06-03 17:40:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: lasfile
+[2023-06-03 17:40:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: all-fives-domino
+[2023-06-03 17:40:06] INFO root fetch - processPackages [crawler-commons]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-06-03 17:40:06] INFO root fetch - processPackages [applyx]: New version: [0.2.7] Old Version: [0.2.6]
+[2023-06-03 17:40:06] INFO root fetch - processPackages [metaphor-sqllineage]: New version: [2.0.9] Old Version: [2.0.8]
+[2023-06-03 17:40:06] INFO root fetch - processPackages [all-fives-domino]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-06-03 17:40:06] INFO root fetch - processPackages [lasfile]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-06-03 17:40:06] INFO root fetch - processPackages [ccxtools]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-06-03 17:40:06] INFO root fetch - processPackages [crdb]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-06-03 17:40:06] INFO root fetch - processPackages [phiterm]: New version: [1.6.9] Old Version: [1.6.8]
+[2023-06-03 17:40:06] INFO root fetch - processPackages [pyxirr]: New version: [0.9.1] Old Version: [0.9.0]
+[2023-06-03 17:40:06] INFO root fetch - processPackages [ccxtools]: executing diffoscope
+[2023-06-03 17:40:06] INFO root fetch - processPackages [ccxtools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ccxtools-0.0.8.tar.gz tmp/ccxtools-0.0.9.tar.gz --markdown 20230603/c/ccxtools/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-06-03 17:40:06] INFO root fetch - processPackages [all-fives-domino]: executing diffoscope
+[2023-06-03 17:40:06] INFO root fetch - processPackages [all-fives-domino]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/all-fives-domino-1.0.8.tar.gz tmp/all-fives-domino-1.0.9.tar.gz --markdown 20230603/a/all-fives-domino/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-06-03 17:40:06] INFO root fetch - processPackages [applyx]: Downloading https://files.pythonhosted.org/packages/8a/06/8e3a5ebada74cfbf8100c83df3197a640b31d157e2f79643d7542c836478/applyx-0.2.6-py3-none-any.whl
+[2023-06-03 17:40:07] INFO root fetch - processPackages [metaphor-sqllineage]: Downloading https://files.pythonhosted.org/packages/dd/fa/dff9fe26490c00ab854c1a4be6338c213c7a62b298e3faa646b785514a20/metaphor-sqllineage-2.0.8.tar.gz
+[2023-06-03 17:40:07] INFO root fetch - processPackages [pyxirr]: Downloading https://files.pythonhosted.org/packages/db/a7/6bc76d093c77a599b70b4e53009db1adc5e979711d103b5f03aef8043da7/pyxirr-0.9.0.tar.gz
+[2023-06-03 17:40:07] INFO root fetch - processPackages [crawler-commons]: executing diffoscope
+[2023-06-03 17:40:07] INFO root fetch - processPackages [crawler-commons]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/crawler_commons-0.0.8.tar.gz tmp/crawler_commons-0.0.9.tar.gz --markdown 20230603/c/crawler-commons/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-06-03 17:40:07] INFO root fetch - processPackages [applyx]: Downloading https://files.pythonhosted.org/packages/30/96/bf00ea1d25d2d488fbefc1ff443a118a6c42de1422b84c2c517bf582d16c/applyx-0.2.7-py3-none-any.whl
+[2023-06-03 17:40:07] INFO root fetch - processPackages [crdb]: executing diffoscope
+[2023-06-03 17:40:07] INFO root fetch - processPackages [crdb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/crdb-0.8.0.tar.gz tmp/crdb-0.9.0.tar.gz --markdown 20230603/c/crdb/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2023-06-03 17:40:07] INFO root fetch - processPackages [phiterm]: executing diffoscope
+[2023-06-03 17:40:07] INFO root fetch - processPackages [phiterm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/phiterm-1.6.8.tar.gz tmp/phiterm-1.6.9.tar.gz --markdown 20230603/p/phiterm/1.6.8-1.6.9/diff.md --exclude *.pyd
+[2023-06-03 17:40:07] INFO root fetch - processPackages [lasfile]: executing diffoscope
+[2023-06-03 17:40:07] INFO root fetch - processPackages [lasfile]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lasfile-0.1.8.tar.gz tmp/lasfile-0.1.9.tar.gz --markdown 20230603/l/lasfile/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-06-03 17:40:07] INFO root fetch - processPackages [applyx]: executing diffoscope
+[2023-06-03 17:40:07] INFO root fetch - processPackages [applyx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/applyx-0.2.6-py3-none-any.whl.zip tmp/applyx-0.2.7-py3-none-any.whl.zip --markdown 20230603/a/applyx/0.2.6-0.2.7/diff.md --exclude *.pyd
+[2023-06-03 17:40:07] INFO root fetch - processPackages [metaphor-sqllineage]: Downloading https://files.pythonhosted.org/packages/59/9f/81c116228ee6450b551a6484007320c43b40a14f8b65d89a79e81ab5fa45/metaphor-sqllineage-2.0.9.tar.gz
+[2023-06-03 17:40:07] INFO root fetch - processPackages [pyxirr]: Downloading https://files.pythonhosted.org/packages/f2/11/55519225049efb0e016f43343728d066e5d0c9a1e2cf20405986a9137bc8/pyxirr-0.9.1.tar.gz
+[2023-06-03 17:40:07] INFO root fetch - processPackages [metaphor-sqllineage]: executing diffoscope
+[2023-06-03 17:40:07] INFO root fetch - processPackages [metaphor-sqllineage]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/metaphor-sqllineage-2.0.8.tar.gz tmp/metaphor-sqllineage-2.0.9.tar.gz --markdown 20230603/m/metaphor-sqllineage/2.0.8-2.0.9/diff.md --exclude *.pyd
+[2023-06-03 17:40:07] INFO root fetch - processPackages [pyxirr]: executing diffoscope
+[2023-06-03 17:40:07] INFO root fetch - processPackages [pyxirr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyxirr-0.9.0.tar.gz tmp/pyxirr-0.9.1.tar.gz --markdown 20230603/p/pyxirr/0.9.0-0.9.1/diff.md --exclude *.pyd
+[2023-06-03 17:40:08] INFO root fetch - main [MainThread]: End processing [ccxtools]: success
+[2023-06-03 17:40:08] INFO root fetch - main [MainThread]: End processing [crawler-commons]: success
+[2023-06-03 17:40:08] INFO root fetch - main [MainThread]: End processing [all-fives-domino]: success
+[2023-06-03 17:40:08] INFO root fetch - main [MainThread]: End processing [lasfile]: success
+[2023-06-03 17:40:09] INFO root fetch - main [MainThread]: End processing [crdb]: success
+[2023-06-03 17:40:09] INFO root fetch - main [MainThread]: End processing [phiterm]: success
+[2023-06-03 17:40:09] INFO root fetch - main [MainThread]: End processing [applyx]: success
+[2023-06-03 17:40:09] INFO root fetch - main [MainThread]: End processing [pyxirr]: success
+[2023-06-03 17:40:09] INFO root fetch - main [MainThread]: End processing [metaphor-sqllineage]: success
+[2023-06-03 17:40:09] INFO root fetch - main [MainThread]: Store serial: [18360161]
