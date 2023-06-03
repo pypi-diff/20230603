@@ -5134,3 +5134,21 @@
 [2023-06-03 06:30:46] INFO root fetch - main [MainThread]: End processing [computing-toolbox]: success
 [2023-06-03 06:30:46] INFO root fetch - main [MainThread]: End processing [g-batch-prediction-pipeline]: success
 [2023-06-03 06:30:46] INFO root fetch - main [MainThread]: Store serial: [18357001]
+[2023-06-03 06:35:50] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18357001]
+[2023-06-03 06:35:55] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-06-03 06:35:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: yt-fts
+[2023-06-03 06:35:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: legal-documents-cn
+[2023-06-03 06:35:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: django-imgwidget
+[2023-06-03 06:35:55] INFO root fetch - processPackages [yt-fts]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-06-03 06:35:55] INFO root fetch - processPackages [legal-documents-cn]: New version: [0.0.8] Old Version: [0.0.7]
+[2023-06-03 06:35:55] WARNING root fetch - processPackages [django-imgwidget]: Skipping, unable to determine old version
+[2023-06-03 06:35:55] INFO root fetch - main [MainThread]: End processing [django-imgwidget] error
+[2023-06-03 06:35:55] INFO root fetch - processPackages [legal-documents-cn]: Downloading https://files.pythonhosted.org/packages/40/a3/f4faf5d30b8023cefb4f8e6effbb69ad57365aad8278a12d15d5c0e135d0/legal_documents_cn-0.0.7.tar.gz
+[2023-06-03 06:35:55] INFO root fetch - processPackages [yt-fts]: executing diffoscope
+[2023-06-03 06:35:55] INFO root fetch - processPackages [yt-fts]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yt-fts-0.1.8.tar.gz tmp/yt-fts-0.1.9.tar.gz --markdown 20230603/y/yt-fts/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-06-03 06:35:56] INFO root fetch - processPackages [legal-documents-cn]: Downloading https://files.pythonhosted.org/packages/1b/db/4d359b00c2b8d5df6a4d5cbd10a46868613b822e5f9307203a983d3010df/legal_documents_cn-0.0.8.tar.gz
+[2023-06-03 06:35:56] INFO root fetch - processPackages [legal-documents-cn]: executing diffoscope
+[2023-06-03 06:35:56] INFO root fetch - processPackages [legal-documents-cn]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/legal_documents_cn-0.0.7.tar.gz tmp/legal_documents_cn-0.0.8.tar.gz --markdown 20230603/l/legal-documents-cn/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2023-06-03 06:35:57] INFO root fetch - main [MainThread]: End processing [yt-fts]: success
+[2023-06-03 06:35:57] INFO root fetch - main [MainThread]: End processing [legal-documents-cn]: success
+[2023-06-03 06:35:57] INFO root fetch - main [MainThread]: Store serial: [18357026]
