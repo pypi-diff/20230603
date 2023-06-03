@@ -1716,3 +1716,50 @@
 [2023-06-03 02:48:29] INFO root fetch - main [MainThread]: End processing [tfds-nightly]: success
 [2023-06-03 02:49:09] INFO root fetch - main [MainThread]: End processing [kubric-nightly]: success
 [2023-06-03 02:49:09] INFO root fetch - main [MainThread]: Store serial: [18354847]
+[2023-06-03 02:54:13] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18354847]
+[2023-06-03 02:54:18] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-06-03 02:54:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: PyWebUIFramework
+[2023-06-03 02:54:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: d20-orm
+[2023-06-03 02:54:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: chalkpy
+[2023-06-03 02:54:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: canopy-platform
+[2023-06-03 02:54:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: cdk-slack-chatbot
+[2023-06-03 02:54:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: apysc
+[2023-06-03 02:54:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: d20-orm
+[2023-06-03 02:54:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: cdk-databrew-cicd
+[2023-06-03 02:54:18] INFO root fetch - processPackages [PyWebUIFramework]: New version: [2.4] Old Version: [2.3]
+[2023-06-03 02:54:18] INFO root fetch - processPackages [d20-orm]: New version: [2.0.2a9] Old Version: [2.0.2a8]
+[2023-06-03 02:54:18] INFO root fetch - processPackages [d20-orm]: New version: [2.0.2a9] Old Version: [2.0.2a8]
+[2023-06-03 02:54:18] INFO root fetch - processPackages [cdk-slack-chatbot]: New version: [1.0.99] Old Version: [1.0.98]
+[2023-06-03 02:54:18] INFO root fetch - processPackages [canopy-platform]: New version: [0.0.9] Old Version: [0.0.7]
+[2023-06-03 02:54:18] INFO root fetch - processPackages [cdk-databrew-cicd]: New version: [2.0.99] Old Version: [2.0.98]
+[2023-06-03 02:54:18] INFO root fetch - processPackages [chalkpy]: New version: [2.5.7] Old Version: [2.5.6]
+[2023-06-03 02:54:18] INFO root fetch - processPackages [apysc]: New version: [2.8.4] Old Version: [2.8.3]
+[2023-06-03 02:54:18] INFO root fetch - processPackages [d20-orm]: executing diffoscope
+[2023-06-03 02:54:18] INFO root fetch - processPackages [d20-orm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/d20-orm-2.0.2a8.tar.gz tmp/d20-orm-2.0.2a9.tar.gz --markdown 20230603/d/d20-orm/2.0.2a8-2.0.2a9/diff.md --exclude *.pyd
+[2023-06-03 02:54:18] INFO root fetch - processPackages [d20-orm]: executing diffoscope
+[2023-06-03 02:54:18] INFO root fetch - processPackages [d20-orm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/d20-orm-2.0.2a8.tar.gz tmp/d20-orm-2.0.2a9.tar.gz --markdown 20230603/d/d20-orm/2.0.2a8-2.0.2a9/diff.md --exclude *.pyd
+[2023-06-03 02:54:18] INFO root fetch - processPackages [canopy-platform]: executing diffoscope
+[2023-06-03 02:54:18] INFO root fetch - processPackages [canopy-platform]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/canopy-platform-0.0.7.tar.gz tmp/canopy-platform-0.0.9.tar.gz --markdown 20230603/c/canopy-platform/0.0.7-0.0.9/diff.md --exclude *.pyd
+[2023-06-03 02:54:18] INFO root fetch - processPackages [PyWebUIFramework]: Downloading https://files.pythonhosted.org/packages/d7/fa/194a9d579307dfd5b79aa51970b4441cb5f5072f6af4ea65a88d7284685d/PyWebUIFramework-2.3.tar.gz
+[2023-06-03 02:54:18] INFO root fetch - processPackages [cdk-databrew-cicd]: executing diffoscope
+[2023-06-03 02:54:18] INFO root fetch - processPackages [cdk-databrew-cicd]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk_databrew_cicd-2.0.98.tar.gz tmp/cdk_databrew_cicd-2.0.99.tar.gz --markdown 20230603/c/cdk-databrew-cicd/2.0.98-2.0.99/diff.md --exclude *.pyd
+[2023-06-03 02:54:18] INFO root fetch - processPackages [chalkpy]: Downloading https://files.pythonhosted.org/packages/f7/8e/29bf16259f5d9835ac86920edf4d35b315703f5c5fd45806d9134eef8b3c/chalkpy-2.5.7.tar.gz
+[2023-06-03 02:54:18] INFO root fetch - processPackages [chalkpy]: executing diffoscope
+[2023-06-03 02:54:18] INFO root fetch - processPackages [chalkpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chalkpy-2.5.6.tar.gz tmp/chalkpy-2.5.7.tar.gz --markdown 20230603/c/chalkpy/2.5.6-2.5.7/diff.md --exclude *.pyd
+[2023-06-03 02:54:18] INFO root fetch - processPackages [PyWebUIFramework]: Downloading https://files.pythonhosted.org/packages/87/8a/77e44281ce9becbb0df7e0727b5722f252166707341fdedd8da6bb2edf1c/PyWebUIFramework-2.4.tar.gz
+[2023-06-03 02:54:18] INFO root fetch - processPackages [cdk-slack-chatbot]: executing diffoscope
+[2023-06-03 02:54:18] INFO root fetch - processPackages [cdk-slack-chatbot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-slack-chatbot-1.0.98.tar.gz tmp/cdk-slack-chatbot-1.0.99.tar.gz --markdown 20230603/c/cdk-slack-chatbot/1.0.98-1.0.99/diff.md --exclude *.pyd
+[2023-06-03 02:54:18] INFO root fetch - processPackages [apysc]: Downloading https://files.pythonhosted.org/packages/0a/c8/32f6040260fed2978aeba559db15d30da8b4e534c5451a0151e364e34162/apysc-2.8.4.tar.gz
+[2023-06-03 02:54:18] INFO root fetch - processPackages [PyWebUIFramework]: executing diffoscope
+[2023-06-03 02:54:18] INFO root fetch - processPackages [PyWebUIFramework]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyWebUIFramework-2.3.tar.gz tmp/PyWebUIFramework-2.4.tar.gz --markdown 20230603/P/PyWebUIFramework/2.3-2.4/diff.md --exclude *.pyd
+[2023-06-03 02:54:18] INFO root fetch - processPackages [apysc]: executing diffoscope
+[2023-06-03 02:54:18] INFO root fetch - processPackages [apysc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/apysc-2.8.3.tar.gz tmp/apysc-2.8.4.tar.gz --markdown 20230603/a/apysc/2.8.3-2.8.4/diff.md --exclude *.pyd
+[2023-06-03 02:54:19] INFO root fetch - main [MainThread]: End processing [d20-orm]: success
+[2023-06-03 02:54:19] INFO root fetch - main [MainThread]: End processing [canopy-platform]: success
+[2023-06-03 02:54:19] INFO root fetch - main [MainThread]: End processing [cdk-databrew-cicd]: success
+[2023-06-03 02:54:19] INFO root fetch - main [MainThread]: End processing [cdk-slack-chatbot]: success
+[2023-06-03 02:54:20] INFO root fetch - main [MainThread]: End processing [d20-orm]: success
+[2023-06-03 02:54:20] INFO root fetch - main [MainThread]: End processing [PyWebUIFramework]: success
+[2023-06-03 02:54:23] INFO root fetch - main [MainThread]: End processing [chalkpy]: success
+[2023-06-03 02:54:27] INFO root fetch - main [MainThread]: End processing [apysc]: success
+[2023-06-03 02:54:27] INFO root fetch - main [MainThread]: Store serial: [18354867]
