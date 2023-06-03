@@ -10963,3 +10963,50 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-06-03 19:30:02] INFO root fetch - main [MainThread]: End processing [philbot-voice]: success
 [2023-06-03 19:30:02] INFO root fetch - main [MainThread]: End processing [hydrogibs]: success
 [2023-06-03 19:30:02] INFO root fetch - main [MainThread]: Store serial: [18360731]
+[2023-06-03 19:35:06] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18360731]
+[2023-06-03 19:35:11] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-06-03 19:35:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: motionsenseapp
+[2023-06-03 19:35:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: navalmartin-mir-db-utils
+[2023-06-03 19:35:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: notctyparser
+[2023-06-03 19:35:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: firegs
+[2023-06-03 19:35:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: netron
+[2023-06-03 19:35:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: tidytcells
+[2023-06-03 19:35:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: d20-orm
+[2023-06-03 19:35:11] INFO root fetch - processPackages [netron]: New version: [6.9.4] Old Version: [6.9.3]
+[2023-06-03 19:35:11] INFO root fetch - processPackages [d20-orm]: New version: [2.0.2a9] Old Version: [2.0.2a8]
+[2023-06-03 19:35:11] INFO root fetch - processPackages [notctyparser]: New version: [23.6.3] Old Version: [23.6.2]
+[2023-06-03 19:35:11] INFO root fetch - processPackages [motionsenseapp]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-06-03 19:35:11] INFO root fetch - processPackages [navalmartin-mir-db-utils]: New version: [0.0.9] Old Version: [0.0.35]
+[2023-06-03 19:35:11] INFO root fetch - processPackages [firegs]: New version: [0.7] Old Version: [0.6]
+[2023-06-03 19:35:11] INFO root fetch - processPackages [tidytcells]: New version: [1.8.3] Old Version: [1.8.2]
+[2023-06-03 19:35:11] INFO root fetch - processPackages [d20-orm]: executing diffoscope
+[2023-06-03 19:35:11] INFO root fetch - processPackages [d20-orm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/d20-orm-2.0.2a8.tar.gz tmp/d20-orm-2.0.2a9.tar.gz --markdown 20230603/d/d20-orm/2.0.2a8-2.0.2a9/diff.md --exclude *.pyd
+[2023-06-03 19:35:11] INFO root fetch - processPackages [navalmartin-mir-db-utils]: Downloading https://files.pythonhosted.org/packages/3e/4a/6d69bbdc0633c99bb7f683eb5ec872cd17fdafec53bab5a71cb08800fffe/navalmartin_mir_db_utils-0.0.35.tar.gz
+[2023-06-03 19:35:11] INFO root fetch - processPackages [notctyparser]: Downloading https://files.pythonhosted.org/packages/05/58/3cd2bb500249039b1945877cc9b45b1c1fe0b502ca41a895b8cc4808c24e/notctyparser-23.6.2.tar.gz
+[2023-06-03 19:35:11] INFO root fetch - processPackages [motionsenseapp]: Downloading https://files.pythonhosted.org/packages/9c/4a/b0fc5756f65b5a3043226a53059b40d448d142d264b5955c9fe89ef1b810/motionsenseapp-0.0.1.tar.gz
+[2023-06-03 19:35:11] INFO root fetch - processPackages [netron]: Downloading https://files.pythonhosted.org/packages/45/48/533452a5d990c93bc112adb1ec30d1078c79efac045ad5dcbf798dba484e/netron-6.9.4-py3-none-any.whl
+[2023-06-03 19:35:11] INFO root fetch - processPackages [tidytcells]: Downloading https://files.pythonhosted.org/packages/e7/cb/2a8c217222f960d5b1ad0cbbbbc9ff1829500701c0b7347f92eaeaa700da/tidytcells-1.8.3.tar.gz
+[2023-06-03 19:35:11] INFO root fetch - processPackages [firegs]: Downloading https://files.pythonhosted.org/packages/7f/32/368259458b6c3f895ce6396f7100bb59fa6e9c4dbb806da2343527978385/firegs-0.7.tar.gz
+[2023-06-03 19:35:11] INFO root fetch - processPackages [netron]: executing diffoscope
+[2023-06-03 19:35:11] INFO root fetch - processPackages [netron]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/netron-6.9.3-py3-none-any.whl.zip tmp/netron-6.9.4-py3-none-any.whl.zip --markdown 20230603/n/netron/6.9.3-6.9.4/diff.md --exclude *.pyd
+[2023-06-03 19:35:11] INFO root fetch - processPackages [tidytcells]: executing diffoscope
+[2023-06-03 19:35:11] INFO root fetch - processPackages [tidytcells]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tidytcells-1.8.2.tar.gz tmp/tidytcells-1.8.3.tar.gz --markdown 20230603/t/tidytcells/1.8.2-1.8.3/diff.md --exclude *.pyd
+[2023-06-03 19:35:11] INFO root fetch - processPackages [firegs]: executing diffoscope
+[2023-06-03 19:35:11] INFO root fetch - processPackages [firegs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/firegs-0.6.tar.gz tmp/firegs-0.7.tar.gz --markdown 20230603/f/firegs/0.6-0.7/diff.md --exclude *.pyd
+[2023-06-03 19:35:11] INFO root fetch - processPackages [motionsenseapp]: Downloading https://files.pythonhosted.org/packages/f6/40/323852a153fd5a108f4b1b43288e000e5df8ddd75e553c0844073986fcff/motionsenseapp-0.0.2.tar.gz
+[2023-06-03 19:35:11] INFO root fetch - processPackages [notctyparser]: Downloading https://files.pythonhosted.org/packages/e5/74/5d7558e5be564e1d84a6e586056f463513a957c46685311c7752475ba7cd/notctyparser-23.6.3.tar.gz
+[2023-06-03 19:35:11] INFO root fetch - processPackages [motionsenseapp]: executing diffoscope
+[2023-06-03 19:35:11] INFO root fetch - processPackages [motionsenseapp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/motionsenseapp-0.0.1.tar.gz tmp/motionsenseapp-0.0.2.tar.gz --markdown 20230603/m/motionsenseapp/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-06-03 19:35:11] INFO root fetch - processPackages [navalmartin-mir-db-utils]: Downloading https://files.pythonhosted.org/packages/41/2a/39fc86eef4f5fe8b6776ca508496a71a589fc60bb227ce018a1df89f1b42/navalmartin_mir_db_utils-0.0.9.tar.gz
+[2023-06-03 19:35:11] INFO root fetch - processPackages [notctyparser]: executing diffoscope
+[2023-06-03 19:35:11] INFO root fetch - processPackages [notctyparser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/notctyparser-23.6.2.tar.gz tmp/notctyparser-23.6.3.tar.gz --markdown 20230603/n/notctyparser/23.6.2-23.6.3/diff.md --exclude *.pyd
+[2023-06-03 19:35:12] INFO root fetch - processPackages [navalmartin-mir-db-utils]: executing diffoscope
+[2023-06-03 19:35:12] INFO root fetch - processPackages [navalmartin-mir-db-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/navalmartin_mir_db_utils-0.0.35.tar.gz tmp/navalmartin_mir_db_utils-0.0.9.tar.gz --markdown 20230603/n/navalmartin-mir-db-utils/0.0.35-0.0.9/diff.md --exclude *.pyd
+[2023-06-03 19:35:13] INFO root fetch - main [MainThread]: End processing [firegs]: success
+[2023-06-03 19:35:13] INFO root fetch - main [MainThread]: End processing [d20-orm]: success
+[2023-06-03 19:35:13] INFO root fetch - main [MainThread]: End processing [motionsenseapp]: success
+[2023-06-03 19:35:13] INFO root fetch - main [MainThread]: End processing [notctyparser]: success
+[2023-06-03 19:35:13] INFO root fetch - main [MainThread]: End processing [tidytcells]: success
+[2023-06-03 19:35:13] INFO root fetch - main [MainThread]: End processing [navalmartin-mir-db-utils]: success
+[2023-06-03 19:35:17] INFO root fetch - main [MainThread]: End processing [netron]: success
+[2023-06-03 19:35:17] INFO root fetch - main [MainThread]: Store serial: [18360751]
