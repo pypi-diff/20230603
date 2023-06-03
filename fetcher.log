@@ -10378,3 +10378,42 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-06-03 18:16:37] INFO root fetch - main [MainThread]: End processing [cuallee]: success
 [2023-06-03 18:16:37] INFO root fetch - main [MainThread]: End processing [cuallee]: success
 [2023-06-03 18:16:37] INFO root fetch - main [MainThread]: Store serial: [18360406]
+[2023-06-03 18:21:41] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18360406]
+[2023-06-03 18:21:46] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-06-03 18:21:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: rs-distances
+[2023-06-03 18:21:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sportsml
+[2023-06-03 18:21:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: PySide6-Fluent-Widgets
+[2023-06-03 18:21:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: firegs
+[2023-06-03 18:21:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: schemathesis
+[2023-06-03 18:21:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pocketrockit
+[2023-06-03 18:21:46] INFO root fetch - processPackages [PySide6-Fluent-Widgets]: New version: [0.9.3] Old Version: [0.9.2]
+[2023-06-03 18:21:46] INFO root fetch - processPackages [rs-distances]: New version: [0.2.0] Old Version: [0.1.0]
+[2023-06-03 18:21:46] INFO root fetch - processPackages [firegs]: New version: [0.3] Old Version: [0.2]
+[2023-06-03 18:21:46] INFO root fetch - processPackages [sportsml]: New version: [0.1.0] Old Version: [0.0.9]
+[2023-06-03 18:21:46] INFO root fetch - processPackages [pocketrockit]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-06-03 18:21:46] INFO root fetch - processPackages [schemathesis]: New version: [3.9.7] Old Version: [3.9.6]
+[2023-06-03 18:21:47] INFO root fetch - processPackages [rs-distances]: Downloading https://files.pythonhosted.org/packages/f8/75/a6e1b70fdcdc0646207981f80c52ce48d81af349e8541e4c509babc18de1/rs_distances-0.1.0.tar.gz
+[2023-06-03 18:21:47] INFO root fetch - processPackages [pocketrockit]: executing diffoscope
+[2023-06-03 18:21:47] INFO root fetch - processPackages [pocketrockit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pocketrockit-0.0.8.tar.gz tmp/pocketrockit-0.0.9.tar.gz --markdown 20230603/p/pocketrockit/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-06-03 18:21:47] INFO root fetch - processPackages [schemathesis]: executing diffoscope
+[2023-06-03 18:21:47] INFO root fetch - processPackages [schemathesis]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/schemathesis-3.9.6.tar.gz tmp/schemathesis-3.9.7.tar.gz --markdown 20230603/s/schemathesis/3.9.6-3.9.7/diff.md --exclude *.pyd
+[2023-06-03 18:21:47] INFO root fetch - processPackages [firegs]: Downloading https://files.pythonhosted.org/packages/c0/48/5b8618d9668a640568cd6c332844915db6aabfe85a31f8ce0e4445b332ca/firegs-0.2.tar.gz
+[2023-06-03 18:21:47] INFO root fetch - processPackages [PySide6-Fluent-Widgets]: Downloading https://files.pythonhosted.org/packages/e2/2f/c8f2ccba009ad4319db49fdab7adb21dd748fbf1dd5035532bec1e7bde4b/PySide6-Fluent-Widgets-0.9.3.tar.gz
+[2023-06-03 18:21:47] INFO root fetch - processPackages [sportsml]: Downloading https://files.pythonhosted.org/packages/57/bf/7b652792b6613be2c3f2cc3eeecabd14e0616be23e469ea7cdee65acee7e/sportsml-0.1.0.tar.gz
+[2023-06-03 18:21:47] INFO root fetch - processPackages [rs-distances]: Downloading https://files.pythonhosted.org/packages/31/ca/3cdad19168e45f8ec60629eeb705fae17cdda127efddf0222aa56040251b/rs_distances-0.2.0.tar.gz
+[2023-06-03 18:21:47] INFO root fetch - processPackages [firegs]: Downloading https://files.pythonhosted.org/packages/06/d6/7ab8b64f91ee5e05f83779f3fdcfc2887b03b71eff93c2bb93cf72ec59c4/firegs-0.3.tar.gz
+[2023-06-03 18:21:47] INFO root fetch - processPackages [sportsml]: executing diffoscope
+[2023-06-03 18:21:47] INFO root fetch - processPackages [sportsml]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sportsml-0.0.9.tar.gz tmp/sportsml-0.1.0.tar.gz --markdown 20230603/s/sportsml/0.0.9-0.1.0/diff.md --exclude *.pyd
+[2023-06-03 18:21:47] INFO root fetch - processPackages [PySide6-Fluent-Widgets]: executing diffoscope
+[2023-06-03 18:21:47] INFO root fetch - processPackages [PySide6-Fluent-Widgets]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PySide6-Fluent-Widgets-0.9.2.tar.gz tmp/PySide6-Fluent-Widgets-0.9.3.tar.gz --markdown 20230603/P/PySide6-Fluent-Widgets/0.9.2-0.9.3/diff.md --exclude *.pyd
+[2023-06-03 18:21:47] INFO root fetch - processPackages [firegs]: executing diffoscope
+[2023-06-03 18:21:47] INFO root fetch - processPackages [firegs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/firegs-0.2.tar.gz tmp/firegs-0.3.tar.gz --markdown 20230603/f/firegs/0.2-0.3/diff.md --exclude *.pyd
+[2023-06-03 18:21:47] INFO root fetch - processPackages [rs-distances]: executing diffoscope
+[2023-06-03 18:21:47] INFO root fetch - processPackages [rs-distances]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rs_distances-0.1.0.tar.gz tmp/rs_distances-0.2.0.tar.gz --markdown 20230603/r/rs-distances/0.1.0-0.2.0/diff.md --exclude *.pyd
+[2023-06-03 18:21:48] INFO root fetch - main [MainThread]: End processing [pocketrockit]: success
+[2023-06-03 18:21:48] INFO root fetch - main [MainThread]: End processing [firegs]: success
+[2023-06-03 18:21:48] INFO root fetch - main [MainThread]: End processing [rs-distances]: success
+[2023-06-03 18:21:49] INFO root fetch - main [MainThread]: End processing [sportsml]: success
+[2023-06-03 18:21:49] INFO root fetch - main [MainThread]: End processing [schemathesis]: success
+[2023-06-03 18:21:51] INFO root fetch - main [MainThread]: End processing [PySide6-Fluent-Widgets]: success
+[2023-06-03 18:21:51] INFO root fetch - main [MainThread]: Store serial: [18360427]
