@@ -11188,3 +11188,46 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-06-03 19:56:44] INFO root fetch - main [MainThread]: End processing [shamirs]: success
 [2023-06-03 19:57:38] INFO root fetch - main [MainThread]: End processing [bell-avr-libraries]: success
 [2023-06-03 19:57:38] INFO root fetch - main [MainThread]: Store serial: [18360948]
+[2023-06-03 20:02:42] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18360948]
+[2023-06-03 20:02:47] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-06-03 20:02:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: FLAI-CAUSAL
+[2023-06-03 20:02:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pdf-cleanup-empty
+[2023-06-03 20:02:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: SLIW
+[2023-06-03 20:02:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: vision6D
+[2023-06-03 20:02:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: biclustering
+[2023-06-03 20:02:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: psyke
+[2023-06-03 20:02:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: apinum
+[2023-06-03 20:02:47] INFO root fetch - processPackages [biclustering]: New version: [2023.5.31.5] Old Version: [2023.5.31.4]
+[2023-06-03 20:02:47] INFO root fetch - processPackages [vision6D]: New version: [0.2.5] Old Version: [0.2.4]
+[2023-06-03 20:02:47] WARNING root fetch - processPackages [pdf-cleanup-empty]: Skipping, unable to determine old version
+[2023-06-03 20:02:47] INFO root fetch - main [MainThread]: End processing [pdf-cleanup-empty] error
+[2023-06-03 20:02:47] INFO root fetch - processPackages [psyke]: New version: [0.4.2.dev2] Old Version: [0.3.5]
+[2023-06-03 20:02:47] INFO root fetch - processPackages [SLIW]: New version: [0.0.5] Old Version: [0.0.2]
+[2023-06-03 20:02:47] INFO root fetch - processPackages [apinum]: New version: [0.1.5] Old Version: [0.1.4]
+[2023-06-03 20:02:47] INFO root fetch - processPackages [FLAI-CAUSAL]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-06-03 20:02:47] INFO root fetch - processPackages [biclustering]: Downloading https://files.pythonhosted.org/packages/f1/9d/29f0968f000162174afd64ca1a2827cd29abd9b76de35cb9e546e8a8fe02/biclustering-2023.5.31.5.tar.gz
+[2023-06-03 20:02:47] INFO root fetch - processPackages [SLIW]: Downloading https://files.pythonhosted.org/packages/74/cf/0f8aabcaf3cbbb51c416caa2b0fddf58c3eae18e6dd88b19d78140374c6c/SLIW-0.0.2.tar.gz
+[2023-06-03 20:02:47] INFO root fetch - processPackages [apinum]: Downloading https://files.pythonhosted.org/packages/a4/bd/d630cf726feddb3415ffcf9b01406577ff69a6be25de863c4ececaae51c6/apinum-0.1.5.tar.gz
+[2023-06-03 20:02:47] INFO root fetch - processPackages [biclustering]: executing diffoscope
+[2023-06-03 20:02:47] INFO root fetch - processPackages [biclustering]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/biclustering-2023.5.31.4.tar.gz tmp/biclustering-2023.5.31.5.tar.gz --markdown 20230603/b/biclustering/2023.5.31.4-2023.5.31.5/diff.md --exclude *.pyd
+[2023-06-03 20:02:47] INFO root fetch - processPackages [apinum]: executing diffoscope
+[2023-06-03 20:02:47] INFO root fetch - processPackages [apinum]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/apinum-0.1.4.tar.gz tmp/apinum-0.1.5.tar.gz --markdown 20230603/a/apinum/0.1.4-0.1.5/diff.md --exclude *.pyd
+[2023-06-03 20:02:47] INFO root fetch - processPackages [psyke]: Downloading https://files.pythonhosted.org/packages/6c/51/cbe8856e60c04909c84f11c832c3eb31c3511593b2f7f24ac6cb628c0205/psyke-0.4.2.dev2.tar.gz
+[2023-06-03 20:02:47] INFO root fetch - processPackages [vision6D]: Downloading https://files.pythonhosted.org/packages/4d/14/4f9f0c5e3bf80acb49dd8a62e8e65f019a04c2c207722107bd8144900466/vision6D-0.2.5.tar.gz
+[2023-06-03 20:02:47] INFO root fetch - processPackages [FLAI-CAUSAL]: Downloading https://files.pythonhosted.org/packages/07/84/6d3d5c8e5d542c43bae83eff88cdbfc686f21bfc5a7d6c5821e5fafb095c/FLAI_CAUSAL-1.0.9.tar.gz
+[2023-06-03 20:02:47] INFO root fetch - processPackages [FLAI-CAUSAL]: executing diffoscope
+[2023-06-03 20:02:47] INFO root fetch - processPackages [FLAI-CAUSAL]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/FLAI_CAUSAL-1.0.8.tar.gz tmp/FLAI_CAUSAL-1.0.9.tar.gz --markdown 20230603/F/FLAI-CAUSAL/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-06-03 20:02:47] INFO root fetch - processPackages [vision6D]: executing diffoscope
+[2023-06-03 20:02:47] INFO root fetch - processPackages [vision6D]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vision6D-0.2.4.tar.gz tmp/vision6D-0.2.5.tar.gz --markdown 20230603/v/vision6D/0.2.4-0.2.5/diff.md --exclude *.pyd
+[2023-06-03 20:02:47] INFO root fetch - processPackages [psyke]: executing diffoscope
+[2023-06-03 20:02:47] INFO root fetch - processPackages [psyke]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/psyke-0.3.5.tar.gz tmp/psyke-0.4.2.dev2.tar.gz --markdown 20230603/p/psyke/0.3.5-0.4.2.dev2/diff.md --exclude *.pyd
+[2023-06-03 20:02:47] INFO root fetch - processPackages [SLIW]: Downloading https://files.pythonhosted.org/packages/e1/c3/f8baaf52ae758376900dfd74b88b08c55afb737a59cf0f68f3b7e454e928/sliw-0.0.5.tar.gz
+[2023-06-03 20:02:47] INFO root fetch - processPackages [SLIW]: executing diffoscope
+[2023-06-03 20:02:47] INFO root fetch - processPackages [SLIW]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/SLIW-0.0.2.tar.gz tmp/sliw-0.0.5.tar.gz --markdown 20230603/S/SLIW/0.0.2-0.0.5/diff.md --exclude *.pyd
+[2023-06-03 20:02:48] INFO root fetch - main [MainThread]: End processing [apinum]: success
+[2023-06-03 20:02:48] INFO root fetch - main [MainThread]: End processing [FLAI-CAUSAL]: success
+[2023-06-03 20:02:49] INFO root fetch - main [MainThread]: End processing [biclustering]: success
+[2023-06-03 20:02:49] INFO root fetch - main [MainThread]: End processing [SLIW]: success
+[2023-06-03 20:02:49] INFO root fetch - main [MainThread]: End processing [vision6D]: success
+[2023-06-03 20:02:49] INFO root fetch - main [MainThread]: End processing [psyke]: success
+[2023-06-03 20:02:49] INFO root fetch - main [MainThread]: Store serial: [18360972]
