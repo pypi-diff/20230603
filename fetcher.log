@@ -8189,3 +8189,39 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-06-03 13:59:08] INFO root fetch - main [MainThread]: End processing [phone-gen]: success
 [2023-06-03 13:59:08] INFO root fetch - main [MainThread]: End processing [agixt]: success
 [2023-06-03 13:59:08] INFO root fetch - main [MainThread]: Store serial: [18359047]
+[2023-06-03 14:04:13] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18359047]
+[2023-06-03 14:04:17] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-06-03 14:04:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dragon-city-utils
+[2023-06-03 14:04:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: git2vec
+[2023-06-03 14:04:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pyhop
+[2023-06-03 14:04:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: mangaplus
+[2023-06-03 14:04:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: TradeGate
+[2023-06-03 14:04:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: sphecerix
+[2023-06-03 14:04:17] WARNING root fetch - processPackages [pyhop]: Skipping, unable to determine old version
+[2023-06-03 14:04:17] INFO root fetch - main [MainThread]: End processing [pyhop] error
+[2023-06-03 14:04:17] INFO root fetch - processPackages [mangaplus]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-06-03 14:04:17] INFO root fetch - processPackages [TradeGate]: New version: [0.3.8.2] Old Version: [0.3.8.1]
+[2023-06-03 14:04:17] INFO root fetch - processPackages [sphecerix]: New version: [0.2.1] Old Version: [0.2.0]
+[2023-06-03 14:04:17] INFO root fetch - processPackages [git2vec]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-06-03 14:04:17] INFO root fetch - processPackages [dragon-city-utils]: New version: [1.9] Old Version: [1.8]
+[2023-06-03 14:04:18] INFO root fetch - processPackages [dragon-city-utils]: executing diffoscope
+[2023-06-03 14:04:18] INFO root fetch - processPackages [dragon-city-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dragon-city-utils-1.8.tar.gz tmp/dragon-city-utils-1.9.tar.gz --markdown 20230603/d/dragon-city-utils/1.8-1.9/diff.md --exclude *.pyd
+[2023-06-03 14:04:18] INFO root fetch - processPackages [mangaplus]: Downloading https://files.pythonhosted.org/packages/6c/e8/1e460b166d46d474b2041ec90c0e03bb2e4556cbcb7be4602e4f1dee9f91/mangaplus-1.0.1.tar.gz
+[2023-06-03 14:04:18] INFO root fetch - processPackages [git2vec]: Downloading https://files.pythonhosted.org/packages/c0/53/579db1de668d82dde5d4b017a3da1f2fe7d2384f7f3b1bb4b80044d7d3e8/git2vec-0.1.2.tar.gz
+[2023-06-03 14:04:18] INFO root fetch - processPackages [TradeGate]: Downloading https://files.pythonhosted.org/packages/3c/a2/a816324b27f22a7a17dae1c575445b0222fc854cb0af1b4df04778957aa3/TradeGate-0.3.8.2.tar.gz
+[2023-06-03 14:04:18] INFO root fetch - processPackages [git2vec]: executing diffoscope
+[2023-06-03 14:04:18] INFO root fetch - processPackages [git2vec]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/git2vec-0.1.1.tar.gz tmp/git2vec-0.1.2.tar.gz --markdown 20230603/g/git2vec/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-06-03 14:04:18] INFO root fetch - processPackages [sphecerix]: Downloading https://files.pythonhosted.org/packages/ce/ce/79ba5644e2d2f6933a91dfb75347dd9144f5da95d30e71e57b1c69dfe6c7/sphecerix-0.2.1-py3-none-any.whl
+[2023-06-03 14:04:18] INFO root fetch - processPackages [TradeGate]: executing diffoscope
+[2023-06-03 14:04:18] INFO root fetch - processPackages [TradeGate]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/TradeGate-0.3.8.1.tar.gz tmp/TradeGate-0.3.8.2.tar.gz --markdown 20230603/T/TradeGate/0.3.8.1-0.3.8.2/diff.md --exclude *.pyd
+[2023-06-03 14:04:18] INFO root fetch - processPackages [mangaplus]: Downloading https://files.pythonhosted.org/packages/cc/44/08636cb17e3f0ae7a3c32a73eda68655bd92e0ffe6fad593913bd8932d59/mangaplus-1.0.2.tar.gz
+[2023-06-03 14:04:18] INFO root fetch - processPackages [mangaplus]: executing diffoscope
+[2023-06-03 14:04:18] INFO root fetch - processPackages [mangaplus]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mangaplus-1.0.1.tar.gz tmp/mangaplus-1.0.2.tar.gz --markdown 20230603/m/mangaplus/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-06-03 14:04:18] INFO root fetch - processPackages [sphecerix]: executing diffoscope
+[2023-06-03 14:04:18] INFO root fetch - processPackages [sphecerix]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sphecerix-0.2.0-py3-none-any.whl.zip tmp/sphecerix-0.2.1-py3-none-any.whl.zip --markdown 20230603/s/sphecerix/0.2.0-0.2.1/diff.md --exclude *.pyd
+[2023-06-03 14:04:19] INFO root fetch - main [MainThread]: End processing [git2vec]: success
+[2023-06-03 14:04:19] INFO root fetch - main [MainThread]: End processing [sphecerix]: success
+[2023-06-03 14:04:19] INFO root fetch - main [MainThread]: End processing [mangaplus]: success
+[2023-06-03 14:04:19] INFO root fetch - main [MainThread]: End processing [dragon-city-utils]: success
+[2023-06-03 14:04:20] INFO root fetch - main [MainThread]: End processing [TradeGate]: success
+[2023-06-03 14:04:20] INFO root fetch - main [MainThread]: Store serial: [18359063]
