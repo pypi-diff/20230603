@@ -4785,3 +4785,32 @@
 [2023-06-03 05:54:04] INFO root fetch - processPackages [articat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/articat-0.1.8.tar.gz tmp/articat-0.1.9.tar.gz --markdown 20230603/a/articat/0.1.8-0.1.9/diff.md --exclude *.pyd
 [2023-06-03 05:54:05] INFO root fetch - main [MainThread]: End processing [articat]: success
 [2023-06-03 05:54:05] INFO root fetch - main [MainThread]: Store serial: [18356732]
+[2023-06-03 05:59:09] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18356732]
+[2023-06-03 05:59:14] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-06-03 05:59:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: choclo-checker
+[2023-06-03 05:59:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pydantic-tools
+[2023-06-03 05:59:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: gmsofttest
+[2023-06-03 05:59:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: PhindersKeepers
+[2023-06-03 05:59:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: modulo
+[2023-06-03 05:59:14] INFO root fetch - processPackages [modulo]: New version: [2.1.0] Old Version: [2.0.3]
+[2023-06-03 05:59:14] WARNING root fetch - processPackages [choclo-checker]: Skipping, unable to determine old version
+[2023-06-03 05:59:14] INFO root fetch - main [MainThread]: End processing [choclo-checker] error
+[2023-06-03 05:59:14] WARNING root fetch - processPackages [PhindersKeepers]: Skipping, unable to determine old version
+[2023-06-03 05:59:14] INFO root fetch - main [MainThread]: End processing [PhindersKeepers] error
+[2023-06-03 05:59:14] INFO root fetch - processPackages [pydantic-tools]: New version: [0.3.1] Old Version: [0.3.0]
+[2023-06-03 05:59:14] INFO root fetch - processPackages [gmsofttest]: New version: [0.0.8] Old Version: [0.0.7]
+[2023-06-03 05:59:14] INFO root fetch - processPackages [modulo]: Downloading https://files.pythonhosted.org/packages/6e/16/0af152506ea368184ae82cb099f8b2d7869857fa66b7a2468a484f23c549/modulo-2.0.3.tar.gz
+[2023-06-03 05:59:14] INFO root fetch - processPackages [pydantic-tools]: Downloading https://files.pythonhosted.org/packages/04/6c/5473cc10550bb2d8ae6990c5c79c92e5a9f4c679d0e3b8d779c1fbe652be/pydantic_tools-0.3.0.tar.gz
+[2023-06-03 05:59:14] INFO root fetch - processPackages [gmsofttest]: Downloading https://files.pythonhosted.org/packages/eb/c9/80a2e9566b35349b1eb8378e20b5a4ed2e0f534992281be6f39de2183dfc/gmsofttest-0.0.8.tar.gz
+[2023-06-03 05:59:14] INFO root fetch - processPackages [gmsofttest]: executing diffoscope
+[2023-06-03 05:59:14] INFO root fetch - processPackages [gmsofttest]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gmsofttest-0.0.7.tar.gz tmp/gmsofttest-0.0.8.tar.gz --markdown 20230603/g/gmsofttest/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2023-06-03 05:59:14] INFO root fetch - processPackages [pydantic-tools]: Downloading https://files.pythonhosted.org/packages/13/7c/f90ff9d9f2efba3343e0973ab83a17acfc5a45ed0d84b70a3bda3d5cf4b3/pydantic_tools-0.3.1.tar.gz
+[2023-06-03 05:59:14] INFO root fetch - processPackages [modulo]: Downloading https://files.pythonhosted.org/packages/8d/f1/6870979dda274664a26af843dbb3f3a6daa2ab171fb44b2dba5c9ae4089a/modulo-2.1.0.tar.gz
+[2023-06-03 05:59:14] INFO root fetch - processPackages [pydantic-tools]: executing diffoscope
+[2023-06-03 05:59:14] INFO root fetch - processPackages [pydantic-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pydantic_tools-0.3.0.tar.gz tmp/pydantic_tools-0.3.1.tar.gz --markdown 20230603/p/pydantic-tools/0.3.0-0.3.1/diff.md --exclude *.pyd
+[2023-06-03 05:59:14] INFO root fetch - processPackages [modulo]: executing diffoscope
+[2023-06-03 05:59:14] INFO root fetch - processPackages [modulo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/modulo-2.0.3.tar.gz tmp/modulo-2.1.0.tar.gz --markdown 20230603/m/modulo/2.0.3-2.1.0/diff.md --exclude *.pyd
+[2023-06-03 05:59:15] INFO root fetch - main [MainThread]: End processing [gmsofttest]: success
+[2023-06-03 05:59:15] INFO root fetch - main [MainThread]: End processing [pydantic-tools]: success
+[2023-06-03 05:59:16] INFO root fetch - main [MainThread]: End processing [modulo]: success
+[2023-06-03 05:59:16] INFO root fetch - main [MainThread]: Store serial: [18356751]
