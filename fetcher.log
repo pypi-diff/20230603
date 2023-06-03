@@ -4527,3 +4527,44 @@
 [2023-06-03 05:09:15] ERROR root fetch - processPackages [netron]: Timeout during execution of pkgdiff
 [2023-06-03 05:09:15] INFO root fetch - main [MainThread]: End processing [netron] error
 [2023-06-03 05:09:15] INFO root fetch - main [MainThread]: Store serial: [18356566]
+[2023-06-03 05:14:20] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18356566]
+[2023-06-03 05:14:25] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-06-03 05:14:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tpds-application
+[2023-06-03 05:14:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tpds-core
+[2023-06-03 05:14:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: tpds-helper
+[2023-06-03 05:14:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: cache-by-key
+[2023-06-03 05:14:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: duckdb
+[2023-06-03 05:14:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: GANDLF
+[2023-06-03 05:14:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: archs4py
+[2023-06-03 05:14:25] INFO root fetch - processPackages [tpds-core]: New version: [2.3.6] Old Version: [2.3.5]
+[2023-06-03 05:14:25] INFO root fetch - processPackages [tpds-helper]: New version: [2.3.8] Old Version: [2.3.7]
+[2023-06-03 05:14:25] INFO root fetch - processPackages [tpds-application]: New version: [2.3.9] Old Version: [2.3.7]
+[2023-06-03 05:14:25] INFO root fetch - processPackages [GANDLF]: New version: [0.0.17.dev20230603] Old Version: [0.0.17.dev20230602]
+[2023-06-03 05:14:25] INFO root fetch - processPackages [duckdb]: New version: [0.8.1.dev253] Old Version: [0.8.1.dev219]
+[2023-06-03 05:14:25] WARNING root fetch - processPackages [cache-by-key]: Skipping, unable to determine old version
+[2023-06-03 05:14:25] INFO root fetch - main [MainThread]: End processing [cache-by-key] error
+[2023-06-03 05:14:25] INFO root fetch - processPackages [archs4py]: New version: [0.1.7] Old Version: [0.1.6]
+[2023-06-03 05:14:25] INFO root fetch - processPackages [GANDLF]: Downloading https://files.pythonhosted.org/packages/88/f5/2caa957990112fb0a0ccba873e46db02aabea0b838a6da301239ea8be2cf/GANDLF-0.0.17.dev20230603.tar.gz
+[2023-06-03 05:14:25] INFO root fetch - processPackages [tpds-core]: Downloading https://files.pythonhosted.org/packages/4f/fa/ae5ff7b9e6a11ada868c3f78364232d8dd33963bca7210bf65e3fe73783b/tpds_core-2.3.6-py3-none-any.whl
+[2023-06-03 05:14:25] INFO root fetch - processPackages [tpds-helper]: Downloading https://files.pythonhosted.org/packages/77/15/dea75f30afb0790a87db551210d4c739b2c8f370ef0823ab7352c0176633/tpds_helper-2.3.8-py3-none-any.whl
+[2023-06-03 05:14:25] INFO root fetch - processPackages [archs4py]: Downloading https://files.pythonhosted.org/packages/db/00/c0aef79cf359960416de5a7596d62bbae66f0fed702fa343e16791bbca8a/archs4py-0.1.7.tar.gz
+[2023-06-03 05:14:25] INFO root fetch - processPackages [tpds-application]: executing diffoscope
+[2023-06-03 05:14:25] INFO root fetch - processPackages [tpds-application]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tpds_application-2.3.7-py3-none-any.whl.zip tmp/tpds_application-2.3.9-py3-none-any.whl.zip --markdown 20230603/t/tpds-application/2.3.7-2.3.9/diff.md --exclude *.pyd
+[2023-06-03 05:14:25] INFO root fetch - processPackages [tpds-core]: executing diffoscope
+[2023-06-03 05:14:25] INFO root fetch - processPackages [tpds-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tpds_core-2.3.5-py3-none-any.whl.zip tmp/tpds_core-2.3.6-py3-none-any.whl.zip --markdown 20230603/t/tpds-core/2.3.5-2.3.6/diff.md --exclude *.pyd
+[2023-06-03 05:14:25] INFO root fetch - processPackages [GANDLF]: executing diffoscope
+[2023-06-03 05:14:25] INFO root fetch - processPackages [GANDLF]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/GANDLF-0.0.17.dev20230602.tar.gz tmp/GANDLF-0.0.17.dev20230603.tar.gz --markdown 20230603/G/GANDLF/0.0.17.dev20230602-0.0.17.dev20230603/diff.md --exclude *.pyd
+[2023-06-03 05:14:25] INFO root fetch - processPackages [tpds-helper]: executing diffoscope
+[2023-06-03 05:14:25] INFO root fetch - processPackages [tpds-helper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tpds_helper-2.3.7-py3-none-any.whl.zip tmp/tpds_helper-2.3.8-py3-none-any.whl.zip --markdown 20230603/t/tpds-helper/2.3.7-2.3.8/diff.md --exclude *.pyd
+[2023-06-03 05:14:25] INFO root fetch - processPackages [duckdb]: Downloading https://files.pythonhosted.org/packages/0c/aa/92c334d320a7c2501dd8b3e968c55633a6607a24294bd66dbd600758ef1b/duckdb-0.8.1.dev253.tar.gz
+[2023-06-03 05:14:25] INFO root fetch - processPackages [archs4py]: executing diffoscope
+[2023-06-03 05:14:25] INFO root fetch - processPackages [archs4py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/archs4py-0.1.6.tar.gz tmp/archs4py-0.1.7.tar.gz --markdown 20230603/a/archs4py/0.1.6-0.1.7/diff.md --exclude *.pyd
+[2023-06-03 05:14:26] INFO root fetch - main [MainThread]: End processing [archs4py]: success
+[2023-06-03 05:14:26] INFO root fetch - main [MainThread]: End processing [tpds-application]: success
+[2023-06-03 05:14:26] INFO root fetch - processPackages [duckdb]: executing diffoscope
+[2023-06-03 05:14:26] INFO root fetch - processPackages [duckdb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/duckdb-0.8.1.dev219.tar.gz tmp/duckdb-0.8.1.dev253.tar.gz --markdown 20230603/d/duckdb/0.8.1.dev219-0.8.1.dev253/diff.md --exclude *.pyd
+[2023-06-03 05:14:27] INFO root fetch - main [MainThread]: End processing [tpds-core]: success
+[2023-06-03 05:14:27] INFO root fetch - main [MainThread]: End processing [tpds-helper]: success
+[2023-06-03 05:14:27] INFO root fetch - main [MainThread]: End processing [GANDLF]: success
+[2023-06-03 05:16:51] INFO root fetch - main [MainThread]: End processing [duckdb]: success
+[2023-06-03 05:16:51] INFO root fetch - main [MainThread]: Store serial: [18356589]
