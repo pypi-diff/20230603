@@ -5378,3 +5378,46 @@
 [2023-06-03 07:11:23] ERROR root fetch - processPackages [multi-model-server]: Timeout during execution of pkgdiff
 [2023-06-03 07:11:23] INFO root fetch - main [MainThread]: End processing [multi-model-server] error
 [2023-06-03 07:11:23] INFO root fetch - main [MainThread]: Store serial: [18357164]
+[2023-06-03 07:16:27] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18357164]
+[2023-06-03 07:16:32] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-06-03 07:16:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: livereloadx
+[2023-06-03 07:16:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: automateeda
+[2023-06-03 07:16:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: connex
+[2023-06-03 07:16:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: toolcli
+[2023-06-03 07:16:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: customtkinterx
+[2023-06-03 07:16:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pydantic-tools
+[2023-06-03 07:16:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: Geode-Common
+[2023-06-03 07:16:32] INFO root fetch - processPackages [toolcli]: New version: [0.6.9] Old Version: [0.6.8]
+[2023-06-03 07:16:32] INFO root fetch - processPackages [automateeda]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-06-03 07:16:32] WARNING root fetch - processPackages [livereloadx]: Skipping, unable to determine old version
+[2023-06-03 07:16:32] INFO root fetch - main [MainThread]: End processing [livereloadx] error
+[2023-06-03 07:16:32] INFO root fetch - processPackages [connex]: New version: [0.3.0] Old Version: [0.2.1]
+[2023-06-03 07:16:32] INFO root fetch - processPackages [customtkinterx]: New version: [0.2.1] Old Version: [0.2.0]
+[2023-06-03 07:16:32] INFO root fetch - processPackages [pydantic-tools]: New version: [0.3.3] Old Version: [0.3.2]
+[2023-06-03 07:16:32] INFO root fetch - processPackages [Geode-Common]: New version: [26.0.2rc1] Old Version: [26.0.1rc1]
+[2023-06-03 07:16:32] INFO root fetch - processPackages [toolcli]: Downloading https://files.pythonhosted.org/packages/95/0b/ed5c0e9085ae14116c76cb5a71495dfafb295f0eedb990273b6fd1fafe9f/toolcli-0.6.8.tar.gz
+[2023-06-03 07:16:32] INFO root fetch - processPackages [customtkinterx]: Downloading https://files.pythonhosted.org/packages/cb/e1/fb8b84f2141e97a910854303c9dab0c25cc5baefe91bebbfa22c80d2f73c/customtkinterx-0.2.1.tar.gz
+[2023-06-03 07:16:32] INFO root fetch - processPackages [pydantic-tools]: Downloading https://files.pythonhosted.org/packages/77/86/6532e72c8e3e891e6b3e578768fa473f664a51319111f1486041a0c235a2/pydantic_tools-0.3.3.tar.gz
+[2023-06-03 07:16:32] INFO root fetch - processPackages [automateeda]: Downloading https://files.pythonhosted.org/packages/2c/44/4e3420f70445015e648006611bdfaa651e0a81aae9dd5189023310ae1b2c/automateeda-0.0.6.tar.gz
+[2023-06-03 07:16:32] INFO root fetch - processPackages [connex]: Downloading https://files.pythonhosted.org/packages/4a/78/8138bc08765e480567fca2fb542717541b3c8e167925900400212772b973/connex-0.3.0.tar.gz
+[2023-06-03 07:16:32] INFO root fetch - processPackages [automateeda]: executing diffoscope
+[2023-06-03 07:16:32] INFO root fetch - processPackages [automateeda]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/automateeda-0.0.5.tar.gz tmp/automateeda-0.0.6.tar.gz --markdown 20230603/a/automateeda/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-06-03 07:16:32] INFO root fetch - processPackages [Geode-Common]: Downloading https://files.pythonhosted.org/packages/93/48/1d376df91b26386b8e38bfb9243b2db5eaf187771d57136a3f3bb7f1cb75/Geode_Common-26.0.2rc1-cp39-cp39-manylinux2014_x86_64.whl
+[2023-06-03 07:16:32] INFO root fetch - processPackages [pydantic-tools]: executing diffoscope
+[2023-06-03 07:16:32] INFO root fetch - processPackages [pydantic-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pydantic_tools-0.3.2.tar.gz tmp/pydantic_tools-0.3.3.tar.gz --markdown 20230603/p/pydantic-tools/0.3.2-0.3.3/diff.md --exclude *.pyd
+[2023-06-03 07:16:32] INFO root fetch - processPackages [connex]: executing diffoscope
+[2023-06-03 07:16:32] INFO root fetch - processPackages [connex]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/connex-0.2.1.tar.gz tmp/connex-0.3.0.tar.gz --markdown 20230603/c/connex/0.2.1-0.3.0/diff.md --exclude *.pyd
+[2023-06-03 07:16:32] INFO root fetch - processPackages [customtkinterx]: executing diffoscope
+[2023-06-03 07:16:32] INFO root fetch - processPackages [customtkinterx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/customtkinterx-0.2.0.tar.gz tmp/customtkinterx-0.2.1.tar.gz --markdown 20230603/c/customtkinterx/0.2.0-0.2.1/diff.md --exclude *.pyd
+[2023-06-03 07:16:33] INFO root fetch - processPackages [toolcli]: Downloading https://files.pythonhosted.org/packages/46/36/cf6f9145b26c206c7f50a8bbed886b8b9266c93707abc261dc77530b8cdf/toolcli-0.6.9-py3-none-any.whl
+[2023-06-03 07:16:33] INFO root fetch - processPackages [toolcli]: executing diffoscope
+[2023-06-03 07:16:33] INFO root fetch - processPackages [toolcli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/toolcli-0.6.8.tar.gz tmp/toolcli-0.6.9-py3-none-any.whl.zip --markdown 20230603/t/toolcli/0.6.8-0.6.9/diff.md --exclude *.pyd
+[2023-06-03 07:16:33] INFO root fetch - processPackages [Geode-Common]: executing diffoscope
+[2023-06-03 07:16:33] INFO root fetch - processPackages [Geode-Common]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Geode_Common-26.0.1rc1-cp39-cp39-win_amd64.whl.zip tmp/Geode_Common-26.0.2rc1-cp39-cp39-manylinux2014_x86_64.whl.zip --markdown 20230603/G/Geode-Common/26.0.1rc1-26.0.2rc1/diff.md --exclude *.pyd
+[2023-06-03 07:16:33] INFO root fetch - main [MainThread]: End processing [automateeda]: success
+[2023-06-03 07:16:33] INFO root fetch - main [MainThread]: End processing [connex]: success
+[2023-06-03 07:16:33] INFO root fetch - main [MainThread]: End processing [pydantic-tools]: success
+[2023-06-03 07:16:34] INFO root fetch - main [MainThread]: End processing [customtkinterx]: success
+[2023-06-03 07:16:34] INFO root fetch - main [MainThread]: End processing [toolcli]: success
+[2023-06-03 07:16:35] INFO root fetch - main [MainThread]: End processing [Geode-Common]: success
+[2023-06-03 07:16:35] INFO root fetch - main [MainThread]: Store serial: [18357191]
