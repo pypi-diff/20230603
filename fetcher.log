@@ -8225,3 +8225,56 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-06-03 14:04:19] INFO root fetch - main [MainThread]: End processing [dragon-city-utils]: success
 [2023-06-03 14:04:20] INFO root fetch - main [MainThread]: End processing [TradeGate]: success
 [2023-06-03 14:04:20] INFO root fetch - main [MainThread]: Store serial: [18359063]
+[2023-06-03 14:09:24] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18359063]
+[2023-06-03 14:09:28] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-06-03 14:09:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: gpt4-openai-api
+[2023-06-03 14:09:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: NlpToolkit-InformationRetrieval
+[2023-06-03 14:09:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: bigdl-dllib-spark3
+[2023-06-03 14:09:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: tfliteiorewriter
+[2023-06-03 14:09:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: nonebot-plugin-watermarker
+[2023-06-03 14:09:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: NlpToolkit-InformationRetrieval-Cy
+[2023-06-03 14:09:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: tf-agents-nightly
+[2023-06-03 14:09:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: Metamorf
+[2023-06-03 14:09:28] INFO root fetch - processPackages [NlpToolkit-InformationRetrieval-Cy]: New version: [1.0.6] Old Version: [1.0.5]
+[2023-06-03 14:09:28] INFO root fetch - processPackages [nonebot-plugin-watermarker]: New version: [0.2.0] Old Version: [0.1.5.1]
+[2023-06-03 14:09:28] INFO root fetch - processPackages [gpt4-openai-api]: New version: [0.5.0] Old Version: [0.4.0]
+[2023-06-03 14:09:28] INFO root fetch - processPackages [tfliteiorewriter]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-06-03 14:09:28] INFO root fetch - processPackages [bigdl-dllib-spark3]: New version: [2.4.0b20230603] Old Version: [2.4.0b20230602]
+[2023-06-03 14:09:28] INFO root fetch - processPackages [NlpToolkit-InformationRetrieval]: New version: [1.0.6] Old Version: [1.0.5]
+[2023-06-03 14:09:28] INFO root fetch - processPackages [tf-agents-nightly]: New version: [0.9.0.dev20210812] Old Version: [0.9.0.dev20210811]
+[2023-06-03 14:09:28] INFO root fetch - processPackages [Metamorf]: New version: [0.4.1] Old Version: [0.3.9.1]
+[2023-06-03 14:09:28] INFO root fetch - processPackages [NlpToolkit-InformationRetrieval-Cy]: Downloading https://files.pythonhosted.org/packages/96/04/21d5bbd52b598b84eee8306d3454b41f448e9e56649c808c93709af11fe6/NlpToolkit-InformationRetrieval-Cy-1.0.5.tar.gz
+[2023-06-03 14:09:29] INFO root fetch - processPackages [nonebot-plugin-watermarker]: Downloading https://files.pythonhosted.org/packages/72/1f/6b0f96981d1e2011ebb3be1d7b5e1bf0bb373a4fe34c1c1c1e08529c442f/nonebot_plugin_watermarker-0.1.5.1.tar.gz
+[2023-06-03 14:09:29] INFO root fetch - processPackages [bigdl-dllib-spark3]: Downloading https://files.pythonhosted.org/packages/b3/00/76edd2717ced852a6ea0c2043cd5ba8aeaf1dff7763b51003f746fa64850/bigdl-dllib-spark3-2.4.0b20230602.tar.gz
+[2023-06-03 14:09:29] INFO root fetch - processPackages [NlpToolkit-InformationRetrieval]: Downloading https://files.pythonhosted.org/packages/c8/bf/ac10ccc365a1dd6d27ca781d58c25b010af830b225e90eac9b7184c36b79/NlpToolkit-InformationRetrieval-1.0.5.tar.gz
+[2023-06-03 14:09:29] INFO root fetch - processPackages [gpt4-openai-api]: Downloading https://files.pythonhosted.org/packages/ef/b6/d5a792a3790579b7e66b1ded7dcd69734e5025db176f8c1da97200adf147/gpt4-openai-api-0.5.0.tar.gz
+[2023-06-03 14:09:29] INFO root fetch - processPackages [tfliteiorewriter]: Downloading https://files.pythonhosted.org/packages/d2/95/0aae472079bc6aaad59c9606c3a5952bf09a6244b0c43c1ef1bd47fcec25/tfliteiorewriter-1.0.2.tar.gz
+[2023-06-03 14:09:29] INFO root fetch - processPackages [Metamorf]: Downloading https://files.pythonhosted.org/packages/aa/b9/9c0d0779ff0aabfcdbf26d7999d5a1e5f7af68cab87cf1015107d52cab37/Metamorf-0.3.9.1.tar.gz
+[2023-06-03 14:09:29] INFO root fetch - processPackages [gpt4-openai-api]: executing diffoscope
+[2023-06-03 14:09:29] INFO root fetch - processPackages [tfliteiorewriter]: executing diffoscope
+[2023-06-03 14:09:29] INFO root fetch - processPackages [gpt4-openai-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gpt4-openai-api-0.4.0.tar.gz tmp/gpt4-openai-api-0.5.0.tar.gz --markdown 20230603/g/gpt4-openai-api/0.4.0-0.5.0/diff.md --exclude *.pyd
+[2023-06-03 14:09:29] INFO root fetch - processPackages [tfliteiorewriter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tfliteiorewriter-1.0.1.tar.gz tmp/tfliteiorewriter-1.0.2.tar.gz --markdown 20230603/t/tfliteiorewriter/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-06-03 14:09:29] INFO root fetch - processPackages [tf-agents-nightly]: executing diffoscope
+[2023-06-03 14:09:29] INFO root fetch - processPackages [tf-agents-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tf_agents_nightly-0.9.0.dev20210811-py3-none-any.whl.zip tmp/tf_agents_nightly-0.9.0.dev20210812-py3-none-any.whl.zip --markdown 20230603/t/tf-agents-nightly/0.9.0.dev20210811-0.9.0.dev20210812/diff.md --exclude *.pyd
+[2023-06-03 14:09:29] INFO root fetch - processPackages [NlpToolkit-InformationRetrieval]: Downloading https://files.pythonhosted.org/packages/da/b0/502ad0195519bacefe51f3d01c99c3dfeda8ead31c6d9550177e99fe0b40/NlpToolkit-InformationRetrieval-1.0.6.tar.gz
+[2023-06-03 14:09:29] INFO root fetch - processPackages [nonebot-plugin-watermarker]: Downloading https://files.pythonhosted.org/packages/29/df/112e1e82212243ce994568a66d09fdcdca055bf3099bd51305ca47ece273/nonebot_plugin_watermarker-0.2.0.tar.gz
+[2023-06-03 14:09:29] INFO root fetch - processPackages [NlpToolkit-InformationRetrieval]: executing diffoscope
+[2023-06-03 14:09:29] INFO root fetch - processPackages [NlpToolkit-InformationRetrieval]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/NlpToolkit-InformationRetrieval-1.0.5.tar.gz tmp/NlpToolkit-InformationRetrieval-1.0.6.tar.gz --markdown 20230603/N/NlpToolkit-InformationRetrieval/1.0.5-1.0.6/diff.md --exclude *.pyd
+[2023-06-03 14:09:29] INFO root fetch - processPackages [NlpToolkit-InformationRetrieval-Cy]: Downloading https://files.pythonhosted.org/packages/c9/cb/01f037f7d4e8664f2d88d57c201854d23869fe476988940f58be5a8550c6/NlpToolkit-InformationRetrieval-Cy-1.0.6.tar.gz
+[2023-06-03 14:09:29] INFO root fetch - processPackages [nonebot-plugin-watermarker]: executing diffoscope
+[2023-06-03 14:09:29] INFO root fetch - processPackages [nonebot-plugin-watermarker]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot_plugin_watermarker-0.1.5.1.tar.gz tmp/nonebot_plugin_watermarker-0.2.0.tar.gz --markdown 20230603/n/nonebot-plugin-watermarker/0.1.5.1-0.2.0/diff.md --exclude *.pyd
+[2023-06-03 14:09:29] INFO root fetch - processPackages [Metamorf]: Downloading https://files.pythonhosted.org/packages/7f/f7/51acb7b26f262aa940d9852f725bb24f18e28eaddabadd2c8adf8d4a1403/Metamorf-0.4.1.tar.gz
+[2023-06-03 14:09:29] INFO root fetch - processPackages [NlpToolkit-InformationRetrieval-Cy]: executing diffoscope
+[2023-06-03 14:09:29] INFO root fetch - processPackages [NlpToolkit-InformationRetrieval-Cy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/NlpToolkit-InformationRetrieval-Cy-1.0.5.tar.gz tmp/NlpToolkit-InformationRetrieval-Cy-1.0.6.tar.gz --markdown 20230603/N/NlpToolkit-InformationRetrieval-Cy/1.0.5-1.0.6/diff.md --exclude *.pyd
+[2023-06-03 14:09:29] WARNING root fetch - processPackages [bigdl-dllib-spark3]: Skipping package: exceeds size limit 61251916>=10485760
+[2023-06-03 14:09:29] INFO root fetch - main [MainThread]: End processing [bigdl-dllib-spark3] error
+[2023-06-03 14:09:29] INFO root fetch - processPackages [Metamorf]: executing diffoscope
+[2023-06-03 14:09:29] INFO root fetch - processPackages [Metamorf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Metamorf-0.3.9.1.tar.gz tmp/Metamorf-0.4.1.tar.gz --markdown 20230603/M/Metamorf/0.3.9.1-0.4.1/diff.md --exclude *.pyd
+[2023-06-03 14:09:30] INFO root fetch - main [MainThread]: End processing [gpt4-openai-api]: success
+[2023-06-03 14:09:30] INFO root fetch - main [MainThread]: End processing [tfliteiorewriter]: success
+[2023-06-03 14:09:30] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-watermarker]: success
+[2023-06-03 14:09:30] INFO root fetch - main [MainThread]: End processing [NlpToolkit-InformationRetrieval]: success
+[2023-06-03 14:09:32] INFO root fetch - main [MainThread]: End processing [Metamorf]: success
+[2023-06-03 14:09:35] INFO root fetch - main [MainThread]: End processing [tf-agents-nightly]: success
+[2023-06-03 14:09:36] INFO root fetch - main [MainThread]: End processing [NlpToolkit-InformationRetrieval-Cy]: success
+[2023-06-03 14:09:36] INFO root fetch - main [MainThread]: Store serial: [18359084]
