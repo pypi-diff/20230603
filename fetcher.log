@@ -7405,3 +7405,56 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-06-03 11:55:51] INFO root fetch - main [MainThread]: End processing [llm-client]: success
 [2023-06-03 11:56:43] INFO root fetch - main [MainThread]: End processing [upsilonconf]: success
 [2023-06-03 11:56:43] INFO root fetch - main [MainThread]: Store serial: [18358322]
+[2023-06-03 12:01:47] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18358322]
+[2023-06-03 12:01:52] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-06-03 12:01:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: autoapi-django
+[2023-06-03 12:01:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: wanted-models
+[2023-06-03 12:01:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ytdlp-dtube
+[2023-06-03 12:01:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: progress-table
+[2023-06-03 12:01:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: diffusion-webui
+[2023-06-03 12:01:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: fastapidevelop
+[2023-06-03 12:01:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: savant-rs
+[2023-06-03 12:01:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: amulet-nbt
+[2023-06-03 12:01:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: downloadx
+[2023-06-03 12:01:52] INFO root fetch - processPackages [progress-table]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-06-03 12:01:52] INFO root fetch - processPackages [wanted-models]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-06-03 12:01:52] INFO root fetch - processPackages [diffusion-webui]: New version: [2.5.0] Old Version: [2.4.0]
+[2023-06-03 12:01:52] INFO root fetch - processPackages [autoapi-django]: New version: [0.9.2] Old Version: [0.9.1]
+[2023-06-03 12:01:52] WARNING root fetch - processPackages [fastapidevelop]: Skipping, unable to determine old version
+[2023-06-03 12:01:52] INFO root fetch - main [MainThread]: End processing [fastapidevelop] error
+[2023-06-03 12:01:52] INFO root fetch - processPackages [savant-rs]: New version: [0.1.9] Old Version: [0.1.7]
+[2023-06-03 12:01:52] INFO root fetch - processPackages [ytdlp-dtube]: New version: [2023.6.3] Old Version: [2023.1.8]
+[2023-06-03 12:01:52] INFO root fetch - processPackages [savant-rs]: executing diffoscope
+[2023-06-03 12:01:52] INFO root fetch - processPackages [savant-rs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/savant_rs-0.1.7.tar.gz tmp/savant_rs-0.1.9.tar.gz --markdown 20230603/s/savant-rs/0.1.7-0.1.9/diff.md --exclude *.pyd
+[2023-06-03 12:01:52] INFO root fetch - processPackages [amulet-nbt]: New version: [2.0.6] Old Version: [2.0.5]
+[2023-06-03 12:01:52] WARNING root fetch - processPackages [downloadx]: Skipping, unable to determine old version
+[2023-06-03 12:01:52] INFO root fetch - main [MainThread]: End processing [downloadx] error
+[2023-06-03 12:01:52] INFO root fetch - processPackages [progress-table]: Downloading https://files.pythonhosted.org/packages/88/d4/3eacb2c0de6ca4db9ca3e858c7305a16e7a40ec03d90bc2c626aafe4f27e/progress-table-0.1.8.tar.gz
+[2023-06-03 12:01:52] INFO root fetch - processPackages [diffusion-webui]: Downloading https://files.pythonhosted.org/packages/a9/45/04dfa0f0581b4a9275e1d1d622fb84182ca1209971e234be8d93172977dc/diffusion-webui-2.4.0.tar.gz
+[2023-06-03 12:01:52] INFO root fetch - processPackages [ytdlp-dtube]: Downloading https://files.pythonhosted.org/packages/d7/1e/c2d6ff68cf28452c8621de240c0e856790db908f9d89520b78634c09993a/ytdlp_dtube-2023.1.8-py3-none-any.whl
+[2023-06-03 12:01:52] INFO root fetch - processPackages [amulet-nbt]: Downloading https://files.pythonhosted.org/packages/0f/ba/05ca9d820dc4cc24c4ed41c45c47beee2eebfbbb22d838772fde0f353a2a/amulet-nbt-2.0.5.tar.gz
+[2023-06-03 12:01:53] INFO root fetch - processPackages [wanted-models]: Downloading https://files.pythonhosted.org/packages/ed/22/467ece151dac80421d81ed130c99441691794c935a4bf530c64ef8010e13/wanted-models-0.0.5.tar.gz
+[2023-06-03 12:01:53] INFO root fetch - processPackages [autoapi-django]: executing diffoscope
+[2023-06-03 12:01:53] INFO root fetch - processPackages [autoapi-django]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/autoapi-django-0.9.1.tar.gz tmp/autoapi-django-0.9.2.tar.gz --markdown 20230603/a/autoapi-django/0.9.1-0.9.2/diff.md --exclude *.pyd
+[2023-06-03 12:01:53] INFO root fetch - processPackages [ytdlp-dtube]: Downloading https://files.pythonhosted.org/packages/a8/4b/0dfafbee5fbcdeec863d6c00e3a7c75cdf6e1b0b3ef64534966ebb9ba195/ytdlp_dtube-2023.6.3-py3-none-any.whl
+[2023-06-03 12:01:53] INFO root fetch - processPackages [wanted-models]: executing diffoscope
+[2023-06-03 12:01:53] INFO root fetch - processPackages [wanted-models]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wanted-models-0.0.4.tar.gz tmp/wanted-models-0.0.5.tar.gz --markdown 20230603/w/wanted-models/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-06-03 12:01:53] INFO root fetch - processPackages [diffusion-webui]: Downloading https://files.pythonhosted.org/packages/fc/bb/5aa0d6b97cf2c6939b902af6a1f575b068cf4731f8a09d28d38e8bdacce6/diffusion-webui-2.5.0.tar.gz
+[2023-06-03 12:01:53] INFO root fetch - processPackages [progress-table]: Downloading https://files.pythonhosted.org/packages/c6/ba/d645d7da028f22453b5764cabbe5a732f9d783804a65e68719c632b70fd1/progress-table-0.1.9.tar.gz
+[2023-06-03 12:01:53] INFO root fetch - processPackages [diffusion-webui]: executing diffoscope
+[2023-06-03 12:01:53] INFO root fetch - processPackages [diffusion-webui]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/diffusion-webui-2.4.0.tar.gz tmp/diffusion-webui-2.5.0.tar.gz --markdown 20230603/d/diffusion-webui/2.4.0-2.5.0/diff.md --exclude *.pyd
+[2023-06-03 12:01:53] INFO root fetch - processPackages [amulet-nbt]: Downloading https://files.pythonhosted.org/packages/09/fc/a972e16ab4d4fff04bbf578c5af5be5c75bd1267b32ed5e008f3ba136276/amulet-nbt-2.0.6.tar.gz
+[2023-06-03 12:01:53] INFO root fetch - processPackages [ytdlp-dtube]: executing diffoscope
+[2023-06-03 12:01:53] INFO root fetch - processPackages [ytdlp-dtube]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ytdlp_dtube-2023.1.8-py3-none-any.whl.zip tmp/ytdlp_dtube-2023.6.3-py3-none-any.whl.zip --markdown 20230603/y/ytdlp-dtube/2023.1.8-2023.6.3/diff.md --exclude *.pyd
+[2023-06-03 12:01:53] INFO root fetch - processPackages [amulet-nbt]: executing diffoscope
+[2023-06-03 12:01:53] INFO root fetch - processPackages [amulet-nbt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/amulet-nbt-2.0.5.tar.gz tmp/amulet-nbt-2.0.6.tar.gz --markdown 20230603/a/amulet-nbt/2.0.5-2.0.6/diff.md --exclude *.pyd
+[2023-06-03 12:01:53] INFO root fetch - processPackages [progress-table]: executing diffoscope
+[2023-06-03 12:01:53] INFO root fetch - processPackages [progress-table]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/progress-table-0.1.8.tar.gz tmp/progress-table-0.1.9.tar.gz --markdown 20230603/p/progress-table/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-06-03 12:01:54] INFO root fetch - main [MainThread]: End processing [wanted-models]: success
+[2023-06-03 12:01:54] INFO root fetch - main [MainThread]: End processing [ytdlp-dtube]: success
+[2023-06-03 12:01:54] INFO root fetch - main [MainThread]: End processing [autoapi-django]: success
+[2023-06-03 12:01:54] INFO root fetch - main [MainThread]: End processing [savant-rs]: success
+[2023-06-03 12:01:54] INFO root fetch - main [MainThread]: End processing [diffusion-webui]: success
+[2023-06-03 12:01:54] INFO root fetch - main [MainThread]: End processing [progress-table]: success
+[2023-06-03 12:02:00] INFO root fetch - main [MainThread]: End processing [amulet-nbt]: success
+[2023-06-03 12:02:00] INFO root fetch - main [MainThread]: Store serial: [18358366]
