@@ -10181,3 +10181,57 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-06-03 17:55:47] INFO root fetch - main [MainThread]: End processing [stocktracer]: success
 [2023-06-03 17:55:49] INFO root fetch - main [MainThread]: End processing [kombu]: success
 [2023-06-03 17:55:49] INFO root fetch - main [MainThread]: Store serial: [18360260]
+[2023-06-03 18:00:53] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18360260]
+[2023-06-03 18:00:58] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-06-03 18:00:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mmengine
+[2023-06-03 18:00:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: lasfile
+[2023-06-03 18:00:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: PySupercell
+[2023-06-03 18:00:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: nexus-utilities
+[2023-06-03 18:00:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: remotior-sensus
+[2023-06-03 18:00:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: damo-embedding
+[2023-06-03 18:00:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: dist-buble
+[2023-06-03 18:00:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: hashformers
+[2023-06-03 18:00:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: cdxbasics
+[2023-06-03 18:00:58] INFO root fetch - processPackages [mmengine]: New version: [0.7.4] Old Version: [0.7.3]
+[2023-06-03 18:00:58] INFO root fetch - processPackages [lasfile]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-06-03 18:00:58] INFO root fetch - processPackages [PySupercell]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-06-03 18:00:58] INFO root fetch - processPackages [nexus-utilities]: New version: [0.6.0] Old Version: [0.5.3]
+[2023-06-03 18:00:58] INFO root fetch - processPackages [hashformers]: New version: [2.0.0] Old Version: [1.2.8]
+[2023-06-03 18:00:58] INFO root fetch - processPackages [dist-buble]: New version: [1.1] Old Version: [1.0]
+[2023-06-03 18:00:58] INFO root fetch - processPackages [remotior-sensus]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-06-03 18:00:58] INFO root fetch - processPackages [cdxbasics]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-06-03 18:00:58] INFO root fetch - processPackages [lasfile]: executing diffoscope
+[2023-06-03 18:00:58] INFO root fetch - processPackages [lasfile]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lasfile-0.1.8.tar.gz tmp/lasfile-0.1.9.tar.gz --markdown 20230603/l/lasfile/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-06-03 18:00:58] WARNING root fetch - processPackages [damo-embedding]: Skipping, unable to determine old version
+[2023-06-03 18:00:58] INFO root fetch - main [MainThread]: End processing [damo-embedding] error
+[2023-06-03 18:00:58] INFO root fetch - processPackages [cdxbasics]: executing diffoscope
+[2023-06-03 18:00:58] INFO root fetch - processPackages [cdxbasics]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdxbasics-0.2.8.tar.gz tmp/cdxbasics-0.2.9.tar.gz --markdown 20230603/c/cdxbasics/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2023-06-03 18:00:58] INFO root fetch - processPackages [mmengine]: Downloading https://files.pythonhosted.org/packages/cf/e5/b245aa92da20d895247506e1973dcdde3bb2ac62b19a1f7a13737a643570/mmengine-0.7.3.tar.gz
+[2023-06-03 18:00:58] INFO root fetch - processPackages [hashformers]: Downloading https://files.pythonhosted.org/packages/70/ea/c010d8ff6db80c05c86d6cbcd3fbe2267ffacdd22c0101a7fcf1281eea22/hashformers-1.2.8.tar.gz
+[2023-06-03 18:00:58] INFO root fetch - processPackages [dist-buble]: Downloading https://files.pythonhosted.org/packages/2b/74/995a77d1fef9f0b9757610456a0f6a512ee400da24b2ec170f40670989c5/dist_buble-1.0.tar.gz
+[2023-06-03 18:00:58] INFO root fetch - processPackages [PySupercell]: Downloading https://files.pythonhosted.org/packages/99/ce/6f154c77cb3cd7edaa901d3d2a1433aeeaefca121a46e5af597e17f3995e/PySupercell-0.0.6.tar.gz
+[2023-06-03 18:00:58] INFO root fetch - processPackages [nexus-utilities]: Downloading https://files.pythonhosted.org/packages/bf/e6/9f21b9df2f6ee6323b852361376a511c84d70daa2820402f33c266cf07ab/nexus-utilities-0.6.0.tar.gz
+[2023-06-03 18:00:58] INFO root fetch - processPackages [PySupercell]: executing diffoscope
+[2023-06-03 18:00:58] INFO root fetch - processPackages [PySupercell]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PySupercell-0.0.5.tar.gz tmp/PySupercell-0.0.6.tar.gz --markdown 20230603/P/PySupercell/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-06-03 18:00:58] INFO root fetch - processPackages [remotior-sensus]: executing diffoscope
+[2023-06-03 18:00:58] INFO root fetch - processPackages [remotior-sensus]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/remotior_sensus-0.0.8.tar.gz tmp/remotior_sensus-0.0.9.tar.gz --markdown 20230603/r/remotior-sensus/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-06-03 18:00:58] INFO root fetch - processPackages [nexus-utilities]: executing diffoscope
+[2023-06-03 18:00:58] INFO root fetch - processPackages [nexus-utilities]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nexus-utilities-0.5.3.tar.gz tmp/nexus-utilities-0.6.0.tar.gz --markdown 20230603/n/nexus-utilities/0.5.3-0.6.0/diff.md --exclude *.pyd
+[2023-06-03 18:00:58] INFO root fetch - processPackages [mmengine]: Downloading https://files.pythonhosted.org/packages/18/dd/971feb9d845f720e9219cd7a41f7b389a22ce8879fd6be0fcdb361adb3ac/mmengine-0.7.4.tar.gz
+[2023-06-03 18:00:58] INFO root fetch - processPackages [hashformers]: Downloading https://files.pythonhosted.org/packages/4f/dd/7ae42d1ec93587b446e502c3a267fee97ad112988634d9dce43a4b7c7074/hashformers-2.0.0.tar.gz
+[2023-06-03 18:00:58] INFO root fetch - processPackages [dist-buble]: Downloading https://files.pythonhosted.org/packages/65/6f/e3f2bedf33e2aa8391ec4a4de6556ac6deacfe63b0941658ca6f992b6c86/dist_buble-1.1.tar.gz
+[2023-06-03 18:00:58] INFO root fetch - processPackages [hashformers]: executing diffoscope
+[2023-06-03 18:00:58] INFO root fetch - processPackages [hashformers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hashformers-1.2.8.tar.gz tmp/hashformers-2.0.0.tar.gz --markdown 20230603/h/hashformers/1.2.8-2.0.0/diff.md --exclude *.pyd
+[2023-06-03 18:00:58] INFO root fetch - processPackages [dist-buble]: executing diffoscope
+[2023-06-03 18:00:58] INFO root fetch - processPackages [dist-buble]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dist_buble-1.0.tar.gz tmp/dist_buble-1.1.tar.gz --markdown 20230603/d/dist-buble/1.0-1.1/diff.md --exclude *.pyd
+[2023-06-03 18:00:58] INFO root fetch - processPackages [mmengine]: executing diffoscope
+[2023-06-03 18:00:58] INFO root fetch - processPackages [mmengine]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mmengine-0.7.3.tar.gz tmp/mmengine-0.7.4.tar.gz --markdown 20230603/m/mmengine/0.7.3-0.7.4/diff.md --exclude *.pyd
+[2023-06-03 18:00:59] INFO root fetch - main [MainThread]: End processing [lasfile]: success
+[2023-06-03 18:01:00] INFO root fetch - main [MainThread]: End processing [hashformers]: success
+[2023-06-03 18:01:00] INFO root fetch - main [MainThread]: End processing [dist-buble]: success
+[2023-06-03 18:01:00] INFO root fetch - main [MainThread]: End processing [nexus-utilities]: success
+[2023-06-03 18:01:00] INFO root fetch - main [MainThread]: End processing [cdxbasics]: success
+[2023-06-03 18:01:00] INFO root fetch - main [MainThread]: End processing [PySupercell]: success
+[2023-06-03 18:01:00] INFO root fetch - main [MainThread]: End processing [remotior-sensus]: success
+[2023-06-03 18:01:01] INFO root fetch - main [MainThread]: End processing [mmengine]: success
+[2023-06-03 18:01:01] INFO root fetch - main [MainThread]: Store serial: [18360304]
