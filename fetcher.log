@@ -13027,3 +13027,58 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-06-03 22:38:09] INFO root fetch - main [MainThread]: End processing [datasinda]: success
 [2023-06-03 22:38:09] INFO root fetch - main [MainThread]: End processing [tfrecord-lite]: success
 [2023-06-03 22:38:09] INFO root fetch - main [MainThread]: Store serial: [18362004]
+[2023-06-03 22:43:13] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18362004]
+[2023-06-03 22:43:18] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-06-03 22:43:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: kalm
+[2023-06-03 22:43:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cargo-lambda
+[2023-06-03 22:43:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: metricspace
+[2023-06-03 22:43:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: kalm
+[2023-06-03 22:43:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: hummuspy
+[2023-06-03 22:43:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: sftp-uploader
+[2023-06-03 22:43:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: emhass
+[2023-06-03 22:43:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: kalm
+[2023-06-03 22:43:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: polywrapper
+[2023-06-03 22:43:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: metricspace
+[2023-06-03 22:43:18] INFO root fetch - processPackages [metricspace]: New version: [0.2.1] Old Version: [0.1.1]
+[2023-06-03 22:43:18] INFO root fetch - processPackages [sftp-uploader]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-06-03 22:43:18] INFO root fetch - processPackages [kalm]: New version: [0.6.9] Old Version: [0.6.8]
+[2023-06-03 22:43:18] INFO root fetch - processPackages [kalm]: New version: [0.6.9] Old Version: [0.6.8]
+[2023-06-03 22:43:18] INFO root fetch - processPackages [hummuspy]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-06-03 22:43:18] INFO root fetch - processPackages [cargo-lambda]: New version: [0.9.0] Old Version: [0.8.3]
+[2023-06-03 22:43:18] WARNING root fetch - processPackages [polywrapper]: Skipping, unable to determine old version
+[2023-06-03 22:43:18] INFO root fetch - processPackages [kalm]: New version: [0.6.9] Old Version: [0.6.8]
+[2023-06-03 22:43:18] INFO root fetch - main [MainThread]: End processing [polywrapper] error
+[2023-06-03 22:43:18] INFO root fetch - processPackages [metricspace]: New version: [0.2.1] Old Version: [0.1.1]
+[2023-06-03 22:43:18] INFO root fetch - processPackages [emhass]: New version: [0.4.9] Old Version: [0.4.8]
+[2023-06-03 22:43:18] INFO root fetch - processPackages [sftp-uploader]: executing diffoscope
+[2023-06-03 22:43:18] INFO root fetch - processPackages [sftp-uploader]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sftp_uploader-1.0.8.tar.gz tmp/sftp_uploader-1.0.9.tar.gz --markdown 20230603/s/sftp-uploader/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-06-03 22:43:18] INFO root fetch - processPackages [metricspace]: Downloading https://files.pythonhosted.org/packages/e0/bb/931e153ae520a458cd932d5a8ca3b556a0791328054b6aa1ac4ddc1b0c15/metricspace-0.1.1.tar.gz
+[2023-06-03 22:43:18] INFO root fetch - processPackages [metricspace]: Downloading https://files.pythonhosted.org/packages/e0/bb/931e153ae520a458cd932d5a8ca3b556a0791328054b6aa1ac4ddc1b0c15/metricspace-0.1.1.tar.gz
+[2023-06-03 22:43:18] INFO root fetch - processPackages [kalm]: executing diffoscope
+[2023-06-03 22:43:18] INFO root fetch - processPackages [kalm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kalm-0.6.8.tar.gz tmp/kalm-0.6.9.tar.gz --markdown 20230603/k/kalm/0.6.8-0.6.9/diff.md --exclude *.pyd
+[2023-06-03 22:43:18] INFO root fetch - processPackages [kalm]: executing diffoscope
+[2023-06-03 22:43:18] INFO root fetch - processPackages [kalm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kalm-0.6.8.tar.gz tmp/kalm-0.6.9.tar.gz --markdown 20230603/k/kalm/0.6.8-0.6.9/diff.md --exclude *.pyd
+[2023-06-03 22:43:18] INFO root fetch - processPackages [kalm]: executing diffoscope
+[2023-06-03 22:43:18] INFO root fetch - processPackages [kalm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kalm-0.6.8.tar.gz tmp/kalm-0.6.9.tar.gz --markdown 20230603/k/kalm/0.6.8-0.6.9/diff.md --exclude *.pyd
+[2023-06-03 22:43:19] INFO root fetch - processPackages [hummuspy]: executing diffoscope
+[2023-06-03 22:43:19] INFO root fetch - processPackages [hummuspy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hummuspy-0.0.8.tar.gz tmp/hummuspy-0.0.9.tar.gz --markdown 20230603/h/hummuspy/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-06-03 22:43:19] INFO root fetch - processPackages [cargo-lambda]: executing diffoscope
+[2023-06-03 22:43:19] INFO root fetch - processPackages [cargo-lambda]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cargo_lambda-0.8.3-py3-none-win_amd64.whl.zip tmp/cargo_lambda-0.9.0-py3-none-win_amd64.whl.zip --markdown 20230603/c/cargo-lambda/0.8.3-0.9.0/diff.md --exclude *.pyd
+[2023-06-03 22:43:19] INFO root fetch - processPackages [emhass]: executing diffoscope
+[2023-06-03 22:43:19] INFO root fetch - processPackages [emhass]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/emhass-0.4.8-py3-none-any.whl.zip tmp/emhass-0.4.9-py3-none-any.whl.zip --markdown 20230603/e/emhass/0.4.8-0.4.9/diff.md --exclude *.pyd
+[2023-06-03 22:43:19] INFO root fetch - processPackages [metricspace]: Downloading https://files.pythonhosted.org/packages/62/18/5c95db7c94e25e777050d8067aaab8eab335c4b24118ccf15db5201182df/metricspace-0.2.1.tar.gz
+[2023-06-03 22:43:19] INFO root fetch - processPackages [metricspace]: Downloading https://files.pythonhosted.org/packages/62/18/5c95db7c94e25e777050d8067aaab8eab335c4b24118ccf15db5201182df/metricspace-0.2.1.tar.gz
+[2023-06-03 22:43:19] INFO root fetch - processPackages [metricspace]: executing diffoscope
+[2023-06-03 22:43:19] INFO root fetch - processPackages [metricspace]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/metricspace-0.1.1.tar.gz tmp/metricspace-0.2.1.tar.gz --markdown 20230603/m/metricspace/0.1.1-0.2.1/diff.md --exclude *.pyd
+[2023-06-03 22:43:19] INFO root fetch - processPackages [metricspace]: executing diffoscope
+[2023-06-03 22:43:19] INFO root fetch - processPackages [metricspace]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/metricspace-0.1.1.tar.gz tmp/metricspace-0.2.1.tar.gz --markdown 20230603/m/metricspace/0.1.1-0.2.1/diff.md --exclude *.pyd
+[2023-06-03 22:43:20] INFO root fetch - main [MainThread]: End processing [sftp-uploader]: success
+[2023-06-03 22:43:20] INFO root fetch - main [MainThread]: End processing [kalm]: success
+[2023-06-03 22:43:20] INFO root fetch - main [MainThread]: End processing [kalm]: success
+[2023-06-03 22:43:20] INFO root fetch - main [MainThread]: End processing [kalm]: success
+[2023-06-03 22:43:20] INFO root fetch - main [MainThread]: End processing [hummuspy]: success
+[2023-06-03 22:43:20] INFO root fetch - main [MainThread]: End processing [metricspace]: success
+[2023-06-03 22:43:20] INFO root fetch - main [MainThread]: End processing [metricspace]: success
+[2023-06-03 22:43:20] INFO root fetch - main [MainThread]: End processing [emhass]: success
+[2023-06-03 22:44:23] INFO root fetch - main [MainThread]: End processing [cargo-lambda]: success
+[2023-06-03 22:44:23] INFO root fetch - main [MainThread]: Store serial: [18362039]
