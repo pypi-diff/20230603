@@ -6351,3 +6351,58 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-06-03 09:37:16] INFO root fetch - processPackages [composabl-dev]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/composabl_dev-0.0.1.dev1-cp38-cp38-manylinux_2_35_x86_64.whl.zip tmp/composabl_dev-0.1.1.dev3-cp38-cp38-manylinux_2_35_x86_64.whl.zip --markdown 20230603/c/composabl-dev/0.0.1.dev1-0.1.1.dev3/diff.md --exclude *.pyd
 [2023-06-03 09:37:25] INFO root fetch - main [MainThread]: End processing [composabl-dev]: success
 [2023-06-03 09:37:25] INFO root fetch - main [MainThread]: Store serial: [18357724]
+[2023-06-03 09:42:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18357724]
+[2023-06-03 09:42:35] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-06-03 09:42:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ifastapi
+[2023-06-03 09:42:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ab-test-toolkit
+[2023-06-03 09:42:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: vvv-rpc
+[2023-06-03 09:42:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: duckduckgo-search
+[2023-06-03 09:42:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: alesha
+[2023-06-03 09:42:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: textual-astview
+[2023-06-03 09:42:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: vvv-rpc-server
+[2023-06-03 09:42:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: nonebot-plugin-bilichat
+[2023-06-03 09:42:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: hellorandomabc
+[2023-06-03 09:42:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: ifastapi
+[2023-06-03 09:42:35] WARNING root fetch - processPackages [ab-test-toolkit]: Skipping, unable to determine old version
+[2023-06-03 09:42:35] INFO root fetch - main [MainThread]: End processing [ab-test-toolkit] error
+[2023-06-03 09:42:35] WARNING root fetch - processPackages [alesha]: Skipping, unable to determine old version
+[2023-06-03 09:42:35] INFO root fetch - main [MainThread]: End processing [alesha] error
+[2023-06-03 09:42:35] INFO root fetch - processPackages [vvv-rpc]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-06-03 09:42:35] INFO root fetch - processPackages [ifastapi]: New version: [0.0.3.9] Old Version: [0.0.3.8]
+[2023-06-03 09:42:35] INFO root fetch - processPackages [duckduckgo-search]: New version: [3.8.1] Old Version: [3.8.0]
+[2023-06-03 09:42:35] INFO root fetch - processPackages [ifastapi]: New version: [0.0.3.9] Old Version: [0.0.3.8]
+[2023-06-03 09:42:35] INFO root fetch - processPackages [textual-astview]: New version: [0.7.0] Old Version: [0.6.1]
+[2023-06-03 09:42:35] INFO root fetch - processPackages [vvv-rpc-server]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-06-03 09:42:35] WARNING root fetch - processPackages [hellorandomabc]: Skipping, unable to determine old version
+[2023-06-03 09:42:35] INFO root fetch - main [MainThread]: End processing [hellorandomabc] error
+[2023-06-03 09:42:35] INFO root fetch - processPackages [nonebot-plugin-bilichat]: New version: [2.3.0] Old Version: [2.2.0]
+[2023-06-03 09:42:35] INFO root fetch - processPackages [textual-astview]: Downloading https://files.pythonhosted.org/packages/8f/4b/a3d065a5bd203d6be080f9d98d4e1e368e7e53e3520532bd9b7432450985/textual-astview-0.6.1.tar.gz
+[2023-06-03 09:42:35] INFO root fetch - processPackages [vvv-rpc]: Downloading https://files.pythonhosted.org/packages/15/50/dcb0ecd10179d4bc8a553f74a710c290da2a53b330e5dea45698ccf78226/vvv_rpc-0.1.8-py3-none-any.whl
+[2023-06-03 09:42:35] INFO root fetch - processPackages [vvv-rpc-server]: Downloading https://files.pythonhosted.org/packages/ea/f9/c7f263f8301a044331d2368b05d5d102f5d0002ea0b5157b04c6a952fd79/vvv_rpc_server-0.0.5-py3-none-any.whl
+[2023-06-03 09:42:35] INFO root fetch - processPackages [duckduckgo-search]: Downloading https://files.pythonhosted.org/packages/7a/cb/4b259c6d753d71329130cbedd3b49f69b809bd4f39ed8ee84e0a7f106068/duckduckgo_search-3.8.1.tar.gz
+[2023-06-03 09:42:35] INFO root fetch - processPackages [ifastapi]: executing diffoscope
+[2023-06-03 09:42:35] INFO root fetch - processPackages [ifastapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ifastapi-0.0.3.8-py3-none-any.whl.zip tmp/ifastapi-0.0.3.9-py3-none-any.whl.zip --markdown 20230603/i/ifastapi/0.0.3.8-0.0.3.9/diff.md --exclude *.pyd
+[2023-06-03 09:42:35] INFO root fetch - processPackages [ifastapi]: executing diffoscope
+[2023-06-03 09:42:35] INFO root fetch - processPackages [nonebot-plugin-bilichat]: Downloading https://files.pythonhosted.org/packages/73/be/b05f8906772941243af2704f4c14d847944c2ec7bc34b9f4ec84c3af72dc/nonebot_plugin_bilichat-2.3.0.tar.gz
+[2023-06-03 09:42:35] INFO root fetch - processPackages [ifastapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ifastapi-0.0.3.8-py3-none-any.whl.zip tmp/ifastapi-0.0.3.9-py3-none-any.whl.zip --markdown 20230603/i/ifastapi/0.0.3.8-0.0.3.9/diff.md --exclude *.pyd
+[2023-06-03 09:42:36] INFO root fetch - processPackages [duckduckgo-search]: executing diffoscope
+[2023-06-03 09:42:36] INFO root fetch - processPackages [duckduckgo-search]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/duckduckgo_search-3.8.0.tar.gz tmp/duckduckgo_search-3.8.1.tar.gz --markdown 20230603/d/duckduckgo-search/3.8.0-3.8.1/diff.md --exclude *.pyd
+[2023-06-03 09:42:36] INFO root fetch - processPackages [vvv-rpc-server]: Downloading https://files.pythonhosted.org/packages/cb/c0/a5efb86550da7d1a06b31e0e54c5f6a552afcfa5cb6c309ea5006bf2bd6a/vvv_rpc_server-0.0.6-py3-none-any.whl
+[2023-06-03 09:42:36] INFO root fetch - processPackages [nonebot-plugin-bilichat]: executing diffoscope
+[2023-06-03 09:42:36] INFO root fetch - processPackages [nonebot-plugin-bilichat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot_plugin_bilichat-2.2.0.tar.gz tmp/nonebot_plugin_bilichat-2.3.0.tar.gz --markdown 20230603/n/nonebot-plugin-bilichat/2.2.0-2.3.0/diff.md --exclude *.pyd
+[2023-06-03 09:42:36] INFO root fetch - processPackages [vvv-rpc]: Downloading https://files.pythonhosted.org/packages/d3/cf/6543da23e1616bd1d2601b3b9defabf1247eb3e4b67e39f5580102470190/vvv_rpc-0.1.9-py3-none-any.whl
+[2023-06-03 09:42:36] INFO root fetch - processPackages [textual-astview]: Downloading https://files.pythonhosted.org/packages/05/2f/df48ba212fc17f748b840c9c3e9c874d662aae785deed4c1be054a51eed0/textual-astview-0.7.0.tar.gz
+[2023-06-03 09:42:36] INFO root fetch - processPackages [vvv-rpc-server]: executing diffoscope
+[2023-06-03 09:42:36] INFO root fetch - processPackages [vvv-rpc-server]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vvv_rpc_server-0.0.5-py3-none-any.whl.zip tmp/vvv_rpc_server-0.0.6-py3-none-any.whl.zip --markdown 20230603/v/vvv-rpc-server/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-06-03 09:42:36] INFO root fetch - processPackages [textual-astview]: executing diffoscope
+[2023-06-03 09:42:36] INFO root fetch - processPackages [textual-astview]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/textual-astview-0.6.1.tar.gz tmp/textual-astview-0.7.0.tar.gz --markdown 20230603/t/textual-astview/0.6.1-0.7.0/diff.md --exclude *.pyd
+[2023-06-03 09:42:36] INFO root fetch - processPackages [vvv-rpc]: executing diffoscope
+[2023-06-03 09:42:36] INFO root fetch - processPackages [vvv-rpc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vvv_rpc-0.1.8-py3-none-any.whl.zip tmp/vvv_rpc-0.1.9-py3-none-any.whl.zip --markdown 20230603/v/vvv-rpc/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-06-03 09:42:37] INFO root fetch - main [MainThread]: End processing [ifastapi]: success
+[2023-06-03 09:42:37] INFO root fetch - main [MainThread]: End processing [ifastapi]: success
+[2023-06-03 09:42:37] INFO root fetch - main [MainThread]: End processing [vvv-rpc]: success
+[2023-06-03 09:42:37] INFO root fetch - main [MainThread]: End processing [textual-astview]: success
+[2023-06-03 09:42:37] INFO root fetch - main [MainThread]: End processing [duckduckgo-search]: success
+[2023-06-03 09:42:38] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-bilichat]: success
+[2023-06-03 09:42:38] INFO root fetch - main [MainThread]: End processing [vvv-rpc-server]: success
+[2023-06-03 09:42:38] INFO root fetch - main [MainThread]: Store serial: [18357769]
