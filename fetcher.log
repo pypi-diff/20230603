@@ -7526,3 +7526,39 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-06-03 12:12:29] INFO root fetch - main [MainThread]: End processing [pydantic]: success
 [2023-06-03 12:13:19] INFO root fetch - main [MainThread]: End processing [dm-reverb-nightly]: success
 [2023-06-03 12:13:19] INFO root fetch - main [MainThread]: Store serial: [18358420]
+[2023-06-03 12:18:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18358420]
+[2023-06-03 12:18:28] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-06-03 12:18:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: douyin-tiktok-scraper
+[2023-06-03 12:18:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pypisca
+[2023-06-03 12:18:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: meshed
+[2023-06-03 12:18:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: kyzylborda-lib
+[2023-06-03 12:18:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: cq23
+[2023-06-03 12:18:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: xoa-driver
+[2023-06-03 12:18:28] INFO root fetch - processPackages [douyin-tiktok-scraper]: New version: [1.2.3] Old Version: [1.2.2]
+[2023-06-03 12:18:28] INFO root fetch - processPackages [cq23]: New version: [1.6.2] Old Version: [1.6.1]
+[2023-06-03 12:18:28] ERROR root fetch - processPackages [pypisca]: Unable to get metadata: No such project 'pypisca'
+[2023-06-03 12:18:28] INFO root fetch - main [MainThread]: End processing [pypisca] error
+[2023-06-03 12:18:28] INFO root fetch - processPackages [kyzylborda-lib]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-06-03 12:18:28] INFO root fetch - processPackages [meshed]: New version: [0.1.99] Old Version: [0.1.98]
+[2023-06-03 12:18:28] INFO root fetch - processPackages [xoa-driver]: New version: [2.0.1] Old Version: [2.0.0]
+[2023-06-03 12:18:29] INFO root fetch - processPackages [kyzylborda-lib]: Downloading https://files.pythonhosted.org/packages/76/ec/b56b17f45cf5f0eafb1c87b604c4bdf6d8a7071b8275a1c087cbee57144d/kyzylborda_lib-1.0.1.tar.gz
+[2023-06-03 12:18:29] INFO root fetch - processPackages [douyin-tiktok-scraper]: Downloading https://files.pythonhosted.org/packages/b7/40/7f4186d9dc8e64d5caaa1a4815952a42f6c119632ff71e24d90af98847c3/douyin_tiktok_scraper-1.2.3.tar.gz
+[2023-06-03 12:18:29] INFO root fetch - processPackages [cq23]: Downloading https://files.pythonhosted.org/packages/1e/36/5afa896c50c46fe21eae1c4a1521a8c6f16233fbef5fd6c3b68ebe4c9581/cq23-1.6.2.tar.gz
+[2023-06-03 12:18:29] INFO root fetch - processPackages [xoa-driver]: Downloading https://files.pythonhosted.org/packages/51/1b/4c7090ae202f2f65ab2608194b79b12a47a7f0c90b9811232ee0393e451b/xoa-driver-2.0.1.tar.gz
+[2023-06-03 12:18:29] INFO root fetch - processPackages [meshed]: executing diffoscope
+[2023-06-03 12:18:29] INFO root fetch - processPackages [meshed]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/meshed-0.1.98.tar.gz tmp/meshed-0.1.99.tar.gz --markdown 20230603/m/meshed/0.1.98-0.1.99/diff.md --exclude *.pyd
+[2023-06-03 12:18:29] INFO root fetch - processPackages [cq23]: executing diffoscope
+[2023-06-03 12:18:29] INFO root fetch - processPackages [cq23]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cq23-1.6.1.tar.gz tmp/cq23-1.6.2.tar.gz --markdown 20230603/c/cq23/1.6.1-1.6.2/diff.md --exclude *.pyd
+[2023-06-03 12:18:29] INFO root fetch - processPackages [douyin-tiktok-scraper]: executing diffoscope
+[2023-06-03 12:18:29] INFO root fetch - processPackages [douyin-tiktok-scraper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/douyin_tiktok_scraper-1.2.2.tar.gz tmp/douyin_tiktok_scraper-1.2.3.tar.gz --markdown 20230603/d/douyin-tiktok-scraper/1.2.2-1.2.3/diff.md --exclude *.pyd
+[2023-06-03 12:18:29] INFO root fetch - processPackages [kyzylborda-lib]: Downloading https://files.pythonhosted.org/packages/ba/88/cffbcbf02755cef9845b588bbf07d4d29e125bdb13225cc19547fed483e6/kyzylborda_lib-1.0.2-py3-none-any.whl
+[2023-06-03 12:18:29] INFO root fetch - processPackages [xoa-driver]: executing diffoscope
+[2023-06-03 12:18:29] INFO root fetch - processPackages [xoa-driver]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xoa-driver-2.0.0.tar.gz tmp/xoa-driver-2.0.1.tar.gz --markdown 20230603/x/xoa-driver/2.0.0-2.0.1/diff.md --exclude *.pyd
+[2023-06-03 12:18:29] INFO root fetch - processPackages [kyzylborda-lib]: executing diffoscope
+[2023-06-03 12:18:29] INFO root fetch - processPackages [kyzylborda-lib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kyzylborda_lib-1.0.1.tar.gz tmp/kyzylborda_lib-1.0.2-py3-none-any.whl.zip --markdown 20230603/k/kyzylborda-lib/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-06-03 12:18:30] INFO root fetch - main [MainThread]: End processing [douyin-tiktok-scraper]: success
+[2023-06-03 12:18:30] INFO root fetch - main [MainThread]: End processing [kyzylborda-lib]: success
+[2023-06-03 12:18:30] INFO root fetch - main [MainThread]: End processing [meshed]: success
+[2023-06-03 12:18:30] INFO root fetch - main [MainThread]: End processing [cq23]: success
+[2023-06-03 12:18:32] INFO root fetch - main [MainThread]: End processing [xoa-driver]: success
+[2023-06-03 12:18:32] INFO root fetch - main [MainThread]: Store serial: [18358443]
