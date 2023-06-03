@@ -8509,3 +8509,53 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-06-03 14:30:32] INFO root fetch - main [MainThread]: End processing [AdminToolsDjango]: success
 [2023-06-03 14:30:32] INFO root fetch - main [MainThread]: End processing [rattail-corepos]: success
 [2023-06-03 14:30:32] INFO root fetch - main [MainThread]: Store serial: [18359245]
+[2023-06-03 14:35:36] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18359245]
+[2023-06-03 14:35:41] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-06-03 14:35:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: hrin-msb
+[2023-06-03 14:35:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sliw
+[2023-06-03 14:35:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: lazylines
+[2023-06-03 14:35:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: thumbor-hsl
+[2023-06-03 14:35:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: funga
+[2023-06-03 14:35:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: aqueduct-utility
+[2023-06-03 14:35:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: funga-eth
+[2023-06-03 14:35:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: bigdl-dllib
+[2023-06-03 14:35:41] INFO root fetch - processPackages [hrin-msb]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-06-03 14:35:41] WARNING root fetch - processPackages [sliw]: Skipping, unable to determine old version
+[2023-06-03 14:35:41] INFO root fetch - main [MainThread]: End processing [sliw] error
+[2023-06-03 14:35:41] INFO root fetch - processPackages [thumbor-hsl]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-06-03 14:35:41] INFO root fetch - processPackages [funga]: New version: [0.5.6] Old Version: [0.5.5]
+[2023-06-03 14:35:41] INFO root fetch - processPackages [lazylines]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-06-03 14:35:41] INFO root fetch - processPackages [funga-eth]: New version: [0.7.1] Old Version: [0.7.0]
+[2023-06-03 14:35:41] INFO root fetch - processPackages [aqueduct-utility]: New version: [0.9.4] Old Version: [0.9.3]
+[2023-06-03 14:35:41] INFO root fetch - processPackages [bigdl-dllib]: New version: [2.4.0b20230603] Old Version: [2.4.0b20230602]
+[2023-06-03 14:35:41] INFO root fetch - processPackages [thumbor-hsl]: Downloading https://files.pythonhosted.org/packages/2d/45/28822ce2eb4638cf65942661874bd415007f1f4c88d225dcdb2ccf15f1ea/thumbor_hsl-0.0.1.tar.gz
+[2023-06-03 14:35:41] INFO root fetch - processPackages [hrin-msb]: executing diffoscope
+[2023-06-03 14:35:41] INFO root fetch - processPackages [hrin-msb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hrin_msb-0.2.8.tar.gz tmp/hrin_msb-0.2.9.tar.gz --markdown 20230603/h/hrin-msb/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2023-06-03 14:35:41] INFO root fetch - processPackages [lazylines]: Downloading https://files.pythonhosted.org/packages/bb/0e/dd5ee5d559af11589cee35aec18dae8b93fff94ca088f3d33d0090fe5046/lazylines-0.0.1.tar.gz
+[2023-06-03 14:35:41] INFO root fetch - processPackages [aqueduct-utility]: Downloading https://files.pythonhosted.org/packages/35/32/ea3c9d8df807bd542a3a43aa2ff5993eb3bf2abf00c8a8f86c5d3384ffed/aqueduct-utility-0.9.3.tar.gz
+[2023-06-03 14:35:41] INFO root fetch - processPackages [funga]: Downloading https://files.pythonhosted.org/packages/b4/7d/a21d3ca71312600a8a3ad947f6cfaaaed04f80e5fec770881d09a92483f3/funga-0.5.5.tar.gz
+[2023-06-03 14:35:41] INFO root fetch - processPackages [funga-eth]: Downloading https://files.pythonhosted.org/packages/c7/5f/89d86b594f992799996706b06f719638cd89daab7c2d2e4a5819470761ee/funga-eth-0.7.1.tar.gz
+[2023-06-03 14:35:41] INFO root fetch - processPackages [bigdl-dllib]: Downloading https://files.pythonhosted.org/packages/47/c2/b73d22eb1d2e18ef066dfb798feca147bf934d3b5140b1195e7dcd2e175a/bigdl-dllib-2.4.0b20230602.tar.gz
+[2023-06-03 14:35:41] WARNING root fetch - processPackages [bigdl-dllib]: Skipping package: exceeds size limit 53559912>=10485760
+[2023-06-03 14:35:41] INFO root fetch - main [MainThread]: End processing [bigdl-dllib] error
+[2023-06-03 14:35:41] INFO root fetch - processPackages [thumbor-hsl]: Downloading https://files.pythonhosted.org/packages/9f/0a/320acebe83cc1ac3e8d845d88fe68d426fdeeeb92b10b373b26b4a436316/thumbor_hsl-0.0.2.tar.gz
+[2023-06-03 14:35:41] INFO root fetch - processPackages [funga-eth]: executing diffoscope
+[2023-06-03 14:35:41] INFO root fetch - processPackages [funga-eth]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/funga-eth-0.7.0.tar.gz tmp/funga-eth-0.7.1.tar.gz --markdown 20230603/f/funga-eth/0.7.0-0.7.1/diff.md --exclude *.pyd
+[2023-06-03 14:35:41] INFO root fetch - processPackages [lazylines]: Downloading https://files.pythonhosted.org/packages/13/7d/221564840bdc1620535aee76aef2c05390970ed6001059d5c2b92dde31af/lazylines-0.0.2.tar.gz
+[2023-06-03 14:35:41] INFO root fetch - processPackages [funga]: Downloading https://files.pythonhosted.org/packages/78/fc/06246ef76d91763ce25100462f6020b52839d4d2919c3469a614d6bda3b5/funga-0.5.6.tar.gz
+[2023-06-03 14:35:41] INFO root fetch - processPackages [aqueduct-utility]: Downloading https://files.pythonhosted.org/packages/97/78/03e711e1a03889192ba931be1e93fbb57366a36ab009469f9d24787c29b8/aqueduct-utility-0.9.4.tar.gz
+[2023-06-03 14:35:41] INFO root fetch - processPackages [thumbor-hsl]: executing diffoscope
+[2023-06-03 14:35:41] INFO root fetch - processPackages [thumbor-hsl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/thumbor_hsl-0.0.1.tar.gz tmp/thumbor_hsl-0.0.2.tar.gz --markdown 20230603/t/thumbor-hsl/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-06-03 14:35:41] INFO root fetch - processPackages [lazylines]: executing diffoscope
+[2023-06-03 14:35:41] INFO root fetch - processPackages [lazylines]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lazylines-0.0.1.tar.gz tmp/lazylines-0.0.2.tar.gz --markdown 20230603/l/lazylines/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-06-03 14:35:41] INFO root fetch - processPackages [funga]: executing diffoscope
+[2023-06-03 14:35:41] INFO root fetch - processPackages [funga]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/funga-0.5.5.tar.gz tmp/funga-0.5.6.tar.gz --markdown 20230603/f/funga/0.5.5-0.5.6/diff.md --exclude *.pyd
+[2023-06-03 14:35:41] INFO root fetch - processPackages [aqueduct-utility]: executing diffoscope
+[2023-06-03 14:35:41] INFO root fetch - processPackages [aqueduct-utility]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aqueduct-utility-0.9.3.tar.gz tmp/aqueduct-utility-0.9.4.tar.gz --markdown 20230603/a/aqueduct-utility/0.9.3-0.9.4/diff.md --exclude *.pyd
+[2023-06-03 14:35:42] INFO root fetch - main [MainThread]: End processing [thumbor-hsl]: success
+[2023-06-03 14:35:43] INFO root fetch - main [MainThread]: End processing [funga-eth]: success
+[2023-06-03 14:35:43] INFO root fetch - main [MainThread]: End processing [aqueduct-utility]: success
+[2023-06-03 14:35:43] INFO root fetch - main [MainThread]: End processing [hrin-msb]: success
+[2023-06-03 14:35:43] INFO root fetch - main [MainThread]: End processing [lazylines]: success
+[2023-06-03 14:35:43] INFO root fetch - main [MainThread]: End processing [funga]: success
+[2023-06-03 14:35:43] INFO root fetch - main [MainThread]: Store serial: [18359269]
