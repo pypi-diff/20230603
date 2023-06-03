@@ -7719,3 +7719,34 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-06-03 12:55:09] INFO root fetch - main [MainThread]: End processing [chainlib]: success
 [2023-06-03 12:55:09] INFO root fetch - main [MainThread]: End processing [summa-embed]: success
 [2023-06-03 12:55:09] INFO root fetch - main [MainThread]: Store serial: [18358592]
+[2023-06-03 13:00:13] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18358592]
+[2023-06-03 13:00:18] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-06-03 13:00:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: boxmot
+[2023-06-03 13:00:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: horizonai
+[2023-06-03 13:00:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ctpaperclip
+[2023-06-03 13:00:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: black-tortoise
+[2023-06-03 13:00:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: hathitrust-downloader
+[2023-06-03 13:00:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: waveformtools
+[2023-06-03 13:00:18] INFO root fetch - processPackages [hathitrust-downloader]: New version: [1.1.3] Old Version: [1.1.2]
+[2023-06-03 13:00:18] INFO root fetch - processPackages [horizonai]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-06-03 13:00:18] INFO root fetch - processPackages [boxmot]: New version: [10.0.9] Old Version: [10.0.8]
+[2023-06-03 13:00:18] WARNING root fetch - processPackages [ctpaperclip]: Skipping, unable to determine old version
+[2023-06-03 13:00:18] INFO root fetch - main [MainThread]: End processing [ctpaperclip] error
+[2023-06-03 13:00:18] WARNING root fetch - processPackages [black-tortoise]: Skipping, unable to determine old version
+[2023-06-03 13:00:18] INFO root fetch - main [MainThread]: End processing [black-tortoise] error
+[2023-06-03 13:00:18] INFO root fetch - processPackages [waveformtools]: New version: [2023.6.3] Old Version: [2023.5.19]
+[2023-06-03 13:00:18] INFO root fetch - processPackages [hathitrust-downloader]: Downloading https://files.pythonhosted.org/packages/3e/de/418e0f0aeb095e534edc5272a4995f85d4b6e9ba94b5ace99ef30aa851c8/hathitrust-downloader-1.1.3.tar.gz
+[2023-06-03 13:00:19] INFO root fetch - processPackages [hathitrust-downloader]: executing diffoscope
+[2023-06-03 13:00:19] INFO root fetch - processPackages [hathitrust-downloader]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hathitrust-downloader-1.1.2.tar.gz tmp/hathitrust-downloader-1.1.3.tar.gz --markdown 20230603/h/hathitrust-downloader/1.1.2-1.1.3/diff.md --exclude *.pyd
+[2023-06-03 13:00:19] INFO root fetch - processPackages [horizonai]: executing diffoscope
+[2023-06-03 13:00:19] INFO root fetch - processPackages [horizonai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/horizonai-0.1.8.tar.gz tmp/horizonai-0.1.9.tar.gz --markdown 20230603/h/horizonai/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-06-03 13:00:19] INFO root fetch - processPackages [boxmot]: executing diffoscope
+[2023-06-03 13:00:19] INFO root fetch - processPackages [boxmot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/boxmot-10.0.8.tar.gz tmp/boxmot-10.0.9.tar.gz --markdown 20230603/b/boxmot/10.0.8-10.0.9/diff.md --exclude *.pyd
+[2023-06-03 13:00:19] INFO root fetch - processPackages [waveformtools]: Downloading https://files.pythonhosted.org/packages/6b/f3/f86d0114db3cf528c69412b9777a843a3f80190dab30ab2be16f344b7470/waveformtools-2023.6.3.tar.gz
+[2023-06-03 13:00:19] INFO root fetch - processPackages [waveformtools]: executing diffoscope
+[2023-06-03 13:00:19] INFO root fetch - processPackages [waveformtools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/waveformtools-2023.5.19.tar.gz tmp/waveformtools-2023.6.3.tar.gz --markdown 20230603/w/waveformtools/2023.5.19-2023.6.3/diff.md --exclude *.pyd
+[2023-06-03 13:00:20] INFO root fetch - main [MainThread]: End processing [horizonai]: success
+[2023-06-03 13:00:20] INFO root fetch - main [MainThread]: End processing [hathitrust-downloader]: success
+[2023-06-03 13:00:20] INFO root fetch - main [MainThread]: End processing [boxmot]: success
+[2023-06-03 13:00:20] INFO root fetch - main [MainThread]: End processing [waveformtools]: success
+[2023-06-03 13:00:20] INFO root fetch - main [MainThread]: Store serial: [18358623]
