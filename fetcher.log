@@ -7706,3 +7706,16 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-06-03 12:49:56] INFO root fetch - main [MainThread]: End processing [numpoly]: success
 [2023-06-03 12:49:58] INFO root fetch - main [MainThread]: End processing [recipe-scrapers-ap-fork]: success
 [2023-06-03 12:49:58] INFO root fetch - main [MainThread]: Store serial: [18358573]
+[2023-06-03 12:55:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18358573]
+[2023-06-03 12:55:07] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2023-06-03 12:55:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: chainlib
+[2023-06-03 12:55:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: summa-embed
+[2023-06-03 12:55:07] INFO root fetch - processPackages [chainlib]: New version: [0.4.9] Old Version: [0.4.8]
+[2023-06-03 12:55:07] INFO root fetch - processPackages [summa-embed]: New version: [0.15.9] Old Version: [0.15.8]
+[2023-06-03 12:55:08] INFO root fetch - processPackages [chainlib]: executing diffoscope
+[2023-06-03 12:55:08] INFO root fetch - processPackages [chainlib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chainlib-0.4.8.tar.gz tmp/chainlib-0.4.9.tar.gz --markdown 20230603/c/chainlib/0.4.8-0.4.9/diff.md --exclude *.pyd
+[2023-06-03 12:55:08] INFO root fetch - processPackages [summa-embed]: executing diffoscope
+[2023-06-03 12:55:08] INFO root fetch - processPackages [summa-embed]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/summa_embed-0.15.8.tar.gz tmp/summa_embed-0.15.9.tar.gz --markdown 20230603/s/summa-embed/0.15.8-0.15.9/diff.md --exclude *.pyd
+[2023-06-03 12:55:09] INFO root fetch - main [MainThread]: End processing [chainlib]: success
+[2023-06-03 12:55:09] INFO root fetch - main [MainThread]: End processing [summa-embed]: success
+[2023-06-03 12:55:09] INFO root fetch - main [MainThread]: Store serial: [18358592]
