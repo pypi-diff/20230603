@@ -8119,3 +8119,27 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-06-03 13:48:45] INFO root fetch - main [MainThread]: End processing [htmllistparse]: success
 [2023-06-03 13:48:47] INFO root fetch - main [MainThread]: End processing [chaospy]: success
 [2023-06-03 13:48:47] INFO root fetch - main [MainThread]: Store serial: [18358992]
+[2023-06-03 13:53:51] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18358992]
+[2023-06-03 13:53:56] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-06-03 13:53:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: htmllistparse
+[2023-06-03 13:53:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: opendigger
+[2023-06-03 13:53:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: world-model
+[2023-06-03 13:53:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: getactivewindow-x
+[2023-06-03 13:53:56] INFO root fetch - processPackages [htmllistparse]: New version: [0.6.1] Old Version: [0.6.0]
+[2023-06-03 13:53:56] INFO root fetch - processPackages [opendigger]: New version: [0.1.5] Old Version: [0.1.4]
+[2023-06-03 13:53:56] WARNING root fetch - processPackages [world-model]: Skipping, unable to determine old version
+[2023-06-03 13:53:56] INFO root fetch - main [MainThread]: End processing [world-model] error
+[2023-06-03 13:53:56] INFO root fetch - processPackages [getactivewindow-x]: New version: [0.3.0] Old Version: [0.2.1]
+[2023-06-03 13:53:56] INFO root fetch - processPackages [opendigger]: Downloading https://files.pythonhosted.org/packages/1b/af/8eb7465d0b47e5edd36e243c8038be13d4a7ee99ebc219432d9b0a089f37/opendigger-0.1.5.tar.gz
+[2023-06-03 13:53:56] INFO root fetch - processPackages [getactivewindow-x]: Downloading https://files.pythonhosted.org/packages/31/de/5d111776d6704052fc47235405e0100a6f8d2f421eb871fe7e995a098294/getactivewindow_x-0.2.1.tar.gz
+[2023-06-03 13:53:56] INFO root fetch - processPackages [opendigger]: executing diffoscope
+[2023-06-03 13:53:56] INFO root fetch - processPackages [opendigger]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/opendigger-0.1.4.tar.gz tmp/opendigger-0.1.5.tar.gz --markdown 20230603/o/opendigger/0.1.4-0.1.5/diff.md --exclude *.pyd
+[2023-06-03 13:53:56] INFO root fetch - processPackages [htmllistparse]: executing diffoscope
+[2023-06-03 13:53:56] INFO root fetch - processPackages [htmllistparse]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/htmllistparse-0.6.0.tar.gz tmp/htmllistparse-0.6.1.tar.gz --markdown 20230603/h/htmllistparse/0.6.0-0.6.1/diff.md --exclude *.pyd
+[2023-06-03 13:53:56] INFO root fetch - processPackages [getactivewindow-x]: Downloading https://files.pythonhosted.org/packages/1f/dc/996980c3e2b393f7b477d3e399567b813e9c476b54521d6b9f453cfd5247/getactivewindow_x-0.3.0.tar.gz
+[2023-06-03 13:53:56] INFO root fetch - processPackages [getactivewindow-x]: executing diffoscope
+[2023-06-03 13:53:56] INFO root fetch - processPackages [getactivewindow-x]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/getactivewindow_x-0.2.1.tar.gz tmp/getactivewindow_x-0.3.0.tar.gz --markdown 20230603/g/getactivewindow-x/0.2.1-0.3.0/diff.md --exclude *.pyd
+[2023-06-03 13:53:57] INFO root fetch - main [MainThread]: End processing [opendigger]: success
+[2023-06-03 13:53:57] INFO root fetch - main [MainThread]: End processing [getactivewindow-x]: success
+[2023-06-03 13:53:57] INFO root fetch - main [MainThread]: End processing [htmllistparse]: success
+[2023-06-03 13:53:57] INFO root fetch - main [MainThread]: Store serial: [18359017]
