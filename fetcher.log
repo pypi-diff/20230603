@@ -6145,3 +6145,61 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-06-03 09:16:00] INFO root fetch - main [MainThread]: End processing [hotsos]: success
 [2023-06-03 09:16:09] INFO root fetch - main [MainThread]: End processing [streamlit-nightly]: success
 [2023-06-03 09:16:09] INFO root fetch - main [MainThread]: Store serial: [18357620]
+[2023-06-03 09:21:13] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18357620]
+[2023-06-03 09:21:17] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-06-03 09:21:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: elementares-metodosnumericos
+[2023-06-03 09:21:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: webint-editor
+[2023-06-03 09:21:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: amdgpu-stats
+[2023-06-03 09:21:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: protoc-gen-http-python
+[2023-06-03 09:21:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: libfsext-python
+[2023-06-03 09:21:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: wanted-models
+[2023-06-03 09:21:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: webint-editor
+[2023-06-03 09:21:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: anjani
+[2023-06-03 09:21:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: lokii
+[2023-06-03 09:21:17] INFO root fetch - processPackages [webint-editor]: New version: [0.0.161] Old Version: [0.0.160]
+[2023-06-03 09:21:17] WARNING root fetch - processPackages [elementares-metodosnumericos]: Skipping, unable to determine old version
+[2023-06-03 09:21:17] INFO root fetch - processPackages [protoc-gen-http-python]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-06-03 09:21:17] INFO root fetch - main [MainThread]: End processing [elementares-metodosnumericos] error
+[2023-06-03 09:21:17] INFO root fetch - processPackages [anjani]: New version: [2.9.0] Old Version: [2.8.1]
+[2023-06-03 09:21:17] INFO root fetch - processPackages [webint-editor]: New version: [0.0.161] Old Version: [0.0.160]
+[2023-06-03 09:21:17] INFO root fetch - processPackages [amdgpu-stats]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-06-03 09:21:17] INFO root fetch - processPackages [lokii]: New version: [1.1.0] Old Version: [1.0.1]
+[2023-06-03 09:21:17] INFO root fetch - processPackages [libfsext-python]: New version: [20230603] Old Version: [20220829]
+[2023-06-03 09:21:17] INFO root fetch - processPackages [wanted-models]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-06-03 09:21:18] INFO root fetch - processPackages [lokii]: executing diffoscope
+[2023-06-03 09:21:18] INFO root fetch - processPackages [lokii]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lokii-1.0.1.tar.gz tmp/lokii-1.1.0.tar.gz --markdown 20230603/l/lokii/1.0.1-1.1.0/diff.md --exclude *.pyd
+[2023-06-03 09:21:18] INFO root fetch - processPackages [webint-editor]: Downloading https://files.pythonhosted.org/packages/53/fd/fd6bf4eae3c243096bb13f429e94b5841035733e8a693359846c1d0c0eea/webint_editor-0.0.160.tar.gz
+[2023-06-03 09:21:18] INFO root fetch - processPackages [webint-editor]: Downloading https://files.pythonhosted.org/packages/53/fd/fd6bf4eae3c243096bb13f429e94b5841035733e8a693359846c1d0c0eea/webint_editor-0.0.160.tar.gz
+[2023-06-03 09:21:18] INFO root fetch - processPackages [wanted-models]: Downloading https://files.pythonhosted.org/packages/ff/75/6b02897038cd7904a486070c967cb934000d02ee7bffb17e61272b53337a/wanted-models-0.0.1.tar.gz
+[2023-06-03 09:21:18] INFO root fetch - processPackages [libfsext-python]: Downloading https://files.pythonhosted.org/packages/b0/1a/8d0d2c5a3eff2e7639bffe4af89255d045fc85318505d2282402031d6cba/libfsext-python-20220829.tar.gz
+[2023-06-03 09:21:18] INFO root fetch - processPackages [protoc-gen-http-python]: Downloading https://files.pythonhosted.org/packages/8f/5b/1f6928095761c098f04a4131fcf167dd1de6ecfe97ae5f2516765e1475f4/protoc_gen_http_python-0.0.1-py3-none-any.whl
+[2023-06-03 09:21:18] INFO root fetch - processPackages [amdgpu-stats]: Downloading https://files.pythonhosted.org/packages/53/e6/b122ed912f1ef3d0228aaed34ffabced48ad4ee45c5ed02b9275d10c6e40/amdgpu_stats-0.1.8.tar.gz
+[2023-06-03 09:21:18] INFO root fetch - processPackages [anjani]: executing diffoscope
+[2023-06-03 09:21:18] INFO root fetch - processPackages [anjani]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/anjani-2.8.1.tar.gz tmp/anjani-2.9.0.tar.gz --markdown 20230603/a/anjani/2.8.1-2.9.0/diff.md --exclude *.pyd
+[2023-06-03 09:21:18] INFO root fetch - processPackages [wanted-models]: Downloading https://files.pythonhosted.org/packages/dc/7e/7073f93073cf25b582cd71d201d488230d752883593547d2d1e7f12d89d0/wanted-models-0.0.2.tar.gz
+[2023-06-03 09:21:18] INFO root fetch - processPackages [protoc-gen-http-python]: Downloading https://files.pythonhosted.org/packages/d9/5c/fd671f792a10d92a5770e6298e3a8da41f7447e9d7c33c055ec7b01291ed/protoc_gen_http_python-0.0.2-py3-none-any.whl
+[2023-06-03 09:21:18] INFO root fetch - processPackages [webint-editor]: Downloading https://files.pythonhosted.org/packages/ec/9a/c5b191e53a573b78000b9077e2729be1b342c5214260b6a9664df8de017e/webint_editor-0.0.161.tar.gz
+[2023-06-03 09:21:18] INFO root fetch - processPackages [libfsext-python]: Downloading https://files.pythonhosted.org/packages/84/bb/94e5dcb4f66e2eef7f11b23844176478cded2566d37dbbb2efbb2b36ffd9/libfsext-python-20230603.tar.gz
+[2023-06-03 09:21:18] INFO root fetch - processPackages [webint-editor]: Downloading https://files.pythonhosted.org/packages/ec/9a/c5b191e53a573b78000b9077e2729be1b342c5214260b6a9664df8de017e/webint_editor-0.0.161.tar.gz
+[2023-06-03 09:21:18] INFO root fetch - processPackages [amdgpu-stats]: Downloading https://files.pythonhosted.org/packages/9f/f4/e27175fd77494c3165056152232c389c88abedd5192b50b1426e5c1f004b/amdgpu_stats-0.1.9.tar.gz
+[2023-06-03 09:21:18] INFO root fetch - processPackages [wanted-models]: executing diffoscope
+[2023-06-03 09:21:18] INFO root fetch - processPackages [wanted-models]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wanted-models-0.0.1.tar.gz tmp/wanted-models-0.0.2.tar.gz --markdown 20230603/w/wanted-models/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-06-03 09:21:18] INFO root fetch - processPackages [webint-editor]: executing diffoscope
+[2023-06-03 09:21:18] INFO root fetch - processPackages [webint-editor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/webint_editor-0.0.160.tar.gz tmp/webint_editor-0.0.161.tar.gz --markdown 20230603/w/webint-editor/0.0.160-0.0.161/diff.md --exclude *.pyd
+[2023-06-03 09:21:18] INFO root fetch - processPackages [webint-editor]: executing diffoscope
+[2023-06-03 09:21:18] INFO root fetch - processPackages [webint-editor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/webint_editor-0.0.160.tar.gz tmp/webint_editor-0.0.161.tar.gz --markdown 20230603/w/webint-editor/0.0.160-0.0.161/diff.md --exclude *.pyd
+[2023-06-03 09:21:18] INFO root fetch - processPackages [amdgpu-stats]: executing diffoscope
+[2023-06-03 09:21:18] INFO root fetch - processPackages [amdgpu-stats]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/amdgpu_stats-0.1.8.tar.gz tmp/amdgpu_stats-0.1.9.tar.gz --markdown 20230603/a/amdgpu-stats/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-06-03 09:21:18] INFO root fetch - processPackages [libfsext-python]: executing diffoscope
+[2023-06-03 09:21:18] INFO root fetch - processPackages [libfsext-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/libfsext-python-20220829.tar.gz tmp/libfsext-python-20230603.tar.gz --markdown 20230603/l/libfsext-python/20220829-20230603/diff.md --exclude *.pyd
+[2023-06-03 09:21:18] INFO root fetch - processPackages [protoc-gen-http-python]: executing diffoscope
+[2023-06-03 09:21:18] INFO root fetch - processPackages [protoc-gen-http-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/protoc_gen_http_python-0.0.1-py3-none-any.whl.zip tmp/protoc_gen_http_python-0.0.2-py3-none-any.whl.zip --markdown 20230603/p/protoc-gen-http-python/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-06-03 09:21:19] INFO root fetch - main [MainThread]: End processing [wanted-models]: success
+[2023-06-03 09:21:19] INFO root fetch - main [MainThread]: End processing [webint-editor]: success
+[2023-06-03 09:21:19] INFO root fetch - main [MainThread]: End processing [lokii]: success
+[2023-06-03 09:21:19] INFO root fetch - main [MainThread]: End processing [protoc-gen-http-python]: success
+[2023-06-03 09:21:19] INFO root fetch - main [MainThread]: End processing [webint-editor]: success
+[2023-06-03 09:21:19] INFO root fetch - main [MainThread]: End processing [amdgpu-stats]: success
+[2023-06-03 09:21:21] INFO root fetch - main [MainThread]: End processing [anjani]: success
+[2023-06-03 09:21:41] INFO root fetch - main [MainThread]: End processing [libfsext-python]: success
+[2023-06-03 09:21:41] INFO root fetch - main [MainThread]: Store serial: [18357645]
