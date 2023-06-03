@@ -8904,3 +8904,29 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-06-03 15:07:46] INFO root fetch - main [MainThread]: End processing [nbdev-stdlib]: success
 [2023-06-03 15:07:47] INFO root fetch - main [MainThread]: End processing [agixt]: success
 [2023-06-03 15:07:47] INFO root fetch - main [MainThread]: Store serial: [18359447]
+[2023-06-03 15:12:51] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18359447]
+[2023-06-03 15:12:56] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-06-03 15:12:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: nbdev-numpy
+[2023-06-03 15:12:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: nbdev-pandas
+[2023-06-03 15:12:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: object-serialization
+[2023-06-03 15:12:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: nbdev-pytorch
+[2023-06-03 15:12:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: nbdev-scipy
+[2023-06-03 15:12:56] INFO root fetch - processPackages [nbdev-pytorch]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-06-03 15:12:56] WARNING root fetch - processPackages [object-serialization]: Skipping, unable to determine old version
+[2023-06-03 15:12:56] INFO root fetch - main [MainThread]: End processing [object-serialization] error
+[2023-06-03 15:12:56] INFO root fetch - processPackages [nbdev-scipy]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-06-03 15:12:56] INFO root fetch - processPackages [nbdev-numpy]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-06-03 15:12:56] INFO root fetch - processPackages [nbdev-pandas]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-06-03 15:12:56] INFO root fetch - processPackages [nbdev-pytorch]: executing diffoscope
+[2023-06-03 15:12:56] INFO root fetch - processPackages [nbdev-pytorch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdev-pytorch-0.0.98.tar.gz tmp/nbdev-pytorch-0.0.99.tar.gz --markdown 20230603/n/nbdev-pytorch/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-06-03 15:12:56] INFO root fetch - processPackages [nbdev-scipy]: executing diffoscope
+[2023-06-03 15:12:56] INFO root fetch - processPackages [nbdev-scipy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdev-scipy-0.0.98.tar.gz tmp/nbdev-scipy-0.0.99.tar.gz --markdown 20230603/n/nbdev-scipy/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-06-03 15:12:56] INFO root fetch - processPackages [nbdev-pandas]: executing diffoscope
+[2023-06-03 15:12:56] INFO root fetch - processPackages [nbdev-pandas]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdev-pandas-0.0.98.tar.gz tmp/nbdev-pandas-0.0.99.tar.gz --markdown 20230603/n/nbdev-pandas/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-06-03 15:12:56] INFO root fetch - processPackages [nbdev-numpy]: executing diffoscope
+[2023-06-03 15:12:56] INFO root fetch - processPackages [nbdev-numpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdev-numpy-0.0.98.tar.gz tmp/nbdev-numpy-0.0.99.tar.gz --markdown 20230603/n/nbdev-numpy/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-06-03 15:12:57] INFO root fetch - main [MainThread]: End processing [nbdev-pandas]: success
+[2023-06-03 15:12:57] INFO root fetch - main [MainThread]: End processing [nbdev-numpy]: success
+[2023-06-03 15:12:57] INFO root fetch - main [MainThread]: End processing [nbdev-scipy]: success
+[2023-06-03 15:12:57] INFO root fetch - main [MainThread]: End processing [nbdev-pytorch]: success
+[2023-06-03 15:12:57] INFO root fetch - main [MainThread]: Store serial: [18359467]
