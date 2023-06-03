@@ -10795,3 +10795,23 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-06-03 19:03:35] INFO root fetch - main [MainThread]: End processing [hatchling]: success
 [2023-06-03 19:03:36] INFO root fetch - main [MainThread]: End processing [dynast]: success
 [2023-06-03 19:03:36] INFO root fetch - main [MainThread]: Store serial: [18360634]
+[2023-06-03 19:08:40] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18360634]
+[2023-06-03 19:08:45] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-06-03 19:08:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: hatch-build-scripts
+[2023-06-03 19:08:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: luminesce-sdk-preview
+[2023-06-03 19:08:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: dnadb
+[2023-06-03 19:08:45] INFO root fetch - processPackages [hatch-build-scripts]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-06-03 19:08:45] INFO root fetch - processPackages [dnadb]: New version: [0.6.4] Old Version: [0.6.3]
+[2023-06-03 19:08:45] INFO root fetch - processPackages [luminesce-sdk-preview]: New version: [1.9.92] Old Version: [1.9.88]
+[2023-06-03 19:08:45] INFO root fetch - processPackages [dnadb]: Downloading https://files.pythonhosted.org/packages/b7/7b/13e45eed377ae94adf8bac2a0e02b383b7fddb228f2cebb405e997fbd748/dnadb-0.6.4.tar.gz
+[2023-06-03 19:08:45] INFO root fetch - processPackages [hatch-build-scripts]: Downloading https://files.pythonhosted.org/packages/6b/c2/87097d54f22105b79c5166c7f279324da7b279cb1679366d5f5c9976a814/hatch_build_scripts-0.0.4.tar.gz
+[2023-06-03 19:08:45] INFO root fetch - processPackages [luminesce-sdk-preview]: executing diffoscope
+[2023-06-03 19:08:45] INFO root fetch - processPackages [luminesce-sdk-preview]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/luminesce-sdk-preview-1.9.88.tar.gz tmp/luminesce-sdk-preview-1.9.92.tar.gz --markdown 20230603/l/luminesce-sdk-preview/1.9.88-1.9.92/diff.md --exclude *.pyd
+[2023-06-03 19:08:45] INFO root fetch - processPackages [dnadb]: executing diffoscope
+[2023-06-03 19:08:45] INFO root fetch - processPackages [dnadb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dnadb-0.6.3.tar.gz tmp/dnadb-0.6.4.tar.gz --markdown 20230603/d/dnadb/0.6.3-0.6.4/diff.md --exclude *.pyd
+[2023-06-03 19:08:45] INFO root fetch - processPackages [hatch-build-scripts]: executing diffoscope
+[2023-06-03 19:08:45] INFO root fetch - processPackages [hatch-build-scripts]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hatch_build_scripts-0.0.3.tar.gz tmp/hatch_build_scripts-0.0.4.tar.gz --markdown 20230603/h/hatch-build-scripts/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-06-03 19:08:46] INFO root fetch - main [MainThread]: End processing [dnadb]: success
+[2023-06-03 19:08:47] INFO root fetch - main [MainThread]: End processing [hatch-build-scripts]: success
+[2023-06-03 19:08:47] INFO root fetch - main [MainThread]: End processing [luminesce-sdk-preview]: success
+[2023-06-03 19:08:47] INFO root fetch - main [MainThread]: Store serial: [18360645]
