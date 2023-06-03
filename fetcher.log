@@ -9064,3 +9064,53 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-06-03 15:28:33] INFO root fetch - main [MainThread]: End processing [scratchdata]: success
 [2023-06-03 15:29:25] INFO root fetch - main [MainThread]: End processing [sccache]: success
 [2023-06-03 15:29:25] INFO root fetch - main [MainThread]: Store serial: [18359554]
+[2023-06-03 15:34:47] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18359554]
+[2023-06-03 15:34:52] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-06-03 15:34:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: fast-depends
+[2023-06-03 15:34:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mavcon
+[2023-06-03 15:34:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: jekyll-to-hugo
+[2023-06-03 15:34:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: terratalk
+[2023-06-03 15:34:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pocketrockit
+[2023-06-03 15:34:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: smart-app-framework
+[2023-06-03 15:34:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: PyDAO-9000
+[2023-06-03 15:34:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: pyhop
+[2023-06-03 15:34:52] INFO root fetch - processPackages [fast-depends]: New version: [1.1.5] Old Version: [1.1.4]
+[2023-06-03 15:34:52] INFO root fetch - processPackages [terratalk]: New version: [0.3.0] Old Version: [0.2.2]
+[2023-06-03 15:34:52] INFO root fetch - processPackages [pyhop]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-06-03 15:34:52] WARNING root fetch - processPackages [mavcon]: Skipping, unable to determine old version
+[2023-06-03 15:34:52] INFO root fetch - main [MainThread]: End processing [mavcon] error
+[2023-06-03 15:34:52] INFO root fetch - processPackages [pocketrockit]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-06-03 15:34:52] INFO root fetch - processPackages [jekyll-to-hugo]: New version: [0.0.5] Old Version: [0.0.3]
+[2023-06-03 15:34:52] INFO root fetch - processPackages [smart-app-framework]: New version: [2.1.1rc2] Old Version: [2.1.1rc1]
+[2023-06-03 15:34:52] INFO root fetch - processPackages [PyDAO-9000]: New version: [1.2.1] Old Version: [1.2]
+[2023-06-03 15:34:52] INFO root fetch - processPackages [terratalk]: Downloading https://files.pythonhosted.org/packages/21/ab/48a85715a425b1de612df74cb4d9aa2a56eb415e9c83c14182a40316c636/terratalk-0.2.2.tar.gz
+[2023-06-03 15:34:52] INFO root fetch - processPackages [pocketrockit]: Downloading https://files.pythonhosted.org/packages/a8/ee/f1c11743551245aafc55139aecd6ab3e8159baee4fca46a33374bff27bcc/pocketrockit-0.0.8.tar.gz
+[2023-06-03 15:34:52] INFO root fetch - processPackages [pyhop]: Downloading https://files.pythonhosted.org/packages/79/fb/a548ace6bafb27a7b45816efac78c13b6ec9864d0d4aad2a9688bcf95c21/pyhop-0.0.6.tar.gz
+[2023-06-03 15:34:52] INFO root fetch - processPackages [jekyll-to-hugo]: Downloading https://files.pythonhosted.org/packages/16/20/4cd5ddc83f3ec3ed2688d1fb0de8025a06f843cb86aa1b01df48acd13025/jekyll_to_hugo-0.0.5.tar.gz
+[2023-06-03 15:34:52] INFO root fetch - processPackages [fast-depends]: Downloading https://files.pythonhosted.org/packages/3a/00/b7f29827f160a5ed62d6f7984bb6f246b76d77194ab0db1a70651a71306c/fast_depends-1.1.5.tar.gz
+[2023-06-03 15:34:52] INFO root fetch - processPackages [jekyll-to-hugo]: executing diffoscope
+[2023-06-03 15:34:52] INFO root fetch - processPackages [jekyll-to-hugo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jekyll_to_hugo-0.0.3.tar.gz tmp/jekyll_to_hugo-0.0.5.tar.gz --markdown 20230603/j/jekyll-to-hugo/0.0.3-0.0.5/diff.md --exclude *.pyd
+[2023-06-03 15:34:52] INFO root fetch - processPackages [smart-app-framework]: Downloading https://files.pythonhosted.org/packages/29/5a/feb6d31e5a14b4a5f7d88987a95cd3f172997e796ec79ad4ab70440ec0d1/smart_app_framework-2.1.1rc2-py3-none-any.whl
+[2023-06-03 15:34:52] INFO root fetch - processPackages [PyDAO-9000]: Downloading https://files.pythonhosted.org/packages/6d/ba/417917601f30feb85064bede73c518d3fd5dceddbfbd3197e2b300c4a461/PyDAO_9000-1.2.1.tar.gz
+[2023-06-03 15:34:52] INFO root fetch - processPackages [pyhop]: executing diffoscope
+[2023-06-03 15:34:52] INFO root fetch - processPackages [pyhop]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyhop-0.0.5.tar.gz tmp/pyhop-0.0.6.tar.gz --markdown 20230603/p/pyhop/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-06-03 15:34:52] INFO root fetch - processPackages [fast-depends]: executing diffoscope
+[2023-06-03 15:34:52] INFO root fetch - processPackages [fast-depends]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fast_depends-1.1.4.tar.gz tmp/fast_depends-1.1.5.tar.gz --markdown 20230603/f/fast-depends/1.1.4-1.1.5/diff.md --exclude *.pyd
+[2023-06-03 15:34:52] INFO root fetch - processPackages [terratalk]: Downloading https://files.pythonhosted.org/packages/45/50/3ad7a57912fec1aec6a8644230998bca608a048fe5e72a7b1d1b294d7109/terratalk-0.3.0.tar.gz
+[2023-06-03 15:34:52] INFO root fetch - processPackages [PyDAO-9000]: executing diffoscope
+[2023-06-03 15:34:52] INFO root fetch - processPackages [PyDAO-9000]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyDAO_9000-1.2.tar.gz tmp/PyDAO_9000-1.2.1.tar.gz --markdown 20230603/P/PyDAO-9000/1.2-1.2.1/diff.md --exclude *.pyd
+[2023-06-03 15:34:52] INFO root fetch - processPackages [smart-app-framework]: executing diffoscope
+[2023-06-03 15:34:52] INFO root fetch - processPackages [smart-app-framework]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/smart_app_framework-2.1.1rc1-py3-none-any.whl.zip tmp/smart_app_framework-2.1.1rc2-py3-none-any.whl.zip --markdown 20230603/s/smart-app-framework/2.1.1rc1-2.1.1rc2/diff.md --exclude *.pyd
+[2023-06-03 15:34:52] INFO root fetch - processPackages [terratalk]: executing diffoscope
+[2023-06-03 15:34:52] INFO root fetch - processPackages [terratalk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/terratalk-0.2.2.tar.gz tmp/terratalk-0.3.0.tar.gz --markdown 20230603/t/terratalk/0.2.2-0.3.0/diff.md --exclude *.pyd
+[2023-06-03 15:34:52] INFO root fetch - processPackages [pocketrockit]: Downloading https://files.pythonhosted.org/packages/35/0e/2ce2be3bcdaaceced761358d15c74af9ebe357db6c5da3435e8fe5d8ca74/pocketrockit-0.0.9.tar.gz
+[2023-06-03 15:34:52] INFO root fetch - processPackages [pocketrockit]: executing diffoscope
+[2023-06-03 15:34:52] INFO root fetch - processPackages [pocketrockit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pocketrockit-0.0.8.tar.gz tmp/pocketrockit-0.0.9.tar.gz --markdown 20230603/p/pocketrockit/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-06-03 15:34:53] INFO root fetch - main [MainThread]: End processing [pyhop]: success
+[2023-06-03 15:34:53] INFO root fetch - main [MainThread]: End processing [fast-depends]: success
+[2023-06-03 15:34:54] INFO root fetch - main [MainThread]: End processing [PyDAO-9000]: success
+[2023-06-03 15:34:54] INFO root fetch - main [MainThread]: End processing [pocketrockit]: success
+[2023-06-03 15:34:54] INFO root fetch - main [MainThread]: End processing [jekyll-to-hugo]: success
+[2023-06-03 15:34:54] INFO root fetch - main [MainThread]: End processing [terratalk]: success
+[2023-06-03 15:34:56] INFO root fetch - main [MainThread]: End processing [smart-app-framework]: success
+[2023-06-03 15:34:56] INFO root fetch - main [MainThread]: Store serial: [18359580]
