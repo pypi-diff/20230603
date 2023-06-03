@@ -5602,3 +5602,91 @@
 [2023-06-03 07:53:59] INFO root fetch - processPackages [customtkinterx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/customtkinterx-0.2.1.tar.gz tmp/customtkinterx-0.2.2.tar.gz --markdown 20230603/c/customtkinterx/0.2.1-0.2.2/diff.md --exclude *.pyd
 [2023-06-03 07:54:01] INFO root fetch - main [MainThread]: End processing [customtkinterx]: success
 [2023-06-03 07:54:01] INFO root fetch - main [MainThread]: Store serial: [18357274]
+[2023-06-03 07:59:05] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18357274]
+[2023-06-03 07:59:10] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-06-03 07:59:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: choclo-checker
+[2023-06-03 07:59:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: customtkinterx
+[2023-06-03 07:59:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: astralnitro
+[2023-06-03 07:59:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: django-icons
+[2023-06-03 07:59:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: renato
+[2023-06-03 07:59:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: gqylpy-exception
+[2023-06-03 07:59:10] INFO root fetch - processPackages [choclo-checker]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-06-03 07:59:10] INFO root fetch - processPackages [customtkinterx]: New version: [0.2.3] Old Version: [0.2.2]
+[2023-06-03 07:59:10] WARNING root fetch - processPackages [renato]: Skipping, unable to determine old version
+[2023-06-03 07:59:10] INFO root fetch - main [MainThread]: End processing [renato] error
+[2023-06-03 07:59:10] WARNING root fetch - processPackages [astralnitro]: Skipping, unable to determine old version
+[2023-06-03 07:59:10] INFO root fetch - main [MainThread]: End processing [astralnitro] error
+[2023-06-03 07:59:10] INFO root fetch - processPackages [django-icons]: New version: [4.0.0] Old Version: [3.0.0]
+[2023-06-03 07:59:10] INFO root fetch - processPackages [gqylpy-exception]: New version: [2.0.4] Old Version: [2.0.3]
+[2023-06-03 07:59:10] INFO root fetch - processPackages [customtkinterx]: Downloading https://files.pythonhosted.org/packages/80/4e/4b1ad73d2c7f0968725ac759fdd8afa8755c8328404dae135ca952f9c681/customtkinterx-0.2.3.tar.gz
+[2023-06-03 07:59:10] INFO root fetch - processPackages [choclo-checker]: Downloading https://files.pythonhosted.org/packages/31/db/42e11ee6dccf810ab445ddb72a94707f0995da651e1f5bc73bdd908d2b32/choclo-checker-1.0.0.tar.gz
+[2023-06-03 07:59:10] INFO root fetch - processPackages [django-icons]: Downloading https://files.pythonhosted.org/packages/2f/e6/d5ea01b28c69235a2a4521865b98fa99ed6af7166ad22a6868337c0854dd/django-icons-3.0.0.tar.gz
+[2023-06-03 07:59:10] INFO root fetch - processPackages [customtkinterx]: executing diffoscope
+[2023-06-03 07:59:10] INFO root fetch - processPackages [customtkinterx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/customtkinterx-0.2.2.tar.gz tmp/customtkinterx-0.2.3.tar.gz --markdown 20230603/c/customtkinterx/0.2.2-0.2.3/diff.md --exclude *.pyd
+[2023-06-03 07:59:10] INFO root fetch - processPackages [gqylpy-exception]: Downloading https://files.pythonhosted.org/packages/07/38/ca0043d8341550bb9eaffa9f910fe5f6cfddf7e65e104fdf7039e2fa006d/gqylpy_exception-2.0.3.tar.gz
+[2023-06-03 07:59:10] INFO root fetch - processPackages [choclo-checker]: Downloading https://files.pythonhosted.org/packages/e8/a1/55a5b82e0022208b8b9b7707527e826d6b02cfd67e5aac5a83889bf0e853/choclo-checker-1.0.1.tar.gz
+[2023-06-03 07:59:10] INFO root fetch - processPackages [choclo-checker]: executing diffoscope
+[2023-06-03 07:59:10] INFO root fetch - processPackages [choclo-checker]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/choclo-checker-1.0.0.tar.gz tmp/choclo-checker-1.0.1.tar.gz --markdown 20230603/c/choclo-checker/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-06-03 07:59:10] INFO root fetch - processPackages [django-icons]: Downloading https://files.pythonhosted.org/packages/26/04/bda6944207a22d56675624fd52270fe5907fbce4ee88f2374cb21b4690d5/django-icons-4.0.0.tar.gz
+[2023-06-03 07:59:10] INFO root fetch - processPackages [gqylpy-exception]: Downloading https://files.pythonhosted.org/packages/f6/15/03224ef061b05f7c4ea60cfbd0d4072f926121b5d63cee46fb046a6199f3/gqylpy_exception-2.0.4.tar.gz
+[2023-06-03 07:59:10] INFO root fetch - processPackages [django-icons]: executing diffoscope
+[2023-06-03 07:59:10] INFO root fetch - processPackages [django-icons]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-icons-3.0.0.tar.gz tmp/django-icons-4.0.0.tar.gz --markdown 20230603/d/django-icons/3.0.0-4.0.0/diff.md --exclude *.pyd
+[2023-06-03 07:59:11] INFO root fetch - processPackages [gqylpy-exception]: executing diffoscope
+[2023-06-03 07:59:11] INFO root fetch - processPackages [gqylpy-exception]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gqylpy_exception-2.0.3.tar.gz tmp/gqylpy_exception-2.0.4.tar.gz --markdown 20230603/g/gqylpy-exception/2.0.3-2.0.4/diff.md --exclude *.pyd
+[2023-06-03 07:59:11] INFO root fetch - main [MainThread]: End processing [customtkinterx]: success
+[2023-06-03 07:59:11] INFO root fetch - main [MainThread]: End processing [choclo-checker]: success
+[2023-06-03 07:59:12] INFO root fetch - main [MainThread]: End processing [gqylpy-exception]: success
+[2023-06-03 07:59:12] ERROR root fetch - processPackages [django-icons]: Diffoscope failed: Traceback (most recent call last):
+  File "/srv/diffoscope/diffoscope/main.py", line 767, in main
+    sys.exit(run_diffoscope(parsed_args))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/main.py", line 718, in run_diffoscope
+    difference = compare_root_paths(path1, path2)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/compare.py", line 69, in compare_root_paths
+    difference = compare_files(file1, file2)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/compare.py", line 149, in compare_files
+    return file1.compare(file2, source)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/file.py", line 515, in compare
+    difference = self._compare_using_details(other, source)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/file.py", line 450, in _compare_using_details
+    details.extend(
+  File "/srv/diffoscope/diffoscope/comparators/utils/container.py", line 197, in compare_pair
+    difference = compare_files(
+                 ^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/compare.py", line 149, in compare_files
+    return file1.compare(file2, source)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/file.py", line 515, in compare
+    difference = self._compare_using_details(other, source)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/file.py", line 450, in _compare_using_details
+    details.extend(
+  File "/srv/diffoscope/diffoscope/comparators/utils/container.py", line 197, in compare_pair
+    difference = compare_files(
+                 ^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/compare.py", line 149, in compare_files
+    return file1.compare(file2, source)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/file.py", line 515, in compare
+    difference = self._compare_using_details(other, source)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/file.py", line 416, in _compare_using_details
+    details.extend(self.compare_details(other, source))
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/python.py", line 51, in compare_details
+    describe_pyc(self.path),
+    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/python.py", line 65, in describe_pyc
+    return "\n".join(parse_pyc(f))
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/python.py", line 81, in parse_pyc
+    code = marshal.load(f)
+           ^^^^^^^^^^^^^^^
+SystemError: ../Objects/codeobject.c:250: bad argument to internal function
+
+[2023-06-03 07:59:12] INFO root fetch - main [MainThread]: End processing [django-icons] error
+[2023-06-03 07:59:12] INFO root fetch - main [MainThread]: Store serial: [18357294]
