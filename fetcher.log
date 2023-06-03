@@ -10235,3 +10235,64 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-06-03 18:01:00] INFO root fetch - main [MainThread]: End processing [remotior-sensus]: success
 [2023-06-03 18:01:01] INFO root fetch - main [MainThread]: End processing [mmengine]: success
 [2023-06-03 18:01:01] INFO root fetch - main [MainThread]: Store serial: [18360304]
+[2023-06-03 18:06:05] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18360304]
+[2023-06-03 18:06:10] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-06-03 18:06:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: django-simple-notification
+[2023-06-03 18:06:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: airfold
+[2023-06-03 18:06:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: quiltplus
+[2023-06-03 18:06:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: zdatabase
+[2023-06-03 18:06:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: hbtools
+[2023-06-03 18:06:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: Rickrack
+[2023-06-03 18:06:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: yetl-framework
+[2023-06-03 18:06:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: pychedule
+[2023-06-03 18:06:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: zdatabase
+[2023-06-03 18:06:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: firegs
+[2023-06-03 18:06:10] INFO root fetch - processPackages [yetl-framework]: New version: [1.4.5] Old Version: [1.4.4]
+[2023-06-03 18:06:10] WARNING root fetch - processPackages [airfold]: Skipping, unable to determine old version
+[2023-06-03 18:06:10] INFO root fetch - main [MainThread]: End processing [airfold] error
+[2023-06-03 18:06:10] INFO root fetch - processPackages [django-simple-notification]: New version: [1.0.3] Old Version: [1.0.2]
+[2023-06-03 18:06:10] INFO root fetch - processPackages [zdatabase]: New version: [0.4.2] Old Version: [0.4.1]
+[2023-06-03 18:06:10] INFO root fetch - processPackages [pychedule]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-06-03 18:06:10] INFO root fetch - processPackages [quiltplus]: New version: [0.9.1] Old Version: [0.9.0]
+[2023-06-03 18:06:10] WARNING root fetch - processPackages [firegs]: Skipping, unable to determine old version
+[2023-06-03 18:06:10] INFO root fetch - main [MainThread]: End processing [firegs] error
+[2023-06-03 18:06:10] INFO root fetch - processPackages [hbtools]: New version: [0.1.0] Old Version: [0.0.4]
+[2023-06-03 18:06:10] INFO root fetch - processPackages [Rickrack]: New version: [2.8.5] Old Version: [2.7.26]
+[2023-06-03 18:06:10] INFO root fetch - processPackages [zdatabase]: New version: [0.4.2] Old Version: [0.4.1]
+[2023-06-03 18:06:10] INFO root fetch - processPackages [zdatabase]: Downloading https://files.pythonhosted.org/packages/ff/ab/45bdf73dca8e784354387d96915d6bc785444d3fc5f324e59fd2622817b5/zdatabase-0.4.1.tar.gz
+[2023-06-03 18:06:10] INFO root fetch - processPackages [zdatabase]: Downloading https://files.pythonhosted.org/packages/ff/ab/45bdf73dca8e784354387d96915d6bc785444d3fc5f324e59fd2622817b5/zdatabase-0.4.1.tar.gz
+[2023-06-03 18:06:10] INFO root fetch - processPackages [hbtools]: Downloading https://files.pythonhosted.org/packages/c1/0c/edce8d25e7f76be59b561aa23f14e1ca146cdf39ba9d8c972db19ecc74ca/hbtools-0.0.4.tar.gz
+[2023-06-03 18:06:10] INFO root fetch - processPackages [Rickrack]: Downloading https://files.pythonhosted.org/packages/a8/6b/78874d4368d79f557b1a33185c655ca1f70e299ae2042b14e90a4b60b897/Rickrack-2.7.26.tar.gz
+[2023-06-03 18:06:10] INFO root fetch - processPackages [django-simple-notification]: Downloading https://files.pythonhosted.org/packages/d6/8d/96b31f7545bfd693f69460597611d8d43082e044f1a7cb6bb2e1d0cfa474/django-simple-notification-1.0.3.tar.gz
+[2023-06-03 18:06:10] INFO root fetch - processPackages [pychedule]: Downloading https://files.pythonhosted.org/packages/7e/dd/57e011c9a0acce6317306d19745b697301d717ee1e8c9a99620704234531/pychedule-0.0.3-py3-none-any.whl
+[2023-06-03 18:06:10] INFO root fetch - processPackages [yetl-framework]: Downloading https://files.pythonhosted.org/packages/69/e8/c59d060bf5694855ca5e33116795e6f2fa0dc1e44c56070c9bea6f1081a0/yetl-framework-1.4.5.tar.gz
+[2023-06-03 18:06:10] INFO root fetch - processPackages [django-simple-notification]: executing diffoscope
+[2023-06-03 18:06:10] INFO root fetch - processPackages [django-simple-notification]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-simple-notification-1.0.2.tar.gz tmp/django-simple-notification-1.0.3.tar.gz --markdown 20230603/d/django-simple-notification/1.0.2-1.0.3/diff.md --exclude *.pyd
+[2023-06-03 18:06:10] INFO root fetch - processPackages [zdatabase]: Downloading https://files.pythonhosted.org/packages/42/52/217ffeef174c38d11e5089ef6778f16afe124c60d938fc74726978018d0d/zdatabase-0.4.2.tar.gz
+[2023-06-03 18:06:10] INFO root fetch - processPackages [zdatabase]: Downloading https://files.pythonhosted.org/packages/42/52/217ffeef174c38d11e5089ef6778f16afe124c60d938fc74726978018d0d/zdatabase-0.4.2.tar.gz
+[2023-06-03 18:06:11] INFO root fetch - processPackages [quiltplus]: Downloading https://files.pythonhosted.org/packages/1d/3a/67f13e435f2a7715148b5b83dcaaa7812578f66140c393a5c405f6bcb1b7/quiltplus-0.9.1.tar.gz
+[2023-06-03 18:06:11] INFO root fetch - processPackages [hbtools]: Downloading https://files.pythonhosted.org/packages/88/62/89ebb4e4e1b87d147018af8e4986c3a0be9c54c7bc13fe5f78901dd1fb47/hbtools-0.1.0.tar.gz
+[2023-06-03 18:06:11] INFO root fetch - processPackages [yetl-framework]: executing diffoscope
+[2023-06-03 18:06:11] INFO root fetch - processPackages [yetl-framework]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yetl-framework-1.4.4.tar.gz tmp/yetl-framework-1.4.5.tar.gz --markdown 20230603/y/yetl-framework/1.4.4-1.4.5/diff.md --exclude *.pyd
+[2023-06-03 18:06:11] INFO root fetch - processPackages [pychedule]: executing diffoscope
+[2023-06-03 18:06:11] INFO root fetch - processPackages [pychedule]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pychedule-0.0.2-py3-none-any.whl.zip tmp/pychedule-0.0.3-py3-none-any.whl.zip --markdown 20230603/p/pychedule/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-06-03 18:06:11] INFO root fetch - processPackages [Rickrack]: Downloading https://files.pythonhosted.org/packages/54/90/6ede74176a07ab9eda13cb6af181c2571f0652a44fc524e390e2e03d542d/Rickrack-2.8.5.tar.gz
+[2023-06-03 18:06:11] INFO root fetch - processPackages [quiltplus]: executing diffoscope
+[2023-06-03 18:06:11] INFO root fetch - processPackages [quiltplus]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/quiltplus-0.9.0.tar.gz tmp/quiltplus-0.9.1.tar.gz --markdown 20230603/q/quiltplus/0.9.0-0.9.1/diff.md --exclude *.pyd
+[2023-06-03 18:06:11] INFO root fetch - processPackages [hbtools]: executing diffoscope
+[2023-06-03 18:06:11] INFO root fetch - processPackages [hbtools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hbtools-0.0.4.tar.gz tmp/hbtools-0.1.0.tar.gz --markdown 20230603/h/hbtools/0.0.4-0.1.0/diff.md --exclude *.pyd
+[2023-06-03 18:06:11] INFO root fetch - processPackages [zdatabase]: executing diffoscope
+[2023-06-03 18:06:11] INFO root fetch - processPackages [zdatabase]: executing diffoscope
+[2023-06-03 18:06:11] INFO root fetch - processPackages [zdatabase]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zdatabase-0.4.1.tar.gz tmp/zdatabase-0.4.2.tar.gz --markdown 20230603/z/zdatabase/0.4.1-0.4.2/diff.md --exclude *.pyd
+[2023-06-03 18:06:11] INFO root fetch - processPackages [zdatabase]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zdatabase-0.4.1.tar.gz tmp/zdatabase-0.4.2.tar.gz --markdown 20230603/z/zdatabase/0.4.1-0.4.2/diff.md --exclude *.pyd
+[2023-06-03 18:06:11] INFO root fetch - processPackages [Rickrack]: executing diffoscope
+[2023-06-03 18:06:11] INFO root fetch - processPackages [Rickrack]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Rickrack-2.7.26.tar.gz tmp/Rickrack-2.8.5.tar.gz --markdown 20230603/R/Rickrack/2.7.26-2.8.5/diff.md --exclude *.pyd
+[2023-06-03 18:06:12] INFO root fetch - main [MainThread]: End processing [django-simple-notification]: success
+[2023-06-03 18:06:12] INFO root fetch - main [MainThread]: End processing [pychedule]: success
+[2023-06-03 18:06:12] INFO root fetch - main [MainThread]: End processing [hbtools]: success
+[2023-06-03 18:06:12] INFO root fetch - main [MainThread]: End processing [Rickrack]: success
+[2023-06-03 18:06:12] INFO root fetch - main [MainThread]: End processing [quiltplus]: success
+[2023-06-03 18:06:12] INFO root fetch - main [MainThread]: End processing [zdatabase]: success
+[2023-06-03 18:06:12] INFO root fetch - main [MainThread]: End processing [yetl-framework]: success
+[2023-06-03 18:06:12] INFO root fetch - main [MainThread]: End processing [zdatabase]: success
+[2023-06-03 18:06:12] INFO root fetch - main [MainThread]: Store serial: [18360337]
