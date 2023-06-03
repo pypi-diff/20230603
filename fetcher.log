@@ -11345,3 +11345,49 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-06-03 20:19:14] INFO root fetch - main [MainThread]: End processing [autoparaselenium]: success
 [2023-06-03 20:19:14] INFO root fetch - main [MainThread]: End processing [RL-OM]: success
 [2023-06-03 20:19:14] INFO root fetch - main [MainThread]: Store serial: [18361039]
+[2023-06-03 20:24:18] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18361039]
+[2023-06-03 20:24:23] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-06-03 20:24:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: citric
+[2023-06-03 20:24:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: foursight-core
+[2023-06-03 20:24:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cyberdrop-dl
+[2023-06-03 20:24:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: metabolabpytools
+[2023-06-03 20:24:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: metabolabpytools
+[2023-06-03 20:24:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: foursight
+[2023-06-03 20:24:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: foursight-cgap
+[2023-06-03 20:24:23] INFO root fetch - processPackages [foursight-core]: New version: [4.2.0.1b3] Old Version: [4.2.0.1b2]
+[2023-06-03 20:24:23] INFO root fetch - processPackages [metabolabpytools]: New version: [0.8.13] Old Version: [0.8.12]
+[2023-06-03 20:24:23] INFO root fetch - processPackages [metabolabpytools]: New version: [0.8.13] Old Version: [0.8.12]
+[2023-06-03 20:24:23] INFO root fetch - processPackages [citric]: New version: [0.7.1b3] Old Version: [0.7.1b2]
+[2023-06-03 20:24:23] INFO root fetch - processPackages [foursight]: New version: [3.4.7.2b4] Old Version: [3.4.7.2b3]
+[2023-06-03 20:24:23] INFO root fetch - processPackages [foursight-cgap]: New version: [3.4.5.2b4] Old Version: [3.4.5.2b3]
+[2023-06-03 20:24:23] INFO root fetch - processPackages [cyberdrop-dl]: New version: [4.2.59] Old Version: [4.2.58]
+[2023-06-03 20:24:23] INFO root fetch - processPackages [metabolabpytools]: Downloading https://files.pythonhosted.org/packages/43/9c/a4278387aad0c906ac1fdc230b8d2c97f327c74fafeac8d9f470acbe4c1d/metabolabpytools-0.8.12.tar.gz
+[2023-06-03 20:24:23] INFO root fetch - processPackages [metabolabpytools]: Downloading https://files.pythonhosted.org/packages/43/9c/a4278387aad0c906ac1fdc230b8d2c97f327c74fafeac8d9f470acbe4c1d/metabolabpytools-0.8.12.tar.gz
+[2023-06-03 20:24:23] INFO root fetch - processPackages [foursight-core]: Downloading https://files.pythonhosted.org/packages/d1/8e/7d0471720be44301fddf47a50daef184a8e9d89b302e8e3c9a8134025142/foursight_core-4.2.0.1b3.tar.gz
+[2023-06-03 20:24:23] INFO root fetch - processPackages [foursight-cgap]: Downloading https://files.pythonhosted.org/packages/12/81/db44e83554dca20a3c3ffb7915c8b6a58a3aafb92d242faf04b37f487e87/foursight_cgap-3.4.5.2b4.tar.gz
+[2023-06-03 20:24:23] INFO root fetch - processPackages [cyberdrop-dl]: Downloading https://files.pythonhosted.org/packages/23/51/df40d864c5f8d61e8ca0db15ab8673575f7c3bb8189e6dd82e7217096b7e/cyberdrop-dl-4.2.59.tar.gz
+[2023-06-03 20:24:23] INFO root fetch - processPackages [foursight]: Downloading https://files.pythonhosted.org/packages/40/86/9183d01104f5536cb1567ee5deed40911685df0ded796aed2c282ce811ec/foursight-3.4.7.2b4.tar.gz
+[2023-06-03 20:24:23] INFO root fetch - processPackages [metabolabpytools]: Downloading https://files.pythonhosted.org/packages/fa/21/c8a4ef07e9a3fe85afadb07ebbda506b4ffd4b588bb0817f28b572d60929/metabolabpytools-0.8.13.tar.gz
+[2023-06-03 20:24:23] INFO root fetch - processPackages [metabolabpytools]: Downloading https://files.pythonhosted.org/packages/fa/21/c8a4ef07e9a3fe85afadb07ebbda506b4ffd4b588bb0817f28b572d60929/metabolabpytools-0.8.13.tar.gz
+[2023-06-03 20:24:23] INFO root fetch - processPackages [citric]: executing diffoscope
+[2023-06-03 20:24:23] INFO root fetch - processPackages [citric]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/citric-0.7.1b2.tar.gz tmp/citric-0.7.1b3.tar.gz --markdown 20230603/c/citric/0.7.1b2-0.7.1b3/diff.md --exclude *.pyd
+[2023-06-03 20:24:23] INFO root fetch - processPackages [foursight-core]: executing diffoscope
+[2023-06-03 20:24:23] INFO root fetch - processPackages [foursight-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/foursight_core-4.2.0.1b2.tar.gz tmp/foursight_core-4.2.0.1b3.tar.gz --markdown 20230603/f/foursight-core/4.2.0.1b2-4.2.0.1b3/diff.md --exclude *.pyd
+[2023-06-03 20:24:23] INFO root fetch - processPackages [foursight-cgap]: executing diffoscope
+[2023-06-03 20:24:23] INFO root fetch - processPackages [foursight-cgap]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/foursight_cgap-3.4.5.2b3.tar.gz tmp/foursight_cgap-3.4.5.2b4.tar.gz --markdown 20230603/f/foursight-cgap/3.4.5.2b3-3.4.5.2b4/diff.md --exclude *.pyd
+[2023-06-03 20:24:23] INFO root fetch - processPackages [cyberdrop-dl]: executing diffoscope
+[2023-06-03 20:24:23] INFO root fetch - processPackages [cyberdrop-dl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cyberdrop-dl-4.2.58.tar.gz tmp/cyberdrop-dl-4.2.59.tar.gz --markdown 20230603/c/cyberdrop-dl/4.2.58-4.2.59/diff.md --exclude *.pyd
+[2023-06-03 20:24:23] INFO root fetch - processPackages [foursight]: executing diffoscope
+[2023-06-03 20:24:23] INFO root fetch - processPackages [foursight]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/foursight-3.4.7.2b3.tar.gz tmp/foursight-3.4.7.2b4.tar.gz --markdown 20230603/f/foursight/3.4.7.2b3-3.4.7.2b4/diff.md --exclude *.pyd
+[2023-06-03 20:24:23] INFO root fetch - processPackages [metabolabpytools]: executing diffoscope
+[2023-06-03 20:24:23] INFO root fetch - processPackages [metabolabpytools]: executing diffoscope
+[2023-06-03 20:24:23] INFO root fetch - processPackages [metabolabpytools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/metabolabpytools-0.8.12.tar.gz tmp/metabolabpytools-0.8.13.tar.gz --markdown 20230603/m/metabolabpytools/0.8.12-0.8.13/diff.md --exclude *.pyd
+[2023-06-03 20:24:23] INFO root fetch - processPackages [metabolabpytools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/metabolabpytools-0.8.12.tar.gz tmp/metabolabpytools-0.8.13.tar.gz --markdown 20230603/m/metabolabpytools/0.8.12-0.8.13/diff.md --exclude *.pyd
+[2023-06-03 20:24:24] INFO root fetch - main [MainThread]: End processing [citric]: success
+[2023-06-03 20:24:25] INFO root fetch - main [MainThread]: End processing [foursight]: success
+[2023-06-03 20:24:25] INFO root fetch - main [MainThread]: End processing [foursight-cgap]: success
+[2023-06-03 20:24:25] INFO root fetch - main [MainThread]: End processing [metabolabpytools]: success
+[2023-06-03 20:24:25] INFO root fetch - main [MainThread]: End processing [metabolabpytools]: success
+[2023-06-03 20:24:25] INFO root fetch - main [MainThread]: End processing [cyberdrop-dl]: success
+[2023-06-03 20:24:39] INFO root fetch - main [MainThread]: End processing [foursight-core]: success
+[2023-06-03 20:24:39] INFO root fetch - main [MainThread]: Store serial: [18361060]
