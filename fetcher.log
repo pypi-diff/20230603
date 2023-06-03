@@ -11046,3 +11046,59 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-06-03 19:40:27] INFO root fetch - main [MainThread]: End processing [xiaomi-ble]: success
 [2023-06-03 19:40:27] INFO root fetch - main [MainThread]: End processing [dart-tools]: success
 [2023-06-03 19:40:27] INFO root fetch - main [MainThread]: Store serial: [18360768]
+[2023-06-03 19:45:31] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18360768]
+[2023-06-03 19:45:36] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-06-03 19:45:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: klu
+[2023-06-03 19:45:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mack-sdk
+[2023-06-03 19:45:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: swcdb
+[2023-06-03 19:45:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: d20-orm
+[2023-06-03 19:45:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: firegs
+[2023-06-03 19:45:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: apinum
+[2023-06-03 19:45:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: swegram
+[2023-06-03 19:45:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: py-lav
+[2023-06-03 19:45:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: SimpleShape
+[2023-06-03 19:45:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: regex
+[2023-06-03 19:45:37] INFO root fetch - processPackages [klu]: New version: [0.1.7] Old Version: [0.1.6]
+[2023-06-03 19:45:37] WARNING root fetch - processPackages [mack-sdk]: Skipping, unable to determine old version
+[2023-06-03 19:45:37] INFO root fetch - processPackages [swcdb]: New version: [0.5.9.0] Old Version: [0.5.8.1]
+[2023-06-03 19:45:37] INFO root fetch - main [MainThread]: End processing [mack-sdk] error
+[2023-06-03 19:45:37] INFO root fetch - processPackages [apinum]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-06-03 19:45:37] INFO root fetch - processPackages [swegram]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-06-03 19:45:37] INFO root fetch - processPackages [firegs]: New version: [0.8] Old Version: [0.7]
+[2023-06-03 19:45:37] INFO root fetch - processPackages [d20-orm]: New version: [2.0.2a9] Old Version: [2.0.2a8]
+[2023-06-03 19:45:37] INFO root fetch - processPackages [py-lav]: New version: [1.9.1] Old Version: [1.9.0]
+[2023-06-03 19:45:37] WARNING root fetch - processPackages [SimpleShape]: Skipping, unable to determine old version
+[2023-06-03 19:45:37] INFO root fetch - main [MainThread]: End processing [SimpleShape] error
+[2023-06-03 19:45:37] INFO root fetch - processPackages [d20-orm]: executing diffoscope
+[2023-06-03 19:45:37] INFO root fetch - processPackages [d20-orm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/d20-orm-2.0.2a8.tar.gz tmp/d20-orm-2.0.2a9.tar.gz --markdown 20230603/d/d20-orm/2.0.2a8-2.0.2a9/diff.md --exclude *.pyd
+[2023-06-03 19:45:37] INFO root fetch - processPackages [regex]: New version: [2023.6.3] Old Version: [2023.5.5]
+[2023-06-03 19:45:37] INFO root fetch - processPackages [apinum]: Downloading https://files.pythonhosted.org/packages/13/23/ba76c53f79597f6ec8cb01ae21195175474d8d3b785d359ae625b2d2abde/apinum-0.1.2.tar.gz
+[2023-06-03 19:45:37] INFO root fetch - processPackages [firegs]: Downloading https://files.pythonhosted.org/packages/24/2c/532ceb3b7f57fcd08d7fb400c9d723f74cbe269fb09f2b2211ab32d47a4d/firegs-0.8.tar.gz
+[2023-06-03 19:45:37] INFO root fetch - processPackages [swcdb]: Downloading https://files.pythonhosted.org/packages/83/36/1b91f43db93bf17b2443432407286aadf4e63bf94c5d8663af6a936abf5a/swcdb-0.5.8.1.tar.gz
+[2023-06-03 19:45:37] INFO root fetch - processPackages [swegram]: Downloading https://files.pythonhosted.org/packages/c3/b6/b7c0ba14a0f27088824b29edf6fc92808a860a9706f6c8d7a5b6af946d16/swegram-1.0.1-py3-none-any.whl
+[2023-06-03 19:45:37] WARNING root fetch - processPackages [swegram]: Skipping package: exceeds size limit 58848532>=10485760
+[2023-06-03 19:45:37] INFO root fetch - main [MainThread]: End processing [swegram] error
+[2023-06-03 19:45:37] INFO root fetch - processPackages [regex]: Downloading https://files.pythonhosted.org/packages/77/5d/98efc9cf46d60f3704cf00f8b3bd81319493639fd4367efb5d02fd29ffc1/regex-2023.5.5.tar.gz
+[2023-06-03 19:45:37] INFO root fetch - processPackages [klu]: Downloading https://files.pythonhosted.org/packages/b6/ab/5fa06842ab04ae5d14cfef3697143d847a4fa4ba79b850a0e2eb51e067f4/klu-0.1.7.tar.gz
+[2023-06-03 19:45:37] INFO root fetch - processPackages [firegs]: executing diffoscope
+[2023-06-03 19:45:37] INFO root fetch - processPackages [firegs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/firegs-0.7.tar.gz tmp/firegs-0.8.tar.gz --markdown 20230603/f/firegs/0.7-0.8/diff.md --exclude *.pyd
+[2023-06-03 19:45:37] INFO root fetch - processPackages [apinum]: executing diffoscope
+[2023-06-03 19:45:37] INFO root fetch - processPackages [apinum]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/apinum-0.1.1.tar.gz tmp/apinum-0.1.2.tar.gz --markdown 20230603/a/apinum/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-06-03 19:45:37] INFO root fetch - processPackages [klu]: executing diffoscope
+[2023-06-03 19:45:37] INFO root fetch - processPackages [klu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/klu-0.1.6.tar.gz tmp/klu-0.1.7.tar.gz --markdown 20230603/k/klu/0.1.6-0.1.7/diff.md --exclude *.pyd
+[2023-06-03 19:45:37] INFO root fetch - processPackages [py-lav]: executing diffoscope
+[2023-06-03 19:45:37] INFO root fetch - processPackages [py-lav]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py_lav-1.9.0.tar.gz tmp/py_lav-1.9.1.tar.gz --markdown 20230603/p/py-lav/1.9.0-1.9.1/diff.md --exclude *.pyd
+[2023-06-03 19:45:37] INFO root fetch - processPackages [swcdb]: Downloading https://files.pythonhosted.org/packages/ea/fd/63d6d323a553ef88cb65398031b5cc71a2b13d11fd6363017f37f31de7e9/swcdb-0.5.9.0.tar.gz
+[2023-06-03 19:45:37] INFO root fetch - processPackages [regex]: Downloading https://files.pythonhosted.org/packages/5f/59/773cf93716a073555d2245bc85efd47ae36d042ba21a306927c58e4aeb8b/regex-2023.6.3-cp310-cp310-manylinux_2_17_s390x.manylinux2014_s390x.whl
+[2023-06-03 19:45:37] INFO root fetch - processPackages [swcdb]: executing diffoscope
+[2023-06-03 19:45:37] INFO root fetch - processPackages [swcdb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/swcdb-0.5.8.1.tar.gz tmp/swcdb-0.5.9.0.tar.gz --markdown 20230603/s/swcdb/0.5.8.1-0.5.9.0/diff.md --exclude *.pyd
+[2023-06-03 19:45:37] INFO root fetch - processPackages [regex]: executing diffoscope
+[2023-06-03 19:45:37] INFO root fetch - processPackages [regex]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/regex-2023.5.5.tar.gz tmp/regex-2023.6.3-cp310-cp310-manylinux_2_17_s390x.manylinux2014_s390x.whl.zip --markdown 20230603/r/regex/2023.5.5-2023.6.3/diff.md --exclude *.pyd
+[2023-06-03 19:45:38] INFO root fetch - main [MainThread]: End processing [d20-orm]: success
+[2023-06-03 19:45:38] INFO root fetch - main [MainThread]: End processing [firegs]: success
+[2023-06-03 19:45:38] INFO root fetch - main [MainThread]: End processing [apinum]: success
+[2023-06-03 19:45:38] INFO root fetch - main [MainThread]: End processing [klu]: success
+[2023-06-03 19:45:39] INFO root fetch - main [MainThread]: End processing [regex]: success
+[2023-06-03 19:45:41] INFO root fetch - main [MainThread]: End processing [swcdb]: success
+[2023-06-03 19:46:22] INFO root fetch - main [MainThread]: End processing [py-lav]: success
+[2023-06-03 19:46:22] INFO root fetch - main [MainThread]: Store serial: [18360799]
