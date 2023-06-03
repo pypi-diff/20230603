@@ -1519,3 +1519,87 @@
 [2023-06-03 02:31:23] INFO root fetch - main [MainThread]: End processing [cdk-docker-image-deployment]: success
 [2023-06-03 02:32:13] INFO root fetch - main [MainThread]: End processing [cdktf-github-actions]: success
 [2023-06-03 02:32:13] INFO root fetch - main [MainThread]: Store serial: [18354700]
+[2023-06-03 02:37:17] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18354700]
+[2023-06-03 02:37:22] INFO root fetch - main [MainThread]: Found 14 changed packages
+[2023-06-03 02:37:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cdk8s-redis
+[2023-06-03 02:37:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: bettertest
+[2023-06-03 02:37:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: d20-orm
+[2023-06-03 02:37:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: QuantumIntelligence
+[2023-06-03 02:37:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: everdrop-aws-cdk-constructs
+[2023-06-03 02:37:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: loophost
+[2023-06-03 02:37:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: aeppl-nightly
+[2023-06-03 02:37:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: cdklabs.cdk-enterprise-iac
+[2023-06-03 02:37:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: d20-orm
+[2023-06-03 02:37:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: bettertest
+[2023-06-03 02:37:22] INFO root fetch - processPackages [everdrop-aws-cdk-constructs]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-06-03 02:37:22] INFO root fetch - processPackages [d20-orm]: New version: [2.0.2a8] Old Version: [2.0.2a7]
+[2023-06-03 02:37:22] INFO root fetch - processPackages [bettertest]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-06-03 02:37:22] INFO root fetch - processPackages [QuantumIntelligence]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-06-03 02:37:22] INFO root fetch - processPackages [loophost]: New version: [1.2.9] Old Version: [1.2.8]
+[2023-06-03 02:37:22] INFO root fetch - processPackages [bettertest]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-06-03 02:37:22] INFO root fetch - processPackages [d20-orm]: New version: [2.0.2a8] Old Version: [2.0.2a7]
+[2023-06-03 02:37:22] INFO root fetch - processPackages [aeppl-nightly]: New version: [0.1.4.dev20230602] Old Version: [0.1.4.dev20230601]
+[2023-06-03 02:37:22] INFO root fetch - processPackages [cdklabs.cdk-enterprise-iac]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-06-03 02:37:22] INFO root fetch - processPackages [cdk8s-redis]: New version: [0.1.99] Old Version: [0.1.98]
+[2023-06-03 02:37:22] INFO root fetch - processPackages [loophost]: executing diffoscope
+[2023-06-03 02:37:22] INFO root fetch - processPackages [loophost]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/loophost-1.2.8-py3-none-any.whl.zip tmp/loophost-1.2.9-py3-none-any.whl.zip --markdown 20230603/l/loophost/1.2.8-1.2.9/diff.md --exclude *.pyd
+[2023-06-03 02:37:22] INFO root fetch - processPackages [everdrop-aws-cdk-constructs]: executing diffoscope
+[2023-06-03 02:37:22] INFO root fetch - processPackages [everdrop-aws-cdk-constructs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/everdrop-aws-cdk-constructs-0.0.8.tar.gz tmp/everdrop-aws-cdk-constructs-0.0.9.tar.gz --markdown 20230603/e/everdrop-aws-cdk-constructs/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-06-03 02:37:22] INFO root fetch - processPackages [aeppl-nightly]: executing diffoscope
+[2023-06-03 02:37:22] INFO root fetch - processPackages [aeppl-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aeppl-nightly-0.1.4.dev20230601.tar.gz tmp/aeppl-nightly-0.1.4.dev20230602.tar.gz --markdown 20230603/a/aeppl-nightly/0.1.4.dev20230601-0.1.4.dev20230602/diff.md --exclude *.pyd
+[2023-06-03 02:37:22] INFO root fetch - processPackages [cdklabs.cdk-enterprise-iac]: executing diffoscope
+[2023-06-03 02:37:22] INFO root fetch - processPackages [cdklabs.cdk-enterprise-iac]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdklabs.cdk-enterprise-iac-0.0.98.tar.gz tmp/cdklabs.cdk-enterprise-iac-0.0.99.tar.gz --markdown 20230603/c/cdklabs.cdk-enterprise-iac/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-06-03 02:37:22] INFO root fetch - processPackages [bettertest]: Downloading https://files.pythonhosted.org/packages/d6/a2/acc106288079533de264e764bdb39b6ac7b0c222cb5902e46296da3b0f80/bettertest-0.1.2.tar.gz
+[2023-06-03 02:37:22] INFO root fetch - processPackages [bettertest]: Downloading https://files.pythonhosted.org/packages/d6/a2/acc106288079533de264e764bdb39b6ac7b0c222cb5902e46296da3b0f80/bettertest-0.1.2.tar.gz
+[2023-06-03 02:37:22] INFO root fetch - processPackages [QuantumIntelligence]: Downloading https://files.pythonhosted.org/packages/84/4d/9aad81144fdf1417a02a65627e19f48f0fccbd54c9e397a3b2c307e112c6/QuantumIntelligence-0.0.8.tar.gz
+[2023-06-03 02:37:22] INFO root fetch - processPackages [d20-orm]: Downloading https://files.pythonhosted.org/packages/e4/81/0fbcad165eeaa405602b4a307f0f0715600cd0348e3aa06982c5f40c1aa2/d20-orm-2.0.2a7.tar.gz
+[2023-06-03 02:37:22] INFO root fetch - processPackages [d20-orm]: Downloading https://files.pythonhosted.org/packages/e4/81/0fbcad165eeaa405602b4a307f0f0715600cd0348e3aa06982c5f40c1aa2/d20-orm-2.0.2a7.tar.gz
+[2023-06-03 02:37:22] INFO root fetch - processPackages [d20-orm]: Downloading https://files.pythonhosted.org/packages/ad/29/9c0d1509e2bf24fcaf67bf27a72aca82c69934060a5b97d4e95f982bdf7c/d20-orm-2.0.2a8.tar.gz
+[2023-06-03 02:37:22] INFO root fetch - processPackages [QuantumIntelligence]: Downloading https://files.pythonhosted.org/packages/a4/6d/56afb58288941d14b1a5a96ef492f7e5b338024d355b377484d5d6b4f08f/QuantumIntelligence-0.0.9.tar.gz
+[2023-06-03 02:37:22] INFO root fetch - processPackages [d20-orm]: Downloading https://files.pythonhosted.org/packages/ad/29/9c0d1509e2bf24fcaf67bf27a72aca82c69934060a5b97d4e95f982bdf7c/d20-orm-2.0.2a8.tar.gz
+[2023-06-03 02:37:22] INFO root fetch - processPackages [cdk8s-redis]: executing diffoscope
+[2023-06-03 02:37:22] INFO root fetch - processPackages [cdk8s-redis]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk8s-redis-0.1.98.tar.gz tmp/cdk8s-redis-0.1.99.tar.gz --markdown 20230603/c/cdk8s-redis/0.1.98-0.1.99/diff.md --exclude *.pyd
+[2023-06-03 02:37:22] INFO root fetch - processPackages [bettertest]: Downloading https://files.pythonhosted.org/packages/5b/ed/7fcbcefb546d2b98e0351c13b3642b8a0a5baa90cc6af92dac4ad7740e23/bettertest-0.1.3.tar.gz
+[2023-06-03 02:37:22] INFO root fetch - processPackages [bettertest]: Downloading https://files.pythonhosted.org/packages/5b/ed/7fcbcefb546d2b98e0351c13b3642b8a0a5baa90cc6af92dac4ad7740e23/bettertest-0.1.3.tar.gz
+[2023-06-03 02:37:22] INFO root fetch - processPackages [d20-orm]: executing diffoscope
+[2023-06-03 02:37:22] INFO root fetch - processPackages [d20-orm]: executing diffoscope
+[2023-06-03 02:37:22] INFO root fetch - processPackages [d20-orm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/d20-orm-2.0.2a7.tar.gz tmp/d20-orm-2.0.2a8.tar.gz --markdown 20230603/d/d20-orm/2.0.2a7-2.0.2a8/diff.md --exclude *.pyd
+[2023-06-03 02:37:22] INFO root fetch - processPackages [d20-orm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/d20-orm-2.0.2a7.tar.gz tmp/d20-orm-2.0.2a8.tar.gz --markdown 20230603/d/d20-orm/2.0.2a7-2.0.2a8/diff.md --exclude *.pyd
+[2023-06-03 02:37:22] INFO root fetch - processPackages [QuantumIntelligence]: executing diffoscope
+[2023-06-03 02:37:22] INFO root fetch - processPackages [QuantumIntelligence]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/QuantumIntelligence-0.0.8.tar.gz tmp/QuantumIntelligence-0.0.9.tar.gz --markdown 20230603/Q/QuantumIntelligence/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-06-03 02:37:22] INFO root fetch - processPackages [bettertest]: executing diffoscope
+[2023-06-03 02:37:22] INFO root fetch - processPackages [bettertest]: executing diffoscope
+[2023-06-03 02:37:22] INFO root fetch - processPackages [bettertest]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bettertest-0.1.2.tar.gz tmp/bettertest-0.1.3.tar.gz --markdown 20230603/b/bettertest/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-06-03 02:37:22] INFO root fetch - processPackages [bettertest]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bettertest-0.1.2.tar.gz tmp/bettertest-0.1.3.tar.gz --markdown 20230603/b/bettertest/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-06-03 02:37:23] INFO root fetch - processPackages [everdrop-aws-cdk-constructs]: Start processing: py-pure-client
+[2023-06-03 02:37:23] INFO root fetch - main [MainThread]: End processing [everdrop-aws-cdk-constructs]: success
+[2023-06-03 02:37:23] INFO root fetch - processPackages [py-pure-client]: New version: [1.9.0] Old Version: [1.8.0]
+[2023-06-03 02:37:23] INFO root fetch - processPackages [cdk8s-redis]: Start processing: NEURON-gpu-nightly
+[2023-06-03 02:37:23] INFO root fetch - main [MainThread]: End processing [cdk8s-redis]: success
+[2023-06-03 02:37:24] INFO root fetch - processPackages [NEURON-gpu-nightly]: New version: [9.0.dev1357] Old Version: [9.0.dev1356]
+[2023-06-03 02:37:24] INFO root fetch - processPackages [py-pure-client]: executing diffoscope
+[2023-06-03 02:37:24] INFO root fetch - processPackages [py-pure-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py-pure-client-1.8.0.tar.gz tmp/py-pure-client-1.9.0.tar.gz --markdown 20230603/p/py-pure-client/1.8.0-1.9.0/diff.md --exclude *.pyd
+[2023-06-03 02:37:24] INFO root fetch - processPackages [d20-orm]: Start processing: aind-metadata-service
+[2023-06-03 02:37:24] INFO root fetch - main [MainThread]: End processing [d20-orm]: success
+[2023-06-03 02:37:24] INFO root fetch - processPackages [aind-metadata-service]: New version: [0.4.8] Old Version: [0.4.7]
+[2023-06-03 02:37:24] INFO root fetch - processPackages [QuantumIntelligence]: Start processing: bettertest
+[2023-06-03 02:37:24] INFO root fetch - main [MainThread]: End processing [QuantumIntelligence]: success
+[2023-06-03 02:37:24] INFO root fetch - processPackages [bettertest]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-06-03 02:37:24] INFO root fetch - processPackages [NEURON-gpu-nightly]: Downloading https://files.pythonhosted.org/packages/ec/2a/a8d9d7765655ebe03ad662b3423643e25f08e4e5051b744b1e4d27b0bded/NEURON_gpu_nightly-9.0.dev1356-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2023-06-03 02:37:24] INFO root fetch - main [MainThread]: End processing [bettertest]: success
+[2023-06-03 02:37:24] WARNING root fetch - processPackages [NEURON-gpu-nightly]: Skipping package: exceeds size limit 30241284>=10485760
+[2023-06-03 02:37:24] INFO root fetch - main [MainThread]: End processing [NEURON-gpu-nightly] error
+[2023-06-03 02:37:24] INFO root fetch - processPackages [bettertest]: executing diffoscope
+[2023-06-03 02:37:24] INFO root fetch - processPackages [bettertest]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bettertest-0.1.2.tar.gz tmp/bettertest-0.1.3.tar.gz --markdown 20230603/b/bettertest/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-06-03 02:37:24] INFO root fetch - processPackages [aind-metadata-service]: Downloading https://files.pythonhosted.org/packages/d4/8c/f25dcdbcd724a4c153401b55caa6b7476e6281e74111c212647bb55c9d1b/aind_metadata_service-0.4.8.tar.gz
+[2023-06-03 02:37:24] INFO root fetch - main [MainThread]: End processing [loophost]: success
+[2023-06-03 02:37:24] INFO root fetch - main [MainThread]: End processing [d20-orm]: success
+[2023-06-03 02:37:24] INFO root fetch - main [MainThread]: End processing [bettertest]: success
+[2023-06-03 02:37:24] INFO root fetch - processPackages [aind-metadata-service]: executing diffoscope
+[2023-06-03 02:37:24] INFO root fetch - processPackages [aind-metadata-service]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aind_metadata_service-0.4.7.tar.gz tmp/aind_metadata_service-0.4.8.tar.gz --markdown 20230603/a/aind-metadata-service/0.4.7-0.4.8/diff.md --exclude *.pyd
+[2023-06-03 02:37:25] INFO root fetch - main [MainThread]: End processing [aeppl-nightly]: success
+[2023-06-03 02:37:25] INFO root fetch - main [MainThread]: End processing [bettertest]: success
+[2023-06-03 02:37:26] INFO root fetch - main [MainThread]: End processing [aind-metadata-service]: success
+[2023-06-03 02:37:26] INFO root fetch - main [MainThread]: End processing [cdklabs.cdk-enterprise-iac]: success
+[2023-06-03 02:37:43] INFO root fetch - main [MainThread]: End processing [py-pure-client]: success
+[2023-06-03 02:37:43] INFO root fetch - main [MainThread]: Store serial: [18354756]
