@@ -6912,3 +6912,52 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-06-03 10:57:17] INFO root fetch - main [MainThread]: End processing [MarsGT]: success
 [2023-06-03 10:57:17] INFO root fetch - main [MainThread]: End processing [VmLogin]: success
 [2023-06-03 10:57:17] INFO root fetch - main [MainThread]: Store serial: [18358066]
+[2023-06-03 11:02:21] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18358066]
+[2023-06-03 11:02:26] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-06-03 11:02:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: MetodosAnaliseNumerica
+[2023-06-03 11:02:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: findu
+[2023-06-03 11:02:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: flaxsr
+[2023-06-03 11:02:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: kcli
+[2023-06-03 11:02:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: lesscode-tool
+[2023-06-03 11:02:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: kfish
+[2023-06-03 11:02:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: django-admin-datta
+[2023-06-03 11:02:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: InternetSpeedLogger
+[2023-06-03 11:02:26] INFO root fetch - processPackages [flaxsr]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-06-03 11:02:26] INFO root fetch - processPackages [MetodosAnaliseNumerica]: New version: [0.1.0] Old Version: [0.0.1]
+[2023-06-03 11:02:26] INFO root fetch - processPackages [django-admin-datta]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-06-03 11:02:26] INFO root fetch - processPackages [findu]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-06-03 11:02:26] WARNING root fetch - processPackages [InternetSpeedLogger]: Skipping, unable to determine old version
+[2023-06-03 11:02:26] INFO root fetch - main [MainThread]: End processing [InternetSpeedLogger] error
+[2023-06-03 11:02:26] INFO root fetch - processPackages [kfish]: New version: [99.0.202306030901] Old Version: [99.0.202306021224]
+[2023-06-03 11:02:26] INFO root fetch - processPackages [lesscode-tool]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-06-03 11:02:26] INFO root fetch - processPackages [kcli]: New version: [99.0.202306030859] Old Version: [99.0.202306021221]
+[2023-06-03 11:02:26] INFO root fetch - processPackages [MetodosAnaliseNumerica]: Downloading https://files.pythonhosted.org/packages/12/5e/93d1e12057ddfcfb8b23a3de0961af167e5d3328a130e527fa088606ada7/metodosanalisenumerica-0.0.1.tar.gz
+[2023-06-03 11:02:26] INFO root fetch - processPackages [django-admin-datta]: executing diffoscope
+[2023-06-03 11:02:26] INFO root fetch - processPackages [django-admin-datta]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-admin-datta-1.0.8.tar.gz tmp/django-admin-datta-1.0.9.tar.gz --markdown 20230603/d/django-admin-datta/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-06-03 11:02:26] INFO root fetch - processPackages [flaxsr]: Downloading https://files.pythonhosted.org/packages/b5/c9/80f771acc4842fb5a8bc147c3afec594c227582acddc628f18a579abe27d/flaxsr-0.0.6.tar.gz
+[2023-06-03 11:02:26] INFO root fetch - processPackages [lesscode-tool]: Downloading https://files.pythonhosted.org/packages/ec/3b/c9cd99ede1d7066ae898e7ce12532e4e700c463fc448b5cc8056036f9bdc/lesscode_tool-0.0.8.tar.gz
+[2023-06-03 11:02:26] INFO root fetch - processPackages [findu]: Downloading https://files.pythonhosted.org/packages/4a/ca/880b6134412b97d2caf41b9b7db22fb499371b43d0a31d8f51c363c7b824/findu-0.0.3.tar.gz
+[2023-06-03 11:02:26] INFO root fetch - processPackages [kcli]: Downloading https://files.pythonhosted.org/packages/fc/68/c540cf4428865a0ff363e59ec0408834aac33c476cdf7a223c0c7f29d572/kcli-99.0.202306030859-py3-none-any.whl
+[2023-06-03 11:02:26] INFO root fetch - processPackages [flaxsr]: executing diffoscope
+[2023-06-03 11:02:26] INFO root fetch - processPackages [flaxsr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flaxsr-0.0.5.tar.gz tmp/flaxsr-0.0.6.tar.gz --markdown 20230603/f/flaxsr/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-06-03 11:02:26] INFO root fetch - processPackages [kfish]: Downloading https://files.pythonhosted.org/packages/b2/65/f34a1bff88896e20f272a0d77521b5f6be377c7fb2fbb4a80a1e14826c1e/kfish-99.0.202306030901-py3-none-any.whl
+[2023-06-03 11:02:26] INFO root fetch - processPackages [MetodosAnaliseNumerica]: Downloading https://files.pythonhosted.org/packages/f9/a0/7ab02f590f19848f08c51125ec321d554cf575beb62bb62e1c91c209aaee/metodosanalisenumerica-0.1.0.tar.gz
+[2023-06-03 11:02:26] INFO root fetch - processPackages [kfish]: executing diffoscope
+[2023-06-03 11:02:26] INFO root fetch - processPackages [kfish]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kfish-99.0.202306021224-py3-none-any.whl.zip tmp/kfish-99.0.202306030901-py3-none-any.whl.zip --markdown 20230603/k/kfish/99.0.202306021224-99.0.202306030901/diff.md --exclude *.pyd
+[2023-06-03 11:02:26] INFO root fetch - processPackages [findu]: executing diffoscope
+[2023-06-03 11:02:26] INFO root fetch - processPackages [findu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/findu-0.0.2.tar.gz tmp/findu-0.0.3.tar.gz --markdown 20230603/f/findu/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-06-03 11:02:26] INFO root fetch - processPackages [MetodosAnaliseNumerica]: executing diffoscope
+[2023-06-03 11:02:26] INFO root fetch - processPackages [MetodosAnaliseNumerica]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/metodosanalisenumerica-0.0.1.tar.gz tmp/metodosanalisenumerica-0.1.0.tar.gz --markdown 20230603/M/MetodosAnaliseNumerica/0.0.1-0.1.0/diff.md --exclude *.pyd
+[2023-06-03 11:02:27] INFO root fetch - processPackages [lesscode-tool]: Downloading https://files.pythonhosted.org/packages/96/a3/0a9a46370a4a8b0a9a4e8f479cdec3e5599d5cc5a6bcb07f73ce4bc15270/lesscode_tool-0.0.9.tar.gz
+[2023-06-03 11:02:27] INFO root fetch - processPackages [kcli]: executing diffoscope
+[2023-06-03 11:02:27] INFO root fetch - processPackages [kcli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kcli-99.0.202306021221-py3-none-any.whl.zip tmp/kcli-99.0.202306030859-py3-none-any.whl.zip --markdown 20230603/k/kcli/99.0.202306021221-99.0.202306030859/diff.md --exclude *.pyd
+[2023-06-03 11:02:27] INFO root fetch - processPackages [lesscode-tool]: executing diffoscope
+[2023-06-03 11:02:27] INFO root fetch - processPackages [lesscode-tool]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lesscode_tool-0.0.8.tar.gz tmp/lesscode_tool-0.0.9.tar.gz --markdown 20230603/l/lesscode-tool/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-06-03 11:02:27] INFO root fetch - main [MainThread]: End processing [flaxsr]: success
+[2023-06-03 11:02:28] INFO root fetch - main [MainThread]: End processing [findu]: success
+[2023-06-03 11:02:28] INFO root fetch - main [MainThread]: End processing [kfish]: success
+[2023-06-03 11:02:28] INFO root fetch - main [MainThread]: End processing [MetodosAnaliseNumerica]: success
+[2023-06-03 11:02:28] INFO root fetch - main [MainThread]: End processing [lesscode-tool]: success
+[2023-06-03 11:02:30] INFO root fetch - main [MainThread]: End processing [django-admin-datta]: success
+[2023-06-03 11:02:35] INFO root fetch - main [MainThread]: End processing [kcli]: success
+[2023-06-03 11:02:35] INFO root fetch - main [MainThread]: Store serial: [18358087]
