@@ -12772,3 +12772,42 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-06-03 22:05:32] INFO root fetch - main [MainThread]: End processing [formation-studio]: success
 [2023-06-03 22:05:51] INFO root fetch - main [MainThread]: End processing [dlib]: success
 [2023-06-03 22:05:51] INFO root fetch - main [MainThread]: Store serial: [18361791]
+[2023-06-03 22:10:56] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18361791]
+[2023-06-03 22:11:01] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-06-03 22:11:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: relevanceai
+[2023-06-03 22:11:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mynacode
+[2023-06-03 22:11:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ezbeq
+[2023-06-03 22:11:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: mynacode
+[2023-06-03 22:11:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pyresidfp
+[2023-06-03 22:11:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: eons
+[2023-06-03 22:11:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: hybrid-index
+[2023-06-03 22:11:01] INFO root fetch - processPackages [ezbeq]: New version: [1.0.0b9] Old Version: [1.0.0b8]
+[2023-06-03 22:11:01] INFO root fetch - processPackages [relevanceai]: New version: [4.0.9] Old Version: [4.0.8]
+[2023-06-03 22:11:01] INFO root fetch - processPackages [mynacode]: New version: [1.0.99] Old Version: [1.0.98]
+[2023-06-03 22:11:01] INFO root fetch - processPackages [mynacode]: New version: [1.0.99] Old Version: [1.0.98]
+[2023-06-03 22:11:01] INFO root fetch - processPackages [hybrid-index]: New version: [0.1.0] Old Version: [0.0.7]
+[2023-06-03 22:11:01] INFO root fetch - processPackages [pyresidfp]: New version: [0.7.0] Old Version: [0.6.7]
+[2023-06-03 22:11:01] INFO root fetch - processPackages [eons]: New version: [2.5.9] Old Version: [2.5.8]
+[2023-06-03 22:11:01] INFO root fetch - processPackages [ezbeq]: executing diffoscope
+[2023-06-03 22:11:01] INFO root fetch - processPackages [ezbeq]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ezbeq-1.0.0b8.tar.gz tmp/ezbeq-1.0.0b9.tar.gz --markdown 20230603/e/ezbeq/1.0.0b8-1.0.0b9/diff.md --exclude *.pyd
+[2023-06-03 22:11:01] INFO root fetch - processPackages [hybrid-index]: executing diffoscope
+[2023-06-03 22:11:01] INFO root fetch - processPackages [hybrid-index]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hybrid_index-0.0.7.tar.gz tmp/hybrid_index-0.1.0.tar.gz --markdown 20230603/h/hybrid-index/0.0.7-0.1.0/diff.md --exclude *.pyd
+[2023-06-03 22:11:01] INFO root fetch - processPackages [relevanceai]: executing diffoscope
+[2023-06-03 22:11:01] INFO root fetch - processPackages [relevanceai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/relevanceai-4.0.8.tar.gz tmp/relevanceai-4.0.9.tar.gz --markdown 20230603/r/relevanceai/4.0.8-4.0.9/diff.md --exclude *.pyd
+[2023-06-03 22:11:02] INFO root fetch - processPackages [mynacode]: executing diffoscope
+[2023-06-03 22:11:02] INFO root fetch - processPackages [mynacode]: executing diffoscope
+[2023-06-03 22:11:02] INFO root fetch - processPackages [mynacode]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mynacode-1.0.98-py3-none-any.whl.zip tmp/mynacode-1.0.99-py3-none-any.whl.zip --markdown 20230603/m/mynacode/1.0.98-1.0.99/diff.md --exclude *.pyd
+[2023-06-03 22:11:02] INFO root fetch - processPackages [mynacode]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mynacode-1.0.98-py3-none-any.whl.zip tmp/mynacode-1.0.99-py3-none-any.whl.zip --markdown 20230603/m/mynacode/1.0.98-1.0.99/diff.md --exclude *.pyd
+[2023-06-03 22:11:02] INFO root fetch - processPackages [pyresidfp]: Downloading https://files.pythonhosted.org/packages/6f/35/7bda00abca55addee41e2cf0fb24ecee6b50550ecec37ade09b4c2c14f7b/pyresidfp-0.7.0.tar.gz
+[2023-06-03 22:11:02] INFO root fetch - processPackages [eons]: executing diffoscope
+[2023-06-03 22:11:02] INFO root fetch - processPackages [eons]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/eons-2.5.8.tar.gz tmp/eons-2.5.9.tar.gz --markdown 20230603/e/eons/2.5.8-2.5.9/diff.md --exclude *.pyd
+[2023-06-03 22:11:02] INFO root fetch - processPackages [pyresidfp]: executing diffoscope
+[2023-06-03 22:11:02] INFO root fetch - processPackages [pyresidfp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyresidfp-0.6.7.tar.gz tmp/pyresidfp-0.7.0.tar.gz --markdown 20230603/p/pyresidfp/0.6.7-0.7.0/diff.md --exclude *.pyd
+[2023-06-03 22:11:03] INFO root fetch - main [MainThread]: End processing [hybrid-index]: success
+[2023-06-03 22:11:03] INFO root fetch - main [MainThread]: End processing [mynacode]: success
+[2023-06-03 22:11:03] INFO root fetch - main [MainThread]: End processing [relevanceai]: success
+[2023-06-03 22:11:03] INFO root fetch - main [MainThread]: End processing [mynacode]: success
+[2023-06-03 22:11:03] INFO root fetch - main [MainThread]: End processing [eons]: success
+[2023-06-03 22:11:03] INFO root fetch - main [MainThread]: End processing [pyresidfp]: success
+[2023-06-03 22:11:10] INFO root fetch - main [MainThread]: End processing [ezbeq]: success
+[2023-06-03 22:11:10] INFO root fetch - main [MainThread]: Store serial: [18361867]
