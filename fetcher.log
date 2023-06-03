@@ -6791,3 +6791,34 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-06-03 10:40:51] INFO root fetch - main [MainThread]: End processing [tronapi-JCO]: success
 [2023-06-03 10:40:51] INFO root fetch - main [MainThread]: End processing [aiavatar]: success
 [2023-06-03 10:40:51] INFO root fetch - main [MainThread]: Store serial: [18358001]
+[2023-06-03 10:45:55] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18358001]
+[2023-06-03 10:46:00] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-06-03 10:46:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyeCam
+[2023-06-03 10:46:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: autoapi-django
+[2023-06-03 10:46:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: tff-nightly
+[2023-06-03 10:46:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: calendar-pytba
+[2023-06-03 10:46:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: randonautentropy
+[2023-06-03 10:46:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: spreadsheet-migrator
+[2023-06-03 10:46:00] INFO root fetch - processPackages [autoapi-django]: New version: [0.9.2] Old Version: [0.9.1]
+[2023-06-03 10:46:00] INFO root fetch - processPackages [pyeCam]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-06-03 10:46:00] WARNING root fetch - processPackages [randonautentropy]: Skipping, unable to determine old version
+[2023-06-03 10:46:00] WARNING root fetch - processPackages [calendar-pytba]: Skipping, unable to determine old version
+[2023-06-03 10:46:00] INFO root fetch - main [MainThread]: End processing [randonautentropy] error
+[2023-06-03 10:46:00] INFO root fetch - main [MainThread]: End processing [calendar-pytba] error
+[2023-06-03 10:46:00] INFO root fetch - processPackages [spreadsheet-migrator]: New version: [1.0] Old Version: [0.4]
+[2023-06-03 10:46:00] INFO root fetch - processPackages [tff-nightly]: New version: [0.0.1.dev20230602] Old Version: [0.0.1.dev20230601]
+[2023-06-03 10:46:00] INFO root fetch - processPackages [tff-nightly]: Downloading https://files.pythonhosted.org/packages/da/d2/30b28241b455817454ad6bd7c0926ce9ad998b365615836018c333f73c56/tff_nightly-0.0.1.dev20230602-py2.py3-none-any.whl
+[2023-06-03 10:46:00] INFO root fetch - processPackages [autoapi-django]: executing diffoscope
+[2023-06-03 10:46:00] INFO root fetch - processPackages [autoapi-django]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/autoapi-django-0.9.1.tar.gz tmp/autoapi-django-0.9.2.tar.gz --markdown 20230603/a/autoapi-django/0.9.1-0.9.2/diff.md --exclude *.pyd
+[2023-06-03 10:46:01] INFO root fetch - processPackages [spreadsheet-migrator]: Downloading https://files.pythonhosted.org/packages/a7/6f/d429f36768d1b7dfc6f2abb561e1eed469b3fe7ff72a6a1398204725c0fd/spreadsheet-migrator-1.0.tar.gz
+[2023-06-03 10:46:01] INFO root fetch - processPackages [pyeCam]: executing diffoscope
+[2023-06-03 10:46:01] INFO root fetch - processPackages [pyeCam]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyeCam-0.0.8.tar.gz tmp/pyeCam-0.0.9.tar.gz --markdown 20230603/p/pyeCam/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-06-03 10:46:01] INFO root fetch - processPackages [tff-nightly]: executing diffoscope
+[2023-06-03 10:46:01] INFO root fetch - processPackages [tff-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tff_nightly-0.0.1.dev20230601-py2.py3-none-any.whl.zip tmp/tff_nightly-0.0.1.dev20230602-py2.py3-none-any.whl.zip --markdown 20230603/t/tff-nightly/0.0.1.dev20230601-0.0.1.dev20230602/diff.md --exclude *.pyd
+[2023-06-03 10:46:01] INFO root fetch - processPackages [spreadsheet-migrator]: executing diffoscope
+[2023-06-03 10:46:01] INFO root fetch - processPackages [spreadsheet-migrator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spreadsheet-migrator-0.4.tar.gz tmp/spreadsheet-migrator-1.0.tar.gz --markdown 20230603/s/spreadsheet-migrator/0.4-1.0/diff.md --exclude *.pyd
+[2023-06-03 10:46:02] INFO root fetch - main [MainThread]: End processing [pyeCam]: success
+[2023-06-03 10:46:02] INFO root fetch - main [MainThread]: End processing [autoapi-django]: success
+[2023-06-03 10:46:02] INFO root fetch - main [MainThread]: End processing [spreadsheet-migrator]: success
+[2023-06-03 10:46:04] INFO root fetch - main [MainThread]: End processing [tff-nightly]: success
+[2023-06-03 10:46:04] INFO root fetch - main [MainThread]: Store serial: [18358021]
