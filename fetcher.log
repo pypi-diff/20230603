@@ -11102,3 +11102,39 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-06-03 19:45:41] INFO root fetch - main [MainThread]: End processing [swcdb]: success
 [2023-06-03 19:46:22] INFO root fetch - main [MainThread]: End processing [py-lav]: success
 [2023-06-03 19:46:22] INFO root fetch - main [MainThread]: Store serial: [18360799]
+[2023-06-03 19:51:27] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18360799]
+[2023-06-03 19:51:32] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-06-03 19:51:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: neopolitan
+[2023-06-03 19:51:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sleeptimer
+[2023-06-03 19:51:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: apinum
+[2023-06-03 19:51:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: summa-embed
+[2023-06-03 19:51:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: hydrogibs
+[2023-06-03 19:51:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: firegs
+[2023-06-03 19:51:32] INFO root fetch - processPackages [neopolitan]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-06-03 19:51:32] INFO root fetch - processPackages [apinum]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-06-03 19:51:32] INFO root fetch - processPackages [sleeptimer]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-06-03 19:51:32] INFO root fetch - processPackages [firegs]: New version: [0.8] Old Version: [0.7]
+[2023-06-03 19:51:32] INFO root fetch - processPackages [summa-embed]: New version: [0.15.9] Old Version: [0.15.8]
+[2023-06-03 19:51:32] INFO root fetch - processPackages [hydrogibs]: New version: [0.3.9] Old Version: [0.3.8]
+[2023-06-03 19:51:32] INFO root fetch - processPackages [firegs]: executing diffoscope
+[2023-06-03 19:51:32] INFO root fetch - processPackages [firegs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/firegs-0.7.tar.gz tmp/firegs-0.8.tar.gz --markdown 20230603/f/firegs/0.7-0.8/diff.md --exclude *.pyd
+[2023-06-03 19:51:32] INFO root fetch - processPackages [summa-embed]: executing diffoscope
+[2023-06-03 19:51:32] INFO root fetch - processPackages [summa-embed]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/summa_embed-0.15.8.tar.gz tmp/summa_embed-0.15.9.tar.gz --markdown 20230603/s/summa-embed/0.15.8-0.15.9/diff.md --exclude *.pyd
+[2023-06-03 19:51:32] INFO root fetch - processPackages [hydrogibs]: executing diffoscope
+[2023-06-03 19:51:32] INFO root fetch - processPackages [hydrogibs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hydrogibs-0.3.8.tar.gz tmp/hydrogibs-0.3.9.tar.gz --markdown 20230603/h/hydrogibs/0.3.8-0.3.9/diff.md --exclude *.pyd
+[2023-06-03 19:51:32] INFO root fetch - processPackages [sleeptimer]: Downloading https://files.pythonhosted.org/packages/eb/6b/b05c8350d11f673588ba7c4edf0583a16441de2ce04f33c1d2aefd5e4bc5/sleeptimer-1.0.0.tar.gz
+[2023-06-03 19:51:32] INFO root fetch - processPackages [apinum]: Downloading https://files.pythonhosted.org/packages/41/ab/2165d8121f0f7a78b6d183c546b42c15fba5282044452e446a81064155da/apinum-0.1.3.tar.gz
+[2023-06-03 19:51:32] INFO root fetch - processPackages [neopolitan]: executing diffoscope
+[2023-06-03 19:51:32] INFO root fetch - processPackages [neopolitan]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/neopolitan-0.1.8.tar.gz tmp/neopolitan-0.1.9.tar.gz --markdown 20230603/n/neopolitan/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-06-03 19:51:32] INFO root fetch - processPackages [apinum]: executing diffoscope
+[2023-06-03 19:51:32] INFO root fetch - processPackages [apinum]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/apinum-0.1.2.tar.gz tmp/apinum-0.1.3.tar.gz --markdown 20230603/a/apinum/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-06-03 19:51:32] INFO root fetch - processPackages [sleeptimer]: Downloading https://files.pythonhosted.org/packages/71/aa/16c7b6ab769e8ad977c1537ab9cd468189c2d8b360d3d585f00a78905d63/sleeptimer-1.0.1.tar.gz
+[2023-06-03 19:51:32] INFO root fetch - processPackages [sleeptimer]: executing diffoscope
+[2023-06-03 19:51:32] INFO root fetch - processPackages [sleeptimer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sleeptimer-1.0.0.tar.gz tmp/sleeptimer-1.0.1.tar.gz --markdown 20230603/s/sleeptimer/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-06-03 19:51:33] INFO root fetch - main [MainThread]: End processing [firegs]: success
+[2023-06-03 19:51:33] INFO root fetch - main [MainThread]: End processing [hydrogibs]: success
+[2023-06-03 19:51:33] INFO root fetch - main [MainThread]: End processing [apinum]: success
+[2023-06-03 19:51:33] INFO root fetch - main [MainThread]: End processing [neopolitan]: success
+[2023-06-03 19:51:33] INFO root fetch - main [MainThread]: End processing [sleeptimer]: success
+[2023-06-03 19:51:33] INFO root fetch - main [MainThread]: End processing [summa-embed]: success
+[2023-06-03 19:51:33] INFO root fetch - main [MainThread]: Store serial: [18360921]
