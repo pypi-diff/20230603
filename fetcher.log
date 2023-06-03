@@ -4681,3 +4681,25 @@
 [2023-06-03 05:27:19] INFO root fetch - main [MainThread]: End processing [django-podcasting]: success
 [2023-06-03 05:27:19] INFO root fetch - main [MainThread]: End processing [lsx]: success
 [2023-06-03 05:27:19] INFO root fetch - main [MainThread]: Store serial: [18356665]
+[2023-06-03 05:32:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18356665]
+[2023-06-03 05:32:28] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-06-03 05:32:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: odoo14-addon-hr-employee-document
+[2023-06-03 05:32:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: odoo14-addon-hr-personal-equipment-request
+[2023-06-03 05:32:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: vector-vault
+[2023-06-03 05:32:28] INFO root fetch - processPackages [odoo14-addon-hr-personal-equipment-request]: New version: [14.0.1.0.1.dev8] Old Version: [14.0.1.0.1.dev28]
+[2023-06-03 05:32:28] INFO root fetch - processPackages [odoo14-addon-hr-employee-document]: New version: [14.0.1.0.1.dev5] Old Version: [14.0.1.0.1.dev4]
+[2023-06-03 05:32:28] INFO root fetch - processPackages [vector-vault]: New version: [1.7.2] Old Version: [1.7.1]
+[2023-06-03 05:32:28] INFO root fetch - processPackages [odoo14-addon-hr-employee-document]: Downloading https://files.pythonhosted.org/packages/6d/e4/53101021ebe78462561e12c62fe3deb31a0b523d166974529fc1ef92f1d6/odoo14_addon_hr_employee_document-14.0.1.0.1.dev4-py3-none-any.whl
+[2023-06-03 05:32:28] INFO root fetch - processPackages [odoo14-addon-hr-personal-equipment-request]: Downloading https://files.pythonhosted.org/packages/a1/71/4470a3dcad43ba30eae5c98c6510227bd96783955eb59990a40d79668b05/odoo14_addon_hr_personal_equipment_request-14.0.1.0.1.dev28-py3-none-any.whl
+[2023-06-03 05:32:28] INFO root fetch - processPackages [vector-vault]: Downloading https://files.pythonhosted.org/packages/0a/bc/8515d5efb44bca55dccf2d316bacbcb13a54548d6a167b3977cfbbfcea89/vector_vault-1.7.2.tar.gz
+[2023-06-03 05:32:28] INFO root fetch - processPackages [odoo14-addon-hr-employee-document]: Downloading https://files.pythonhosted.org/packages/2b/b3/7cf6c844962abc24a30c3c5599b0b44ce0a08592ec2c5903861ad67b7ca5/odoo14_addon_hr_employee_document-14.0.1.0.1.dev5-py3-none-any.whl
+[2023-06-03 05:32:28] INFO root fetch - processPackages [vector-vault]: executing diffoscope
+[2023-06-03 05:32:28] INFO root fetch - processPackages [vector-vault]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vector_vault-1.7.1.tar.gz tmp/vector_vault-1.7.2.tar.gz --markdown 20230603/v/vector-vault/1.7.1-1.7.2/diff.md --exclude *.pyd
+[2023-06-03 05:32:28] INFO root fetch - processPackages [odoo14-addon-hr-employee-document]: executing diffoscope
+[2023-06-03 05:32:28] INFO root fetch - processPackages [odoo14-addon-hr-employee-document]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_hr_employee_document-14.0.1.0.1.dev4-py3-none-any.whl.zip tmp/odoo14_addon_hr_employee_document-14.0.1.0.1.dev5-py3-none-any.whl.zip --markdown 20230603/o/odoo14-addon-hr-employee-document/14.0.1.0.1.dev4-14.0.1.0.1.dev5/diff.md --exclude *.pyd
+[2023-06-03 05:32:28] INFO root fetch - processPackages [odoo14-addon-hr-personal-equipment-request]: executing diffoscope
+[2023-06-03 05:32:28] INFO root fetch - processPackages [odoo14-addon-hr-personal-equipment-request]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_hr_personal_equipment_request-14.0.1.0.1.dev28-py3-none-any.whl.zip tmp/odoo14_addon_hr_personal_equipment_request-14.0.1.0.1.dev8-py3-none-any.whl.zip --markdown 20230603/o/odoo14-addon-hr-personal-equipment-request/14.0.1.0.1.dev28-14.0.1.0.1.dev8/diff.md --exclude *.pyd
+[2023-06-03 05:32:29] INFO root fetch - main [MainThread]: End processing [vector-vault]: success
+[2023-06-03 05:32:29] INFO root fetch - main [MainThread]: End processing [odoo14-addon-hr-employee-document]: success
+[2023-06-03 05:33:23] INFO root fetch - main [MainThread]: End processing [odoo14-addon-hr-personal-equipment-request]: success
+[2023-06-03 05:33:23] INFO root fetch - main [MainThread]: Store serial: [18356675]
