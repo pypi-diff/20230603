@@ -8375,3 +8375,101 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-06-03 14:20:03] INFO root fetch - main [MainThread]: End processing [pytest-httptesting]: success
 [2023-06-03 14:20:04] INFO root fetch - main [MainThread]: End processing [summa-embed]: success
 [2023-06-03 14:20:04] INFO root fetch - main [MainThread]: Store serial: [18359183]
+[2023-06-03 14:25:09] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18359183]
+[2023-06-03 14:25:14] INFO root fetch - main [MainThread]: Found 16 changed packages
+[2023-06-03 14:25:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: bigdl-orca-spark3
+[2023-06-03 14:25:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: font-CLI
+[2023-06-03 14:25:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: survey
+[2023-06-03 14:25:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: bigdl-friesian-spark3
+[2023-06-03 14:25:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: bigdl-chronos-spark3
+[2023-06-03 14:25:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: bigdl-spark3
+[2023-06-03 14:25:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: TradeGate
+[2023-06-03 14:25:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: thumbor-hsl
+[2023-06-03 14:25:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: pyhop
+[2023-06-03 14:25:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: kkexcel
+[2023-06-03 14:25:14] INFO root fetch - processPackages [font-CLI]: New version: [0.9.9] Old Version: [0.9.8]
+[2023-06-03 14:25:14] INFO root fetch - processPackages [TradeGate]: New version: [0.3.8.3] Old Version: [0.3.8.2]
+[2023-06-03 14:25:14] WARNING root fetch - processPackages [thumbor-hsl]: Skipping, unable to determine old version
+[2023-06-03 14:25:14] INFO root fetch - processPackages [thumbor-hsl]: Start processing: rechtspraak-citations-extractor
+[2023-06-03 14:25:14] INFO root fetch - main [MainThread]: End processing [thumbor-hsl] error
+[2023-06-03 14:25:14] INFO root fetch - processPackages [kkexcel]: New version: [0.1.7] Old Version: [0.1.6]
+[2023-06-03 14:25:14] INFO root fetch - processPackages [pyhop]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-06-03 14:25:14] INFO root fetch - processPackages [survey]: New version: [4.3.0a0] Old Version: [4.3.0]
+[2023-06-03 14:25:14] INFO root fetch - processPackages [bigdl-orca-spark3]: New version: [2.4.0b20230603] Old Version: [2.4.0b20230602]
+[2023-06-03 14:25:14] INFO root fetch - processPackages [rechtspraak-citations-extractor]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-06-03 14:25:14] INFO root fetch - processPackages [bigdl-friesian-spark3]: New version: [2.4.0b20230603] Old Version: [2.4.0b20230602]
+[2023-06-03 14:25:14] INFO root fetch - processPackages [bigdl-spark3]: New version: [2.4.0b20230603] Old Version: [2.4.0b20230602]
+[2023-06-03 14:25:14] INFO root fetch - processPackages [bigdl-chronos-spark3]: New version: [2.4.0b20230603] Old Version: [2.4.0b20230602]
+[2023-06-03 14:25:14] INFO root fetch - processPackages [pyhop]: Downloading https://files.pythonhosted.org/packages/12/c0/a5c1e73316d36d0dc83687a9e460b88fc68295372bbea31f03346b18e787/pyhop-0.0.2.tar.gz
+[2023-06-03 14:25:14] INFO root fetch - processPackages [survey]: Downloading https://files.pythonhosted.org/packages/6c/92/6a9d16124dd36ffadc578634d7b3fd4cb1b0d6061ab9f27f034becdb82dd/survey-4.3.0.tar.gz
+[2023-06-03 14:25:14] INFO root fetch - processPackages [kkexcel]: Downloading https://files.pythonhosted.org/packages/b9/99/f22409b2e69370b6cf5f558789181c88011e4fa0700aeecdcef752debab9/kkexcel-0.1.6.tar.gz
+[2023-06-03 14:25:14] INFO root fetch - processPackages [bigdl-orca-spark3]: Downloading https://files.pythonhosted.org/packages/95/4b/ad8b71fb3698446c0a8ae2d3045a38969f712d75381868d3aabb93d5681c/bigdl_orca_spark3-2.4.0b20230602-py3-none-manylinux1_x86_64.whl
+[2023-06-03 14:25:14] INFO root fetch - processPackages [TradeGate]: Downloading https://files.pythonhosted.org/packages/52/92/655ee1f04d14f0993ee30e8b7087106a210398112dc47bf5f8dd4ec92434/TradeGate-0.3.8.3.tar.gz
+[2023-06-03 14:25:14] WARNING root fetch - processPackages [bigdl-orca-spark3]: Skipping package: exceeds size limit 20207643>=10485760
+[2023-06-03 14:25:14] INFO root fetch - processPackages [bigdl-orca-spark3]: Start processing: chater
+[2023-06-03 14:25:14] INFO root fetch - main [MainThread]: End processing [bigdl-orca-spark3] error
+[2023-06-03 14:25:14] INFO root fetch - processPackages [chater]: New version: [1.0.8] Old Version: [1.0.7]
+[2023-06-03 14:25:14] INFO root fetch - processPackages [rechtspraak-citations-extractor]: Downloading https://files.pythonhosted.org/packages/c3/af/f48b9335d3cbfeeace404a55f41b5df178683a2030b34c11d7dffe8e430c/rechtspraak_citations_extractor-1.0.2.tar.gz
+[2023-06-03 14:25:14] INFO root fetch - processPackages [TradeGate]: executing diffoscope
+[2023-06-03 14:25:14] INFO root fetch - processPackages [TradeGate]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/TradeGate-0.3.8.2.tar.gz tmp/TradeGate-0.3.8.3.tar.gz --markdown 20230603/T/TradeGate/0.3.8.2-0.3.8.3/diff.md --exclude *.pyd
+[2023-06-03 14:25:14] INFO root fetch - processPackages [font-CLI]: executing diffoscope
+[2023-06-03 14:25:14] INFO root fetch - processPackages [font-CLI]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/font-CLI-0.9.8.tar.gz tmp/font-CLI-0.9.9.tar.gz --markdown 20230603/f/font-CLI/0.9.8-0.9.9/diff.md --exclude *.pyd
+[2023-06-03 14:25:14] INFO root fetch - processPackages [bigdl-spark3]: Downloading https://files.pythonhosted.org/packages/51/d2/436b71dc0f8cf5d283a255707b5d6f99a3b8841cb3b95d2864f4ff070929/bigdl_spark3-2.4.0b20230603-py3-none-manylinux1_x86_64.whl
+[2023-06-03 14:25:14] INFO root fetch - processPackages [pyhop]: Downloading https://files.pythonhosted.org/packages/dc/1c/2afa9dbe09f5654ba452a80e2d09d6bac2aa89e7a7aacf0b90844c4273d4/pyhop-0.0.3.tar.gz
+[2023-06-03 14:25:14] INFO root fetch - processPackages [rechtspraak-citations-extractor]: executing diffoscope
+[2023-06-03 14:25:14] INFO root fetch - processPackages [rechtspraak-citations-extractor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rechtspraak_citations_extractor-1.0.1.tar.gz tmp/rechtspraak_citations_extractor-1.0.2.tar.gz --markdown 20230603/r/rechtspraak-citations-extractor/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-06-03 14:25:14] INFO root fetch - processPackages [bigdl-chronos-spark3]: Downloading https://files.pythonhosted.org/packages/84/26/44fd6b8768b52cac84ccdcb99a7f6276aa3c261623728fcd879939371117/bigdl_chronos_spark3-2.4.0b20230603-py3-none-manylinux1_x86_64.whl
+[2023-06-03 14:25:14] INFO root fetch - processPackages [bigdl-friesian-spark3]: Downloading https://files.pythonhosted.org/packages/ad/79/31869eb0d30bfd1dc989f85335b2c1139880d4407c702b78c4713fd90816/bigdl_friesian_spark3-2.4.0b20230603-py3-none-manylinux1_x86_64.whl
+[2023-06-03 14:25:14] INFO root fetch - processPackages [bigdl-spark3]: executing diffoscope
+[2023-06-03 14:25:14] INFO root fetch - processPackages [bigdl-spark3]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bigdl_spark3-2.4.0b20230602-py3-none-manylinux1_x86_64.whl.zip tmp/bigdl_spark3-2.4.0b20230603-py3-none-manylinux1_x86_64.whl.zip --markdown 20230603/b/bigdl-spark3/2.4.0b20230602-2.4.0b20230603/diff.md --exclude *.pyd
+[2023-06-03 14:25:14] INFO root fetch - processPackages [kkexcel]: Downloading https://files.pythonhosted.org/packages/7b/e8/2500bfc5f91b0f7cd044e88578c0f9ca56bf2fb4bef9284958326ff6c5e9/kkexcel-0.1.7.tar.gz
+[2023-06-03 14:25:14] INFO root fetch - processPackages [pyhop]: executing diffoscope
+[2023-06-03 14:25:14] INFO root fetch - processPackages [pyhop]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyhop-0.0.2.tar.gz tmp/pyhop-0.0.3.tar.gz --markdown 20230603/p/pyhop/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-06-03 14:25:14] INFO root fetch - processPackages [survey]: executing diffoscope
+[2023-06-03 14:25:14] INFO root fetch - processPackages [survey]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/survey-4.3.0.tar.gz tmp/survey-4.3.0a0.tar.gz --markdown 20230603/s/survey/4.3.0-4.3.0a0/diff.md --exclude *.pyd
+[2023-06-03 14:25:14] INFO root fetch - processPackages [chater]: Downloading https://files.pythonhosted.org/packages/3f/53/a547c2bfc381de320dd6c364cf2b787a8412054f79640775dd7da2932301/chater-1.0.8.tar.gz
+[2023-06-03 14:25:14] INFO root fetch - processPackages [kkexcel]: executing diffoscope
+[2023-06-03 14:25:14] INFO root fetch - processPackages [kkexcel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kkexcel-0.1.6.tar.gz tmp/kkexcel-0.1.7.tar.gz --markdown 20230603/k/kkexcel/0.1.6-0.1.7/diff.md --exclude *.pyd
+[2023-06-03 14:25:14] INFO root fetch - processPackages [bigdl-friesian-spark3]: executing diffoscope
+[2023-06-03 14:25:14] INFO root fetch - processPackages [bigdl-friesian-spark3]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bigdl_friesian_spark3-2.4.0b20230602-py3-none-manylinux1_x86_64.whl.zip tmp/bigdl_friesian_spark3-2.4.0b20230603-py3-none-manylinux1_x86_64.whl.zip --markdown 20230603/b/bigdl-friesian-spark3/2.4.0b20230602-2.4.0b20230603/diff.md --exclude *.pyd
+[2023-06-03 14:25:14] INFO root fetch - processPackages [bigdl-chronos-spark3]: executing diffoscope
+[2023-06-03 14:25:14] INFO root fetch - processPackages [bigdl-chronos-spark3]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bigdl_chronos_spark3-2.4.0b20230602-py3-none-manylinux1_x86_64.whl.zip tmp/bigdl_chronos_spark3-2.4.0b20230603-py3-none-manylinux1_x86_64.whl.zip --markdown 20230603/b/bigdl-chronos-spark3/2.4.0b20230602-2.4.0b20230603/diff.md --exclude *.pyd
+[2023-06-03 14:25:14] INFO root fetch - processPackages [chater]: executing diffoscope
+[2023-06-03 14:25:14] INFO root fetch - processPackages [chater]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chater-1.0.7.tar.gz tmp/chater-1.0.8.tar.gz --markdown 20230603/c/chater/1.0.7-1.0.8/diff.md --exclude *.pyd
+[2023-06-03 14:25:16] INFO root fetch - processPackages [rechtspraak-citations-extractor]: Start processing: recipe-scrapers-ap-fork
+[2023-06-03 14:25:16] INFO root fetch - main [MainThread]: End processing [rechtspraak-citations-extractor]: success
+[2023-06-03 14:25:16] INFO root fetch - processPackages [recipe-scrapers-ap-fork]: New version: [14.24.5] Old Version: [14.24.4]
+[2023-06-03 14:25:16] INFO root fetch - processPackages [bigdl-spark3]: Start processing: multidyndnscli
+[2023-06-03 14:25:16] INFO root fetch - main [MainThread]: End processing [bigdl-spark3]: success
+[2023-06-03 14:25:16] INFO root fetch - processPackages [pyhop]: Start processing: jianglab
+[2023-06-03 14:25:16] INFO root fetch - main [MainThread]: End processing [pyhop]: success
+[2023-06-03 14:25:16] INFO root fetch - processPackages [multidyndnscli]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-06-03 14:25:16] INFO root fetch - processPackages [jianglab]: New version: [0.3.5] Old Version: [0.3.4]
+[2023-06-03 14:25:16] INFO root fetch - processPackages [jianglab]: Downloading https://files.pythonhosted.org/packages/d8/36/fc5c597244236ce841139f8e4b6cb1d79e56b59a102b0fc120b386ea3b67/jianglab-0.3.4.tar.gz
+[2023-06-03 14:25:16] INFO root fetch - processPackages [recipe-scrapers-ap-fork]: Downloading https://files.pythonhosted.org/packages/38/87/e115d332c02f0dad05ac3241122fc970aa603278cbbfaea1c52e41d79afd/recipe_scrapers_ap_fork-14.24.5.tar.gz
+[2023-06-03 14:25:16] INFO root fetch - processPackages [chater]: Start processing: Chiplotle3
+[2023-06-03 14:25:16] INFO root fetch - main [MainThread]: End processing [chater]: success
+[2023-06-03 14:25:16] INFO root fetch - processPackages [multidyndnscli]: Downloading https://files.pythonhosted.org/packages/d3/66/59c937eef3e12fd6f3302f30fe7f0cb8428e1a3116bd9bec5d9c262bc360/multidyndnscli-0.1.3.tar.gz
+[2023-06-03 14:25:16] INFO root fetch - processPackages [Chiplotle3]: New version: [0.4.3] Old Version: [0.4.2]
+[2023-06-03 14:25:16] INFO root fetch - main [MainThread]: End processing [kkexcel]: success
+[2023-06-03 14:25:16] INFO root fetch - processPackages [recipe-scrapers-ap-fork]: executing diffoscope
+[2023-06-03 14:25:16] INFO root fetch - processPackages [recipe-scrapers-ap-fork]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/recipe_scrapers_ap_fork-14.24.4.tar.gz tmp/recipe_scrapers_ap_fork-14.24.5.tar.gz --markdown 20230603/r/recipe-scrapers-ap-fork/14.24.4-14.24.5/diff.md --exclude *.pyd
+[2023-06-03 14:25:16] INFO root fetch - processPackages [multidyndnscli]: executing diffoscope
+[2023-06-03 14:25:16] INFO root fetch - processPackages [multidyndnscli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/multidyndnscli-0.1.2.tar.gz tmp/multidyndnscli-0.1.3.tar.gz --markdown 20230603/m/multidyndnscli/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-06-03 14:25:16] INFO root fetch - main [MainThread]: End processing [bigdl-friesian-spark3]: success
+[2023-06-03 14:25:16] INFO root fetch - processPackages [Chiplotle3]: Downloading https://files.pythonhosted.org/packages/c0/91/249efd3aa321d31643a3249005a357f3c49a0fe1a14fbdadde40e46594be/Chiplotle3-0.4.2.tar.gz
+[2023-06-03 14:25:16] INFO root fetch - processPackages [jianglab]: Downloading https://files.pythonhosted.org/packages/4f/a2/902681f520b50720b83cb403d1eec327025267e4c613e59024d293f59f09/jianglab-0.3.5.tar.gz
+[2023-06-03 14:25:16] INFO root fetch - main [MainThread]: End processing [font-CLI]: success
+[2023-06-03 14:25:16] INFO root fetch - processPackages [jianglab]: executing diffoscope
+[2023-06-03 14:25:16] INFO root fetch - processPackages [jianglab]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jianglab-0.3.4.tar.gz tmp/jianglab-0.3.5.tar.gz --markdown 20230603/j/jianglab/0.3.4-0.3.5/diff.md --exclude *.pyd
+[2023-06-03 14:25:17] INFO root fetch - processPackages [Chiplotle3]: Downloading https://files.pythonhosted.org/packages/be/59/09b07c380d950c7dfbca51132b3b4489f5b4774d2bce2ca0a4fcbe7ab3f0/Chiplotle3-0.4.3.tar.gz
+[2023-06-03 14:25:17] INFO root fetch - main [MainThread]: End processing [survey]: success
+[2023-06-03 14:25:17] INFO root fetch - processPackages [Chiplotle3]: executing diffoscope
+[2023-06-03 14:25:17] INFO root fetch - processPackages [Chiplotle3]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Chiplotle3-0.4.2.tar.gz tmp/Chiplotle3-0.4.3.tar.gz --markdown 20230603/C/Chiplotle3/0.4.2-0.4.3/diff.md --exclude *.pyd
+[2023-06-03 14:25:17] INFO root fetch - main [MainThread]: End processing [TradeGate]: success
+[2023-06-03 14:25:17] INFO root fetch - main [MainThread]: End processing [bigdl-chronos-spark3]: success
+[2023-06-03 14:25:17] INFO root fetch - main [MainThread]: End processing [multidyndnscli]: success
+[2023-06-03 14:25:18] INFO root fetch - main [MainThread]: End processing [jianglab]: success
+[2023-06-03 14:25:18] INFO root fetch - main [MainThread]: End processing [Chiplotle3]: success
+[2023-06-03 14:25:21] INFO root fetch - main [MainThread]: End processing [recipe-scrapers-ap-fork]: success
+[2023-06-03 14:25:21] INFO root fetch - main [MainThread]: Store serial: [18359228]
