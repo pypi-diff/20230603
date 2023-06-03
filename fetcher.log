@@ -5524,3 +5524,31 @@
 [2023-06-03 07:32:10] INFO root fetch - main [MainThread]: End processing [crazy-thursday]: success
 [2023-06-03 07:32:23] INFO root fetch - main [MainThread]: End processing [transpector]: success
 [2023-06-03 07:32:23] INFO root fetch - main [MainThread]: Store serial: [18357238]
+[2023-06-03 07:37:27] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18357238]
+[2023-06-03 07:37:32] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-06-03 07:37:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: netora-python
+[2023-06-03 07:37:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: rsrch
+[2023-06-03 07:37:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: netora-python
+[2023-06-03 07:37:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: torch-tensorrt-fx-only
+[2023-06-03 07:37:32] INFO root fetch - processPackages [netora-python]: New version: [0.1.7] Old Version: [0.1.6]
+[2023-06-03 07:37:32] INFO root fetch - processPackages [netora-python]: New version: [0.1.7] Old Version: [0.1.6]
+[2023-06-03 07:37:32] INFO root fetch - processPackages [rsrch]: New version: [0.2.3] Old Version: [0.2.2]
+[2023-06-03 07:37:32] INFO root fetch - processPackages [torch-tensorrt-fx-only]: New version: [1.5.0.dev0] Old Version: [1.4.0.dev0]
+[2023-06-03 07:37:33] INFO root fetch - processPackages [netora-python]: Downloading https://files.pythonhosted.org/packages/2a/02/a407ca9ad1df7469056b1b7a5d28155cd92f76839c06fc28538f1b23def9/netora-python-0.1.6.tar.gz
+[2023-06-03 07:37:33] INFO root fetch - processPackages [netora-python]: Downloading https://files.pythonhosted.org/packages/2a/02/a407ca9ad1df7469056b1b7a5d28155cd92f76839c06fc28538f1b23def9/netora-python-0.1.6.tar.gz
+[2023-06-03 07:37:33] INFO root fetch - processPackages [netora-python]: Downloading https://files.pythonhosted.org/packages/db/c3/a2b4508df8f188d27f5b00fc5001c9662d3c9ecbe89e5c2c8cbcd2a23228/netora-python-0.1.7.tar.gz
+[2023-06-03 07:37:33] INFO root fetch - processPackages [netora-python]: Downloading https://files.pythonhosted.org/packages/db/c3/a2b4508df8f188d27f5b00fc5001c9662d3c9ecbe89e5c2c8cbcd2a23228/netora-python-0.1.7.tar.gz
+[2023-06-03 07:37:33] INFO root fetch - processPackages [rsrch]: Downloading https://files.pythonhosted.org/packages/3b/d9/484bf3b863ba033e622dd92a0bba8126e31e144a8834496e6ceff9d63930/rsrch-0.2.3.tar.gz
+[2023-06-03 07:37:33] INFO root fetch - processPackages [torch-tensorrt-fx-only]: executing diffoscope
+[2023-06-03 07:37:33] INFO root fetch - processPackages [torch-tensorrt-fx-only]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torch_tensorrt_fx_only-1.4.0.dev0-py3-none-any.whl.zip tmp/torch_tensorrt_fx_only-1.5.0.dev0-py3-none-any.whl.zip --markdown 20230603/t/torch-tensorrt-fx-only/1.4.0.dev0-1.5.0.dev0/diff.md --exclude *.pyd
+[2023-06-03 07:37:33] INFO root fetch - processPackages [netora-python]: executing diffoscope
+[2023-06-03 07:37:33] INFO root fetch - processPackages [netora-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/netora-python-0.1.6.tar.gz tmp/netora-python-0.1.7.tar.gz --markdown 20230603/n/netora-python/0.1.6-0.1.7/diff.md --exclude *.pyd
+[2023-06-03 07:37:33] INFO root fetch - processPackages [netora-python]: executing diffoscope
+[2023-06-03 07:37:33] INFO root fetch - processPackages [netora-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/netora-python-0.1.6.tar.gz tmp/netora-python-0.1.7.tar.gz --markdown 20230603/n/netora-python/0.1.6-0.1.7/diff.md --exclude *.pyd
+[2023-06-03 07:37:33] INFO root fetch - processPackages [rsrch]: executing diffoscope
+[2023-06-03 07:37:33] INFO root fetch - processPackages [rsrch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rsrch-0.2.2.tar.gz tmp/rsrch-0.2.3.tar.gz --markdown 20230603/r/rsrch/0.2.2-0.2.3/diff.md --exclude *.pyd
+[2023-06-03 07:37:34] INFO root fetch - main [MainThread]: End processing [netora-python]: success
+[2023-06-03 07:37:34] INFO root fetch - main [MainThread]: End processing [netora-python]: success
+[2023-06-03 07:37:34] INFO root fetch - main [MainThread]: End processing [torch-tensorrt-fx-only]: success
+[2023-06-03 07:37:35] INFO root fetch - main [MainThread]: End processing [rsrch]: success
+[2023-06-03 07:37:35] INFO root fetch - main [MainThread]: Store serial: [18357249]
