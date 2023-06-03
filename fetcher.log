@@ -9700,3 +9700,64 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-06-03 16:57:14] INFO root fetch - main [MainThread]: End processing [pseudocerastes]: success
 [2023-06-03 16:57:14] INFO root fetch - main [MainThread]: End processing [django-rq-scheduler]: success
 [2023-06-03 16:57:14] INFO root fetch - main [MainThread]: Store serial: [18359913]
+[2023-06-03 17:02:18] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18359913]
+[2023-06-03 17:02:23] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-06-03 17:02:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: google-meet-api
+[2023-06-03 17:02:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tablepy-lib
+[2023-06-03 17:02:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: python-canvas
+[2023-06-03 17:02:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: zephony
+[2023-06-03 17:02:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: novalabs-backtest
+[2023-06-03 17:02:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pseudocerastes
+[2023-06-03 17:02:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: yaylib
+[2023-06-03 17:02:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: sonatype-nxrm-sdk
+[2023-06-03 17:02:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: invoker-terminal
+[2023-06-03 17:02:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: python-ctags3
+[2023-06-03 17:02:23] INFO root fetch - processPackages [tablepy-lib]: New version: [0.8.0] Old Version: [0.7.0]
+[2023-06-03 17:02:23] INFO root fetch - processPackages [pseudocerastes]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-06-03 17:02:23] INFO root fetch - processPackages [google-meet-api]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-06-03 17:02:23] INFO root fetch - processPackages [python-canvas]: New version: [0.3.5] Old Version: [0.3.4]
+[2023-06-03 17:02:23] WARNING root fetch - processPackages [yaylib]: Skipping, unable to determine old version
+[2023-06-03 17:02:23] INFO root fetch - main [MainThread]: End processing [yaylib] error
+[2023-06-03 17:02:23] INFO root fetch - processPackages [invoker-terminal]: New version: [0.0.35] Old Version: [0.0.33]
+[2023-06-03 17:02:23] INFO root fetch - processPackages [sonatype-nxrm-sdk]: New version: [0.1.5] Old Version: [0.1.4]
+[2023-06-03 17:02:23] INFO root fetch - processPackages [python-ctags3]: New version: [1.6.0] Old Version: [1.5.0]
+[2023-06-03 17:02:23] INFO root fetch - processPackages [novalabs-backtest]: New version: [1.1.9] Old Version: [1.1.8]
+[2023-06-03 17:02:23] INFO root fetch - processPackages [zephony]: New version: [0.9.1] Old Version: [0.8.1]
+[2023-06-03 17:02:24] INFO root fetch - processPackages [invoker-terminal]: Downloading https://files.pythonhosted.org/packages/a5/e4/e24ee85bb6d609172da5a2e4be8c0bd18ceaa7094159b6a1531619b0185c/invoker_terminal-0.0.35.tar.gz
+[2023-06-03 17:02:24] INFO root fetch - processPackages [google-meet-api]: Downloading https://files.pythonhosted.org/packages/53/6d/44d4f0ff003096cc6a4601ad00a0571d7854c5221d0492cc860ed78a0ded/google_meet_api-0.0.6-py3-none-any.whl
+[2023-06-03 17:02:24] INFO root fetch - processPackages [pseudocerastes]: Downloading https://files.pythonhosted.org/packages/1f/65/aadc31c9625de8ce6a5648a85f5a926fdb1081259e2d89703ba8fda41dcc/pseudocerastes-0.1.1.tar.gz
+[2023-06-03 17:02:24] INFO root fetch - processPackages [python-canvas]: Downloading https://files.pythonhosted.org/packages/81/7b/d1071505a1bbf60f6c37d9d6b009c32f9f5b3345b7330a2cbe815891eb23/python-canvas-0.3.4.tar.gz
+[2023-06-03 17:02:24] INFO root fetch - processPackages [sonatype-nxrm-sdk]: Downloading https://files.pythonhosted.org/packages/cc/a7/ef4ea8bfe90d7a266dedf63d6cb87b1bd583e9bb36846a3d5ffb38ed7263/sonatype_nxrm_sdk-0.1.4.tar.gz
+[2023-06-03 17:02:24] INFO root fetch - processPackages [python-ctags3]: Downloading https://files.pythonhosted.org/packages/10/1a/f7e615a04a31ba83d762eb67f224f5b3bddd943223cface716280be89c0b/python-ctags3-1.5.0.tar.gz
+[2023-06-03 17:02:24] INFO root fetch - processPackages [pseudocerastes]: executing diffoscope
+[2023-06-03 17:02:24] INFO root fetch - processPackages [pseudocerastes]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pseudocerastes-0.1.0.tar.gz tmp/pseudocerastes-0.1.1.tar.gz --markdown 20230603/p/pseudocerastes/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-06-03 17:02:24] INFO root fetch - processPackages [tablepy-lib]: Downloading https://files.pythonhosted.org/packages/ce/2b/d5ad72a520ae4756b5e08b1e22a607c2dbd3c3ca73824a6814871d82027b/tablepy_lib-0.8.0.tar.gz
+[2023-06-03 17:02:24] INFO root fetch - processPackages [invoker-terminal]: executing diffoscope
+[2023-06-03 17:02:24] INFO root fetch - processPackages [invoker-terminal]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/invoker_terminal-0.0.33.tar.gz tmp/invoker_terminal-0.0.35.tar.gz --markdown 20230603/i/invoker-terminal/0.0.33-0.0.35/diff.md --exclude *.pyd
+[2023-06-03 17:02:24] INFO root fetch - processPackages [google-meet-api]: executing diffoscope
+[2023-06-03 17:02:24] INFO root fetch - processPackages [google-meet-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/google_meet_api-0.0.5-py3-none-any.whl.zip tmp/google_meet_api-0.0.6-py3-none-any.whl.zip --markdown 20230603/g/google-meet-api/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-06-03 17:02:24] INFO root fetch - processPackages [zephony]: executing diffoscope
+[2023-06-03 17:02:24] INFO root fetch - processPackages [zephony]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zephony-0.8.1.tar.gz tmp/zephony-0.9.1.tar.gz --markdown 20230603/z/zephony/0.8.1-0.9.1/diff.md --exclude *.pyd
+[2023-06-03 17:02:24] INFO root fetch - processPackages [novalabs-backtest]: executing diffoscope
+[2023-06-03 17:02:24] INFO root fetch - processPackages [novalabs-backtest]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/novalabs-backtest-1.1.8.tar.gz tmp/novalabs-backtest-1.1.9.tar.gz --markdown 20230603/n/novalabs-backtest/1.1.8-1.1.9/diff.md --exclude *.pyd
+[2023-06-03 17:02:24] INFO root fetch - processPackages [tablepy-lib]: executing diffoscope
+[2023-06-03 17:02:24] INFO root fetch - processPackages [tablepy-lib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tablepy_lib-0.7.0.tar.gz tmp/tablepy_lib-0.8.0.tar.gz --markdown 20230603/t/tablepy-lib/0.7.0-0.8.0/diff.md --exclude *.pyd
+[2023-06-03 17:02:24] INFO root fetch - processPackages [python-ctags3]: Downloading https://files.pythonhosted.org/packages/34/6c/e8fe4aa5b05c1ed310d4837e0777b0059719d5c662005b17191980c34583/python-ctags3-1.6.0.tar.gz
+[2023-06-03 17:02:24] INFO root fetch - processPackages [sonatype-nxrm-sdk]: Downloading https://files.pythonhosted.org/packages/96/e7/064b2d6f664b7abf88e28683a2670b148c95f820e0cf4178cdebac1598a1/sonatype_nxrm_sdk-0.1.5.tar.gz
+[2023-06-03 17:02:24] INFO root fetch - processPackages [python-canvas]: Downloading https://files.pythonhosted.org/packages/9f/f5/ab8be7d0b35820a65707e8fe75eb7a622f7457f121d920ded2b3aef98bfb/python-canvas-0.3.5.tar.gz
+[2023-06-03 17:02:24] INFO root fetch - processPackages [python-ctags3]: executing diffoscope
+[2023-06-03 17:02:24] INFO root fetch - processPackages [python-ctags3]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python-ctags3-1.5.0.tar.gz tmp/python-ctags3-1.6.0.tar.gz --markdown 20230603/p/python-ctags3/1.5.0-1.6.0/diff.md --exclude *.pyd
+[2023-06-03 17:02:24] INFO root fetch - processPackages [python-canvas]: executing diffoscope
+[2023-06-03 17:02:24] INFO root fetch - processPackages [python-canvas]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python-canvas-0.3.4.tar.gz tmp/python-canvas-0.3.5.tar.gz --markdown 20230603/p/python-canvas/0.3.4-0.3.5/diff.md --exclude *.pyd
+[2023-06-03 17:02:24] INFO root fetch - processPackages [sonatype-nxrm-sdk]: executing diffoscope
+[2023-06-03 17:02:24] INFO root fetch - processPackages [sonatype-nxrm-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sonatype_nxrm_sdk-0.1.4.tar.gz tmp/sonatype_nxrm_sdk-0.1.5.tar.gz --markdown 20230603/s/sonatype-nxrm-sdk/0.1.4-0.1.5/diff.md --exclude *.pyd
+[2023-06-03 17:02:25] INFO root fetch - main [MainThread]: End processing [google-meet-api]: success
+[2023-06-03 17:02:25] INFO root fetch - main [MainThread]: End processing [pseudocerastes]: success
+[2023-06-03 17:02:25] INFO root fetch - main [MainThread]: End processing [zephony]: success
+[2023-06-03 17:02:25] INFO root fetch - main [MainThread]: End processing [invoker-terminal]: success
+[2023-06-03 17:02:26] INFO root fetch - main [MainThread]: End processing [tablepy-lib]: success
+[2023-06-03 17:02:26] INFO root fetch - main [MainThread]: End processing [python-ctags3]: success
+[2023-06-03 17:02:26] INFO root fetch - main [MainThread]: End processing [python-canvas]: success
+[2023-06-03 17:02:27] INFO root fetch - main [MainThread]: End processing [sonatype-nxrm-sdk]: success
+[2023-06-03 17:02:28] INFO root fetch - main [MainThread]: End processing [novalabs-backtest]: success
+[2023-06-03 17:02:28] INFO root fetch - main [MainThread]: Store serial: [18359940]
