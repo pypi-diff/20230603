@@ -13280,3 +13280,43 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-06-03 23:05:33] INFO root fetch - main [MainThread]: End processing [summa-embed]: success
 [2023-06-03 23:05:33] INFO root fetch - main [MainThread]: End processing [cdk-datadog-integration]: success
 [2023-06-03 23:05:33] INFO root fetch - main [MainThread]: Store serial: [18362175]
+[2023-06-03 23:10:37] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18362175]
+[2023-06-03 23:10:42] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-06-03 23:10:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: qtmetabolabpy
+[2023-06-03 23:10:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: exoplasim
+[2023-06-03 23:10:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: iql
+[2023-06-03 23:10:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: mleko
+[2023-06-03 23:10:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: read-rapidpe
+[2023-06-03 23:10:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: polywrapper
+[2023-06-03 23:10:42] INFO root fetch - processPackages [qtmetabolabpy]: New version: [0.8.9] Old Version: [0.8.7]
+[2023-06-03 23:10:42] INFO root fetch - processPackages [read-rapidpe]: New version: [0.5.5] Old Version: [0.5.4]
+[2023-06-03 23:10:42] INFO root fetch - processPackages [polywrapper]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-06-03 23:10:42] INFO root fetch - processPackages [iql]: New version: [1.6.3] Old Version: [1.6.1rc5]
+[2023-06-03 23:10:42] INFO root fetch - processPackages [exoplasim]: New version: [3.2.2] Old Version: [3.2.1.post2]
+[2023-06-03 23:10:42] INFO root fetch - processPackages [mleko]: New version: [0.4.0] Old Version: [0.3.1]
+[2023-06-03 23:10:42] INFO root fetch - processPackages [qtmetabolabpy]: Downloading https://files.pythonhosted.org/packages/62/cc/c79263bb59fe907df116eb56107d1e21c07edc2a1fb0aa68a574d2e99f09/qtmetabolabpy-0.8.7.tar.gz
+[2023-06-03 23:10:42] INFO root fetch - processPackages [iql]: Downloading https://files.pythonhosted.org/packages/50/37/9837cddd981dfee0bcd9db3d25cc63bc56f6337fcb1886a800a51431cf33/iql-1.6.3-py3-none-any.whl
+[2023-06-03 23:10:42] INFO root fetch - processPackages [read-rapidpe]: Downloading https://files.pythonhosted.org/packages/7a/0f/e5fe27a8a9541f3e434f3604eef386a9f36a9a07da22ef99fec6306bdd44/read_rapidpe-0.5.5.tar.gz
+[2023-06-03 23:10:42] INFO root fetch - processPackages [polywrapper]: Downloading https://files.pythonhosted.org/packages/98/d4/2b650fb00f1101123053d9f4f0be0289c4748eae075de560b72e4da7d901/polywrapper-0.1.0.tar.gz
+[2023-06-03 23:10:42] INFO root fetch - processPackages [exoplasim]: Downloading https://files.pythonhosted.org/packages/e2/7b/7f809306de68850aa4ca5059893010cffc9774c96a31fb3f7e6841420c25/exoplasim-3.2.1.post2.tar.gz
+[2023-06-03 23:10:42] INFO root fetch - processPackages [iql]: executing diffoscope
+[2023-06-03 23:10:42] INFO root fetch - processPackages [iql]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/iql-1.6.1rc5-py3-none-any.whl.zip tmp/iql-1.6.3-py3-none-any.whl.zip --markdown 20230603/i/iql/1.6.1rc5-1.6.3/diff.md --exclude *.pyd
+[2023-06-03 23:10:42] INFO root fetch - processPackages [read-rapidpe]: executing diffoscope
+[2023-06-03 23:10:42] INFO root fetch - processPackages [read-rapidpe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/read_rapidpe-0.5.4.tar.gz tmp/read_rapidpe-0.5.5.tar.gz --markdown 20230603/r/read-rapidpe/0.5.4-0.5.5/diff.md --exclude *.pyd
+[2023-06-03 23:10:42] INFO root fetch - processPackages [mleko]: Downloading https://files.pythonhosted.org/packages/83/38/dc5bb16d29a8e7b26e626d08e34195019ab9b13d4977f08264414807dc88/mleko-0.4.0.tar.gz
+[2023-06-03 23:10:42] INFO root fetch - processPackages [polywrapper]: Downloading https://files.pythonhosted.org/packages/d8/68/9a0c51c2b2b5a6e700f3704c378673405d86aefd12247483a5c2d53d570c/polywrapper-0.1.1.tar.gz
+[2023-06-03 23:10:42] INFO root fetch - processPackages [mleko]: executing diffoscope
+[2023-06-03 23:10:42] INFO root fetch - processPackages [mleko]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mleko-0.3.1.tar.gz tmp/mleko-0.4.0.tar.gz --markdown 20230603/m/mleko/0.3.1-0.4.0/diff.md --exclude *.pyd
+[2023-06-03 23:10:42] WARNING root fetch - processPackages [exoplasim]: Skipping package: exceeds size limit 21829646>=10485760
+[2023-06-03 23:10:42] INFO root fetch - main [MainThread]: End processing [exoplasim] error
+[2023-06-03 23:10:42] INFO root fetch - processPackages [qtmetabolabpy]: Downloading https://files.pythonhosted.org/packages/ec/a4/83b162591fc16fdab69329864089f5f059240939c642e6c4b49e00bf8670/qtmetabolabpy-0.8.9.tar.gz
+[2023-06-03 23:10:42] INFO root fetch - processPackages [polywrapper]: executing diffoscope
+[2023-06-03 23:10:42] INFO root fetch - processPackages [polywrapper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/polywrapper-0.1.0.tar.gz tmp/polywrapper-0.1.1.tar.gz --markdown 20230603/p/polywrapper/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-06-03 23:10:43] INFO root fetch - processPackages [qtmetabolabpy]: executing diffoscope
+[2023-06-03 23:10:43] INFO root fetch - processPackages [qtmetabolabpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qtmetabolabpy-0.8.7.tar.gz tmp/qtmetabolabpy-0.8.9.tar.gz --markdown 20230603/q/qtmetabolabpy/0.8.7-0.8.9/diff.md --exclude *.pyd
+[2023-06-03 23:10:43] INFO root fetch - main [MainThread]: End processing [read-rapidpe]: success
+[2023-06-03 23:10:43] INFO root fetch - main [MainThread]: End processing [iql]: success
+[2023-06-03 23:10:43] INFO root fetch - main [MainThread]: End processing [polywrapper]: success
+[2023-06-03 23:10:44] INFO root fetch - main [MainThread]: End processing [mleko]: success
+[2023-06-03 23:10:44] INFO root fetch - main [MainThread]: End processing [qtmetabolabpy]: success
+[2023-06-03 23:10:44] INFO root fetch - main [MainThread]: Store serial: [18362192]
