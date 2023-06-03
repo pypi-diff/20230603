@@ -9628,3 +9628,22 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-06-03 16:41:10] INFO root fetch - main [MainThread]: End processing [Xponge]: success
 [2023-06-03 16:41:42] INFO root fetch - main [MainThread]: End processing [fastapi]: success
 [2023-06-03 16:41:42] INFO root fetch - main [MainThread]: Store serial: [18359873]
+[2023-06-03 16:46:46] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18359873]
+[2023-06-03 16:46:51] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-06-03 16:46:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ytdl-sub
+[2023-06-03 16:46:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: object-serialization
+[2023-06-03 16:46:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: asciinema-scene
+[2023-06-03 16:46:51] INFO root fetch - processPackages [object-serialization]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-06-03 16:46:51] INFO root fetch - processPackages [ytdl-sub]: New version: [2023.6.3] Old Version: [2023.5.31]
+[2023-06-03 16:46:51] WARNING root fetch - processPackages [asciinema-scene]: Skipping, unable to determine old version
+[2023-06-03 16:46:51] INFO root fetch - main [MainThread]: End processing [asciinema-scene] error
+[2023-06-03 16:46:51] INFO root fetch - processPackages [object-serialization]: Downloading https://files.pythonhosted.org/packages/9d/0c/775c2f99ffdf22a727cd09202ccb3fb36cb55cab727336f98ed1d1575418/object-serialization-0.1.0.tar.gz
+[2023-06-03 16:46:51] INFO root fetch - processPackages [ytdl-sub]: Downloading https://files.pythonhosted.org/packages/e1/6d/3a3da8b1a8081732036cac9976155ed25006692dc0d50256ec4f22126ee5/ytdl-sub-2023.6.3.tar.gz
+[2023-06-03 16:46:51] INFO root fetch - processPackages [object-serialization]: Downloading https://files.pythonhosted.org/packages/c8/18/b88a8dd57bde83f3c741d7b69ab9bb7eeec70df8b0d7891a303973b9953d/object-serialization-0.1.1.tar.gz
+[2023-06-03 16:46:51] INFO root fetch - processPackages [ytdl-sub]: executing diffoscope
+[2023-06-03 16:46:51] INFO root fetch - processPackages [ytdl-sub]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ytdl-sub-2023.5.31.tar.gz tmp/ytdl-sub-2023.6.3.tar.gz --markdown 20230603/y/ytdl-sub/2023.5.31-2023.6.3/diff.md --exclude *.pyd
+[2023-06-03 16:46:52] INFO root fetch - processPackages [object-serialization]: executing diffoscope
+[2023-06-03 16:46:52] INFO root fetch - processPackages [object-serialization]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/object-serialization-0.1.0.tar.gz tmp/object-serialization-0.1.1.tar.gz --markdown 20230603/o/object-serialization/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-06-03 16:46:52] INFO root fetch - main [MainThread]: End processing [object-serialization]: success
+[2023-06-03 16:46:53] INFO root fetch - main [MainThread]: End processing [ytdl-sub]: success
+[2023-06-03 16:46:53] INFO root fetch - main [MainThread]: Store serial: [18359886]
