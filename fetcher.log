@@ -7039,3 +7039,32 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-06-03 11:07:48] INFO root fetch - main [MainThread]: End processing [metaindex]: success
 [2023-06-03 11:08:54] INFO root fetch - main [MainThread]: End processing [jupytercad]: success
 [2023-06-03 11:08:54] INFO root fetch - main [MainThread]: Store serial: [18358125]
+[2023-06-03 11:13:58] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18358125]
+[2023-06-03 11:14:03] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-06-03 11:14:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: CheckSSLCert
+[2023-06-03 11:14:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cncd-package
+[2023-06-03 11:14:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: filecabinet
+[2023-06-03 11:14:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: quantplay
+[2023-06-03 11:14:03] INFO root fetch - processPackages [CheckSSLCert]: New version: [0.1.0] Old Version: [0.0.1]
+[2023-06-03 11:14:03] INFO root fetch - processPackages [filecabinet]: New version: [2.0.1] Old Version: [2.0.0]
+[2023-06-03 11:14:03] INFO root fetch - processPackages [cncd-package]: New version: [0.3.4] Old Version: [0.3.3]
+[2023-06-03 11:14:03] INFO root fetch - processPackages [quantplay]: New version: [1.2.95] Old Version: [1.2.94]
+[2023-06-03 11:14:03] INFO root fetch - processPackages [CheckSSLCert]: Downloading https://files.pythonhosted.org/packages/0e/b4/2e04bfd9ffd0c5134bad46b47cde2dfe7ee90878893fb1b5f3fbec110cd3/CheckSSLCert-0.0.1.tar.gz
+[2023-06-03 11:14:03] INFO root fetch - processPackages [filecabinet]: Downloading https://files.pythonhosted.org/packages/93/30/b489c035517f3a66c8f173763ad20dde3db5133364cd9ce7dbf9c34b306b/filecabinet-2.0.0.tar.gz
+[2023-06-03 11:14:03] INFO root fetch - processPackages [cncd-package]: Downloading https://files.pythonhosted.org/packages/a8/34/a645011ee3d3a64f66edc2c7b88cf36795561fc9772f258462a848884f30/cncd_package-0.3.4.tar.gz
+[2023-06-03 11:14:03] INFO root fetch - processPackages [quantplay]: Downloading https://files.pythonhosted.org/packages/4c/4e/aa9d1f881210be036a1d852f07b8d99654b1bb6899e0a9fee110211c9d03/quantplay-1.2.95.tar.gz
+[2023-06-03 11:14:03] INFO root fetch - processPackages [CheckSSLCert]: Downloading https://files.pythonhosted.org/packages/65/88/ec251d456918dbdd42177b0b16c4089f6661a6062c955c4f810c8baf4c92/CheckSSLCert-0.1.0.tar.gz
+[2023-06-03 11:14:03] INFO root fetch - processPackages [cncd-package]: executing diffoscope
+[2023-06-03 11:14:03] INFO root fetch - processPackages [cncd-package]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cncd_package-0.3.3.tar.gz tmp/cncd_package-0.3.4.tar.gz --markdown 20230603/c/cncd-package/0.3.3-0.3.4/diff.md --exclude *.pyd
+[2023-06-03 11:14:03] INFO root fetch - processPackages [filecabinet]: Downloading https://files.pythonhosted.org/packages/4e/cc/faf46a5bd6450a5960ea144cef8ad2c91cd0560a2e01a34ac3f01f1ab7f0/filecabinet-2.0.1.tar.gz
+[2023-06-03 11:14:03] INFO root fetch - processPackages [CheckSSLCert]: executing diffoscope
+[2023-06-03 11:14:03] INFO root fetch - processPackages [CheckSSLCert]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/CheckSSLCert-0.0.1.tar.gz tmp/CheckSSLCert-0.1.0.tar.gz --markdown 20230603/C/CheckSSLCert/0.0.1-0.1.0/diff.md --exclude *.pyd
+[2023-06-03 11:14:03] INFO root fetch - processPackages [quantplay]: executing diffoscope
+[2023-06-03 11:14:03] INFO root fetch - processPackages [quantplay]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/quantplay-1.2.94.tar.gz tmp/quantplay-1.2.95.tar.gz --markdown 20230603/q/quantplay/1.2.94-1.2.95/diff.md --exclude *.pyd
+[2023-06-03 11:14:03] INFO root fetch - processPackages [filecabinet]: executing diffoscope
+[2023-06-03 11:14:03] INFO root fetch - processPackages [filecabinet]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/filecabinet-2.0.0.tar.gz tmp/filecabinet-2.0.1.tar.gz --markdown 20230603/f/filecabinet/2.0.0-2.0.1/diff.md --exclude *.pyd
+[2023-06-03 11:14:04] INFO root fetch - main [MainThread]: End processing [cncd-package]: success
+[2023-06-03 11:14:04] INFO root fetch - main [MainThread]: End processing [CheckSSLCert]: success
+[2023-06-03 11:14:04] INFO root fetch - main [MainThread]: End processing [filecabinet]: success
+[2023-06-03 11:14:05] INFO root fetch - main [MainThread]: End processing [quantplay]: success
+[2023-06-03 11:14:05] INFO root fetch - main [MainThread]: Store serial: [18358138]
