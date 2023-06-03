@@ -4772,3 +4772,16 @@
 [2023-06-03 05:48:54] INFO root fetch - main [MainThread]: End processing [thsolver]: success
 [2023-06-03 05:48:54] INFO root fetch - main [MainThread]: End processing [egcd]: success
 [2023-06-03 05:48:54] INFO root fetch - main [MainThread]: Store serial: [18356721]
+[2023-06-03 05:53:58] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18356721]
+[2023-06-03 05:54:03] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2023-06-03 05:54:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: automateeda
+[2023-06-03 05:54:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: articat
+[2023-06-03 05:54:03] WARNING root fetch - processPackages [automateeda]: Skipping, unable to determine old version
+[2023-06-03 05:54:03] INFO root fetch - processPackages [articat]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-06-03 05:54:03] INFO root fetch - main [MainThread]: End processing [automateeda] error
+[2023-06-03 05:54:03] INFO root fetch - processPackages [articat]: Downloading https://files.pythonhosted.org/packages/97/57/43a9c65c7eaca09709cb60371cb309cd0ba8bb585e2b84c0ba8f93b55740/articat-0.1.8.tar.gz
+[2023-06-03 05:54:04] INFO root fetch - processPackages [articat]: Downloading https://files.pythonhosted.org/packages/85/77/b078792d4f30f3bf6a226a47a8403febc69286c0131b0dd7eceacb6dfb0c/articat-0.1.9.tar.gz
+[2023-06-03 05:54:04] INFO root fetch - processPackages [articat]: executing diffoscope
+[2023-06-03 05:54:04] INFO root fetch - processPackages [articat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/articat-0.1.8.tar.gz tmp/articat-0.1.9.tar.gz --markdown 20230603/a/articat/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-06-03 05:54:05] INFO root fetch - main [MainThread]: End processing [articat]: success
+[2023-06-03 05:54:05] INFO root fetch - main [MainThread]: Store serial: [18356732]
