@@ -7850,3 +7850,41 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-06-03 13:10:48] INFO root fetch - main [MainThread]: End processing [finalynx]: success
 [2023-06-03 13:10:49] INFO root fetch - main [MainThread]: End processing [pycln]: success
 [2023-06-03 13:10:49] INFO root fetch - main [MainThread]: Store serial: [18358669]
+[2023-06-03 13:15:53] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18358669]
+[2023-06-03 13:15:58] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-06-03 13:15:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: opendigger
+[2023-06-03 13:15:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: json-to-github-actions
+[2023-06-03 13:15:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: wzry
+[2023-06-03 13:15:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: tortoise-vector
+[2023-06-03 13:15:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pinit
+[2023-06-03 13:15:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: nvfuser-cu121
+[2023-06-03 13:15:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: nvfuser-cu118
+[2023-06-03 13:15:58] INFO root fetch - processPackages [opendigger]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-06-03 13:15:58] WARNING root fetch - processPackages [wzry]: Skipping, unable to determine old version
+[2023-06-03 13:15:58] INFO root fetch - processPackages [json-to-github-actions]: New version: [1.1.1] Old Version: [1.1.0]
+[2023-06-03 13:15:58] INFO root fetch - processPackages [pinit]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-06-03 13:15:58] INFO root fetch - main [MainThread]: End processing [wzry] error
+[2023-06-03 13:15:58] WARNING root fetch - processPackages [tortoise-vector]: Skipping, unable to determine old version
+[2023-06-03 13:15:58] INFO root fetch - processPackages [nvfuser-cu121]: New version: [0.0.9.dev20230515] Old Version: [0.0.9.dev20230514]
+[2023-06-03 13:15:58] INFO root fetch - main [MainThread]: End processing [tortoise-vector] error
+[2023-06-03 13:15:58] INFO root fetch - processPackages [nvfuser-cu118]: New version: [0.0.9.dev20230515] Old Version: [0.0.9.dev20230514]
+[2023-06-03 13:15:58] INFO root fetch - processPackages [nvfuser-cu121]: executing diffoscope
+[2023-06-03 13:15:58] INFO root fetch - processPackages [nvfuser-cu121]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nvfuser_cu121-0.0.9.dev20230514-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip tmp/nvfuser_cu121-0.0.9.dev20230515-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip --markdown 20230603/n/nvfuser-cu121/0.0.9.dev20230514-0.0.9.dev20230515/diff.md --exclude *.pyd
+[2023-06-03 13:15:58] INFO root fetch - processPackages [json-to-github-actions]: Downloading https://files.pythonhosted.org/packages/c0/95/8cf482e98372bc4b6bf9eaab4af324a980243ad8124c0cc0b46887361c0f/json-to-github-actions-1.1.1.tar.gz
+[2023-06-03 13:15:58] INFO root fetch - processPackages [nvfuser-cu118]: executing diffoscope
+[2023-06-03 13:15:58] INFO root fetch - processPackages [nvfuser-cu118]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nvfuser_cu118-0.0.9.dev20230514-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip tmp/nvfuser_cu118-0.0.9.dev20230515-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip --markdown 20230603/n/nvfuser-cu118/0.0.9.dev20230514-0.0.9.dev20230515/diff.md --exclude *.pyd
+[2023-06-03 13:15:58] INFO root fetch - processPackages [opendigger]: Downloading https://files.pythonhosted.org/packages/b3/22/59e0b19fc82f1548577ec45fccfc5c60976d7c2098e6d20b5ccc230f9d28/opendigger-0.1.2.tar.gz
+[2023-06-03 13:15:58] INFO root fetch - processPackages [pinit]: Downloading https://files.pythonhosted.org/packages/da/c9/9e1f24e3450ebeac10b51dfb400f3105321e5ddc074342d21f06539fbf26/pinit-0.0.3.tar.gz
+[2023-06-03 13:15:58] INFO root fetch - processPackages [json-to-github-actions]: executing diffoscope
+[2023-06-03 13:15:58] INFO root fetch - processPackages [json-to-github-actions]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/json-to-github-actions-1.1.0.tar.gz tmp/json-to-github-actions-1.1.1.tar.gz --markdown 20230603/j/json-to-github-actions/1.1.0-1.1.1/diff.md --exclude *.pyd
+[2023-06-03 13:15:58] INFO root fetch - processPackages [opendigger]: executing diffoscope
+[2023-06-03 13:15:58] INFO root fetch - processPackages [opendigger]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/opendigger-0.1.1.tar.gz tmp/opendigger-0.1.2.tar.gz --markdown 20230603/o/opendigger/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-06-03 13:15:59] INFO root fetch - processPackages [pinit]: Downloading https://files.pythonhosted.org/packages/f7/90/2f99d7a547a56b2117e0fc4b9b4933e20c6bf9c4bf6f12e70ae120518e3d/pinit-0.0.4.tar.gz
+[2023-06-03 13:15:59] INFO root fetch - processPackages [pinit]: executing diffoscope
+[2023-06-03 13:15:59] INFO root fetch - processPackages [pinit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pinit-0.0.3.tar.gz tmp/pinit-0.0.4.tar.gz --markdown 20230603/p/pinit/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-06-03 13:15:59] INFO root fetch - main [MainThread]: End processing [json-to-github-actions]: success
+[2023-06-03 13:15:59] INFO root fetch - main [MainThread]: End processing [opendigger]: success
+[2023-06-03 13:16:00] INFO root fetch - main [MainThread]: End processing [nvfuser-cu121]: success
+[2023-06-03 13:16:00] INFO root fetch - main [MainThread]: End processing [nvfuser-cu118]: success
+[2023-06-03 13:16:00] INFO root fetch - main [MainThread]: End processing [pinit]: success
+[2023-06-03 13:16:00] INFO root fetch - main [MainThread]: Store serial: [18358711]
