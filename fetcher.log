@@ -9135,3 +9135,24 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-06-03 15:40:06] INFO root fetch - main [MainThread]: End processing [nh3]: success
 [2023-06-03 15:40:06] INFO root fetch - main [MainThread]: End processing [all-fives-domino]: success
 [2023-06-03 15:40:06] INFO root fetch - main [MainThread]: Store serial: [18359607]
+[2023-06-03 15:45:10] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18359607]
+[2023-06-03 15:45:15] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-06-03 15:45:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dolphin-python
+[2023-06-03 15:45:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: black-tortoise
+[2023-06-03 15:45:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: dpivsoft
+[2023-06-03 15:45:15] INFO root fetch - processPackages [dolphin-python]: New version: [0.0.8] Old Version: [0.0.7]
+[2023-06-03 15:45:15] INFO root fetch - processPackages [black-tortoise]: New version: [0.3] Old Version: [0.2]
+[2023-06-03 15:45:15] INFO root fetch - processPackages [dpivsoft]: New version: [0.2.6] Old Version: [0.2.5]
+[2023-06-03 15:45:15] INFO root fetch - processPackages [black-tortoise]: executing diffoscope
+[2023-06-03 15:45:15] INFO root fetch - processPackages [black-tortoise]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/black_tortoise-0.2.tar.gz tmp/black_tortoise-0.3.tar.gz --markdown 20230603/b/black-tortoise/0.2-0.3/diff.md --exclude *.pyd
+[2023-06-03 15:45:15] INFO root fetch - processPackages [dpivsoft]: Downloading https://files.pythonhosted.org/packages/c7/2f/c6494de69d0d4154d7f4a106503f089624a867c720a3d61417a9911983c9/dpivsoft-0.2.5.tar.gz
+[2023-06-03 15:45:15] INFO root fetch - processPackages [dolphin-python]: Downloading https://files.pythonhosted.org/packages/c7/a2/41ad8932aa9e04ca8c8b2f21a98f4046f376038b8aa8f79019813ec6ab71/dolphin_python-0.0.8-py2.py3-none-any.whl
+[2023-06-03 15:45:15] INFO root fetch - processPackages [dolphin-python]: executing diffoscope
+[2023-06-03 15:45:15] INFO root fetch - processPackages [dolphin-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dolphin_python-0.0.7-py2.py3-none-any.whl.zip tmp/dolphin_python-0.0.8-py2.py3-none-any.whl.zip --markdown 20230603/d/dolphin-python/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2023-06-03 15:45:15] INFO root fetch - processPackages [dpivsoft]: Downloading https://files.pythonhosted.org/packages/c9/50/588816a83d8fbe58cbc358159e745b7e2edc9e169e6e3b660be4f1adc2ac/dpivsoft-0.2.6.tar.gz
+[2023-06-03 15:45:16] INFO root fetch - processPackages [dpivsoft]: executing diffoscope
+[2023-06-03 15:45:16] INFO root fetch - processPackages [dpivsoft]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dpivsoft-0.2.5.tar.gz tmp/dpivsoft-0.2.6.tar.gz --markdown 20230603/d/dpivsoft/0.2.5-0.2.6/diff.md --exclude *.pyd
+[2023-06-03 15:45:16] INFO root fetch - main [MainThread]: End processing [black-tortoise]: success
+[2023-06-03 15:45:16] INFO root fetch - main [MainThread]: End processing [dolphin-python]: success
+[2023-06-03 15:45:17] INFO root fetch - main [MainThread]: End processing [dpivsoft]: success
+[2023-06-03 15:45:17] INFO root fetch - main [MainThread]: Store serial: [18359616]
