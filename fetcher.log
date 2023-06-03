@@ -5690,3 +5690,14 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 
 [2023-06-03 07:59:12] INFO root fetch - main [MainThread]: End processing [django-icons] error
 [2023-06-03 07:59:12] INFO root fetch - main [MainThread]: Store serial: [18357294]
+[2023-06-03 08:04:16] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18357294]
+[2023-06-03 08:04:20] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2023-06-03 08:04:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: MetodosNumericosElementares
+[2023-06-03 08:04:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mpr
+[2023-06-03 08:04:20] WARNING root fetch - processPackages [MetodosNumericosElementares]: Skipping, unable to determine old version
+[2023-06-03 08:04:20] INFO root fetch - main [MainThread]: End processing [MetodosNumericosElementares] error
+[2023-06-03 08:04:20] INFO root fetch - processPackages [mpr]: New version: [1.9] Old Version: [1.8]
+[2023-06-03 08:04:21] INFO root fetch - processPackages [mpr]: executing diffoscope
+[2023-06-03 08:04:21] INFO root fetch - processPackages [mpr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mpr-1.8.tar.gz tmp/mpr-1.9.tar.gz --markdown 20230603/m/mpr/1.8-1.9/diff.md --exclude *.pyd
+[2023-06-03 08:04:22] INFO root fetch - main [MainThread]: End processing [mpr]: success
+[2023-06-03 08:04:22] INFO root fetch - main [MainThread]: Store serial: [18357309]
