@@ -11391,3 +11391,43 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-06-03 20:24:25] INFO root fetch - main [MainThread]: End processing [cyberdrop-dl]: success
 [2023-06-03 20:24:39] INFO root fetch - main [MainThread]: End processing [foursight-core]: success
 [2023-06-03 20:24:39] INFO root fetch - main [MainThread]: Store serial: [18361060]
+[2023-06-03 20:29:43] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18361060]
+[2023-06-03 20:29:48] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-06-03 20:29:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: helloPypi-topic
+[2023-06-03 20:29:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: relevanceai
+[2023-06-03 20:29:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: red-monkey
+[2023-06-03 20:29:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: metabolabpytools
+[2023-06-03 20:29:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: uncms
+[2023-06-03 20:29:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pp-project-pkg
+[2023-06-03 20:29:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: gamer3514
+[2023-06-03 20:29:48] WARNING root fetch - processPackages [red-monkey]: Skipping, unable to determine old version
+[2023-06-03 20:29:48] INFO root fetch - main [MainThread]: End processing [red-monkey] error
+[2023-06-03 20:29:48] INFO root fetch - processPackages [helloPypi-topic]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-06-03 20:29:48] INFO root fetch - processPackages [metabolabpytools]: New version: [0.8.14] Old Version: [0.8.13]
+[2023-06-03 20:29:48] INFO root fetch - processPackages [relevanceai]: New version: [4.0.2] Old Version: [4.0.1]
+[2023-06-03 20:29:48] WARNING root fetch - processPackages [gamer3514]: Skipping, unable to determine old version
+[2023-06-03 20:29:48] INFO root fetch - processPackages [uncms]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-06-03 20:29:48] INFO root fetch - main [MainThread]: End processing [gamer3514] error
+[2023-06-03 20:29:48] INFO root fetch - processPackages [pp-project-pkg]: New version: [1.0.202306031813] Old Version: [1.0.202306031810]
+[2023-06-03 20:29:48] INFO root fetch - processPackages [pp-project-pkg]: executing diffoscope
+[2023-06-03 20:29:48] INFO root fetch - processPackages [pp-project-pkg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pp_project_pkg-1.0.202306031810-py3-none-any.whl.zip tmp/pp_project_pkg-1.0.202306031813-py3-none-any.whl.zip --markdown 20230603/p/pp-project-pkg/1.0.202306031810-1.0.202306031813/diff.md --exclude *.pyd
+[2023-06-03 20:29:48] INFO root fetch - processPackages [helloPypi-topic]: Downloading https://files.pythonhosted.org/packages/27/54/17eea06df2a6faf85bb8cbf54ae302c705cc644bae7b7dda4e0b76b26aa4/helloPypi-topic-0.0.1.tar.gz
+[2023-06-03 20:29:49] INFO root fetch - processPackages [uncms]: Downloading https://files.pythonhosted.org/packages/e8/f6/464b52229ffdc0b2b307b0aaf5a667d315b0947fdc821f380fd207feab21/uncms-0.0.8.tar.gz
+[2023-06-03 20:29:49] INFO root fetch - processPackages [metabolabpytools]: Downloading https://files.pythonhosted.org/packages/b3/30/4b53444c99c9296548d5ca17e6b8db5f3e90948858ba81bf6878be4e9ec7/metabolabpytools-0.8.14.tar.gz
+[2023-06-03 20:29:49] INFO root fetch - processPackages [relevanceai]: Downloading https://files.pythonhosted.org/packages/5d/52/556bca4ee869b7f5bf8f1516efc0ad3e0e9ddb259f1c6295a07b0b576cb3/relevanceai-4.0.2.tar.gz
+[2023-06-03 20:29:49] INFO root fetch - processPackages [relevanceai]: executing diffoscope
+[2023-06-03 20:29:49] INFO root fetch - processPackages [relevanceai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/relevanceai-4.0.1.tar.gz tmp/relevanceai-4.0.2.tar.gz --markdown 20230603/r/relevanceai/4.0.1-4.0.2/diff.md --exclude *.pyd
+[2023-06-03 20:29:49] INFO root fetch - processPackages [metabolabpytools]: executing diffoscope
+[2023-06-03 20:29:49] INFO root fetch - processPackages [metabolabpytools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/metabolabpytools-0.8.13.tar.gz tmp/metabolabpytools-0.8.14.tar.gz --markdown 20230603/m/metabolabpytools/0.8.13-0.8.14/diff.md --exclude *.pyd
+[2023-06-03 20:29:49] INFO root fetch - processPackages [helloPypi-topic]: Downloading https://files.pythonhosted.org/packages/eb/ca/8f6327f01468ba8dc11d0db7e7ca8822fa542a1d61512dd07889bca95bd2/helloPypi-topic-0.0.2.tar.gz
+[2023-06-03 20:29:49] INFO root fetch - processPackages [uncms]: Downloading https://files.pythonhosted.org/packages/fb/c7/e516d5cfd171bdb236758d9c2c59476efc36a9c43e35a23977f36b899a3c/uncms-0.0.9.tar.gz
+[2023-06-03 20:29:49] INFO root fetch - processPackages [helloPypi-topic]: executing diffoscope
+[2023-06-03 20:29:49] INFO root fetch - processPackages [helloPypi-topic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/helloPypi-topic-0.0.1.tar.gz tmp/helloPypi-topic-0.0.2.tar.gz --markdown 20230603/h/helloPypi-topic/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-06-03 20:29:49] INFO root fetch - processPackages [uncms]: executing diffoscope
+[2023-06-03 20:29:49] INFO root fetch - processPackages [uncms]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/uncms-0.0.8.tar.gz tmp/uncms-0.0.9.tar.gz --markdown 20230603/u/uncms/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-06-03 20:29:50] INFO root fetch - main [MainThread]: End processing [pp-project-pkg]: success
+[2023-06-03 20:29:50] INFO root fetch - main [MainThread]: End processing [metabolabpytools]: success
+[2023-06-03 20:29:50] INFO root fetch - main [MainThread]: End processing [relevanceai]: success
+[2023-06-03 20:29:50] INFO root fetch - main [MainThread]: End processing [helloPypi-topic]: success
+[2023-06-03 20:29:51] INFO root fetch - main [MainThread]: End processing [uncms]: success
+[2023-06-03 20:29:51] INFO root fetch - main [MainThread]: Store serial: [18361081]
