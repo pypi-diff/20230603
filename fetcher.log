@@ -13244,3 +13244,39 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-06-03 23:00:21] INFO root fetch - main [MainThread]: End processing [zibanu-django]: success
 [2023-06-03 23:00:22] INFO root fetch - main [MainThread]: End processing [TradeGate]: success
 [2023-06-03 23:00:22] INFO root fetch - main [MainThread]: Store serial: [18362132]
+[2023-06-03 23:05:26] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18362132]
+[2023-06-03 23:05:31] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-06-03 23:05:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: kalm
+[2023-06-03 23:05:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cdk-datadog-integration
+[2023-06-03 23:05:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: circuitpython-ps2controller
+[2023-06-03 23:05:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: mugendi-realpython-reader
+[2023-06-03 23:05:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: autosrt
+[2023-06-03 23:05:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: summa-embed
+[2023-06-03 23:05:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: metabolabpy
+[2023-06-03 23:05:31] INFO root fetch - processPackages [cdk-datadog-integration]: New version: [2.1.1] Old Version: [2.0.3]
+[2023-06-03 23:05:31] INFO root fetch - processPackages [summa-embed]: New version: [0.15.9] Old Version: [0.15.8]
+[2023-06-03 23:05:31] WARNING root fetch - processPackages [circuitpython-ps2controller]: Skipping, unable to determine old version
+[2023-06-03 23:05:31] INFO root fetch - main [MainThread]: End processing [circuitpython-ps2controller] error
+[2023-06-03 23:05:31] INFO root fetch - processPackages [kalm]: New version: [0.6.9] Old Version: [0.6.8]
+[2023-06-03 23:05:31] WARNING root fetch - processPackages [mugendi-realpython-reader]: Skipping, unable to determine old version
+[2023-06-03 23:05:31] INFO root fetch - main [MainThread]: End processing [mugendi-realpython-reader] error
+[2023-06-03 23:05:31] INFO root fetch - processPackages [autosrt]: New version: [1.2.9] Old Version: [1.2.8]
+[2023-06-03 23:05:31] INFO root fetch - processPackages [kalm]: executing diffoscope
+[2023-06-03 23:05:31] INFO root fetch - processPackages [kalm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kalm-0.6.8.tar.gz tmp/kalm-0.6.9.tar.gz --markdown 20230603/k/kalm/0.6.8-0.6.9/diff.md --exclude *.pyd
+[2023-06-03 23:05:31] INFO root fetch - processPackages [metabolabpy]: New version: [0.8.9] Old Version: [0.8.7]
+[2023-06-03 23:05:31] INFO root fetch - processPackages [summa-embed]: executing diffoscope
+[2023-06-03 23:05:31] INFO root fetch - processPackages [summa-embed]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/summa_embed-0.15.8.tar.gz tmp/summa_embed-0.15.9.tar.gz --markdown 20230603/s/summa-embed/0.15.8-0.15.9/diff.md --exclude *.pyd
+[2023-06-03 23:05:31] INFO root fetch - processPackages [autosrt]: executing diffoscope
+[2023-06-03 23:05:31] INFO root fetch - processPackages [autosrt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/autosrt-1.2.8.tar.gz tmp/autosrt-1.2.9.tar.gz --markdown 20230603/a/autosrt/1.2.8-1.2.9/diff.md --exclude *.pyd
+[2023-06-03 23:05:31] INFO root fetch - processPackages [cdk-datadog-integration]: Downloading https://files.pythonhosted.org/packages/64/31/6e1bb450fb714e10be639e55e65ecd5c374620c42ac82c0265cd227eda94/cdk-datadog-integration-2.0.3.tar.gz
+[2023-06-03 23:05:31] INFO root fetch - processPackages [metabolabpy]: Downloading https://files.pythonhosted.org/packages/ab/32/e1a86aa724aabef3e01f3e432abe2c8ea8a3b1805c71f8bf8e801262ed92/metabolabpy-0.8.7.tar.gz
+[2023-06-03 23:05:32] INFO root fetch - processPackages [cdk-datadog-integration]: Downloading https://files.pythonhosted.org/packages/be/5e/18e516b14c4ec9ce0e0c313e68d97c900bc3f42386ac4c297ccd3b39a6ad/cdk-datadog-integration-2.1.1.tar.gz
+[2023-06-03 23:05:32] INFO root fetch - processPackages [cdk-datadog-integration]: executing diffoscope
+[2023-06-03 23:05:32] INFO root fetch - processPackages [cdk-datadog-integration]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-datadog-integration-2.0.3.tar.gz tmp/cdk-datadog-integration-2.1.1.tar.gz --markdown 20230603/c/cdk-datadog-integration/2.0.3-2.1.1/diff.md --exclude *.pyd
+[2023-06-03 23:05:32] WARNING root fetch - processPackages [metabolabpy]: Skipping package: exceeds size limit 12237881>=10485760
+[2023-06-03 23:05:32] INFO root fetch - main [MainThread]: End processing [metabolabpy] error
+[2023-06-03 23:05:32] INFO root fetch - main [MainThread]: End processing [kalm]: success
+[2023-06-03 23:05:32] INFO root fetch - main [MainThread]: End processing [autosrt]: success
+[2023-06-03 23:05:33] INFO root fetch - main [MainThread]: End processing [summa-embed]: success
+[2023-06-03 23:05:33] INFO root fetch - main [MainThread]: End processing [cdk-datadog-integration]: success
+[2023-06-03 23:05:33] INFO root fetch - main [MainThread]: Store serial: [18362175]
