@@ -7458,3 +7458,45 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-06-03 12:01:54] INFO root fetch - main [MainThread]: End processing [progress-table]: success
 [2023-06-03 12:02:00] INFO root fetch - main [MainThread]: End processing [amulet-nbt]: success
 [2023-06-03 12:02:00] INFO root fetch - main [MainThread]: Store serial: [18358366]
+[2023-06-03 12:07:05] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18358366]
+[2023-06-03 12:07:10] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-06-03 12:07:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: horizonai
+[2023-06-03 12:07:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: llm-client
+[2023-06-03 12:07:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: douyin-tiktok-scraper
+[2023-06-03 12:07:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: p0-script
+[2023-06-03 12:07:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: downloadx
+[2023-06-03 12:07:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: django-selenium-clean
+[2023-06-03 12:07:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: azkv-secrets-loader
+[2023-06-03 12:07:10] INFO root fetch - processPackages [horizonai]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-06-03 12:07:10] INFO root fetch - processPackages [llm-client]: New version: [0.4.0] Old Version: [0.3.0]
+[2023-06-03 12:07:10] INFO root fetch - processPackages [douyin-tiktok-scraper]: New version: [1.2.1] Old Version: [1.2.0]
+[2023-06-03 12:07:10] WARNING root fetch - processPackages [downloadx]: Skipping, unable to determine old version
+[2023-06-03 12:07:10] INFO root fetch - main [MainThread]: End processing [downloadx] error
+[2023-06-03 12:07:10] INFO root fetch - processPackages [p0-script]: New version: [1.0.9] Old Version: [1.0.7]
+[2023-06-03 12:07:10] INFO root fetch - processPackages [azkv-secrets-loader]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-06-03 12:07:10] INFO root fetch - processPackages [django-selenium-clean]: New version: [1.0.0] Old Version: [0.3.4]
+[2023-06-03 12:07:10] INFO root fetch - processPackages [douyin-tiktok-scraper]: Downloading https://files.pythonhosted.org/packages/43/da/b87fc816f0d14e8116aab09a2d2b66698e3651cdec516165aa79d47be7b2/douyin_tiktok_scraper-1.2.0.tar.gz
+[2023-06-03 12:07:10] INFO root fetch - processPackages [p0-script]: Downloading https://files.pythonhosted.org/packages/37/c4/c578fed813dcf67cdb1d65adbfd2ee9d92755dddab5f18e7a5bb4aab3f7a/p0-script-1.0.9.tar.gz
+[2023-06-03 12:07:10] INFO root fetch - processPackages [django-selenium-clean]: Downloading https://files.pythonhosted.org/packages/82/4e/ad4385ff5e1d603835349c6f290a31d8f0988a06890ae9d7cf0a2da2f693/django-selenium-clean-1.0.0.tar.gz
+[2023-06-03 12:07:10] INFO root fetch - processPackages [horizonai]: executing diffoscope
+[2023-06-03 12:07:10] INFO root fetch - processPackages [horizonai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/horizonai-0.1.8.tar.gz tmp/horizonai-0.1.9.tar.gz --markdown 20230603/h/horizonai/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-06-03 12:07:10] INFO root fetch - processPackages [llm-client]: Downloading https://files.pythonhosted.org/packages/a3/25/57d698dc64519fb4438955004b4595a5e58e94e74d243bfccfbf3ff81995/llm_client-0.4.0.tar.gz
+[2023-06-03 12:07:10] INFO root fetch - processPackages [django-selenium-clean]: executing diffoscope
+[2023-06-03 12:07:10] INFO root fetch - processPackages [django-selenium-clean]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-selenium-clean-0.3.4.tar.gz tmp/django-selenium-clean-1.0.0.tar.gz --markdown 20230603/d/django-selenium-clean/0.3.4-1.0.0/diff.md --exclude *.pyd
+[2023-06-03 12:07:10] INFO root fetch - processPackages [azkv-secrets-loader]: Downloading https://files.pythonhosted.org/packages/2c/30/f8e809ee8fc1e2f487456f00260299bfb292764f93689173dccc19c8b512/azkv-secrets-loader-0.0.4.tar.gz
+[2023-06-03 12:07:10] INFO root fetch - processPackages [douyin-tiktok-scraper]: Downloading https://files.pythonhosted.org/packages/89/01/ca999aacb8bc63a29d289bce82eea75f84139b9e1bc5d989a71afd3e257f/douyin_tiktok_scraper-1.2.1.tar.gz
+[2023-06-03 12:07:10] INFO root fetch - processPackages [azkv-secrets-loader]: executing diffoscope
+[2023-06-03 12:07:10] INFO root fetch - processPackages [azkv-secrets-loader]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/azkv-secrets-loader-0.0.3.tar.gz tmp/azkv-secrets-loader-0.0.4.tar.gz --markdown 20230603/a/azkv-secrets-loader/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-06-03 12:07:10] INFO root fetch - processPackages [p0-script]: executing diffoscope
+[2023-06-03 12:07:10] INFO root fetch - processPackages [p0-script]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/p0_script-1.0.7-py3-none-any.whl.zip tmp/p0-script-1.0.9.tar.gz --markdown 20230603/p/p0-script/1.0.7-1.0.9/diff.md --exclude *.pyd
+[2023-06-03 12:07:11] INFO root fetch - processPackages [douyin-tiktok-scraper]: executing diffoscope
+[2023-06-03 12:07:11] INFO root fetch - processPackages [douyin-tiktok-scraper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/douyin_tiktok_scraper-1.2.0.tar.gz tmp/douyin_tiktok_scraper-1.2.1.tar.gz --markdown 20230603/d/douyin-tiktok-scraper/1.2.0-1.2.1/diff.md --exclude *.pyd
+[2023-06-03 12:07:11] INFO root fetch - processPackages [llm-client]: executing diffoscope
+[2023-06-03 12:07:11] INFO root fetch - processPackages [llm-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/llm_client-0.3.0.tar.gz tmp/llm_client-0.4.0.tar.gz --markdown 20230603/l/llm-client/0.3.0-0.4.0/diff.md --exclude *.pyd
+[2023-06-03 12:07:12] INFO root fetch - main [MainThread]: End processing [horizonai]: success
+[2023-06-03 12:07:12] INFO root fetch - main [MainThread]: End processing [django-selenium-clean]: success
+[2023-06-03 12:07:12] INFO root fetch - main [MainThread]: End processing [azkv-secrets-loader]: success
+[2023-06-03 12:07:12] INFO root fetch - main [MainThread]: End processing [douyin-tiktok-scraper]: success
+[2023-06-03 12:07:13] INFO root fetch - main [MainThread]: End processing [llm-client]: success
+[2023-06-03 12:07:13] INFO root fetch - main [MainThread]: End processing [p0-script]: success
+[2023-06-03 12:07:13] INFO root fetch - main [MainThread]: Store serial: [18358396]
