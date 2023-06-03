@@ -5701,3 +5701,17 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-06-03 08:04:21] INFO root fetch - processPackages [mpr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mpr-1.8.tar.gz tmp/mpr-1.9.tar.gz --markdown 20230603/m/mpr/1.8-1.9/diff.md --exclude *.pyd
 [2023-06-03 08:04:22] INFO root fetch - main [MainThread]: End processing [mpr]: success
 [2023-06-03 08:04:22] INFO root fetch - main [MainThread]: Store serial: [18357309]
+[2023-06-03 08:09:26] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18357309]
+[2023-06-03 08:09:31] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2023-06-03 08:09:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyg-nightly
+[2023-06-03 08:09:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: vector-vault
+[2023-06-03 08:09:31] INFO root fetch - processPackages [vector-vault]: New version: [1.7.3] Old Version: [1.7.2]
+[2023-06-03 08:09:31] INFO root fetch - processPackages [pyg-nightly]: New version: [2.4.0.dev20230602] Old Version: [2.4.0.dev20230601]
+[2023-06-03 08:09:31] INFO root fetch - processPackages [vector-vault]: executing diffoscope
+[2023-06-03 08:09:31] INFO root fetch - processPackages [vector-vault]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vector_vault-1.7.2.tar.gz tmp/vector_vault-1.7.3.tar.gz --markdown 20230603/v/vector-vault/1.7.2-1.7.3/diff.md --exclude *.pyd
+[2023-06-03 08:09:31] INFO root fetch - processPackages [pyg-nightly]: Downloading https://files.pythonhosted.org/packages/cd/f4/447060e410591aba58fed85cad93c4bb161c8c25176d312bfa2a478bfa68/pyg_nightly-2.4.0.dev20230602.tar.gz
+[2023-06-03 08:09:31] INFO root fetch - processPackages [pyg-nightly]: executing diffoscope
+[2023-06-03 08:09:31] INFO root fetch - processPackages [pyg-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyg_nightly-2.4.0.dev20230601.tar.gz tmp/pyg_nightly-2.4.0.dev20230602.tar.gz --markdown 20230603/p/pyg-nightly/2.4.0.dev20230601-2.4.0.dev20230602/diff.md --exclude *.pyd
+[2023-06-03 08:09:32] INFO root fetch - main [MainThread]: End processing [vector-vault]: success
+[2023-06-03 08:09:36] INFO root fetch - main [MainThread]: End processing [pyg-nightly]: success
+[2023-06-03 08:09:36] INFO root fetch - main [MainThread]: Store serial: [18357333]
