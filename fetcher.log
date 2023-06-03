@@ -13619,3 +13619,46 @@ EOFError: EOF read where object expected
 [2023-06-03 23:43:39] INFO root fetch - main [MainThread]: End processing [jschon]: success
 [2023-06-03 23:43:39] INFO root fetch - main [MainThread]: End processing [UnlimitedGPT]: success
 [2023-06-03 23:43:39] INFO root fetch - main [MainThread]: Store serial: [18362338]
+[2023-06-03 23:48:44] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18362338]
+[2023-06-03 23:48:49] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-06-03 23:48:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: kalpy-kaldi
+[2023-06-03 23:48:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cspot
+[2023-06-03 23:48:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: PyTrek-9000
+[2023-06-03 23:48:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: vector-vault
+[2023-06-03 23:48:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: mynacode
+[2023-06-03 23:48:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: flowtask
+[2023-06-03 23:48:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: Metamorf
+[2023-06-03 23:48:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: moonrise
+[2023-06-03 23:48:49] INFO root fetch - processPackages [flowtask]: New version: [4.3.9] Old Version: [4.3.8]
+[2023-06-03 23:48:49] WARNING root fetch - processPackages [cspot]: Skipping, unable to determine old version
+[2023-06-03 23:48:49] INFO root fetch - main [MainThread]: End processing [cspot] error
+[2023-06-03 23:48:49] INFO root fetch - processPackages [mynacode]: New version: [1.0.99] Old Version: [1.0.98]
+[2023-06-03 23:48:49] INFO root fetch - processPackages [Metamorf]: New version: [0.4.3] Old Version: [0.3.9.1]
+[2023-06-03 23:48:49] WARNING root fetch - processPackages [PyTrek-9000]: Skipping, unable to determine old version
+[2023-06-03 23:48:49] INFO root fetch - processPackages [vector-vault]: New version: [1.7.7] Old Version: [1.7.6]
+[2023-06-03 23:48:49] INFO root fetch - main [MainThread]: End processing [PyTrek-9000] error
+[2023-06-03 23:48:49] INFO root fetch - processPackages [kalpy-kaldi]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-06-03 23:48:49] INFO root fetch - processPackages [mynacode]: executing diffoscope
+[2023-06-03 23:48:49] INFO root fetch - processPackages [mynacode]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mynacode-1.0.98-py3-none-any.whl.zip tmp/mynacode-1.0.99-py3-none-any.whl.zip --markdown 20230603/m/mynacode/1.0.98-1.0.99/diff.md --exclude *.pyd
+[2023-06-03 23:48:49] INFO root fetch - processPackages [flowtask]: executing diffoscope
+[2023-06-03 23:48:49] INFO root fetch - processPackages [flowtask]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flowtask-4.3.8-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip tmp/flowtask-4.3.9-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip --markdown 20230603/f/flowtask/4.3.8-4.3.9/diff.md --exclude *.pyd
+[2023-06-03 23:48:49] INFO root fetch - processPackages [moonrise]: New version: [1.1.1] Old Version: [1.1.0]
+[2023-06-03 23:48:49] INFO root fetch - processPackages [vector-vault]: Downloading https://files.pythonhosted.org/packages/8d/06/c4c7c06c1e738e374681be7347b750f2e6074c96d606394530855f3039fc/vector_vault-1.7.7.tar.gz
+[2023-06-03 23:48:49] INFO root fetch - processPackages [kalpy-kaldi]: Downloading https://files.pythonhosted.org/packages/75/34/dd10c6292a7c806a81f0ddfee42fca3d399e8507da27a673ec923308cca1/kalpy-kaldi-0.0.5.tar.gz
+[2023-06-03 23:48:49] INFO root fetch - processPackages [Metamorf]: Downloading https://files.pythonhosted.org/packages/20/67/30b4a0d8c8e6324458fb692ea571676788f0c9e8291258b897e800f18702/Metamorf-0.4.3.tar.gz
+[2023-06-03 23:48:49] INFO root fetch - processPackages [vector-vault]: executing diffoscope
+[2023-06-03 23:48:49] INFO root fetch - processPackages [vector-vault]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vector_vault-1.7.6.tar.gz tmp/vector_vault-1.7.7.tar.gz --markdown 20230603/v/vector-vault/1.7.6-1.7.7/diff.md --exclude *.pyd
+[2023-06-03 23:48:49] INFO root fetch - processPackages [moonrise]: Downloading https://files.pythonhosted.org/packages/be/81/c84a15b1c7d357b21684a95fe11b7db481b2a768ea92db0b767fef9417b1/moonrise-1.1.1.tar.gz
+[2023-06-03 23:48:49] INFO root fetch - processPackages [kalpy-kaldi]: executing diffoscope
+[2023-06-03 23:48:49] INFO root fetch - processPackages [kalpy-kaldi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kalpy-kaldi-0.0.4.tar.gz tmp/kalpy-kaldi-0.0.5.tar.gz --markdown 20230603/k/kalpy-kaldi/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-06-03 23:48:49] INFO root fetch - processPackages [Metamorf]: executing diffoscope
+[2023-06-03 23:48:49] INFO root fetch - processPackages [Metamorf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Metamorf-0.3.9.1.tar.gz tmp/Metamorf-0.4.3.tar.gz --markdown 20230603/M/Metamorf/0.3.9.1-0.4.3/diff.md --exclude *.pyd
+[2023-06-03 23:48:49] INFO root fetch - processPackages [moonrise]: executing diffoscope
+[2023-06-03 23:48:49] INFO root fetch - processPackages [moonrise]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/moonrise-1.1.0.tar.gz tmp/moonrise-1.1.1.tar.gz --markdown 20230603/m/moonrise/1.1.0-1.1.1/diff.md --exclude *.pyd
+[2023-06-03 23:48:50] INFO root fetch - main [MainThread]: End processing [mynacode]: success
+[2023-06-03 23:48:50] INFO root fetch - main [MainThread]: End processing [vector-vault]: success
+[2023-06-03 23:48:50] INFO root fetch - main [MainThread]: End processing [moonrise]: success
+[2023-06-03 23:48:51] INFO root fetch - main [MainThread]: End processing [Metamorf]: success
+[2023-06-03 23:48:51] INFO root fetch - main [MainThread]: End processing [flowtask]: success
+[2023-06-03 23:48:52] INFO root fetch - main [MainThread]: End processing [kalpy-kaldi]: success
+[2023-06-03 23:48:52] INFO root fetch - main [MainThread]: Store serial: [18362363]
