@@ -12613,3 +12613,40 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-06-03 21:49:43] INFO root fetch - main [MainThread]: End processing [housenomics]: success
 [2023-06-03 21:49:43] INFO root fetch - main [MainThread]: End processing [aiosmtplib]: success
 [2023-06-03 21:49:43] INFO root fetch - main [MainThread]: Store serial: [18361676]
+[2023-06-03 21:54:47] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18361676]
+[2023-06-03 21:54:52] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-06-03 21:54:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: alesha
+[2023-06-03 21:54:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: relevanceai
+[2023-06-03 21:54:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: abmatrix
+[2023-06-03 21:54:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: cvxreg
+[2023-06-03 21:54:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: parasect
+[2023-06-03 21:54:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: eot
+[2023-06-03 21:54:52] INFO root fetch - processPackages [alesha]: New version: [1.0.0] Old Version: [0.2.0]
+[2023-06-03 21:54:52] INFO root fetch - processPackages [cvxreg]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-06-03 21:54:52] WARNING root fetch - processPackages [abmatrix]: Skipping, unable to determine old version
+[2023-06-03 21:54:52] INFO root fetch - main [MainThread]: End processing [abmatrix] error
+[2023-06-03 21:54:52] INFO root fetch - processPackages [parasect]: New version: [1.2.0] Old Version: [1.1.2]
+[2023-06-03 21:54:52] INFO root fetch - processPackages [relevanceai]: New version: [4.0.9] Old Version: [4.0.8]
+[2023-06-03 21:54:52] INFO root fetch - processPackages [eot]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-06-03 21:54:52] INFO root fetch - processPackages [cvxreg]: Downloading https://files.pythonhosted.org/packages/12/03/fd3e1c220b13d414b49921a7922bc78b989e85fb7a8f22840e49adcc54f4/cvxreg-0.0.2.tar.gz
+[2023-06-03 21:54:52] INFO root fetch - processPackages [parasect]: Downloading https://files.pythonhosted.org/packages/2c/3b/6c906cb37ef1e143822e2e4934b4d6332e059adf3bb8d3c51b14c2963a3e/parasect-1.1.2.tar.gz
+[2023-06-03 21:54:52] INFO root fetch - processPackages [alesha]: Downloading https://files.pythonhosted.org/packages/78/2b/71da2a6fa8ace52904877081a7e0f6224621d775ada5614a395128c0a35a/alesha-1.0.0.tar.gz
+[2023-06-03 21:54:52] INFO root fetch - processPackages [relevanceai]: executing diffoscope
+[2023-06-03 21:54:52] INFO root fetch - processPackages [relevanceai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/relevanceai-4.0.8.tar.gz tmp/relevanceai-4.0.9.tar.gz --markdown 20230603/r/relevanceai/4.0.8-4.0.9/diff.md --exclude *.pyd
+[2023-06-03 21:54:52] INFO root fetch - processPackages [eot]: Downloading https://files.pythonhosted.org/packages/be/f1/eaa1560fc23cae8d8e7e5992521cfc3dc582757ef21a3022f8343c5ab5fc/eot-0.1.1.tar.gz
+[2023-06-03 21:54:52] INFO root fetch - processPackages [alesha]: executing diffoscope
+[2023-06-03 21:54:52] INFO root fetch - processPackages [alesha]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/alesha-0.2.0.tar.gz tmp/alesha-1.0.0.tar.gz --markdown 20230603/a/alesha/0.2.0-1.0.0/diff.md --exclude *.pyd
+[2023-06-03 21:54:53] INFO root fetch - processPackages [cvxreg]: Downloading https://files.pythonhosted.org/packages/af/dc/f3eb91154c07d6a12a669280690c90fdbe3727d6c0a781ede09fb293d874/cvxreg-0.0.3.tar.gz
+[2023-06-03 21:54:53] INFO root fetch - processPackages [parasect]: Downloading https://files.pythonhosted.org/packages/23/6d/2b3574226f4d6ca8848082d9e486ff445d49f76a9a2c70363e9b1ddba0f9/parasect-1.2.0.tar.gz
+[2023-06-03 21:54:53] INFO root fetch - processPackages [parasect]: executing diffoscope
+[2023-06-03 21:54:53] INFO root fetch - processPackages [parasect]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/parasect-1.1.2.tar.gz tmp/parasect-1.2.0.tar.gz --markdown 20230603/p/parasect/1.1.2-1.2.0/diff.md --exclude *.pyd
+[2023-06-03 21:54:53] INFO root fetch - processPackages [cvxreg]: executing diffoscope
+[2023-06-03 21:54:53] INFO root fetch - processPackages [cvxreg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cvxreg-0.0.2.tar.gz tmp/cvxreg-0.0.3.tar.gz --markdown 20230603/c/cvxreg/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-06-03 21:54:53] INFO root fetch - processPackages [eot]: executing diffoscope
+[2023-06-03 21:54:53] INFO root fetch - processPackages [eot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/eot-0.1.0.tar.gz tmp/eot-0.1.1.tar.gz --markdown 20230603/e/eot/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-06-03 21:54:53] INFO root fetch - main [MainThread]: End processing [alesha]: success
+[2023-06-03 21:54:54] INFO root fetch - main [MainThread]: End processing [relevanceai]: success
+[2023-06-03 21:54:54] INFO root fetch - main [MainThread]: End processing [parasect]: success
+[2023-06-03 21:54:54] INFO root fetch - main [MainThread]: End processing [eot]: success
+[2023-06-03 21:54:54] INFO root fetch - main [MainThread]: End processing [cvxreg]: success
+[2023-06-03 21:54:54] INFO root fetch - main [MainThread]: Store serial: [18361696]
