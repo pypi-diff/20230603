@@ -12967,3 +12967,43 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-06-03 22:26:53] INFO root fetch - main [MainThread]: End processing [zibanu-django]: success
 [2023-06-03 22:26:54] INFO root fetch - main [MainThread]: End processing [lung-analysis-pipeline]: success
 [2023-06-03 22:26:54] INFO root fetch - main [MainThread]: Store serial: [18361972]
+[2023-06-03 22:31:58] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18361972]
+[2023-06-03 22:32:03] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-06-03 22:32:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: kalm
+[2023-06-03 22:32:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: rayasdk
+[2023-06-03 22:32:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ipyflow-core
+[2023-06-03 22:32:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ipyflow
+[2023-06-03 22:32:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: dronefly-core
+[2023-06-03 22:32:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: kalm
+[2023-06-03 22:32:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: raya
+[2023-06-03 22:32:03] INFO root fetch - processPackages [ipyflow-core]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-06-03 22:32:03] INFO root fetch - processPackages [dronefly-core]: New version: [0.3.6.dev0] Old Version: [0.3.5]
+[2023-06-03 22:32:03] INFO root fetch - processPackages [raya]: New version: [3.4.1.dev9] Old Version: [3.4.1.dev8]
+[2023-06-03 22:32:03] INFO root fetch - processPackages [kalm]: New version: [0.6.9] Old Version: [0.6.8]
+[2023-06-03 22:32:03] INFO root fetch - processPackages [kalm]: New version: [0.6.9] Old Version: [0.6.8]
+[2023-06-03 22:32:03] INFO root fetch - processPackages [rayasdk]: New version: [1.1.0.dev9] Old Version: [1.1.0.dev8]
+[2023-06-03 22:32:03] INFO root fetch - processPackages [ipyflow]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-06-03 22:32:03] INFO root fetch - processPackages [dronefly-core]: Downloading https://files.pythonhosted.org/packages/0f/63/d9636988f1c5b9b62929251f0bdc357fadbeda8196900f6e96a1a18d04ba/dronefly_core-0.3.5.tar.gz
+[2023-06-03 22:32:03] INFO root fetch - processPackages [kalm]: executing diffoscope
+[2023-06-03 22:32:03] INFO root fetch - processPackages [kalm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kalm-0.6.8.tar.gz tmp/kalm-0.6.9.tar.gz --markdown 20230603/k/kalm/0.6.8-0.6.9/diff.md --exclude *.pyd
+[2023-06-03 22:32:03] INFO root fetch - processPackages [kalm]: executing diffoscope
+[2023-06-03 22:32:03] INFO root fetch - processPackages [kalm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kalm-0.6.8.tar.gz tmp/kalm-0.6.9.tar.gz --markdown 20230603/k/kalm/0.6.8-0.6.9/diff.md --exclude *.pyd
+[2023-06-03 22:32:03] INFO root fetch - processPackages [ipyflow-core]: executing diffoscope
+[2023-06-03 22:32:03] INFO root fetch - processPackages [ipyflow-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ipyflow-core-0.0.98.tar.gz tmp/ipyflow-core-0.0.99.tar.gz --markdown 20230603/i/ipyflow-core/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-06-03 22:32:03] INFO root fetch - processPackages [dronefly-core]: Downloading https://files.pythonhosted.org/packages/7a/7c/5e808470e2299a140ca72e114dffc3be46bf8032ed891c054bf99373d68f/dronefly_core-0.3.6.dev0.tar.gz
+[2023-06-03 22:32:03] INFO root fetch - processPackages [raya]: executing diffoscope
+[2023-06-03 22:32:03] INFO root fetch - processPackages [raya]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/raya-3.4.1.dev8.tar.gz tmp/raya-3.4.1.dev9.tar.gz --markdown 20230603/r/raya/3.4.1.dev8-3.4.1.dev9/diff.md --exclude *.pyd
+[2023-06-03 22:32:03] INFO root fetch - processPackages [rayasdk]: executing diffoscope
+[2023-06-03 22:32:03] INFO root fetch - processPackages [rayasdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rayasdk-1.1.0.dev8.tar.gz tmp/rayasdk-1.1.0.dev9.tar.gz --markdown 20230603/r/rayasdk/1.1.0.dev8-1.1.0.dev9/diff.md --exclude *.pyd
+[2023-06-03 22:32:03] INFO root fetch - processPackages [ipyflow]: executing diffoscope
+[2023-06-03 22:32:03] INFO root fetch - processPackages [ipyflow]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ipyflow-0.0.98.tar.gz tmp/ipyflow-0.0.99.tar.gz --markdown 20230603/i/ipyflow/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-06-03 22:32:03] INFO root fetch - processPackages [dronefly-core]: executing diffoscope
+[2023-06-03 22:32:03] INFO root fetch - processPackages [dronefly-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dronefly_core-0.3.5.tar.gz tmp/dronefly_core-0.3.6.dev0.tar.gz --markdown 20230603/d/dronefly-core/0.3.5-0.3.6.dev0/diff.md --exclude *.pyd
+[2023-06-03 22:32:04] INFO root fetch - main [MainThread]: End processing [kalm]: success
+[2023-06-03 22:32:05] INFO root fetch - main [MainThread]: End processing [kalm]: success
+[2023-06-03 22:32:05] INFO root fetch - main [MainThread]: End processing [dronefly-core]: success
+[2023-06-03 22:32:05] INFO root fetch - main [MainThread]: End processing [ipyflow-core]: success
+[2023-06-03 22:32:05] INFO root fetch - main [MainThread]: End processing [raya]: success
+[2023-06-03 22:32:05] INFO root fetch - main [MainThread]: End processing [rayasdk]: success
+[2023-06-03 22:32:58] INFO root fetch - main [MainThread]: End processing [ipyflow]: success
+[2023-06-03 22:32:58] INFO root fetch - main [MainThread]: Store serial: [18361993]
