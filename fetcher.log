@@ -4212,3 +4212,27 @@
 [2023-06-03 04:13:16] INFO root fetch - main [MainThread]: End processing [chalkpy]: success
 [2023-06-03 04:13:18] INFO root fetch - main [MainThread]: End processing [evadb]: success
 [2023-06-03 04:13:18] INFO root fetch - main [MainThread]: Store serial: [18356390]
+[2023-06-03 04:18:22] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18356390]
+[2023-06-03 04:18:27] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-06-03 04:18:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: neon-audio
+[2023-06-03 04:18:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: myconfig4app
+[2023-06-03 04:18:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pyAutoSummarizer
+[2023-06-03 04:18:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: chalkpy
+[2023-06-03 04:18:27] INFO root fetch - processPackages [pyAutoSummarizer]: New version: [1.1.0] Old Version: [1.0.9]
+[2023-06-03 04:18:27] INFO root fetch - processPackages [neon-audio]: New version: [1.3.3a5] Old Version: [1.3.3a4]
+[2023-06-03 04:18:27] WARNING root fetch - processPackages [myconfig4app]: Skipping, unable to determine old version
+[2023-06-03 04:18:27] INFO root fetch - main [MainThread]: End processing [myconfig4app] error
+[2023-06-03 04:18:27] INFO root fetch - processPackages [chalkpy]: New version: [2.5.9] Old Version: [2.5.8]
+[2023-06-03 04:18:27] INFO root fetch - processPackages [pyAutoSummarizer]: Downloading https://files.pythonhosted.org/packages/bd/2d/580cadb5d7f9584a716f720c8a503953f4860b9128f0f6cd78435de94e44/pyAutoSummarizer-1.1.0.tar.gz
+[2023-06-03 04:18:27] INFO root fetch - processPackages [chalkpy]: Downloading https://files.pythonhosted.org/packages/a8/30/75a37dd4c68ab0deb4239169fd18fea789561c694c9da2844a3db8e443f9/chalkpy-2.5.9.tar.gz
+[2023-06-03 04:18:27] INFO root fetch - processPackages [pyAutoSummarizer]: executing diffoscope
+[2023-06-03 04:18:27] INFO root fetch - processPackages [pyAutoSummarizer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyAutoSummarizer-1.0.9.tar.gz tmp/pyAutoSummarizer-1.1.0.tar.gz --markdown 20230603/p/pyAutoSummarizer/1.0.9-1.1.0/diff.md --exclude *.pyd
+[2023-06-03 04:18:27] INFO root fetch - processPackages [neon-audio]: Downloading https://files.pythonhosted.org/packages/61/7d/e504e0bdae85f26068b5c1200092e170629a937d79ee3a869fa224db6797/neon_audio-1.3.3a5-py3-none-any.whl
+[2023-06-03 04:18:27] INFO root fetch - processPackages [chalkpy]: executing diffoscope
+[2023-06-03 04:18:27] INFO root fetch - processPackages [chalkpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chalkpy-2.5.8.tar.gz tmp/chalkpy-2.5.9.tar.gz --markdown 20230603/c/chalkpy/2.5.8-2.5.9/diff.md --exclude *.pyd
+[2023-06-03 04:18:27] INFO root fetch - processPackages [neon-audio]: executing diffoscope
+[2023-06-03 04:18:27] INFO root fetch - processPackages [neon-audio]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/neon_audio-1.3.3a4-py3-none-any.whl.zip tmp/neon_audio-1.3.3a5-py3-none-any.whl.zip --markdown 20230603/n/neon-audio/1.3.3a4-1.3.3a5/diff.md --exclude *.pyd
+[2023-06-03 04:18:28] INFO root fetch - main [MainThread]: End processing [neon-audio]: success
+[2023-06-03 04:18:28] INFO root fetch - main [MainThread]: End processing [pyAutoSummarizer]: success
+[2023-06-03 04:18:32] INFO root fetch - main [MainThread]: End processing [chalkpy]: success
+[2023-06-03 04:18:32] INFO root fetch - main [MainThread]: Store serial: [18356403]
