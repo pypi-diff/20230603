@@ -6060,3 +6060,43 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-06-03 09:03:21] INFO root fetch - main [MainThread]: End processing [dcs-code-injector]: success
 [2023-06-03 09:03:23] INFO root fetch - main [MainThread]: End processing [mad-gui]: success
 [2023-06-03 09:03:23] INFO root fetch - main [MainThread]: Store serial: [18357568]
+[2023-06-03 09:08:27] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18357568]
+[2023-06-03 09:08:32] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-06-03 09:08:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: thonny
+[2023-06-03 09:08:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: innerverz
+[2023-06-03 09:08:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: Metodos-Numericos
+[2023-06-03 09:08:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: odoo14-addon-account-spread-cost-revenue-enhanced
+[2023-06-03 09:08:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: webint-editor
+[2023-06-03 09:08:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: mayan-edms
+[2023-06-03 09:08:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: pytamaro
+[2023-06-03 09:08:32] INFO root fetch - processPackages [thonny]: New version: [4.1.0b1.dev0] Old Version: [4.1.0b1]
+[2023-06-03 09:08:32] WARNING root fetch - processPackages [odoo14-addon-account-spread-cost-revenue-enhanced]: Skipping, unable to determine old version
+[2023-06-03 09:08:32] WARNING root fetch - processPackages [Metodos-Numericos]: Skipping, unable to determine old version
+[2023-06-03 09:08:32] INFO root fetch - main [MainThread]: End processing [odoo14-addon-account-spread-cost-revenue-enhanced] error
+[2023-06-03 09:08:32] INFO root fetch - processPackages [innerverz]: New version: [0.0.31] Old Version: [0.0.30]
+[2023-06-03 09:08:32] INFO root fetch - main [MainThread]: End processing [Metodos-Numericos] error
+[2023-06-03 09:08:32] INFO root fetch - processPackages [webint-editor]: New version: [0.0.157] Old Version: [0.0.156]
+[2023-06-03 09:08:32] INFO root fetch - processPackages [mayan-edms]: New version: [4.4.7] Old Version: [4.4.6]
+[2023-06-03 09:08:32] INFO root fetch - processPackages [pytamaro]: New version: [0.5.1] Old Version: [0.5.0]
+[2023-06-03 09:08:32] INFO root fetch - processPackages [thonny]: Downloading https://files.pythonhosted.org/packages/8f/d9/edae8997a560b4148cd9b5db8df8b049452606bb38b261cbede2ef8e38ab/thonny-4.1.0b1.tar.gz
+[2023-06-03 09:08:32] INFO root fetch - processPackages [innerverz]: Downloading https://files.pythonhosted.org/packages/35/79/b8eca541fccd3d8b718e2eba19d6b2e3dcff2c2658b6bb953797d4626f95/innerverz-0.0.31.tar.gz
+[2023-06-03 09:08:32] INFO root fetch - processPackages [webint-editor]: Downloading https://files.pythonhosted.org/packages/72/60/596e31252ea59196b35e875ebf68ad54a1f86c92d5abc2ba6ae95169232f/webint_editor-0.0.157.tar.gz
+[2023-06-03 09:08:32] INFO root fetch - processPackages [webint-editor]: executing diffoscope
+[2023-06-03 09:08:32] INFO root fetch - processPackages [webint-editor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/webint_editor-0.0.156.tar.gz tmp/webint_editor-0.0.157.tar.gz --markdown 20230603/w/webint-editor/0.0.156-0.0.157/diff.md --exclude *.pyd
+[2023-06-03 09:08:32] INFO root fetch - processPackages [innerverz]: executing diffoscope
+[2023-06-03 09:08:32] INFO root fetch - processPackages [innerverz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/innerverz-0.0.30.tar.gz tmp/innerverz-0.0.31.tar.gz --markdown 20230603/i/innerverz/0.0.30-0.0.31/diff.md --exclude *.pyd
+[2023-06-03 09:08:32] INFO root fetch - processPackages [pytamaro]: Downloading https://files.pythonhosted.org/packages/8e/79/924d9540c5c01c5256a5f0ea435827dfa1228f114e08fbe676940d3b689e/pytamaro-0.5.1.tar.gz
+[2023-06-03 09:08:32] INFO root fetch - processPackages [mayan-edms]: Downloading https://files.pythonhosted.org/packages/d9/97/46bf2818af1721a4ad27ff4f517fec6f597fc8b9640a8891298df052887c/mayan-edms-4.4.7.tar.gz
+[2023-06-03 09:08:32] INFO root fetch - processPackages [pytamaro]: executing diffoscope
+[2023-06-03 09:08:32] INFO root fetch - processPackages [pytamaro]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytamaro-0.5.0.tar.gz tmp/pytamaro-0.5.1.tar.gz --markdown 20230603/p/pytamaro/0.5.0-0.5.1/diff.md --exclude *.pyd
+[2023-06-03 09:08:32] INFO root fetch - processPackages [mayan-edms]: executing diffoscope
+[2023-06-03 09:08:32] INFO root fetch - processPackages [mayan-edms]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mayan-edms-4.4.6.tar.gz tmp/mayan-edms-4.4.7.tar.gz --markdown 20230603/m/mayan-edms/4.4.6-4.4.7/diff.md --exclude *.pyd
+[2023-06-03 09:08:32] INFO root fetch - processPackages [thonny]: Downloading https://files.pythonhosted.org/packages/de/0b/699726f39d5070b707260469cb3048e7df22123b24083b0f20653837f464/thonny-4.1.0b1.dev0.tar.gz
+[2023-06-03 09:08:33] INFO root fetch - processPackages [thonny]: executing diffoscope
+[2023-06-03 09:08:33] INFO root fetch - processPackages [thonny]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/thonny-4.1.0b1.tar.gz tmp/thonny-4.1.0b1.dev0.tar.gz --markdown 20230603/t/thonny/4.1.0b1-4.1.0b1.dev0/diff.md --exclude *.pyd
+[2023-06-03 09:08:33] INFO root fetch - main [MainThread]: End processing [webint-editor]: success
+[2023-06-03 09:08:33] INFO root fetch - main [MainThread]: End processing [pytamaro]: success
+[2023-06-03 09:08:34] INFO root fetch - main [MainThread]: End processing [innerverz]: success
+[2023-06-03 09:08:38] INFO root fetch - main [MainThread]: End processing [thonny]: success
+[2023-06-03 09:10:48] INFO root fetch - main [MainThread]: End processing [mayan-edms]: success
+[2023-06-03 09:10:48] INFO root fetch - main [MainThread]: Store serial: [18357592]
