@@ -12132,3 +12132,81 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-06-03 20:51:50] INFO root fetch - main [MainThread]: End processing [airfold]: success
 [2023-06-03 20:52:20] INFO root fetch - main [MainThread]: End processing [vsc-dm]: success
 [2023-06-03 20:52:20] INFO root fetch - main [MainThread]: Store serial: [18361397]
+[2023-06-03 20:57:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18361397]
+[2023-06-03 20:57:35] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2023-06-03 20:57:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: relevanceai
+[2023-06-03 20:57:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: zuspec-arl-eval
+[2023-06-03 20:57:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pyobf2
+[2023-06-03 20:57:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: flxtrd
+[2023-06-03 20:57:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: classwork
+[2023-06-03 20:57:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: classwork
+[2023-06-03 20:57:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: nemo-library
+[2023-06-03 20:57:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: babi
+[2023-06-03 20:57:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: ttconv
+[2023-06-03 20:57:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: relevanceai
+[2023-06-03 20:57:36] INFO root fetch - processPackages [relevanceai]: New version: [4.0.7] Old Version: [4.0.6]
+[2023-06-03 20:57:36] INFO root fetch - processPackages [classwork]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-06-03 20:57:36] INFO root fetch - processPackages [pyobf2]: New version: [1.3.0] Old Version: [1.2.0]
+[2023-06-03 20:57:36] INFO root fetch - processPackages [zuspec-arl-eval]: New version: [0.0.1.5164950016] Old Version: [0.0.1.5101257616]
+[2023-06-03 20:57:36] INFO root fetch - processPackages [flxtrd]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-06-03 20:57:36] INFO root fetch - processPackages [nemo-library]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-06-03 20:57:36] INFO root fetch - processPackages [ttconv]: New version: [1.0.6b1] Old Version: [1.0.6]
+[2023-06-03 20:57:36] INFO root fetch - processPackages [classwork]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-06-03 20:57:36] INFO root fetch - processPackages [babi]: New version: [1.5.5] Old Version: [1.5.4]
+[2023-06-03 20:57:36] INFO root fetch - processPackages [relevanceai]: New version: [4.0.7] Old Version: [4.0.6]
+[2023-06-03 20:57:36] INFO root fetch - processPackages [relevanceai]: Downloading https://files.pythonhosted.org/packages/c9/f3/af6061598794f4e71b677ec2d96d6fe913acaf8d98182fe64efd8ceaded9/relevanceai-4.0.6.tar.gz
+[2023-06-03 20:57:36] INFO root fetch - processPackages [relevanceai]: Downloading https://files.pythonhosted.org/packages/c9/f3/af6061598794f4e71b677ec2d96d6fe913acaf8d98182fe64efd8ceaded9/relevanceai-4.0.6.tar.gz
+[2023-06-03 20:57:36] INFO root fetch - processPackages [classwork]: Downloading https://files.pythonhosted.org/packages/56/68/7aa5e25efd6e1a91be39c0ba0deb5158f00bbf9f7d9bdeaa299fdeb53783/classwork-0.0.1.tar.gz
+[2023-06-03 20:57:36] INFO root fetch - processPackages [nemo-library]: Downloading https://files.pythonhosted.org/packages/66/ac/0af8940bce37a3e24a886fe15a4d2d6dac287075bdda713858d48a38e271/nemo_library-1.0.1.tar.gz
+[2023-06-03 20:57:36] INFO root fetch - processPackages [classwork]: Downloading https://files.pythonhosted.org/packages/56/68/7aa5e25efd6e1a91be39c0ba0deb5158f00bbf9f7d9bdeaa299fdeb53783/classwork-0.0.1.tar.gz
+[2023-06-03 20:57:36] INFO root fetch - processPackages [ttconv]: Downloading https://files.pythonhosted.org/packages/a0/1f/a132eade6e94e1c1aad0e31e85fb057aa5fe4cb4dfb58a261e5145b8d235/ttconv-1.0.6.tar.gz
+[2023-06-03 20:57:36] INFO root fetch - processPackages [babi]: Downloading https://files.pythonhosted.org/packages/00/4e/d4897dbd7552c78f97f079dfa057ae794307b9403b43d28de38c54dfa0b0/babi-1.5.4.tar.gz
+[2023-06-03 20:57:36] INFO root fetch - processPackages [pyobf2]: Downloading https://files.pythonhosted.org/packages/99/a7/0919bcc994584aafe371ad9324d16cbedc414d321cfcf970ada028f3e76a/pyobf2-1.2.0.tar.gz
+[2023-06-03 20:57:36] INFO root fetch - processPackages [flxtrd]: Downloading https://files.pythonhosted.org/packages/8a/dc/b09c8a5d36d8b45cd50da73da3a32f466547833637ce1ce23b7282df3eb3/flxtrd-0.1.1.tar.gz
+[2023-06-03 20:57:36] INFO root fetch - processPackages [zuspec-arl-eval]: Downloading https://files.pythonhosted.org/packages/83/3e/6d4119b6fc26b8f3677f0e1568ffa889104c4c236d48800da8c99a26b227/zuspec_arl_eval-0.0.1.5164950016-cp39-cp39-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2023-06-03 20:57:36] INFO root fetch - processPackages [flxtrd]: executing diffoscope
+[2023-06-03 20:57:36] INFO root fetch - processPackages [flxtrd]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flxtrd-0.1.0.tar.gz tmp/flxtrd-0.1.1.tar.gz --markdown 20230603/f/flxtrd/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-06-03 20:57:36] INFO root fetch - processPackages [classwork]: Downloading https://files.pythonhosted.org/packages/a4/a4/dc0f35e207f313e8c89dd1e67d1d3054372dcf832c59ea404cdd466a2a48/classwork-0.0.2.tar.gz
+[2023-06-03 20:57:36] INFO root fetch - processPackages [classwork]: Downloading https://files.pythonhosted.org/packages/a4/a4/dc0f35e207f313e8c89dd1e67d1d3054372dcf832c59ea404cdd466a2a48/classwork-0.0.2.tar.gz
+[2023-06-03 20:57:36] INFO root fetch - processPackages [nemo-library]: Downloading https://files.pythonhosted.org/packages/c3/19/711f11cb6df6b0c18b66fe2073a1841b9db28004d5a8433bbcf1864fa5be/nemo_library-1.0.2.tar.gz
+[2023-06-03 20:57:36] INFO root fetch - processPackages [relevanceai]: Downloading https://files.pythonhosted.org/packages/f3/dd/a972280943bcc41b0169cf73454fa6d8018d94524145b808d97ec96afca5/relevanceai-4.0.7.tar.gz
+[2023-06-03 20:57:36] INFO root fetch - processPackages [relevanceai]: Downloading https://files.pythonhosted.org/packages/f3/dd/a972280943bcc41b0169cf73454fa6d8018d94524145b808d97ec96afca5/relevanceai-4.0.7.tar.gz
+[2023-06-03 20:57:36] INFO root fetch - processPackages [ttconv]: Downloading https://files.pythonhosted.org/packages/1f/b6/2597c28ffffced1486bcabc9a172eb5d8935d9c53007355d9f4157a76858/ttconv-1.0.6b1.tar.gz
+[2023-06-03 20:57:36] INFO root fetch - processPackages [babi]: Downloading https://files.pythonhosted.org/packages/89/e9/7819e4ce67076248a5b6b75df0ed812d479b4a22cf3a4ad24b026103024e/babi-1.5.5.tar.gz
+[2023-06-03 20:57:36] INFO root fetch - processPackages [classwork]: executing diffoscope
+[2023-06-03 20:57:36] INFO root fetch - processPackages [classwork]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/classwork-0.0.1.tar.gz tmp/classwork-0.0.2.tar.gz --markdown 20230603/c/classwork/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-06-03 20:57:36] INFO root fetch - processPackages [nemo-library]: executing diffoscope
+[2023-06-03 20:57:36] INFO root fetch - processPackages [nemo-library]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nemo_library-1.0.1.tar.gz tmp/nemo_library-1.0.2.tar.gz --markdown 20230603/n/nemo-library/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-06-03 20:57:36] INFO root fetch - processPackages [classwork]: executing diffoscope
+[2023-06-03 20:57:36] INFO root fetch - processPackages [classwork]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/classwork-0.0.1.tar.gz tmp/classwork-0.0.2.tar.gz --markdown 20230603/c/classwork/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-06-03 20:57:36] INFO root fetch - processPackages [zuspec-arl-eval]: executing diffoscope
+[2023-06-03 20:57:36] INFO root fetch - processPackages [zuspec-arl-eval]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zuspec_arl_eval-0.0.1.5101257616-cp39-cp39-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip tmp/zuspec_arl_eval-0.0.1.5164950016-cp39-cp39-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip --markdown 20230603/z/zuspec-arl-eval/0.0.1.5101257616-0.0.1.5164950016/diff.md --exclude *.pyd
+[2023-06-03 20:57:36] INFO root fetch - processPackages [pyobf2]: Downloading https://files.pythonhosted.org/packages/ec/ef/f6da0fc419797e35013e7ea9e7391f50be95e8b8a70f786ad6e3cfc5b516/pyobf2-1.3.0.tar.gz
+[2023-06-03 20:57:36] INFO root fetch - processPackages [ttconv]: executing diffoscope
+[2023-06-03 20:57:36] INFO root fetch - processPackages [ttconv]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ttconv-1.0.6.tar.gz tmp/ttconv-1.0.6b1.tar.gz --markdown 20230603/t/ttconv/1.0.6-1.0.6b1/diff.md --exclude *.pyd
+[2023-06-03 20:57:36] INFO root fetch - processPackages [babi]: executing diffoscope
+[2023-06-03 20:57:36] INFO root fetch - processPackages [babi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/babi-1.5.4.tar.gz tmp/babi-1.5.5.tar.gz --markdown 20230603/b/babi/1.5.4-1.5.5/diff.md --exclude *.pyd
+[2023-06-03 20:57:36] INFO root fetch - processPackages [relevanceai]: executing diffoscope
+[2023-06-03 20:57:36] INFO root fetch - processPackages [relevanceai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/relevanceai-4.0.6.tar.gz tmp/relevanceai-4.0.7.tar.gz --markdown 20230603/r/relevanceai/4.0.6-4.0.7/diff.md --exclude *.pyd
+[2023-06-03 20:57:36] INFO root fetch - processPackages [relevanceai]: executing diffoscope
+[2023-06-03 20:57:36] INFO root fetch - processPackages [relevanceai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/relevanceai-4.0.6.tar.gz tmp/relevanceai-4.0.7.tar.gz --markdown 20230603/r/relevanceai/4.0.6-4.0.7/diff.md --exclude *.pyd
+[2023-06-03 20:57:36] INFO root fetch - processPackages [pyobf2]: executing diffoscope
+[2023-06-03 20:57:36] INFO root fetch - processPackages [pyobf2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyobf2-1.2.0.tar.gz tmp/pyobf2-1.3.0.tar.gz --markdown 20230603/p/pyobf2/1.2.0-1.3.0/diff.md --exclude *.pyd
+[2023-06-03 20:57:37] INFO root fetch - processPackages [flxtrd]: Start processing: llm-generation-server
+[2023-06-03 20:57:37] INFO root fetch - main [MainThread]: End processing [flxtrd]: success
+[2023-06-03 20:57:38] INFO root fetch - processPackages [llm-generation-server]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-06-03 20:57:38] INFO root fetch - processPackages [llm-generation-server]: Downloading https://files.pythonhosted.org/packages/d7/79/d2a5201af9976eb13abece0c1ddc942db3e35983e6c94707fd1e6b2788d8/llm_generation_server-0.0.8.tar.gz
+[2023-06-03 20:57:38] INFO root fetch - main [MainThread]: End processing [nemo-library]: success
+[2023-06-03 20:57:38] INFO root fetch - main [MainThread]: End processing [classwork]: success
+[2023-06-03 20:57:38] INFO root fetch - main [MainThread]: End processing [classwork]: success
+[2023-06-03 20:57:38] INFO root fetch - main [MainThread]: End processing [pyobf2]: success
+[2023-06-03 20:57:38] INFO root fetch - processPackages [llm-generation-server]: Downloading https://files.pythonhosted.org/packages/1b/92/b7a81c1ae09072f32e01c8f4f15a71efb359935e76a2cdba62984beb2ea1/llm_generation_server-0.0.9.tar.gz
+[2023-06-03 20:57:38] INFO root fetch - processPackages [llm-generation-server]: executing diffoscope
+[2023-06-03 20:57:38] INFO root fetch - processPackages [llm-generation-server]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/llm_generation_server-0.0.8.tar.gz tmp/llm_generation_server-0.0.9.tar.gz --markdown 20230603/l/llm-generation-server/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-06-03 20:57:38] INFO root fetch - main [MainThread]: End processing [relevanceai]: success
+[2023-06-03 20:57:39] INFO root fetch - main [MainThread]: End processing [babi]: success
+[2023-06-03 20:57:39] INFO root fetch - main [MainThread]: End processing [relevanceai]: success
+[2023-06-03 20:57:40] INFO root fetch - main [MainThread]: End processing [ttconv]: success
+[2023-06-03 20:57:42] INFO root fetch - main [MainThread]: End processing [llm-generation-server]: success
+[2023-06-03 20:57:44] INFO root fetch - main [MainThread]: End processing [zuspec-arl-eval]: success
+[2023-06-03 20:57:44] INFO root fetch - main [MainThread]: Store serial: [18361434]
