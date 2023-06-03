@@ -10846,3 +10846,42 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-06-03 19:13:58] INFO root fetch - main [MainThread]: End processing [torch-adapters]: success
 [2023-06-03 19:13:58] INFO root fetch - main [MainThread]: End processing [atproto]: success
 [2023-06-03 19:13:58] INFO root fetch - main [MainThread]: Store serial: [18360662]
+[2023-06-03 19:19:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18360662]
+[2023-06-03 19:19:07] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-06-03 19:19:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: motionsenseapp
+[2023-06-03 19:19:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: Loden-9000
+[2023-06-03 19:19:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: dve-lumipy-preview
+[2023-06-03 19:19:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: TPDNE-utils
+[2023-06-03 19:19:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: sleeptimer
+[2023-06-03 19:19:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: mwxlib
+[2023-06-03 19:19:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: wizata-dsapi
+[2023-06-03 19:19:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: discord-advert-framework
+[2023-06-03 19:19:07] INFO root fetch - processPackages [TPDNE-utils]: New version: [0.0.8] Old Version: [0.0.7]
+[2023-06-03 19:19:07] INFO root fetch - processPackages [discord-advert-framework]: New version: [2.8.0] Old Version: [2.7.1]
+[2023-06-03 19:19:07] WARNING root fetch - processPackages [motionsenseapp]: Skipping, unable to determine old version
+[2023-06-03 19:19:07] INFO root fetch - main [MainThread]: End processing [motionsenseapp] error
+[2023-06-03 19:19:08] WARNING root fetch - processPackages [sleeptimer]: Skipping, unable to determine old version
+[2023-06-03 19:19:08] WARNING root fetch - processPackages [Loden-9000]: Skipping, unable to determine old version
+[2023-06-03 19:19:08] INFO root fetch - main [MainThread]: End processing [sleeptimer] error
+[2023-06-03 19:19:08] INFO root fetch - main [MainThread]: End processing [Loden-9000] error
+[2023-06-03 19:19:08] INFO root fetch - processPackages [mwxlib]: New version: [0.84.5] Old Version: [0.84.2]
+[2023-06-03 19:19:08] INFO root fetch - processPackages [dve-lumipy-preview]: New version: [0.1.99] Old Version: [0.1.98]
+[2023-06-03 19:19:08] INFO root fetch - processPackages [wizata-dsapi]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-06-03 19:19:08] INFO root fetch - processPackages [discord-advert-framework]: Downloading https://files.pythonhosted.org/packages/9c/cd/ca35d43c02d84576dcff7c6b55e67c3edc8ba2dac6ce2c056650a0ede687/discord-advert-framework-2.7.1.tar.gz
+[2023-06-03 19:19:08] INFO root fetch - processPackages [TPDNE-utils]: Downloading https://files.pythonhosted.org/packages/76/0f/65b063d42910f1ad525c2f24c3b0d106c072162d214daff76d86fe091b21/TPDNE-utils-0.0.8.tar.gz
+[2023-06-03 19:19:08] INFO root fetch - processPackages [mwxlib]: Downloading https://files.pythonhosted.org/packages/90/37/e704f34fa4ca4c540d58c29ae9e9f302782f65f5d7ff5abeb4b35fa1e02e/mwxlib-0.84.5-py3-none-any.whl
+[2023-06-03 19:19:08] INFO root fetch - processPackages [dve-lumipy-preview]: executing diffoscope
+[2023-06-03 19:19:08] INFO root fetch - processPackages [dve-lumipy-preview]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dve_lumipy_preview-0.1.98-py3-none-any.whl.zip tmp/dve_lumipy_preview-0.1.99-py3-none-any.whl.zip --markdown 20230603/d/dve-lumipy-preview/0.1.98-0.1.99/diff.md --exclude *.pyd
+[2023-06-03 19:19:08] INFO root fetch - processPackages [TPDNE-utils]: executing diffoscope
+[2023-06-03 19:19:08] INFO root fetch - processPackages [TPDNE-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/TPDNE-utils-0.0.7.tar.gz tmp/TPDNE-utils-0.0.8.tar.gz --markdown 20230603/T/TPDNE-utils/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2023-06-03 19:19:08] WARNING root fetch - processPackages [discord-advert-framework]: Skipping package: exceeds size limit 18320361>=10485760
+[2023-06-03 19:19:08] INFO root fetch - main [MainThread]: End processing [discord-advert-framework] error
+[2023-06-03 19:19:08] INFO root fetch - processPackages [wizata-dsapi]: executing diffoscope
+[2023-06-03 19:19:08] INFO root fetch - processPackages [wizata-dsapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wizata-dsapi-0.1.8.tar.gz tmp/wizata-dsapi-0.1.9.tar.gz --markdown 20230603/w/wizata-dsapi/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-06-03 19:19:08] INFO root fetch - processPackages [mwxlib]: executing diffoscope
+[2023-06-03 19:19:08] INFO root fetch - processPackages [mwxlib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mwxlib-0.84.2-py3-none-any.whl.zip tmp/mwxlib-0.84.5-py3-none-any.whl.zip --markdown 20230603/m/mwxlib/0.84.2-0.84.5/diff.md --exclude *.pyd
+[2023-06-03 19:19:09] INFO root fetch - main [MainThread]: End processing [TPDNE-utils]: success
+[2023-06-03 19:19:09] INFO root fetch - main [MainThread]: End processing [wizata-dsapi]: success
+[2023-06-03 19:19:09] INFO root fetch - main [MainThread]: End processing [mwxlib]: success
+[2023-06-03 19:19:10] INFO root fetch - main [MainThread]: End processing [dve-lumipy-preview]: success
+[2023-06-03 19:19:10] INFO root fetch - main [MainThread]: Store serial: [18360691]
