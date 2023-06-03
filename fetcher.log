@@ -8473,3 +8473,39 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-06-03 14:25:18] INFO root fetch - main [MainThread]: End processing [Chiplotle3]: success
 [2023-06-03 14:25:21] INFO root fetch - main [MainThread]: End processing [recipe-scrapers-ap-fork]: success
 [2023-06-03 14:25:21] INFO root fetch - main [MainThread]: Store serial: [18359228]
+[2023-06-03 14:30:26] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18359228]
+[2023-06-03 14:30:30] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-06-03 14:30:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyhop
+[2023-06-03 14:30:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: rattail-corepos
+[2023-06-03 14:30:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: AdminToolsDjango
+[2023-06-03 14:30:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: funga-eth
+[2023-06-03 14:30:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: rechtspraak-citations-extractor
+[2023-06-03 14:30:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: scratchdata
+[2023-06-03 14:30:30] WARNING root fetch - processPackages [scratchdata]: Skipping, unable to determine old version
+[2023-06-03 14:30:30] INFO root fetch - main [MainThread]: End processing [scratchdata] error
+[2023-06-03 14:30:30] INFO root fetch - processPackages [rechtspraak-citations-extractor]: New version: [1.0.3] Old Version: [1.0.2]
+[2023-06-03 14:30:30] INFO root fetch - processPackages [AdminToolsDjango]: New version: [1.0.5] Old Version: [1.0.3]
+[2023-06-03 14:30:30] INFO root fetch - processPackages [funga-eth]: New version: [0.7.0] Old Version: [0.6.7]
+[2023-06-03 14:30:30] INFO root fetch - processPackages [rattail-corepos]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-06-03 14:30:30] INFO root fetch - processPackages [pyhop]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-06-03 14:30:30] INFO root fetch - processPackages [rattail-corepos]: executing diffoscope
+[2023-06-03 14:30:30] INFO root fetch - processPackages [rattail-corepos]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rattail_corepos-0.1.8.tar.gz tmp/rattail_corepos-0.1.9.tar.gz --markdown 20230603/r/rattail-corepos/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-06-03 14:30:30] INFO root fetch - processPackages [rechtspraak-citations-extractor]: Downloading https://files.pythonhosted.org/packages/49/5d/843f50ef8fb945eaeb96fd443355dd454f1876269cd908b292ab78fbda8c/rechtspraak_citations_extractor-1.0.3.tar.gz
+[2023-06-03 14:30:30] INFO root fetch - processPackages [pyhop]: Downloading https://files.pythonhosted.org/packages/03/35/106cc5faa4986d7587ea4bf08fde7745d0e4271790e6744f70d4de4c7e92/pyhop-0.0.4.tar.gz
+[2023-06-03 14:30:30] INFO root fetch - processPackages [AdminToolsDjango]: Downloading https://files.pythonhosted.org/packages/99/27/bdcc58aa7f73d8ec29f763e7181b9b04c46ed90c78f043097e8bd7614b47/AdminToolsDjango-1.0.3.tar.gz
+[2023-06-03 14:30:30] INFO root fetch - processPackages [funga-eth]: Downloading https://files.pythonhosted.org/packages/33/d0/c2d6fe9e38edeccaee74b0f266741a3821464aedf9a513e0fb592fa726eb/funga-eth-0.7.0.tar.gz
+[2023-06-03 14:30:30] INFO root fetch - processPackages [rechtspraak-citations-extractor]: executing diffoscope
+[2023-06-03 14:30:30] INFO root fetch - processPackages [rechtspraak-citations-extractor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rechtspraak_citations_extractor-1.0.2.tar.gz tmp/rechtspraak_citations_extractor-1.0.3.tar.gz --markdown 20230603/r/rechtspraak-citations-extractor/1.0.2-1.0.3/diff.md --exclude *.pyd
+[2023-06-03 14:30:31] INFO root fetch - processPackages [funga-eth]: executing diffoscope
+[2023-06-03 14:30:31] INFO root fetch - processPackages [funga-eth]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/funga-eth-0.6.7.tar.gz tmp/funga-eth-0.7.0.tar.gz --markdown 20230603/f/funga-eth/0.6.7-0.7.0/diff.md --exclude *.pyd
+[2023-06-03 14:30:31] INFO root fetch - processPackages [pyhop]: executing diffoscope
+[2023-06-03 14:30:31] INFO root fetch - processPackages [pyhop]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyhop-0.0.3.tar.gz tmp/pyhop-0.0.4.tar.gz --markdown 20230603/p/pyhop/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-06-03 14:30:31] INFO root fetch - processPackages [AdminToolsDjango]: Downloading https://files.pythonhosted.org/packages/17/41/64a0cdc15a486d1ac68a3740c373f9f0922c74a29a68c705186d4b4e1fe5/AdminToolsDjango-1.0.5.tar.gz
+[2023-06-03 14:30:31] INFO root fetch - processPackages [AdminToolsDjango]: executing diffoscope
+[2023-06-03 14:30:31] INFO root fetch - processPackages [AdminToolsDjango]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/AdminToolsDjango-1.0.3.tar.gz tmp/AdminToolsDjango-1.0.5.tar.gz --markdown 20230603/A/AdminToolsDjango/1.0.3-1.0.5/diff.md --exclude *.pyd
+[2023-06-03 14:30:32] INFO root fetch - main [MainThread]: End processing [rechtspraak-citations-extractor]: success
+[2023-06-03 14:30:32] INFO root fetch - main [MainThread]: End processing [pyhop]: success
+[2023-06-03 14:30:32] INFO root fetch - main [MainThread]: End processing [funga-eth]: success
+[2023-06-03 14:30:32] INFO root fetch - main [MainThread]: End processing [AdminToolsDjango]: success
+[2023-06-03 14:30:32] INFO root fetch - main [MainThread]: End processing [rattail-corepos]: success
+[2023-06-03 14:30:32] INFO root fetch - main [MainThread]: Store serial: [18359245]
