@@ -5241,3 +5241,32 @@
 [2023-06-03 06:52:22] INFO root fetch - main [MainThread]: End processing [databricks-common]: success
 [2023-06-03 06:52:22] INFO root fetch - main [MainThread]: End processing [librarycreator]: success
 [2023-06-03 06:52:22] INFO root fetch - main [MainThread]: Store serial: [18357064]
+[2023-06-03 06:57:26] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18357064]
+[2023-06-03 06:57:31] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-06-03 06:57:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: odoo14-addon-sale-blanket-order
+[2023-06-03 06:57:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: Riskfolio-Lib
+[2023-06-03 06:57:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: odoo-addon-product-form-sale-link
+[2023-06-03 06:57:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: odoo-addons-oca-sale-workflow
+[2023-06-03 06:57:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: livereloadx
+[2023-06-03 06:57:31] INFO root fetch - processPackages [odoo14-addon-sale-blanket-order]: New version: [14.0.1.0.4.dev2] Old Version: [14.0.1.0.4.dev1]
+[2023-06-03 06:57:31] INFO root fetch - processPackages [Riskfolio-Lib]: New version: [4.3.0] Old Version: [4.2.0]
+[2023-06-03 06:57:31] INFO root fetch - processPackages [odoo-addon-product-form-sale-link]: New version: [15.0.1.0.0.3] Old Version: [15.0.1.0.0.2]
+[2023-06-03 06:57:31] INFO root fetch - processPackages [odoo-addons-oca-sale-workflow]: New version: [16.0.20230516.0] Old Version: [16.0.20230515.0]
+[2023-06-03 06:57:31] WARNING root fetch - processPackages [livereloadx]: Skipping, unable to determine old version
+[2023-06-03 06:57:31] INFO root fetch - main [MainThread]: End processing [livereloadx] error
+[2023-06-03 06:57:31] INFO root fetch - processPackages [Riskfolio-Lib]: Downloading https://files.pythonhosted.org/packages/ce/ff/32a0ad20efbbda6078446b555145ad2be0da65cace9023a5873b52c4d364/Riskfolio-Lib-4.2.0.tar.gz
+[2023-06-03 06:57:31] INFO root fetch - processPackages [odoo-addon-product-form-sale-link]: Downloading https://files.pythonhosted.org/packages/c1/46/2707c3c09a888511066cb3679b08865cdaeb63a9c23db97c1a90a4ba02f0/odoo_addon_product_form_sale_link-15.0.1.0.0.2-py3-none-any.whl
+[2023-06-03 06:57:31] WARNING root fetch - processPackages [Riskfolio-Lib]: Skipping package: exceeds size limit 12937068>=10485760
+[2023-06-03 06:57:31] INFO root fetch - main [MainThread]: End processing [Riskfolio-Lib] error
+[2023-06-03 06:57:31] INFO root fetch - processPackages [odoo14-addon-sale-blanket-order]: Downloading https://files.pythonhosted.org/packages/a9/c6/8d630e944d7b16c39205e76ffe2b604ea0f218ed5fb4449fff63fba754da/odoo14_addon_sale_blanket_order-14.0.1.0.4.dev2-py3-none-any.whl
+[2023-06-03 06:57:31] INFO root fetch - processPackages [odoo-addon-product-form-sale-link]: Downloading https://files.pythonhosted.org/packages/39/44/bf36668a78f04a604cb8eac15b1fa5d509eafb214080989f8a185d45d70f/odoo_addon_product_form_sale_link-15.0.1.0.0.3-py3-none-any.whl
+[2023-06-03 06:57:31] INFO root fetch - processPackages [odoo-addons-oca-sale-workflow]: executing diffoscope
+[2023-06-03 06:57:31] INFO root fetch - processPackages [odoo-addons-oca-sale-workflow]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addons_oca_sale_workflow-16.0.20230515.0-py3-none-any.whl.zip tmp/odoo_addons_oca_sale_workflow-16.0.20230516.0-py3-none-any.whl.zip --markdown 20230603/o/odoo-addons-oca-sale-workflow/16.0.20230515.0-16.0.20230516.0/diff.md --exclude *.pyd
+[2023-06-03 06:57:31] INFO root fetch - processPackages [odoo-addon-product-form-sale-link]: executing diffoscope
+[2023-06-03 06:57:31] INFO root fetch - processPackages [odoo-addon-product-form-sale-link]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_product_form_sale_link-15.0.1.0.0.2-py3-none-any.whl.zip tmp/odoo_addon_product_form_sale_link-15.0.1.0.0.3-py3-none-any.whl.zip --markdown 20230603/o/odoo-addon-product-form-sale-link/15.0.1.0.0.2-15.0.1.0.0.3/diff.md --exclude *.pyd
+[2023-06-03 06:57:31] INFO root fetch - processPackages [odoo14-addon-sale-blanket-order]: executing diffoscope
+[2023-06-03 06:57:31] INFO root fetch - processPackages [odoo14-addon-sale-blanket-order]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_sale_blanket_order-14.0.1.0.4.dev1-py3-none-any.whl.zip tmp/odoo14_addon_sale_blanket_order-14.0.1.0.4.dev2-py3-none-any.whl.zip --markdown 20230603/o/odoo14-addon-sale-blanket-order/14.0.1.0.4.dev1-14.0.1.0.4.dev2/diff.md --exclude *.pyd
+[2023-06-03 06:57:32] INFO root fetch - main [MainThread]: End processing [odoo-addons-oca-sale-workflow]: success
+[2023-06-03 06:57:32] INFO root fetch - main [MainThread]: End processing [odoo-addon-product-form-sale-link]: success
+[2023-06-03 06:57:32] INFO root fetch - main [MainThread]: End processing [odoo14-addon-sale-blanket-order]: success
+[2023-06-03 06:57:32] INFO root fetch - main [MainThread]: Store serial: [18357097]
