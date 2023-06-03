@@ -5270,3 +5270,54 @@
 [2023-06-03 06:57:32] INFO root fetch - main [MainThread]: End processing [odoo-addon-product-form-sale-link]: success
 [2023-06-03 06:57:32] INFO root fetch - main [MainThread]: End processing [odoo14-addon-sale-blanket-order]: success
 [2023-06-03 06:57:32] INFO root fetch - main [MainThread]: Store serial: [18357097]
+[2023-06-03 07:02:36] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18357097]
+[2023-06-03 07:02:41] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-06-03 07:02:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: gitlab-ci-generator
+[2023-06-03 07:02:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pydantic-tools
+[2023-06-03 07:02:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: customtkinterx
+[2023-06-03 07:02:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: yt-fts
+[2023-06-03 07:02:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: wnb
+[2023-06-03 07:02:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: haptools
+[2023-06-03 07:02:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: tflite-runtime-nightly
+[2023-06-03 07:02:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: automateeda
+[2023-06-03 07:02:41] INFO root fetch - processPackages [yt-fts]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-06-03 07:02:41] INFO root fetch - processPackages [customtkinterx]: New version: [0.2.0] Old Version: [0.1.5]
+[2023-06-03 07:02:41] INFO root fetch - processPackages [automateeda]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-06-03 07:02:41] INFO root fetch - processPackages [wnb]: New version: [0.1.12] Old Version: [0.1.11]
+[2023-06-03 07:02:41] INFO root fetch - processPackages [haptools]: New version: [0.3.0] Old Version: [0.2.1]
+[2023-06-03 07:02:41] INFO root fetch - processPackages [gitlab-ci-generator]: New version: [1.0.7] Old Version: [1.0.6]
+[2023-06-03 07:02:41] INFO root fetch - processPackages [pydantic-tools]: New version: [0.3.2] Old Version: [0.3.1]
+[2023-06-03 07:02:41] INFO root fetch - processPackages [tflite-runtime-nightly]: New version: [2.14.0.dev20230601] Old Version: [2.14.0.dev20230530]
+[2023-06-03 07:02:41] INFO root fetch - processPackages [yt-fts]: executing diffoscope
+[2023-06-03 07:02:41] INFO root fetch - processPackages [yt-fts]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yt-fts-0.1.8.tar.gz tmp/yt-fts-0.1.9.tar.gz --markdown 20230603/y/yt-fts/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-06-03 07:02:42] INFO root fetch - processPackages [tflite-runtime-nightly]: executing diffoscope
+[2023-06-03 07:02:42] INFO root fetch - processPackages [tflite-runtime-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tflite_runtime_nightly-2.14.0.dev20230530-cp39-cp39-manylinux2014_x86_64.whl.zip tmp/tflite_runtime_nightly-2.14.0.dev20230601-cp39-cp39-manylinux2014_x86_64.whl.zip --markdown 20230603/t/tflite-runtime-nightly/2.14.0.dev20230530-2.14.0.dev20230601/diff.md --exclude *.pyd
+[2023-06-03 07:02:42] INFO root fetch - processPackages [customtkinterx]: Downloading https://files.pythonhosted.org/packages/b2/f9/dd82093a9701eca15fee9d82ad9296e1ca9372878e914d9d10561a2faea4/customtkinterx-0.2.0.tar.gz
+[2023-06-03 07:02:42] INFO root fetch - processPackages [wnb]: Downloading https://files.pythonhosted.org/packages/a4/64/c05fee859dbb59d39ebeab2d727d41548b5ecab6b0c4a9af44dd69462743/wnb-0.1.11.tar.gz
+[2023-06-03 07:02:42] INFO root fetch - processPackages [automateeda]: Downloading https://files.pythonhosted.org/packages/55/0f/97c17b6680a42cce1298354709319934f232b39ad61769744c58f7dd0361/automateeda-0.0.4.tar.gz
+[2023-06-03 07:02:42] INFO root fetch - processPackages [gitlab-ci-generator]: Downloading https://files.pythonhosted.org/packages/4e/0e/3a1867c43bb96bed4824eaa6175647ba6ebe64d890f1c0406f45020e9c3d/gitlab-ci-generator-1.0.7.tar.gz
+[2023-06-03 07:02:42] INFO root fetch - processPackages [pydantic-tools]: Downloading https://files.pythonhosted.org/packages/5d/fa/dfb376562f1fde2491def3d89ab1a167234112fe0d0f7c935c5996922690/pydantic_tools-0.3.2.tar.gz
+[2023-06-03 07:02:42] INFO root fetch - processPackages [customtkinterx]: executing diffoscope
+[2023-06-03 07:02:42] INFO root fetch - processPackages [customtkinterx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/customtkinterx-0.1.5.tar.gz tmp/customtkinterx-0.2.0.tar.gz --markdown 20230603/c/customtkinterx/0.1.5-0.2.0/diff.md --exclude *.pyd
+[2023-06-03 07:02:42] INFO root fetch - processPackages [automateeda]: executing diffoscope
+[2023-06-03 07:02:42] INFO root fetch - processPackages [automateeda]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/automateeda-0.0.3.tar.gz tmp/automateeda-0.0.4.tar.gz --markdown 20230603/a/automateeda/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-06-03 07:02:42] INFO root fetch - processPackages [haptools]: Downloading https://files.pythonhosted.org/packages/1f/5e/ac9ec7006fcf089eeb87bc3e210e30fe93f08214d389faa2aeaf623181f1/haptools-0.2.1.tar.gz
+[2023-06-03 07:02:42] INFO root fetch - processPackages [gitlab-ci-generator]: executing diffoscope
+[2023-06-03 07:02:42] INFO root fetch - processPackages [gitlab-ci-generator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gitlab-ci-generator-1.0.6.tar.gz tmp/gitlab-ci-generator-1.0.7.tar.gz --markdown 20230603/g/gitlab-ci-generator/1.0.6-1.0.7/diff.md --exclude *.pyd
+[2023-06-03 07:02:42] INFO root fetch - processPackages [pydantic-tools]: executing diffoscope
+[2023-06-03 07:02:42] INFO root fetch - processPackages [pydantic-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pydantic_tools-0.3.1.tar.gz tmp/pydantic_tools-0.3.2.tar.gz --markdown 20230603/p/pydantic-tools/0.3.1-0.3.2/diff.md --exclude *.pyd
+[2023-06-03 07:02:42] INFO root fetch - processPackages [wnb]: Downloading https://files.pythonhosted.org/packages/a6/3b/2b6a3d68688a3ec0744a2c1a61c430ec10ef5a0001aea897cd559b33aab6/wnb-0.1.12.tar.gz
+[2023-06-03 07:02:42] INFO root fetch - processPackages [wnb]: executing diffoscope
+[2023-06-03 07:02:42] INFO root fetch - processPackages [wnb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wnb-0.1.11.tar.gz tmp/wnb-0.1.12.tar.gz --markdown 20230603/w/wnb/0.1.11-0.1.12/diff.md --exclude *.pyd
+[2023-06-03 07:02:42] INFO root fetch - processPackages [haptools]: Downloading https://files.pythonhosted.org/packages/cd/f0/ffea0e544806cab10a5010e7cae2d434a645082d0e92e9e9a44d8e00bc10/haptools-0.3.0.tar.gz
+[2023-06-03 07:02:42] INFO root fetch - processPackages [haptools]: executing diffoscope
+[2023-06-03 07:02:42] INFO root fetch - processPackages [haptools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/haptools-0.2.1.tar.gz tmp/haptools-0.3.0.tar.gz --markdown 20230603/h/haptools/0.2.1-0.3.0/diff.md --exclude *.pyd
+[2023-06-03 07:02:43] INFO root fetch - main [MainThread]: End processing [automateeda]: success
+[2023-06-03 07:02:43] INFO root fetch - main [MainThread]: End processing [pydantic-tools]: success
+[2023-06-03 07:02:43] INFO root fetch - main [MainThread]: End processing [gitlab-ci-generator]: success
+[2023-06-03 07:02:43] INFO root fetch - main [MainThread]: End processing [yt-fts]: success
+[2023-06-03 07:02:43] INFO root fetch - main [MainThread]: End processing [customtkinterx]: success
+[2023-06-03 07:02:43] INFO root fetch - main [MainThread]: End processing [wnb]: success
+[2023-06-03 07:02:43] INFO root fetch - main [MainThread]: End processing [haptools]: success
+[2023-06-03 07:03:12] INFO root fetch - main [MainThread]: End processing [tflite-runtime-nightly]: success
+[2023-06-03 07:03:12] INFO root fetch - main [MainThread]: Store serial: [18357131]
