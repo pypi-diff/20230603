@@ -11266,3 +11266,29 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-06-03 20:08:00] INFO root fetch - main [MainThread]: End processing [bspy]: success
 [2023-06-03 20:08:00] INFO root fetch - main [MainThread]: End processing [fim-utils]: success
 [2023-06-03 20:08:00] INFO root fetch - main [MainThread]: Store serial: [18360991]
+[2023-06-03 20:13:04] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18360991]
+[2023-06-03 20:13:09] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-06-03 20:13:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: browser-stealer
+[2023-06-03 20:13:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: apinum
+[2023-06-03 20:13:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: Sliw
+[2023-06-03 20:13:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pp-project-pkg
+[2023-06-03 20:13:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: ansible-playbook-grapher
+[2023-06-03 20:13:09] INFO root fetch - processPackages [apinum]: New version: [0.1.6] Old Version: [0.1.5]
+[2023-06-03 20:13:09] WARNING root fetch - processPackages [pp-project-pkg]: Skipping, unable to determine old version
+[2023-06-03 20:13:09] WARNING root fetch - processPackages [browser-stealer]: Skipping, unable to determine old version
+[2023-06-03 20:13:09] INFO root fetch - main [MainThread]: End processing [pp-project-pkg] error
+[2023-06-03 20:13:09] INFO root fetch - processPackages [Sliw]: New version: [0.0.5] Old Version: [0.0.3]
+[2023-06-03 20:13:09] INFO root fetch - main [MainThread]: End processing [browser-stealer] error
+[2023-06-03 20:13:09] INFO root fetch - processPackages [ansible-playbook-grapher]: New version: [2.0.0.dev2] Old Version: [2.0.0.dev0]
+[2023-06-03 20:13:09] INFO root fetch - processPackages [Sliw]: Downloading https://files.pythonhosted.org/packages/73/44/9b04c265b729481eae3fb7570153f7674da556bde2a28545f0b126e1eaa5/Sliw-0.0.3.tar.gz
+[2023-06-03 20:13:09] INFO root fetch - processPackages [apinum]: Downloading https://files.pythonhosted.org/packages/74/78/7adc86a99ab9585a372aa48f8b76d76927c7e0f76c59540f433bb95c936a/apinum-0.1.6.tar.gz
+[2023-06-03 20:13:09] INFO root fetch - processPackages [Sliw]: executing diffoscope
+[2023-06-03 20:13:09] INFO root fetch - processPackages [Sliw]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Sliw-0.0.3.tar.gz tmp/sliw-0.0.5.tar.gz --markdown 20230603/S/Sliw/0.0.3-0.0.5/diff.md --exclude *.pyd
+[2023-06-03 20:13:10] INFO root fetch - processPackages [apinum]: executing diffoscope
+[2023-06-03 20:13:10] INFO root fetch - processPackages [apinum]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/apinum-0.1.5.tar.gz tmp/apinum-0.1.6.tar.gz --markdown 20230603/a/apinum/0.1.5-0.1.6/diff.md --exclude *.pyd
+[2023-06-03 20:13:10] INFO root fetch - processPackages [ansible-playbook-grapher]: executing diffoscope
+[2023-06-03 20:13:10] INFO root fetch - processPackages [ansible-playbook-grapher]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ansible_playbook_grapher-2.0.0.dev0-py2.py3-none-any.whl.zip tmp/ansible_playbook_grapher-2.0.0.dev2-py2.py3-none-any.whl.zip --markdown 20230603/a/ansible-playbook-grapher/2.0.0.dev0-2.0.0.dev2/diff.md --exclude *.pyd
+[2023-06-03 20:13:10] INFO root fetch - main [MainThread]: End processing [Sliw]: success
+[2023-06-03 20:13:11] INFO root fetch - main [MainThread]: End processing [ansible-playbook-grapher]: success
+[2023-06-03 20:14:03] INFO root fetch - main [MainThread]: End processing [apinum]: success
+[2023-06-03 20:14:03] INFO root fetch - main [MainThread]: Store serial: [18361010]
