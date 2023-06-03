@@ -5223,3 +5223,21 @@
 [2023-06-03 06:46:19] INFO root fetch - main [MainThread]: End processing [causalwsnmtes]: success
 [2023-06-03 06:47:12] INFO root fetch - main [MainThread]: End processing [tjax]: success
 [2023-06-03 06:47:12] INFO root fetch - main [MainThread]: Store serial: [18357056]
+[2023-06-03 06:52:16] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18357056]
+[2023-06-03 06:52:20] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-06-03 06:52:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: librarycreator
+[2023-06-03 06:52:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: databricks-common
+[2023-06-03 06:52:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: AdminToolsDjango
+[2023-06-03 06:52:20] INFO root fetch - processPackages [librarycreator]: New version: [1.1.0] Old Version: [1.0.0]
+[2023-06-03 06:52:20] WARNING root fetch - processPackages [AdminToolsDjango]: Skipping, unable to determine old version
+[2023-06-03 06:52:20] INFO root fetch - processPackages [databricks-common]: New version: [0.1.8] Old Version: [0.1.7]
+[2023-06-03 06:52:20] INFO root fetch - main [MainThread]: End processing [AdminToolsDjango] error
+[2023-06-03 06:52:21] INFO root fetch - processPackages [librarycreator]: Downloading https://files.pythonhosted.org/packages/5b/cf/7e331730c547bb3045598702e0299c6642c9963c4de2ede2517d0b0a09c5/librarycreator-1.1.0-py3-none-any.whl
+[2023-06-03 06:52:21] INFO root fetch - processPackages [librarycreator]: executing diffoscope
+[2023-06-03 06:52:21] INFO root fetch - processPackages [librarycreator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/librarycreator-1.0.0-py3-none-any.whl.zip tmp/librarycreator-1.1.0-py3-none-any.whl.zip --markdown 20230603/l/librarycreator/1.0.0-1.1.0/diff.md --exclude *.pyd
+[2023-06-03 06:52:21] INFO root fetch - processPackages [databricks-common]: Downloading https://files.pythonhosted.org/packages/ce/76/a0da4831d71463563c2c38e50e1e7f92559a22747fbd8de8ea75b011bd23/databricks_common-0.1.8.tar.gz
+[2023-06-03 06:52:21] INFO root fetch - processPackages [databricks-common]: executing diffoscope
+[2023-06-03 06:52:21] INFO root fetch - processPackages [databricks-common]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/databricks_common-0.1.7.tar.gz tmp/databricks_common-0.1.8.tar.gz --markdown 20230603/d/databricks-common/0.1.7-0.1.8/diff.md --exclude *.pyd
+[2023-06-03 06:52:22] INFO root fetch - main [MainThread]: End processing [databricks-common]: success
+[2023-06-03 06:52:22] INFO root fetch - main [MainThread]: End processing [librarycreator]: success
+[2023-06-03 06:52:22] INFO root fetch - main [MainThread]: Store serial: [18357064]
