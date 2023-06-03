@@ -5781,3 +5781,26 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-06-03 08:25:13] INFO root fetch - main [MainThread]: End processing [intercom-test]: success
 [2023-06-03 08:25:13] INFO root fetch - main [MainThread]: End processing [travis-emulator]: success
 [2023-06-03 08:25:13] INFO root fetch - main [MainThread]: Store serial: [18357391]
+[2023-06-03 08:30:17] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18357391]
+[2023-06-03 08:30:22] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-06-03 08:30:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: coconut-develop
+[2023-06-03 08:30:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: MetodosNumericosElementares
+[2023-06-03 08:30:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: shaggy
+[2023-06-03 08:30:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pg-bulk-ingest
+[2023-06-03 08:30:22] WARNING root fetch - processPackages [MetodosNumericosElementares]: Skipping, unable to determine old version
+[2023-06-03 08:30:22] INFO root fetch - main [MainThread]: End processing [MetodosNumericosElementares] error
+[2023-06-03 08:30:22] INFO root fetch - processPackages [shaggy]: New version: [1.0.3] Old Version: [1.0.2]
+[2023-06-03 08:30:22] INFO root fetch - processPackages [pg-bulk-ingest]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-06-03 08:30:22] INFO root fetch - processPackages [coconut-develop]: New version: [3.0.2.post0.dev4] Old Version: [3.0.2.post0.dev3]
+[2023-06-03 08:30:22] INFO root fetch - processPackages [pg-bulk-ingest]: executing diffoscope
+[2023-06-03 08:30:22] INFO root fetch - processPackages [pg-bulk-ingest]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pg_bulk_ingest-0.0.8.tar.gz tmp/pg_bulk_ingest-0.0.9.tar.gz --markdown 20230603/p/pg-bulk-ingest/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-06-03 08:30:22] INFO root fetch - processPackages [shaggy]: Downloading https://files.pythonhosted.org/packages/3a/cf/7b3a31410be285618f23c87358eb781457c7d3ff0a74914e12bcaf03fdfe/shaggy-1.0.3.tar.gz
+[2023-06-03 08:30:22] INFO root fetch - processPackages [coconut-develop]: Downloading https://files.pythonhosted.org/packages/7b/36/b819898229598f765d5b4446ad55a1f887206f73f57273868d07cfdb7b77/coconut-develop-3.0.2.post0.dev4.tar.gz
+[2023-06-03 08:30:22] INFO root fetch - processPackages [shaggy]: executing diffoscope
+[2023-06-03 08:30:22] INFO root fetch - processPackages [shaggy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/shaggy-1.0.2.tar.gz tmp/shaggy-1.0.3.tar.gz --markdown 20230603/s/shaggy/1.0.2-1.0.3/diff.md --exclude *.pyd
+[2023-06-03 08:30:22] INFO root fetch - processPackages [coconut-develop]: executing diffoscope
+[2023-06-03 08:30:22] INFO root fetch - processPackages [coconut-develop]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/coconut-develop-3.0.2.post0.dev3.tar.gz tmp/coconut-develop-3.0.2.post0.dev4.tar.gz --markdown 20230603/c/coconut-develop/3.0.2.post0.dev3-3.0.2.post0.dev4/diff.md --exclude *.pyd
+[2023-06-03 08:30:23] INFO root fetch - main [MainThread]: End processing [pg-bulk-ingest]: success
+[2023-06-03 08:30:24] INFO root fetch - main [MainThread]: End processing [coconut-develop]: success
+[2023-06-03 08:31:17] INFO root fetch - main [MainThread]: End processing [shaggy]: success
+[2023-06-03 08:31:17] INFO root fetch - main [MainThread]: Store serial: [18357409]
