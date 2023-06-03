@@ -4292,3 +4292,28 @@
 [2023-06-03 04:28:53] INFO root fetch - main [MainThread]: End processing [faddr]: success
 [2023-06-03 04:28:53] INFO root fetch - main [MainThread]: End processing [click-reviewers-tools]: success
 [2023-06-03 04:28:53] INFO root fetch - main [MainThread]: Store serial: [18356430]
+[2023-06-03 04:33:57] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18356430]
+[2023-06-03 04:34:02] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-06-03 04:34:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: thirdai
+[2023-06-03 04:34:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: Bigsansar
+[2023-06-03 04:34:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: archs4py
+[2023-06-03 04:34:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: coiled
+[2023-06-03 04:34:02] WARNING root fetch - processPackages [archs4py]: Skipping, unable to determine old version
+[2023-06-03 04:34:02] INFO root fetch - main [MainThread]: End processing [archs4py] error
+[2023-06-03 04:34:02] INFO root fetch - processPackages [Bigsansar]: New version: [1.6.2] Old Version: [1.6.1]
+[2023-06-03 04:34:02] INFO root fetch - processPackages [thirdai]: New version: [0.7.4] Old Version: [0.7.3]
+[2023-06-03 04:34:02] INFO root fetch - processPackages [coiled]: New version: [0.7.1.dev6] Old Version: [0.7.1.dev5]
+[2023-06-03 04:34:02] INFO root fetch - processPackages [Bigsansar]: Downloading https://files.pythonhosted.org/packages/99/8b/124c0954b39c58c2685ed7d351ad8d0a4995d28d39f25a8620b4f3a29945/Bigsansar-1.6.1.tar.gz
+[2023-06-03 04:34:02] INFO root fetch - processPackages [coiled]: Downloading https://files.pythonhosted.org/packages/94/99/c779b352dc0c0bfae83a0e5a5f0f01c66fca6b0a57977615c732028a11c6/coiled-0.7.1.dev6.tar.gz
+[2023-06-03 04:34:02] INFO root fetch - processPackages [thirdai]: Downloading https://files.pythonhosted.org/packages/42/c9/1b83890f457c92d76fc0342ab68b860e693df8c9e7bdcfdac03a2cb2f865/thirdai-0.7.4-cp39-cp39-win_amd64.whl
+[2023-06-03 04:34:02] INFO root fetch - processPackages [Bigsansar]: Downloading https://files.pythonhosted.org/packages/87/7d/df66c7db3f9f976c49179a614dd39d852e9127f901407063ac236a99e1f7/Bigsansar-1.6.2.tar.gz
+[2023-06-03 04:34:03] INFO root fetch - processPackages [coiled]: executing diffoscope
+[2023-06-03 04:34:03] INFO root fetch - processPackages [coiled]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/coiled-0.7.1.dev5.tar.gz tmp/coiled-0.7.1.dev6.tar.gz --markdown 20230603/c/coiled/0.7.1.dev5-0.7.1.dev6/diff.md --exclude *.pyd
+[2023-06-03 04:34:03] INFO root fetch - processPackages [Bigsansar]: executing diffoscope
+[2023-06-03 04:34:03] INFO root fetch - processPackages [Bigsansar]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Bigsansar-1.6.1.tar.gz tmp/Bigsansar-1.6.2.tar.gz --markdown 20230603/B/Bigsansar/1.6.1-1.6.2/diff.md --exclude *.pyd
+[2023-06-03 04:34:04] INFO root fetch - main [MainThread]: End processing [coiled]: success
+[2023-06-03 04:34:04] INFO root fetch - processPackages [thirdai]: executing diffoscope
+[2023-06-03 04:34:04] INFO root fetch - processPackages [thirdai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/thirdai-0.7.3-cp39-cp39-win_amd64.whl.zip tmp/thirdai-0.7.4-cp39-cp39-win_amd64.whl.zip --markdown 20230603/t/thirdai/0.7.3-0.7.4/diff.md --exclude *.pyd
+[2023-06-03 04:34:05] INFO root fetch - main [MainThread]: End processing [Bigsansar]: success
+[2023-06-03 04:34:09] INFO root fetch - main [MainThread]: End processing [thirdai]: success
+[2023-06-03 04:34:09] INFO root fetch - main [MainThread]: Store serial: [18356456]
