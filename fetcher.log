@@ -13179,3 +13179,68 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-06-03 22:55:08] INFO root fetch - main [MainThread]: End processing [TradeGate]: success
 [2023-06-03 22:55:08] INFO root fetch - main [MainThread]: End processing [martin-binance]: success
 [2023-06-03 22:55:08] INFO root fetch - main [MainThread]: Store serial: [18362096]
+[2023-06-03 23:00:13] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18362096]
+[2023-06-03 23:00:17] INFO root fetch - main [MainThread]: Found 12 changed packages
+[2023-06-03 23:00:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: plotbitrate
+[2023-06-03 23:00:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: relevanceai
+[2023-06-03 23:00:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: kalm
+[2023-06-03 23:00:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: relevanceai
+[2023-06-03 23:00:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: philbot-voice
+[2023-06-03 23:00:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: python-selve-new
+[2023-06-03 23:00:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: repo-chat
+[2023-06-03 23:00:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: zibanu-django
+[2023-06-03 23:00:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: cvxreg
+[2023-06-03 23:00:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: relevanceai
+[2023-06-03 23:00:18] WARNING root fetch - processPackages [repo-chat]: Skipping, unable to determine old version
+[2023-06-03 23:00:18] INFO root fetch - processPackages [repo-chat]: Start processing: TradeGate
+[2023-06-03 23:00:18] INFO root fetch - main [MainThread]: End processing [repo-chat] error
+[2023-06-03 23:00:18] INFO root fetch - processPackages [python-selve-new]: New version: [2.2.0] Old Version: [2.1.9]
+[2023-06-03 23:00:18] INFO root fetch - processPackages [plotbitrate]: New version: [1.1.1.0] Old Version: [1.1.0.0]
+[2023-06-03 23:00:18] INFO root fetch - processPackages [philbot-voice]: New version: [1.7.5] Old Version: [1.7.4]
+[2023-06-03 23:00:18] INFO root fetch - processPackages [cvxreg]: New version: [0.0.5] Old Version: [0.0.3]
+[2023-06-03 23:00:18] INFO root fetch - processPackages [zibanu-django]: New version: [1.2.0a9] Old Version: [1.2.0a8]
+[2023-06-03 23:00:18] INFO root fetch - processPackages [relevanceai]: New version: [4.0.9] Old Version: [4.0.8]
+[2023-06-03 23:00:18] INFO root fetch - processPackages [kalm]: New version: [0.6.9] Old Version: [0.6.8]
+[2023-06-03 23:00:18] INFO root fetch - processPackages [TradeGate]: New version: [0.3.8.5] Old Version: [0.3.8.4]
+[2023-06-03 23:00:18] INFO root fetch - processPackages [relevanceai]: New version: [4.0.9] Old Version: [4.0.8]
+[2023-06-03 23:00:18] INFO root fetch - processPackages [relevanceai]: New version: [4.0.9] Old Version: [4.0.8]
+[2023-06-03 23:00:18] INFO root fetch - processPackages [relevanceai]: executing diffoscope
+[2023-06-03 23:00:18] INFO root fetch - processPackages [relevanceai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/relevanceai-4.0.8.tar.gz tmp/relevanceai-4.0.9.tar.gz --markdown 20230603/r/relevanceai/4.0.8-4.0.9/diff.md --exclude *.pyd
+[2023-06-03 23:00:18] INFO root fetch - processPackages [kalm]: executing diffoscope
+[2023-06-03 23:00:18] INFO root fetch - processPackages [kalm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kalm-0.6.8.tar.gz tmp/kalm-0.6.9.tar.gz --markdown 20230603/k/kalm/0.6.8-0.6.9/diff.md --exclude *.pyd
+[2023-06-03 23:00:18] INFO root fetch - processPackages [plotbitrate]: executing diffoscope
+[2023-06-03 23:00:18] INFO root fetch - processPackages [plotbitrate]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/plotbitrate-1.1.0.0-py3-none-any.whl.zip tmp/plotbitrate-1.1.1.0-py3-none-any.whl.zip --markdown 20230603/p/plotbitrate/1.1.0.0-1.1.1.0/diff.md --exclude *.pyd
+[2023-06-03 23:00:18] INFO root fetch - processPackages [relevanceai]: executing diffoscope
+[2023-06-03 23:00:18] INFO root fetch - processPackages [relevanceai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/relevanceai-4.0.8.tar.gz tmp/relevanceai-4.0.9.tar.gz --markdown 20230603/r/relevanceai/4.0.8-4.0.9/diff.md --exclude *.pyd
+[2023-06-03 23:00:18] INFO root fetch - processPackages [zibanu-django]: executing diffoscope
+[2023-06-03 23:00:18] INFO root fetch - processPackages [zibanu-django]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zibanu-django-1.2.0a8.tar.gz tmp/zibanu-django-1.2.0a9.tar.gz --markdown 20230603/z/zibanu-django/1.2.0a8-1.2.0a9/diff.md --exclude *.pyd
+[2023-06-03 23:00:18] INFO root fetch - processPackages [relevanceai]: executing diffoscope
+[2023-06-03 23:00:18] INFO root fetch - processPackages [relevanceai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/relevanceai-4.0.8.tar.gz tmp/relevanceai-4.0.9.tar.gz --markdown 20230603/r/relevanceai/4.0.8-4.0.9/diff.md --exclude *.pyd
+[2023-06-03 23:00:18] INFO root fetch - processPackages [philbot-voice]: Downloading https://files.pythonhosted.org/packages/80/64/ad11e6c3167480df14a12256a3508fbfad5b9d88c86448a0151ae43cfb10/philbot_voice-1.7.5.tar.gz
+[2023-06-03 23:00:18] INFO root fetch - processPackages [TradeGate]: Downloading https://files.pythonhosted.org/packages/12/40/8ea82d296391f0ca869ebbe2229d9d6562fd327a33924f04ed95fa9124e1/TradeGate-0.3.8.5.tar.gz
+[2023-06-03 23:00:18] INFO root fetch - processPackages [python-selve-new]: Downloading https://files.pythonhosted.org/packages/1e/13/7a02ff057b88f631fff2235bcec2abfad9d6e194b3c643cf5f58fe792c69/python-selve-new-2.2.0.tar.gz
+[2023-06-03 23:00:18] INFO root fetch - processPackages [philbot-voice]: executing diffoscope
+[2023-06-03 23:00:18] INFO root fetch - processPackages [philbot-voice]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/philbot_voice-1.7.4.tar.gz tmp/philbot_voice-1.7.5.tar.gz --markdown 20230603/p/philbot-voice/1.7.4-1.7.5/diff.md --exclude *.pyd
+[2023-06-03 23:00:18] INFO root fetch - processPackages [cvxreg]: Downloading https://files.pythonhosted.org/packages/e6/a6/b1c63d1d7c3ed63b70ce007cfe1c9079fb5d43f974e97187994884682116/cvxreg-0.0.5.tar.gz
+[2023-06-03 23:00:18] INFO root fetch - processPackages [python-selve-new]: executing diffoscope
+[2023-06-03 23:00:18] INFO root fetch - processPackages [python-selve-new]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python-selve-new-2.1.9.tar.gz tmp/python-selve-new-2.2.0.tar.gz --markdown 20230603/p/python-selve-new/2.1.9-2.2.0/diff.md --exclude *.pyd
+[2023-06-03 23:00:18] INFO root fetch - processPackages [cvxreg]: executing diffoscope
+[2023-06-03 23:00:18] INFO root fetch - processPackages [cvxreg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cvxreg-0.0.3.tar.gz tmp/cvxreg-0.0.5.tar.gz --markdown 20230603/c/cvxreg/0.0.3-0.0.5/diff.md --exclude *.pyd
+[2023-06-03 23:00:18] INFO root fetch - processPackages [TradeGate]: executing diffoscope
+[2023-06-03 23:00:18] INFO root fetch - processPackages [TradeGate]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/TradeGate-0.3.8.4.tar.gz tmp/TradeGate-0.3.8.5.tar.gz --markdown 20230603/T/TradeGate/0.3.8.4-0.3.8.5/diff.md --exclude *.pyd
+[2023-06-03 23:00:19] INFO root fetch - processPackages [kalm]: Start processing: sftp-uploader
+[2023-06-03 23:00:19] INFO root fetch - main [MainThread]: End processing [kalm]: success
+[2023-06-03 23:00:19] INFO root fetch - processPackages [sftp-uploader]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-06-03 23:00:19] INFO root fetch - processPackages [sftp-uploader]: executing diffoscope
+[2023-06-03 23:00:19] INFO root fetch - processPackages [sftp-uploader]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sftp_uploader-1.0.8.tar.gz tmp/sftp_uploader-1.0.9.tar.gz --markdown 20230603/s/sftp-uploader/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-06-03 23:00:19] INFO root fetch - main [MainThread]: End processing [relevanceai]: success
+[2023-06-03 23:00:19] INFO root fetch - main [MainThread]: End processing [plotbitrate]: success
+[2023-06-03 23:00:20] INFO root fetch - main [MainThread]: End processing [philbot-voice]: success
+[2023-06-03 23:00:20] INFO root fetch - main [MainThread]: End processing [relevanceai]: success
+[2023-06-03 23:00:20] INFO root fetch - main [MainThread]: End processing [cvxreg]: success
+[2023-06-03 23:00:20] INFO root fetch - main [MainThread]: End processing [relevanceai]: success
+[2023-06-03 23:00:20] INFO root fetch - main [MainThread]: End processing [python-selve-new]: success
+[2023-06-03 23:00:20] INFO root fetch - main [MainThread]: End processing [sftp-uploader]: success
+[2023-06-03 23:00:21] INFO root fetch - main [MainThread]: End processing [zibanu-django]: success
+[2023-06-03 23:00:22] INFO root fetch - main [MainThread]: End processing [TradeGate]: success
+[2023-06-03 23:00:22] INFO root fetch - main [MainThread]: Store serial: [18362132]
