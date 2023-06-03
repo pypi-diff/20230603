@@ -9114,3 +9114,24 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-06-03 15:34:54] INFO root fetch - main [MainThread]: End processing [terratalk]: success
 [2023-06-03 15:34:56] INFO root fetch - main [MainThread]: End processing [smart-app-framework]: success
 [2023-06-03 15:34:56] INFO root fetch - main [MainThread]: Store serial: [18359580]
+[2023-06-03 15:40:00] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18359580]
+[2023-06-03 15:40:04] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-06-03 15:40:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: all-fives-domino
+[2023-06-03 15:40:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: wclone
+[2023-06-03 15:40:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: nh3
+[2023-06-03 15:40:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: aiodiskqueue
+[2023-06-03 15:40:04] INFO root fetch - processPackages [aiodiskqueue]: New version: [0.1.0b7] Old Version: [0.1.0b5]
+[2023-06-03 15:40:04] WARNING root fetch - processPackages [wclone]: Skipping, unable to determine old version
+[2023-06-03 15:40:04] INFO root fetch - main [MainThread]: End processing [wclone] error
+[2023-06-03 15:40:04] INFO root fetch - processPackages [all-fives-domino]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-06-03 15:40:04] INFO root fetch - processPackages [nh3]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-06-03 15:40:05] INFO root fetch - processPackages [aiodiskqueue]: executing diffoscope
+[2023-06-03 15:40:05] INFO root fetch - processPackages [aiodiskqueue]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aiodiskqueue-0.1.0b5.tar.gz tmp/aiodiskqueue-0.1.0b7.tar.gz --markdown 20230603/a/aiodiskqueue/0.1.0b5-0.1.0b7/diff.md --exclude *.pyd
+[2023-06-03 15:40:05] INFO root fetch - processPackages [all-fives-domino]: executing diffoscope
+[2023-06-03 15:40:05] INFO root fetch - processPackages [all-fives-domino]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/all-fives-domino-1.0.8.tar.gz tmp/all-fives-domino-1.0.9.tar.gz --markdown 20230603/a/all-fives-domino/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-06-03 15:40:05] INFO root fetch - processPackages [nh3]: executing diffoscope
+[2023-06-03 15:40:05] INFO root fetch - processPackages [nh3]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nh3-0.2.8.tar.gz tmp/nh3-0.2.9.tar.gz --markdown 20230603/n/nh3/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2023-06-03 15:40:06] INFO root fetch - main [MainThread]: End processing [aiodiskqueue]: success
+[2023-06-03 15:40:06] INFO root fetch - main [MainThread]: End processing [nh3]: success
+[2023-06-03 15:40:06] INFO root fetch - main [MainThread]: End processing [all-fives-domino]: success
+[2023-06-03 15:40:06] INFO root fetch - main [MainThread]: Store serial: [18359607]
