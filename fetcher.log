@@ -10417,3 +10417,51 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-06-03 18:21:49] INFO root fetch - main [MainThread]: End processing [schemathesis]: success
 [2023-06-03 18:21:51] INFO root fetch - main [MainThread]: End processing [PySide6-Fluent-Widgets]: success
 [2023-06-03 18:21:51] INFO root fetch - main [MainThread]: Store serial: [18360427]
+[2023-06-03 18:26:56] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18360427]
+[2023-06-03 18:27:01] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-06-03 18:27:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: custom-numbers
+[2023-06-03 18:27:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pychedule
+[2023-06-03 18:27:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: yt-idefix
+[2023-06-03 18:27:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: richdb
+[2023-06-03 18:27:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: multidyndnscli
+[2023-06-03 18:27:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: cdxbasics
+[2023-06-03 18:27:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: kevin-toolbox-dev
+[2023-06-03 18:27:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: mindmate
+[2023-06-03 18:27:01] INFO root fetch - processPackages [multidyndnscli]: New version: [0.1.6] Old Version: [0.1.5]
+[2023-06-03 18:27:01] INFO root fetch - processPackages [pychedule]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-06-03 18:27:01] WARNING root fetch - processPackages [custom-numbers]: Skipping, unable to determine old version
+[2023-06-03 18:27:01] INFO root fetch - processPackages [richdb]: New version: [0.1.5] Old Version: [0.1.4]
+[2023-06-03 18:27:01] INFO root fetch - main [MainThread]: End processing [custom-numbers] error
+[2023-06-03 18:27:01] INFO root fetch - processPackages [mindmate]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-06-03 18:27:01] INFO root fetch - processPackages [kevin-toolbox-dev]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-06-03 18:27:01] INFO root fetch - processPackages [yt-idefix]: New version: [2.2.0] Old Version: [2.1.0]
+[2023-06-03 18:27:01] INFO root fetch - processPackages [cdxbasics]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-06-03 18:27:01] INFO root fetch - processPackages [cdxbasics]: executing diffoscope
+[2023-06-03 18:27:01] INFO root fetch - processPackages [cdxbasics]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdxbasics-0.2.8.tar.gz tmp/cdxbasics-0.2.9.tar.gz --markdown 20230603/c/cdxbasics/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2023-06-03 18:27:01] INFO root fetch - processPackages [mindmate]: Downloading https://files.pythonhosted.org/packages/71/a2/5916c00b0718e6c74fc6d1c6310bf148eb3ac7f3476d0b736c93e5b2f445/mindmate-0.0.3.tar.gz
+[2023-06-03 18:27:01] INFO root fetch - processPackages [multidyndnscli]: Downloading https://files.pythonhosted.org/packages/5f/5c/bb45b16eedba17266bcb42e14b5cbe08314089476fde833e3adb87dc67c2/multidyndnscli-0.1.6.tar.gz
+[2023-06-03 18:27:01] INFO root fetch - processPackages [pychedule]: Downloading https://files.pythonhosted.org/packages/58/67/75f0d327b96f60d9a419a823718240868bada29452c9ee57998f45996da3/pychedule-0.0.5-py3-none-any.whl
+[2023-06-03 18:27:01] INFO root fetch - processPackages [richdb]: Downloading https://files.pythonhosted.org/packages/58/eb/c266605fafc5d8e0a675a36592bce6cfe82edf8d223c481d5135566d6dde/richdb-0.1.4.tar.gz
+[2023-06-03 18:27:01] INFO root fetch - processPackages [multidyndnscli]: executing diffoscope
+[2023-06-03 18:27:01] INFO root fetch - processPackages [multidyndnscli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/multidyndnscli-0.1.5.tar.gz tmp/multidyndnscli-0.1.6.tar.gz --markdown 20230603/m/multidyndnscli/0.1.5-0.1.6/diff.md --exclude *.pyd
+[2023-06-03 18:27:01] INFO root fetch - processPackages [pychedule]: executing diffoscope
+[2023-06-03 18:27:01] INFO root fetch - processPackages [pychedule]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pychedule-0.0.4-py3-none-any.whl.zip tmp/pychedule-0.0.5-py3-none-any.whl.zip --markdown 20230603/p/pychedule/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-06-03 18:27:01] INFO root fetch - processPackages [yt-idefix]: Downloading https://files.pythonhosted.org/packages/a4/4f/b35e0b74bf50240df0ab6e1af4d022485d8ed52512323f2a7a402549798f/yt_idefix-2.2.0.tar.gz
+[2023-06-03 18:27:01] INFO root fetch - processPackages [kevin-toolbox-dev]: executing diffoscope
+[2023-06-03 18:27:01] INFO root fetch - processPackages [kevin-toolbox-dev]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kevin-toolbox-dev-1.0.8.tar.gz tmp/kevin-toolbox-dev-1.0.9.tar.gz --markdown 20230603/k/kevin-toolbox-dev/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-06-03 18:27:01] INFO root fetch - processPackages [mindmate]: Downloading https://files.pythonhosted.org/packages/75/3f/1bf47dab9e27decc49d40e9f72f56fd5fc858b5195135f9a73f3afcdb384/mindmate-0.0.4.tar.gz
+[2023-06-03 18:27:01] INFO root fetch - processPackages [yt-idefix]: executing diffoscope
+[2023-06-03 18:27:01] INFO root fetch - processPackages [yt-idefix]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yt_idefix-2.1.0.tar.gz tmp/yt_idefix-2.2.0.tar.gz --markdown 20230603/y/yt-idefix/2.1.0-2.2.0/diff.md --exclude *.pyd
+[2023-06-03 18:27:02] INFO root fetch - processPackages [mindmate]: executing diffoscope
+[2023-06-03 18:27:02] INFO root fetch - processPackages [mindmate]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mindmate-0.0.3.tar.gz tmp/mindmate-0.0.4.tar.gz --markdown 20230603/m/mindmate/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-06-03 18:27:02] INFO root fetch - processPackages [richdb]: Downloading https://files.pythonhosted.org/packages/69/94/0e62b6f2027a87b7c35412b6a8f32b08c9eecb2e88f5ee09a7041df09b2d/richdb-0.1.5-py3-none-any.whl
+[2023-06-03 18:27:02] INFO root fetch - processPackages [richdb]: executing diffoscope
+[2023-06-03 18:27:02] INFO root fetch - processPackages [richdb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/richdb-0.1.4.tar.gz tmp/richdb-0.1.5-py3-none-any.whl.zip --markdown 20230603/r/richdb/0.1.4-0.1.5/diff.md --exclude *.pyd
+[2023-06-03 18:27:02] INFO root fetch - main [MainThread]: End processing [cdxbasics]: success
+[2023-06-03 18:27:02] INFO root fetch - main [MainThread]: End processing [pychedule]: success
+[2023-06-03 18:27:02] INFO root fetch - main [MainThread]: End processing [multidyndnscli]: success
+[2023-06-03 18:27:03] INFO root fetch - main [MainThread]: End processing [mindmate]: success
+[2023-06-03 18:27:03] INFO root fetch - main [MainThread]: End processing [richdb]: success
+[2023-06-03 18:27:03] INFO root fetch - main [MainThread]: End processing [yt-idefix]: success
+[2023-06-03 18:27:03] INFO root fetch - main [MainThread]: End processing [kevin-toolbox-dev]: success
+[2023-06-03 18:27:03] INFO root fetch - main [MainThread]: Store serial: [18360454]
