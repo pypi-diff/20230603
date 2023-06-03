@@ -1815,3 +1815,90 @@
 [2023-06-03 02:59:40] INFO root fetch - main [MainThread]: End processing [airbyte]: success
 [2023-06-03 02:59:59] INFO root fetch - main [MainThread]: End processing [bioversions]: success
 [2023-06-03 02:59:59] INFO root fetch - main [MainThread]: Store serial: [18354927]
+[2023-06-03 03:05:03] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18354927]
+[2023-06-03 03:05:08] INFO root fetch - main [MainThread]: Found 16 changed packages
+[2023-06-03 03:05:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: d20-orm
+[2023-06-03 03:05:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ovos-plugin-manager
+[2023-06-03 03:05:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: bettertest
+[2023-06-03 03:05:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: Trissotech
+[2023-06-03 03:05:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pyagrum-nightly
+[2023-06-03 03:05:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: furry-art-sync
+[2023-06-03 03:05:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: cdk-lambda-layer-wget
+[2023-06-03 03:05:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: cdk-sns-notify
+[2023-06-03 03:05:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: d20-orm
+[2023-06-03 03:05:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: canopy-platform
+[2023-06-03 03:05:08] INFO root fetch - processPackages [ovos-plugin-manager]: New version: [0.0.9] Old Version: [0.0.8a3]
+[2023-06-03 03:05:08] INFO root fetch - processPackages [bettertest]: New version: [0.1.6] Old Version: [0.1.5]
+[2023-06-03 03:05:08] WARNING root fetch - processPackages [furry-art-sync]: Skipping, unable to determine old version
+[2023-06-03 03:05:08] INFO root fetch - processPackages [furry-art-sync]: Start processing: bettertest
+[2023-06-03 03:05:08] INFO root fetch - main [MainThread]: End processing [furry-art-sync] error
+[2023-06-03 03:05:08] INFO root fetch - processPackages [d20-orm]: New version: [2.0.2a9] Old Version: [2.0.2a8]
+[2023-06-03 03:05:08] INFO root fetch - processPackages [Trissotech]: New version: [0.0.5] Old Version: [0.0.2]
+[2023-06-03 03:05:08] INFO root fetch - processPackages [d20-orm]: New version: [2.0.2a9] Old Version: [2.0.2a8]
+[2023-06-03 03:05:08] INFO root fetch - processPackages [canopy-platform]: New version: [0.0.9] Old Version: [0.0.7]
+[2023-06-03 03:05:08] INFO root fetch - processPackages [bettertest]: New version: [0.1.6] Old Version: [0.1.5]
+[2023-06-03 03:05:08] INFO root fetch - processPackages [cdk-sns-notify]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-06-03 03:05:08] INFO root fetch - processPackages [cdk-lambda-layer-wget]: New version: [2.0.99] Old Version: [2.0.98]
+[2023-06-03 03:05:08] INFO root fetch - processPackages [ovos-plugin-manager]: executing diffoscope
+[2023-06-03 03:05:08] INFO root fetch - processPackages [ovos-plugin-manager]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ovos_plugin_manager-0.0.8a3-py3-none-any.whl.zip tmp/ovos_plugin_manager-0.0.9-py3-none-any.whl.zip --markdown 20230603/o/ovos-plugin-manager/0.0.8a3-0.0.9/diff.md --exclude *.pyd
+[2023-06-03 03:05:08] INFO root fetch - processPackages [cdk-sns-notify]: executing diffoscope
+[2023-06-03 03:05:08] INFO root fetch - processPackages [cdk-sns-notify]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-sns-notify-0.0.98.tar.gz tmp/cdk-sns-notify-0.0.99.tar.gz --markdown 20230603/c/cdk-sns-notify/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-06-03 03:05:08] INFO root fetch - processPackages [canopy-platform]: executing diffoscope
+[2023-06-03 03:05:08] INFO root fetch - processPackages [canopy-platform]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/canopy-platform-0.0.7.tar.gz tmp/canopy-platform-0.0.9.tar.gz --markdown 20230603/c/canopy-platform/0.0.7-0.0.9/diff.md --exclude *.pyd
+[2023-06-03 03:05:08] INFO root fetch - processPackages [cdk-lambda-layer-wget]: executing diffoscope
+[2023-06-03 03:05:08] INFO root fetch - processPackages [cdk-lambda-layer-wget]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-lambda-layer-wget-2.0.98.tar.gz tmp/cdk-lambda-layer-wget-2.0.99.tar.gz --markdown 20230603/c/cdk-lambda-layer-wget/2.0.98-2.0.99/diff.md --exclude *.pyd
+[2023-06-03 03:05:08] INFO root fetch - processPackages [bettertest]: Downloading https://files.pythonhosted.org/packages/95/a1/ac4c4d982e6688d8786162a548c831aed90a14021002853cc5285cfb238b/bettertest-0.1.5.tar.gz
+[2023-06-03 03:05:08] INFO root fetch - processPackages [bettertest]: Downloading https://files.pythonhosted.org/packages/95/a1/ac4c4d982e6688d8786162a548c831aed90a14021002853cc5285cfb238b/bettertest-0.1.5.tar.gz
+[2023-06-03 03:05:08] INFO root fetch - processPackages [pyagrum-nightly]: New version: [1.8.2.dev202306021685623169] Old Version: [1.8.1.dev202305251684934970]
+[2023-06-03 03:05:08] INFO root fetch - processPackages [Trissotech]: Downloading https://files.pythonhosted.org/packages/63/1b/68189648f7c5d08cacd71ae65b460724b124e5f93fcc0487e03f10b1da1c/trissotech-0.0.5.tar.gz
+[2023-06-03 03:05:08] INFO root fetch - processPackages [d20-orm]: executing diffoscope
+[2023-06-03 03:05:08] INFO root fetch - processPackages [d20-orm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/d20-orm-2.0.2a8.tar.gz tmp/d20-orm-2.0.2a9.tar.gz --markdown 20230603/d/d20-orm/2.0.2a8-2.0.2a9/diff.md --exclude *.pyd
+[2023-06-03 03:05:08] INFO root fetch - processPackages [d20-orm]: executing diffoscope
+[2023-06-03 03:05:08] INFO root fetch - processPackages [d20-orm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/d20-orm-2.0.2a8.tar.gz tmp/d20-orm-2.0.2a9.tar.gz --markdown 20230603/d/d20-orm/2.0.2a8-2.0.2a9/diff.md --exclude *.pyd
+[2023-06-03 03:05:08] INFO root fetch - processPackages [Trissotech]: executing diffoscope
+[2023-06-03 03:05:08] INFO root fetch - processPackages [Trissotech]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/trissotech-0.0.2.tar.gz tmp/trissotech-0.0.5.tar.gz --markdown 20230603/T/Trissotech/0.0.2-0.0.5/diff.md --exclude *.pyd
+[2023-06-03 03:05:08] INFO root fetch - processPackages [bettertest]: Downloading https://files.pythonhosted.org/packages/8b/f2/7b9d901fca22a9a3c40c58b7131a76f947c330ccc6004dc1be5b28711d48/bettertest-0.1.6.tar.gz
+[2023-06-03 03:05:08] INFO root fetch - processPackages [bettertest]: Downloading https://files.pythonhosted.org/packages/8b/f2/7b9d901fca22a9a3c40c58b7131a76f947c330ccc6004dc1be5b28711d48/bettertest-0.1.6.tar.gz
+[2023-06-03 03:05:08] INFO root fetch - processPackages [pyagrum-nightly]: Downloading https://files.pythonhosted.org/packages/59/93/964ce2764a2f839a2786f2a72ec25771f7441d8cd0407a54aec2074bc275/pyAgrum_nightly-1.8.2.dev202306021685623169-cp39-cp39-win_amd64.whl
+[2023-06-03 03:05:08] INFO root fetch - processPackages [bettertest]: executing diffoscope
+[2023-06-03 03:05:08] INFO root fetch - processPackages [bettertest]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bettertest-0.1.5.tar.gz tmp/bettertest-0.1.6.tar.gz --markdown 20230603/b/bettertest/0.1.5-0.1.6/diff.md --exclude *.pyd
+[2023-06-03 03:05:08] INFO root fetch - processPackages [bettertest]: executing diffoscope
+[2023-06-03 03:05:08] INFO root fetch - processPackages [bettertest]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bettertest-0.1.5.tar.gz tmp/bettertest-0.1.6.tar.gz --markdown 20230603/b/bettertest/0.1.5-0.1.6/diff.md --exclude *.pyd
+[2023-06-03 03:05:09] INFO root fetch - processPackages [pyagrum-nightly]: executing diffoscope
+[2023-06-03 03:05:09] INFO root fetch - processPackages [pyagrum-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyAgrum_nightly-1.8.1.dev202305251684934970-cp39-cp39-win_amd64.whl.zip tmp/pyAgrum_nightly-1.8.2.dev202306021685623169-cp39-cp39-win_amd64.whl.zip --markdown 20230603/p/pyagrum-nightly/1.8.1.dev202305251684934970-1.8.2.dev202306021685623169/diff.md --exclude *.pyd
+[2023-06-03 03:05:09] INFO root fetch - processPackages [canopy-platform]: Start processing: canopy-platform
+[2023-06-03 03:05:09] INFO root fetch - main [MainThread]: End processing [canopy-platform]: success
+[2023-06-03 03:05:09] INFO root fetch - processPackages [cdk-sns-notify]: Start processing: d20-orm
+[2023-06-03 03:05:09] INFO root fetch - main [MainThread]: End processing [cdk-sns-notify]: success
+[2023-06-03 03:05:09] INFO root fetch - processPackages [canopy-platform]: New version: [0.0.9] Old Version: [0.0.7]
+[2023-06-03 03:05:09] INFO root fetch - processPackages [d20-orm]: New version: [2.0.2a9] Old Version: [2.0.2a8]
+[2023-06-03 03:05:09] INFO root fetch - processPackages [ovos-plugin-manager]: Start processing: cdk-emrserverless-with-delta-lake
+[2023-06-03 03:05:09] INFO root fetch - main [MainThread]: End processing [ovos-plugin-manager]: success
+[2023-06-03 03:05:09] INFO root fetch - processPackages [cdk-emrserverless-with-delta-lake]: New version: [2.0.99] Old Version: [2.0.98]
+[2023-06-03 03:05:09] INFO root fetch - processPackages [canopy-platform]: executing diffoscope
+[2023-06-03 03:05:09] INFO root fetch - processPackages [canopy-platform]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/canopy-platform-0.0.7.tar.gz tmp/canopy-platform-0.0.9.tar.gz --markdown 20230603/c/canopy-platform/0.0.7-0.0.9/diff.md --exclude *.pyd
+[2023-06-03 03:05:10] INFO root fetch - processPackages [Trissotech]: Start processing: bettertest
+[2023-06-03 03:05:10] INFO root fetch - main [MainThread]: End processing [Trissotech]: success
+[2023-06-03 03:05:10] INFO root fetch - processPackages [bettertest]: New version: [0.1.6] Old Version: [0.1.5]
+[2023-06-03 03:05:10] INFO root fetch - processPackages [d20-orm]: executing diffoscope
+[2023-06-03 03:05:10] INFO root fetch - processPackages [d20-orm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/d20-orm-2.0.2a8.tar.gz tmp/d20-orm-2.0.2a9.tar.gz --markdown 20230603/d/d20-orm/2.0.2a8-2.0.2a9/diff.md --exclude *.pyd
+[2023-06-03 03:05:10] INFO root fetch - processPackages [cdk-emrserverless-with-delta-lake]: executing diffoscope
+[2023-06-03 03:05:10] INFO root fetch - processPackages [cdk-emrserverless-with-delta-lake]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk_emrserverless_with_delta_lake-2.0.98.tar.gz tmp/cdk_emrserverless_with_delta_lake-2.0.99.tar.gz --markdown 20230603/c/cdk-emrserverless-with-delta-lake/2.0.98-2.0.99/diff.md --exclude *.pyd
+[2023-06-03 03:05:10] INFO root fetch - processPackages [d20-orm]: Start processing: cdk-lambda-layer-curl
+[2023-06-03 03:05:10] INFO root fetch - main [MainThread]: End processing [d20-orm]: success
+[2023-06-03 03:05:10] INFO root fetch - processPackages [bettertest]: executing diffoscope
+[2023-06-03 03:05:10] INFO root fetch - processPackages [bettertest]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bettertest-0.1.5.tar.gz tmp/bettertest-0.1.6.tar.gz --markdown 20230603/b/bettertest/0.1.5-0.1.6/diff.md --exclude *.pyd
+[2023-06-03 03:05:10] INFO root fetch - main [MainThread]: End processing [cdk-lambda-layer-wget]: success
+[2023-06-03 03:05:10] INFO root fetch - processPackages [cdk-lambda-layer-curl]: New version: [2.0.99] Old Version: [2.0.98]
+[2023-06-03 03:05:10] INFO root fetch - main [MainThread]: End processing [bettertest]: success
+[2023-06-03 03:05:10] INFO root fetch - processPackages [cdk-lambda-layer-curl]: executing diffoscope
+[2023-06-03 03:05:10] INFO root fetch - processPackages [cdk-lambda-layer-curl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-lambda-layer-curl-2.0.98.tar.gz tmp/cdk-lambda-layer-curl-2.0.99.tar.gz --markdown 20230603/c/cdk-lambda-layer-curl/2.0.98-2.0.99/diff.md --exclude *.pyd
+[2023-06-03 03:05:10] INFO root fetch - main [MainThread]: End processing [d20-orm]: success
+[2023-06-03 03:05:10] INFO root fetch - main [MainThread]: End processing [bettertest]: success
+[2023-06-03 03:05:11] INFO root fetch - main [MainThread]: End processing [bettertest]: success
+[2023-06-03 03:05:11] INFO root fetch - main [MainThread]: End processing [d20-orm]: success
+[2023-06-03 03:05:11] INFO root fetch - main [MainThread]: End processing [canopy-platform]: success
+[2023-06-03 03:05:11] INFO root fetch - main [MainThread]: End processing [cdk-emrserverless-with-delta-lake]: success
+[2023-06-03 03:05:13] INFO root fetch - main [MainThread]: End processing [cdk-lambda-layer-curl]: success
+[2023-06-03 03:05:13] INFO root fetch - main [MainThread]: End processing [pyagrum-nightly]: success
+[2023-06-03 03:05:13] INFO root fetch - main [MainThread]: Store serial: [18354997]
