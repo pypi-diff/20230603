@@ -5954,3 +5954,51 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-06-03 08:52:07] INFO root fetch - main [MainThread]: End processing [textual-fspicker]: success
 [2023-06-03 08:52:07] INFO root fetch - main [MainThread]: End processing [vector-vault]: success
 [2023-06-03 08:52:07] INFO root fetch - main [MainThread]: Store serial: [18357492]
+[2023-06-03 08:57:11] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18357492]
+[2023-06-03 08:57:15] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-06-03 08:57:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: curtely
+[2023-06-03 08:57:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: customtkinterx
+[2023-06-03 08:57:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: shaggy
+[2023-06-03 08:57:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: DedupliPy
+[2023-06-03 08:57:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: odoo-addon-account-asset-batch-compute
+[2023-06-03 08:57:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: shaggy
+[2023-06-03 08:57:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: cncd-package
+[2023-06-03 08:57:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: webint-editor
+[2023-06-03 08:57:16] INFO root fetch - processPackages [DedupliPy]: New version: [0.8] Old Version: [0.7.9]
+[2023-06-03 08:57:16] INFO root fetch - processPackages [shaggy]: New version: [1.0.6] Old Version: [1.0.5]
+[2023-06-03 08:57:16] WARNING root fetch - processPackages [odoo-addon-account-asset-batch-compute]: Skipping, unable to determine old version
+[2023-06-03 08:57:16] INFO root fetch - main [MainThread]: End processing [odoo-addon-account-asset-batch-compute] error
+[2023-06-03 08:57:16] INFO root fetch - processPackages [curtely]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-06-03 08:57:16] WARNING root fetch - processPackages [cncd-package]: Skipping, unable to determine old version
+[2023-06-03 08:57:16] INFO root fetch - main [MainThread]: End processing [cncd-package] error
+[2023-06-03 08:57:16] INFO root fetch - processPackages [customtkinterx]: New version: [0.2.4] Old Version: [0.2.3]
+[2023-06-03 08:57:16] INFO root fetch - processPackages [shaggy]: New version: [1.0.6] Old Version: [1.0.5]
+[2023-06-03 08:57:16] INFO root fetch - processPackages [webint-editor]: New version: [0.0.156] Old Version: [0.0.155]
+[2023-06-03 08:57:16] INFO root fetch - processPackages [shaggy]: Downloading https://files.pythonhosted.org/packages/04/be/588864e98627640b74ce4eb1cc52d384b8d2d67680766355d800bb8a7594/shaggy-1.0.6.tar.gz
+[2023-06-03 08:57:16] INFO root fetch - processPackages [shaggy]: Downloading https://files.pythonhosted.org/packages/04/be/588864e98627640b74ce4eb1cc52d384b8d2d67680766355d800bb8a7594/shaggy-1.0.6.tar.gz
+[2023-06-03 08:57:16] INFO root fetch - processPackages [DedupliPy]: Downloading https://files.pythonhosted.org/packages/0f/5a/6ab9eceb5e5509e6f10d619a0620ccb076de56181a9411badc1635fc951c/DedupliPy-0.7.9.tar.gz
+[2023-06-03 08:57:16] INFO root fetch - processPackages [curtely]: Downloading https://files.pythonhosted.org/packages/f7/3d/63161fc019134c7a1dfed4dd10aca27f3accc0c4f8837c4a1534dcf2fa43/curtely-0.0.2.tar.gz
+[2023-06-03 08:57:16] INFO root fetch - processPackages [shaggy]: executing diffoscope
+[2023-06-03 08:57:16] INFO root fetch - processPackages [shaggy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/shaggy-1.0.5.tar.gz tmp/shaggy-1.0.6.tar.gz --markdown 20230603/s/shaggy/1.0.5-1.0.6/diff.md --exclude *.pyd
+[2023-06-03 08:57:16] INFO root fetch - processPackages [customtkinterx]: Downloading https://files.pythonhosted.org/packages/b3/3d/97bc0441d1fb0e9786dd1e86a211b9935b566338552ceab07a4d23d81ea3/customtkinterx-0.2.4.tar.gz
+[2023-06-03 08:57:16] INFO root fetch - processPackages [shaggy]: executing diffoscope
+[2023-06-03 08:57:16] INFO root fetch - processPackages [shaggy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/shaggy-1.0.5.tar.gz tmp/shaggy-1.0.6.tar.gz --markdown 20230603/s/shaggy/1.0.5-1.0.6/diff.md --exclude *.pyd
+[2023-06-03 08:57:16] INFO root fetch - processPackages [webint-editor]: Downloading https://files.pythonhosted.org/packages/c4/0d/b16fd99cfa38e22c22ad0887b5608bfadf906d15707ee7e7588f2df95ece/webint_editor-0.0.155.tar.gz
+[2023-06-03 08:57:16] INFO root fetch - processPackages [customtkinterx]: executing diffoscope
+[2023-06-03 08:57:16] INFO root fetch - processPackages [customtkinterx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/customtkinterx-0.2.3.tar.gz tmp/customtkinterx-0.2.4.tar.gz --markdown 20230603/c/customtkinterx/0.2.3-0.2.4/diff.md --exclude *.pyd
+[2023-06-03 08:57:16] INFO root fetch - processPackages [curtely]: Downloading https://files.pythonhosted.org/packages/8f/7c/5b205a4e73082b4b1041352f2825941aeebc04a986ec75e776c2741da15b/curtely-0.0.3.tar.gz
+[2023-06-03 08:57:16] INFO root fetch - processPackages [webint-editor]: Downloading https://files.pythonhosted.org/packages/57/fb/bfa97f3f832d21cb3ca10483c3c2add6c4be842b88e550adb5d064c56e24/webint_editor-0.0.156.tar.gz
+[2023-06-03 08:57:16] INFO root fetch - processPackages [curtely]: executing diffoscope
+[2023-06-03 08:57:16] INFO root fetch - processPackages [curtely]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/curtely-0.0.2.tar.gz tmp/curtely-0.0.3.tar.gz --markdown 20230603/c/curtely/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-06-03 08:57:16] INFO root fetch - processPackages [DedupliPy]: Downloading https://files.pythonhosted.org/packages/4c/4c/f984eeac34c0d15cb07820d3abfdc84845aaac56363881c16b21d554e80b/DedupliPy-0.8.tar.gz
+[2023-06-03 08:57:16] INFO root fetch - processPackages [webint-editor]: executing diffoscope
+[2023-06-03 08:57:16] INFO root fetch - processPackages [webint-editor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/webint_editor-0.0.155.tar.gz tmp/webint_editor-0.0.156.tar.gz --markdown 20230603/w/webint-editor/0.0.155-0.0.156/diff.md --exclude *.pyd
+[2023-06-03 08:57:17] INFO root fetch - processPackages [DedupliPy]: executing diffoscope
+[2023-06-03 08:57:17] INFO root fetch - processPackages [DedupliPy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/DedupliPy-0.7.9.tar.gz tmp/DedupliPy-0.8.tar.gz --markdown 20230603/D/DedupliPy/0.7.9-0.8/diff.md --exclude *.pyd
+[2023-06-03 08:57:17] INFO root fetch - main [MainThread]: End processing [shaggy]: success
+[2023-06-03 08:57:17] INFO root fetch - main [MainThread]: End processing [customtkinterx]: success
+[2023-06-03 08:57:17] INFO root fetch - main [MainThread]: End processing [curtely]: success
+[2023-06-03 08:57:17] INFO root fetch - main [MainThread]: End processing [webint-editor]: success
+[2023-06-03 08:57:20] INFO root fetch - main [MainThread]: End processing [DedupliPy]: success
+[2023-06-03 08:58:10] INFO root fetch - main [MainThread]: End processing [shaggy]: success
+[2023-06-03 08:58:10] INFO root fetch - main [MainThread]: Store serial: [18357524]
