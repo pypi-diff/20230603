@@ -6203,3 +6203,49 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-06-03 09:21:21] INFO root fetch - main [MainThread]: End processing [anjani]: success
 [2023-06-03 09:21:41] INFO root fetch - main [MainThread]: End processing [libfsext-python]: success
 [2023-06-03 09:21:41] INFO root fetch - main [MainThread]: Store serial: [18357645]
+[2023-06-03 09:26:45] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18357645]
+[2023-06-03 09:26:50] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-06-03 09:26:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: textual-fspicker
+[2023-06-03 09:26:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: wanted-models
+[2023-06-03 09:26:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: AproximacaoRaizes
+[2023-06-03 09:26:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: MarsGT
+[2023-06-03 09:26:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: cncd-package
+[2023-06-03 09:26:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: wanted-models
+[2023-06-03 09:26:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: webint-editor
+[2023-06-03 09:26:50] INFO root fetch - processPackages [wanted-models]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-06-03 09:26:50] INFO root fetch - processPackages [cncd-package]: New version: [0.3.0] Old Version: [0.2.0]
+[2023-06-03 09:26:50] INFO root fetch - processPackages [textual-fspicker]: New version: [0.0.7] Old Version: [0.0.6]
+[2023-06-03 09:26:50] INFO root fetch - processPackages [webint-editor]: New version: [0.0.162] Old Version: [0.0.161]
+[2023-06-03 09:26:50] WARNING root fetch - processPackages [AproximacaoRaizes]: Skipping, unable to determine old version
+[2023-06-03 09:26:50] INFO root fetch - processPackages [MarsGT]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-06-03 09:26:50] INFO root fetch - processPackages [wanted-models]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-06-03 09:26:50] INFO root fetch - main [MainThread]: End processing [AproximacaoRaizes] error
+[2023-06-03 09:26:50] INFO root fetch - processPackages [wanted-models]: Downloading https://files.pythonhosted.org/packages/3c/17/aa55a77a8677635c0486cd40a8805bc8a7580009dc91e2e96547af4ac725/wanted-models-0.0.3.tar.gz
+[2023-06-03 09:26:50] INFO root fetch - processPackages [wanted-models]: Downloading https://files.pythonhosted.org/packages/3c/17/aa55a77a8677635c0486cd40a8805bc8a7580009dc91e2e96547af4ac725/wanted-models-0.0.3.tar.gz
+[2023-06-03 09:26:50] INFO root fetch - processPackages [cncd-package]: Downloading https://files.pythonhosted.org/packages/c4/f3/3836aeaeb447a7623d8c29cd6c5a136947036b54b316865b483cf2693b6e/cncd_package-0.2.0.tar.gz
+[2023-06-03 09:26:50] INFO root fetch - processPackages [textual-fspicker]: Downloading https://files.pythonhosted.org/packages/b7/58/3e12f96c7d6563a18002bc761503a70b02f448501a97617181ffafe0a414/textual_fspicker-0.0.7-py3-none-any.whl
+[2023-06-03 09:26:50] INFO root fetch - processPackages [MarsGT]: Downloading https://files.pythonhosted.org/packages/1a/c1/405e8e5194cb80e54f791ae99b733ad3657a186639995b33fb176de3d8dc/MarsGT-0.1.1.tar.gz
+[2023-06-03 09:26:50] INFO root fetch - processPackages [webint-editor]: Downloading https://files.pythonhosted.org/packages/c6/00/b472082902a785a32ab80c3ac507b7f11396c0053ca1044dfc98116166b0/webint_editor-0.0.162.tar.gz
+[2023-06-03 09:26:50] INFO root fetch - processPackages [webint-editor]: executing diffoscope
+[2023-06-03 09:26:50] INFO root fetch - processPackages [webint-editor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/webint_editor-0.0.161.tar.gz tmp/webint_editor-0.0.162.tar.gz --markdown 20230603/w/webint-editor/0.0.161-0.0.162/diff.md --exclude *.pyd
+[2023-06-03 09:26:50] INFO root fetch - processPackages [textual-fspicker]: executing diffoscope
+[2023-06-03 09:26:50] INFO root fetch - processPackages [textual-fspicker]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/textual_fspicker-0.0.6-py3-none-any.whl.zip tmp/textual_fspicker-0.0.7-py3-none-any.whl.zip --markdown 20230603/t/textual-fspicker/0.0.6-0.0.7/diff.md --exclude *.pyd
+[2023-06-03 09:26:50] INFO root fetch - processPackages [wanted-models]: Downloading https://files.pythonhosted.org/packages/5b/14/e8af9df5fc7eb6fd1c368cdfe5df20c4bb7ab998a82f680c3dd26b00a136/wanted-models-0.0.4.tar.gz
+[2023-06-03 09:26:50] INFO root fetch - processPackages [wanted-models]: Downloading https://files.pythonhosted.org/packages/5b/14/e8af9df5fc7eb6fd1c368cdfe5df20c4bb7ab998a82f680c3dd26b00a136/wanted-models-0.0.4.tar.gz
+[2023-06-03 09:26:50] INFO root fetch - processPackages [wanted-models]: executing diffoscope
+[2023-06-03 09:26:50] INFO root fetch - processPackages [wanted-models]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wanted-models-0.0.3.tar.gz tmp/wanted-models-0.0.4.tar.gz --markdown 20230603/w/wanted-models/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-06-03 09:26:50] INFO root fetch - processPackages [wanted-models]: executing diffoscope
+[2023-06-03 09:26:50] INFO root fetch - processPackages [wanted-models]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wanted-models-0.0.3.tar.gz tmp/wanted-models-0.0.4.tar.gz --markdown 20230603/w/wanted-models/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-06-03 09:26:50] INFO root fetch - processPackages [MarsGT]: Downloading https://files.pythonhosted.org/packages/8f/a2/d43f61994c8418c3a89ba30ebdf557db3c5a7fda931e2262a14af333387e/MarsGT-0.1.2.tar.gz
+[2023-06-03 09:26:50] INFO root fetch - processPackages [cncd-package]: Downloading https://files.pythonhosted.org/packages/01/6c/c7d6bd0892f6c481ece3ddea4036023c0f757beea97d1811dd1405e18901/cncd_package-0.3.0.tar.gz
+[2023-06-03 09:26:50] INFO root fetch - processPackages [MarsGT]: executing diffoscope
+[2023-06-03 09:26:50] INFO root fetch - processPackages [MarsGT]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/MarsGT-0.1.1.tar.gz tmp/MarsGT-0.1.2.tar.gz --markdown 20230603/M/MarsGT/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-06-03 09:26:50] INFO root fetch - processPackages [cncd-package]: executing diffoscope
+[2023-06-03 09:26:50] INFO root fetch - processPackages [cncd-package]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cncd_package-0.2.0.tar.gz tmp/cncd_package-0.3.0.tar.gz --markdown 20230603/c/cncd-package/0.2.0-0.3.0/diff.md --exclude *.pyd
+[2023-06-03 09:26:51] INFO root fetch - main [MainThread]: End processing [webint-editor]: success
+[2023-06-03 09:26:51] INFO root fetch - main [MainThread]: End processing [textual-fspicker]: success
+[2023-06-03 09:26:51] INFO root fetch - main [MainThread]: End processing [wanted-models]: success
+[2023-06-03 09:26:52] INFO root fetch - main [MainThread]: End processing [MarsGT]: success
+[2023-06-03 09:26:52] INFO root fetch - main [MainThread]: End processing [cncd-package]: success
+[2023-06-03 09:26:52] INFO root fetch - main [MainThread]: End processing [wanted-models]: success
+[2023-06-03 09:26:52] INFO root fetch - main [MainThread]: Store serial: [18357665]
