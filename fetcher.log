@@ -10465,3 +10465,42 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-06-03 18:27:03] INFO root fetch - main [MainThread]: End processing [yt-idefix]: success
 [2023-06-03 18:27:03] INFO root fetch - main [MainThread]: End processing [kevin-toolbox-dev]: success
 [2023-06-03 18:27:03] INFO root fetch - main [MainThread]: Store serial: [18360454]
+[2023-06-03 18:32:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18360454]
+[2023-06-03 18:32:12] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-06-03 18:32:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: lasfile
+[2023-06-03 18:32:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pychedule
+[2023-06-03 18:32:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: whisper-autosrt
+[2023-06-03 18:32:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: tinygrad-lightning
+[2023-06-03 18:32:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: crawler-commons
+[2023-06-03 18:32:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: PySide2-Fluent-Widgets
+[2023-06-03 18:32:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: feathub-nightly
+[2023-06-03 18:32:12] INFO root fetch - processPackages [lasfile]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-06-03 18:32:12] INFO root fetch - processPackages [pychedule]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-06-03 18:32:12] INFO root fetch - processPackages [whisper-autosrt]: New version: [0.0.8] Old Version: [0.0.6]
+[2023-06-03 18:32:12] INFO root fetch - processPackages [PySide2-Fluent-Widgets]: New version: [0.9.3] Old Version: [0.9.2]
+[2023-06-03 18:32:12] WARNING root fetch - processPackages [tinygrad-lightning]: Skipping, unable to determine old version
+[2023-06-03 18:32:12] INFO root fetch - main [MainThread]: End processing [tinygrad-lightning] error
+[2023-06-03 18:32:12] INFO root fetch - processPackages [crawler-commons]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-06-03 18:32:12] INFO root fetch - processPackages [feathub-nightly]: New version: [0.1.dev20230602] Old Version: [0.1.dev20230601]
+[2023-06-03 18:32:13] INFO root fetch - processPackages [lasfile]: executing diffoscope
+[2023-06-03 18:32:13] INFO root fetch - processPackages [lasfile]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lasfile-0.1.8.tar.gz tmp/lasfile-0.1.9.tar.gz --markdown 20230603/l/lasfile/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-06-03 18:32:13] INFO root fetch - processPackages [crawler-commons]: executing diffoscope
+[2023-06-03 18:32:13] INFO root fetch - processPackages [crawler-commons]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/crawler_commons-0.0.8.tar.gz tmp/crawler_commons-0.0.9.tar.gz --markdown 20230603/c/crawler-commons/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-06-03 18:32:13] INFO root fetch - processPackages [pychedule]: Downloading https://files.pythonhosted.org/packages/7d/11/26f7f6d31990d55990be47586de82419a2f06cf22190fad922ee616b3677/pychedule-0.0.6-py3-none-any.whl
+[2023-06-03 18:32:13] INFO root fetch - processPackages [feathub-nightly]: Downloading https://files.pythonhosted.org/packages/6f/60/b80d9ffddf607383189f6fc743faa1db8608a522e98220346e0334b7f3eb/feathub_nightly-0.1.dev20230601-py3-none-any.whl
+[2023-06-03 18:32:13] INFO root fetch - processPackages [pychedule]: executing diffoscope
+[2023-06-03 18:32:13] INFO root fetch - processPackages [pychedule]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pychedule-0.0.5-py3-none-any.whl.zip tmp/pychedule-0.0.6-py3-none-any.whl.zip --markdown 20230603/p/pychedule/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-06-03 18:32:13] INFO root fetch - processPackages [whisper-autosrt]: Downloading https://files.pythonhosted.org/packages/1d/a6/bf4262aa7cb86740b8e8a470db5658e9efdfc78b000c3402211ec1ac6024/whisper_autosrt-0.0.8.tar.gz
+[2023-06-03 18:32:13] INFO root fetch - processPackages [PySide2-Fluent-Widgets]: Downloading https://files.pythonhosted.org/packages/1e/88/b7ca6199481543af54973b91d89f112ef3724fa1a61cf970f07b2c318647/PySide2-Fluent-Widgets-0.9.3.tar.gz
+[2023-06-03 18:32:13] INFO root fetch - processPackages [whisper-autosrt]: executing diffoscope
+[2023-06-03 18:32:13] INFO root fetch - processPackages [whisper-autosrt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/whisper_autosrt-0.0.6.tar.gz tmp/whisper_autosrt-0.0.8.tar.gz --markdown 20230603/w/whisper-autosrt/0.0.6-0.0.8/diff.md --exclude *.pyd
+[2023-06-03 18:32:13] INFO root fetch - processPackages [PySide2-Fluent-Widgets]: executing diffoscope
+[2023-06-03 18:32:13] INFO root fetch - processPackages [PySide2-Fluent-Widgets]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PySide2-Fluent-Widgets-0.9.2.tar.gz tmp/PySide2-Fluent-Widgets-0.9.3.tar.gz --markdown 20230603/P/PySide2-Fluent-Widgets/0.9.2-0.9.3/diff.md --exclude *.pyd
+[2023-06-03 18:32:14] WARNING root fetch - processPackages [feathub-nightly]: Skipping package: exceeds size limit 12203822>=10485760
+[2023-06-03 18:32:14] INFO root fetch - main [MainThread]: End processing [feathub-nightly] error
+[2023-06-03 18:32:14] INFO root fetch - main [MainThread]: End processing [lasfile]: success
+[2023-06-03 18:32:14] INFO root fetch - main [MainThread]: End processing [crawler-commons]: success
+[2023-06-03 18:32:14] INFO root fetch - main [MainThread]: End processing [pychedule]: success
+[2023-06-03 18:32:14] INFO root fetch - main [MainThread]: End processing [whisper-autosrt]: success
+[2023-06-03 18:32:17] INFO root fetch - main [MainThread]: End processing [PySide2-Fluent-Widgets]: success
+[2023-06-03 18:32:17] INFO root fetch - main [MainThread]: Store serial: [18360479]
