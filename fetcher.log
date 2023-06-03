@@ -5096,3 +5096,41 @@
 [2023-06-03 06:25:29] INFO root fetch - main [MainThread]: End processing [odoo-addon-base-location]: success
 [2023-06-03 06:25:36] INFO root fetch - main [MainThread]: End processing [p0-script]: success
 [2023-06-03 06:25:36] INFO root fetch - main [MainThread]: Store serial: [18356971]
+[2023-06-03 06:30:40] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18356971]
+[2023-06-03 06:30:44] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-06-03 06:30:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: netora-python
+[2023-06-03 06:30:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: g-feature-pipeline
+[2023-06-03 06:30:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: headless-ida
+[2023-06-03 06:30:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: LibraryCreator
+[2023-06-03 06:30:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: g-training-pipeline
+[2023-06-03 06:30:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: computing-toolbox
+[2023-06-03 06:30:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: g-batch-prediction-pipeline
+[2023-06-03 06:30:45] WARNING root fetch - processPackages [netora-python]: Skipping, unable to determine old version
+[2023-06-03 06:30:45] INFO root fetch - main [MainThread]: End processing [netora-python] error
+[2023-06-03 06:30:45] WARNING root fetch - processPackages [g-feature-pipeline]: Skipping, unable to determine old version
+[2023-06-03 06:30:45] INFO root fetch - main [MainThread]: End processing [g-feature-pipeline] error
+[2023-06-03 06:30:45] INFO root fetch - processPackages [computing-toolbox]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-06-03 06:30:45] ERROR root fetch - processPackages [LibraryCreator]: Unable to get metadata: No such project 'LibraryCreator'
+[2023-06-03 06:30:45] INFO root fetch - main [MainThread]: End processing [LibraryCreator] error
+[2023-06-03 06:30:45] INFO root fetch - processPackages [headless-ida]: New version: [0.4.1] Old Version: [0.4.0]
+[2023-06-03 06:30:45] INFO root fetch - processPackages [g-training-pipeline]: New version: [0.2.0] Old Version: [0.1.0]
+[2023-06-03 06:30:45] INFO root fetch - processPackages [g-batch-prediction-pipeline]: New version: [0.2.0] Old Version: [0.1.0]
+[2023-06-03 06:30:45] INFO root fetch - processPackages [g-batch-prediction-pipeline]: Downloading https://files.pythonhosted.org/packages/ae/53/452ae1fe96867c7391eed2cfe27cfa45d09085913513c74137b49eb8a6a9/g_batch_prediction_pipeline-0.1.0.tar.gz
+[2023-06-03 06:30:45] INFO root fetch - processPackages [g-training-pipeline]: Downloading https://files.pythonhosted.org/packages/5f/63/3101bd3703459df0d37efb38aeb6da5274098ad9c1a3bdefa02735cc5e82/g_training_pipeline-0.1.0.tar.gz
+[2023-06-03 06:30:45] INFO root fetch - processPackages [headless-ida]: Downloading https://files.pythonhosted.org/packages/44/dd/2d26b8526955d846a6459dfbc5d89b21e98bdb2fb59e6546d2bf29f69dc1/headless-ida-0.4.1.tar.gz
+[2023-06-03 06:30:45] INFO root fetch - processPackages [computing-toolbox]: Downloading https://files.pythonhosted.org/packages/3b/4a/9471ac0e85f3b4a7831d97fd41b89ab2dee5595985cd7c5ec39150a3812e/computing-toolbox-0.1.2.tar.gz
+[2023-06-03 06:30:45] INFO root fetch - processPackages [headless-ida]: executing diffoscope
+[2023-06-03 06:30:45] INFO root fetch - processPackages [headless-ida]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/headless-ida-0.4.0.tar.gz tmp/headless-ida-0.4.1.tar.gz --markdown 20230603/h/headless-ida/0.4.0-0.4.1/diff.md --exclude *.pyd
+[2023-06-03 06:30:45] INFO root fetch - processPackages [g-batch-prediction-pipeline]: Downloading https://files.pythonhosted.org/packages/78/eb/f8617b568f64e86b8a163fa8e7693a0230176d8ffaff8bdf40591511b906/g_batch_prediction_pipeline-0.2.0.tar.gz
+[2023-06-03 06:30:45] INFO root fetch - processPackages [computing-toolbox]: executing diffoscope
+[2023-06-03 06:30:45] INFO root fetch - processPackages [computing-toolbox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/computing-toolbox-0.1.1.tar.gz tmp/computing-toolbox-0.1.2.tar.gz --markdown 20230603/c/computing-toolbox/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-06-03 06:30:45] INFO root fetch - processPackages [g-training-pipeline]: Downloading https://files.pythonhosted.org/packages/9f/e3/f04e94ea137374905ec03c82f93a6e59dc260bc19967be09dad43c2bc463/g_training_pipeline-0.2.0.tar.gz
+[2023-06-03 06:30:45] INFO root fetch - processPackages [g-training-pipeline]: executing diffoscope
+[2023-06-03 06:30:45] INFO root fetch - processPackages [g-training-pipeline]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/g_training_pipeline-0.1.0.tar.gz tmp/g_training_pipeline-0.2.0.tar.gz --markdown 20230603/g/g-training-pipeline/0.1.0-0.2.0/diff.md --exclude *.pyd
+[2023-06-03 06:30:45] INFO root fetch - processPackages [g-batch-prediction-pipeline]: executing diffoscope
+[2023-06-03 06:30:45] INFO root fetch - processPackages [g-batch-prediction-pipeline]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/g_batch_prediction_pipeline-0.1.0.tar.gz tmp/g_batch_prediction_pipeline-0.2.0.tar.gz --markdown 20230603/g/g-batch-prediction-pipeline/0.1.0-0.2.0/diff.md --exclude *.pyd
+[2023-06-03 06:30:46] INFO root fetch - main [MainThread]: End processing [headless-ida]: success
+[2023-06-03 06:30:46] INFO root fetch - main [MainThread]: End processing [g-training-pipeline]: success
+[2023-06-03 06:30:46] INFO root fetch - main [MainThread]: End processing [computing-toolbox]: success
+[2023-06-03 06:30:46] INFO root fetch - main [MainThread]: End processing [g-batch-prediction-pipeline]: success
+[2023-06-03 06:30:46] INFO root fetch - main [MainThread]: Store serial: [18357001]
