@@ -7668,3 +7668,41 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-06-03 12:44:45] INFO root fetch - main [MainThread]: End processing [arkprts]: success
 [2023-06-03 12:44:46] INFO root fetch - main [MainThread]: End processing [downloadx]: success
 [2023-06-03 12:44:46] INFO root fetch - main [MainThread]: Store serial: [18358549]
+[2023-06-03 12:49:49] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18358549]
+[2023-06-03 12:49:54] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-06-03 12:49:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: horizonai
+[2023-06-03 12:49:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: recipe-scrapers-ap-fork
+[2023-06-03 12:49:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: numpoly
+[2023-06-03 12:49:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: amis-python
+[2023-06-03 12:49:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: hathitrust-downloader
+[2023-06-03 12:49:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: opendigger
+[2023-06-03 12:49:54] INFO root fetch - processPackages [amis-python]: New version: [1.0.8] Old Version: [1.0.7]
+[2023-06-03 12:49:54] INFO root fetch - processPackages [horizonai]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-06-03 12:49:54] INFO root fetch - processPackages [numpoly]: New version: [1.2.8] Old Version: [1.2.7]
+[2023-06-03 12:49:54] INFO root fetch - processPackages [hathitrust-downloader]: New version: [1.1.2] Old Version: [1.1.1]
+[2023-06-03 12:49:54] INFO root fetch - processPackages [recipe-scrapers-ap-fork]: New version: [14.24.4] Old Version: [14.24.3]
+[2023-06-03 12:49:54] WARNING root fetch - processPackages [opendigger]: Skipping, unable to determine old version
+[2023-06-03 12:49:54] INFO root fetch - main [MainThread]: End processing [opendigger] error
+[2023-06-03 12:49:54] INFO root fetch - processPackages [numpoly]: Downloading https://files.pythonhosted.org/packages/a3/e9/fb3fcfebcc78ceacc54f60acac1414f1e5d7173a4add8ed31fc6641021d8/numpoly-1.2.7.tar.gz
+[2023-06-03 12:49:54] INFO root fetch - processPackages [amis-python]: Downloading https://files.pythonhosted.org/packages/35/c5/dce790eacca7afbc17a71b630ab32ade5bc43c50c11d1605c0fd171d800f/amis_python-1.0.7.tar.gz
+[2023-06-03 12:49:54] INFO root fetch - processPackages [hathitrust-downloader]: Downloading https://files.pythonhosted.org/packages/57/ad/eac9fa9945236c1a36eec630ddff466f00e0c243532239c64271e93724b5/hathitrust-downloader-1.1.1.tar.gz
+[2023-06-03 12:49:54] INFO root fetch - processPackages [recipe-scrapers-ap-fork]: Downloading https://files.pythonhosted.org/packages/7f/3f/c4c7edfe4225f7afe25fdf29a16131c99211647371c8568a4db8587b4056/recipe_scrapers_ap_fork-14.24.4.tar.gz
+[2023-06-03 12:49:54] INFO root fetch - processPackages [recipe-scrapers-ap-fork]: executing diffoscope
+[2023-06-03 12:49:54] INFO root fetch - processPackages [recipe-scrapers-ap-fork]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/recipe_scrapers_ap_fork-14.24.3.tar.gz tmp/recipe_scrapers_ap_fork-14.24.4.tar.gz --markdown 20230603/r/recipe-scrapers-ap-fork/14.24.3-14.24.4/diff.md --exclude *.pyd
+[2023-06-03 12:49:54] INFO root fetch - processPackages [horizonai]: executing diffoscope
+[2023-06-03 12:49:54] INFO root fetch - processPackages [horizonai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/horizonai-0.1.8.tar.gz tmp/horizonai-0.1.9.tar.gz --markdown 20230603/h/horizonai/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-06-03 12:49:55] INFO root fetch - processPackages [amis-python]: Downloading https://files.pythonhosted.org/packages/ea/dd/7d249b8e31936ad3c788004b7a1520b681f8b31feb5e42fa6f13ed3b1c0c/amis_python-1.0.8.tar.gz
+[2023-06-03 12:49:55] INFO root fetch - processPackages [hathitrust-downloader]: Downloading https://files.pythonhosted.org/packages/75/f4/c81f3f6f2a4a14808683f2da1906007f999f87f2bb0ab8016720a60cd5d9/hathitrust-downloader-1.1.2.tar.gz
+[2023-06-03 12:49:55] INFO root fetch - processPackages [numpoly]: Downloading https://files.pythonhosted.org/packages/f8/34/c60130899a66711d46c725d885376839f5ef213db0a0a1f8aa31cc09ab4f/numpoly-1.2.8.tar.gz
+[2023-06-03 12:49:55] INFO root fetch - processPackages [amis-python]: executing diffoscope
+[2023-06-03 12:49:55] INFO root fetch - processPackages [amis-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/amis_python-1.0.7.tar.gz tmp/amis_python-1.0.8.tar.gz --markdown 20230603/a/amis-python/1.0.7-1.0.8/diff.md --exclude *.pyd
+[2023-06-03 12:49:55] INFO root fetch - processPackages [hathitrust-downloader]: executing diffoscope
+[2023-06-03 12:49:55] INFO root fetch - processPackages [hathitrust-downloader]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hathitrust-downloader-1.1.1.tar.gz tmp/hathitrust-downloader-1.1.2.tar.gz --markdown 20230603/h/hathitrust-downloader/1.1.1-1.1.2/diff.md --exclude *.pyd
+[2023-06-03 12:49:55] INFO root fetch - processPackages [numpoly]: executing diffoscope
+[2023-06-03 12:49:55] INFO root fetch - processPackages [numpoly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/numpoly-1.2.7.tar.gz tmp/numpoly-1.2.8.tar.gz --markdown 20230603/n/numpoly/1.2.7-1.2.8/diff.md --exclude *.pyd
+[2023-06-03 12:49:56] INFO root fetch - main [MainThread]: End processing [horizonai]: success
+[2023-06-03 12:49:56] INFO root fetch - main [MainThread]: End processing [hathitrust-downloader]: success
+[2023-06-03 12:49:56] INFO root fetch - main [MainThread]: End processing [amis-python]: success
+[2023-06-03 12:49:56] INFO root fetch - main [MainThread]: End processing [numpoly]: success
+[2023-06-03 12:49:58] INFO root fetch - main [MainThread]: End processing [recipe-scrapers-ap-fork]: success
+[2023-06-03 12:49:58] INFO root fetch - main [MainThread]: Store serial: [18358573]
