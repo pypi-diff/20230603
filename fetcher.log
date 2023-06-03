@@ -7888,3 +7888,22 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-06-03 13:16:00] INFO root fetch - main [MainThread]: End processing [nvfuser-cu118]: success
 [2023-06-03 13:16:00] INFO root fetch - main [MainThread]: End processing [pinit]: success
 [2023-06-03 13:16:00] INFO root fetch - main [MainThread]: Store serial: [18358711]
+[2023-06-03 13:21:04] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18358711]
+[2023-06-03 13:21:09] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-06-03 13:21:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: nvfuser-cu117
+[2023-06-03 13:21:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: chater
+[2023-06-03 13:21:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: opendigger
+[2023-06-03 13:21:09] INFO root fetch - processPackages [opendigger]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-06-03 13:21:09] INFO root fetch - processPackages [chater]: New version: [1.0.7] Old Version: [1.0.6]
+[2023-06-03 13:21:09] INFO root fetch - processPackages [nvfuser-cu117]: New version: [0.0.9.dev20230515] Old Version: [0.0.9.dev20230514]
+[2023-06-03 13:21:09] INFO root fetch - processPackages [opendigger]: executing diffoscope
+[2023-06-03 13:21:09] INFO root fetch - processPackages [opendigger]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/opendigger-0.1.1.tar.gz tmp/opendigger-0.1.2.tar.gz --markdown 20230603/o/opendigger/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-06-03 13:21:09] INFO root fetch - processPackages [nvfuser-cu117]: executing diffoscope
+[2023-06-03 13:21:09] INFO root fetch - processPackages [nvfuser-cu117]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nvfuser_cu117-0.0.9.dev20230514-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip tmp/nvfuser_cu117-0.0.9.dev20230515-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip --markdown 20230603/n/nvfuser-cu117/0.0.9.dev20230514-0.0.9.dev20230515/diff.md --exclude *.pyd
+[2023-06-03 13:21:09] INFO root fetch - processPackages [chater]: Downloading https://files.pythonhosted.org/packages/6e/8c/c85ffa418063ad5d86b3db53d8e373e02be5f953fea2335aad68078775bf/chater-1.0.7.tar.gz
+[2023-06-03 13:21:09] INFO root fetch - processPackages [chater]: executing diffoscope
+[2023-06-03 13:21:09] INFO root fetch - processPackages [chater]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chater-1.0.6.tar.gz tmp/chater-1.0.7.tar.gz --markdown 20230603/c/chater/1.0.6-1.0.7/diff.md --exclude *.pyd
+[2023-06-03 13:21:10] INFO root fetch - main [MainThread]: End processing [opendigger]: success
+[2023-06-03 13:21:11] INFO root fetch - main [MainThread]: End processing [chater]: success
+[2023-06-03 13:21:11] INFO root fetch - main [MainThread]: End processing [nvfuser-cu117]: success
+[2023-06-03 13:21:11] INFO root fetch - main [MainThread]: Store serial: [18358826]
