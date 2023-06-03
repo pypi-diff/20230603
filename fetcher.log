@@ -5421,3 +5421,46 @@
 [2023-06-03 07:16:34] INFO root fetch - main [MainThread]: End processing [toolcli]: success
 [2023-06-03 07:16:35] INFO root fetch - main [MainThread]: End processing [Geode-Common]: success
 [2023-06-03 07:16:35] INFO root fetch - main [MainThread]: Store serial: [18357191]
+[2023-06-03 07:21:39] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18357191]
+[2023-06-03 07:21:44] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-06-03 07:21:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: odoo12-addon-stock-quant-manual-assign
+[2023-06-03 07:21:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mltb2
+[2023-06-03 07:21:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: vulkpy
+[2023-06-03 07:21:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: django-imgwidget
+[2023-06-03 07:21:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: livereloadx
+[2023-06-03 07:21:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: netora-python
+[2023-06-03 07:21:44] INFO root fetch - processPackages [django-imgwidget]: New version: [0.0.2.1] Old Version: [0.0.2]
+[2023-06-03 07:21:44] INFO root fetch - processPackages [odoo12-addon-stock-quant-manual-assign]: New version: [12.0.1.2.0.99.dev7] Old Version: [12.0.1.2.0.99.dev6]
+[2023-06-03 07:21:44] INFO root fetch - processPackages [vulkpy]: New version: [0.0.8] Old Version: [0.0.7]
+[2023-06-03 07:21:44] INFO root fetch - processPackages [mltb2]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-06-03 07:21:44] INFO root fetch - processPackages [livereloadx]: New version: [2.6.8] Old Version: [2.6.7]
+[2023-06-03 07:21:44] INFO root fetch - processPackages [netora-python]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-06-03 07:21:44] INFO root fetch - processPackages [django-imgwidget]: Downloading https://files.pythonhosted.org/packages/c6/0b/ca8dd226be930a8567de6af1bc9438ac2c60e612c48b5bfe02332fa4f6b0/django-imgwidget-0.0.2.1.tar.gz
+[2023-06-03 07:21:44] INFO root fetch - processPackages [odoo12-addon-stock-quant-manual-assign]: Downloading https://files.pythonhosted.org/packages/90/38/4c4e80d3e0cff17935c0f756e0cfec408d70fb303c221346a8beed23ff40/odoo12_addon_stock_quant_manual_assign-12.0.1.2.0.99.dev6-py3-none-any.whl
+[2023-06-03 07:21:44] INFO root fetch - processPackages [livereloadx]: Downloading https://files.pythonhosted.org/packages/b9/3d/f149d9adb14eec17b79161d98241da7b973b33abbc871a08176882e8f700/livereloadx-2.6.7.tar.gz
+[2023-06-03 07:21:44] INFO root fetch - processPackages [vulkpy]: Downloading https://files.pythonhosted.org/packages/f7/a0/5edce5066a2949f424ceca46cf2e015b21a02e99c07724b6f2ee44054b77/vulkpy-0.0.7.tar.gz
+[2023-06-03 07:21:44] INFO root fetch - processPackages [mltb2]: Downloading https://files.pythonhosted.org/packages/e7/b3/6fdb1a5f45f13959272939220c266d40607c4c9173e8a801ef760f1aed32/mltb2-0.0.1.tar.gz
+[2023-06-03 07:21:44] INFO root fetch - processPackages [django-imgwidget]: executing diffoscope
+[2023-06-03 07:21:44] INFO root fetch - processPackages [django-imgwidget]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-imgwidget-0.0.2.tar.gz tmp/django-imgwidget-0.0.2.1.tar.gz --markdown 20230603/d/django-imgwidget/0.0.2-0.0.2.1/diff.md --exclude *.pyd
+[2023-06-03 07:21:44] INFO root fetch - processPackages [netora-python]: Downloading https://files.pythonhosted.org/packages/15/f4/27507774a0891d3b742fe83e7606968939a6ee4e2b477d18462a625efc26/netora-python-0.1.3.tar.gz
+[2023-06-03 07:21:44] INFO root fetch - processPackages [odoo12-addon-stock-quant-manual-assign]: Downloading https://files.pythonhosted.org/packages/c1/35/3c8828bed360822a562fb878969f6f0b0a4f3ee882a48c1158a01f2da0e5/odoo12_addon_stock_quant_manual_assign-12.0.1.2.0.99.dev7-py3-none-any.whl
+[2023-06-03 07:21:44] INFO root fetch - processPackages [livereloadx]: Downloading https://files.pythonhosted.org/packages/2b/ab/ec07fd1359983daa5350539f7e2a585c1050a5be150964f41363f507154f/livereloadx-2.6.8.tar.gz
+[2023-06-03 07:21:44] INFO root fetch - processPackages [netora-python]: executing diffoscope
+[2023-06-03 07:21:44] INFO root fetch - processPackages [netora-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/netora-python-0.1.2.tar.gz tmp/netora-python-0.1.3.tar.gz --markdown 20230603/n/netora-python/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-06-03 07:21:44] INFO root fetch - processPackages [mltb2]: Downloading https://files.pythonhosted.org/packages/ad/25/2feb08f469a0d48ccdda5840cebb5c4dcd8edf52feffb34b6228546957d7/mltb2-0.0.2.tar.gz
+[2023-06-03 07:21:44] INFO root fetch - processPackages [odoo12-addon-stock-quant-manual-assign]: executing diffoscope
+[2023-06-03 07:21:44] INFO root fetch - processPackages [odoo12-addon-stock-quant-manual-assign]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo12_addon_stock_quant_manual_assign-12.0.1.2.0.99.dev6-py3-none-any.whl.zip tmp/odoo12_addon_stock_quant_manual_assign-12.0.1.2.0.99.dev7-py3-none-any.whl.zip --markdown 20230603/o/odoo12-addon-stock-quant-manual-assign/12.0.1.2.0.99.dev6-12.0.1.2.0.99.dev7/diff.md --exclude *.pyd
+[2023-06-03 07:21:44] INFO root fetch - processPackages [vulkpy]: Downloading https://files.pythonhosted.org/packages/72/31/9316a67f1659469ece856ffcc06d50383fc7287c552695826aedbf459626/vulkpy-0.0.8.tar.gz
+[2023-06-03 07:21:44] INFO root fetch - processPackages [mltb2]: executing diffoscope
+[2023-06-03 07:21:44] INFO root fetch - processPackages [mltb2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mltb2-0.0.1.tar.gz tmp/mltb2-0.0.2.tar.gz --markdown 20230603/m/mltb2/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-06-03 07:21:44] INFO root fetch - processPackages [livereloadx]: executing diffoscope
+[2023-06-03 07:21:44] INFO root fetch - processPackages [livereloadx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/livereloadx-2.6.7.tar.gz tmp/livereloadx-2.6.8.tar.gz --markdown 20230603/l/livereloadx/2.6.7-2.6.8/diff.md --exclude *.pyd
+[2023-06-03 07:21:45] INFO root fetch - processPackages [vulkpy]: executing diffoscope
+[2023-06-03 07:21:45] INFO root fetch - processPackages [vulkpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vulkpy-0.0.7.tar.gz tmp/vulkpy-0.0.8.tar.gz --markdown 20230603/v/vulkpy/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2023-06-03 07:21:45] INFO root fetch - main [MainThread]: End processing [netora-python]: success
+[2023-06-03 07:21:46] INFO root fetch - main [MainThread]: End processing [mltb2]: success
+[2023-06-03 07:21:46] INFO root fetch - main [MainThread]: End processing [livereloadx]: success
+[2023-06-03 07:21:46] INFO root fetch - main [MainThread]: End processing [django-imgwidget]: success
+[2023-06-03 07:21:46] INFO root fetch - main [MainThread]: End processing [odoo12-addon-stock-quant-manual-assign]: success
+[2023-06-03 07:21:47] INFO root fetch - main [MainThread]: End processing [vulkpy]: success
+[2023-06-03 07:21:47] INFO root fetch - main [MainThread]: Store serial: [18357209]
