@@ -11990,3 +11990,62 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-06-03 20:35:23] INFO root fetch - main [MainThread]: End processing [UBC-Solar-Simulation]: success
 [2023-06-03 20:36:07] INFO root fetch - main [MainThread]: End processing [chainforge]: success
 [2023-06-03 20:36:07] INFO root fetch - main [MainThread]: Store serial: [18361325]
+[2023-06-03 20:41:18] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18361325]
+[2023-06-03 20:41:23] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-06-03 20:41:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: triclustering
+[2023-06-03 20:41:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: twitter-api-client
+[2023-06-03 20:41:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: bettertest
+[2023-06-03 20:41:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: qcs-phy
+[2023-06-03 20:41:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: python-bitcoinlib
+[2023-06-03 20:41:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: flowtask
+[2023-06-03 20:41:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: rs-distances
+[2023-06-03 20:41:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: compel
+[2023-06-03 20:41:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: relevanceai
+[2023-06-03 20:41:23] INFO root fetch - processPackages [twitter-api-client]: New version: [0.8.6] Old Version: [0.8.5]
+[2023-06-03 20:41:23] INFO root fetch - processPackages [triclustering]: New version: [2023.6.3.0] Old Version: [2023.5.31.2]
+[2023-06-03 20:41:23] INFO root fetch - processPackages [rs-distances]: New version: [0.4.0] Old Version: [0.2.0]
+[2023-06-03 20:41:23] INFO root fetch - processPackages [compel]: New version: [1.2.0] Old Version: [1.1.6]
+[2023-06-03 20:41:23] INFO root fetch - processPackages [bettertest]: New version: [0.1.91] Old Version: [0.1.9]
+[2023-06-03 20:41:23] INFO root fetch - processPackages [python-bitcoinlib]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-06-03 20:41:23] INFO root fetch - processPackages [qcs-phy]: New version: [1.0.4] Old Version: [1.0.3]
+[2023-06-03 20:41:23] INFO root fetch - processPackages [flowtask]: New version: [4.3.9] Old Version: [4.3.8]
+[2023-06-03 20:41:23] INFO root fetch - processPackages [relevanceai]: New version: [4.0.4] Old Version: [4.0.3]
+[2023-06-03 20:41:23] INFO root fetch - processPackages [flowtask]: executing diffoscope
+[2023-06-03 20:41:23] INFO root fetch - processPackages [flowtask]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flowtask-4.3.8-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip tmp/flowtask-4.3.9-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip --markdown 20230603/f/flowtask/4.3.8-4.3.9/diff.md --exclude *.pyd
+[2023-06-03 20:41:23] INFO root fetch - processPackages [compel]: Downloading https://files.pythonhosted.org/packages/ee/d1/d643580088cac71ac8a33246be687eefca76f85751f83171a6cc0d6085f3/compel-1.2.0.tar.gz
+[2023-06-03 20:41:23] INFO root fetch - processPackages [triclustering]: Downloading https://files.pythonhosted.org/packages/8e/79/39d416f81a499529d1ab246f163d26f55b3b3d673321eb516ac1a19d970c/triclustering-2023.5.31.2.tar.gz
+[2023-06-03 20:41:23] INFO root fetch - processPackages [rs-distances]: Downloading https://files.pythonhosted.org/packages/68/6d/5cfb816f9f6f73f6889f824fa43e3b3f4591776137384ea90a7b5f939d15/rs_distances-0.4.0.tar.gz
+[2023-06-03 20:41:23] INFO root fetch - processPackages [relevanceai]: Downloading https://files.pythonhosted.org/packages/d0/df/d328e9724514ba08980fa80da69b778f572aeb0b4bafed55144513176657/relevanceai-4.0.3.tar.gz
+[2023-06-03 20:41:23] INFO root fetch - processPackages [compel]: executing diffoscope
+[2023-06-03 20:41:23] INFO root fetch - processPackages [compel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/compel-1.1.6.tar.gz tmp/compel-1.2.0.tar.gz --markdown 20230603/c/compel/1.1.6-1.2.0/diff.md --exclude *.pyd
+[2023-06-03 20:41:23] INFO root fetch - processPackages [rs-distances]: executing diffoscope
+[2023-06-03 20:41:23] INFO root fetch - processPackages [rs-distances]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rs_distances-0.2.0.tar.gz tmp/rs_distances-0.4.0.tar.gz --markdown 20230603/r/rs-distances/0.2.0-0.4.0/diff.md --exclude *.pyd
+[2023-06-03 20:41:23] INFO root fetch - processPackages [python-bitcoinlib]: Downloading https://files.pythonhosted.org/packages/cb/51/e645f4ffddbbc6486d97b9437b3ea5ba76e292378d93654fca80ab2d2d7e/python-bitcoinlib-0.8.0.tar.gz
+[2023-06-03 20:41:23] INFO root fetch - processPackages [bettertest]: Downloading https://files.pythonhosted.org/packages/e3/06/a99bcf9890d15412788bf1d6452c33a498e2b6438be7f073578908d57544/bettertest-0.1.91.tar.gz
+[2023-06-03 20:41:23] INFO root fetch - processPackages [qcs-phy]: Downloading https://files.pythonhosted.org/packages/b5/07/70597ca69c25f0bc4d18b3e17a19d2da16144dabc0a057e4e443b8a7de2e/qcs_phy-1.0.4.tar.gz
+[2023-06-03 20:41:23] INFO root fetch - processPackages [triclustering]: Downloading https://files.pythonhosted.org/packages/9d/23/a7a05280a5be7ecefc0b5e8585127fca100b24d81d3e855d0519b153f895/triclustering-2023.6.3.0.tar.gz
+[2023-06-03 20:41:23] INFO root fetch - processPackages [twitter-api-client]: Downloading https://files.pythonhosted.org/packages/d5/fc/a54e12cd1b3f56fea825d777ad42fcb5a4a8535de6de5a7a6630d1f82dbd/twitter-api-client-0.8.6.tar.gz
+[2023-06-03 20:41:23] INFO root fetch - processPackages [relevanceai]: Downloading https://files.pythonhosted.org/packages/35/7c/1a3b9823ca40de5c7fe0461fd3d7d66d858df46d6d976e501b81aa1184a5/relevanceai-4.0.4.tar.gz
+[2023-06-03 20:41:23] INFO root fetch - processPackages [bettertest]: executing diffoscope
+[2023-06-03 20:41:23] INFO root fetch - processPackages [bettertest]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bettertest-0.1.9.tar.gz tmp/bettertest-0.1.91.tar.gz --markdown 20230603/b/bettertest/0.1.9-0.1.91/diff.md --exclude *.pyd
+[2023-06-03 20:41:23] INFO root fetch - processPackages [qcs-phy]: executing diffoscope
+[2023-06-03 20:41:23] INFO root fetch - processPackages [qcs-phy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qcs_phy-1.0.3.tar.gz tmp/qcs_phy-1.0.4.tar.gz --markdown 20230603/q/qcs-phy/1.0.3-1.0.4/diff.md --exclude *.pyd
+[2023-06-03 20:41:23] INFO root fetch - processPackages [triclustering]: executing diffoscope
+[2023-06-03 20:41:23] INFO root fetch - processPackages [triclustering]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/triclustering-2023.5.31.2.tar.gz tmp/triclustering-2023.6.3.0.tar.gz --markdown 20230603/t/triclustering/2023.5.31.2-2023.6.3.0/diff.md --exclude *.pyd
+[2023-06-03 20:41:23] INFO root fetch - processPackages [twitter-api-client]: executing diffoscope
+[2023-06-03 20:41:23] INFO root fetch - processPackages [twitter-api-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/twitter-api-client-0.8.5.tar.gz tmp/twitter-api-client-0.8.6.tar.gz --markdown 20230603/t/twitter-api-client/0.8.5-0.8.6/diff.md --exclude *.pyd
+[2023-06-03 20:41:23] INFO root fetch - processPackages [relevanceai]: executing diffoscope
+[2023-06-03 20:41:23] INFO root fetch - processPackages [relevanceai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/relevanceai-4.0.3.tar.gz tmp/relevanceai-4.0.4.tar.gz --markdown 20230603/r/relevanceai/4.0.3-4.0.4/diff.md --exclude *.pyd
+[2023-06-03 20:41:23] INFO root fetch - processPackages [python-bitcoinlib]: Downloading https://files.pythonhosted.org/packages/8e/85/603307fdcc5b7b40dec578e61d27363ca1e9a7094e3ee7c6e6c24894995f/python_bitcoinlib-0.9.0-py3-none-any.whl
+[2023-06-03 20:41:23] INFO root fetch - processPackages [python-bitcoinlib]: executing diffoscope
+[2023-06-03 20:41:23] INFO root fetch - processPackages [python-bitcoinlib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python-bitcoinlib-0.8.0.tar.gz tmp/python_bitcoinlib-0.9.0-py3-none-any.whl.zip --markdown 20230603/p/python-bitcoinlib/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2023-06-03 20:41:24] INFO root fetch - main [MainThread]: End processing [compel]: success
+[2023-06-03 20:41:24] INFO root fetch - main [MainThread]: End processing [rs-distances]: success
+[2023-06-03 20:41:25] INFO root fetch - main [MainThread]: End processing [python-bitcoinlib]: success
+[2023-06-03 20:41:25] INFO root fetch - main [MainThread]: End processing [triclustering]: success
+[2023-06-03 20:41:25] INFO root fetch - main [MainThread]: End processing [qcs-phy]: success
+[2023-06-03 20:41:25] INFO root fetch - main [MainThread]: End processing [bettertest]: success
+[2023-06-03 20:41:25] INFO root fetch - main [MainThread]: End processing [relevanceai]: success
+[2023-06-03 20:41:25] INFO root fetch - main [MainThread]: End processing [twitter-api-client]: success
+[2023-06-03 20:41:28] INFO root fetch - main [MainThread]: End processing [flowtask]: success
+[2023-06-03 20:41:28] INFO root fetch - main [MainThread]: Store serial: [18361357]
