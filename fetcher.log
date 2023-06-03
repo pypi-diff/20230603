@@ -1672,3 +1672,47 @@
 [2023-06-03 02:43:03] INFO root fetch - main [MainThread]: End processing [ooo-dev-tools]: success
 [2023-06-03 02:43:07] INFO root fetch - main [MainThread]: End processing [Geode-Common]: success
 [2023-06-03 02:43:07] INFO root fetch - main [MainThread]: Store serial: [18354815]
+[2023-06-03 02:48:11] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18354815]
+[2023-06-03 02:48:16] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-06-03 02:48:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: highlight-io
+[2023-06-03 02:48:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: loophost
+[2023-06-03 02:48:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: tfds-nightly
+[2023-06-03 02:48:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: landingai
+[2023-06-03 02:48:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: d20-orm
+[2023-06-03 02:48:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: kubric-nightly
+[2023-06-03 02:48:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: PyCyphORM
+[2023-06-03 02:48:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: cdk-comprehend-s3olap
+[2023-06-03 02:48:16] INFO root fetch - processPackages [highlight-io]: New version: [0.5.0] Old Version: [0.4.9]
+[2023-06-03 02:48:16] INFO root fetch - processPackages [landingai]: New version: [0.0.8] Old Version: [0.0.7]
+[2023-06-03 02:48:16] WARNING root fetch - processPackages [PyCyphORM]: Skipping, unable to determine old version
+[2023-06-03 02:48:16] INFO root fetch - main [MainThread]: End processing [PyCyphORM] error
+[2023-06-03 02:48:16] INFO root fetch - processPackages [d20-orm]: New version: [2.0.2a9] Old Version: [2.0.2a8]
+[2023-06-03 02:48:16] INFO root fetch - processPackages [loophost]: New version: [1.2.9] Old Version: [1.2.8]
+[2023-06-03 02:48:16] INFO root fetch - processPackages [cdk-comprehend-s3olap]: New version: [2.0.99] Old Version: [2.0.98]
+[2023-06-03 02:48:16] INFO root fetch - processPackages [kubric-nightly]: New version: [2023.6.2] Old Version: [2023.6.1]
+[2023-06-03 02:48:16] INFO root fetch - processPackages [tfds-nightly]: New version: [4.9.2.dev202306020044] Old Version: [4.9.2.dev202306010045]
+[2023-06-03 02:48:16] INFO root fetch - processPackages [cdk-comprehend-s3olap]: Downloading https://files.pythonhosted.org/packages/d2/64/ec00fce58a2563fe9a768f5ee5a77ecba74bfccf89b1ec489306be4a20a8/cdk_comprehend_s3olap-2.0.98.tar.gz
+[2023-06-03 02:48:16] INFO root fetch - processPackages [d20-orm]: executing diffoscope
+[2023-06-03 02:48:16] INFO root fetch - processPackages [d20-orm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/d20-orm-2.0.2a8.tar.gz tmp/d20-orm-2.0.2a9.tar.gz --markdown 20230603/d/d20-orm/2.0.2a8-2.0.2a9/diff.md --exclude *.pyd
+[2023-06-03 02:48:16] WARNING root fetch - processPackages [cdk-comprehend-s3olap]: Skipping package: exceeds size limit 14179128>=10485760
+[2023-06-03 02:48:16] INFO root fetch - main [MainThread]: End processing [cdk-comprehend-s3olap] error
+[2023-06-03 02:48:16] INFO root fetch - processPackages [landingai]: executing diffoscope
+[2023-06-03 02:48:16] INFO root fetch - processPackages [landingai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/landingai-0.0.7.tar.gz tmp/landingai-0.0.8.tar.gz --markdown 20230603/l/landingai/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2023-06-03 02:48:16] INFO root fetch - processPackages [loophost]: executing diffoscope
+[2023-06-03 02:48:16] INFO root fetch - processPackages [loophost]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/loophost-1.2.8-py3-none-any.whl.zip tmp/loophost-1.2.9-py3-none-any.whl.zip --markdown 20230603/l/loophost/1.2.8-1.2.9/diff.md --exclude *.pyd
+[2023-06-03 02:48:16] INFO root fetch - processPackages [kubric-nightly]: Downloading https://files.pythonhosted.org/packages/94/56/faba20aaa54f017760bd3f49527545ca8b1a46b72dda0c25864698476b2c/kubric-nightly-2023.6.2.tar.gz
+[2023-06-03 02:48:16] INFO root fetch - processPackages [highlight-io]: Downloading https://files.pythonhosted.org/packages/b9/d8/680f0ee61b82b6f1a38dd393309c81e9ca33f883a3f1df797b85b68436ff/highlight_io-0.5.0.tar.gz
+[2023-06-03 02:48:16] INFO root fetch - processPackages [kubric-nightly]: executing diffoscope
+[2023-06-03 02:48:16] INFO root fetch - processPackages [kubric-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kubric-nightly-2023.6.1.tar.gz tmp/kubric-nightly-2023.6.2.tar.gz --markdown 20230603/k/kubric-nightly/2023.6.1-2023.6.2/diff.md --exclude *.pyd
+[2023-06-03 02:48:16] INFO root fetch - processPackages [highlight-io]: executing diffoscope
+[2023-06-03 02:48:16] INFO root fetch - processPackages [highlight-io]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/highlight_io-0.4.9.tar.gz tmp/highlight_io-0.5.0.tar.gz --markdown 20230603/h/highlight-io/0.4.9-0.5.0/diff.md --exclude *.pyd
+[2023-06-03 02:48:16] INFO root fetch - processPackages [tfds-nightly]: Downloading https://files.pythonhosted.org/packages/ed/39/88ba18cffd1e9e29909c7256c0a021e6535717c45f6bc8d2457b35b7c423/tfds-nightly-4.9.2.dev202306020044.tar.gz
+[2023-06-03 02:48:16] INFO root fetch - processPackages [tfds-nightly]: executing diffoscope
+[2023-06-03 02:48:16] INFO root fetch - processPackages [tfds-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tfds-nightly-4.9.2.dev202306010045.tar.gz tmp/tfds-nightly-4.9.2.dev202306020044.tar.gz --markdown 20230603/t/tfds-nightly/4.9.2.dev202306010045-4.9.2.dev202306020044/diff.md --exclude *.pyd
+[2023-06-03 02:48:17] INFO root fetch - main [MainThread]: End processing [landingai]: success
+[2023-06-03 02:48:17] INFO root fetch - main [MainThread]: End processing [d20-orm]: success
+[2023-06-03 02:48:17] INFO root fetch - main [MainThread]: End processing [loophost]: success
+[2023-06-03 02:48:17] INFO root fetch - main [MainThread]: End processing [highlight-io]: success
+[2023-06-03 02:48:29] INFO root fetch - main [MainThread]: End processing [tfds-nightly]: success
+[2023-06-03 02:49:09] INFO root fetch - main [MainThread]: End processing [kubric-nightly]: success
+[2023-06-03 02:49:09] INFO root fetch - main [MainThread]: Store serial: [18354847]
