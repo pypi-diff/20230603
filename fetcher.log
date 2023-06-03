@@ -5758,3 +5758,26 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-06-03 08:20:00] INFO root fetch - main [MainThread]: End processing [jumeaux]: success
 [2023-06-03 08:20:02] INFO root fetch - main [MainThread]: End processing [pretext]: success
 [2023-06-03 08:20:02] INFO root fetch - main [MainThread]: Store serial: [18357377]
+[2023-06-03 08:25:06] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18357377]
+[2023-06-03 08:25:11] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-06-03 08:25:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dsmltf
+[2023-06-03 08:25:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: intercom-test
+[2023-06-03 08:25:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: travis-emulator
+[2023-06-03 08:25:11] INFO root fetch - processPackages [dsmltf]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-06-03 08:25:11] INFO root fetch - processPackages [travis-emulator]: New version: [2.0.5] Old Version: [2.0.4]
+[2023-06-03 08:25:11] INFO root fetch - processPackages [intercom-test]: New version: [2.3.1] Old Version: [2.3.0]
+[2023-06-03 08:25:11] INFO root fetch - processPackages [travis-emulator]: Downloading https://files.pythonhosted.org/packages/2d/8b/681e48239364e308173a9c893e16eb511bd0cfc7cabddcd22be9263032ac/travis_emulator-2.0.4.tar.gz
+[2023-06-03 08:25:11] INFO root fetch - processPackages [intercom-test]: Downloading https://files.pythonhosted.org/packages/97/9b/dc81df9e7ea9bb1977f21c92c1157e283c2eb05bacded293de8097c0a3f6/intercom_test-2.3.0.tar.gz
+[2023-06-03 08:25:11] INFO root fetch - processPackages [dsmltf]: Downloading https://files.pythonhosted.org/packages/27/2d/a757b7c0f7c8386dc106881b2c5f219935caefaed8d6f0f6f105e6a7d6dc/dsmltf-0.0.6.tar.gz
+[2023-06-03 08:25:11] INFO root fetch - processPackages [intercom-test]: Downloading https://files.pythonhosted.org/packages/70/ff/e7a0294b5c4503f77c25ab6884eed9e58ab484d4bc6e2c70c149cb877967/intercom_test-2.3.1.tar.gz
+[2023-06-03 08:25:11] INFO root fetch - processPackages [dsmltf]: executing diffoscope
+[2023-06-03 08:25:11] INFO root fetch - processPackages [dsmltf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dsmltf-0.0.5.tar.gz tmp/dsmltf-0.0.6.tar.gz --markdown 20230603/d/dsmltf/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-06-03 08:25:11] INFO root fetch - processPackages [travis-emulator]: Downloading https://files.pythonhosted.org/packages/07/2a/8acd094d13db26f2e8ae11029e5e1a5e16f9c5f73274bc9e13218bc829a3/travis_emulator-2.0.5.tar.gz
+[2023-06-03 08:25:12] INFO root fetch - processPackages [intercom-test]: executing diffoscope
+[2023-06-03 08:25:12] INFO root fetch - processPackages [intercom-test]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/intercom_test-2.3.0.tar.gz tmp/intercom_test-2.3.1.tar.gz --markdown 20230603/i/intercom-test/2.3.0-2.3.1/diff.md --exclude *.pyd
+[2023-06-03 08:25:12] INFO root fetch - processPackages [travis-emulator]: executing diffoscope
+[2023-06-03 08:25:12] INFO root fetch - processPackages [travis-emulator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/travis_emulator-2.0.4.tar.gz tmp/travis_emulator-2.0.5.tar.gz --markdown 20230603/t/travis-emulator/2.0.4-2.0.5/diff.md --exclude *.pyd
+[2023-06-03 08:25:12] INFO root fetch - main [MainThread]: End processing [dsmltf]: success
+[2023-06-03 08:25:13] INFO root fetch - main [MainThread]: End processing [intercom-test]: success
+[2023-06-03 08:25:13] INFO root fetch - main [MainThread]: End processing [travis-emulator]: success
+[2023-06-03 08:25:13] INFO root fetch - main [MainThread]: Store serial: [18357391]
