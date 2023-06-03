@@ -4736,3 +4736,39 @@
 [2023-06-03 05:43:43] WARNING root fetch - processPackages [opencv-contrib-python-rolling]: Skipping package: exceeds size limit 43085134>=10485760
 [2023-06-03 05:43:43] INFO root fetch - main [MainThread]: End processing [opencv-contrib-python-rolling] error
 [2023-06-03 05:43:43] INFO root fetch - main [MainThread]: Store serial: [18356696]
+[2023-06-03 05:48:47] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18356696]
+[2023-06-03 05:48:52] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-06-03 05:48:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: vector-vault
+[2023-06-03 05:48:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: egcd
+[2023-06-03 05:48:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: thsolver
+[2023-06-03 05:48:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: py-cone
+[2023-06-03 05:48:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: GeoConic
+[2023-06-03 05:48:52] INFO root fetch - processPackages [thsolver]: New version: [1.1.3] Old Version: [1.1.2]
+[2023-06-03 05:48:52] INFO root fetch - processPackages [vector-vault]: New version: [1.7.3] Old Version: [1.7.2]
+[2023-06-03 05:48:52] INFO root fetch - processPackages [egcd]: New version: [0.5.0] Old Version: [0.4.3]
+[2023-06-03 05:48:52] INFO root fetch - processPackages [GeoConic]: New version: [1.0] Old Version: [0.1]
+[2023-06-03 05:48:52] INFO root fetch - processPackages [py-cone]: New version: [1.1.0] Old Version: [1.0.9]
+[2023-06-03 05:48:53] INFO root fetch - processPackages [GeoConic]: Downloading https://files.pythonhosted.org/packages/74/9f/1f60b7b5965ba059d1267bf5885303d5a28045cf21dbcaa2862cf4672c9d/GeoConic-0.1-py3-none-any.whl
+[2023-06-03 05:48:53] INFO root fetch - processPackages [thsolver]: Downloading https://files.pythonhosted.org/packages/f8/57/d25bd52fc5f1cfaacbbbde79750a1679fa6dc674572a602cf51b616f04a9/thsolver-1.1.2.tar.gz
+[2023-06-03 05:48:53] INFO root fetch - processPackages [egcd]: Downloading https://files.pythonhosted.org/packages/af/74/3381f67527e3cca78cc918aef2c23647421e111a4742ffc51a083240d23c/egcd-0.4.3.tar.gz
+[2023-06-03 05:48:53] INFO root fetch - processPackages [vector-vault]: Downloading https://files.pythonhosted.org/packages/1b/d7/f2cb7110110adbd1a246a2e95cff33bfc6134952a48321081af2bd90efce/vector_vault-1.7.3.tar.gz
+[2023-06-03 05:48:53] INFO root fetch - processPackages [vector-vault]: executing diffoscope
+[2023-06-03 05:48:53] INFO root fetch - processPackages [vector-vault]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vector_vault-1.7.2.tar.gz tmp/vector_vault-1.7.3.tar.gz --markdown 20230603/v/vector-vault/1.7.2-1.7.3/diff.md --exclude *.pyd
+[2023-06-03 05:48:53] INFO root fetch - processPackages [py-cone]: Downloading https://files.pythonhosted.org/packages/7d/ed/ef4650b516196fbeda0b660760b30fa599df72b038b278a7411f720b0b8d/py-cone-1.1.0.tar.gz
+[2023-06-03 05:48:53] INFO root fetch - processPackages [py-cone]: executing diffoscope
+[2023-06-03 05:48:53] INFO root fetch - processPackages [py-cone]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py-cone-1.0.9.tar.gz tmp/py-cone-1.1.0.tar.gz --markdown 20230603/p/py-cone/1.0.9-1.1.0/diff.md --exclude *.pyd
+[2023-06-03 05:48:53] INFO root fetch - processPackages [GeoConic]: Downloading https://files.pythonhosted.org/packages/cc/c9/a6b849bf1d1b6eaae8592d75eedf3256d6347aeae4775c9fa38bfc4a2c18/GeoConic-1.0-py3-none-any.whl
+[2023-06-03 05:48:53] INFO root fetch - processPackages [thsolver]: Downloading https://files.pythonhosted.org/packages/6c/24/efec4c6cbf73d3454dbef38a324672a12f2116bcbfec7ec4ac81bf6c5ff2/thsolver-1.1.3.tar.gz
+[2023-06-03 05:48:53] INFO root fetch - processPackages [GeoConic]: executing diffoscope
+[2023-06-03 05:48:53] INFO root fetch - processPackages [GeoConic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/GeoConic-0.1-py3-none-any.whl.zip tmp/GeoConic-1.0-py3-none-any.whl.zip --markdown 20230603/G/GeoConic/0.1-1.0/diff.md --exclude *.pyd
+[2023-06-03 05:48:53] INFO root fetch - processPackages [thsolver]: executing diffoscope
+[2023-06-03 05:48:53] INFO root fetch - processPackages [thsolver]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/thsolver-1.1.2.tar.gz tmp/thsolver-1.1.3.tar.gz --markdown 20230603/t/thsolver/1.1.2-1.1.3/diff.md --exclude *.pyd
+[2023-06-03 05:48:53] INFO root fetch - processPackages [egcd]: Downloading https://files.pythonhosted.org/packages/8e/44/22e2a6d7dd87c34b832ce5d28775691161b48010490ac4d402f091ae6489/egcd-0.5.0.tar.gz
+[2023-06-03 05:48:53] INFO root fetch - processPackages [egcd]: executing diffoscope
+[2023-06-03 05:48:53] INFO root fetch - processPackages [egcd]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/egcd-0.4.3.tar.gz tmp/egcd-0.5.0.tar.gz --markdown 20230603/e/egcd/0.4.3-0.5.0/diff.md --exclude *.pyd
+[2023-06-03 05:48:54] INFO root fetch - main [MainThread]: End processing [vector-vault]: success
+[2023-06-03 05:48:54] INFO root fetch - main [MainThread]: End processing [py-cone]: success
+[2023-06-03 05:48:54] INFO root fetch - main [MainThread]: End processing [GeoConic]: success
+[2023-06-03 05:48:54] INFO root fetch - main [MainThread]: End processing [thsolver]: success
+[2023-06-03 05:48:54] INFO root fetch - main [MainThread]: End processing [egcd]: success
+[2023-06-03 05:48:54] INFO root fetch - main [MainThread]: Store serial: [18356721]
