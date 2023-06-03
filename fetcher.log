@@ -9873,3 +9873,49 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-06-03 17:18:04] INFO root fetch - main [MainThread]: End processing [tensorflow-text-nightly]: success
 [2023-06-03 17:19:13] INFO root fetch - main [MainThread]: End processing [OpenFisca-France]: success
 [2023-06-03 17:19:13] INFO root fetch - main [MainThread]: Store serial: [18360003]
+[2023-06-03 17:24:17] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18360003]
+[2023-06-03 17:24:22] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-06-03 17:24:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tolib
+[2023-06-03 17:24:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: PyQt-Fluent-Widgets
+[2023-06-03 17:24:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mack-sdk
+[2023-06-03 17:24:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: klp-commons
+[2023-06-03 17:24:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: bmsdna-lakeapi
+[2023-06-03 17:24:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: weightipy
+[2023-06-03 17:24:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: uium
+[2023-06-03 17:24:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: odoo-addon-account-banking-sepa-credit-transfer
+[2023-06-03 17:24:22] WARNING root fetch - processPackages [tolib]: Skipping, unable to determine old version
+[2023-06-03 17:24:22] INFO root fetch - main [MainThread]: End processing [tolib] error
+[2023-06-03 17:24:22] WARNING root fetch - processPackages [mack-sdk]: Skipping, unable to determine old version
+[2023-06-03 17:24:22] INFO root fetch - main [MainThread]: End processing [mack-sdk] error
+[2023-06-03 17:24:22] INFO root fetch - processPackages [PyQt-Fluent-Widgets]: New version: [0.9.3] Old Version: [0.9.2]
+[2023-06-03 17:24:22] INFO root fetch - processPackages [klp-commons]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-06-03 17:24:22] INFO root fetch - processPackages [bmsdna-lakeapi]: New version: [0.6.5] Old Version: [0.6.4]
+[2023-06-03 17:24:22] INFO root fetch - processPackages [weightipy]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-06-03 17:24:22] INFO root fetch - processPackages [uium]: New version: [0.3.7] Old Version: [0.3.6]
+[2023-06-03 17:24:22] INFO root fetch - processPackages [odoo-addon-account-banking-sepa-credit-transfer]: New version: [16.0.1.0.0.2] Old Version: [15.0.2.0.1]
+[2023-06-03 17:24:22] INFO root fetch - processPackages [bmsdna-lakeapi]: Downloading https://files.pythonhosted.org/packages/24/01/c278168bb1ba3472c3a2bf8773600af90181a71f379943721c04f1ed40d3/bmsdna_lakeapi-0.6.5.tar.gz
+[2023-06-03 17:24:22] INFO root fetch - processPackages [weightipy]: Downloading https://files.pythonhosted.org/packages/0c/02/66a287795df24ccf447925f4ba43a7a4ddb4bf4a7979a0b7fdfaacc295e5/weightipy-0.1.0.tar.gz
+[2023-06-03 17:24:23] INFO root fetch - processPackages [odoo-addon-account-banking-sepa-credit-transfer]: Downloading https://files.pythonhosted.org/packages/71/f3/634ad5be2369f54e8c3f9e21a72205a93979e2fe6dd70176a58e7a78b34c/odoo_addon_account_banking_sepa_credit_transfer-15.0.2.0.1-py3-none-any.whl
+[2023-06-03 17:24:23] INFO root fetch - processPackages [PyQt-Fluent-Widgets]: Downloading https://files.pythonhosted.org/packages/e3/94/d32dcf000e59a99ccdc7d9546e6e02d575c27c30effad145036db0b87526/PyQt-Fluent-Widgets-0.9.3.tar.gz
+[2023-06-03 17:24:23] INFO root fetch - processPackages [uium]: Downloading https://files.pythonhosted.org/packages/14/0c/7c0c6b940e9469b6e7d4f7bad02ab21566398ac7a2164f20287f98ad7124/uium-0.3.7.tar.gz
+[2023-06-03 17:24:23] INFO root fetch - processPackages [bmsdna-lakeapi]: executing diffoscope
+[2023-06-03 17:24:23] INFO root fetch - processPackages [bmsdna-lakeapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bmsdna_lakeapi-0.6.4.tar.gz tmp/bmsdna_lakeapi-0.6.5.tar.gz --markdown 20230603/b/bmsdna-lakeapi/0.6.4-0.6.5/diff.md --exclude *.pyd
+[2023-06-03 17:24:23] INFO root fetch - processPackages [uium]: executing diffoscope
+[2023-06-03 17:24:23] INFO root fetch - processPackages [uium]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/uium-0.3.6.tar.gz tmp/uium-0.3.7.tar.gz --markdown 20230603/u/uium/0.3.6-0.3.7/diff.md --exclude *.pyd
+[2023-06-03 17:24:23] INFO root fetch - processPackages [weightipy]: Downloading https://files.pythonhosted.org/packages/33/55/ace88bd1c7e686e310be1e26b684600790ad34c1d4947a29210f64b1e891/weightipy-0.1.1.tar.gz
+[2023-06-03 17:24:23] INFO root fetch - processPackages [PyQt-Fluent-Widgets]: executing diffoscope
+[2023-06-03 17:24:23] INFO root fetch - processPackages [PyQt-Fluent-Widgets]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyQt-Fluent-Widgets-0.9.2.tar.gz tmp/PyQt-Fluent-Widgets-0.9.3.tar.gz --markdown 20230603/P/PyQt-Fluent-Widgets/0.9.2-0.9.3/diff.md --exclude *.pyd
+[2023-06-03 17:24:23] INFO root fetch - processPackages [odoo-addon-account-banking-sepa-credit-transfer]: Downloading https://files.pythonhosted.org/packages/63/4d/edd631e8e5200611a35ca93950dc615da749033fbce3e86d0abb2d8cadd9/odoo_addon_account_banking_sepa_credit_transfer-16.0.1.0.0.2-py3-none-any.whl
+[2023-06-03 17:24:23] INFO root fetch - processPackages [klp-commons]: executing diffoscope
+[2023-06-03 17:24:23] INFO root fetch - processPackages [klp-commons]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/klp-commons-0.0.8.tar.gz tmp/klp-commons-0.0.9.tar.gz --markdown 20230603/k/klp-commons/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-06-03 17:24:23] INFO root fetch - processPackages [weightipy]: executing diffoscope
+[2023-06-03 17:24:23] INFO root fetch - processPackages [weightipy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/weightipy-0.1.0.tar.gz tmp/weightipy-0.1.1.tar.gz --markdown 20230603/w/weightipy/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-06-03 17:24:23] INFO root fetch - processPackages [odoo-addon-account-banking-sepa-credit-transfer]: executing diffoscope
+[2023-06-03 17:24:23] INFO root fetch - processPackages [odoo-addon-account-banking-sepa-credit-transfer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_account_banking_sepa_credit_transfer-15.0.2.0.1-py3-none-any.whl.zip tmp/odoo_addon_account_banking_sepa_credit_transfer-16.0.1.0.0.2-py3-none-any.whl.zip --markdown 20230603/o/odoo-addon-account-banking-sepa-credit-transfer/15.0.2.0.1-16.0.1.0.0.2/diff.md --exclude *.pyd
+[2023-06-03 17:24:24] INFO root fetch - main [MainThread]: End processing [uium]: success
+[2023-06-03 17:24:24] INFO root fetch - main [MainThread]: End processing [weightipy]: success
+[2023-06-03 17:24:24] INFO root fetch - main [MainThread]: End processing [klp-commons]: success
+[2023-06-03 17:24:24] INFO root fetch - main [MainThread]: End processing [bmsdna-lakeapi]: success
+[2023-06-03 17:24:24] INFO root fetch - main [MainThread]: End processing [odoo-addon-account-banking-sepa-credit-transfer]: success
+[2023-06-03 17:24:27] INFO root fetch - main [MainThread]: End processing [PyQt-Fluent-Widgets]: success
+[2023-06-03 17:24:27] INFO root fetch - main [MainThread]: Store serial: [18360033]
