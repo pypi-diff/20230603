@@ -9919,3 +9919,26 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-06-03 17:24:24] INFO root fetch - main [MainThread]: End processing [odoo-addon-account-banking-sepa-credit-transfer]: success
 [2023-06-03 17:24:27] INFO root fetch - main [MainThread]: End processing [PyQt-Fluent-Widgets]: success
 [2023-06-03 17:24:27] INFO root fetch - main [MainThread]: Store serial: [18360033]
+[2023-06-03 17:29:33] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18360033]
+[2023-06-03 17:29:38] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-06-03 17:29:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pycreg
+[2023-06-03 17:29:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pycvr
+[2023-06-03 17:29:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: SerilizerGrishchuk
+[2023-06-03 17:29:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: typed-api-framework
+[2023-06-03 17:29:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: img2unicode
+[2023-06-03 17:29:38] WARNING root fetch - processPackages [pycreg]: Skipping, unable to determine old version
+[2023-06-03 17:29:38] INFO root fetch - main [MainThread]: End processing [pycreg] error
+[2023-06-03 17:29:38] WARNING root fetch - processPackages [pycvr]: Skipping, unable to determine old version
+[2023-06-03 17:29:38] INFO root fetch - main [MainThread]: End processing [pycvr] error
+[2023-06-03 17:29:38] INFO root fetch - processPackages [img2unicode]: New version: [0.1a9] Old Version: [0.1a8]
+[2023-06-03 17:29:38] WARNING root fetch - processPackages [SerilizerGrishchuk]: Skipping, unable to determine old version
+[2023-06-03 17:29:38] INFO root fetch - main [MainThread]: End processing [SerilizerGrishchuk] error
+[2023-06-03 17:29:38] INFO root fetch - processPackages [typed-api-framework]: New version: [0.0.1a5] Old Version: [0.0.1a4]
+[2023-06-03 17:29:38] INFO root fetch - processPackages [img2unicode]: Downloading https://files.pythonhosted.org/packages/d0/45/0221cfd003f547ca5613ca92e1e33cd848461086afad6fa838b12188f2d5/img2unicode-0.1a8.tar.gz
+[2023-06-03 17:29:38] INFO root fetch - processPackages [typed-api-framework]: Downloading https://files.pythonhosted.org/packages/35/50/bc51b386d32a4686d8a6fb1d7ffe3526839c351ab6a77ca8c9ca0d4a4ab6/typed-api-framework-0.0.1a5.tar.gz
+[2023-06-03 17:29:38] INFO root fetch - processPackages [typed-api-framework]: executing diffoscope
+[2023-06-03 17:29:38] INFO root fetch - processPackages [typed-api-framework]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/typed-api-framework-0.0.1a4.tar.gz tmp/typed-api-framework-0.0.1a5.tar.gz --markdown 20230603/t/typed-api-framework/0.0.1a4-0.0.1a5/diff.md --exclude *.pyd
+[2023-06-03 17:29:38] WARNING root fetch - processPackages [img2unicode]: Skipping package: exceeds size limit 19788156>=10485760
+[2023-06-03 17:29:38] INFO root fetch - main [MainThread]: End processing [img2unicode] error
+[2023-06-03 17:29:39] INFO root fetch - main [MainThread]: End processing [typed-api-framework]: success
+[2023-06-03 17:29:39] INFO root fetch - main [MainThread]: Store serial: [18360050]
