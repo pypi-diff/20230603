@@ -7750,3 +7750,65 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-06-03 13:00:20] INFO root fetch - main [MainThread]: End processing [boxmot]: success
 [2023-06-03 13:00:20] INFO root fetch - main [MainThread]: End processing [waveformtools]: success
 [2023-06-03 13:00:20] INFO root fetch - main [MainThread]: Store serial: [18358623]
+[2023-06-03 13:05:24] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18358623]
+[2023-06-03 13:05:29] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-06-03 13:05:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: persist-queue
+[2023-06-03 13:05:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: hathitrust-downloader
+[2023-06-03 13:05:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: getdaft
+[2023-06-03 13:05:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: tkinter-layout-helpers
+[2023-06-03 13:05:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: whoisit
+[2023-06-03 13:05:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: opendigger
+[2023-06-03 13:05:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: oslex
+[2023-06-03 13:05:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: multi-stock-api
+[2023-06-03 13:05:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: json-to-github-actions
+[2023-06-03 13:05:29] INFO root fetch - processPackages [hathitrust-downloader]: New version: [1.1.4rc1] Old Version: [1.1.3]
+[2023-06-03 13:05:29] INFO root fetch - processPackages [opendigger]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-06-03 13:05:29] INFO root fetch - processPackages [persist-queue]: New version: [0.8.1] Old Version: [0.8.0b0]
+[2023-06-03 13:05:29] INFO root fetch - processPackages [tkinter-layout-helpers]: New version: [0.3.0] Old Version: [0.2.0]
+[2023-06-03 13:05:29] INFO root fetch - processPackages [multi-stock-api]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-06-03 13:05:29] INFO root fetch - processPackages [oslex]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-06-03 13:05:29] INFO root fetch - processPackages [whoisit]: New version: [2.7.0] Old Version: [2.6.6]
+[2023-06-03 13:05:29] INFO root fetch - processPackages [getdaft]: New version: [0.1.4] Old Version: [0.1.3]
+[2023-06-03 13:05:29] INFO root fetch - processPackages [json-to-github-actions]: New version: [1.1.0] Old Version: [1.0.1]
+[2023-06-03 13:05:29] INFO root fetch - processPackages [opendigger]: Downloading https://files.pythonhosted.org/packages/7b/73/6e7af8c80f772573c38a152305844ad2271ee383f28a3e310d65a8bede60/opendigger-0.1.0.tar.gz
+[2023-06-03 13:05:29] INFO root fetch - processPackages [hathitrust-downloader]: Downloading https://files.pythonhosted.org/packages/d1/b8/0ec382390f05c7459e22bd1b55da13196704759c7b5d74e99ea4fe9a425f/hathitrust-downloader-1.1.4rc1.tar.gz
+[2023-06-03 13:05:29] INFO root fetch - processPackages [tkinter-layout-helpers]: Downloading https://files.pythonhosted.org/packages/e5/52/54485f622131b76c55e38be5c81ec3ce0919a3164da3fcd057bd0bd4f11a/tkinter_layout_helpers-0.2.0.tar.gz
+[2023-06-03 13:05:29] INFO root fetch - processPackages [persist-queue]: Downloading https://files.pythonhosted.org/packages/ed/d8/d9dc0934c481cd0120fba4e91ecf00b171c3f7a4867dc6ebc71407345790/persist-queue-0.8.0b0.tar.gz
+[2023-06-03 13:05:29] INFO root fetch - processPackages [whoisit]: Downloading https://files.pythonhosted.org/packages/db/bd/6e279eb6ddc4ef882523783ac61f5cc8f51f1f78c4fd68f1cfc18c95340e/whoisit-2.6.6.tar.gz
+[2023-06-03 13:05:29] INFO root fetch - processPackages [oslex]: Downloading https://files.pythonhosted.org/packages/1c/b7/7c237530821025ef7684329bb154cff2c904c632b77b1d1fa7894109d755/oslex-0.1.1.tar.gz
+[2023-06-03 13:05:29] INFO root fetch - processPackages [multi-stock-api]: Downloading https://files.pythonhosted.org/packages/3f/9a/176ac837442e3f7862e1050c2a5e9f2cb216e323be5709a7a422b5a9d1b3/multi_stock_api-0.1.3.tar.gz
+[2023-06-03 13:05:29] INFO root fetch - processPackages [hathitrust-downloader]: executing diffoscope
+[2023-06-03 13:05:29] INFO root fetch - processPackages [hathitrust-downloader]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hathitrust-downloader-1.1.3.tar.gz tmp/hathitrust-downloader-1.1.4rc1.tar.gz --markdown 20230603/h/hathitrust-downloader/1.1.3-1.1.4rc1/diff.md --exclude *.pyd
+[2023-06-03 13:05:30] INFO root fetch - processPackages [getdaft]: Downloading https://files.pythonhosted.org/packages/8f/7a/3f4caa67166b9593c72bd99040ddbe984f5dda9e186a63b4ef472f1d8333/getdaft-0.1.4.tar.gz
+[2023-06-03 13:05:30] INFO root fetch - processPackages [multi-stock-api]: executing diffoscope
+[2023-06-03 13:05:30] INFO root fetch - processPackages [json-to-github-actions]: Downloading https://files.pythonhosted.org/packages/d0/6d/348692eaf2f698fcbca28722d13ea895d9e64d558742689f424da32d9328/json-to-github-actions-1.1.0.tar.gz
+[2023-06-03 13:05:30] INFO root fetch - processPackages [opendigger]: Downloading https://files.pythonhosted.org/packages/cf/bd/2bc7019bf1bc149861576d2667400af8dc912c18a671a24a663266ff29f9/opendigger-0.1.1.tar.gz
+[2023-06-03 13:05:30] INFO root fetch - processPackages [multi-stock-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/multi_stock_api-0.1.2.tar.gz tmp/multi_stock_api-0.1.3.tar.gz --markdown 20230603/m/multi-stock-api/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-06-03 13:05:30] INFO root fetch - processPackages [tkinter-layout-helpers]: Downloading https://files.pythonhosted.org/packages/63/78/ce833a422be823f833091a8b8f32fb0251d228c428314ea28cb6dfb60a2a/tkinter_layout_helpers-0.3.0.tar.gz
+[2023-06-03 13:05:30] INFO root fetch - processPackages [whoisit]: Downloading https://files.pythonhosted.org/packages/68/51/d9edf5df3bed1a90979df5a18ca9be36a3ebbfe61ceb391e53777ac74d28/whoisit-2.7.0.tar.gz
+[2023-06-03 13:05:30] INFO root fetch - processPackages [getdaft]: executing diffoscope
+[2023-06-03 13:05:30] INFO root fetch - processPackages [getdaft]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/getdaft-0.1.3.tar.gz tmp/getdaft-0.1.4.tar.gz --markdown 20230603/g/getdaft/0.1.3-0.1.4/diff.md --exclude *.pyd
+[2023-06-03 13:05:30] INFO root fetch - processPackages [json-to-github-actions]: executing diffoscope
+[2023-06-03 13:05:30] INFO root fetch - processPackages [json-to-github-actions]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/json-to-github-actions-1.0.1.tar.gz tmp/json-to-github-actions-1.1.0.tar.gz --markdown 20230603/j/json-to-github-actions/1.0.1-1.1.0/diff.md --exclude *.pyd
+[2023-06-03 13:05:30] INFO root fetch - processPackages [tkinter-layout-helpers]: executing diffoscope
+[2023-06-03 13:05:30] INFO root fetch - processPackages [tkinter-layout-helpers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tkinter_layout_helpers-0.2.0.tar.gz tmp/tkinter_layout_helpers-0.3.0.tar.gz --markdown 20230603/t/tkinter-layout-helpers/0.2.0-0.3.0/diff.md --exclude *.pyd
+[2023-06-03 13:05:30] INFO root fetch - processPackages [persist-queue]: Downloading https://files.pythonhosted.org/packages/06/6f/78ff1a951f02cfcb5c0e17150428bf102eb984e003f1ced9c9164024a2e2/persist-queue-0.8.1.tar.gz
+[2023-06-03 13:05:30] INFO root fetch - processPackages [oslex]: Downloading https://files.pythonhosted.org/packages/08/c0/913c06d20e852cac63ab718be3ddf61bdea150657782691ab002f311cb63/oslex-0.1.2.tar.gz
+[2023-06-03 13:05:30] INFO root fetch - processPackages [whoisit]: executing diffoscope
+[2023-06-03 13:05:30] INFO root fetch - processPackages [whoisit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/whoisit-2.6.6.tar.gz tmp/whoisit-2.7.0.tar.gz --markdown 20230603/w/whoisit/2.6.6-2.7.0/diff.md --exclude *.pyd
+[2023-06-03 13:05:30] INFO root fetch - processPackages [opendigger]: executing diffoscope
+[2023-06-03 13:05:30] INFO root fetch - processPackages [opendigger]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/opendigger-0.1.0.tar.gz tmp/opendigger-0.1.1.tar.gz --markdown 20230603/o/opendigger/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-06-03 13:05:30] INFO root fetch - processPackages [persist-queue]: executing diffoscope
+[2023-06-03 13:05:30] INFO root fetch - processPackages [persist-queue]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/persist-queue-0.8.0b0.tar.gz tmp/persist-queue-0.8.1.tar.gz --markdown 20230603/p/persist-queue/0.8.0b0-0.8.1/diff.md --exclude *.pyd
+[2023-06-03 13:05:30] INFO root fetch - processPackages [oslex]: executing diffoscope
+[2023-06-03 13:05:30] INFO root fetch - processPackages [oslex]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/oslex-0.1.1.tar.gz tmp/oslex-0.1.2.tar.gz --markdown 20230603/o/oslex/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-06-03 13:05:31] INFO root fetch - main [MainThread]: End processing [hathitrust-downloader]: success
+[2023-06-03 13:05:31] INFO root fetch - main [MainThread]: End processing [multi-stock-api]: success
+[2023-06-03 13:05:31] INFO root fetch - main [MainThread]: End processing [json-to-github-actions]: success
+[2023-06-03 13:05:31] INFO root fetch - main [MainThread]: End processing [tkinter-layout-helpers]: success
+[2023-06-03 13:05:31] INFO root fetch - main [MainThread]: End processing [opendigger]: success
+[2023-06-03 13:05:31] INFO root fetch - main [MainThread]: End processing [oslex]: success
+[2023-06-03 13:05:32] INFO root fetch - main [MainThread]: End processing [whoisit]: success
+[2023-06-03 13:05:32] INFO root fetch - main [MainThread]: End processing [persist-queue]: success
+[2023-06-03 13:05:38] INFO root fetch - main [MainThread]: End processing [getdaft]: success
+[2023-06-03 13:05:38] INFO root fetch - main [MainThread]: Store serial: [18358652]
