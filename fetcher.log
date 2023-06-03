@@ -5321,3 +5321,60 @@
 [2023-06-03 07:02:43] INFO root fetch - main [MainThread]: End processing [haptools]: success
 [2023-06-03 07:03:12] INFO root fetch - main [MainThread]: End processing [tflite-runtime-nightly]: success
 [2023-06-03 07:03:12] INFO root fetch - main [MainThread]: Store serial: [18357131]
+[2023-06-03 07:08:17] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18357131]
+[2023-06-03 07:08:22] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-06-03 07:08:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: livereloadx
+[2023-06-03 07:08:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: yt-fts
+[2023-06-03 07:08:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: livereloadx
+[2023-06-03 07:08:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: isar
+[2023-06-03 07:08:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: netora-python
+[2023-06-03 07:08:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: rapid-pe
+[2023-06-03 07:08:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: multi-model-server
+[2023-06-03 07:08:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: automateeda
+[2023-06-03 07:08:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: p0-script
+[2023-06-03 07:08:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: tflite-model-maker-nightly
+[2023-06-03 07:08:22] INFO root fetch - processPackages [livereloadx]: New version: [2.6.6] Old Version: [2.6.5]
+[2023-06-03 07:08:22] INFO root fetch - processPackages [netora-python]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-06-03 07:08:22] INFO root fetch - processPackages [livereloadx]: New version: [2.6.6] Old Version: [2.6.5]
+[2023-06-03 07:08:22] INFO root fetch - processPackages [yt-fts]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-06-03 07:08:22] INFO root fetch - processPackages [p0-script]: New version: [1.1.0] Old Version: [1.0.5]
+[2023-06-03 07:08:22] INFO root fetch - processPackages [isar]: New version: [1.9.2] Old Version: [1.9.1]
+[2023-06-03 07:08:23] INFO root fetch - processPackages [automateeda]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-06-03 07:08:23] INFO root fetch - processPackages [rapid-pe]: New version: [0.1.1.dev20230603] Old Version: [0.1.1.dev20230602]
+[2023-06-03 07:08:23] INFO root fetch - processPackages [multi-model-server]: New version: [1.1.9b20230601] Old Version: [1.1.8b20230531]
+[2023-06-03 07:08:23] INFO root fetch - processPackages [tflite-model-maker-nightly]: New version: [0.4.3.dev202306020511] Old Version: [0.4.3.dev202306010509]
+[2023-06-03 07:08:23] INFO root fetch - processPackages [isar]: executing diffoscope
+[2023-06-03 07:08:23] INFO root fetch - processPackages [isar]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/isar-1.9.1.tar.gz tmp/isar-1.9.2.tar.gz --markdown 20230603/i/isar/1.9.1-1.9.2/diff.md --exclude *.pyd
+[2023-06-03 07:08:23] ERROR root fetch - processPackages [livereloadx]: Unable to fetch info: No such project/version 'livereloadx' 2.6.5
+[2023-06-03 07:08:23] ERROR root fetch - processPackages [livereloadx]: Unable to fetch info: No such project/version 'livereloadx' 2.6.5
+[2023-06-03 07:08:23] INFO root fetch - main [MainThread]: End processing [livereloadx] error
+[2023-06-03 07:08:23] INFO root fetch - main [MainThread]: End processing [livereloadx] error
+[2023-06-03 07:08:23] INFO root fetch - processPackages [yt-fts]: executing diffoscope
+[2023-06-03 07:08:23] INFO root fetch - processPackages [yt-fts]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yt-fts-0.1.8.tar.gz tmp/yt-fts-0.1.9.tar.gz --markdown 20230603/y/yt-fts/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-06-03 07:08:23] INFO root fetch - processPackages [p0-script]: Downloading https://files.pythonhosted.org/packages/90/f2/49fc5fab6ea46cf39398f63400b7bd8749e3023538f502daafbab0520ee3/p0-script-1.0.5.tar.gz
+[2023-06-03 07:08:23] INFO root fetch - processPackages [multi-model-server]: executing diffoscope
+[2023-06-03 07:08:23] INFO root fetch - processPackages [multi-model-server]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/multi_model_server-1.1.8b20230531-py2.py3-none-any.whl.zip tmp/multi_model_server-1.1.9b20230601-py2.py3-none-any.whl.zip --markdown 20230603/m/multi-model-server/1.1.8b20230531-1.1.9b20230601/diff.md --exclude *.pyd
+[2023-06-03 07:08:23] INFO root fetch - processPackages [rapid-pe]: Downloading https://files.pythonhosted.org/packages/89/fe/5b61c788335e1b9b674251f380ce1e202f6351ef247a8a7d58ea1c0d8de6/rapid_pe-0.1.1.dev20230603.tar.gz
+[2023-06-03 07:08:23] INFO root fetch - processPackages [automateeda]: Downloading https://files.pythonhosted.org/packages/97/a8/a16fb0ff79dedf27f4a6f0e19870e2115182547d10a45bd4a2843ab4ad35/automateeda-0.0.5.tar.gz
+[2023-06-03 07:08:23] INFO root fetch - processPackages [netora-python]: Downloading https://files.pythonhosted.org/packages/bb/7c/c2059fbf10eca783dea8ebe3c2fc9aff361758c86ea933209f1641652d90/netora-python-0.1.2.tar.gz
+[2023-06-03 07:08:23] INFO root fetch - processPackages [automateeda]: executing diffoscope
+[2023-06-03 07:08:23] INFO root fetch - processPackages [automateeda]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/automateeda-0.0.4.tar.gz tmp/automateeda-0.0.5.tar.gz --markdown 20230603/a/automateeda/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-06-03 07:08:23] INFO root fetch - processPackages [tflite-model-maker-nightly]: Downloading https://files.pythonhosted.org/packages/30/e7/e148d4672385ab6114a0aba612510e06b9a897f479b3e4756cbe63e711df/tflite-model-maker-nightly-0.4.3.dev202306020511.tar.gz
+[2023-06-03 07:08:23] INFO root fetch - processPackages [netora-python]: executing diffoscope
+[2023-06-03 07:08:23] INFO root fetch - processPackages [netora-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/netora-python-0.1.1.tar.gz tmp/netora-python-0.1.2.tar.gz --markdown 20230603/n/netora-python/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-06-03 07:08:23] INFO root fetch - processPackages [rapid-pe]: executing diffoscope
+[2023-06-03 07:08:23] INFO root fetch - processPackages [rapid-pe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rapid_pe-0.1.1.dev20230602.tar.gz tmp/rapid_pe-0.1.1.dev20230603.tar.gz --markdown 20230603/r/rapid-pe/0.1.1.dev20230602-0.1.1.dev20230603/diff.md --exclude *.pyd
+[2023-06-03 07:08:23] INFO root fetch - processPackages [p0-script]: executing diffoscope
+[2023-06-03 07:08:23] INFO root fetch - processPackages [p0-script]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/p0-script-1.0.5.tar.gz tmp/p0_script-1.1.0-py3-none-any.whl.zip --markdown 20230603/p/p0-script/1.0.5-1.1.0/diff.md --exclude *.pyd
+[2023-06-03 07:08:23] INFO root fetch - processPackages [tflite-model-maker-nightly]: executing diffoscope
+[2023-06-03 07:08:23] INFO root fetch - processPackages [tflite-model-maker-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tflite-model-maker-nightly-0.4.3.dev202306010509.tar.gz tmp/tflite-model-maker-nightly-0.4.3.dev202306020511.tar.gz --markdown 20230603/t/tflite-model-maker-nightly/0.4.3.dev202306010509-0.4.3.dev202306020511/diff.md --exclude *.pyd
+[2023-06-03 07:08:24] INFO root fetch - main [MainThread]: End processing [yt-fts]: success
+[2023-06-03 07:08:24] INFO root fetch - main [MainThread]: End processing [netora-python]: success
+[2023-06-03 07:08:24] INFO root fetch - main [MainThread]: End processing [automateeda]: success
+[2023-06-03 07:08:24] INFO root fetch - main [MainThread]: End processing [rapid-pe]: success
+[2023-06-03 07:08:26] INFO root fetch - main [MainThread]: End processing [isar]: success
+[2023-06-03 07:08:26] INFO root fetch - main [MainThread]: End processing [tflite-model-maker-nightly]: success
+[2023-06-03 07:08:29] INFO root fetch - main [MainThread]: End processing [p0-script]: success
+[2023-06-03 07:11:23] ERROR root fetch - processPackages [multi-model-server]: Timeout during execution of pkgdiff
+[2023-06-03 07:11:23] INFO root fetch - main [MainThread]: End processing [multi-model-server] error
+[2023-06-03 07:11:23] INFO root fetch - main [MainThread]: Store serial: [18357164]
