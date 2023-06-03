@@ -9031,3 +9031,36 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-06-03 15:23:21] INFO root fetch - main [MainThread]: End processing [funcsforspo-l]: success
 [2023-06-03 15:23:22] INFO root fetch - main [MainThread]: End processing [azureml-automl-runtime]: success
 [2023-06-03 15:23:22] INFO root fetch - main [MainThread]: Store serial: [18359521]
+[2023-06-03 15:28:26] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18359521]
+[2023-06-03 15:28:31] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-06-03 15:28:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sccache
+[2023-06-03 15:28:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: jekyll-to-hugo
+[2023-06-03 15:28:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: AziizAM
+[2023-06-03 15:28:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: tolibaev
+[2023-06-03 15:28:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: scratchdata
+[2023-06-03 15:28:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pinit
+[2023-06-03 15:28:31] WARNING root fetch - processPackages [tolibaev]: Skipping, unable to determine old version
+[2023-06-03 15:28:31] INFO root fetch - main [MainThread]: End processing [tolibaev] error
+[2023-06-03 15:28:31] WARNING root fetch - processPackages [AziizAM]: Skipping, unable to determine old version
+[2023-06-03 15:28:31] INFO root fetch - main [MainThread]: End processing [AziizAM] error
+[2023-06-03 15:28:31] INFO root fetch - processPackages [scratchdata]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-06-03 15:28:31] INFO root fetch - processPackages [jekyll-to-hugo]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-06-03 15:28:31] INFO root fetch - processPackages [pinit]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-06-03 15:28:31] INFO root fetch - processPackages [sccache]: New version: [0.5.2] Old Version: [0.5.1]
+[2023-06-03 15:28:31] INFO root fetch - processPackages [pinit]: executing diffoscope
+[2023-06-03 15:28:31] INFO root fetch - processPackages [pinit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pinit-0.0.5.tar.gz tmp/pinit-0.0.6.tar.gz --markdown 20230603/p/pinit/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-06-03 15:28:31] INFO root fetch - processPackages [jekyll-to-hugo]: Downloading https://files.pythonhosted.org/packages/9d/e6/f07ff2964d2e7f4da8139208090d1e3cbddd840dec5ac774f775210064a3/jekyll_to_hugo-0.0.3.tar.gz
+[2023-06-03 15:28:31] INFO root fetch - processPackages [scratchdata]: Downloading https://files.pythonhosted.org/packages/53/b7/a233e33c27d783053f189b807b5241b8bbd1ab7dabaf370a00e046411a48/scratchdata-0.1.0.tar.gz
+[2023-06-03 15:28:31] INFO root fetch - processPackages [jekyll-to-hugo]: executing diffoscope
+[2023-06-03 15:28:31] INFO root fetch - processPackages [jekyll-to-hugo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jekyll_to_hugo-0.0.2.tar.gz tmp/jekyll_to_hugo-0.0.3.tar.gz --markdown 20230603/j/jekyll-to-hugo/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-06-03 15:28:32] INFO root fetch - processPackages [sccache]: Downloading https://files.pythonhosted.org/packages/65/3d/6a0c1e6aecc20dfe5bafb94c19769681b92c5d5284627f4887c12c525d55/sccache-0.5.2-py3-none-win_amd64.whl
+[2023-06-03 15:28:32] INFO root fetch - processPackages [scratchdata]: Downloading https://files.pythonhosted.org/packages/2d/17/7e56daba6139c8c3da2091ca8a9d3fd20ec91c2376fb834ca9acae357238/scratchdata-0.1.1.tar.gz
+[2023-06-03 15:28:32] INFO root fetch - processPackages [sccache]: executing diffoscope
+[2023-06-03 15:28:32] INFO root fetch - processPackages [sccache]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sccache-0.5.1-py3-none-win_amd64.whl.zip tmp/sccache-0.5.2-py3-none-win_amd64.whl.zip --markdown 20230603/s/sccache/0.5.1-0.5.2/diff.md --exclude *.pyd
+[2023-06-03 15:28:32] INFO root fetch - processPackages [scratchdata]: executing diffoscope
+[2023-06-03 15:28:32] INFO root fetch - processPackages [scratchdata]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scratchdata-0.1.0.tar.gz tmp/scratchdata-0.1.1.tar.gz --markdown 20230603/s/scratchdata/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-06-03 15:28:32] INFO root fetch - main [MainThread]: End processing [pinit]: success
+[2023-06-03 15:28:33] INFO root fetch - main [MainThread]: End processing [jekyll-to-hugo]: success
+[2023-06-03 15:28:33] INFO root fetch - main [MainThread]: End processing [scratchdata]: success
+[2023-06-03 15:29:25] INFO root fetch - main [MainThread]: End processing [sccache]: success
+[2023-06-03 15:29:25] INFO root fetch - main [MainThread]: Store serial: [18359554]
