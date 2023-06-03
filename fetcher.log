@@ -13377,3 +13377,120 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-06-03 23:15:56] INFO root fetch - main [MainThread]: End processing [python-selve-new]: success
 [2023-06-03 23:15:57] INFO root fetch - main [MainThread]: End processing [qtmetabolabpy]: success
 [2023-06-03 23:15:57] INFO root fetch - main [MainThread]: Store serial: [18362231]
+[2023-06-03 23:21:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18362231]
+[2023-06-03 23:21:06] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2023-06-03 23:21:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pychoacoustics
+[2023-06-03 23:21:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: devana
+[2023-06-03 23:21:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: compllments
+[2023-06-03 23:21:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: iamlistening
+[2023-06-03 23:21:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: bettertest
+[2023-06-03 23:21:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: dronefly-discord
+[2023-06-03 23:21:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: learn2learn
+[2023-06-03 23:21:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: kalm
+[2023-06-03 23:21:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: mlplatformutils
+[2023-06-03 23:21:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: cihai
+[2023-06-03 23:21:07] INFO root fetch - processPackages [pychoacoustics]: New version: [0.6.2] Old Version: [0.6.1]
+[2023-06-03 23:21:07] WARNING root fetch - processPackages [compllments]: Skipping, unable to determine old version
+[2023-06-03 23:21:07] INFO root fetch - processPackages [compllments]: Start processing: yoctopuce
+[2023-06-03 23:21:07] INFO root fetch - main [MainThread]: End processing [compllments] error
+[2023-06-03 23:21:07] INFO root fetch - processPackages [devana]: New version: [2.1.0] Old Version: [2.0.0]
+[2023-06-03 23:21:07] INFO root fetch - processPackages [learn2learn]: New version: [0.2.0] Old Version: [0.1.7]
+[2023-06-03 23:21:07] INFO root fetch - processPackages [kalm]: New version: [0.6.9] Old Version: [0.6.8]
+[2023-06-03 23:21:07] WARNING root fetch - processPackages [mlplatformutils]: Skipping, unable to determine old version
+[2023-06-03 23:21:07] INFO root fetch - processPackages [cihai]: New version: [0.9.0a5] Old Version: [0.9.0a4]
+[2023-06-03 23:21:07] INFO root fetch - processPackages [dronefly-discord]: New version: [0.1.1.dev1] Old Version: [0.1.1.dev0]
+[2023-06-03 23:21:07] INFO root fetch - main [MainThread]: End processing [mlplatformutils] error
+[2023-06-03 23:21:07] INFO root fetch - processPackages [bettertest]: New version: [0.1.98] Old Version: [0.1.97]
+[2023-06-03 23:21:07] INFO root fetch - processPackages [iamlistening]: New version: [0.1.6] Old Version: [0.1.5]
+[2023-06-03 23:21:07] INFO root fetch - processPackages [yoctopuce]: New version: [1.10.54852] Old Version: [1.10.54070]
+[2023-06-03 23:21:07] INFO root fetch - processPackages [kalm]: executing diffoscope
+[2023-06-03 23:21:07] INFO root fetch - processPackages [kalm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kalm-0.6.8.tar.gz tmp/kalm-0.6.9.tar.gz --markdown 20230603/k/kalm/0.6.8-0.6.9/diff.md --exclude *.pyd
+[2023-06-03 23:21:07] INFO root fetch - processPackages [pychoacoustics]: Downloading https://files.pythonhosted.org/packages/c4/a8/748ee47a83595e39bf72bf16887ef97d6958e9530da086ee96f790fd27d4/pychoacoustics-0.6.1-py3-none-any.whl
+[2023-06-03 23:21:07] INFO root fetch - processPackages [devana]: Downloading https://files.pythonhosted.org/packages/2d/02/02758cf30b122bba17dc15881e9e654b07e6d19980af0d052d300528ca03/devana-2.0.0.tar.gz
+[2023-06-03 23:21:07] INFO root fetch - processPackages [learn2learn]: Downloading https://files.pythonhosted.org/packages/7d/f3/fce13a4a6f4b2ce005af4fab835d369b5359a44c3b9e93b8993845b9b193/learn2learn-0.1.7.tar.gz
+[2023-06-03 23:21:07] INFO root fetch - processPackages [iamlistening]: Downloading https://files.pythonhosted.org/packages/30/36/96bdb22089796e8fe45eddc69f2d83561490cb8cf37c13df097cc4ab1cfa/iamlistening-0.1.6.tar.gz
+[2023-06-03 23:21:07] INFO root fetch - processPackages [bettertest]: Downloading https://files.pythonhosted.org/packages/ad/6b/6dbbf8f535e97031666948c3323a58b51c7094512fc7b215d0f9281c5776/bettertest-0.1.98.tar.gz
+[2023-06-03 23:21:07] INFO root fetch - processPackages [yoctopuce]: Downloading https://files.pythonhosted.org/packages/2e/61/f61139cc7e3cd75254acb8386e6670e108ca7201054d6b37ce913620ba81/yoctopuce-1.10.54070.tar.gz
+[2023-06-03 23:21:07] INFO root fetch - processPackages [bettertest]: executing diffoscope
+[2023-06-03 23:21:07] INFO root fetch - processPackages [bettertest]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bettertest-0.1.97.tar.gz tmp/bettertest-0.1.98.tar.gz --markdown 20230603/b/bettertest/0.1.97-0.1.98/diff.md --exclude *.pyd
+[2023-06-03 23:21:07] INFO root fetch - processPackages [iamlistening]: executing diffoscope
+[2023-06-03 23:21:07] INFO root fetch - processPackages [iamlistening]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/iamlistening-0.1.5.tar.gz tmp/iamlistening-0.1.6.tar.gz --markdown 20230603/i/iamlistening/0.1.5-0.1.6/diff.md --exclude *.pyd
+[2023-06-03 23:21:07] INFO root fetch - processPackages [dronefly-discord]: Downloading https://files.pythonhosted.org/packages/e7/9e/84a3bf4b7cde7eda9bde96a18bb026911ab4f584ed2d256db6b8a7337d12/dronefly_discord-0.1.1.dev1.tar.gz
+[2023-06-03 23:21:07] INFO root fetch - processPackages [cihai]: executing diffoscope
+[2023-06-03 23:21:07] INFO root fetch - processPackages [cihai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cihai-0.9.0a4.tar.gz tmp/cihai-0.9.0a5.tar.gz --markdown 20230603/c/cihai/0.9.0a4-0.9.0a5/diff.md --exclude *.pyd
+[2023-06-03 23:21:07] INFO root fetch - processPackages [dronefly-discord]: executing diffoscope
+[2023-06-03 23:21:07] INFO root fetch - processPackages [dronefly-discord]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dronefly_discord-0.1.1.dev0.tar.gz tmp/dronefly_discord-0.1.1.dev1.tar.gz --markdown 20230603/d/dronefly-discord/0.1.1.dev0-0.1.1.dev1/diff.md --exclude *.pyd
+[2023-06-03 23:21:07] INFO root fetch - processPackages [pychoacoustics]: Downloading https://files.pythonhosted.org/packages/6f/b8/966d1ffbed4284d65e507bd403c03f5c419a7bdd5d63d3ae3290e2212c28/pychoacoustics-0.6.2.tar.gz
+[2023-06-03 23:21:07] INFO root fetch - processPackages [devana]: Downloading https://files.pythonhosted.org/packages/f4/22/a0cd59b2d407d3934d07fc2af19fb908cdfeb9b732ca5400b4f98369f529/devana-2.1.0.tar.gz
+[2023-06-03 23:21:07] INFO root fetch - processPackages [learn2learn]: Downloading https://files.pythonhosted.org/packages/7c/6a/5d9b57c2aec439035f3e02f23454ae9cc888aa2388bfe9443476834ada2c/learn2learn-0.2.0.tar.gz
+[2023-06-03 23:21:07] INFO root fetch - processPackages [devana]: executing diffoscope
+[2023-06-03 23:21:07] INFO root fetch - processPackages [devana]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/devana-2.0.0.tar.gz tmp/devana-2.1.0.tar.gz --markdown 20230603/d/devana/2.0.0-2.1.0/diff.md --exclude *.pyd
+[2023-06-03 23:21:07] INFO root fetch - processPackages [pychoacoustics]: executing diffoscope
+[2023-06-03 23:21:07] INFO root fetch - processPackages [pychoacoustics]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pychoacoustics-0.6.1-py3-none-any.whl.zip tmp/pychoacoustics-0.6.2.tar.gz --markdown 20230603/p/pychoacoustics/0.6.1-0.6.2/diff.md --exclude *.pyd
+[2023-06-03 23:21:07] INFO root fetch - processPackages [yoctopuce]: Downloading https://files.pythonhosted.org/packages/a3/fe/91f222fde2a2c6e61c29b9342abc97c2a099566dd7465097b57e5f308807/yoctopuce-1.10.54852.tar.gz
+[2023-06-03 23:21:07] INFO root fetch - processPackages [learn2learn]: executing diffoscope
+[2023-06-03 23:21:07] INFO root fetch - processPackages [learn2learn]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/learn2learn-0.1.7.tar.gz tmp/learn2learn-0.2.0.tar.gz --markdown 20230603/l/learn2learn/0.1.7-0.2.0/diff.md --exclude *.pyd
+[2023-06-03 23:21:08] INFO root fetch - processPackages [yoctopuce]: executing diffoscope
+[2023-06-03 23:21:08] INFO root fetch - processPackages [yoctopuce]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yoctopuce-1.10.54070.tar.gz tmp/yoctopuce-1.10.54852.tar.gz --markdown 20230603/y/yoctopuce/1.10.54070-1.10.54852/diff.md --exclude *.pyd
+[2023-06-03 23:21:08] INFO root fetch - main [MainThread]: End processing [kalm]: success
+[2023-06-03 23:21:08] INFO root fetch - main [MainThread]: End processing [iamlistening]: success
+[2023-06-03 23:21:08] INFO root fetch - main [MainThread]: End processing [dronefly-discord]: success
+[2023-06-03 23:21:08] INFO root fetch - main [MainThread]: End processing [bettertest]: success
+[2023-06-03 23:21:09] ERROR root fetch - processPackages [cihai]: Diffoscope failed: Traceback (most recent call last):
+  File "/srv/diffoscope/diffoscope/main.py", line 767, in main
+    sys.exit(run_diffoscope(parsed_args))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/main.py", line 718, in run_diffoscope
+    difference = compare_root_paths(path1, path2)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/compare.py", line 69, in compare_root_paths
+    difference = compare_files(file1, file2)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/compare.py", line 149, in compare_files
+    return file1.compare(file2, source)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/file.py", line 515, in compare
+    difference = self._compare_using_details(other, source)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/file.py", line 450, in _compare_using_details
+    details.extend(
+  File "/srv/diffoscope/diffoscope/comparators/utils/container.py", line 197, in compare_pair
+    difference = compare_files(
+                 ^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/compare.py", line 149, in compare_files
+    return file1.compare(file2, source)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/file.py", line 515, in compare
+    difference = self._compare_using_details(other, source)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/file.py", line 450, in _compare_using_details
+    details.extend(
+  File "/srv/diffoscope/diffoscope/comparators/utils/container.py", line 197, in compare_pair
+    difference = compare_files(
+                 ^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/compare.py", line 149, in compare_files
+    return file1.compare(file2, source)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/file.py", line 515, in compare
+    difference = self._compare_using_details(other, source)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/file.py", line 416, in _compare_using_details
+    details.extend(self.compare_details(other, source))
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/python.py", line 51, in compare_details
+    describe_pyc(self.path),
+    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/python.py", line 65, in describe_pyc
+    return "\n".join(parse_pyc(f))
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/python.py", line 81, in parse_pyc
+    code = marshal.load(f)
+           ^^^^^^^^^^^^^^^
+EOFError: EOF read where object expected
+
+[2023-06-03 23:21:09] INFO root fetch - main [MainThread]: End processing [cihai] error
+[2023-06-03 23:21:14] INFO root fetch - main [MainThread]: End processing [learn2learn]: success
+[2023-06-03 23:21:17] INFO root fetch - main [MainThread]: End processing [pychoacoustics]: success
+[2023-06-03 23:21:20] INFO root fetch - main [MainThread]: End processing [devana]: success
+[2023-06-03 23:21:38] INFO root fetch - main [MainThread]: End processing [yoctopuce]: success
+[2023-06-03 23:21:38] INFO root fetch - main [MainThread]: Store serial: [18362265]
