@@ -9267,3 +9267,28 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-06-03 16:00:53] INFO root fetch - main [MainThread]: End processing [KapoorLabs-Lightning]: success
 [2023-06-03 16:00:53] INFO root fetch - main [MainThread]: End processing [alnoda-wrk]: success
 [2023-06-03 16:00:53] INFO root fetch - main [MainThread]: Store serial: [18359673]
+[2023-06-03 16:05:57] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18359673]
+[2023-06-03 16:06:02] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-06-03 16:06:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: yaylib
+[2023-06-03 16:06:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyBigKinds
+[2023-06-03 16:06:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: gcardella-fib-py
+[2023-06-03 16:06:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: sftp-uploader
+[2023-06-03 16:06:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: ytsaurus-spyt
+[2023-06-03 16:06:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: ajb
+[2023-06-03 16:06:02] INFO root fetch - processPackages [sftp-uploader]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-06-03 16:06:02] INFO root fetch - processPackages [ytsaurus-spyt]: New version: [1.70.1b451.post5605632.dev23] Old Version: [1.70.1b451.post25341090.dev21]
+[2023-06-03 16:06:02] WARNING root fetch - processPackages [yaylib]: Skipping, unable to determine old version
+[2023-06-03 16:06:02] WARNING root fetch - processPackages [gcardella-fib-py]: Skipping, unable to determine old version
+[2023-06-03 16:06:02] INFO root fetch - main [MainThread]: End processing [yaylib] error
+[2023-06-03 16:06:02] INFO root fetch - main [MainThread]: End processing [gcardella-fib-py] error
+[2023-06-03 16:06:02] WARNING root fetch - processPackages [pyBigKinds]: Skipping, unable to determine old version
+[2023-06-03 16:06:02] INFO root fetch - main [MainThread]: End processing [pyBigKinds] error
+[2023-06-03 16:06:02] INFO root fetch - processPackages [ytsaurus-spyt]: executing diffoscope
+[2023-06-03 16:06:02] INFO root fetch - processPackages [ytsaurus-spyt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ytsaurus-spyt-1.70.1b451.post25341090.dev21.tar.gz tmp/ytsaurus-spyt-1.70.1b451.post5605632.dev23.tar.gz --markdown 20230603/y/ytsaurus-spyt/1.70.1b451.post25341090.dev21-1.70.1b451.post5605632.dev23/diff.md --exclude *.pyd
+[2023-06-03 16:06:02] INFO root fetch - processPackages [sftp-uploader]: executing diffoscope
+[2023-06-03 16:06:02] INFO root fetch - processPackages [sftp-uploader]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sftp_uploader-1.0.8.tar.gz tmp/sftp_uploader-1.0.9.tar.gz --markdown 20230603/s/sftp-uploader/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-06-03 16:06:02] WARNING root fetch - processPackages [ajb]: Skipping, unable to determine old version
+[2023-06-03 16:06:02] INFO root fetch - main [MainThread]: End processing [ajb] error
+[2023-06-03 16:06:03] INFO root fetch - main [MainThread]: End processing [sftp-uploader]: success
+[2023-06-03 16:06:03] INFO root fetch - main [MainThread]: End processing [ytsaurus-spyt]: success
+[2023-06-03 16:06:03] INFO root fetch - main [MainThread]: Store serial: [18359697]
