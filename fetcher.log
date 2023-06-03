@@ -6467,3 +6467,26 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-06-03 09:53:08] INFO root fetch - main [MainThread]: End processing [ifastapi]: success
 [2023-06-03 09:53:08] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-bilichat]: success
 [2023-06-03 09:53:08] INFO root fetch - main [MainThread]: Store serial: [18357803]
+[2023-06-03 09:58:12] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18357803]
+[2023-06-03 09:58:17] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-06-03 09:58:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: linggapy
+[2023-06-03 09:58:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: oarepo
+[2023-06-03 09:58:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: alesha
+[2023-06-03 09:58:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: oarepo
+[2023-06-03 09:58:17] WARNING root fetch - processPackages [linggapy]: Skipping, unable to determine old version
+[2023-06-03 09:58:17] INFO root fetch - main [MainThread]: End processing [linggapy] error
+[2023-06-03 09:58:17] INFO root fetch - processPackages [alesha]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-06-03 09:58:17] INFO root fetch - processPackages [oarepo]: New version: [9.0.9] Old Version: [9.0.8]
+[2023-06-03 09:58:17] INFO root fetch - processPackages [oarepo]: New version: [9.0.9] Old Version: [9.0.8]
+[2023-06-03 09:58:17] INFO root fetch - processPackages [alesha]: Downloading https://files.pythonhosted.org/packages/7f/71/eca9d3245f56427f2473d4dece0e5ff0b9cabbcdf1a12ea20c5224e36064/alesha-0.1.1.tar.gz
+[2023-06-03 09:58:17] INFO root fetch - processPackages [alesha]: Downloading https://files.pythonhosted.org/packages/7c/d4/d4442c2c8d903bc040f15a63b464aa9b13e0ca1aa8c39f2c222a3c0a4554/alesha-0.1.2.tar.gz
+[2023-06-03 09:58:17] INFO root fetch - processPackages [oarepo]: executing diffoscope
+[2023-06-03 09:58:17] INFO root fetch - processPackages [oarepo]: executing diffoscope
+[2023-06-03 09:58:17] INFO root fetch - processPackages [oarepo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/oarepo-9.0.8.tar.gz tmp/oarepo-9.0.9.tar.gz --markdown 20230603/o/oarepo/9.0.8-9.0.9/diff.md --exclude *.pyd
+[2023-06-03 09:58:17] INFO root fetch - processPackages [oarepo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/oarepo-9.0.8.tar.gz tmp/oarepo-9.0.9.tar.gz --markdown 20230603/o/oarepo/9.0.8-9.0.9/diff.md --exclude *.pyd
+[2023-06-03 09:58:18] INFO root fetch - processPackages [alesha]: executing diffoscope
+[2023-06-03 09:58:18] INFO root fetch - processPackages [alesha]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/alesha-0.1.1.tar.gz tmp/alesha-0.1.2.tar.gz --markdown 20230603/a/alesha/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-06-03 09:58:18] INFO root fetch - main [MainThread]: End processing [oarepo]: success
+[2023-06-03 09:58:18] INFO root fetch - main [MainThread]: End processing [alesha]: success
+[2023-06-03 09:58:18] INFO root fetch - main [MainThread]: End processing [oarepo]: success
+[2023-06-03 09:58:18] INFO root fetch - main [MainThread]: Store serial: [18357818]
