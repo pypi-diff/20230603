@@ -7649,3 +7649,22 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-06-03 12:39:33] INFO root fetch - main [MainThread]: End processing [atckit]: success
 [2023-06-03 12:39:35] INFO root fetch - main [MainThread]: End processing [recipe-scrapers-ap-fork]: success
 [2023-06-03 12:39:35] INFO root fetch - main [MainThread]: Store serial: [18358519]
+[2023-06-03 12:44:39] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18358519]
+[2023-06-03 12:44:44] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-06-03 12:44:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: arkprts
+[2023-06-03 12:44:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: downloadx
+[2023-06-03 12:44:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: django-action-throttle
+[2023-06-03 12:44:44] INFO root fetch - processPackages [arkprts]: New version: [0.1.5] Old Version: [0.1.4]
+[2023-06-03 12:44:44] WARNING root fetch - processPackages [django-action-throttle]: Skipping, unable to determine old version
+[2023-06-03 12:44:44] INFO root fetch - main [MainThread]: End processing [django-action-throttle] error
+[2023-06-03 12:44:44] INFO root fetch - processPackages [downloadx]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-06-03 12:44:44] INFO root fetch - processPackages [downloadx]: Downloading https://files.pythonhosted.org/packages/6a/fb/0745d85e66dc297590343b44e7dfacd3ca8fe734c7009ed6718354e67b5c/downloadx-0.1.1.tar.gz
+[2023-06-03 12:44:44] INFO root fetch - processPackages [arkprts]: Downloading https://files.pythonhosted.org/packages/d8/23/e1535f6449d34e615be03ad2ceb03b3325319c9ecfb8a9d87a34601647d8/arkprts-0.1.5.tar.gz
+[2023-06-03 12:44:44] INFO root fetch - processPackages [downloadx]: Downloading https://files.pythonhosted.org/packages/fe/ff/d3d741e83f98f4607d085320667552ac53514bf8f5a631154b1785c5fef9/downloadx-0.1.2.tar.gz
+[2023-06-03 12:44:44] INFO root fetch - processPackages [arkprts]: executing diffoscope
+[2023-06-03 12:44:44] INFO root fetch - processPackages [arkprts]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/arkprts-0.1.4.tar.gz tmp/arkprts-0.1.5.tar.gz --markdown 20230603/a/arkprts/0.1.4-0.1.5/diff.md --exclude *.pyd
+[2023-06-03 12:44:44] INFO root fetch - processPackages [downloadx]: executing diffoscope
+[2023-06-03 12:44:44] INFO root fetch - processPackages [downloadx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/downloadx-0.1.1.tar.gz tmp/downloadx-0.1.2.tar.gz --markdown 20230603/d/downloadx/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-06-03 12:44:45] INFO root fetch - main [MainThread]: End processing [arkprts]: success
+[2023-06-03 12:44:46] INFO root fetch - main [MainThread]: End processing [downloadx]: success
+[2023-06-03 12:44:46] INFO root fetch - main [MainThread]: Store serial: [18358549]
