@@ -9668,3 +9668,35 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-06-03 16:52:03] INFO root fetch - main [MainThread]: End processing [PySupercell]: success
 [2023-06-03 16:52:03] INFO root fetch - main [MainThread]: End processing [pylibfinder]: success
 [2023-06-03 16:52:03] INFO root fetch - main [MainThread]: Store serial: [18359897]
+[2023-06-03 16:57:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18359897]
+[2023-06-03 16:57:12] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-06-03 16:57:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: libiobi
+[2023-06-03 16:57:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: django-rq-scheduler
+[2023-06-03 16:57:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pseudocerastes
+[2023-06-03 16:57:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pseudocerastes
+[2023-06-03 16:57:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: object-serialization
+[2023-06-03 16:57:12] INFO root fetch - processPackages [pseudocerastes]: New version: [0.1.0] Old Version: [0.0.3]
+[2023-06-03 16:57:12] WARNING root fetch - processPackages [libiobi]: Skipping, unable to determine old version
+[2023-06-03 16:57:12] INFO root fetch - main [MainThread]: End processing [libiobi] error
+[2023-06-03 16:57:12] INFO root fetch - processPackages [object-serialization]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-06-03 16:57:12] INFO root fetch - processPackages [pseudocerastes]: New version: [0.1.0] Old Version: [0.0.3]
+[2023-06-03 16:57:12] INFO root fetch - processPackages [django-rq-scheduler]: New version: [2023.6.1] Old Version: [2023.6.0]
+[2023-06-03 16:57:12] INFO root fetch - processPackages [pseudocerastes]: Downloading https://files.pythonhosted.org/packages/95/b8/ef10a6036754f75f7ebce6fd04518c3cdcb3a5714929b71b6e8afcbb150b/pseudocerastes-0.0.3.tar.gz
+[2023-06-03 16:57:12] INFO root fetch - processPackages [pseudocerastes]: Downloading https://files.pythonhosted.org/packages/95/b8/ef10a6036754f75f7ebce6fd04518c3cdcb3a5714929b71b6e8afcbb150b/pseudocerastes-0.0.3.tar.gz
+[2023-06-03 16:57:12] INFO root fetch - processPackages [django-rq-scheduler]: Downloading https://files.pythonhosted.org/packages/b1/7f/fb91c5c2754711dceb8adf79d6d8e413cd90c31f08779e4a3ecd7860b749/django_rq_scheduler-2023.6.0.tar.gz
+[2023-06-03 16:57:12] INFO root fetch - processPackages [object-serialization]: executing diffoscope
+[2023-06-03 16:57:12] INFO root fetch - processPackages [object-serialization]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/object-serialization-0.1.0.tar.gz tmp/object-serialization-0.1.1.tar.gz --markdown 20230603/o/object-serialization/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-06-03 16:57:12] INFO root fetch - processPackages [pseudocerastes]: Downloading https://files.pythonhosted.org/packages/be/cc/08fe46c1cc4baeac6178f038a313fe87f7a66fee55dffac0e95d64681eb1/pseudocerastes-0.1.0.tar.gz
+[2023-06-03 16:57:12] INFO root fetch - processPackages [pseudocerastes]: Downloading https://files.pythonhosted.org/packages/be/cc/08fe46c1cc4baeac6178f038a313fe87f7a66fee55dffac0e95d64681eb1/pseudocerastes-0.1.0.tar.gz
+[2023-06-03 16:57:13] INFO root fetch - processPackages [django-rq-scheduler]: Downloading https://files.pythonhosted.org/packages/1e/47/c91770fa242f8d56f0136b24217cc85c7341a908d6b2cf6cf3114a48ae81/django_rq_scheduler-2023.6.1.tar.gz
+[2023-06-03 16:57:13] INFO root fetch - processPackages [pseudocerastes]: executing diffoscope
+[2023-06-03 16:57:13] INFO root fetch - processPackages [pseudocerastes]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pseudocerastes-0.0.3.tar.gz tmp/pseudocerastes-0.1.0.tar.gz --markdown 20230603/p/pseudocerastes/0.0.3-0.1.0/diff.md --exclude *.pyd
+[2023-06-03 16:57:13] INFO root fetch - processPackages [pseudocerastes]: executing diffoscope
+[2023-06-03 16:57:13] INFO root fetch - processPackages [pseudocerastes]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pseudocerastes-0.0.3.tar.gz tmp/pseudocerastes-0.1.0.tar.gz --markdown 20230603/p/pseudocerastes/0.0.3-0.1.0/diff.md --exclude *.pyd
+[2023-06-03 16:57:13] INFO root fetch - processPackages [django-rq-scheduler]: executing diffoscope
+[2023-06-03 16:57:13] INFO root fetch - processPackages [django-rq-scheduler]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django_rq_scheduler-2023.6.0.tar.gz tmp/django_rq_scheduler-2023.6.1.tar.gz --markdown 20230603/d/django-rq-scheduler/2023.6.0-2023.6.1/diff.md --exclude *.pyd
+[2023-06-03 16:57:13] INFO root fetch - main [MainThread]: End processing [object-serialization]: success
+[2023-06-03 16:57:14] INFO root fetch - main [MainThread]: End processing [pseudocerastes]: success
+[2023-06-03 16:57:14] INFO root fetch - main [MainThread]: End processing [pseudocerastes]: success
+[2023-06-03 16:57:14] INFO root fetch - main [MainThread]: End processing [django-rq-scheduler]: success
+[2023-06-03 16:57:14] INFO root fetch - main [MainThread]: Store serial: [18359913]
