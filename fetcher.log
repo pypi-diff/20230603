@@ -5593,3 +5593,12 @@
 [2023-06-03 07:48:49] INFO root fetch - main [MainThread]: End processing [urllib3-ext-hface]: success
 [2023-06-03 07:48:50] INFO root fetch - main [MainThread]: End processing [pulumi-gitlab]: success
 [2023-06-03 07:48:50] INFO root fetch - main [MainThread]: Store serial: [18357271]
+[2023-06-03 07:53:54] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18357271]
+[2023-06-03 07:53:58] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2023-06-03 07:53:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: customtkinterx
+[2023-06-03 07:53:58] INFO root fetch - processPackages [customtkinterx]: New version: [0.2.2] Old Version: [0.2.1]
+[2023-06-03 07:53:59] INFO root fetch - processPackages [customtkinterx]: Downloading https://files.pythonhosted.org/packages/e9/7e/55f907b8a9491912993a89b94267086b345e25fe4392e6cdc3531f5b85ed/customtkinterx-0.2.2.tar.gz
+[2023-06-03 07:53:59] INFO root fetch - processPackages [customtkinterx]: executing diffoscope
+[2023-06-03 07:53:59] INFO root fetch - processPackages [customtkinterx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/customtkinterx-0.2.1.tar.gz tmp/customtkinterx-0.2.2.tar.gz --markdown 20230603/c/customtkinterx/0.2.1-0.2.2/diff.md --exclude *.pyd
+[2023-06-03 07:54:01] INFO root fetch - main [MainThread]: End processing [customtkinterx]: success
+[2023-06-03 07:54:01] INFO root fetch - main [MainThread]: Store serial: [18357274]
