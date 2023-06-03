@@ -12714,3 +12714,61 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-06-03 22:00:13] INFO root fetch - main [MainThread]: End processing [ezbeq]: success
 [2023-06-03 22:00:13] INFO root fetch - main [MainThread]: End processing [gdsfactory]: success
 [2023-06-03 22:00:13] INFO root fetch - main [MainThread]: Store serial: [18361727]
+[2023-06-03 22:05:18] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18361727]
+[2023-06-03 22:05:22] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-06-03 22:05:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: bettertest
+[2023-06-03 22:05:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: formation-studio
+[2023-06-03 22:05:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mynacode
+[2023-06-03 22:05:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: localtileserver
+[2023-06-03 22:05:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: dlib
+[2023-06-03 22:05:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: relevanceai
+[2023-06-03 22:05:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: pyechorobotics
+[2023-06-03 22:05:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: tamp
+[2023-06-03 22:05:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: abmatrix
+[2023-06-03 22:05:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: mynacode
+[2023-06-03 22:05:23] INFO root fetch - processPackages [localtileserver]: New version: [0.7.0] Old Version: [0.6.4]
+[2023-06-03 22:05:23] WARNING root fetch - processPackages [abmatrix]: Skipping, unable to determine old version
+[2023-06-03 22:05:23] INFO root fetch - main [MainThread]: End processing [abmatrix] error
+[2023-06-03 22:05:23] INFO root fetch - processPackages [formation-studio]: New version: [0.6.0] Old Version: [0.5.0]
+[2023-06-03 22:05:23] INFO root fetch - processPackages [bettertest]: New version: [0.1.96] Old Version: [0.1.94]
+[2023-06-03 22:05:23] INFO root fetch - processPackages [pyechorobotics]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-06-03 22:05:23] INFO root fetch - processPackages [tamp]: New version: [1.1.0] Old Version: [1.0.3]
+[2023-06-03 22:05:23] INFO root fetch - processPackages [dlib]: New version: [19.9.0] Old Version: [19.8.2]
+[2023-06-03 22:05:23] INFO root fetch - processPackages [mynacode]: New version: [1.0.99] Old Version: [1.0.98]
+[2023-06-03 22:05:23] INFO root fetch - processPackages [mynacode]: New version: [1.0.99] Old Version: [1.0.98]
+[2023-06-03 22:05:23] INFO root fetch - processPackages [relevanceai]: New version: [4.0.9] Old Version: [4.0.8]
+[2023-06-03 22:05:23] INFO root fetch - processPackages [relevanceai]: executing diffoscope
+[2023-06-03 22:05:23] INFO root fetch - processPackages [relevanceai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/relevanceai-4.0.8.tar.gz tmp/relevanceai-4.0.9.tar.gz --markdown 20230603/r/relevanceai/4.0.8-4.0.9/diff.md --exclude *.pyd
+[2023-06-03 22:05:23] INFO root fetch - processPackages [localtileserver]: Downloading https://files.pythonhosted.org/packages/e0/1a/59565142d1a92cdf2c58b69367b70f4d11dca1200c509bc166ae0f338adf/localtileserver-0.6.4.tar.gz
+[2023-06-03 22:05:23] INFO root fetch - processPackages [pyechorobotics]: Downloading https://files.pythonhosted.org/packages/d3/96/7751f4b44f2cb4e1fb843b8f1ee28f65c46edae9b791a938210b09f775b4/pyechorobotics-0.0.9.tar.gz
+[2023-06-03 22:05:23] INFO root fetch - processPackages [dlib]: Downloading https://files.pythonhosted.org/packages/92/7f/7711bf4bb25c7e8ff1c450bf397302d4b75e55abe6de54c75cc05a7b17db/dlib-19.8.2.tar.gz
+[2023-06-03 22:05:23] INFO root fetch - processPackages [bettertest]: Downloading https://files.pythonhosted.org/packages/ff/6d/7f29ceb7365bd1166aa28ed85e04ed2089c09f8f118d9eff230d7137170a/bettertest-0.1.96.tar.gz
+[2023-06-03 22:05:23] INFO root fetch - processPackages [formation-studio]: Downloading https://files.pythonhosted.org/packages/22/58/bab31f8ccafe34b1f35907c5893475889517055c571054b72f513d1a5dd8/formation-studio-0.5.0.tar.gz
+[2023-06-03 22:05:23] WARNING root fetch - processPackages [localtileserver]: Skipping package: exceeds size limit 19404801>=10485760
+[2023-06-03 22:05:23] INFO root fetch - main [MainThread]: End processing [localtileserver] error
+[2023-06-03 22:05:23] INFO root fetch - processPackages [pyechorobotics]: executing diffoscope
+[2023-06-03 22:05:23] INFO root fetch - processPackages [pyechorobotics]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyechorobotics-0.0.8.tar.gz tmp/pyechorobotics-0.0.9.tar.gz --markdown 20230603/p/pyechorobotics/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-06-03 22:05:23] INFO root fetch - processPackages [bettertest]: executing diffoscope
+[2023-06-03 22:05:23] INFO root fetch - processPackages [bettertest]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bettertest-0.1.94.tar.gz tmp/bettertest-0.1.96.tar.gz --markdown 20230603/b/bettertest/0.1.94-0.1.96/diff.md --exclude *.pyd
+[2023-06-03 22:05:23] INFO root fetch - processPackages [tamp]: Downloading https://files.pythonhosted.org/packages/5a/46/2d7d9fad195b88e3e317d576e275e9dde01ef802f05d685cf5cafc0f061e/tamp-1.1.0-cp39-cp39-macosx_12_0_x86_64.whl
+[2023-06-03 22:05:23] INFO root fetch - processPackages [formation-studio]: Downloading https://files.pythonhosted.org/packages/b4/72/5c87a295b9467538e7f758ba2c4feb1412761ba8bbdf64144c9ac4a28886/formation-studio-0.6.0.tar.gz
+[2023-06-03 22:05:23] INFO root fetch - processPackages [mynacode]: executing diffoscope
+[2023-06-03 22:05:23] INFO root fetch - processPackages [mynacode]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mynacode-1.0.98-py3-none-any.whl.zip tmp/mynacode-1.0.99-py3-none-any.whl.zip --markdown 20230603/m/mynacode/1.0.98-1.0.99/diff.md --exclude *.pyd
+[2023-06-03 22:05:23] INFO root fetch - processPackages [mynacode]: executing diffoscope
+[2023-06-03 22:05:23] INFO root fetch - processPackages [mynacode]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mynacode-1.0.98-py3-none-any.whl.zip tmp/mynacode-1.0.99-py3-none-any.whl.zip --markdown 20230603/m/mynacode/1.0.98-1.0.99/diff.md --exclude *.pyd
+[2023-06-03 22:05:23] INFO root fetch - processPackages [formation-studio]: executing diffoscope
+[2023-06-03 22:05:23] INFO root fetch - processPackages [formation-studio]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/formation-studio-0.5.0.tar.gz tmp/formation-studio-0.6.0.tar.gz --markdown 20230603/f/formation-studio/0.5.0-0.6.0/diff.md --exclude *.pyd
+[2023-06-03 22:05:24] INFO root fetch - processPackages [dlib]: Downloading https://files.pythonhosted.org/packages/23/7a/891d4c46cdf755fb69eec0f06a53033d3754bf68ace5342ad56aeb540aa1/dlib-19.9.0.tar.gz
+[2023-06-03 22:05:24] INFO root fetch - processPackages [tamp]: executing diffoscope
+[2023-06-03 22:05:24] INFO root fetch - processPackages [tamp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tamp-1.0.3.tar.gz tmp/tamp-1.1.0-cp39-cp39-macosx_12_0_x86_64.whl.zip --markdown 20230603/t/tamp/1.0.3-1.1.0/diff.md --exclude *.pyd
+[2023-06-03 22:05:24] INFO root fetch - processPackages [dlib]: executing diffoscope
+[2023-06-03 22:05:24] INFO root fetch - processPackages [dlib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dlib-19.8.2.tar.gz tmp/dlib-19.9.0.tar.gz --markdown 20230603/d/dlib/19.8.2-19.9.0/diff.md --exclude *.pyd
+[2023-06-03 22:05:24] INFO root fetch - main [MainThread]: End processing [relevanceai]: success
+[2023-06-03 22:05:24] INFO root fetch - main [MainThread]: End processing [pyechorobotics]: success
+[2023-06-03 22:05:24] INFO root fetch - main [MainThread]: End processing [bettertest]: success
+[2023-06-03 22:05:24] INFO root fetch - main [MainThread]: End processing [mynacode]: success
+[2023-06-03 22:05:24] INFO root fetch - main [MainThread]: End processing [mynacode]: success
+[2023-06-03 22:05:25] INFO root fetch - main [MainThread]: End processing [tamp]: success
+[2023-06-03 22:05:32] INFO root fetch - main [MainThread]: End processing [formation-studio]: success
+[2023-06-03 22:05:51] INFO root fetch - main [MainThread]: End processing [dlib]: success
+[2023-06-03 22:05:51] INFO root fetch - main [MainThread]: Store serial: [18361791]
