@@ -12920,3 +12920,50 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-06-03 22:21:41] INFO root fetch - main [MainThread]: End processing [mbase]: success
 [2023-06-03 22:21:42] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
 [2023-06-03 22:21:42] INFO root fetch - main [MainThread]: Store serial: [18361933]
+[2023-06-03 22:26:46] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18361933]
+[2023-06-03 22:26:51] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-06-03 22:26:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: kalm
+[2023-06-03 22:26:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: metricspace
+[2023-06-03 22:26:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: reactivated
+[2023-06-03 22:26:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: zibanu-django
+[2023-06-03 22:26:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: kalm
+[2023-06-03 22:26:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: R134a-PT
+[2023-06-03 22:26:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: lung-analysis-pipeline
+[2023-06-03 22:26:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: relevanceai
+[2023-06-03 22:26:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: envutil
+[2023-06-03 22:26:51] WARNING root fetch - processPackages [metricspace]: Skipping, unable to determine old version
+[2023-06-03 22:26:51] INFO root fetch - main [MainThread]: End processing [metricspace] error
+[2023-06-03 22:26:51] INFO root fetch - processPackages [kalm]: New version: [0.6.9] Old Version: [0.6.8]
+[2023-06-03 22:26:51] INFO root fetch - processPackages [kalm]: New version: [0.6.9] Old Version: [0.6.8]
+[2023-06-03 22:26:51] WARNING root fetch - processPackages [R134a-PT]: Skipping, unable to determine old version
+[2023-06-03 22:26:51] INFO root fetch - processPackages [zibanu-django]: New version: [1.2.0a9] Old Version: [1.2.0a8]
+[2023-06-03 22:26:51] INFO root fetch - main [MainThread]: End processing [R134a-PT] error
+[2023-06-03 22:26:51] INFO root fetch - processPackages [reactivated]: New version: [3.0.0a64] Old Version: [0.9.0]
+[2023-06-03 22:26:51] INFO root fetch - processPackages [envutil]: New version: [0.2.1] Old Version: [0.2.0]
+[2023-06-03 22:26:51] INFO root fetch - processPackages [lung-analysis-pipeline]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-06-03 22:26:51] INFO root fetch - processPackages [relevanceai]: New version: [4.0.9] Old Version: [4.0.8]
+[2023-06-03 22:26:51] INFO root fetch - processPackages [kalm]: executing diffoscope
+[2023-06-03 22:26:51] INFO root fetch - processPackages [kalm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kalm-0.6.8.tar.gz tmp/kalm-0.6.9.tar.gz --markdown 20230603/k/kalm/0.6.8-0.6.9/diff.md --exclude *.pyd
+[2023-06-03 22:26:51] INFO root fetch - processPackages [kalm]: executing diffoscope
+[2023-06-03 22:26:51] INFO root fetch - processPackages [kalm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kalm-0.6.8.tar.gz tmp/kalm-0.6.9.tar.gz --markdown 20230603/k/kalm/0.6.8-0.6.9/diff.md --exclude *.pyd
+[2023-06-03 22:26:51] INFO root fetch - processPackages [relevanceai]: executing diffoscope
+[2023-06-03 22:26:51] INFO root fetch - processPackages [relevanceai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/relevanceai-4.0.8.tar.gz tmp/relevanceai-4.0.9.tar.gz --markdown 20230603/r/relevanceai/4.0.8-4.0.9/diff.md --exclude *.pyd
+[2023-06-03 22:26:51] INFO root fetch - processPackages [envutil]: Downloading https://files.pythonhosted.org/packages/51/fb/23e3692a3d31ea27caddbd3c2f7ccd063231ecd1ff1d7be04a8bd86bd598/envutil-0.2.1.tar.gz
+[2023-06-03 22:26:52] INFO root fetch - processPackages [lung-analysis-pipeline]: Downloading https://files.pythonhosted.org/packages/bf/df/e7c1dee9d0cef1930698af744b3a15d02124e070e800c04b8ecf55ea8a6e/lung_analysis_pipeline-0.0.6.tar.gz
+[2023-06-03 22:26:52] INFO root fetch - processPackages [envutil]: executing diffoscope
+[2023-06-03 22:26:52] INFO root fetch - processPackages [envutil]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/envutil-0.2.0.tar.gz tmp/envutil-0.2.1.tar.gz --markdown 20230603/e/envutil/0.2.0-0.2.1/diff.md --exclude *.pyd
+[2023-06-03 22:26:52] INFO root fetch - processPackages [reactivated]: executing diffoscope
+[2023-06-03 22:26:52] INFO root fetch - processPackages [reactivated]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/reactivated-0.9.0.tar.gz tmp/reactivated-3.0.0a64.tar.gz --markdown 20230603/r/reactivated/0.9.0-3.0.0a64/diff.md --exclude *.pyd
+[2023-06-03 22:26:52] INFO root fetch - processPackages [zibanu-django]: Downloading https://files.pythonhosted.org/packages/3b/a5/b6a2310d9db7a0fc519cfb63f28bafe7e135cef604c78598f0ae78a6c151/zibanu-django-1.2.0a9.tar.gz
+[2023-06-03 22:26:52] INFO root fetch - processPackages [lung-analysis-pipeline]: executing diffoscope
+[2023-06-03 22:26:52] INFO root fetch - processPackages [lung-analysis-pipeline]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lung_analysis_pipeline-0.0.5.tar.gz tmp/lung_analysis_pipeline-0.0.6.tar.gz --markdown 20230603/l/lung-analysis-pipeline/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-06-03 22:26:52] INFO root fetch - processPackages [zibanu-django]: executing diffoscope
+[2023-06-03 22:26:52] INFO root fetch - processPackages [zibanu-django]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zibanu-django-1.2.0a8.tar.gz tmp/zibanu-django-1.2.0a9.tar.gz --markdown 20230603/z/zibanu-django/1.2.0a8-1.2.0a9/diff.md --exclude *.pyd
+[2023-06-03 22:26:52] INFO root fetch - main [MainThread]: End processing [kalm]: success
+[2023-06-03 22:26:53] INFO root fetch - main [MainThread]: End processing [relevanceai]: success
+[2023-06-03 22:26:53] INFO root fetch - main [MainThread]: End processing [envutil]: success
+[2023-06-03 22:26:53] INFO root fetch - main [MainThread]: End processing [kalm]: success
+[2023-06-03 22:26:53] INFO root fetch - main [MainThread]: End processing [reactivated]: success
+[2023-06-03 22:26:53] INFO root fetch - main [MainThread]: End processing [zibanu-django]: success
+[2023-06-03 22:26:54] INFO root fetch - main [MainThread]: End processing [lung-analysis-pipeline]: success
+[2023-06-03 22:26:54] INFO root fetch - main [MainThread]: Store serial: [18361972]
