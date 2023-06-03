@@ -13543,3 +13543,33 @@ EOFError: EOF read where object expected
 [2023-06-03 23:27:13] INFO root fetch - main [MainThread]: End processing [ai-services]: success
 [2023-06-03 23:27:14] INFO root fetch - main [MainThread]: End processing [phidata]: success
 [2023-06-03 23:27:14] INFO root fetch - main [MainThread]: Store serial: [18362291]
+[2023-06-03 23:32:18] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18362291]
+[2023-06-03 23:32:23] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-06-03 23:32:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sciform
+[2023-06-03 23:32:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: libretrofuzz
+[2023-06-03 23:32:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: PyTrek-9000
+[2023-06-03 23:32:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: mynacode
+[2023-06-03 23:32:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: compllments
+[2023-06-03 23:32:23] INFO root fetch - processPackages [libretrofuzz]: New version: [2.8.3] Old Version: [2.8.2]
+[2023-06-03 23:32:23] INFO root fetch - processPackages [mynacode]: New version: [1.0.99] Old Version: [1.0.98]
+[2023-06-03 23:32:23] INFO root fetch - processPackages [compllments]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-06-03 23:32:23] WARNING root fetch - processPackages [PyTrek-9000]: Skipping, unable to determine old version
+[2023-06-03 23:32:23] INFO root fetch - main [MainThread]: End processing [PyTrek-9000] error
+[2023-06-03 23:32:23] INFO root fetch - processPackages [sciform]: New version: [0.7.0] Old Version: [0.6.1]
+[2023-06-03 23:32:23] INFO root fetch - processPackages [mynacode]: executing diffoscope
+[2023-06-03 23:32:23] INFO root fetch - processPackages [mynacode]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mynacode-1.0.98-py3-none-any.whl.zip tmp/mynacode-1.0.99-py3-none-any.whl.zip --markdown 20230603/m/mynacode/1.0.98-1.0.99/diff.md --exclude *.pyd
+[2023-06-03 23:32:23] INFO root fetch - processPackages [compllments]: Downloading https://files.pythonhosted.org/packages/00/75/047bed44d024e282fcf0985452d2782bc4a9b4240d0322f55123307985cb/compllments-0.1.0.tar.gz
+[2023-06-03 23:32:23] INFO root fetch - processPackages [libretrofuzz]: Downloading https://files.pythonhosted.org/packages/99/1d/fafcb04d65efbbfc127a0b073d3bc08f1e667367354d04ea6fdb8cd5ba05/libretrofuzz-2.8.3.tar.gz
+[2023-06-03 23:32:23] INFO root fetch - processPackages [compllments]: Downloading https://files.pythonhosted.org/packages/5f/1d/a955b1824bf3f859a3ab50a039c07b48956ae6df2daddbf394b8347adf50/compllments-0.1.1.tar.gz
+[2023-06-03 23:32:23] INFO root fetch - processPackages [sciform]: Downloading https://files.pythonhosted.org/packages/24/7e/120e22e85b687992298aad67114fdb262d54a1f9509498625571504c28b4/sciform-0.7.0.tar.gz
+[2023-06-03 23:32:23] INFO root fetch - processPackages [libretrofuzz]: executing diffoscope
+[2023-06-03 23:32:23] INFO root fetch - processPackages [libretrofuzz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/libretrofuzz-2.8.2.tar.gz tmp/libretrofuzz-2.8.3.tar.gz --markdown 20230603/l/libretrofuzz/2.8.2-2.8.3/diff.md --exclude *.pyd
+[2023-06-03 23:32:23] INFO root fetch - processPackages [compllments]: executing diffoscope
+[2023-06-03 23:32:23] INFO root fetch - processPackages [compllments]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/compllments-0.1.0.tar.gz tmp/compllments-0.1.1.tar.gz --markdown 20230603/c/compllments/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-06-03 23:32:23] INFO root fetch - processPackages [sciform]: executing diffoscope
+[2023-06-03 23:32:23] INFO root fetch - processPackages [sciform]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sciform-0.6.1.tar.gz tmp/sciform-0.7.0.tar.gz --markdown 20230603/s/sciform/0.6.1-0.7.0/diff.md --exclude *.pyd
+[2023-06-03 23:32:24] INFO root fetch - main [MainThread]: End processing [mynacode]: success
+[2023-06-03 23:32:24] INFO root fetch - main [MainThread]: End processing [libretrofuzz]: success
+[2023-06-03 23:32:24] INFO root fetch - main [MainThread]: End processing [compllments]: success
+[2023-06-03 23:33:18] INFO root fetch - main [MainThread]: End processing [sciform]: success
+[2023-06-03 23:33:18] INFO root fetch - main [MainThread]: Store serial: [18362307]
