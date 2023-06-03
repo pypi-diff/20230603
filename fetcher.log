@@ -8143,3 +8143,49 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-06-03 13:53:57] INFO root fetch - main [MainThread]: End processing [getactivewindow-x]: success
 [2023-06-03 13:53:57] INFO root fetch - main [MainThread]: End processing [htmllistparse]: success
 [2023-06-03 13:53:57] INFO root fetch - main [MainThread]: Store serial: [18359017]
+[2023-06-03 13:59:01] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18359017]
+[2023-06-03 13:59:06] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-06-03 13:59:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: Signature-pywrapper
+[2023-06-03 13:59:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: metanum
+[2023-06-03 13:59:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: read-rapidpe
+[2023-06-03 13:59:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: agixt
+[2023-06-03 13:59:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: kodexa-cli
+[2023-06-03 13:59:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: opr
+[2023-06-03 13:59:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: aiodbm
+[2023-06-03 13:59:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: phone-gen
+[2023-06-03 13:59:06] INFO root fetch - processPackages [read-rapidpe]: New version: [0.5.4] Old Version: [0.5.3]
+[2023-06-03 13:59:06] WARNING root fetch - processPackages [Signature-pywrapper]: Skipping, unable to determine old version
+[2023-06-03 13:59:06] INFO root fetch - main [MainThread]: End processing [Signature-pywrapper] error
+[2023-06-03 13:59:06] INFO root fetch - processPackages [phone-gen]: New version: [2.3.1] Old Version: [2.3.0]
+[2023-06-03 13:59:06] WARNING root fetch - processPackages [opr]: Skipping, unable to determine old version
+[2023-06-03 13:59:06] INFO root fetch - processPackages [aiodbm]: New version: [0.2.0b1] Old Version: [0.2.0a1]
+[2023-06-03 13:59:06] INFO root fetch - main [MainThread]: End processing [opr] error
+[2023-06-03 13:59:06] INFO root fetch - processPackages [metanum]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-06-03 13:59:06] INFO root fetch - processPackages [agixt]: New version: [1.1.80b0] Old Version: [1.1.79b0]
+[2023-06-03 13:59:06] INFO root fetch - processPackages [kodexa-cli]: New version: [6.2.25163504424] Old Version: [6.2.25158602888]
+[2023-06-03 13:59:07] INFO root fetch - processPackages [metanum]: Downloading https://files.pythonhosted.org/packages/d7/dd/69fe99f116b7ce18cfcfab6a227dba1057e52d350adf547f97254befc8c5/metanum-0.1.0.tar.gz
+[2023-06-03 13:59:07] INFO root fetch - processPackages [aiodbm]: Downloading https://files.pythonhosted.org/packages/4c/62/b939f925d1e064ed1da412475f402aa95869a25e7fc0d83dfce17bd9892b/aiodbm-0.2.0b1.tar.gz
+[2023-06-03 13:59:07] INFO root fetch - processPackages [agixt]: Downloading https://files.pythonhosted.org/packages/a7/eb/1b7722c1be73ecf773f0613845b561b7b84028e775ed6f9cba413f8cca1d/agixt-1.1.80b0.tar.gz
+[2023-06-03 13:59:07] INFO root fetch - processPackages [kodexa-cli]: Downloading https://files.pythonhosted.org/packages/84/19/92c00ac16fadf2b27aacba602e6c99134ded12ad439b73fc37c03910ac49/kodexa_cli-6.2.25163504424.tar.gz
+[2023-06-03 13:59:07] INFO root fetch - processPackages [read-rapidpe]: Downloading https://files.pythonhosted.org/packages/a7/d7/c7e5772945400583da1f9ef239887c0615974f33e1bc302c58630c3688a4/read_rapidpe-0.5.4.tar.gz
+[2023-06-03 13:59:07] INFO root fetch - processPackages [phone-gen]: Downloading https://files.pythonhosted.org/packages/4a/22/46a3364f1089aef41b86924fc8406a86d98ebbbf1773e3a1c257491960a6/phone_gen-2.3.1.tar.gz
+[2023-06-03 13:59:07] INFO root fetch - processPackages [agixt]: executing diffoscope
+[2023-06-03 13:59:07] INFO root fetch - processPackages [agixt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/agixt-1.1.79b0.tar.gz tmp/agixt-1.1.80b0.tar.gz --markdown 20230603/a/agixt/1.1.79b0-1.1.80b0/diff.md --exclude *.pyd
+[2023-06-03 13:59:07] INFO root fetch - processPackages [aiodbm]: executing diffoscope
+[2023-06-03 13:59:07] INFO root fetch - processPackages [aiodbm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aiodbm-0.2.0a1.tar.gz tmp/aiodbm-0.2.0b1.tar.gz --markdown 20230603/a/aiodbm/0.2.0a1-0.2.0b1/diff.md --exclude *.pyd
+[2023-06-03 13:59:07] INFO root fetch - processPackages [kodexa-cli]: executing diffoscope
+[2023-06-03 13:59:07] INFO root fetch - processPackages [kodexa-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kodexa_cli-6.2.25158602888.tar.gz tmp/kodexa_cli-6.2.25163504424.tar.gz --markdown 20230603/k/kodexa-cli/6.2.25158602888-6.2.25163504424/diff.md --exclude *.pyd
+[2023-06-03 13:59:07] INFO root fetch - processPackages [read-rapidpe]: executing diffoscope
+[2023-06-03 13:59:07] INFO root fetch - processPackages [read-rapidpe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/read_rapidpe-0.5.3.tar.gz tmp/read_rapidpe-0.5.4.tar.gz --markdown 20230603/r/read-rapidpe/0.5.3-0.5.4/diff.md --exclude *.pyd
+[2023-06-03 13:59:07] INFO root fetch - processPackages [metanum]: Downloading https://files.pythonhosted.org/packages/2c/b1/814dd9431c732694dd620f5ffdd960924bd1116a26e45012c0ae1d238982/metanum-0.1.1.tar.gz
+[2023-06-03 13:59:07] INFO root fetch - processPackages [phone-gen]: executing diffoscope
+[2023-06-03 13:59:07] INFO root fetch - processPackages [phone-gen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/phone_gen-2.3.0.tar.gz tmp/phone_gen-2.3.1.tar.gz --markdown 20230603/p/phone-gen/2.3.0-2.3.1/diff.md --exclude *.pyd
+[2023-06-03 13:59:07] INFO root fetch - processPackages [metanum]: executing diffoscope
+[2023-06-03 13:59:07] INFO root fetch - processPackages [metanum]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/metanum-0.1.0.tar.gz tmp/metanum-0.1.1.tar.gz --markdown 20230603/m/metanum/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-06-03 13:59:08] INFO root fetch - main [MainThread]: End processing [aiodbm]: success
+[2023-06-03 13:59:08] INFO root fetch - main [MainThread]: End processing [read-rapidpe]: success
+[2023-06-03 13:59:08] INFO root fetch - main [MainThread]: End processing [metanum]: success
+[2023-06-03 13:59:08] INFO root fetch - main [MainThread]: End processing [kodexa-cli]: success
+[2023-06-03 13:59:08] INFO root fetch - main [MainThread]: End processing [phone-gen]: success
+[2023-06-03 13:59:08] INFO root fetch - main [MainThread]: End processing [agixt]: success
+[2023-06-03 13:59:08] INFO root fetch - main [MainThread]: Store serial: [18359047]
