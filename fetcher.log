@@ -10885,3 +10885,47 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-06-03 19:19:09] INFO root fetch - main [MainThread]: End processing [mwxlib]: success
 [2023-06-03 19:19:10] INFO root fetch - main [MainThread]: End processing [dve-lumipy-preview]: success
 [2023-06-03 19:19:10] INFO root fetch - main [MainThread]: Store serial: [18360691]
+[2023-06-03 19:24:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18360691]
+[2023-06-03 19:24:18] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-06-03 19:24:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: prefab
+[2023-06-03 19:24:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: moto
+[2023-06-03 19:24:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: spanishconjugator
+[2023-06-03 19:24:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: spanishconjugator
+[2023-06-03 19:24:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: bmb-martlet-organization-client
+[2023-06-03 19:24:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: scratchdata
+[2023-06-03 19:24:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: SecuriPy
+[2023-06-03 19:24:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: envutil
+[2023-06-03 19:24:19] INFO root fetch - processPackages [prefab]: New version: [0.2.6] Old Version: [0.2.5]
+[2023-06-03 19:24:19] INFO root fetch - processPackages [scratchdata]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-06-03 19:24:19] INFO root fetch - processPackages [moto]: New version: [4.1.9.dev9] Old Version: [4.1.9.dev8]
+[2023-06-03 19:24:19] INFO root fetch - processPackages [SecuriPy]: New version: [1.1.1] Old Version: [1.1.0]
+[2023-06-03 19:24:19] WARNING root fetch - processPackages [envutil]: Skipping, unable to determine old version
+[2023-06-03 19:24:19] INFO root fetch - main [MainThread]: End processing [envutil] error
+[2023-06-03 19:24:19] INFO root fetch - processPackages [bmb-martlet-organization-client]: New version: [0.99.0] Old Version: [0.98.0]
+[2023-06-03 19:24:19] INFO root fetch - processPackages [spanishconjugator]: New version: [2.3.999] Old Version: [2.3.998]
+[2023-06-03 19:24:19] INFO root fetch - processPackages [scratchdata]: executing diffoscope
+[2023-06-03 19:24:19] INFO root fetch - processPackages [scratchdata]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scratchdata-0.1.0.tar.gz tmp/scratchdata-0.1.1.tar.gz --markdown 20230603/s/scratchdata/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-06-03 19:24:19] INFO root fetch - processPackages [prefab]: Downloading https://files.pythonhosted.org/packages/64/56/8975869c8693cbae44b21f0042468b1726b4811637854b474c045106a8f3/prefab-0.2.5.tar.gz
+[2023-06-03 19:24:19] INFO root fetch - processPackages [spanishconjugator]: New version: [2.3.999] Old Version: [2.3.998]
+[2023-06-03 19:24:19] INFO root fetch - processPackages [spanishconjugator]: executing diffoscope
+[2023-06-03 19:24:19] INFO root fetch - processPackages [spanishconjugator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spanishconjugator-2.3.998.tar.gz tmp/spanishconjugator-2.3.999.tar.gz --markdown 20230603/s/spanishconjugator/2.3.998-2.3.999/diff.md --exclude *.pyd
+[2023-06-03 19:24:19] INFO root fetch - processPackages [spanishconjugator]: executing diffoscope
+[2023-06-03 19:24:19] INFO root fetch - processPackages [spanishconjugator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spanishconjugator-2.3.998.tar.gz tmp/spanishconjugator-2.3.999.tar.gz --markdown 20230603/s/spanishconjugator/2.3.998-2.3.999/diff.md --exclude *.pyd
+[2023-06-03 19:24:19] INFO root fetch - processPackages [SecuriPy]: Downloading https://files.pythonhosted.org/packages/88/fc/50bdadd2ec5e0dfde9956d69e25c31a19040462dffff65e37622ac82d088/SecuriPy-1.1.1.tar.gz
+[2023-06-03 19:24:19] INFO root fetch - processPackages [moto]: executing diffoscope
+[2023-06-03 19:24:19] INFO root fetch - processPackages [moto]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/moto-4.1.9.dev8.tar.gz tmp/moto-4.1.9.dev9.tar.gz --markdown 20230603/m/moto/4.1.9.dev8-4.1.9.dev9/diff.md --exclude *.pyd
+[2023-06-03 19:24:19] INFO root fetch - processPackages [bmb-martlet-organization-client]: executing diffoscope
+[2023-06-03 19:24:19] INFO root fetch - processPackages [bmb-martlet-organization-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bmb_martlet_organization_client-0.98.0-py3-none-any.whl.zip tmp/bmb_martlet_organization_client-0.99.0-py3-none-any.whl.zip --markdown 20230603/b/bmb-martlet-organization-client/0.98.0-0.99.0/diff.md --exclude *.pyd
+[2023-06-03 19:24:19] INFO root fetch - processPackages [prefab]: Downloading https://files.pythonhosted.org/packages/51/ad/883858ce82b3d47679ec6dbfc4936a10d76259a7e946f113ed8c97d07f50/prefab-0.2.6.tar.gz
+[2023-06-03 19:24:19] INFO root fetch - processPackages [SecuriPy]: executing diffoscope
+[2023-06-03 19:24:19] INFO root fetch - processPackages [SecuriPy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/SecuriPy-1.1.0.tar.gz tmp/SecuriPy-1.1.1.tar.gz --markdown 20230603/S/SecuriPy/1.1.0-1.1.1/diff.md --exclude *.pyd
+[2023-06-03 19:24:19] INFO root fetch - processPackages [prefab]: executing diffoscope
+[2023-06-03 19:24:19] INFO root fetch - processPackages [prefab]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/prefab-0.2.5.tar.gz tmp/prefab-0.2.6.tar.gz --markdown 20230603/p/prefab/0.2.5-0.2.6/diff.md --exclude *.pyd
+[2023-06-03 19:24:20] INFO root fetch - main [MainThread]: End processing [scratchdata]: success
+[2023-06-03 19:24:20] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
+[2023-06-03 19:24:20] INFO root fetch - main [MainThread]: End processing [SecuriPy]: success
+[2023-06-03 19:24:21] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
+[2023-06-03 19:24:21] INFO root fetch - main [MainThread]: End processing [prefab]: success
+[2023-06-03 19:24:24] INFO root fetch - main [MainThread]: End processing [bmb-martlet-organization-client]: success
+[2023-06-03 19:24:51] INFO root fetch - main [MainThread]: End processing [moto]: success
+[2023-06-03 19:24:51] INFO root fetch - main [MainThread]: Store serial: [18360716]
