@@ -9840,3 +9840,36 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-06-03 17:12:51] INFO root fetch - main [MainThread]: End processing [coiled]: success
 [2023-06-03 17:12:52] INFO root fetch - main [MainThread]: End processing [propan]: success
 [2023-06-03 17:12:52] INFO root fetch - main [MainThread]: Store serial: [18359987]
+[2023-06-03 17:17:56] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18359987]
+[2023-06-03 17:18:01] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-06-03 17:18:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tensorflow-text-nightly
+[2023-06-03 17:18:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: klaus
+[2023-06-03 17:18:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: hagrid
+[2023-06-03 17:18:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: myjdapi
+[2023-06-03 17:18:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: OpenFisca-France
+[2023-06-03 17:18:01] INFO root fetch - processPackages [klaus]: New version: [2.0.3] Old Version: [2.0.2]
+[2023-06-03 17:18:01] INFO root fetch - processPackages [tensorflow-text-nightly]: New version: [2.14.0.dev20230602] Old Version: [2.14.0.dev20230601]
+[2023-06-03 17:18:01] INFO root fetch - processPackages [hagrid]: New version: [0.3.9] Old Version: [0.3.8]
+[2023-06-03 17:18:01] INFO root fetch - processPackages [myjdapi]: New version: [1.1.7] Old Version: [1.1.6]
+[2023-06-03 17:18:01] INFO root fetch - processPackages [OpenFisca-France]: New version: [99.0.1] Old Version: [99.0.0]
+[2023-06-03 17:18:01] INFO root fetch - processPackages [myjdapi]: Downloading https://files.pythonhosted.org/packages/cd/c7/b374d09bc1d19ec6724fad5e8ddb8de803a38dcd6d47f1cb5b30bb4d65eb/myjdapi-1.1.6.tar.gz
+[2023-06-03 17:18:01] INFO root fetch - processPackages [tensorflow-text-nightly]: Downloading https://files.pythonhosted.org/packages/69/a3/7d7d16a875e2fd947c0285bec8d8119afb4ed72a53a0936de73ac8c7eb49/tensorflow_text_nightly-2.14.0.dev20230602-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2023-06-03 17:18:01] INFO root fetch - processPackages [OpenFisca-France]: executing diffoscope
+[2023-06-03 17:18:01] INFO root fetch - processPackages [OpenFisca-France]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/OpenFisca_France-99.0.0-py3-none-any.whl.zip tmp/OpenFisca_France-99.0.1-py3-none-any.whl.zip --markdown 20230603/O/OpenFisca-France/99.0.0-99.0.1/diff.md --exclude *.pyd
+[2023-06-03 17:18:02] INFO root fetch - processPackages [klaus]: Downloading https://files.pythonhosted.org/packages/69/24/fb6ea012f0f4d096a5cc171e0f0564ce056054ba70a748d97e2bc6fb1241/klaus-2.0.2.tar.gz
+[2023-06-03 17:18:02] INFO root fetch - processPackages [myjdapi]: Downloading https://files.pythonhosted.org/packages/b9/2f/d9b0d0954b97c5399662b7afcc7acb8b52200452a0e76901966839f01f55/myjdapi-1.1.7.tar.gz
+[2023-06-03 17:18:02] INFO root fetch - processPackages [myjdapi]: executing diffoscope
+[2023-06-03 17:18:02] INFO root fetch - processPackages [myjdapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/myjdapi-1.1.6.tar.gz tmp/myjdapi-1.1.7.tar.gz --markdown 20230603/m/myjdapi/1.1.6-1.1.7/diff.md --exclude *.pyd
+[2023-06-03 17:18:02] INFO root fetch - processPackages [klaus]: Downloading https://files.pythonhosted.org/packages/26/8b/384fa6932cc57f23550a18ebab6324310d32f91df7d621d3c4e2a09b80ea/klaus-2.0.3.tar.gz
+[2023-06-03 17:18:02] INFO root fetch - processPackages [hagrid]: executing diffoscope
+[2023-06-03 17:18:02] INFO root fetch - processPackages [hagrid]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hagrid-0.3.8.tar.gz tmp/hagrid-0.3.9.tar.gz --markdown 20230603/h/hagrid/0.3.8-0.3.9/diff.md --exclude *.pyd
+[2023-06-03 17:18:02] INFO root fetch - processPackages [klaus]: executing diffoscope
+[2023-06-03 17:18:02] INFO root fetch - processPackages [klaus]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/klaus-2.0.2.tar.gz tmp/klaus-2.0.3.tar.gz --markdown 20230603/k/klaus/2.0.2-2.0.3/diff.md --exclude *.pyd
+[2023-06-03 17:18:02] INFO root fetch - processPackages [tensorflow-text-nightly]: executing diffoscope
+[2023-06-03 17:18:02] INFO root fetch - processPackages [tensorflow-text-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tensorflow_text_nightly-2.14.0.dev20230601-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip tmp/tensorflow_text_nightly-2.14.0.dev20230602-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip --markdown 20230603/t/tensorflow-text-nightly/2.14.0.dev20230601-2.14.0.dev20230602/diff.md --exclude *.pyd
+[2023-06-03 17:18:03] INFO root fetch - main [MainThread]: End processing [myjdapi]: success
+[2023-06-03 17:18:03] INFO root fetch - main [MainThread]: End processing [hagrid]: success
+[2023-06-03 17:18:03] INFO root fetch - main [MainThread]: End processing [klaus]: success
+[2023-06-03 17:18:04] INFO root fetch - main [MainThread]: End processing [tensorflow-text-nightly]: success
+[2023-06-03 17:19:13] INFO root fetch - main [MainThread]: End processing [OpenFisca-France]: success
+[2023-06-03 17:19:13] INFO root fetch - main [MainThread]: Store serial: [18360003]
