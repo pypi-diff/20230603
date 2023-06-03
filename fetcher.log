@@ -5934,3 +5934,23 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-06-03 08:46:55] INFO root fetch - main [MainThread]: End processing [simple-print]: success
 [2023-06-03 08:46:57] INFO root fetch - main [MainThread]: End processing [miniosl]: success
 [2023-06-03 08:46:57] INFO root fetch - main [MainThread]: Store serial: [18357481]
+[2023-06-03 08:52:01] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18357481]
+[2023-06-03 08:52:05] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-06-03 08:52:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cncd-package
+[2023-06-03 08:52:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: vector-vault
+[2023-06-03 08:52:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: textual-fspicker
+[2023-06-03 08:52:05] INFO root fetch - processPackages [textual-fspicker]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-06-03 08:52:05] WARNING root fetch - processPackages [cncd-package]: Skipping, unable to determine old version
+[2023-06-03 08:52:05] INFO root fetch - main [MainThread]: End processing [cncd-package] error
+[2023-06-03 08:52:05] INFO root fetch - processPackages [vector-vault]: New version: [1.7.5] Old Version: [1.7.4]
+[2023-06-03 08:52:06] INFO root fetch - processPackages [vector-vault]: Downloading https://files.pythonhosted.org/packages/96/a4/11e19db33d4e632c5aeb86dac8d89838e205b9dc024f4ed5d30a525929aa/vector_vault-1.7.4.tar.gz
+[2023-06-03 08:52:06] INFO root fetch - processPackages [textual-fspicker]: Downloading https://files.pythonhosted.org/packages/a7/81/014f5a0eaee44f40bf91ce80679a40e6ba9382e7976fdacc679580a0d109/textual_fspicker-0.0.5-py3-none-any.whl
+[2023-06-03 08:52:06] INFO root fetch - processPackages [vector-vault]: Downloading https://files.pythonhosted.org/packages/58/55/507d99f35dffbb0b979c7e14a3f32732b1b882cbbc45af3e57ba1f11a1a2/vector_vault-1.7.5.tar.gz
+[2023-06-03 08:52:06] INFO root fetch - processPackages [textual-fspicker]: Downloading https://files.pythonhosted.org/packages/21/13/9096894bdf0fa463dcae33b48b69842591b68866754f9d4046e138153a7a/textual_fspicker-0.0.6-py3-none-any.whl
+[2023-06-03 08:52:06] INFO root fetch - processPackages [textual-fspicker]: executing diffoscope
+[2023-06-03 08:52:06] INFO root fetch - processPackages [textual-fspicker]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/textual_fspicker-0.0.5-py3-none-any.whl.zip tmp/textual_fspicker-0.0.6-py3-none-any.whl.zip --markdown 20230603/t/textual-fspicker/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-06-03 08:52:06] INFO root fetch - processPackages [vector-vault]: executing diffoscope
+[2023-06-03 08:52:06] INFO root fetch - processPackages [vector-vault]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vector_vault-1.7.4.tar.gz tmp/vector_vault-1.7.5.tar.gz --markdown 20230603/v/vector-vault/1.7.4-1.7.5/diff.md --exclude *.pyd
+[2023-06-03 08:52:07] INFO root fetch - main [MainThread]: End processing [textual-fspicker]: success
+[2023-06-03 08:52:07] INFO root fetch - main [MainThread]: End processing [vector-vault]: success
+[2023-06-03 08:52:07] INFO root fetch - main [MainThread]: Store serial: [18357492]
