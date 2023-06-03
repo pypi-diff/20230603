@@ -13686,3 +13686,38 @@ EOFError: EOF read where object expected
 [2023-06-03 23:54:03] INFO root fetch - main [MainThread]: End processing [vector-vault]: success
 [2023-06-03 23:54:06] INFO root fetch - main [MainThread]: End processing [llnl-thicket]: success
 [2023-06-03 23:54:06] INFO root fetch - main [MainThread]: Store serial: [18362375]
+[2023-06-03 23:59:10] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18362375]
+[2023-06-03 23:59:14] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-06-03 23:59:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: verchew
+[2023-06-03 23:59:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pibble
+[2023-06-03 23:59:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pydelijn
+[2023-06-03 23:59:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: read-rapidpe
+[2023-06-03 23:59:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: piccolo
+[2023-06-03 23:59:15] INFO root fetch - processPackages [pydelijn]: New version: [1.1.0] Old Version: [1.0.0b2]
+[2023-06-03 23:59:15] INFO root fetch - processPackages [read-rapidpe]: New version: [0.5.6] Old Version: [0.5.5]
+[2023-06-03 23:59:15] INFO root fetch - processPackages [pibble]: New version: [0.5.7] Old Version: [0.5.6]
+[2023-06-03 23:59:15] INFO root fetch - processPackages [verchew]: New version: [3.4] Old Version: [3.3a1]
+[2023-06-03 23:59:15] INFO root fetch - processPackages [piccolo]: New version: [0.99.0] Old Version: [0.98.0]
+[2023-06-03 23:59:15] INFO root fetch - processPackages [pydelijn]: Downloading https://files.pythonhosted.org/packages/4a/4b/1ffd12c7dcaf8eb0980ee6749d3677dec9f3ba5f102ff5e9b1e0720f3d9b/pydelijn-1.0.0b2.tar.gz
+[2023-06-03 23:59:15] INFO root fetch - processPackages [pibble]: Downloading https://files.pythonhosted.org/packages/b0/9c/1648ef0432dc49a018e850d502e266062187f774cf7f995de37fc63d93b3/pibble-0.5.6.tar.gz
+[2023-06-03 23:59:15] INFO root fetch - processPackages [read-rapidpe]: Downloading https://files.pythonhosted.org/packages/fd/14/007b46c2d1ead873ef5805769237a7924f7a61c42f06f4b05d65cf9ddeaf/read_rapidpe-0.5.6.tar.gz
+[2023-06-03 23:59:15] INFO root fetch - processPackages [verchew]: Downloading https://files.pythonhosted.org/packages/3a/26/e1caee75092566dbb8bc9c2bd511302e4b34641d85ad025a3cdc6365b712/verchew-3.3a1.tar.gz
+[2023-06-03 23:59:15] INFO root fetch - processPackages [read-rapidpe]: executing diffoscope
+[2023-06-03 23:59:15] INFO root fetch - processPackages [read-rapidpe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/read_rapidpe-0.5.5.tar.gz tmp/read_rapidpe-0.5.6.tar.gz --markdown 20230603/r/read-rapidpe/0.5.5-0.5.6/diff.md --exclude *.pyd
+[2023-06-03 23:59:15] INFO root fetch - processPackages [piccolo]: executing diffoscope
+[2023-06-03 23:59:15] INFO root fetch - processPackages [piccolo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/piccolo-0.98.0.tar.gz tmp/piccolo-0.99.0.tar.gz --markdown 20230603/p/piccolo/0.98.0-0.99.0/diff.md --exclude *.pyd
+[2023-06-03 23:59:15] INFO root fetch - processPackages [pydelijn]: Downloading https://files.pythonhosted.org/packages/6d/72/c3b2782bd5b28c0c97a94433c1defe5ef817eb973104f223e8beaba75b2b/pydelijn-1.1.0.tar.gz
+[2023-06-03 23:59:15] INFO root fetch - processPackages [pibble]: Downloading https://files.pythonhosted.org/packages/eb/81/ecf9fb41126fdd7aee99c6a16041107541c768e55f767502180ba5d4d901/pibble-0.5.7.tar.gz
+[2023-06-03 23:59:15] INFO root fetch - processPackages [pydelijn]: executing diffoscope
+[2023-06-03 23:59:15] INFO root fetch - processPackages [pydelijn]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pydelijn-1.0.0b2.tar.gz tmp/pydelijn-1.1.0.tar.gz --markdown 20230603/p/pydelijn/1.0.0b2-1.1.0/diff.md --exclude *.pyd
+[2023-06-03 23:59:15] INFO root fetch - processPackages [verchew]: Downloading https://files.pythonhosted.org/packages/3e/bb/ffc68a292bc2eb3351e29e1ec06224b6bb6762a81ccfee51957ce85efbdd/verchew-3.4.tar.gz
+[2023-06-03 23:59:15] INFO root fetch - processPackages [pibble]: executing diffoscope
+[2023-06-03 23:59:15] INFO root fetch - processPackages [pibble]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pibble-0.5.6.tar.gz tmp/pibble-0.5.7.tar.gz --markdown 20230603/p/pibble/0.5.6-0.5.7/diff.md --exclude *.pyd
+[2023-06-03 23:59:15] INFO root fetch - processPackages [verchew]: executing diffoscope
+[2023-06-03 23:59:15] INFO root fetch - processPackages [verchew]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/verchew-3.3a1.tar.gz tmp/verchew-3.4.tar.gz --markdown 20230603/v/verchew/3.3a1-3.4/diff.md --exclude *.pyd
+[2023-06-03 23:59:16] INFO root fetch - main [MainThread]: End processing [read-rapidpe]: success
+[2023-06-03 23:59:16] INFO root fetch - main [MainThread]: End processing [pydelijn]: success
+[2023-06-03 23:59:16] INFO root fetch - main [MainThread]: End processing [verchew]: success
+[2023-06-03 23:59:17] INFO root fetch - main [MainThread]: End processing [pibble]: success
+[2023-06-03 23:59:18] INFO root fetch - main [MainThread]: End processing [piccolo]: success
+[2023-06-03 23:59:18] INFO root fetch - main [MainThread]: Store serial: [18362395]
