@@ -6559,3 +6559,49 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-06-03 10:08:41] INFO root fetch - main [MainThread]: End processing [pyglove]: success
 [2023-06-03 10:08:41] INFO root fetch - main [MainThread]: End processing [composabl-dev]: success
 [2023-06-03 10:08:41] INFO root fetch - main [MainThread]: Store serial: [18357856]
+[2023-06-03 10:13:45] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18357856]
+[2023-06-03 10:13:50] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-06-03 10:13:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: FunPayAPI
+[2023-06-03 10:13:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: composabl-dev
+[2023-06-03 10:13:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: tfliteiorewriter
+[2023-06-03 10:13:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: mtutils
+[2023-06-03 10:13:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: tronapi-JCO
+[2023-06-03 10:13:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: dart-tools
+[2023-06-03 10:13:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: livereloadx
+[2023-06-03 10:13:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: lldb-dfsan
+[2023-06-03 10:13:50] INFO root fetch - processPackages [composabl-dev]: New version: [0.1.1.dev4] Old Version: [0.1.1.dev3]
+[2023-06-03 10:13:50] INFO root fetch - processPackages [lldb-dfsan]: New version: [0.1.1] Old Version: [0.1]
+[2023-06-03 10:13:50] WARNING root fetch - processPackages [tfliteiorewriter]: Skipping, unable to determine old version
+[2023-06-03 10:13:50] INFO root fetch - main [MainThread]: End processing [tfliteiorewriter] error
+[2023-06-03 10:13:50] INFO root fetch - processPackages [FunPayAPI]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-06-03 10:13:50] INFO root fetch - processPackages [livereloadx]: New version: [2.6.9] Old Version: [2.6.8]
+[2023-06-03 10:13:50] INFO root fetch - processPackages [dart-tools]: New version: [0.3.3] Old Version: [0.3.2]
+[2023-06-03 10:13:50] INFO root fetch - processPackages [tronapi-JCO]: New version: [3.1.9] Old Version: [3.1.8]
+[2023-06-03 10:13:50] INFO root fetch - processPackages [mtutils]: New version: [2.1.9] Old Version: [2.1.8]
+[2023-06-03 10:13:50] INFO root fetch - processPackages [composabl-dev]: executing diffoscope
+[2023-06-03 10:13:50] INFO root fetch - processPackages [composabl-dev]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/composabl_dev-0.1.1.dev3-cp38-cp38-manylinux_2_35_x86_64.whl.zip tmp/composabl_dev-0.1.1.dev4-cp38-cp38-manylinux_2_35_x86_64.whl.zip --markdown 20230603/c/composabl-dev/0.1.1.dev3-0.1.1.dev4/diff.md --exclude *.pyd
+[2023-06-03 10:13:50] INFO root fetch - processPackages [tronapi-JCO]: executing diffoscope
+[2023-06-03 10:13:50] INFO root fetch - processPackages [tronapi-JCO]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tronapi-JCO-3.1.8.tar.gz tmp/tronapi-JCO-3.1.9.tar.gz --markdown 20230603/t/tronapi-JCO/3.1.8-3.1.9/diff.md --exclude *.pyd
+[2023-06-03 10:13:50] INFO root fetch - processPackages [dart-tools]: Downloading https://files.pythonhosted.org/packages/fd/63/82a15108454bac9d27d0704918450c8f12d11a17603726c43137a15dec57/dart-tools-0.3.3.tar.gz
+[2023-06-03 10:13:50] INFO root fetch - processPackages [lldb-dfsan]: Downloading https://files.pythonhosted.org/packages/f0/98/a26ac7ec7e57232132175d298731ff45823a6e826a4f81a6bd133726eb4f/lldb_dfsan-0.1.tar.gz
+[2023-06-03 10:13:50] INFO root fetch - processPackages [livereloadx]: Downloading https://files.pythonhosted.org/packages/5a/de/ed14794fd47101c2cb0750bce478620679b26d628c0373f95217c1ee0ba3/livereloadx-2.6.9.tar.gz
+[2023-06-03 10:13:50] INFO root fetch - processPackages [dart-tools]: executing diffoscope
+[2023-06-03 10:13:50] INFO root fetch - processPackages [dart-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dart-tools-0.3.2.tar.gz tmp/dart-tools-0.3.3.tar.gz --markdown 20230603/d/dart-tools/0.3.2-0.3.3/diff.md --exclude *.pyd
+[2023-06-03 10:13:51] INFO root fetch - processPackages [FunPayAPI]: Downloading https://files.pythonhosted.org/packages/bb/f3/9e649a6fba5aafd1e6477a78724a592c7f40fd84572a70e15a52c3b78f2a/FunPayAPI-1.0.9.tar.gz
+[2023-06-03 10:13:51] INFO root fetch - processPackages [lldb-dfsan]: Downloading https://files.pythonhosted.org/packages/20/fd/f423e9af018dcc835d64ecf2633eaca408f60d42793f83c0929fc30129d7/lldb_dfsan-0.1.1.tar.gz
+[2023-06-03 10:13:51] INFO root fetch - processPackages [mtutils]: executing diffoscope
+[2023-06-03 10:13:51] INFO root fetch - processPackages [mtutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mtutils-2.1.8.tar.gz tmp/mtutils-2.1.9.tar.gz --markdown 20230603/m/mtutils/2.1.8-2.1.9/diff.md --exclude *.pyd
+[2023-06-03 10:13:51] INFO root fetch - processPackages [FunPayAPI]: executing diffoscope
+[2023-06-03 10:13:51] INFO root fetch - processPackages [FunPayAPI]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/FunPayAPI-1.0.8.tar.gz tmp/FunPayAPI-1.0.9.tar.gz --markdown 20230603/F/FunPayAPI/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-06-03 10:13:51] INFO root fetch - processPackages [livereloadx]: executing diffoscope
+[2023-06-03 10:13:51] INFO root fetch - processPackages [livereloadx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/livereloadx-2.6.8.tar.gz tmp/livereloadx-2.6.9.tar.gz --markdown 20230603/l/livereloadx/2.6.8-2.6.9/diff.md --exclude *.pyd
+[2023-06-03 10:13:51] INFO root fetch - processPackages [lldb-dfsan]: executing diffoscope
+[2023-06-03 10:13:51] INFO root fetch - processPackages [lldb-dfsan]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lldb_dfsan-0.1.tar.gz tmp/lldb_dfsan-0.1.1.tar.gz --markdown 20230603/l/lldb-dfsan/0.1-0.1.1/diff.md --exclude *.pyd
+[2023-06-03 10:13:51] INFO root fetch - main [MainThread]: End processing [dart-tools]: success
+[2023-06-03 10:13:52] INFO root fetch - main [MainThread]: End processing [livereloadx]: success
+[2023-06-03 10:13:52] INFO root fetch - main [MainThread]: End processing [composabl-dev]: success
+[2023-06-03 10:13:52] INFO root fetch - main [MainThread]: End processing [lldb-dfsan]: success
+[2023-06-03 10:13:52] INFO root fetch - main [MainThread]: End processing [tronapi-JCO]: success
+[2023-06-03 10:13:52] INFO root fetch - main [MainThread]: End processing [mtutils]: success
+[2023-06-03 10:13:53] INFO root fetch - main [MainThread]: End processing [FunPayAPI]: success
+[2023-06-03 10:13:53] INFO root fetch - main [MainThread]: Store serial: [18357883]
