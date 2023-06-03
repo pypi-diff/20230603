@@ -8761,3 +8761,67 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-06-03 14:57:19] INFO root fetch - main [MainThread]: End processing [chatdocs]: success
 [2023-06-03 14:57:19] INFO root fetch - main [MainThread]: End processing [mysmallutils]: success
 [2023-06-03 14:57:19] INFO root fetch - main [MainThread]: Store serial: [18359373]
+[2023-06-03 15:02:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18359373]
+[2023-06-03 15:02:28] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-06-03 15:02:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pref-voting
+[2023-06-03 15:02:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: wooey
+[2023-06-03 15:02:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: propan
+[2023-06-03 15:02:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: flowrunner
+[2023-06-03 15:02:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: digitalarztools
+[2023-06-03 15:02:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: thumbor-hsl
+[2023-06-03 15:02:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: unitsnet-py
+[2023-06-03 15:02:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: telegramweb
+[2023-06-03 15:02:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: pystrace
+[2023-06-03 15:02:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: git-debranch
+[2023-06-03 15:02:28] INFO root fetch - processPackages [wooey]: New version: [0.9.9] Old Version: [0.9.8]
+[2023-06-03 15:02:28] INFO root fetch - processPackages [pref-voting]: New version: [0.4.9] Old Version: [0.4.8]
+[2023-06-03 15:02:28] INFO root fetch - processPackages [digitalarztools]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-06-03 15:02:28] INFO root fetch - processPackages [unitsnet-py]: New version: [0.1.37] Old Version: [0.1.36]
+[2023-06-03 15:02:28] INFO root fetch - processPackages [thumbor-hsl]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-06-03 15:02:28] INFO root fetch - processPackages [propan]: New version: [0.1.2.8] Old Version: [0.1.2.7]
+[2023-06-03 15:02:28] INFO root fetch - processPackages [flowrunner]: New version: [0.2.2] Old Version: [0.2.1]
+[2023-06-03 15:02:28] INFO root fetch - processPackages [telegramweb]: New version: [4.3] Old Version: [4.2]
+[2023-06-03 15:02:28] INFO root fetch - processPackages [git-debranch]: New version: [0.1.6] Old Version: [0.1.5]
+[2023-06-03 15:02:28] INFO root fetch - processPackages [telegramweb]: executing diffoscope
+[2023-06-03 15:02:28] INFO root fetch - processPackages [telegramweb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/telegramweb-4.2.tar.gz tmp/telegramweb-4.3.tar.gz --markdown 20230603/t/telegramweb/4.2-4.3/diff.md --exclude *.pyd
+[2023-06-03 15:02:28] INFO root fetch - processPackages [pystrace]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-06-03 15:02:28] INFO root fetch - processPackages [wooey]: Downloading https://files.pythonhosted.org/packages/81/06/733b9e6594d1d06862e356d691e1c7f569ccee237ebbabd3306873c8b4ac/wooey-0.9.8.tar.gz
+[2023-06-03 15:02:28] INFO root fetch - processPackages [thumbor-hsl]: Downloading https://files.pythonhosted.org/packages/5b/b1/dd8d5cb30456a79ca10704ff912974cdb4536949b4521e6bd4bfefb82c3d/thumbor_hsl-0.0.3.tar.gz
+[2023-06-03 15:02:28] INFO root fetch - processPackages [flowrunner]: Downloading https://files.pythonhosted.org/packages/53/2c/bc65771c92632dcb88f24dd6058f71a381a0aa1abafc5a80fe1ed11bf3cb/flowrunner-0.2.1.tar.gz
+[2023-06-03 15:02:28] INFO root fetch - processPackages [pystrace]: Downloading https://files.pythonhosted.org/packages/87/ab/d1c17feac81f76bc29c3ddd8772a0813e0eaec67163904401ba18122e367/pystrace-0.0.3.tar.gz
+[2023-06-03 15:02:28] INFO root fetch - processPackages [pref-voting]: Downloading https://files.pythonhosted.org/packages/25/33/15bd2e1b3749a053085a61c8c9e6deafd9ffce855827db1f7ad34acb69bb/pref_voting-0.4.9.tar.gz
+[2023-06-03 15:02:28] INFO root fetch - processPackages [thumbor-hsl]: executing diffoscope
+[2023-06-03 15:02:28] INFO root fetch - processPackages [thumbor-hsl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/thumbor_hsl-0.0.2.tar.gz tmp/thumbor_hsl-0.0.3.tar.gz --markdown 20230603/t/thumbor-hsl/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-06-03 15:02:28] INFO root fetch - processPackages [unitsnet-py]: Downloading https://files.pythonhosted.org/packages/18/ba/c0c9128562423b48ddad627a60eb1fad9e9e7eda4dc69aac17042ad5ed19/unitsnet-py-0.1.37.tar.gz
+[2023-06-03 15:02:28] INFO root fetch - processPackages [digitalarztools]: executing diffoscope
+[2023-06-03 15:02:28] INFO root fetch - processPackages [digitalarztools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/digitalarztools-0.0.8.tar.gz tmp/digitalarztools-0.0.9.tar.gz --markdown 20230603/d/digitalarztools/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-06-03 15:02:28] INFO root fetch - processPackages [propan]: Downloading https://files.pythonhosted.org/packages/20/97/4ac3834c4ccd9bf2fa45bec45d6b3f150b192393e4806f0f5b2f78e57937/propan-0.1.2.8.tar.gz
+[2023-06-03 15:02:28] INFO root fetch - processPackages [pref-voting]: executing diffoscope
+[2023-06-03 15:02:28] INFO root fetch - processPackages [pref-voting]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pref_voting-0.4.8.tar.gz tmp/pref_voting-0.4.9.tar.gz --markdown 20230603/p/pref-voting/0.4.8-0.4.9/diff.md --exclude *.pyd
+[2023-06-03 15:02:28] INFO root fetch - processPackages [git-debranch]: Downloading https://files.pythonhosted.org/packages/28/b2/39676066be7f3430e99ecd2843341f381c17e52f2eb73135a417417a87c9/git-debranch-0.1.6.tar.gz
+[2023-06-03 15:02:28] INFO root fetch - processPackages [unitsnet-py]: executing diffoscope
+[2023-06-03 15:02:28] INFO root fetch - processPackages [unitsnet-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/unitsnet-py-0.1.36.tar.gz tmp/unitsnet-py-0.1.37.tar.gz --markdown 20230603/u/unitsnet-py/0.1.36-0.1.37/diff.md --exclude *.pyd
+[2023-06-03 15:02:28] INFO root fetch - processPackages [propan]: executing diffoscope
+[2023-06-03 15:02:28] INFO root fetch - processPackages [propan]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/propan-0.1.2.7.tar.gz tmp/propan-0.1.2.8.tar.gz --markdown 20230603/p/propan/0.1.2.7-0.1.2.8/diff.md --exclude *.pyd
+[2023-06-03 15:02:28] INFO root fetch - processPackages [flowrunner]: Downloading https://files.pythonhosted.org/packages/c1/7b/49b13b2424f79a4cd0bae998438ce226e74742d240295ba53b5654710938/flowrunner-0.2.2.tar.gz
+[2023-06-03 15:02:28] INFO root fetch - processPackages [git-debranch]: executing diffoscope
+[2023-06-03 15:02:28] INFO root fetch - processPackages [git-debranch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/git-debranch-0.1.5.tar.gz tmp/git-debranch-0.1.6.tar.gz --markdown 20230603/g/git-debranch/0.1.5-0.1.6/diff.md --exclude *.pyd
+[2023-06-03 15:02:28] INFO root fetch - processPackages [pystrace]: Downloading https://files.pythonhosted.org/packages/85/aa/8b77809f367eec9b2124f717eab77c5665e2bb6d1cdfb054a692ca1f02a9/pystrace-0.0.4.tar.gz
+[2023-06-03 15:02:28] INFO root fetch - processPackages [wooey]: Downloading https://files.pythonhosted.org/packages/4f/bd/105831ae627e6060ab537c10dbe3b6e412081a99410190726ad5182dddea/wooey-0.9.9.tar.gz
+[2023-06-03 15:02:28] INFO root fetch - processPackages [flowrunner]: executing diffoscope
+[2023-06-03 15:02:28] INFO root fetch - processPackages [flowrunner]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flowrunner-0.2.1.tar.gz tmp/flowrunner-0.2.2.tar.gz --markdown 20230603/f/flowrunner/0.2.1-0.2.2/diff.md --exclude *.pyd
+[2023-06-03 15:02:28] INFO root fetch - processPackages [pystrace]: executing diffoscope
+[2023-06-03 15:02:28] INFO root fetch - processPackages [pystrace]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pystrace-0.0.3.tar.gz tmp/pystrace-0.0.4.tar.gz --markdown 20230603/p/pystrace/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-06-03 15:02:29] INFO root fetch - processPackages [wooey]: executing diffoscope
+[2023-06-03 15:02:29] INFO root fetch - processPackages [wooey]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wooey-0.9.8.tar.gz tmp/wooey-0.9.9.tar.gz --markdown 20230603/w/wooey/0.9.8-0.9.9/diff.md --exclude *.pyd
+[2023-06-03 15:02:29] INFO root fetch - main [MainThread]: End processing [telegramweb]: success
+[2023-06-03 15:02:30] INFO root fetch - main [MainThread]: End processing [thumbor-hsl]: success
+[2023-06-03 15:02:30] INFO root fetch - main [MainThread]: End processing [pystrace]: success
+[2023-06-03 15:02:30] INFO root fetch - main [MainThread]: End processing [git-debranch]: success
+[2023-06-03 15:02:30] INFO root fetch - main [MainThread]: End processing [wooey]: success
+[2023-06-03 15:02:31] INFO root fetch - main [MainThread]: End processing [pref-voting]: success
+[2023-06-03 15:02:31] INFO root fetch - main [MainThread]: End processing [propan]: success
+[2023-06-03 15:02:32] INFO root fetch - main [MainThread]: End processing [digitalarztools]: success
+[2023-06-03 15:02:32] INFO root fetch - main [MainThread]: End processing [flowrunner]: success
+[2023-06-03 15:02:33] INFO root fetch - main [MainThread]: End processing [unitsnet-py]: success
+[2023-06-03 15:02:33] INFO root fetch - main [MainThread]: Store serial: [18359410]
