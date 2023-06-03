@@ -9761,3 +9761,44 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-06-03 17:02:27] INFO root fetch - main [MainThread]: End processing [sonatype-nxrm-sdk]: success
 [2023-06-03 17:02:28] INFO root fetch - main [MainThread]: End processing [novalabs-backtest]: success
 [2023-06-03 17:02:28] INFO root fetch - main [MainThread]: Store serial: [18359940]
+[2023-06-03 17:07:32] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18359940]
+[2023-06-03 17:07:37] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-06-03 17:07:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: python-canvas
+[2023-06-03 17:07:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: SerilizerGrishchuk
+[2023-06-03 17:07:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: sonatype-nexus-iq-sdk
+[2023-06-03 17:07:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: odoo-addon-account-banking-sepa-direct-debit
+[2023-06-03 17:07:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: image-center
+[2023-06-03 17:07:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pollenflug
+[2023-06-03 17:07:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: lagrange
+[2023-06-03 17:07:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: firegs
+[2023-06-03 17:07:37] WARNING root fetch - processPackages [SerilizerGrishchuk]: Skipping, unable to determine old version
+[2023-06-03 17:07:37] INFO root fetch - main [MainThread]: End processing [SerilizerGrishchuk] error
+[2023-06-03 17:07:37] INFO root fetch - processPackages [pollenflug]: New version: [0.2.2] Old Version: [0.2.1]
+[2023-06-03 17:07:37] INFO root fetch - processPackages [odoo-addon-account-banking-sepa-direct-debit]: New version: [16.0.1.0.0.2] Old Version: [15.0.2.1.0]
+[2023-06-03 17:07:37] INFO root fetch - processPackages [python-canvas]: New version: [0.3.6] Old Version: [0.3.5]
+[2023-06-03 17:07:37] WARNING root fetch - processPackages [image-center]: Skipping, unable to determine old version
+[2023-06-03 17:07:37] INFO root fetch - main [MainThread]: End processing [image-center] error
+[2023-06-03 17:07:37] INFO root fetch - processPackages [lagrange]: New version: [2.1.0] Old Version: [2.0.2]
+[2023-06-03 17:07:37] WARNING root fetch - processPackages [sonatype-nexus-iq-sdk]: Skipping, unable to determine old version
+[2023-06-03 17:07:37] INFO root fetch - main [MainThread]: End processing [sonatype-nexus-iq-sdk] error
+[2023-06-03 17:07:37] WARNING root fetch - processPackages [firegs]: Skipping, unable to determine old version
+[2023-06-03 17:07:37] INFO root fetch - main [MainThread]: End processing [firegs] error
+[2023-06-03 17:07:37] INFO root fetch - processPackages [odoo-addon-account-banking-sepa-direct-debit]: Downloading https://files.pythonhosted.org/packages/da/3e/80634da39ef679614cfe8b7e5675d7cd49d1f76e8b36b4e218a26aad7b82/odoo_addon_account_banking_sepa_direct_debit-15.0.2.1.0-py3-none-any.whl
+[2023-06-03 17:07:37] INFO root fetch - processPackages [lagrange]: Downloading https://files.pythonhosted.org/packages/49/7f/b05bb2a1a5c69bb19d980eeba5f7b9b85f812dc7db8a2ee32ba0ead7ccce/lagrange-2.0.2.tar.gz
+[2023-06-03 17:07:37] INFO root fetch - processPackages [python-canvas]: Downloading https://files.pythonhosted.org/packages/6c/3d/17cc3c4c927df83c892b3596ece330e4880a82da94441b539033ad73693d/python-canvas-0.3.6.tar.gz
+[2023-06-03 17:07:37] INFO root fetch - processPackages [pollenflug]: Downloading https://files.pythonhosted.org/packages/2a/a2/b1530518f4651fd81abcc140b19fa63b39740db5f57587354716cd06dd04/pollenflug-0.2.2.tar.gz
+[2023-06-03 17:07:37] INFO root fetch - processPackages [python-canvas]: executing diffoscope
+[2023-06-03 17:07:37] INFO root fetch - processPackages [python-canvas]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python-canvas-0.3.5.tar.gz tmp/python-canvas-0.3.6.tar.gz --markdown 20230603/p/python-canvas/0.3.5-0.3.6/diff.md --exclude *.pyd
+[2023-06-03 17:07:37] INFO root fetch - processPackages [pollenflug]: executing diffoscope
+[2023-06-03 17:07:37] INFO root fetch - processPackages [pollenflug]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pollenflug-0.2.1.tar.gz tmp/pollenflug-0.2.2.tar.gz --markdown 20230603/p/pollenflug/0.2.1-0.2.2/diff.md --exclude *.pyd
+[2023-06-03 17:07:37] INFO root fetch - processPackages [lagrange]: Downloading https://files.pythonhosted.org/packages/16/1e/1da250de10ac01a62d186877492a7da6a77b3fb398c22550b0674da0b00c/lagrange-2.1.0.tar.gz
+[2023-06-03 17:07:37] INFO root fetch - processPackages [odoo-addon-account-banking-sepa-direct-debit]: Downloading https://files.pythonhosted.org/packages/71/01/87e6c27aa42540b596e8a027ac57396eb7849cc844e6273dfb54cd2811e6/odoo_addon_account_banking_sepa_direct_debit-16.0.1.0.0.2-py3-none-any.whl
+[2023-06-03 17:07:37] INFO root fetch - processPackages [lagrange]: executing diffoscope
+[2023-06-03 17:07:37] INFO root fetch - processPackages [lagrange]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lagrange-2.0.2.tar.gz tmp/lagrange-2.1.0.tar.gz --markdown 20230603/l/lagrange/2.0.2-2.1.0/diff.md --exclude *.pyd
+[2023-06-03 17:07:37] INFO root fetch - processPackages [odoo-addon-account-banking-sepa-direct-debit]: executing diffoscope
+[2023-06-03 17:07:37] INFO root fetch - processPackages [odoo-addon-account-banking-sepa-direct-debit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_account_banking_sepa_direct_debit-15.0.2.1.0-py3-none-any.whl.zip tmp/odoo_addon_account_banking_sepa_direct_debit-16.0.1.0.0.2-py3-none-any.whl.zip --markdown 20230603/o/odoo-addon-account-banking-sepa-direct-debit/15.0.2.1.0-16.0.1.0.0.2/diff.md --exclude *.pyd
+[2023-06-03 17:07:38] INFO root fetch - main [MainThread]: End processing [pollenflug]: success
+[2023-06-03 17:07:38] INFO root fetch - main [MainThread]: End processing [python-canvas]: success
+[2023-06-03 17:07:39] INFO root fetch - main [MainThread]: End processing [lagrange]: success
+[2023-06-03 17:07:39] INFO root fetch - main [MainThread]: End processing [odoo-addon-account-banking-sepa-direct-debit]: success
+[2023-06-03 17:07:39] INFO root fetch - main [MainThread]: Store serial: [18359969]
