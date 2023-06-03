@@ -2054,3 +2054,51 @@
 [2023-06-03 03:20:55] INFO root fetch - main [MainThread]: End processing [cdk-sops-secrets]: success
 [2023-06-03 03:20:56] INFO root fetch - main [MainThread]: End processing [webint]: success
 [2023-06-03 03:20:56] INFO root fetch - main [MainThread]: Store serial: [18355110]
+[2023-06-03 03:26:00] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18355110]
+[2023-06-03 03:26:05] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-06-03 03:26:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: flash-attn-wheels
+[2023-06-03 03:26:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ripandtear
+[2023-06-03 03:26:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: nonebot-plugin-mahjong-scoreboard
+[2023-06-03 03:26:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: azure-cognitiveservices-speech
+[2023-06-03 03:26:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: centerline-width
+[2023-06-03 03:26:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: landingai
+[2023-06-03 03:26:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: terrasnek
+[2023-06-03 03:26:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: cdk-lambda-subminute
+[2023-06-03 03:26:05] INFO root fetch - processPackages [nonebot-plugin-mahjong-scoreboard]: New version: [0.4.1.post2] Old Version: [0.4.1.post1]
+[2023-06-03 03:26:05] WARNING root fetch - processPackages [flash-attn-wheels]: Skipping, unable to determine old version
+[2023-06-03 03:26:05] INFO root fetch - main [MainThread]: End processing [flash-attn-wheels] error
+[2023-06-03 03:26:05] INFO root fetch - processPackages [cdk-lambda-subminute]: New version: [2.0.99] Old Version: [2.0.98]
+[2023-06-03 03:26:05] INFO root fetch - processPackages [terrasnek]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-06-03 03:26:05] INFO root fetch - processPackages [centerline-width]: New version: [0.2.5] Old Version: [0.2.4]
+[2023-06-03 03:26:05] INFO root fetch - processPackages [landingai]: New version: [0.0.8] Old Version: [0.0.7]
+[2023-06-03 03:26:05] INFO root fetch - processPackages [ripandtear]: New version: [0.9.9] Old Version: [0.9.7]
+[2023-06-03 03:26:05] INFO root fetch - processPackages [cdk-lambda-subminute]: executing diffoscope
+[2023-06-03 03:26:05] INFO root fetch - processPackages [cdk-lambda-subminute]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk_lambda_subminute-2.0.98.tar.gz tmp/cdk_lambda_subminute-2.0.99.tar.gz --markdown 20230603/c/cdk-lambda-subminute/2.0.98-2.0.99/diff.md --exclude *.pyd
+[2023-06-03 03:26:05] INFO root fetch - processPackages [azure-cognitiveservices-speech]: New version: [1.9.0] Old Version: [1.8.0]
+[2023-06-03 03:26:05] INFO root fetch - processPackages [nonebot-plugin-mahjong-scoreboard]: Downloading https://files.pythonhosted.org/packages/16/87/c95d0e18bbda6d27ad2fd8fb173df66fe60d2e86f018c293b98647638c70/nonebot_plugin_mahjong_scoreboard-0.4.1.post1.tar.gz
+[2023-06-03 03:26:05] INFO root fetch - processPackages [landingai]: executing diffoscope
+[2023-06-03 03:26:05] INFO root fetch - processPackages [landingai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/landingai-0.0.7.tar.gz tmp/landingai-0.0.8.tar.gz --markdown 20230603/l/landingai/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2023-06-03 03:26:05] INFO root fetch - processPackages [terrasnek]: Downloading https://files.pythonhosted.org/packages/51/95/bde230548a37709a7c95d59ac93312b24a29355c124f3d009879c1a666ae/terrasnek-0.1.8.tar.gz
+[2023-06-03 03:26:05] INFO root fetch - processPackages [centerline-width]: Downloading https://files.pythonhosted.org/packages/b2/fe/0ab1f30b66c96e90db5fe6c64c30dafda026b5551cb2d1351b692d76487c/centerline-width-0.2.5.tar.gz
+[2023-06-03 03:26:05] INFO root fetch - processPackages [azure-cognitiveservices-speech]: Downloading https://files.pythonhosted.org/packages/03/0d/5aebb4bc61da6868d4a3c38d3042a793dcf1584988c56641de8acf4cc950/azure_cognitiveservices_speech-1.8.0-cp37-cp37m-win_amd64.whl
+[2023-06-03 03:26:05] INFO root fetch - processPackages [centerline-width]: executing diffoscope
+[2023-06-03 03:26:05] INFO root fetch - processPackages [centerline-width]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/centerline-width-0.2.4.tar.gz tmp/centerline-width-0.2.5.tar.gz --markdown 20230603/c/centerline-width/0.2.4-0.2.5/diff.md --exclude *.pyd
+[2023-06-03 03:26:06] INFO root fetch - processPackages [nonebot-plugin-mahjong-scoreboard]: Downloading https://files.pythonhosted.org/packages/cf/98/864d7ceb47a828a14d5014fcc8294369c119e94cf87c3d03c9a0fe069ed4/nonebot_plugin_mahjong_scoreboard-0.4.1.post2.tar.gz
+[2023-06-03 03:26:06] INFO root fetch - processPackages [ripandtear]: executing diffoscope
+[2023-06-03 03:26:06] INFO root fetch - processPackages [ripandtear]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ripandtear-0.9.7.tar.gz tmp/ripandtear-0.9.9.tar.gz --markdown 20230603/r/ripandtear/0.9.7-0.9.9/diff.md --exclude *.pyd
+[2023-06-03 03:26:06] INFO root fetch - processPackages [nonebot-plugin-mahjong-scoreboard]: executing diffoscope
+[2023-06-03 03:26:06] INFO root fetch - processPackages [nonebot-plugin-mahjong-scoreboard]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot_plugin_mahjong_scoreboard-0.4.1.post1.tar.gz tmp/nonebot_plugin_mahjong_scoreboard-0.4.1.post2.tar.gz --markdown 20230603/n/nonebot-plugin-mahjong-scoreboard/0.4.1.post1-0.4.1.post2/diff.md --exclude *.pyd
+[2023-06-03 03:26:06] INFO root fetch - processPackages [terrasnek]: Downloading https://files.pythonhosted.org/packages/5f/b5/cb3c58574f724b242acda7fe5bb9775506f902ca518657c887fa34634053/terrasnek-0.1.9.tar.gz
+[2023-06-03 03:26:06] INFO root fetch - processPackages [terrasnek]: executing diffoscope
+[2023-06-03 03:26:06] INFO root fetch - processPackages [terrasnek]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/terrasnek-0.1.8.tar.gz tmp/terrasnek-0.1.9.tar.gz --markdown 20230603/t/terrasnek/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-06-03 03:26:06] INFO root fetch - main [MainThread]: End processing [cdk-lambda-subminute]: success
+[2023-06-03 03:26:06] INFO root fetch - main [MainThread]: End processing [landingai]: success
+[2023-06-03 03:26:06] INFO root fetch - processPackages [azure-cognitiveservices-speech]: Downloading https://files.pythonhosted.org/packages/6d/82/318d687feb5fc7c0fa949ac1385bee683d52398dbd253ef6c185135a0c2a/azure_cognitiveservices_speech-1.9.0-cp37-cp37m-win_amd64.whl
+[2023-06-03 03:26:07] INFO root fetch - main [MainThread]: End processing [centerline-width]: success
+[2023-06-03 03:26:07] INFO root fetch - main [MainThread]: End processing [ripandtear]: success
+[2023-06-03 03:26:07] INFO root fetch - processPackages [azure-cognitiveservices-speech]: executing diffoscope
+[2023-06-03 03:26:07] INFO root fetch - processPackages [azure-cognitiveservices-speech]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/azure_cognitiveservices_speech-1.8.0-cp37-cp37m-win_amd64.whl.zip tmp/azure_cognitiveservices_speech-1.9.0-cp37-cp37m-win_amd64.whl.zip --markdown 20230603/a/azure-cognitiveservices-speech/1.8.0-1.9.0/diff.md --exclude *.pyd
+[2023-06-03 03:26:08] INFO root fetch - main [MainThread]: End processing [terrasnek]: success
+[2023-06-03 03:26:25] INFO root fetch - main [MainThread]: End processing [azure-cognitiveservices-speech]: success
+[2023-06-03 03:26:57] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-mahjong-scoreboard]: success
+[2023-06-03 03:26:57] INFO root fetch - main [MainThread]: Store serial: [18355140]
