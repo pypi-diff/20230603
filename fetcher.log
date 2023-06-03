@@ -12271,3 +12271,38 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-06-03 21:02:57] INFO root fetch - main [MainThread]: End processing [hypofuzz]: success
 [2023-06-03 21:02:57] INFO root fetch - main [MainThread]: End processing [aunly-bbot]: success
 [2023-06-03 21:02:57] INFO root fetch - main [MainThread]: Store serial: [18361472]
+[2023-06-03 21:08:01] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18361472]
+[2023-06-03 21:08:06] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-06-03 21:08:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: bettertest
+[2023-06-03 21:08:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: xia-compiler-python
+[2023-06-03 21:08:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: xia-compiler-python
+[2023-06-03 21:08:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: bgmi
+[2023-06-03 21:08:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pronotepy
+[2023-06-03 21:08:06] INFO root fetch - processPackages [xia-compiler-python]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-06-03 21:08:06] INFO root fetch - processPackages [xia-compiler-python]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-06-03 21:08:06] INFO root fetch - processPackages [bettertest]: New version: [0.1.94] Old Version: [0.1.93]
+[2023-06-03 21:08:06] INFO root fetch - processPackages [pronotepy]: New version: [2.9.0] Old Version: [2.8.0]
+[2023-06-03 21:08:06] INFO root fetch - processPackages [bgmi]: New version: [5.0.0a3] Old Version: [5.0.0a2]
+[2023-06-03 21:08:06] INFO root fetch - processPackages [xia-compiler-python]: Downloading https://files.pythonhosted.org/packages/71/d2/a23a4386a96b66774e242320aa12e9fd738dab23e20407731bd370f90607/xia_compiler_python-0.1.0-cp39-none-win_amd64.whl
+[2023-06-03 21:08:06] INFO root fetch - processPackages [xia-compiler-python]: Downloading https://files.pythonhosted.org/packages/71/d2/a23a4386a96b66774e242320aa12e9fd738dab23e20407731bd370f90607/xia_compiler_python-0.1.0-cp39-none-win_amd64.whl
+[2023-06-03 21:08:06] INFO root fetch - processPackages [pronotepy]: Downloading https://files.pythonhosted.org/packages/e0/91/b78bb24ea0bedec1a3606147afcbbcedbe0f382be26064f5ecb3c3fb038a/pronotepy-2.8.0.tar.gz
+[2023-06-03 21:08:06] INFO root fetch - processPackages [bettertest]: Downloading https://files.pythonhosted.org/packages/00/27/f9e9422e97b7dfd47611d4cddf09625eb3b440f1b592a5934ef5f41a2719/bettertest-0.1.94.tar.gz
+[2023-06-03 21:08:06] INFO root fetch - processPackages [bettertest]: executing diffoscope
+[2023-06-03 21:08:06] INFO root fetch - processPackages [bettertest]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bettertest-0.1.93.tar.gz tmp/bettertest-0.1.94.tar.gz --markdown 20230603/b/bettertest/0.1.93-0.1.94/diff.md --exclude *.pyd
+[2023-06-03 21:08:06] INFO root fetch - processPackages [bgmi]: executing diffoscope
+[2023-06-03 21:08:06] INFO root fetch - processPackages [bgmi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bgmi-5.0.0a2.tar.gz tmp/bgmi-5.0.0a3.tar.gz --markdown 20230603/b/bgmi/5.0.0a2-5.0.0a3/diff.md --exclude *.pyd
+[2023-06-03 21:08:07] INFO root fetch - processPackages [pronotepy]: Downloading https://files.pythonhosted.org/packages/1c/97/16c3a2388df61dc8ae6bb84136ea814ecda1b66c84090b783e9c97b0f5c1/pronotepy-2.9.0.tar.gz
+[2023-06-03 21:08:07] INFO root fetch - processPackages [xia-compiler-python]: Downloading https://files.pythonhosted.org/packages/05/52/1183692cc52db3bcb4d88248b05cee734421fab6d6e36af7e8b6e83b39f4/xia_compiler_python-0.1.1-cp39-none-macosx_11_0_x86_64.whl
+[2023-06-03 21:08:07] INFO root fetch - processPackages [xia-compiler-python]: Downloading https://files.pythonhosted.org/packages/05/52/1183692cc52db3bcb4d88248b05cee734421fab6d6e36af7e8b6e83b39f4/xia_compiler_python-0.1.1-cp39-none-macosx_11_0_x86_64.whl
+[2023-06-03 21:08:07] INFO root fetch - processPackages [pronotepy]: executing diffoscope
+[2023-06-03 21:08:07] INFO root fetch - processPackages [pronotepy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pronotepy-2.8.0.tar.gz tmp/pronotepy-2.9.0.tar.gz --markdown 20230603/p/pronotepy/2.8.0-2.9.0/diff.md --exclude *.pyd
+[2023-06-03 21:08:07] INFO root fetch - processPackages [xia-compiler-python]: executing diffoscope
+[2023-06-03 21:08:07] INFO root fetch - processPackages [xia-compiler-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xia_compiler_python-0.1.0-cp39-none-win_amd64.whl.zip tmp/xia_compiler_python-0.1.1-cp39-none-macosx_11_0_x86_64.whl.zip --markdown 20230603/x/xia-compiler-python/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-06-03 21:08:07] INFO root fetch - processPackages [xia-compiler-python]: executing diffoscope
+[2023-06-03 21:08:07] INFO root fetch - processPackages [xia-compiler-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xia_compiler_python-0.1.0-cp39-none-win_amd64.whl.zip tmp/xia_compiler_python-0.1.1-cp39-none-macosx_11_0_x86_64.whl.zip --markdown 20230603/x/xia-compiler-python/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-06-03 21:08:07] INFO root fetch - main [MainThread]: End processing [bettertest]: success
+[2023-06-03 21:08:08] INFO root fetch - main [MainThread]: End processing [xia-compiler-python]: success
+[2023-06-03 21:08:08] INFO root fetch - main [MainThread]: End processing [xia-compiler-python]: success
+[2023-06-03 21:08:08] INFO root fetch - main [MainThread]: End processing [bgmi]: success
+[2023-06-03 21:08:09] INFO root fetch - main [MainThread]: End processing [pronotepy]: success
+[2023-06-03 21:08:09] INFO root fetch - main [MainThread]: Store serial: [18361491]
