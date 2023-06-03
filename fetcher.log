@@ -5729,3 +5729,32 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-06-03 08:14:46] INFO root fetch - processPackages [onnx2tf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/onnx2tf-1.9.8.tar.gz tmp/onnx2tf-1.9.9.tar.gz --markdown 20230603/o/onnx2tf/1.9.8-1.9.9/diff.md --exclude *.pyd
 [2023-06-03 08:14:49] INFO root fetch - main [MainThread]: End processing [onnx2tf]: success
 [2023-06-03 08:14:49] INFO root fetch - main [MainThread]: Store serial: [18357346]
+[2023-06-03 08:19:52] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18357346]
+[2023-06-03 08:19:57] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-06-03 08:19:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: netora-python
+[2023-06-03 08:19:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: irspack
+[2023-06-03 08:19:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: jumeaux
+[2023-06-03 08:19:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pretext
+[2023-06-03 08:19:57] INFO root fetch - processPackages [pretext]: New version: [1.6.1.dev20230603] Old Version: [1.6.0]
+[2023-06-03 08:19:57] INFO root fetch - processPackages [netora-python]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-06-03 08:19:57] INFO root fetch - processPackages [jumeaux]: New version: [4.0.1] Old Version: [4.0.0]
+[2023-06-03 08:19:57] INFO root fetch - processPackages [irspack]: New version: [0.3.1] Old Version: [0.3.0]
+[2023-06-03 08:19:58] INFO root fetch - processPackages [irspack]: Downloading https://files.pythonhosted.org/packages/7a/6a/c14ba45693afbe773c84957b6acf2f413e17c73e5035f2af826c04fb33d4/irspack-0.3.0.tar.gz
+[2023-06-03 08:19:58] INFO root fetch - processPackages [netora-python]: Downloading https://files.pythonhosted.org/packages/fa/43/9a7cbefc3fd5435d643b49b8c21c9ca58b1181bcdb4bc54228a12d4c3011/netora-python-0.1.9.tar.gz
+[2023-06-03 08:19:58] INFO root fetch - processPackages [pretext]: Downloading https://files.pythonhosted.org/packages/22/1d/03570c4121fb9b24134d0543b2479a199f2a482994f97dec7f159053e0d4/pretext-1.6.1.dev20230603.tar.gz
+[2023-06-03 08:19:58] INFO root fetch - processPackages [jumeaux]: Downloading https://files.pythonhosted.org/packages/27/87/e80ed76151f9cd126b6e16fb03567e8cb0aef90e792bc7f81b5cd70b5ff3/jumeaux-4.0.0-py3-none-any.whl
+[2023-06-03 08:19:58] INFO root fetch - processPackages [netora-python]: executing diffoscope
+[2023-06-03 08:19:58] INFO root fetch - processPackages [netora-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/netora-python-0.1.8.tar.gz tmp/netora-python-0.1.9.tar.gz --markdown 20230603/n/netora-python/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-06-03 08:19:58] INFO root fetch - processPackages [pretext]: executing diffoscope
+[2023-06-03 08:19:58] INFO root fetch - processPackages [pretext]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pretext-1.6.0.tar.gz tmp/pretext-1.6.1.dev20230603.tar.gz --markdown 20230603/p/pretext/1.6.0-1.6.1.dev20230603/diff.md --exclude *.pyd
+[2023-06-03 08:19:58] INFO root fetch - processPackages [irspack]: Downloading https://files.pythonhosted.org/packages/21/d1/357b820e48703b77e17a2c82659b1f428c3a7dc0f57d4238eee6aef86bd7/irspack-0.3.1.tar.gz
+[2023-06-03 08:19:58] INFO root fetch - processPackages [jumeaux]: Downloading https://files.pythonhosted.org/packages/e4/cc/d3e393e53f6950f2bd07088405c90104a305b7b1b4e79f2d97c4997e73fb/jumeaux-4.0.1-py3-none-any.whl
+[2023-06-03 08:19:58] INFO root fetch - processPackages [irspack]: executing diffoscope
+[2023-06-03 08:19:58] INFO root fetch - processPackages [irspack]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/irspack-0.3.0.tar.gz tmp/irspack-0.3.1.tar.gz --markdown 20230603/i/irspack/0.3.0-0.3.1/diff.md --exclude *.pyd
+[2023-06-03 08:19:58] INFO root fetch - processPackages [jumeaux]: executing diffoscope
+[2023-06-03 08:19:58] INFO root fetch - processPackages [jumeaux]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jumeaux-4.0.0-py3-none-any.whl.zip tmp/jumeaux-4.0.1-py3-none-any.whl.zip --markdown 20230603/j/jumeaux/4.0.0-4.0.1/diff.md --exclude *.pyd
+[2023-06-03 08:19:59] INFO root fetch - main [MainThread]: End processing [netora-python]: success
+[2023-06-03 08:20:00] INFO root fetch - main [MainThread]: End processing [irspack]: success
+[2023-06-03 08:20:00] INFO root fetch - main [MainThread]: End processing [jumeaux]: success
+[2023-06-03 08:20:02] INFO root fetch - main [MainThread]: End processing [pretext]: success
+[2023-06-03 08:20:02] INFO root fetch - main [MainThread]: Store serial: [18357377]
