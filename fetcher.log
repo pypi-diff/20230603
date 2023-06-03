@@ -5715,3 +5715,17 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-06-03 08:09:32] INFO root fetch - main [MainThread]: End processing [vector-vault]: success
 [2023-06-03 08:09:36] INFO root fetch - main [MainThread]: End processing [pyg-nightly]: success
 [2023-06-03 08:09:36] INFO root fetch - main [MainThread]: Store serial: [18357333]
+[2023-06-03 08:14:41] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18357333]
+[2023-06-03 08:14:45] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-06-03 08:14:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: Serializer-CuteHedgehog
+[2023-06-03 08:14:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: omarpdf101
+[2023-06-03 08:14:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: onnx2tf
+[2023-06-03 08:14:45] WARNING root fetch - processPackages [omarpdf101]: Skipping, unable to determine old version
+[2023-06-03 08:14:45] WARNING root fetch - processPackages [Serializer-CuteHedgehog]: Skipping, unable to determine old version
+[2023-06-03 08:14:45] INFO root fetch - main [MainThread]: End processing [omarpdf101] error
+[2023-06-03 08:14:45] INFO root fetch - main [MainThread]: End processing [Serializer-CuteHedgehog] error
+[2023-06-03 08:14:45] INFO root fetch - processPackages [onnx2tf]: New version: [1.9.9] Old Version: [1.9.8]
+[2023-06-03 08:14:46] INFO root fetch - processPackages [onnx2tf]: executing diffoscope
+[2023-06-03 08:14:46] INFO root fetch - processPackages [onnx2tf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/onnx2tf-1.9.8.tar.gz tmp/onnx2tf-1.9.9.tar.gz --markdown 20230603/o/onnx2tf/1.9.8-1.9.9/diff.md --exclude *.pyd
+[2023-06-03 08:14:49] INFO root fetch - main [MainThread]: End processing [onnx2tf]: success
+[2023-06-03 08:14:49] INFO root fetch - main [MainThread]: Store serial: [18357346]
