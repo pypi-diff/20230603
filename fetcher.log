@@ -5552,3 +5552,26 @@
 [2023-06-03 07:37:34] INFO root fetch - main [MainThread]: End processing [torch-tensorrt-fx-only]: success
 [2023-06-03 07:37:35] INFO root fetch - main [MainThread]: End processing [rsrch]: success
 [2023-06-03 07:37:35] INFO root fetch - main [MainThread]: Store serial: [18357249]
+[2023-06-03 07:42:39] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18357249]
+[2023-06-03 07:42:44] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-06-03 07:42:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: netora-python
+[2023-06-03 07:42:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: CDynamics
+[2023-06-03 07:42:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: dwdwfsapi
+[2023-06-03 07:42:44] INFO root fetch - processPackages [netora-python]: New version: [0.1.8] Old Version: [0.1.7]
+[2023-06-03 07:42:44] INFO root fetch - processPackages [CDynamics]: New version: [2.0.3] Old Version: [2.0.2]
+[2023-06-03 07:42:44] INFO root fetch - processPackages [dwdwfsapi]: New version: [1.0.7] Old Version: [1.0.6]
+[2023-06-03 07:42:44] INFO root fetch - processPackages [dwdwfsapi]: Downloading https://files.pythonhosted.org/packages/fc/13/23b40aaebb1e4c62dd62e7d7310fe66d1d9e0dfc74b18ba2f44e2009a865/dwdwfsapi-1.0.6.tar.gz
+[2023-06-03 07:42:44] INFO root fetch - processPackages [CDynamics]: Downloading https://files.pythonhosted.org/packages/70/69/fb7e8e83950acd6455dfe8e8f1d572bc34bbee78a5798fac1750cccd9719/CDynamics-2.0.2.tar.gz
+[2023-06-03 07:42:44] INFO root fetch - processPackages [netora-python]: Downloading https://files.pythonhosted.org/packages/f0/93/8c9a9b2ae4b9dc5f0c77a893014d694b24388e68693d8f2fc193b18216d5/netora-python-0.1.8.tar.gz
+[2023-06-03 07:42:44] INFO root fetch - processPackages [netora-python]: executing diffoscope
+[2023-06-03 07:42:44] INFO root fetch - processPackages [netora-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/netora-python-0.1.7.tar.gz tmp/netora-python-0.1.8.tar.gz --markdown 20230603/n/netora-python/0.1.7-0.1.8/diff.md --exclude *.pyd
+[2023-06-03 07:42:44] INFO root fetch - processPackages [dwdwfsapi]: Downloading https://files.pythonhosted.org/packages/47/e8/2446f2b806b7406e515d2956c87882e2b076b723c9073ddd9dc0cca6b5e3/dwdwfsapi-1.0.7.tar.gz
+[2023-06-03 07:42:44] INFO root fetch - processPackages [CDynamics]: Downloading https://files.pythonhosted.org/packages/4b/2b/3f039ee4d2d822498878a6abc63ba05637f7cee219431649e624fee22030/CDynamics-2.0.3.tar.gz
+[2023-06-03 07:42:44] INFO root fetch - processPackages [dwdwfsapi]: executing diffoscope
+[2023-06-03 07:42:44] INFO root fetch - processPackages [dwdwfsapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dwdwfsapi-1.0.6.tar.gz tmp/dwdwfsapi-1.0.7.tar.gz --markdown 20230603/d/dwdwfsapi/1.0.6-1.0.7/diff.md --exclude *.pyd
+[2023-06-03 07:42:44] INFO root fetch - processPackages [CDynamics]: executing diffoscope
+[2023-06-03 07:42:44] INFO root fetch - processPackages [CDynamics]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/CDynamics-2.0.2.tar.gz tmp/CDynamics-2.0.3.tar.gz --markdown 20230603/C/CDynamics/2.0.2-2.0.3/diff.md --exclude *.pyd
+[2023-06-03 07:42:45] INFO root fetch - main [MainThread]: End processing [netora-python]: success
+[2023-06-03 07:42:45] INFO root fetch - main [MainThread]: End processing [dwdwfsapi]: success
+[2023-06-03 07:43:39] INFO root fetch - main [MainThread]: End processing [CDynamics]: success
+[2023-06-03 07:43:39] INFO root fetch - main [MainThread]: Store serial: [18357259]
