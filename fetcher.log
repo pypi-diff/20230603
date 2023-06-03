@@ -4093,3 +4093,22 @@
 [2023-06-03 03:51:23] INFO root fetch - main [MainThread]: End processing [webint]: success
 [2023-06-03 03:51:37] INFO root fetch - main [MainThread]: End processing [botocore-a-la-carte-gamesparks]: success
 [2023-06-03 03:51:37] INFO root fetch - main [MainThread]: Store serial: [18356233]
+[2023-06-03 03:56:42] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18356233]
+[2023-06-03 03:56:46] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-06-03 03:56:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cdk-wordpress
+[2023-06-03 03:56:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: python-sat
+[2023-06-03 03:56:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cdk-lambda-layer-wget
+[2023-06-03 03:56:46] INFO root fetch - processPackages [cdk-wordpress]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-06-03 03:56:46] INFO root fetch - processPackages [cdk-lambda-layer-wget]: New version: [2.0.99] Old Version: [2.0.98]
+[2023-06-03 03:56:46] INFO root fetch - processPackages [python-sat]: New version: [0.1.8.dev5] Old Version: [0.1.8.dev4]
+[2023-06-03 03:56:46] INFO root fetch - processPackages [cdk-lambda-layer-wget]: executing diffoscope
+[2023-06-03 03:56:46] INFO root fetch - processPackages [cdk-lambda-layer-wget]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-lambda-layer-wget-2.0.98.tar.gz tmp/cdk-lambda-layer-wget-2.0.99.tar.gz --markdown 20230603/c/cdk-lambda-layer-wget/2.0.98-2.0.99/diff.md --exclude *.pyd
+[2023-06-03 03:56:47] INFO root fetch - processPackages [python-sat]: Downloading https://files.pythonhosted.org/packages/f4/46/cd7098c963585a44625556d0c7aed57be926410c840102d9b433becd5c72/python-sat-0.1.8.dev5.tar.gz
+[2023-06-03 03:56:47] INFO root fetch - processPackages [cdk-wordpress]: executing diffoscope
+[2023-06-03 03:56:47] INFO root fetch - processPackages [cdk-wordpress]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-wordpress-0.0.98.tar.gz tmp/cdk-wordpress-0.0.99.tar.gz --markdown 20230603/c/cdk-wordpress/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-06-03 03:56:48] INFO root fetch - processPackages [python-sat]: executing diffoscope
+[2023-06-03 03:56:48] INFO root fetch - processPackages [python-sat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python-sat-0.1.8.dev4.tar.gz tmp/python-sat-0.1.8.dev5.tar.gz --markdown 20230603/p/python-sat/0.1.8.dev4-0.1.8.dev5/diff.md --exclude *.pyd
+[2023-06-03 03:56:48] INFO root fetch - main [MainThread]: End processing [cdk-wordpress]: success
+[2023-06-03 03:56:48] INFO root fetch - main [MainThread]: End processing [cdk-lambda-layer-wget]: success
+[2023-06-03 03:56:50] INFO root fetch - main [MainThread]: End processing [python-sat]: success
+[2023-06-03 03:56:50] INFO root fetch - main [MainThread]: Store serial: [18356341]
