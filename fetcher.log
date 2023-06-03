@@ -10296,3 +10296,56 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-06-03 18:06:12] INFO root fetch - main [MainThread]: End processing [yetl-framework]: success
 [2023-06-03 18:06:12] INFO root fetch - main [MainThread]: End processing [zdatabase]: success
 [2023-06-03 18:06:12] INFO root fetch - main [MainThread]: Store serial: [18360337]
+[2023-06-03 18:11:16] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18360337]
+[2023-06-03 18:11:21] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-06-03 18:11:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pautobot
+[2023-06-03 18:11:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: notification-service-nightly
+[2023-06-03 18:11:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ai-flow-nightly
+[2023-06-03 18:11:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: zdatabase
+[2023-06-03 18:11:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: cuallee
+[2023-06-03 18:11:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: weizi
+[2023-06-03 18:11:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: pychedule
+[2023-06-03 18:11:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: chekov
+[2023-06-03 18:11:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: lasfile
+[2023-06-03 18:11:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: holamundoplayerGabriel
+[2023-06-03 18:11:21] INFO root fetch - processPackages [pautobot]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-06-03 18:11:21] INFO root fetch - processPackages [cuallee]: New version: [0.4.2] Old Version: [0.4.1]
+[2023-06-03 18:11:21] INFO root fetch - processPackages [pychedule]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-06-03 18:11:21] WARNING root fetch - processPackages [weizi]: Skipping, unable to determine old version
+[2023-06-03 18:11:21] WARNING root fetch - processPackages [holamundoplayerGabriel]: Skipping, unable to determine old version
+[2023-06-03 18:11:21] INFO root fetch - main [MainThread]: End processing [weizi] error
+[2023-06-03 18:11:21] WARNING root fetch - processPackages [chekov]: Skipping, unable to determine old version
+[2023-06-03 18:11:21] INFO root fetch - processPackages [lasfile]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-06-03 18:11:21] INFO root fetch - main [MainThread]: End processing [holamundoplayerGabriel] error
+[2023-06-03 18:11:21] INFO root fetch - processPackages [notification-service-nightly]: New version: [2023.6.2] Old Version: [2023.6.1]
+[2023-06-03 18:11:21] INFO root fetch - main [MainThread]: End processing [chekov] error
+[2023-06-03 18:11:21] INFO root fetch - processPackages [ai-flow-nightly]: New version: [2023.6.2] Old Version: [2023.6.1]
+[2023-06-03 18:11:21] INFO root fetch - processPackages [zdatabase]: New version: [0.4.3] Old Version: [0.4.2]
+[2023-06-03 18:11:21] INFO root fetch - processPackages [lasfile]: executing diffoscope
+[2023-06-03 18:11:21] INFO root fetch - processPackages [lasfile]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lasfile-0.1.8.tar.gz tmp/lasfile-0.1.9.tar.gz --markdown 20230603/l/lasfile/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-06-03 18:11:21] INFO root fetch - processPackages [pychedule]: Downloading https://files.pythonhosted.org/packages/f3/2e/0aa61265ea54bf62f09a319ce14a44164ba1fed8acbdc5a0a519a356c0d5/pychedule-0.0.4-py3-none-any.whl
+[2023-06-03 18:11:21] INFO root fetch - processPackages [ai-flow-nightly]: Downloading https://files.pythonhosted.org/packages/e7/7c/e48159ea37e261ac5e2f9cdff8dc52664813b8b26ecb7ba6fa2e3cea7949/ai_flow_nightly-2023.6.2.tar.gz
+[2023-06-03 18:11:21] INFO root fetch - processPackages [zdatabase]: Downloading https://files.pythonhosted.org/packages/b2/87/155319303787a33d6147ca3102a592db8edbb7f19cbfc62f31a4b493451d/zdatabase-0.4.3.tar.gz
+[2023-06-03 18:11:21] INFO root fetch - processPackages [cuallee]: Downloading https://files.pythonhosted.org/packages/63/8d/00fba9fd713c463f7b6d2af270bb81bb2f1d310a797a9ec4ceb9c24b1eea/cuallee-0.4.1.tar.gz
+[2023-06-03 18:11:21] INFO root fetch - processPackages [pychedule]: executing diffoscope
+[2023-06-03 18:11:21] INFO root fetch - processPackages [pychedule]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pychedule-0.0.3-py3-none-any.whl.zip tmp/pychedule-0.0.4-py3-none-any.whl.zip --markdown 20230603/p/pychedule/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-06-03 18:11:21] INFO root fetch - processPackages [notification-service-nightly]: Downloading https://files.pythonhosted.org/packages/96/69/d28a47802171a81ee79fbb51c1665cda0cbf5d3f02c180f620f919f71b59/notification_service_nightly-2023.6.2.tar.gz
+[2023-06-03 18:11:21] INFO root fetch - processPackages [zdatabase]: executing diffoscope
+[2023-06-03 18:11:21] INFO root fetch - processPackages [zdatabase]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zdatabase-0.4.2.tar.gz tmp/zdatabase-0.4.3.tar.gz --markdown 20230603/z/zdatabase/0.4.2-0.4.3/diff.md --exclude *.pyd
+[2023-06-03 18:11:22] INFO root fetch - processPackages [ai-flow-nightly]: executing diffoscope
+[2023-06-03 18:11:22] INFO root fetch - processPackages [ai-flow-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ai_flow_nightly-2023.6.1.tar.gz tmp/ai_flow_nightly-2023.6.2.tar.gz --markdown 20230603/a/ai-flow-nightly/2023.6.1-2023.6.2/diff.md --exclude *.pyd
+[2023-06-03 18:11:22] INFO root fetch - processPackages [pautobot]: executing diffoscope
+[2023-06-03 18:11:22] INFO root fetch - processPackages [pautobot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pautobot-0.0.8.tar.gz tmp/pautobot-0.0.9.tar.gz --markdown 20230603/p/pautobot/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-06-03 18:11:22] INFO root fetch - processPackages [notification-service-nightly]: executing diffoscope
+[2023-06-03 18:11:22] INFO root fetch - processPackages [notification-service-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/notification_service_nightly-2023.6.1.tar.gz tmp/notification_service_nightly-2023.6.2.tar.gz --markdown 20230603/n/notification-service-nightly/2023.6.1-2023.6.2/diff.md --exclude *.pyd
+[2023-06-03 18:11:22] INFO root fetch - processPackages [cuallee]: Downloading https://files.pythonhosted.org/packages/c7/44/8f55638025876dbd6feea49696d7782a176de801fe6571b3a61b002a6489/cuallee-0.4.2.tar.gz
+[2023-06-03 18:11:22] INFO root fetch - processPackages [cuallee]: executing diffoscope
+[2023-06-03 18:11:22] INFO root fetch - processPackages [cuallee]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cuallee-0.4.1.tar.gz tmp/cuallee-0.4.2.tar.gz --markdown 20230603/c/cuallee/0.4.1-0.4.2/diff.md --exclude *.pyd
+[2023-06-03 18:11:23] INFO root fetch - main [MainThread]: End processing [lasfile]: success
+[2023-06-03 18:11:23] INFO root fetch - main [MainThread]: End processing [pychedule]: success
+[2023-06-03 18:11:23] INFO root fetch - main [MainThread]: End processing [zdatabase]: success
+[2023-06-03 18:11:23] INFO root fetch - main [MainThread]: End processing [cuallee]: success
+[2023-06-03 18:11:23] INFO root fetch - main [MainThread]: End processing [notification-service-nightly]: success
+[2023-06-03 18:11:23] INFO root fetch - main [MainThread]: End processing [pautobot]: success
+[2023-06-03 18:11:24] INFO root fetch - main [MainThread]: End processing [ai-flow-nightly]: success
+[2023-06-03 18:11:24] INFO root fetch - main [MainThread]: Store serial: [18360381]
