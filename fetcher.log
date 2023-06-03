@@ -4491,3 +4491,9 @@
 [2023-06-03 04:55:56] INFO root fetch - main [MainThread]: End processing [neon-utils]: success
 [2023-06-03 04:55:57] INFO root fetch - main [MainThread]: End processing [odoo14-addon-account-banking-pain-base]: success
 [2023-06-03 04:55:57] INFO root fetch - main [MainThread]: Store serial: [18356542]
+[2023-06-03 05:01:01] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18356542]
+[2023-06-03 05:01:06] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2023-06-03 05:01:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: SerizDeseriz-IGI
+[2023-06-03 05:01:06] WARNING root fetch - processPackages [SerizDeseriz-IGI]: Skipping, unable to determine old version
+[2023-06-03 05:01:06] INFO root fetch - main [MainThread]: End processing [SerizDeseriz-IGI] error
+[2023-06-03 05:01:06] INFO root fetch - main [MainThread]: Store serial: [18356548]
