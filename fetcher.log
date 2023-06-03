@@ -10349,3 +10349,32 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-06-03 18:11:23] INFO root fetch - main [MainThread]: End processing [pautobot]: success
 [2023-06-03 18:11:24] INFO root fetch - main [MainThread]: End processing [ai-flow-nightly]: success
 [2023-06-03 18:11:24] INFO root fetch - main [MainThread]: Store serial: [18360381]
+[2023-06-03 18:16:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18360381]
+[2023-06-03 18:16:35] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-06-03 18:16:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cuallee
+[2023-06-03 18:16:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: rbackup-py
+[2023-06-03 18:16:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: new-luin
+[2023-06-03 18:16:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: cuallee
+[2023-06-03 18:16:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: elm-messenger
+[2023-06-03 18:16:35] WARNING root fetch - processPackages [rbackup-py]: Skipping, unable to determine old version
+[2023-06-03 18:16:35] INFO root fetch - main [MainThread]: End processing [rbackup-py] error
+[2023-06-03 18:16:35] WARNING root fetch - processPackages [new-luin]: Skipping, unable to determine old version
+[2023-06-03 18:16:35] INFO root fetch - main [MainThread]: End processing [new-luin] error
+[2023-06-03 18:16:35] INFO root fetch - processPackages [cuallee]: New version: [0.4.4] Old Version: [0.4.3]
+[2023-06-03 18:16:35] INFO root fetch - processPackages [elm-messenger]: New version: [0.2.6] Old Version: [0.2.5]
+[2023-06-03 18:16:35] INFO root fetch - processPackages [cuallee]: New version: [0.4.4] Old Version: [0.4.3]
+[2023-06-03 18:16:36] INFO root fetch - processPackages [cuallee]: Downloading https://files.pythonhosted.org/packages/e5/a0/17320747f7ea2a72b92f51a88efcb96e3390703d97daa73c5184f0ec75cf/cuallee-0.4.3.tar.gz
+[2023-06-03 18:16:36] INFO root fetch - processPackages [cuallee]: Downloading https://files.pythonhosted.org/packages/e5/a0/17320747f7ea2a72b92f51a88efcb96e3390703d97daa73c5184f0ec75cf/cuallee-0.4.3.tar.gz
+[2023-06-03 18:16:36] INFO root fetch - processPackages [elm-messenger]: Downloading https://files.pythonhosted.org/packages/e9/e9/430e772caf3779b9da7c2b31988916858dafcc366d9d8a4b52ff6936dfc2/elm-messenger-0.2.6.tar.gz
+[2023-06-03 18:16:36] INFO root fetch - processPackages [cuallee]: Downloading https://files.pythonhosted.org/packages/4d/db/f8e284c0b0cbdf49aeeb2d112dfa5b87a21f81b79c62e1e0539fed36ff47/cuallee-0.4.4.tar.gz
+[2023-06-03 18:16:36] INFO root fetch - processPackages [elm-messenger]: executing diffoscope
+[2023-06-03 18:16:36] INFO root fetch - processPackages [elm-messenger]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/elm-messenger-0.2.5.tar.gz tmp/elm-messenger-0.2.6.tar.gz --markdown 20230603/e/elm-messenger/0.2.5-0.2.6/diff.md --exclude *.pyd
+[2023-06-03 18:16:36] INFO root fetch - processPackages [cuallee]: Downloading https://files.pythonhosted.org/packages/4d/db/f8e284c0b0cbdf49aeeb2d112dfa5b87a21f81b79c62e1e0539fed36ff47/cuallee-0.4.4.tar.gz
+[2023-06-03 18:16:36] INFO root fetch - processPackages [cuallee]: executing diffoscope
+[2023-06-03 18:16:36] INFO root fetch - processPackages [cuallee]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cuallee-0.4.3.tar.gz tmp/cuallee-0.4.4.tar.gz --markdown 20230603/c/cuallee/0.4.3-0.4.4/diff.md --exclude *.pyd
+[2023-06-03 18:16:36] INFO root fetch - processPackages [cuallee]: executing diffoscope
+[2023-06-03 18:16:36] INFO root fetch - processPackages [cuallee]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cuallee-0.4.3.tar.gz tmp/cuallee-0.4.4.tar.gz --markdown 20230603/c/cuallee/0.4.3-0.4.4/diff.md --exclude *.pyd
+[2023-06-03 18:16:37] INFO root fetch - main [MainThread]: End processing [elm-messenger]: success
+[2023-06-03 18:16:37] INFO root fetch - main [MainThread]: End processing [cuallee]: success
+[2023-06-03 18:16:37] INFO root fetch - main [MainThread]: End processing [cuallee]: success
+[2023-06-03 18:16:37] INFO root fetch - main [MainThread]: Store serial: [18360406]
