@@ -9942,3 +9942,39 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-06-03 17:29:38] INFO root fetch - main [MainThread]: End processing [img2unicode] error
 [2023-06-03 17:29:39] INFO root fetch - main [MainThread]: End processing [typed-api-framework]: success
 [2023-06-03 17:29:39] INFO root fetch - main [MainThread]: Store serial: [18360050]
+[2023-06-03 17:34:43] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18360050]
+[2023-06-03 17:34:48] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-06-03 17:34:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: werk24
+[2023-06-03 17:34:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: SerilizerGrishchuk
+[2023-06-03 17:34:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: micromind
+[2023-06-03 17:34:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: crawler-commons
+[2023-06-03 17:34:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: redisamp
+[2023-06-03 17:34:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: ezbeq
+[2023-06-03 17:34:48] INFO root fetch - processPackages [crawler-commons]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-06-03 17:34:48] INFO root fetch - processPackages [SerilizerGrishchuk]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-06-03 17:34:48] INFO root fetch - processPackages [micromind]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-06-03 17:34:48] INFO root fetch - processPackages [werk24]: New version: [1.5.1] Old Version: [1.5.0]
+[2023-06-03 17:34:48] WARNING root fetch - processPackages [redisamp]: Skipping, unable to determine old version
+[2023-06-03 17:34:48] INFO root fetch - main [MainThread]: End processing [redisamp] error
+[2023-06-03 17:34:48] INFO root fetch - processPackages [crawler-commons]: executing diffoscope
+[2023-06-03 17:34:48] INFO root fetch - processPackages [crawler-commons]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/crawler_commons-0.0.8.tar.gz tmp/crawler_commons-0.0.9.tar.gz --markdown 20230603/c/crawler-commons/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-06-03 17:34:48] INFO root fetch - processPackages [ezbeq]: New version: [1.0.0b9] Old Version: [1.0.0b8]
+[2023-06-03 17:34:48] INFO root fetch - processPackages [SerilizerGrishchuk]: Downloading https://files.pythonhosted.org/packages/15/19/94c04f8a402482aa2e5b580f24b521ef6707db76cca89bec75850f961247/SerilizerGrishchuk-0.1.1.tar.gz
+[2023-06-03 17:34:48] INFO root fetch - processPackages [micromind]: Downloading https://files.pythonhosted.org/packages/62/ee/8919be21c406c2e7b48571a3a94d5cb7889fc089ee44facf70aaba965cfe/micromind-0.0.4.tar.gz
+[2023-06-03 17:34:48] INFO root fetch - processPackages [werk24]: Downloading https://files.pythonhosted.org/packages/06/20/e33c9fc98a9c22896d10d6a338cf0b67c5e8edd1dfc30e467b936de3cdab/werk24-1.5.1.tar.gz
+[2023-06-03 17:34:48] INFO root fetch - processPackages [werk24]: executing diffoscope
+[2023-06-03 17:34:48] INFO root fetch - processPackages [werk24]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/werk24-1.5.0.tar.gz tmp/werk24-1.5.1.tar.gz --markdown 20230603/w/werk24/1.5.0-1.5.1/diff.md --exclude *.pyd
+[2023-06-03 17:34:48] INFO root fetch - processPackages [SerilizerGrishchuk]: Downloading https://files.pythonhosted.org/packages/1b/6e/3c553a79b5afc022965075b6d32b3c1afd80d1418b7a4570a760ef1e1658/SerilizerGrishchuk-0.1.2.tar.gz
+[2023-06-03 17:34:48] INFO root fetch - processPackages [micromind]: Downloading https://files.pythonhosted.org/packages/c5/b6/9632d50701878a88bfa644aefda2b4b4369c48559450651f339d6c044b10/micromind-0.0.5.tar.gz
+[2023-06-03 17:34:48] INFO root fetch - processPackages [ezbeq]: executing diffoscope
+[2023-06-03 17:34:48] INFO root fetch - processPackages [ezbeq]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ezbeq-1.0.0b8.tar.gz tmp/ezbeq-1.0.0b9.tar.gz --markdown 20230603/e/ezbeq/1.0.0b8-1.0.0b9/diff.md --exclude *.pyd
+[2023-06-03 17:34:48] INFO root fetch - processPackages [SerilizerGrishchuk]: executing diffoscope
+[2023-06-03 17:34:48] INFO root fetch - processPackages [SerilizerGrishchuk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/SerilizerGrishchuk-0.1.1.tar.gz tmp/SerilizerGrishchuk-0.1.2.tar.gz --markdown 20230603/S/SerilizerGrishchuk/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-06-03 17:34:48] INFO root fetch - processPackages [micromind]: executing diffoscope
+[2023-06-03 17:34:48] INFO root fetch - processPackages [micromind]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/micromind-0.0.4.tar.gz tmp/micromind-0.0.5.tar.gz --markdown 20230603/m/micromind/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-06-03 17:34:49] INFO root fetch - main [MainThread]: End processing [crawler-commons]: success
+[2023-06-03 17:34:50] INFO root fetch - main [MainThread]: End processing [micromind]: success
+[2023-06-03 17:34:50] INFO root fetch - main [MainThread]: End processing [SerilizerGrishchuk]: success
+[2023-06-03 17:34:51] INFO root fetch - main [MainThread]: End processing [werk24]: success
+[2023-06-03 17:34:57] INFO root fetch - main [MainThread]: End processing [ezbeq]: success
+[2023-06-03 17:34:57] INFO root fetch - main [MainThread]: Store serial: [18360070]
