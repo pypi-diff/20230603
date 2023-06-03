@@ -4982,3 +4982,117 @@
 [2023-06-03 06:20:16] INFO root fetch - main [MainThread]: End processing [p0-script]: success
 [2023-06-03 06:20:16] INFO root fetch - main [MainThread]: End processing [p0-script]: success
 [2023-06-03 06:20:16] INFO root fetch - main [MainThread]: Store serial: [18356913]
+[2023-06-03 06:25:20] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18356913]
+[2023-06-03 06:25:25] INFO root fetch - main [MainThread]: Found 19 changed packages
+[2023-06-03 06:25:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: p0-script
+[2023-06-03 06:25:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: netora-python
+[2023-06-03 06:25:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: llm-explorer
+[2023-06-03 06:25:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: OMADS
+[2023-06-03 06:25:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: archs4py
+[2023-06-03 06:25:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: quickstart-vdk
+[2023-06-03 06:25:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: roboduck
+[2023-06-03 06:25:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: odoo-addon-partner-interest-group
+[2023-06-03 06:25:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: odoo-addon-partner-email-duplicate-warn
+[2023-06-03 06:25:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: thiruchatgpt
+[2023-06-03 06:25:25] WARNING root fetch - processPackages [netora-python]: Skipping, unable to determine old version
+[2023-06-03 06:25:25] INFO root fetch - processPackages [netora-python]: Start processing: odoo-addon-base-location-geonames-import
+[2023-06-03 06:25:25] INFO root fetch - main [MainThread]: End processing [netora-python] error
+[2023-06-03 06:25:25] INFO root fetch - processPackages [archs4py]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-06-03 06:25:25] INFO root fetch - processPackages [OMADS]: New version: [2.1.0] Old Version: [2.0.0]
+[2023-06-03 06:25:25] INFO root fetch - processPackages [odoo-addon-partner-interest-group]: New version: [16.0.1.0.0.5] Old Version: [16.0.1.0.0.3]
+[2023-06-03 06:25:25] INFO root fetch - processPackages [roboduck]: New version: [0.4.1] Old Version: [0.4.0]
+[2023-06-03 06:25:25] INFO root fetch - processPackages [odoo-addon-partner-email-duplicate-warn]: New version: [16.0.1.0.0.4] Old Version: [16.0.1.0.0.2]
+[2023-06-03 06:25:25] INFO root fetch - processPackages [quickstart-vdk]: New version: [0.2.888299285.dev11086] Old Version: [0.2.887241432.dev11065]
+[2023-06-03 06:25:25] INFO root fetch - processPackages [llm-explorer]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-06-03 06:25:25] INFO root fetch - processPackages [p0-script]: New version: [1.1.0] Old Version: [1.0.2]
+[2023-06-03 06:25:25] INFO root fetch - processPackages [thiruchatgpt]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-06-03 06:25:25] INFO root fetch - processPackages [odoo-addon-base-location-geonames-import]: New version: [16.0.1.0.0.9] Old Version: [16.0.1.0.0.7]
+[2023-06-03 06:25:25] INFO root fetch - processPackages [archs4py]: Downloading https://files.pythonhosted.org/packages/70/b5/49d43c3adf68d704eeb3074c467f50780dac5ed6bbaa3596beae4b75c145/archs4py-0.1.8.tar.gz
+[2023-06-03 06:25:25] INFO root fetch - processPackages [llm-explorer]: Downloading https://files.pythonhosted.org/packages/aa/4a/04a97fe18c08d58be713d37ae1f726dff60cfcff257b8efec85a7c840cef/llm_explorer-0.0.3.tar.gz
+[2023-06-03 06:25:25] INFO root fetch - processPackages [roboduck]: Downloading https://files.pythonhosted.org/packages/5c/2d/fcf88464fe31f5623f1e9697507d5561191dd3e5ec60116003deb6fe2708/roboduck-0.4.1.tar.gz
+[2023-06-03 06:25:25] INFO root fetch - processPackages [quickstart-vdk]: Downloading https://files.pythonhosted.org/packages/89/93/6f3acbd58610bc325aa52e0590f80e970e9978d9c1776550ee559cf425bc/quickstart-vdk-0.2.888299285.dev11086.tar.gz
+[2023-06-03 06:25:25] INFO root fetch - processPackages [OMADS]: Downloading https://files.pythonhosted.org/packages/da/00/f983cf8b1b4b5420539661ab2731504faa428ea0a9d5a99594f05dfba29f/OMADS-2.1.0.tar.gz
+[2023-06-03 06:25:25] INFO root fetch - processPackages [odoo-addon-partner-email-duplicate-warn]: Downloading https://files.pythonhosted.org/packages/f8/6e/0a684b7973849bf6c4c4dcfd64e7ef905440a62dd9feec71dbd508cd1211/odoo_addon_partner_email_duplicate_warn-16.0.1.0.0.2-py3-none-any.whl
+[2023-06-03 06:25:25] INFO root fetch - processPackages [odoo-addon-partner-interest-group]: Downloading https://files.pythonhosted.org/packages/ae/a1/86d0369b6916f92072bbb1de9b25318af5a7ad699671a181cfbe468e5f53/odoo_addon_partner_interest_group-16.0.1.0.0.3-py3-none-any.whl
+[2023-06-03 06:25:25] INFO root fetch - processPackages [p0-script]: Downloading https://files.pythonhosted.org/packages/5b/6e/3fed8125b790614895357033ab0d98a6365ed9c1756eda7b621639c46c8f/p0-script-1.0.2.zip
+[2023-06-03 06:25:25] INFO root fetch - processPackages [llm-explorer]: executing diffoscope
+[2023-06-03 06:25:25] INFO root fetch - processPackages [llm-explorer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/llm_explorer-0.0.2.tar.gz tmp/llm_explorer-0.0.3.tar.gz --markdown 20230603/l/llm-explorer/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-06-03 06:25:25] INFO root fetch - processPackages [roboduck]: executing diffoscope
+[2023-06-03 06:25:25] INFO root fetch - processPackages [roboduck]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/roboduck-0.4.0.tar.gz tmp/roboduck-0.4.1.tar.gz --markdown 20230603/r/roboduck/0.4.0-0.4.1/diff.md --exclude *.pyd
+[2023-06-03 06:25:25] INFO root fetch - processPackages [OMADS]: executing diffoscope
+[2023-06-03 06:25:25] INFO root fetch - processPackages [OMADS]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/OMADS-2.0.0.tar.gz tmp/OMADS-2.1.0.tar.gz --markdown 20230603/O/OMADS/2.0.0-2.1.0/diff.md --exclude *.pyd
+[2023-06-03 06:25:25] INFO root fetch - processPackages [odoo-addon-base-location-geonames-import]: Downloading https://files.pythonhosted.org/packages/1f/bf/6ed688da63051d6aaf867e8a8e48caeecc5c1d0aa03d4b0989e18725753b/odoo_addon_base_location_geonames_import-16.0.1.0.0.7-py3-none-any.whl
+[2023-06-03 06:25:25] INFO root fetch - processPackages [archs4py]: Downloading https://files.pythonhosted.org/packages/3f/cc/fc2a51c21c1f64aa8d3cc34c667e86fac140125b65e3f8c1d97c107159b6/archs4py-0.1.9.tar.gz
+[2023-06-03 06:25:25] INFO root fetch - processPackages [thiruchatgpt]: Downloading https://files.pythonhosted.org/packages/75/be/a32f7febac408bb19ee14b6086f4f2aa3461e7c0c16cb3f9882585bf11a7/thiruchatgpt-0.0.1-py3-none-any.whl
+[2023-06-03 06:25:25] INFO root fetch - processPackages [quickstart-vdk]: executing diffoscope
+[2023-06-03 06:25:25] INFO root fetch - processPackages [quickstart-vdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/quickstart-vdk-0.2.887241432.dev11065.tar.gz tmp/quickstart-vdk-0.2.888299285.dev11086.tar.gz --markdown 20230603/q/quickstart-vdk/0.2.887241432.dev11065-0.2.888299285.dev11086/diff.md --exclude *.pyd
+[2023-06-03 06:25:25] INFO root fetch - processPackages [archs4py]: executing diffoscope
+[2023-06-03 06:25:25] INFO root fetch - processPackages [archs4py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/archs4py-0.1.8.tar.gz tmp/archs4py-0.1.9.tar.gz --markdown 20230603/a/archs4py/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-06-03 06:25:25] INFO root fetch - processPackages [odoo-addon-partner-interest-group]: Downloading https://files.pythonhosted.org/packages/14/ed/bfa0dc6a51a1610178871fed520e813e3ca7813b6d68b3d5414038ba9e91/odoo_addon_partner_interest_group-16.0.1.0.0.5-py3-none-any.whl
+[2023-06-03 06:25:25] INFO root fetch - processPackages [odoo-addon-partner-email-duplicate-warn]: Downloading https://files.pythonhosted.org/packages/67/4f/85190349357cbad4a96a6780ae1e3d159c36d7ac639c0a3513a41ecf9973/odoo_addon_partner_email_duplicate_warn-16.0.1.0.0.4-py3-none-any.whl
+[2023-06-03 06:25:25] INFO root fetch - processPackages [odoo-addon-partner-interest-group]: executing diffoscope
+[2023-06-03 06:25:25] INFO root fetch - processPackages [odoo-addon-partner-interest-group]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_partner_interest_group-16.0.1.0.0.3-py3-none-any.whl.zip tmp/odoo_addon_partner_interest_group-16.0.1.0.0.5-py3-none-any.whl.zip --markdown 20230603/o/odoo-addon-partner-interest-group/16.0.1.0.0.3-16.0.1.0.0.5/diff.md --exclude *.pyd
+[2023-06-03 06:25:25] INFO root fetch - processPackages [odoo-addon-partner-email-duplicate-warn]: executing diffoscope
+[2023-06-03 06:25:25] INFO root fetch - processPackages [odoo-addon-partner-email-duplicate-warn]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_partner_email_duplicate_warn-16.0.1.0.0.2-py3-none-any.whl.zip tmp/odoo_addon_partner_email_duplicate_warn-16.0.1.0.0.4-py3-none-any.whl.zip --markdown 20230603/o/odoo-addon-partner-email-duplicate-warn/16.0.1.0.0.2-16.0.1.0.0.4/diff.md --exclude *.pyd
+[2023-06-03 06:25:26] INFO root fetch - processPackages [thiruchatgpt]: Downloading https://files.pythonhosted.org/packages/2d/af/b9a3300a0a75a0f5059dd6f06ae22be20d8ec36ea334486d4143a256f211/thiruchatgpt-0.0.2-py3-none-any.whl
+[2023-06-03 06:25:26] INFO root fetch - processPackages [thiruchatgpt]: executing diffoscope
+[2023-06-03 06:25:26] INFO root fetch - processPackages [thiruchatgpt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/thiruchatgpt-0.0.1-py3-none-any.whl.zip tmp/thiruchatgpt-0.0.2-py3-none-any.whl.zip --markdown 20230603/t/thiruchatgpt/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-06-03 06:25:26] INFO root fetch - processPackages [p0-script]: executing diffoscope
+[2023-06-03 06:25:26] INFO root fetch - processPackages [p0-script]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/p0-script-1.0.2.zip tmp/p0_script-1.1.0-py3-none-any.whl.zip --markdown 20230603/p/p0-script/1.0.2-1.1.0/diff.md --exclude *.pyd
+[2023-06-03 06:25:26] INFO root fetch - processPackages [odoo-addon-base-location-geonames-import]: Downloading https://files.pythonhosted.org/packages/3c/d4/11b56ff40b4bf28d340c75112934c4ed8d9192040f227a83234c533f0f51/odoo_addon_base_location_geonames_import-16.0.1.0.0.9-py3-none-any.whl
+[2023-06-03 06:25:26] INFO root fetch - processPackages [odoo-addon-base-location-geonames-import]: executing diffoscope
+[2023-06-03 06:25:26] INFO root fetch - processPackages [odoo-addon-base-location-geonames-import]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_base_location_geonames_import-16.0.1.0.0.7-py3-none-any.whl.zip tmp/odoo_addon_base_location_geonames_import-16.0.1.0.0.9-py3-none-any.whl.zip --markdown 20230603/o/odoo-addon-base-location-geonames-import/16.0.1.0.0.7-16.0.1.0.0.9/diff.md --exclude *.pyd
+[2023-06-03 06:25:27] INFO root fetch - processPackages [quickstart-vdk]: Start processing: odoo-addon-partner-ref-unique
+[2023-06-03 06:25:27] INFO root fetch - main [MainThread]: End processing [quickstart-vdk]: success
+[2023-06-03 06:25:27] INFO root fetch - processPackages [odoo-addon-partner-ref-unique]: New version: [16.0.1.0.0.5] Old Version: [16.0.1.0.0.4]
+[2023-06-03 06:25:27] INFO root fetch - processPackages [archs4py]: Start processing: odoo-addon-partner-vat-unique
+[2023-06-03 06:25:27] INFO root fetch - main [MainThread]: End processing [archs4py]: success
+[2023-06-03 06:25:27] INFO root fetch - processPackages [llm-explorer]: Start processing: wnb
+[2023-06-03 06:25:27] INFO root fetch - main [MainThread]: End processing [llm-explorer]: success
+[2023-06-03 06:25:27] INFO root fetch - processPackages [odoo-addon-partner-vat-unique]: New version: [16.0.1.0.0.9] Old Version: [16.0.1.0.0.7]
+[2023-06-03 06:25:27] INFO root fetch - processPackages [OMADS]: Start processing: g-batch-prediction-pipeline
+[2023-06-03 06:25:27] INFO root fetch - main [MainThread]: End processing [OMADS]: success
+[2023-06-03 06:25:27] WARNING root fetch - processPackages [wnb]: Skipping, unable to determine old version
+[2023-06-03 06:25:27] INFO root fetch - processPackages [wnb]: Start processing: odoo-addon-partner-industry-secondary
+[2023-06-03 06:25:27] INFO root fetch - main [MainThread]: End processing [wnb] error
+[2023-06-03 06:25:27] INFO root fetch - processPackages [odoo-addon-partner-email-duplicate-warn]: Start processing: odoo-addon-base-location
+[2023-06-03 06:25:27] INFO root fetch - main [MainThread]: End processing [odoo-addon-partner-email-duplicate-warn]: success
+[2023-06-03 06:25:27] WARNING root fetch - processPackages [g-batch-prediction-pipeline]: Skipping, unable to determine old version
+[2023-06-03 06:25:27] INFO root fetch - processPackages [g-batch-prediction-pipeline]: Start processing: p0-script-2
+[2023-06-03 06:25:27] INFO root fetch - main [MainThread]: End processing [g-batch-prediction-pipeline] error
+[2023-06-03 06:25:27] INFO root fetch - processPackages [odoo-addon-partner-interest-group]: Start processing: netora-python
+[2023-06-03 06:25:27] INFO root fetch - main [MainThread]: End processing [odoo-addon-partner-interest-group]: success
+[2023-06-03 06:25:27] INFO root fetch - processPackages [odoo-addon-partner-ref-unique]: Downloading https://files.pythonhosted.org/packages/6e/ef/fd16b85b016e974e2892cd980cabc99a0cbfc591df0e3497a08ea384614e/odoo_addon_partner_ref_unique-16.0.1.0.0.5-py3-none-any.whl
+[2023-06-03 06:25:27] INFO root fetch - processPackages [odoo-addon-partner-vat-unique]: Downloading https://files.pythonhosted.org/packages/22/91/227b1443aa19bb87c4862381ff0858ded14730e46b8156af19148adb06f5/odoo_addon_partner_vat_unique-16.0.1.0.0.7-py3-none-any.whl
+[2023-06-03 06:25:27] INFO root fetch - processPackages [netora-python]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-06-03 06:25:27] INFO root fetch - processPackages [odoo-addon-partner-industry-secondary]: New version: [16.0.1.0.0.4] Old Version: [16.0.1.0.0.3]
+[2023-06-03 06:25:27] INFO root fetch - main [MainThread]: End processing [thiruchatgpt]: success
+[2023-06-03 06:25:27] INFO root fetch - processPackages [odoo-addon-base-location]: New version: [16.0.1.0.1.4] Old Version: [16.0.1.0.1.2]
+[2023-06-03 06:25:27] WARNING root fetch - processPackages [p0-script-2]: Skipping, unable to determine old version
+[2023-06-03 06:25:27] INFO root fetch - main [MainThread]: End processing [p0-script-2] error
+[2023-06-03 06:25:27] INFO root fetch - main [MainThread]: End processing [roboduck]: success
+[2023-06-03 06:25:27] INFO root fetch - processPackages [odoo-addon-partner-ref-unique]: executing diffoscope
+[2023-06-03 06:25:27] INFO root fetch - processPackages [odoo-addon-partner-ref-unique]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_partner_ref_unique-16.0.1.0.0.4-py3-none-any.whl.zip tmp/odoo_addon_partner_ref_unique-16.0.1.0.0.5-py3-none-any.whl.zip --markdown 20230603/o/odoo-addon-partner-ref-unique/16.0.1.0.0.4-16.0.1.0.0.5/diff.md --exclude *.pyd
+[2023-06-03 06:25:27] INFO root fetch - processPackages [netora-python]: Downloading https://files.pythonhosted.org/packages/ae/3e/b059d7faf0de5144a590ebbc3b72fcf836fd84110eb70168dca700279c32/netora-python-0.1.0.tar.gz
+[2023-06-03 06:25:27] INFO root fetch - processPackages [odoo-addon-partner-industry-secondary]: Downloading https://files.pythonhosted.org/packages/4d/c7/021b41603b4e58eee242e37b3a6d3b7d42ec868a6b0851befe496d672684/odoo_addon_partner_industry_secondary-16.0.1.0.0.3-py3-none-any.whl
+[2023-06-03 06:25:27] INFO root fetch - processPackages [odoo-addon-base-location]: Downloading https://files.pythonhosted.org/packages/a5/21/321a6594359ee499eb64a0b89ec690d8044ed69d3bd3fe0e6e1f33719ff7/odoo_addon_base_location-16.0.1.0.1.2-py3-none-any.whl
+[2023-06-03 06:25:27] INFO root fetch - processPackages [odoo-addon-partner-vat-unique]: Downloading https://files.pythonhosted.org/packages/f9/c8/1730dbab98c0dd1d8f8cfe943fc81e884f1db9a38c34dd8db5260103b372/odoo_addon_partner_vat_unique-16.0.1.0.0.9-py3-none-any.whl
+[2023-06-03 06:25:27] INFO root fetch - processPackages [netora-python]: Downloading https://files.pythonhosted.org/packages/3f/1a/df0ae0fe8b8c998cfff2aff0795f3b333b1051271f3013b0e12a28579280/netora-python-0.1.1.tar.gz
+[2023-06-03 06:25:27] INFO root fetch - processPackages [odoo-addon-partner-vat-unique]: executing diffoscope
+[2023-06-03 06:25:27] INFO root fetch - processPackages [odoo-addon-partner-vat-unique]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_partner_vat_unique-16.0.1.0.0.7-py3-none-any.whl.zip tmp/odoo_addon_partner_vat_unique-16.0.1.0.0.9-py3-none-any.whl.zip --markdown 20230603/o/odoo-addon-partner-vat-unique/16.0.1.0.0.7-16.0.1.0.0.9/diff.md --exclude *.pyd
+[2023-06-03 06:25:27] INFO root fetch - processPackages [odoo-addon-partner-industry-secondary]: Downloading https://files.pythonhosted.org/packages/90/dc/c360d13b3b8bd7fbfb33e3fbff4d0e6b90fd3110d7eb5a68b99389d4a391/odoo_addon_partner_industry_secondary-16.0.1.0.0.4-py3-none-any.whl
+[2023-06-03 06:25:28] INFO root fetch - processPackages [odoo-addon-base-location]: Downloading https://files.pythonhosted.org/packages/6f/be/82b0189239e61bba2cfb32d50e799cb7bf2da4bf95c077b56870d5203cae/odoo_addon_base_location-16.0.1.0.1.4-py3-none-any.whl
+[2023-06-03 06:25:28] INFO root fetch - processPackages [odoo-addon-partner-industry-secondary]: executing diffoscope
+[2023-06-03 06:25:28] INFO root fetch - processPackages [odoo-addon-partner-industry-secondary]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_partner_industry_secondary-16.0.1.0.0.3-py3-none-any.whl.zip tmp/odoo_addon_partner_industry_secondary-16.0.1.0.0.4-py3-none-any.whl.zip --markdown 20230603/o/odoo-addon-partner-industry-secondary/16.0.1.0.0.3-16.0.1.0.0.4/diff.md --exclude *.pyd
+[2023-06-03 06:25:28] INFO root fetch - processPackages [odoo-addon-base-location]: executing diffoscope
+[2023-06-03 06:25:28] INFO root fetch - processPackages [odoo-addon-base-location]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_base_location-16.0.1.0.1.2-py3-none-any.whl.zip tmp/odoo_addon_base_location-16.0.1.0.1.4-py3-none-any.whl.zip --markdown 20230603/o/odoo-addon-base-location/16.0.1.0.1.2-16.0.1.0.1.4/diff.md --exclude *.pyd
+[2023-06-03 06:25:28] INFO root fetch - processPackages [netora-python]: executing diffoscope
+[2023-06-03 06:25:28] INFO root fetch - processPackages [netora-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/netora-python-0.1.0.tar.gz tmp/netora-python-0.1.1.tar.gz --markdown 20230603/n/netora-python/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-06-03 06:25:28] INFO root fetch - main [MainThread]: End processing [odoo-addon-base-location-geonames-import]: success
+[2023-06-03 06:25:29] INFO root fetch - main [MainThread]: End processing [odoo-addon-partner-ref-unique]: success
+[2023-06-03 06:25:29] INFO root fetch - main [MainThread]: End processing [odoo-addon-partner-vat-unique]: success
+[2023-06-03 06:25:29] INFO root fetch - main [MainThread]: End processing [netora-python]: success
+[2023-06-03 06:25:29] INFO root fetch - main [MainThread]: End processing [odoo-addon-partner-industry-secondary]: success
+[2023-06-03 06:25:29] INFO root fetch - main [MainThread]: End processing [odoo-addon-base-location]: success
+[2023-06-03 06:25:36] INFO root fetch - main [MainThread]: End processing [p0-script]: success
+[2023-06-03 06:25:36] INFO root fetch - main [MainThread]: Store serial: [18356971]
