@@ -5575,3 +5575,21 @@
 [2023-06-03 07:42:45] INFO root fetch - main [MainThread]: End processing [dwdwfsapi]: success
 [2023-06-03 07:43:39] INFO root fetch - main [MainThread]: End processing [CDynamics]: success
 [2023-06-03 07:43:39] INFO root fetch - main [MainThread]: Store serial: [18357259]
+[2023-06-03 07:48:43] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18357259]
+[2023-06-03 07:48:47] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-06-03 07:48:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pulumi-gitlab
+[2023-06-03 07:48:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: urllib3-ext-hface
+[2023-06-03 07:48:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: automate-analysis
+[2023-06-03 07:48:47] INFO root fetch - processPackages [urllib3-ext-hface]: New version: [0.3.0] Old Version: [0.2.9]
+[2023-06-03 07:48:47] INFO root fetch - processPackages [pulumi-gitlab]: New version: [6.1.0a1685769920] Old Version: [6.0.0a1685643149]
+[2023-06-03 07:48:47] WARNING root fetch - processPackages [automate-analysis]: Skipping, unable to determine old version
+[2023-06-03 07:48:47] INFO root fetch - main [MainThread]: End processing [automate-analysis] error
+[2023-06-03 07:48:48] INFO root fetch - processPackages [urllib3-ext-hface]: Downloading https://files.pythonhosted.org/packages/85/26/2ab76ae179e780d2c2620051a935106df7d19661323aabcb1f24a79ea34a/urllib3_ext_hface-0.3.0.tar.gz
+[2023-06-03 07:48:48] INFO root fetch - processPackages [pulumi-gitlab]: Downloading https://files.pythonhosted.org/packages/65/c3/c0adbcb3175cf7eb1a2e93b46fd0f6f4778f48d265e2ee1bca31fd9ebe39/pulumi_gitlab-6.1.0a1685769920.tar.gz
+[2023-06-03 07:48:48] INFO root fetch - processPackages [urllib3-ext-hface]: executing diffoscope
+[2023-06-03 07:48:48] INFO root fetch - processPackages [urllib3-ext-hface]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/urllib3_ext_hface-0.2.9.tar.gz tmp/urllib3_ext_hface-0.3.0.tar.gz --markdown 20230603/u/urllib3-ext-hface/0.2.9-0.3.0/diff.md --exclude *.pyd
+[2023-06-03 07:48:48] INFO root fetch - processPackages [pulumi-gitlab]: executing diffoscope
+[2023-06-03 07:48:48] INFO root fetch - processPackages [pulumi-gitlab]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_gitlab-6.0.0a1685643149.tar.gz tmp/pulumi_gitlab-6.1.0a1685769920.tar.gz --markdown 20230603/p/pulumi-gitlab/6.0.0a1685643149-6.1.0a1685769920/diff.md --exclude *.pyd
+[2023-06-03 07:48:49] INFO root fetch - main [MainThread]: End processing [urllib3-ext-hface]: success
+[2023-06-03 07:48:50] INFO root fetch - main [MainThread]: End processing [pulumi-gitlab]: success
+[2023-06-03 07:48:50] INFO root fetch - main [MainThread]: Store serial: [18357271]
