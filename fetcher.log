@@ -7608,3 +7608,20 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-06-03 12:28:52] INFO root fetch - main [MainThread]: End processing [douyin-tiktok-scraper]: success
 [2023-06-03 12:28:53] INFO root fetch - main [MainThread]: End processing [clevertable]: success
 [2023-06-03 12:28:53] INFO root fetch - main [MainThread]: Store serial: [18358491]
+[2023-06-03 12:33:57] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18358491]
+[2023-06-03 12:34:02] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2023-06-03 12:34:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: douyin-tiktok-scraper
+[2023-06-03 12:34:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: canaille
+[2023-06-03 12:34:02] INFO root fetch - processPackages [canaille]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-06-03 12:34:02] INFO root fetch - processPackages [douyin-tiktok-scraper]: New version: [1.2.5] Old Version: [1.2.4]
+[2023-06-03 12:34:02] INFO root fetch - processPackages [douyin-tiktok-scraper]: Downloading https://files.pythonhosted.org/packages/97/56/3c75990999bc93dfecefb19e044697a09405fdd3259039d9aed7c06d97f6/douyin_tiktok_scraper-1.2.4.tar.gz
+[2023-06-03 12:34:02] INFO root fetch - processPackages [canaille]: Downloading https://files.pythonhosted.org/packages/d6/eb/991a3a33db9ca5921988151369084477a94b823d1f0b8df10104a1cf97eb/Canaille-0.0.8.tar.gz
+[2023-06-03 12:34:03] INFO root fetch - processPackages [douyin-tiktok-scraper]: Downloading https://files.pythonhosted.org/packages/f6/c1/e1e8531dd8ea8caa4b90df0e41b0fd18b5a4f716b28d2df29eccc5808ef6/douyin_tiktok_scraper-1.2.5.tar.gz
+[2023-06-03 12:34:03] INFO root fetch - processPackages [canaille]: Downloading https://files.pythonhosted.org/packages/ea/de/e5cb98bd36f4d3ede89c7fd372eb1414185d621efaba9f50b438082962d5/Canaille-0.0.9.tar.gz
+[2023-06-03 12:34:03] INFO root fetch - processPackages [douyin-tiktok-scraper]: executing diffoscope
+[2023-06-03 12:34:03] INFO root fetch - processPackages [douyin-tiktok-scraper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/douyin_tiktok_scraper-1.2.4.tar.gz tmp/douyin_tiktok_scraper-1.2.5.tar.gz --markdown 20230603/d/douyin-tiktok-scraper/1.2.4-1.2.5/diff.md --exclude *.pyd
+[2023-06-03 12:34:03] INFO root fetch - processPackages [canaille]: executing diffoscope
+[2023-06-03 12:34:03] INFO root fetch - processPackages [canaille]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Canaille-0.0.8.tar.gz tmp/Canaille-0.0.9.tar.gz --markdown 20230603/c/canaille/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-06-03 12:34:04] INFO root fetch - main [MainThread]: End processing [douyin-tiktok-scraper]: success
+[2023-06-03 12:34:12] INFO root fetch - main [MainThread]: End processing [canaille]: success
+[2023-06-03 12:34:12] INFO root fetch - main [MainThread]: Store serial: [18358500]
