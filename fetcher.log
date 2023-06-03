@@ -8711,3 +8711,33 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-06-03 14:46:12] INFO root fetch - main [MainThread]: End processing [manticore]: success
 [2023-06-03 14:46:57] INFO root fetch - main [MainThread]: End processing [homeassistant-stubs]: success
 [2023-06-03 14:46:57] INFO root fetch - main [MainThread]: Store serial: [18359341]
+[2023-06-03 14:52:01] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18359341]
+[2023-06-03 14:52:06] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-06-03 14:52:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: vertopal
+[2023-06-03 14:52:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: nonebot-plugin-steam-game-status
+[2023-06-03 14:52:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: asynkit
+[2023-06-03 14:52:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: PyAudioWPatch
+[2023-06-03 14:52:06] INFO root fetch - processPackages [vertopal]: New version: [1.0.3] Old Version: [1.0.2]
+[2023-06-03 14:52:06] INFO root fetch - processPackages [nonebot-plugin-steam-game-status]: New version: [0.1.0] Old Version: [0.0.9]
+[2023-06-03 14:52:06] INFO root fetch - processPackages [PyAudioWPatch]: New version: [0.2.12.6] Old Version: [0.2.12.5]
+[2023-06-03 14:52:06] INFO root fetch - processPackages [asynkit]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-06-03 14:52:06] INFO root fetch - processPackages [vertopal]: Downloading https://files.pythonhosted.org/packages/5b/b1/dd8c61aefd3309b0f834ef48d439f51ccd869ba4aa86144543b270115481/vertopal-1.0.2.tar.gz
+[2023-06-03 14:52:06] INFO root fetch - processPackages [nonebot-plugin-steam-game-status]: Downloading https://files.pythonhosted.org/packages/75/fa/42777336a7c2bce14b88d2cbcf8fc749a9ba8fc5a18efa537f85327d7e72/nonebot_plugin_steam_game_status-0.0.9.tar.gz
+[2023-06-03 14:52:06] INFO root fetch - processPackages [PyAudioWPatch]: Downloading https://files.pythonhosted.org/packages/bb/6c/e428ed1b6e8e6c2623a261678d22bf236530631280df38fa4bd5fdf8d833/PyAudioWPatch-0.2.12.5-cp39-cp39-win_amd64.whl
+[2023-06-03 14:52:06] INFO root fetch - processPackages [asynkit]: Downloading https://files.pythonhosted.org/packages/cb/a0/668d45eb0081521cf22d96ff0b8ebd5e129c3d0741ca1c61482819e72f5d/asynkit-0.9.0.tar.gz
+[2023-06-03 14:52:06] INFO root fetch - processPackages [PyAudioWPatch]: Downloading https://files.pythonhosted.org/packages/27/bd/370ae7a9ee6100afed45e50e8f7ecc204617f47b379b95216a40eee30282/PyAudioWPatch-0.2.12.6-cp39-cp39-win_amd64.whl
+[2023-06-03 14:52:06] INFO root fetch - processPackages [asynkit]: executing diffoscope
+[2023-06-03 14:52:06] INFO root fetch - processPackages [asynkit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/asynkit-0.8.0.tar.gz tmp/asynkit-0.9.0.tar.gz --markdown 20230603/a/asynkit/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2023-06-03 14:52:06] INFO root fetch - processPackages [nonebot-plugin-steam-game-status]: Downloading https://files.pythonhosted.org/packages/75/4b/272a7502ee5f3dbda7fb39ca1e716e592353155b9e025d9fe428fb58a8bb/nonebot-plugin-steam-game-status-0.1.0.tar.gz
+[2023-06-03 14:52:06] INFO root fetch - processPackages [vertopal]: Downloading https://files.pythonhosted.org/packages/4f/01/c0df00884af48569295a27b2e54dbdc4d3cee570f013dd8aae3b3f3ab1b7/vertopal-1.0.3.tar.gz
+[2023-06-03 14:52:07] INFO root fetch - processPackages [nonebot-plugin-steam-game-status]: executing diffoscope
+[2023-06-03 14:52:07] INFO root fetch - processPackages [vertopal]: executing diffoscope
+[2023-06-03 14:52:07] INFO root fetch - processPackages [nonebot-plugin-steam-game-status]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot_plugin_steam_game_status-0.0.9.tar.gz tmp/nonebot-plugin-steam-game-status-0.1.0.tar.gz --markdown 20230603/n/nonebot-plugin-steam-game-status/0.0.9-0.1.0/diff.md --exclude *.pyd
+[2023-06-03 14:52:07] INFO root fetch - processPackages [vertopal]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vertopal-1.0.2.tar.gz tmp/vertopal-1.0.3.tar.gz --markdown 20230603/v/vertopal/1.0.2-1.0.3/diff.md --exclude *.pyd
+[2023-06-03 14:52:07] INFO root fetch - processPackages [PyAudioWPatch]: executing diffoscope
+[2023-06-03 14:52:07] INFO root fetch - processPackages [PyAudioWPatch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyAudioWPatch-0.2.12.5-cp39-cp39-win_amd64.whl.zip tmp/PyAudioWPatch-0.2.12.6-cp39-cp39-win_amd64.whl.zip --markdown 20230603/P/PyAudioWPatch/0.2.12.5-0.2.12.6/diff.md --exclude *.pyd
+[2023-06-03 14:52:08] INFO root fetch - main [MainThread]: End processing [vertopal]: success
+[2023-06-03 14:52:08] INFO root fetch - main [MainThread]: End processing [asynkit]: success
+[2023-06-03 14:52:08] INFO root fetch - main [MainThread]: End processing [PyAudioWPatch]: success
+[2023-06-03 14:52:08] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-steam-game-status]: success
+[2023-06-03 14:52:08] INFO root fetch - main [MainThread]: Store serial: [18359362]
