@@ -1946,3 +1946,45 @@
 [2023-06-03 03:10:24] INFO root fetch - main [MainThread]: End processing [aemcmc-nightly]: success
 [2023-06-03 03:10:24] INFO root fetch - main [MainThread]: End processing [fennel-ai]: success
 [2023-06-03 03:10:24] INFO root fetch - main [MainThread]: Store serial: [18355017]
+[2023-06-03 03:15:28] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18355017]
+[2023-06-03 03:15:33] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-06-03 03:15:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: bettertest
+[2023-06-03 03:15:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sparksnake
+[2023-06-03 03:15:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: centerline-width
+[2023-06-03 03:15:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: webint
+[2023-06-03 03:15:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: uk-postcodes-parsing
+[2023-06-03 03:15:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: starvote
+[2023-06-03 03:15:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: d20-orm
+[2023-06-03 03:15:33] INFO root fetch - processPackages [uk-postcodes-parsing]: New version: [0.1.0] Old Version: [0.0.4]
+[2023-06-03 03:15:33] INFO root fetch - processPackages [sparksnake]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-06-03 03:15:33] INFO root fetch - processPackages [d20-orm]: New version: [2.0.2a9] Old Version: [2.0.2a8]
+[2023-06-03 03:15:33] INFO root fetch - processPackages [starvote]: New version: [2.0.3] Old Version: [2.0.2]
+[2023-06-03 03:15:33] INFO root fetch - processPackages [bettertest]: New version: [0.1.8] Old Version: [0.1.7]
+[2023-06-03 03:15:33] INFO root fetch - processPackages [centerline-width]: New version: [0.2.4] Old Version: [0.2.3]
+[2023-06-03 03:15:33] INFO root fetch - processPackages [webint]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-06-03 03:15:33] INFO root fetch - processPackages [webint]: executing diffoscope
+[2023-06-03 03:15:33] INFO root fetch - processPackages [webint]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/webint-0.1.8.tar.gz tmp/webint-0.1.9.tar.gz --markdown 20230603/w/webint/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-06-03 03:15:33] INFO root fetch - processPackages [d20-orm]: executing diffoscope
+[2023-06-03 03:15:33] INFO root fetch - processPackages [d20-orm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/d20-orm-2.0.2a8.tar.gz tmp/d20-orm-2.0.2a9.tar.gz --markdown 20230603/d/d20-orm/2.0.2a8-2.0.2a9/diff.md --exclude *.pyd
+[2023-06-03 03:15:33] INFO root fetch - processPackages [starvote]: Downloading https://files.pythonhosted.org/packages/07/5f/234a0b316869e06275daeae777141fdff5aecb7cc01e397f23605a7494be/starvote-2.0.3.tar.gz
+[2023-06-03 03:15:34] INFO root fetch - processPackages [bettertest]: Downloading https://files.pythonhosted.org/packages/6b/15/ddf55343a5536cd3ca386bef0d47763dca49be678349e15aceb2ca93a81b/bettertest-0.1.8.tar.gz
+[2023-06-03 03:15:34] INFO root fetch - processPackages [uk-postcodes-parsing]: Downloading https://files.pythonhosted.org/packages/3b/cc/ec05c6d3b8cdf0b60013de3701ece94a2c94a1e8916eb7009e40256305c6/uk_postcodes_parsing-0.1.0.tar.gz
+[2023-06-03 03:15:34] INFO root fetch - processPackages [sparksnake]: executing diffoscope
+[2023-06-03 03:15:34] INFO root fetch - processPackages [sparksnake]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sparksnake-0.1.8.tar.gz tmp/sparksnake-0.1.9.tar.gz --markdown 20230603/s/sparksnake/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-06-03 03:15:34] INFO root fetch - processPackages [centerline-width]: Downloading https://files.pythonhosted.org/packages/5c/dd/8ea009822623a8b5a7a614b6e32acf48914b3916810be543722c370e7b60/centerline-width-0.2.4.tar.gz
+[2023-06-03 03:15:34] INFO root fetch - processPackages [uk-postcodes-parsing]: executing diffoscope
+[2023-06-03 03:15:34] INFO root fetch - processPackages [uk-postcodes-parsing]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/uk_postcodes_parsing-0.0.4.tar.gz tmp/uk_postcodes_parsing-0.1.0.tar.gz --markdown 20230603/u/uk-postcodes-parsing/0.0.4-0.1.0/diff.md --exclude *.pyd
+[2023-06-03 03:15:34] INFO root fetch - processPackages [bettertest]: executing diffoscope
+[2023-06-03 03:15:34] INFO root fetch - processPackages [bettertest]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bettertest-0.1.7.tar.gz tmp/bettertest-0.1.8.tar.gz --markdown 20230603/b/bettertest/0.1.7-0.1.8/diff.md --exclude *.pyd
+[2023-06-03 03:15:34] INFO root fetch - processPackages [centerline-width]: executing diffoscope
+[2023-06-03 03:15:34] INFO root fetch - processPackages [centerline-width]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/centerline-width-0.2.3.tar.gz tmp/centerline-width-0.2.4.tar.gz --markdown 20230603/c/centerline-width/0.2.3-0.2.4/diff.md --exclude *.pyd
+[2023-06-03 03:15:34] INFO root fetch - processPackages [starvote]: executing diffoscope
+[2023-06-03 03:15:34] INFO root fetch - processPackages [starvote]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/starvote-2.0.2.tar.gz tmp/starvote-2.0.3.tar.gz --markdown 20230603/s/starvote/2.0.2-2.0.3/diff.md --exclude *.pyd
+[2023-06-03 03:15:35] INFO root fetch - main [MainThread]: End processing [sparksnake]: success
+[2023-06-03 03:15:35] INFO root fetch - main [MainThread]: End processing [uk-postcodes-parsing]: success
+[2023-06-03 03:15:35] INFO root fetch - main [MainThread]: End processing [bettertest]: success
+[2023-06-03 03:15:35] INFO root fetch - main [MainThread]: End processing [d20-orm]: success
+[2023-06-03 03:15:35] INFO root fetch - main [MainThread]: End processing [centerline-width]: success
+[2023-06-03 03:15:36] INFO root fetch - main [MainThread]: End processing [starvote]: success
+[2023-06-03 03:15:40] INFO root fetch - main [MainThread]: End processing [webint]: success
+[2023-06-03 03:15:40] INFO root fetch - main [MainThread]: Store serial: [18355039]
