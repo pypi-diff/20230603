@@ -9292,3 +9292,85 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-06-03 16:06:03] INFO root fetch - main [MainThread]: End processing [sftp-uploader]: success
 [2023-06-03 16:06:03] INFO root fetch - main [MainThread]: End processing [ytsaurus-spyt]: success
 [2023-06-03 16:06:03] INFO root fetch - main [MainThread]: Store serial: [18359697]
+[2023-06-03 16:11:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18359697]
+[2023-06-03 16:11:12] INFO root fetch - main [MainThread]: Found 14 changed packages
+[2023-06-03 16:11:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sarus
+[2023-06-03 16:11:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sftp-uploader
+[2023-06-03 16:11:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: uniccin
+[2023-06-03 16:11:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: telegramweb
+[2023-06-03 16:11:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: rns
+[2023-06-03 16:11:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: rnspure
+[2023-06-03 16:11:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: fittrackee
+[2023-06-03 16:11:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: nhl-api-py
+[2023-06-03 16:11:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: partitionpy
+[2023-06-03 16:11:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: LumosWeb
+[2023-06-03 16:11:12] INFO root fetch - processPackages [sftp-uploader]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-06-03 16:11:12] INFO root fetch - processPackages [telegramweb]: New version: [4.5] Old Version: [4.4]
+[2023-06-03 16:11:12] INFO root fetch - processPackages [sarus]: New version: [0.7.0rc0] Old Version: [0.7.0]
+[2023-06-03 16:11:12] INFO root fetch - processPackages [nhl-api-py]: New version: [0.1.4] Old Version: [0.1.3]
+[2023-06-03 16:11:12] INFO root fetch - processPackages [uniccin]: New version: [1.9.5] Old Version: [1.9.4]
+[2023-06-03 16:11:12] WARNING root fetch - processPackages [partitionpy]: Skipping, unable to determine old version
+[2023-06-03 16:11:12] INFO root fetch - processPackages [partitionpy]: Start processing: PySupercell
+[2023-06-03 16:11:12] INFO root fetch - main [MainThread]: End processing [partitionpy] error
+[2023-06-03 16:11:12] INFO root fetch - processPackages [rnspure]: New version: [0.5.4] Old Version: [0.5.3]
+[2023-06-03 16:11:12] INFO root fetch - processPackages [LumosWeb]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-06-03 16:11:12] INFO root fetch - processPackages [fittrackee]: New version: [0.7.9] Old Version: [0.7.8]
+[2023-06-03 16:11:12] INFO root fetch - processPackages [rns]: New version: [0.5.4] Old Version: [0.5.3]
+[2023-06-03 16:11:12] INFO root fetch - processPackages [PySupercell]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-06-03 16:11:12] INFO root fetch - processPackages [sftp-uploader]: executing diffoscope
+[2023-06-03 16:11:12] INFO root fetch - processPackages [sftp-uploader]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sftp_uploader-1.0.8.tar.gz tmp/sftp_uploader-1.0.9.tar.gz --markdown 20230603/s/sftp-uploader/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-06-03 16:11:12] INFO root fetch - processPackages [sarus]: Downloading https://files.pythonhosted.org/packages/8b/30/8a97b51b0b3fd5a3b816825fb5e18585e00d0c0c91dca5b6a7cf1a84ac94/sarus-0.7.0.tar.gz
+[2023-06-03 16:11:12] INFO root fetch - processPackages [telegramweb]: Downloading https://files.pythonhosted.org/packages/99/ae/831e2079a87d9035148baa7a678c9bf13fab9099e5fc93e72ecb9fb0ef68/telegramweb-4.4.tar.gz
+[2023-06-03 16:11:13] INFO root fetch - processPackages [nhl-api-py]: Downloading https://files.pythonhosted.org/packages/3b/26/e3e9766ced0798c4bdf47f2a69fa71ba8cda459406a51618900796a5b998/nhl_api_py-0.1.4.tar.gz
+[2023-06-03 16:11:13] INFO root fetch - processPackages [uniccin]: Downloading https://files.pythonhosted.org/packages/a0/7f/2f044e05a1b89d96236053145051d008f76064f16e59cc30fd1371c2dbda/uniccin-1.9.4.tar.gz
+[2023-06-03 16:11:13] INFO root fetch - processPackages [sarus]: executing diffoscope
+[2023-06-03 16:11:13] INFO root fetch - processPackages [sarus]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sarus-0.7.0.tar.gz tmp/sarus-0.7.0rc0.tar.gz --markdown 20230603/s/sarus/0.7.0-0.7.0rc0/diff.md --exclude *.pyd
+[2023-06-03 16:11:13] INFO root fetch - processPackages [nhl-api-py]: executing diffoscope
+[2023-06-03 16:11:13] INFO root fetch - processPackages [nhl-api-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nhl_api_py-0.1.3.tar.gz tmp/nhl_api_py-0.1.4.tar.gz --markdown 20230603/n/nhl-api-py/0.1.3-0.1.4/diff.md --exclude *.pyd
+[2023-06-03 16:11:13] INFO root fetch - processPackages [PySupercell]: Downloading https://files.pythonhosted.org/packages/86/e6/3ab5dfe13fe57e5432b386484c702f62405a8aaf787107ec1578caf61e3e/PySupercell-0.0.3.tar.gz
+[2023-06-03 16:11:13] INFO root fetch - processPackages [PySupercell]: executing diffoscope
+[2023-06-03 16:11:13] INFO root fetch - processPackages [PySupercell]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PySupercell-0.0.2.tar.gz tmp/PySupercell-0.0.3.tar.gz --markdown 20230603/P/PySupercell/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-06-03 16:11:13] INFO root fetch - processPackages [rnspure]: Downloading https://files.pythonhosted.org/packages/31/b5/3f7425839938be4f010583704d0f01644a6a2b16601d86be8468fd02ddd8/rnspure-0.5.4.tar.gz
+[2023-06-03 16:11:13] INFO root fetch - processPackages [rns]: Downloading https://files.pythonhosted.org/packages/f2/d0/f2800edfccfa95ad38e69a66427fe13dffc9cd5e0ebb721e085645890cd7/rns-0.5.4.tar.gz
+[2023-06-03 16:11:13] INFO root fetch - processPackages [LumosWeb]: Downloading https://files.pythonhosted.org/packages/c4/87/8a202509714cb1169b97774988b38a677fc899178eb233e2dbe589a31fd3/LumosWeb-1.0.2.tar.gz
+[2023-06-03 16:11:13] INFO root fetch - processPackages [rnspure]: executing diffoscope
+[2023-06-03 16:11:13] INFO root fetch - processPackages [rnspure]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rnspure-0.5.3.tar.gz tmp/rnspure-0.5.4.tar.gz --markdown 20230603/r/rnspure/0.5.3-0.5.4/diff.md --exclude *.pyd
+[2023-06-03 16:11:13] INFO root fetch - processPackages [rns]: executing diffoscope
+[2023-06-03 16:11:13] INFO root fetch - processPackages [rns]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rns-0.5.3.tar.gz tmp/rns-0.5.4.tar.gz --markdown 20230603/r/rns/0.5.3-0.5.4/diff.md --exclude *.pyd
+[2023-06-03 16:11:13] INFO root fetch - processPackages [uniccin]: Downloading https://files.pythonhosted.org/packages/57/61/0d1a11d6ec71c0c23a01d2f8f5cd2e4edc93826f8c0cd832bfd125aa98be/uniccin-1.9.5.tar.gz
+[2023-06-03 16:11:13] INFO root fetch - processPackages [LumosWeb]: executing diffoscope
+[2023-06-03 16:11:13] INFO root fetch - processPackages [LumosWeb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/LumosWeb-1.0.1.tar.gz tmp/LumosWeb-1.0.2.tar.gz --markdown 20230603/L/LumosWeb/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-06-03 16:11:13] INFO root fetch - processPackages [fittrackee]: executing diffoscope
+[2023-06-03 16:11:13] INFO root fetch - processPackages [fittrackee]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fittrackee-0.7.8.tar.gz tmp/fittrackee-0.7.9.tar.gz --markdown 20230603/f/fittrackee/0.7.8-0.7.9/diff.md --exclude *.pyd
+[2023-06-03 16:11:13] INFO root fetch - processPackages [telegramweb]: Downloading https://files.pythonhosted.org/packages/db/bb/01129a354744ad6056bfb496cc2ccdd93a39a83572d25f8f8007e0cdb996/telegramweb-4.5.tar.gz
+[2023-06-03 16:11:13] INFO root fetch - processPackages [uniccin]: executing diffoscope
+[2023-06-03 16:11:13] INFO root fetch - processPackages [uniccin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/uniccin-1.9.4.tar.gz tmp/uniccin-1.9.5.tar.gz --markdown 20230603/u/uniccin/1.9.4-1.9.5/diff.md --exclude *.pyd
+[2023-06-03 16:11:13] INFO root fetch - processPackages [telegramweb]: executing diffoscope
+[2023-06-03 16:11:13] INFO root fetch - processPackages [telegramweb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/telegramweb-4.4.tar.gz tmp/telegramweb-4.5.tar.gz --markdown 20230603/t/telegramweb/4.4-4.5/diff.md --exclude *.pyd
+[2023-06-03 16:11:14] INFO root fetch - processPackages [sftp-uploader]: Start processing: opr
+[2023-06-03 16:11:14] INFO root fetch - main [MainThread]: End processing [sftp-uploader]: success
+[2023-06-03 16:11:14] INFO root fetch - processPackages [opr]: New version: [101] Old Version: [100]
+[2023-06-03 16:11:14] INFO root fetch - processPackages [nhl-api-py]: Start processing: invoker-terminal
+[2023-06-03 16:11:14] INFO root fetch - main [MainThread]: End processing [nhl-api-py]: success
+[2023-06-03 16:11:14] INFO root fetch - processPackages [opr]: Downloading https://files.pythonhosted.org/packages/9c/a9/114f905c9a8511838e9abe7adc39024b0a98e4c850286b0aa2b40dfb7ead/opr-100.tar.gz
+[2023-06-03 16:11:14] INFO root fetch - processPackages [invoker-terminal]: New version: [0.0.32] Old Version: [0.0.31]
+[2023-06-03 16:11:14] INFO root fetch - processPackages [opr]: Downloading https://files.pythonhosted.org/packages/9c/eb/fbdc0851fb20c58ae21e3d72e3bf5b636b04a6029eb85a5bbe9ecb16cb4c/opr-101.tar.gz
+[2023-06-03 16:11:14] INFO root fetch - processPackages [invoker-terminal]: Downloading https://files.pythonhosted.org/packages/29/da/c48f9be2bf3c9a7c1c50a5e366742fa1535f8a85810d2e584128422cb63c/invoker_terminal-0.0.32.tar.gz
+[2023-06-03 16:11:14] INFO root fetch - processPackages [opr]: executing diffoscope
+[2023-06-03 16:11:14] INFO root fetch - processPackages [opr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/opr-100.tar.gz tmp/opr-101.tar.gz --markdown 20230603/o/opr/100-101/diff.md --exclude *.pyd
+[2023-06-03 16:11:14] INFO root fetch - processPackages [invoker-terminal]: executing diffoscope
+[2023-06-03 16:11:14] INFO root fetch - processPackages [invoker-terminal]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/invoker_terminal-0.0.31.tar.gz tmp/invoker_terminal-0.0.32.tar.gz --markdown 20230603/i/invoker-terminal/0.0.31-0.0.32/diff.md --exclude *.pyd
+[2023-06-03 16:11:14] INFO root fetch - processPackages [PySupercell]: Start processing: kube-tests
+[2023-06-03 16:11:14] INFO root fetch - main [MainThread]: End processing [PySupercell]: success
+[2023-06-03 16:11:14] INFO root fetch - main [MainThread]: End processing [LumosWeb]: success
+[2023-06-03 16:11:14] WARNING root fetch - processPackages [kube-tests]: Skipping, unable to determine old version
+[2023-06-03 16:11:14] INFO root fetch - main [MainThread]: End processing [kube-tests] error
+[2023-06-03 16:11:15] INFO root fetch - main [MainThread]: End processing [telegramweb]: success
+[2023-06-03 16:11:15] INFO root fetch - main [MainThread]: End processing [uniccin]: success
+[2023-06-03 16:11:15] INFO root fetch - main [MainThread]: End processing [rnspure]: success
+[2023-06-03 16:11:15] INFO root fetch - main [MainThread]: End processing [rns]: success
+[2023-06-03 16:11:15] INFO root fetch - main [MainThread]: End processing [sarus]: success
+[2023-06-03 16:11:16] INFO root fetch - main [MainThread]: End processing [invoker-terminal]: success
+[2023-06-03 16:11:16] INFO root fetch - main [MainThread]: End processing [opr]: success
+[2023-06-03 16:12:28] INFO root fetch - main [MainThread]: End processing [fittrackee]: success
+[2023-06-03 16:12:28] INFO root fetch - main [MainThread]: Store serial: [18359744]
