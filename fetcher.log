@@ -7500,3 +7500,29 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-06-03 12:07:13] INFO root fetch - main [MainThread]: End processing [llm-client]: success
 [2023-06-03 12:07:13] INFO root fetch - main [MainThread]: End processing [p0-script]: success
 [2023-06-03 12:07:13] INFO root fetch - main [MainThread]: Store serial: [18358396]
+[2023-06-03 12:12:21] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18358396]
+[2023-06-03 12:12:26] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-06-03 12:12:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pydantic
+[2023-06-03 12:12:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: douyin-tiktok-scraper
+[2023-06-03 12:12:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pyscriptnative
+[2023-06-03 12:12:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: dm-reverb-nightly
+[2023-06-03 12:12:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: SimpleShape
+[2023-06-03 12:12:26] ERROR root fetch - processPackages [SimpleShape]: Unable to get metadata: No such project 'SimpleShape'
+[2023-06-03 12:12:26] INFO root fetch - main [MainThread]: End processing [SimpleShape] error
+[2023-06-03 12:12:26] INFO root fetch - processPackages [dm-reverb-nightly]: New version: [0.9.0.dev20221207] Old Version: [0.9.0.dev20221206]
+[2023-06-03 12:12:26] INFO root fetch - processPackages [douyin-tiktok-scraper]: New version: [1.2.2] Old Version: [1.2.1]
+[2023-06-03 12:12:26] INFO root fetch - processPackages [pydantic]: New version: [2.0b2] Old Version: [2.0b1]
+[2023-06-03 12:12:26] WARNING root fetch - processPackages [pyscriptnative]: Skipping, unable to determine old version
+[2023-06-03 12:12:26] INFO root fetch - main [MainThread]: End processing [pyscriptnative] error
+[2023-06-03 12:12:26] INFO root fetch - processPackages [dm-reverb-nightly]: executing diffoscope
+[2023-06-03 12:12:26] INFO root fetch - processPackages [dm-reverb-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dm_reverb_nightly-0.9.0.dev20221206-cp39-cp39-manylinux2014_x86_64.whl.zip tmp/dm_reverb_nightly-0.9.0.dev20221207-cp39-cp39-manylinux2014_x86_64.whl.zip --markdown 20230603/d/dm-reverb-nightly/0.9.0.dev20221206-0.9.0.dev20221207/diff.md --exclude *.pyd
+[2023-06-03 12:12:26] INFO root fetch - processPackages [douyin-tiktok-scraper]: Downloading https://files.pythonhosted.org/packages/d3/cb/5f7ffc5f8c03401b576275511d45dc3bc48115ad5c72026ec83dcfecbd87/douyin_tiktok_scraper-1.2.2.tar.gz
+[2023-06-03 12:12:26] INFO root fetch - processPackages [pydantic]: Downloading https://files.pythonhosted.org/packages/05/6f/504e94dcda88a5ec8c680864d188bf3501090536f0bbd3e72c8cb22446bf/pydantic-2.0b2.tar.gz
+[2023-06-03 12:12:26] INFO root fetch - processPackages [douyin-tiktok-scraper]: executing diffoscope
+[2023-06-03 12:12:26] INFO root fetch - processPackages [douyin-tiktok-scraper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/douyin_tiktok_scraper-1.2.1.tar.gz tmp/douyin_tiktok_scraper-1.2.2.tar.gz --markdown 20230603/d/douyin-tiktok-scraper/1.2.1-1.2.2/diff.md --exclude *.pyd
+[2023-06-03 12:12:26] INFO root fetch - processPackages [pydantic]: executing diffoscope
+[2023-06-03 12:12:26] INFO root fetch - processPackages [pydantic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pydantic-2.0b1.tar.gz tmp/pydantic-2.0b2.tar.gz --markdown 20230603/p/pydantic/2.0b1-2.0b2/diff.md --exclude *.pyd
+[2023-06-03 12:12:27] INFO root fetch - main [MainThread]: End processing [douyin-tiktok-scraper]: success
+[2023-06-03 12:12:29] INFO root fetch - main [MainThread]: End processing [pydantic]: success
+[2023-06-03 12:13:19] INFO root fetch - main [MainThread]: End processing [dm-reverb-nightly]: success
+[2023-06-03 12:13:19] INFO root fetch - main [MainThread]: Store serial: [18358420]
