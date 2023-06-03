@@ -13320,3 +13320,60 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-06-03 23:10:44] INFO root fetch - main [MainThread]: End processing [mleko]: success
 [2023-06-03 23:10:44] INFO root fetch - main [MainThread]: End processing [qtmetabolabpy]: success
 [2023-06-03 23:10:44] INFO root fetch - main [MainThread]: Store serial: [18362192]
+[2023-06-03 23:15:48] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18362192]
+[2023-06-03 23:15:53] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-06-03 23:15:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tomfig
+[2023-06-03 23:15:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: autosrt
+[2023-06-03 23:15:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: python-selve-new
+[2023-06-03 23:15:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: custom-secrets-manager
+[2023-06-03 23:15:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pywry
+[2023-06-03 23:15:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: bettertest
+[2023-06-03 23:15:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: polywrapper
+[2023-06-03 23:15:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: mynacode
+[2023-06-03 23:15:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: metabolabpy
+[2023-06-03 23:15:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: qtmetabolabpy
+[2023-06-03 23:15:53] INFO root fetch - processPackages [custom-secrets-manager]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-06-03 23:15:53] WARNING root fetch - processPackages [tomfig]: Skipping, unable to determine old version
+[2023-06-03 23:15:53] INFO root fetch - main [MainThread]: End processing [tomfig] error
+[2023-06-03 23:15:53] INFO root fetch - processPackages [autosrt]: New version: [1.3.0] Old Version: [1.2.9]
+[2023-06-03 23:15:53] INFO root fetch - processPackages [bettertest]: New version: [0.1.97] Old Version: [0.1.96]
+[2023-06-03 23:15:53] INFO root fetch - processPackages [mynacode]: New version: [1.0.99] Old Version: [1.0.98]
+[2023-06-03 23:15:53] INFO root fetch - processPackages [metabolabpy]: New version: [0.8.9] Old Version: [0.8.7]
+[2023-06-03 23:15:53] INFO root fetch - processPackages [polywrapper]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-06-03 23:15:53] INFO root fetch - processPackages [python-selve-new]: New version: [2.2.1] Old Version: [2.2.0]
+[2023-06-03 23:15:53] INFO root fetch - processPackages [qtmetabolabpy]: New version: [0.8.9] Old Version: [0.8.7]
+[2023-06-03 23:15:53] INFO root fetch - processPackages [pywry]: New version: [0.5.9] Old Version: [0.5.8]
+[2023-06-03 23:15:53] INFO root fetch - processPackages [metabolabpy]: Downloading https://files.pythonhosted.org/packages/ab/32/e1a86aa724aabef3e01f3e432abe2c8ea8a3b1805c71f8bf8e801262ed92/metabolabpy-0.8.7.tar.gz
+[2023-06-03 23:15:53] WARNING root fetch - processPackages [metabolabpy]: Skipping package: exceeds size limit 12237881>=10485760
+[2023-06-03 23:15:53] INFO root fetch - main [MainThread]: End processing [metabolabpy] error
+[2023-06-03 23:15:54] INFO root fetch - processPackages [mynacode]: executing diffoscope
+[2023-06-03 23:15:54] INFO root fetch - processPackages [mynacode]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mynacode-1.0.98-py3-none-any.whl.zip tmp/mynacode-1.0.99-py3-none-any.whl.zip --markdown 20230603/m/mynacode/1.0.98-1.0.99/diff.md --exclude *.pyd
+[2023-06-03 23:15:54] INFO root fetch - processPackages [qtmetabolabpy]: executing diffoscope
+[2023-06-03 23:15:54] INFO root fetch - processPackages [qtmetabolabpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qtmetabolabpy-0.8.7.tar.gz tmp/qtmetabolabpy-0.8.9.tar.gz --markdown 20230603/q/qtmetabolabpy/0.8.7-0.8.9/diff.md --exclude *.pyd
+[2023-06-03 23:15:54] INFO root fetch - processPackages [custom-secrets-manager]: Downloading https://files.pythonhosted.org/packages/06/55/80c53a8b55bfa49a22f436f873584da3a5d56376a0cc1d136c0226ffad29/custom_secrets_manager-1.0.0.tar.gz
+[2023-06-03 23:15:54] INFO root fetch - processPackages [python-selve-new]: Downloading https://files.pythonhosted.org/packages/25/c3/c6f07cc591606cc6760b663fc29874020b907f3ab9532bc82d0579fa2840/python-selve-new-2.2.1.tar.gz
+[2023-06-03 23:15:54] INFO root fetch - processPackages [bettertest]: Downloading https://files.pythonhosted.org/packages/c1/2c/fa5cabce4409de275204348edf422f8094807a2f82acb6fb376657ddb0f2/bettertest-0.1.97.tar.gz
+[2023-06-03 23:15:54] INFO root fetch - processPackages [polywrapper]: Downloading https://files.pythonhosted.org/packages/55/7f/3c0b04e9933ac25534f84bbb574d1f72da955ffcd30ba6c52f68dd1b454c/polywrapper-0.1.2.tar.gz
+[2023-06-03 23:15:54] INFO root fetch - processPackages [python-selve-new]: executing diffoscope
+[2023-06-03 23:15:54] INFO root fetch - processPackages [python-selve-new]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python-selve-new-2.2.0.tar.gz tmp/python-selve-new-2.2.1.tar.gz --markdown 20230603/p/python-selve-new/2.2.0-2.2.1/diff.md --exclude *.pyd
+[2023-06-03 23:15:54] INFO root fetch - processPackages [bettertest]: executing diffoscope
+[2023-06-03 23:15:54] INFO root fetch - processPackages [bettertest]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bettertest-0.1.96.tar.gz tmp/bettertest-0.1.97.tar.gz --markdown 20230603/b/bettertest/0.1.96-0.1.97/diff.md --exclude *.pyd
+[2023-06-03 23:15:54] INFO root fetch - processPackages [polywrapper]: executing diffoscope
+[2023-06-03 23:15:54] INFO root fetch - processPackages [polywrapper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/polywrapper-0.1.1.tar.gz tmp/polywrapper-0.1.2.tar.gz --markdown 20230603/p/polywrapper/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-06-03 23:15:54] INFO root fetch - processPackages [autosrt]: Downloading https://files.pythonhosted.org/packages/ca/8b/5c6ebe2b21180b1d77ed23ca0381aeed30d7e2750e1c016ae697c154445f/autosrt-1.3.0.tar.gz
+[2023-06-03 23:15:54] INFO root fetch - processPackages [custom-secrets-manager]: Downloading https://files.pythonhosted.org/packages/78/d4/e89aad53edf6ecf4eb40a0f6b92b282515555c8938ead60a68c363ef53a0/custom_secrets_manager-1.0.1.tar.gz
+[2023-06-03 23:15:54] INFO root fetch - processPackages [autosrt]: executing diffoscope
+[2023-06-03 23:15:54] INFO root fetch - processPackages [autosrt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/autosrt-1.2.9.tar.gz tmp/autosrt-1.3.0.tar.gz --markdown 20230603/a/autosrt/1.2.9-1.3.0/diff.md --exclude *.pyd
+[2023-06-03 23:15:54] INFO root fetch - processPackages [custom-secrets-manager]: executing diffoscope
+[2023-06-03 23:15:54] INFO root fetch - processPackages [custom-secrets-manager]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/custom_secrets_manager-1.0.0.tar.gz tmp/custom_secrets_manager-1.0.1.tar.gz --markdown 20230603/c/custom-secrets-manager/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-06-03 23:15:54] INFO root fetch - processPackages [pywry]: executing diffoscope
+[2023-06-03 23:15:54] INFO root fetch - processPackages [pywry]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pywry-0.5.8.tar.gz tmp/pywry-0.5.9.tar.gz --markdown 20230603/p/pywry/0.5.8-0.5.9/diff.md --exclude *.pyd
+[2023-06-03 23:15:55] INFO root fetch - main [MainThread]: End processing [mynacode]: success
+[2023-06-03 23:15:55] INFO root fetch - main [MainThread]: End processing [bettertest]: success
+[2023-06-03 23:15:55] INFO root fetch - main [MainThread]: End processing [polywrapper]: success
+[2023-06-03 23:15:55] INFO root fetch - main [MainThread]: End processing [custom-secrets-manager]: success
+[2023-06-03 23:15:55] INFO root fetch - main [MainThread]: End processing [autosrt]: success
+[2023-06-03 23:15:55] INFO root fetch - main [MainThread]: End processing [pywry]: success
+[2023-06-03 23:15:56] INFO root fetch - main [MainThread]: End processing [python-selve-new]: success
+[2023-06-03 23:15:57] INFO root fetch - main [MainThread]: End processing [qtmetabolabpy]: success
+[2023-06-03 23:15:57] INFO root fetch - main [MainThread]: Store serial: [18362231]
