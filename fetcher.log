@@ -13494,3 +13494,52 @@ EOFError: EOF read where object expected
 [2023-06-03 23:21:20] INFO root fetch - main [MainThread]: End processing [devana]: success
 [2023-06-03 23:21:38] INFO root fetch - main [MainThread]: End processing [yoctopuce]: success
 [2023-06-03 23:21:38] INFO root fetch - main [MainThread]: Store serial: [18362265]
+[2023-06-03 23:27:05] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18362265]
+[2023-06-03 23:27:10] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-06-03 23:27:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: metabolabpy
+[2023-06-03 23:27:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: phiterm
+[2023-06-03 23:27:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: qtmetabolabpy
+[2023-06-03 23:27:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: kalm
+[2023-06-03 23:27:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: mmit
+[2023-06-03 23:27:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: phidata
+[2023-06-03 23:27:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: ai-services
+[2023-06-03 23:27:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: kalm
+[2023-06-03 23:27:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: cdk-datadog-integration
+[2023-06-03 23:27:10] INFO root fetch - processPackages [ai-services]: New version: [0.5.0rc9] Old Version: [0.5.0rc8]
+[2023-06-03 23:27:10] INFO root fetch - processPackages [mmit]: New version: [0.5.2] Old Version: [0.5.1]
+[2023-06-03 23:27:10] INFO root fetch - processPackages [kalm]: New version: [0.6.9] Old Version: [0.6.8]
+[2023-06-03 23:27:10] INFO root fetch - processPackages [phiterm]: New version: [1.6.9] Old Version: [1.6.8]
+[2023-06-03 23:27:10] INFO root fetch - processPackages [kalm]: New version: [0.6.9] Old Version: [0.6.8]
+[2023-06-03 23:27:10] INFO root fetch - processPackages [cdk-datadog-integration]: New version: [2.1.1] Old Version: [2.0.3]
+[2023-06-03 23:27:10] INFO root fetch - processPackages [qtmetabolabpy]: New version: [0.8.9] Old Version: [0.8.7]
+[2023-06-03 23:27:10] INFO root fetch - processPackages [metabolabpy]: New version: [0.8.9] Old Version: [0.8.7]
+[2023-06-03 23:27:10] INFO root fetch - processPackages [phidata]: New version: [1.6.9] Old Version: [1.6.8]
+[2023-06-03 23:27:10] INFO root fetch - processPackages [metabolabpy]: Downloading https://files.pythonhosted.org/packages/ab/32/e1a86aa724aabef3e01f3e432abe2c8ea8a3b1805c71f8bf8e801262ed92/metabolabpy-0.8.7.tar.gz
+[2023-06-03 23:27:10] INFO root fetch - processPackages [phidata]: executing diffoscope
+[2023-06-03 23:27:10] INFO root fetch - processPackages [phidata]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/phidata-1.6.8.tar.gz tmp/phidata-1.6.9.tar.gz --markdown 20230603/p/phidata/1.6.8-1.6.9/diff.md --exclude *.pyd
+[2023-06-03 23:27:10] INFO root fetch - processPackages [kalm]: executing diffoscope
+[2023-06-03 23:27:10] INFO root fetch - processPackages [kalm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kalm-0.6.8.tar.gz tmp/kalm-0.6.9.tar.gz --markdown 20230603/k/kalm/0.6.8-0.6.9/diff.md --exclude *.pyd
+[2023-06-03 23:27:10] INFO root fetch - processPackages [qtmetabolabpy]: executing diffoscope
+[2023-06-03 23:27:10] INFO root fetch - processPackages [qtmetabolabpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qtmetabolabpy-0.8.7.tar.gz tmp/qtmetabolabpy-0.8.9.tar.gz --markdown 20230603/q/qtmetabolabpy/0.8.7-0.8.9/diff.md --exclude *.pyd
+[2023-06-03 23:27:10] WARNING root fetch - processPackages [metabolabpy]: Skipping package: exceeds size limit 12237881>=10485760
+[2023-06-03 23:27:10] INFO root fetch - main [MainThread]: End processing [metabolabpy] error
+[2023-06-03 23:27:10] INFO root fetch - processPackages [kalm]: executing diffoscope
+[2023-06-03 23:27:10] INFO root fetch - processPackages [kalm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kalm-0.6.8.tar.gz tmp/kalm-0.6.9.tar.gz --markdown 20230603/k/kalm/0.6.8-0.6.9/diff.md --exclude *.pyd
+[2023-06-03 23:27:10] INFO root fetch - processPackages [cdk-datadog-integration]: executing diffoscope
+[2023-06-03 23:27:10] INFO root fetch - processPackages [phiterm]: executing diffoscope
+[2023-06-03 23:27:10] INFO root fetch - processPackages [cdk-datadog-integration]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-datadog-integration-2.0.3.tar.gz tmp/cdk-datadog-integration-2.1.1.tar.gz --markdown 20230603/c/cdk-datadog-integration/2.0.3-2.1.1/diff.md --exclude *.pyd
+[2023-06-03 23:27:10] INFO root fetch - processPackages [phiterm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/phiterm-1.6.8.tar.gz tmp/phiterm-1.6.9.tar.gz --markdown 20230603/p/phiterm/1.6.8-1.6.9/diff.md --exclude *.pyd
+[2023-06-03 23:27:10] INFO root fetch - processPackages [mmit]: Downloading https://files.pythonhosted.org/packages/95/86/ec63ec5cd2d5473193e9a3edebfcfbea94b6f31722d5840b00e8910ac11e/mmit-0.5.2.tar.gz
+[2023-06-03 23:27:10] INFO root fetch - processPackages [ai-services]: executing diffoscope
+[2023-06-03 23:27:10] INFO root fetch - processPackages [ai-services]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ai_services-0.5.0rc8.tar.gz tmp/ai_services-0.5.0rc9.tar.gz --markdown 20230603/a/ai-services/0.5.0rc8-0.5.0rc9/diff.md --exclude *.pyd
+[2023-06-03 23:27:10] INFO root fetch - processPackages [mmit]: executing diffoscope
+[2023-06-03 23:27:10] INFO root fetch - processPackages [mmit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mmit-0.5.1.tar.gz tmp/mmit-0.5.2.tar.gz --markdown 20230603/m/mmit/0.5.1-0.5.2/diff.md --exclude *.pyd
+[2023-06-03 23:27:11] INFO root fetch - main [MainThread]: End processing [kalm]: success
+[2023-06-03 23:27:12] INFO root fetch - main [MainThread]: End processing [cdk-datadog-integration]: success
+[2023-06-03 23:27:12] INFO root fetch - main [MainThread]: End processing [kalm]: success
+[2023-06-03 23:27:12] INFO root fetch - main [MainThread]: End processing [qtmetabolabpy]: success
+[2023-06-03 23:27:12] INFO root fetch - main [MainThread]: End processing [phiterm]: success
+[2023-06-03 23:27:12] INFO root fetch - main [MainThread]: End processing [mmit]: success
+[2023-06-03 23:27:13] INFO root fetch - main [MainThread]: End processing [ai-services]: success
+[2023-06-03 23:27:14] INFO root fetch - main [MainThread]: End processing [phidata]: success
+[2023-06-03 23:27:14] INFO root fetch - main [MainThread]: Store serial: [18362291]
