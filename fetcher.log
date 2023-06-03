@@ -2102,3 +2102,55 @@
 [2023-06-03 03:26:25] INFO root fetch - main [MainThread]: End processing [azure-cognitiveservices-speech]: success
 [2023-06-03 03:26:57] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-mahjong-scoreboard]: success
 [2023-06-03 03:26:57] INFO root fetch - main [MainThread]: Store serial: [18355140]
+[2023-06-03 03:32:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18355140]
+[2023-06-03 03:32:11] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-06-03 03:32:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: canopy-platform
+[2023-06-03 03:32:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: bettertest
+[2023-06-03 03:32:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: badlands-doe-toolset
+[2023-06-03 03:32:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: fenjing
+[2023-06-03 03:32:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: git2vec
+[2023-06-03 03:32:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: innerverz
+[2023-06-03 03:32:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: cdk-lambda-layer-curl
+[2023-06-03 03:32:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: Seokhee-Jin
+[2023-06-03 03:32:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: webint
+[2023-06-03 03:32:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: relevanceai-chains
+[2023-06-03 03:32:11] INFO root fetch - processPackages [innerverz]: New version: [0.0.30] Old Version: [0.0.29]
+[2023-06-03 03:32:11] INFO root fetch - processPackages [bettertest]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-06-03 03:32:11] INFO root fetch - processPackages [badlands-doe-toolset]: New version: [0.1.5] Old Version: [0.1.4]
+[2023-06-03 03:32:11] INFO root fetch - processPackages [fenjing]: New version: [0.3.8] Old Version: [0.3.7]
+[2023-06-03 03:32:11] WARNING root fetch - processPackages [git2vec]: Skipping, unable to determine old version
+[2023-06-03 03:32:11] ERROR root fetch - processPackages [Seokhee-Jin]: Unable to get metadata: No such project 'Seokhee-Jin'
+[2023-06-03 03:32:11] INFO root fetch - main [MainThread]: End processing [git2vec] error
+[2023-06-03 03:32:11] INFO root fetch - main [MainThread]: End processing [Seokhee-Jin] error
+[2023-06-03 03:32:11] INFO root fetch - processPackages [cdk-lambda-layer-curl]: New version: [2.0.99] Old Version: [2.0.98]
+[2023-06-03 03:32:11] WARNING root fetch - processPackages [relevanceai-chains]: Skipping, unable to determine old version
+[2023-06-03 03:32:11] INFO root fetch - main [MainThread]: End processing [relevanceai-chains] error
+[2023-06-03 03:32:11] INFO root fetch - processPackages [webint]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-06-03 03:32:11] INFO root fetch - processPackages [canopy-platform]: New version: [0.0.9] Old Version: [0.0.7]
+[2023-06-03 03:32:11] INFO root fetch - processPackages [badlands-doe-toolset]: Downloading https://files.pythonhosted.org/packages/05/a8/7eae54f6fd69742f36d1d005cc40600fdf02500b74c720eaf5ada2b96176/badlands_doe_toolset-0.1.4.tar.gz
+[2023-06-03 03:32:11] INFO root fetch - processPackages [webint]: executing diffoscope
+[2023-06-03 03:32:11] INFO root fetch - processPackages [webint]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/webint-0.1.8.tar.gz tmp/webint-0.1.9.tar.gz --markdown 20230603/w/webint/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-06-03 03:32:12] INFO root fetch - processPackages [innerverz]: Downloading https://files.pythonhosted.org/packages/de/66/66b58c71d335c5f3f74bf04d64e9b585a9f2221d589ca54ddb2e40298d43/innerverz-0.0.30.tar.gz
+[2023-06-03 03:32:12] INFO root fetch - processPackages [bettertest]: Downloading https://files.pythonhosted.org/packages/e6/45/427d2abd65ef589d0f2bc50a9e1274423131f34493d797b72dfc26a7ce40/bettertest-0.1.9.tar.gz
+[2023-06-03 03:32:12] INFO root fetch - processPackages [badlands-doe-toolset]: Downloading https://files.pythonhosted.org/packages/29/bf/e4d9a833a03225dbabb47db83e6b19ee6a2941d8983fee825bafeb810544/badlands_doe_toolset-0.1.5.tar.gz
+[2023-06-03 03:32:12] INFO root fetch - processPackages [innerverz]: executing diffoscope
+[2023-06-03 03:32:12] INFO root fetch - processPackages [innerverz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/innerverz-0.0.29.tar.gz tmp/innerverz-0.0.30.tar.gz --markdown 20230603/i/innerverz/0.0.29-0.0.30/diff.md --exclude *.pyd
+[2023-06-03 03:32:12] INFO root fetch - processPackages [cdk-lambda-layer-curl]: executing diffoscope
+[2023-06-03 03:32:12] INFO root fetch - processPackages [cdk-lambda-layer-curl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-lambda-layer-curl-2.0.98.tar.gz tmp/cdk-lambda-layer-curl-2.0.99.tar.gz --markdown 20230603/c/cdk-lambda-layer-curl/2.0.98-2.0.99/diff.md --exclude *.pyd
+[2023-06-03 03:32:12] INFO root fetch - processPackages [fenjing]: Downloading https://files.pythonhosted.org/packages/bc/7d/77dababa28cea58457cd2784275d1c7e2fe64fae50c8dc3bc64ce2542e1f/fenjing-0.3.8.tar.gz
+[2023-06-03 03:32:12] INFO root fetch - processPackages [bettertest]: executing diffoscope
+[2023-06-03 03:32:12] INFO root fetch - processPackages [bettertest]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bettertest-0.1.8.tar.gz tmp/bettertest-0.1.9.tar.gz --markdown 20230603/b/bettertest/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-06-03 03:32:12] INFO root fetch - processPackages [canopy-platform]: executing diffoscope
+[2023-06-03 03:32:12] INFO root fetch - processPackages [canopy-platform]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/canopy-platform-0.0.7.tar.gz tmp/canopy-platform-0.0.9.tar.gz --markdown 20230603/c/canopy-platform/0.0.7-0.0.9/diff.md --exclude *.pyd
+[2023-06-03 03:32:12] INFO root fetch - processPackages [badlands-doe-toolset]: executing diffoscope
+[2023-06-03 03:32:12] INFO root fetch - processPackages [badlands-doe-toolset]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/badlands_doe_toolset-0.1.4.tar.gz tmp/badlands_doe_toolset-0.1.5.tar.gz --markdown 20230603/b/badlands-doe-toolset/0.1.4-0.1.5/diff.md --exclude *.pyd
+[2023-06-03 03:32:12] INFO root fetch - processPackages [fenjing]: executing diffoscope
+[2023-06-03 03:32:12] INFO root fetch - processPackages [fenjing]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fenjing-0.3.7.tar.gz tmp/fenjing-0.3.8.tar.gz --markdown 20230603/f/fenjing/0.3.7-0.3.8/diff.md --exclude *.pyd
+[2023-06-03 03:32:13] INFO root fetch - main [MainThread]: End processing [canopy-platform]: success
+[2023-06-03 03:32:13] INFO root fetch - main [MainThread]: End processing [bettertest]: success
+[2023-06-03 03:32:13] INFO root fetch - main [MainThread]: End processing [badlands-doe-toolset]: success
+[2023-06-03 03:32:13] INFO root fetch - main [MainThread]: End processing [fenjing]: success
+[2023-06-03 03:32:13] INFO root fetch - main [MainThread]: End processing [cdk-lambda-layer-curl]: success
+[2023-06-03 03:32:13] INFO root fetch - main [MainThread]: End processing [innerverz]: success
+[2023-06-03 03:32:18] INFO root fetch - main [MainThread]: End processing [webint]: success
+[2023-06-03 03:32:18] INFO root fetch - main [MainThread]: Store serial: [18355176]
