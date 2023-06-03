@@ -10152,3 +10152,32 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-06-03 17:50:34] INFO root fetch - main [MainThread]: End processing [phidata]: success
 [2023-06-03 17:50:36] INFO root fetch - main [MainThread]: End processing [PyQt6-Fluent-Widgets]: success
 [2023-06-03 17:50:36] INFO root fetch - main [MainThread]: Store serial: [18360238]
+[2023-06-03 17:55:41] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18360238]
+[2023-06-03 17:55:46] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-06-03 17:55:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: FLAI-CAUSAL
+[2023-06-03 17:55:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: odoo14-addon-sale-purchase-requisition
+[2023-06-03 17:55:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: relevanceai
+[2023-06-03 17:55:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: kombu
+[2023-06-03 17:55:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: stocktracer
+[2023-06-03 17:55:46] WARNING root fetch - processPackages [odoo14-addon-sale-purchase-requisition]: Skipping, unable to determine old version
+[2023-06-03 17:55:46] INFO root fetch - main [MainThread]: End processing [odoo14-addon-sale-purchase-requisition] error
+[2023-06-03 17:55:46] INFO root fetch - processPackages [relevanceai]: New version: [4.0.1] Old Version: [4.0.0]
+[2023-06-03 17:55:46] INFO root fetch - processPackages [stocktracer]: New version: [0.4.0] Old Version: [0.3.0]
+[2023-06-03 17:55:46] INFO root fetch - processPackages [FLAI-CAUSAL]: New version: [1.0.8] Old Version: [1.0.7]
+[2023-06-03 17:55:46] INFO root fetch - processPackages [kombu]: New version: [5.3.0rc2] Old Version: [5.3.0rc1]
+[2023-06-03 17:55:46] INFO root fetch - processPackages [relevanceai]: Downloading https://files.pythonhosted.org/packages/71/44/53c761f4364406b0c32f667746422da0af41b1234bd5cb8ddb7b79e5bbad/relevanceai-4.0.1.tar.gz
+[2023-06-03 17:55:46] INFO root fetch - processPackages [FLAI-CAUSAL]: Downloading https://files.pythonhosted.org/packages/5f/83/814b81236617d826b3a560b13ce354cdff2ffcbe117fb5ae69b775a317c0/FLAI_CAUSAL-1.0.8.tar.gz
+[2023-06-03 17:55:46] INFO root fetch - processPackages [relevanceai]: executing diffoscope
+[2023-06-03 17:55:46] INFO root fetch - processPackages [relevanceai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/relevanceai-4.0.0.tar.gz tmp/relevanceai-4.0.1.tar.gz --markdown 20230603/r/relevanceai/4.0.0-4.0.1/diff.md --exclude *.pyd
+[2023-06-03 17:55:46] INFO root fetch - processPackages [FLAI-CAUSAL]: executing diffoscope
+[2023-06-03 17:55:46] INFO root fetch - processPackages [FLAI-CAUSAL]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/FLAI_CAUSAL-1.0.7.tar.gz tmp/FLAI_CAUSAL-1.0.8.tar.gz --markdown 20230603/F/FLAI-CAUSAL/1.0.7-1.0.8/diff.md --exclude *.pyd
+[2023-06-03 17:55:46] INFO root fetch - processPackages [stocktracer]: Downloading https://files.pythonhosted.org/packages/29/99/92d52182ee9b70e06da6adf2381420445f4773c608db5f4f5be2737b6d0a/stocktracer-0.4.0.tar.gz
+[2023-06-03 17:55:46] INFO root fetch - processPackages [kombu]: executing diffoscope
+[2023-06-03 17:55:46] INFO root fetch - processPackages [kombu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kombu-5.3.0rc1.tar.gz tmp/kombu-5.3.0rc2.tar.gz --markdown 20230603/k/kombu/5.3.0rc1-5.3.0rc2/diff.md --exclude *.pyd
+[2023-06-03 17:55:46] INFO root fetch - processPackages [stocktracer]: executing diffoscope
+[2023-06-03 17:55:46] INFO root fetch - processPackages [stocktracer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/stocktracer-0.3.0.tar.gz tmp/stocktracer-0.4.0.tar.gz --markdown 20230603/s/stocktracer/0.3.0-0.4.0/diff.md --exclude *.pyd
+[2023-06-03 17:55:47] INFO root fetch - main [MainThread]: End processing [FLAI-CAUSAL]: success
+[2023-06-03 17:55:47] INFO root fetch - main [MainThread]: End processing [relevanceai]: success
+[2023-06-03 17:55:47] INFO root fetch - main [MainThread]: End processing [stocktracer]: success
+[2023-06-03 17:55:49] INFO root fetch - main [MainThread]: End processing [kombu]: success
+[2023-06-03 17:55:49] INFO root fetch - main [MainThread]: Store serial: [18360260]
