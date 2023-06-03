@@ -6490,3 +6490,41 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-06-03 09:58:18] INFO root fetch - main [MainThread]: End processing [alesha]: success
 [2023-06-03 09:58:18] INFO root fetch - main [MainThread]: End processing [oarepo]: success
 [2023-06-03 09:58:18] INFO root fetch - main [MainThread]: Store serial: [18357818]
+[2023-06-03 10:03:22] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18357818]
+[2023-06-03 10:03:27] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-06-03 10:03:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: lesscode-options
+[2023-06-03 10:03:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: stemdiff
+[2023-06-03 10:03:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pyeCam
+[2023-06-03 10:03:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: cncd-package
+[2023-06-03 10:03:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: ediff
+[2023-06-03 10:03:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: scoringrules
+[2023-06-03 10:03:27] INFO root fetch - processPackages [pyeCam]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-06-03 10:03:27] WARNING root fetch - processPackages [lesscode-options]: Skipping, unable to determine old version
+[2023-06-03 10:03:27] INFO root fetch - main [MainThread]: End processing [lesscode-options] error
+[2023-06-03 10:03:27] INFO root fetch - processPackages [stemdiff]: New version: [5.0.4] Old Version: [5.0.2]
+[2023-06-03 10:03:27] INFO root fetch - processPackages [cncd-package]: New version: [0.3.3] Old Version: [0.3.2]
+[2023-06-03 10:03:27] INFO root fetch - processPackages [scoringrules]: New version: [0.2.0] Old Version: [0.1.1]
+[2023-06-03 10:03:27] INFO root fetch - processPackages [ediff]: New version: [0.1.2] Old Version: [0.1.0]
+[2023-06-03 10:03:27] INFO root fetch - processPackages [pyeCam]: executing diffoscope
+[2023-06-03 10:03:27] INFO root fetch - processPackages [pyeCam]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyeCam-0.0.8.tar.gz tmp/pyeCam-0.0.9.tar.gz --markdown 20230603/p/pyeCam/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-06-03 10:03:27] INFO root fetch - processPackages [stemdiff]: Downloading https://files.pythonhosted.org/packages/92/9d/92ec6cd8e627fa890d496b3c4f7e6feb4f4398ea4c35a9fec4fae4d32848/stemdiff-5.0.2.tar.gz
+[2023-06-03 10:03:27] INFO root fetch - processPackages [ediff]: Downloading https://files.pythonhosted.org/packages/da/5a/4d7f42ce1c25371c08140b3edbbd408f914fd8e9a2fff16a4e313cfda338/ediff-0.1.0.tar.gz
+[2023-06-03 10:03:27] INFO root fetch - processPackages [scoringrules]: Downloading https://files.pythonhosted.org/packages/c7/0e/ee4f5d133684f6ff21d95c13100182c023ab4188fd76f40db1fe420a2d75/scoringrules-0.1.1.tar.gz
+[2023-06-03 10:03:28] INFO root fetch - processPackages [cncd-package]: Downloading https://files.pythonhosted.org/packages/55/5c/d00c5f7b02fbd7a676df7faa9350fad7358f3dcdeed021958dd59838d41a/cncd_package-0.3.3.tar.gz
+[2023-06-03 10:03:28] INFO root fetch - processPackages [stemdiff]: Downloading https://files.pythonhosted.org/packages/9a/9f/873232c801a04549b6115025c6e6f93e1097478b23d72ca22987c1ec4ed8/stemdiff-5.0.4.tar.gz
+[2023-06-03 10:03:28] INFO root fetch - processPackages [cncd-package]: executing diffoscope
+[2023-06-03 10:03:28] INFO root fetch - processPackages [cncd-package]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cncd_package-0.3.2.tar.gz tmp/cncd_package-0.3.3.tar.gz --markdown 20230603/c/cncd-package/0.3.2-0.3.3/diff.md --exclude *.pyd
+[2023-06-03 10:03:28] INFO root fetch - processPackages [ediff]: Downloading https://files.pythonhosted.org/packages/20/06/325eef084e6224e3c214d4c5964449636548a9cd9a770e1c7d57067bddd3/ediff-0.1.2.tar.gz
+[2023-06-03 10:03:28] INFO root fetch - processPackages [stemdiff]: executing diffoscope
+[2023-06-03 10:03:28] INFO root fetch - processPackages [stemdiff]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/stemdiff-5.0.2.tar.gz tmp/stemdiff-5.0.4.tar.gz --markdown 20230603/s/stemdiff/5.0.2-5.0.4/diff.md --exclude *.pyd
+[2023-06-03 10:03:28] INFO root fetch - processPackages [ediff]: executing diffoscope
+[2023-06-03 10:03:28] INFO root fetch - processPackages [ediff]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ediff-0.1.0.tar.gz tmp/ediff-0.1.2.tar.gz --markdown 20230603/e/ediff/0.1.0-0.1.2/diff.md --exclude *.pyd
+[2023-06-03 10:03:28] INFO root fetch - processPackages [scoringrules]: Downloading https://files.pythonhosted.org/packages/52/a0/6c78c69f70e19ab4642483bbdadb578445a5fcfa3732920921e86b9b270a/scoringrules-0.2.0.tar.gz
+[2023-06-03 10:03:28] INFO root fetch - processPackages [scoringrules]: executing diffoscope
+[2023-06-03 10:03:28] INFO root fetch - processPackages [scoringrules]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scoringrules-0.1.1.tar.gz tmp/scoringrules-0.2.0.tar.gz --markdown 20230603/s/scoringrules/0.1.1-0.2.0/diff.md --exclude *.pyd
+[2023-06-03 10:03:29] INFO root fetch - main [MainThread]: End processing [pyeCam]: success
+[2023-06-03 10:03:29] INFO root fetch - main [MainThread]: End processing [cncd-package]: success
+[2023-06-03 10:03:29] INFO root fetch - main [MainThread]: End processing [scoringrules]: success
+[2023-06-03 10:03:29] INFO root fetch - main [MainThread]: End processing [ediff]: success
+[2023-06-03 10:03:30] INFO root fetch - main [MainThread]: End processing [stemdiff]: success
+[2023-06-03 10:03:30] INFO root fetch - main [MainThread]: Store serial: [18357838]
