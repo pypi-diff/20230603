@@ -9574,3 +9574,57 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-06-03 16:35:06] INFO root fetch - main [MainThread]: End processing [martin-binance]: success
 [2023-06-03 16:35:58] INFO root fetch - main [MainThread]: End processing [hiphp]: success
 [2023-06-03 16:35:58] INFO root fetch - main [MainThread]: Store serial: [18359853]
+[2023-06-03 16:41:03] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18359853]
+[2023-06-03 16:41:08] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-06-03 16:41:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: archs4py
+[2023-06-03 16:41:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: kube-tests
+[2023-06-03 16:41:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: google-meet-api
+[2023-06-03 16:41:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: fastapi
+[2023-06-03 16:41:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: Xponge
+[2023-06-03 16:41:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: django-bootstrap5
+[2023-06-03 16:41:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: streams-py
+[2023-06-03 16:41:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: google-meet-api
+[2023-06-03 16:41:08] INFO root fetch - processPackages [google-meet-api]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-06-03 16:41:08] INFO root fetch - processPackages [django-bootstrap5]: New version: [23.3] Old Version: [23.2.dev0]
+[2023-06-03 16:41:08] INFO root fetch - processPackages [archs4py]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-06-03 16:41:08] INFO root fetch - processPackages [streams-py]: New version: [0.2] Old Version: [0.1.3]
+[2023-06-03 16:41:08] INFO root fetch - processPackages [kube-tests]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-06-03 16:41:08] INFO root fetch - processPackages [google-meet-api]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-06-03 16:41:08] INFO root fetch - processPackages [Xponge]: New version: [1.3b7] Old Version: [1.3b6]
+[2023-06-03 16:41:08] INFO root fetch - processPackages [fastapi]: New version: [0.96.0] Old Version: [0.95.2]
+[2023-06-03 16:41:08] INFO root fetch - processPackages [google-meet-api]: Downloading https://files.pythonhosted.org/packages/7e/3e/5d9aae2be9e5b45b362d107484a85bfe15f7108fbe413298e68de33f415b/google_meet_api-0.0.4-py3-none-any.whl
+[2023-06-03 16:41:08] INFO root fetch - processPackages [google-meet-api]: Downloading https://files.pythonhosted.org/packages/7e/3e/5d9aae2be9e5b45b362d107484a85bfe15f7108fbe413298e68de33f415b/google_meet_api-0.0.4-py3-none-any.whl
+[2023-06-03 16:41:08] INFO root fetch - processPackages [streams-py]: Downloading https://files.pythonhosted.org/packages/15/0a/fe79231d3a79fdc689c759882eea66c91dcea2447953a7f7808fe60b5779/streams.py-0.1.3.tar.gz
+[2023-06-03 16:41:08] INFO root fetch - processPackages [fastapi]: Downloading https://files.pythonhosted.org/packages/75/e1/976b2e281bdfb0b6690b5d3c2d932d309729e49305ef5449be381e0672a3/fastapi-0.95.2.tar.gz
+[2023-06-03 16:41:08] INFO root fetch - processPackages [django-bootstrap5]: Downloading https://files.pythonhosted.org/packages/b0/c8/cf443dea663561c2e9a09fcb69c8ddcc1c71aa7027d3d5d0f20542101a66/django-bootstrap5-23.2.dev0.tar.gz
+[2023-06-03 16:41:08] INFO root fetch - processPackages [archs4py]: executing diffoscope
+[2023-06-03 16:41:08] INFO root fetch - processPackages [archs4py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/archs4py-0.1.8.tar.gz tmp/archs4py-0.1.9.tar.gz --markdown 20230603/a/archs4py/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-06-03 16:41:08] INFO root fetch - processPackages [google-meet-api]: Downloading https://files.pythonhosted.org/packages/12/3c/37bf7903fc1be83ea47dfa3ed2a468a283044df810e8e688c22b971cbc02/google_meet_api-0.0.5-py3-none-any.whl
+[2023-06-03 16:41:08] INFO root fetch - processPackages [google-meet-api]: Downloading https://files.pythonhosted.org/packages/12/3c/37bf7903fc1be83ea47dfa3ed2a468a283044df810e8e688c22b971cbc02/google_meet_api-0.0.5-py3-none-any.whl
+[2023-06-03 16:41:08] INFO root fetch - processPackages [kube-tests]: Downloading https://files.pythonhosted.org/packages/e6/b7/be89bd033e5d73e920b970369e28179d6df848d5146fa5b4a98044f950d6/kube-tests-0.0.6.tar.gz
+[2023-06-03 16:41:08] INFO root fetch - processPackages [google-meet-api]: executing diffoscope
+[2023-06-03 16:41:08] INFO root fetch - processPackages [google-meet-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/google_meet_api-0.0.4-py3-none-any.whl.zip tmp/google_meet_api-0.0.5-py3-none-any.whl.zip --markdown 20230603/g/google-meet-api/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-06-03 16:41:08] INFO root fetch - processPackages [google-meet-api]: executing diffoscope
+[2023-06-03 16:41:08] INFO root fetch - processPackages [google-meet-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/google_meet_api-0.0.4-py3-none-any.whl.zip tmp/google_meet_api-0.0.5-py3-none-any.whl.zip --markdown 20230603/g/google-meet-api/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-06-03 16:41:08] INFO root fetch - processPackages [kube-tests]: executing diffoscope
+[2023-06-03 16:41:08] INFO root fetch - processPackages [Xponge]: executing diffoscope
+[2023-06-03 16:41:08] INFO root fetch - processPackages [kube-tests]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kube-tests-0.0.5.tar.gz tmp/kube-tests-0.0.6.tar.gz --markdown 20230603/k/kube-tests/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-06-03 16:41:08] INFO root fetch - processPackages [Xponge]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Xponge-1.3b6.tar.gz tmp/Xponge-1.3b7.tar.gz --markdown 20230603/X/Xponge/1.3b6-1.3b7/diff.md --exclude *.pyd
+[2023-06-03 16:41:08] INFO root fetch - processPackages [streams-py]: Downloading https://files.pythonhosted.org/packages/d5/d9/f88de3a72999870fc8c29b618553ce297de03ae950c3913fedccce2c2456/streams_py-0.2.tar.gz
+[2023-06-03 16:41:08] INFO root fetch - processPackages [django-bootstrap5]: Downloading https://files.pythonhosted.org/packages/9c/e9/eeef97a8886b3c74317fe62c2872fc58bfbe0afcce31d3244f81119f6843/django_bootstrap5-23.3.tar.gz
+[2023-06-03 16:41:08] INFO root fetch - processPackages [streams-py]: executing diffoscope
+[2023-06-03 16:41:08] INFO root fetch - processPackages [streams-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/streams.py-0.1.3.tar.gz tmp/streams_py-0.2.tar.gz --markdown 20230603/s/streams-py/0.1.3-0.2/diff.md --exclude *.pyd
+[2023-06-03 16:41:08] INFO root fetch - processPackages [django-bootstrap5]: executing diffoscope
+[2023-06-03 16:41:08] INFO root fetch - processPackages [django-bootstrap5]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-bootstrap5-23.2.dev0.tar.gz tmp/django_bootstrap5-23.3.tar.gz --markdown 20230603/d/django-bootstrap5/23.2.dev0-23.3/diff.md --exclude *.pyd
+[2023-06-03 16:41:09] INFO root fetch - main [MainThread]: End processing [archs4py]: success
+[2023-06-03 16:41:09] INFO root fetch - main [MainThread]: End processing [google-meet-api]: success
+[2023-06-03 16:41:09] INFO root fetch - main [MainThread]: End processing [google-meet-api]: success
+[2023-06-03 16:41:10] INFO root fetch - main [MainThread]: End processing [kube-tests]: success
+[2023-06-03 16:41:10] INFO root fetch - main [MainThread]: End processing [streams-py]: success
+[2023-06-03 16:41:10] INFO root fetch - processPackages [fastapi]: Downloading https://files.pythonhosted.org/packages/18/59/bc4b64f5bbb0b36497f8fe52794c4441bea06258b710c36cc597c04abaa3/fastapi-0.96.0.tar.gz
+[2023-06-03 16:41:10] INFO root fetch - processPackages [fastapi]: executing diffoscope
+[2023-06-03 16:41:10] INFO root fetch - processPackages [fastapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fastapi-0.95.2.tar.gz tmp/fastapi-0.96.0.tar.gz --markdown 20230603/f/fastapi/0.95.2-0.96.0/diff.md --exclude *.pyd
+[2023-06-03 16:41:10] INFO root fetch - main [MainThread]: End processing [django-bootstrap5]: success
+[2023-06-03 16:41:10] INFO root fetch - main [MainThread]: End processing [Xponge]: success
+[2023-06-03 16:41:42] INFO root fetch - main [MainThread]: End processing [fastapi]: success
+[2023-06-03 16:41:42] INFO root fetch - main [MainThread]: Store serial: [18359873]
