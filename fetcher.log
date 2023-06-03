@@ -7256,3 +7256,28 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-06-03 11:34:53] INFO root fetch - main [MainThread]: End processing [dfusion]: success
 [2023-06-03 11:34:53] INFO root fetch - main [MainThread]: End processing [dfusion]: success
 [2023-06-03 11:34:53] INFO root fetch - main [MainThread]: Store serial: [18358247]
+[2023-06-03 11:39:58] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18358247]
+[2023-06-03 11:40:03] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-06-03 11:40:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: FileKit
+[2023-06-03 11:40:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ynca
+[2023-06-03 11:40:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: odoo-addon-account-reconciliation-widget
+[2023-06-03 11:40:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: gensp
+[2023-06-03 11:40:03] INFO root fetch - processPackages [ynca]: New version: [5.7.0] Old Version: [5.6.0]
+[2023-06-03 11:40:03] INFO root fetch - processPackages [FileKit]: New version: [1.0.7] Old Version: [1.0.6]
+[2023-06-03 11:40:03] WARNING root fetch - processPackages [gensp]: Skipping, unable to determine old version
+[2023-06-03 11:40:03] INFO root fetch - main [MainThread]: End processing [gensp] error
+[2023-06-03 11:40:03] INFO root fetch - processPackages [odoo-addon-account-reconciliation-widget]: New version: [15.0.1.2.7] Old Version: [15.0.1.2.6]
+[2023-06-03 11:40:03] INFO root fetch - processPackages [FileKit]: Downloading https://files.pythonhosted.org/packages/de/b8/65876a2df9fdf5f1604dbeb9182b24f9b48fc2dc08b7619f04233af0cd5c/FileKit-1.0.7.tar.gz
+[2023-06-03 11:40:03] INFO root fetch - processPackages [ynca]: Downloading https://files.pythonhosted.org/packages/fe/43/793becbf21dc45b517f9d1f7d2dbb4f5855da748ad053cd0dd96de5ac18d/ynca-5.6.0.tar.gz
+[2023-06-03 11:40:03] INFO root fetch - processPackages [FileKit]: executing diffoscope
+[2023-06-03 11:40:03] INFO root fetch - processPackages [FileKit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/FileKit-1.0.6.tar.gz tmp/FileKit-1.0.7.tar.gz --markdown 20230603/F/FileKit/1.0.6-1.0.7/diff.md --exclude *.pyd
+[2023-06-03 11:40:03] INFO root fetch - processPackages [odoo-addon-account-reconciliation-widget]: Downloading https://files.pythonhosted.org/packages/44/75/1552a0f9db1f24f442e763b9590e74d543296f889a257dbb93f7592dbdc8/odoo_addon_account_reconciliation_widget-15.0.1.2.7-py3-none-any.whl
+[2023-06-03 11:40:03] INFO root fetch - processPackages [ynca]: Downloading https://files.pythonhosted.org/packages/05/c1/465def8c2d01c21cd712d529b0ed2cc2664e7ae0934516433b8b3ae6cab2/ynca-5.7.0.tar.gz
+[2023-06-03 11:40:04] INFO root fetch - processPackages [ynca]: executing diffoscope
+[2023-06-03 11:40:04] INFO root fetch - processPackages [ynca]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ynca-5.6.0.tar.gz tmp/ynca-5.7.0.tar.gz --markdown 20230603/y/ynca/5.6.0-5.7.0/diff.md --exclude *.pyd
+[2023-06-03 11:40:04] INFO root fetch - processPackages [odoo-addon-account-reconciliation-widget]: executing diffoscope
+[2023-06-03 11:40:04] INFO root fetch - processPackages [odoo-addon-account-reconciliation-widget]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_account_reconciliation_widget-15.0.1.2.6-py3-none-any.whl.zip tmp/odoo_addon_account_reconciliation_widget-15.0.1.2.7-py3-none-any.whl.zip --markdown 20230603/o/odoo-addon-account-reconciliation-widget/15.0.1.2.6-15.0.1.2.7/diff.md --exclude *.pyd
+[2023-06-03 11:40:04] INFO root fetch - main [MainThread]: End processing [FileKit]: success
+[2023-06-03 11:40:05] INFO root fetch - main [MainThread]: End processing [ynca]: success
+[2023-06-03 11:40:05] INFO root fetch - main [MainThread]: End processing [odoo-addon-account-reconciliation-widget]: success
+[2023-06-03 11:40:05] INFO root fetch - main [MainThread]: Store serial: [18358258]
