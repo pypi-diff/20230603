@@ -10590,3 +10590,74 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-06-03 18:42:41] INFO root fetch - main [MainThread]: End processing [iamlistening]: success
 [2023-06-03 18:42:41] INFO root fetch - main [MainThread]: End processing [telegramweb]: success
 [2023-06-03 18:42:41] INFO root fetch - main [MainThread]: Store serial: [18360526]
+[2023-06-03 18:47:45] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18360526]
+[2023-06-03 18:47:50] INFO root fetch - main [MainThread]: Found 12 changed packages
+[2023-06-03 18:47:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: numpy-req
+[2023-06-03 18:47:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: granny-pliers
+[2023-06-03 18:47:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: chromadb-semantic
+[2023-06-03 18:47:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: self-driving-lab-demo
+[2023-06-03 18:47:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: custom-numbers
+[2023-06-03 18:47:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: bare-estate
+[2023-06-03 18:47:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: firegs
+[2023-06-03 18:47:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: configparsersimplifier
+[2023-06-03 18:47:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: ciqar
+[2023-06-03 18:47:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: chromadb-semantic
+[2023-06-03 18:47:50] WARNING root fetch - processPackages [numpy-req]: Skipping, unable to determine old version
+[2023-06-03 18:47:50] INFO root fetch - processPackages [numpy-req]: Start processing: TPDNE-utils
+[2023-06-03 18:47:50] INFO root fetch - main [MainThread]: End processing [numpy-req] error
+[2023-06-03 18:47:50] INFO root fetch - processPackages [chromadb-semantic]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-06-03 18:47:50] WARNING root fetch - processPackages [granny-pliers]: Skipping, unable to determine old version
+[2023-06-03 18:47:50] INFO root fetch - processPackages [granny-pliers]: Start processing: bilireq
+[2023-06-03 18:47:50] INFO root fetch - main [MainThread]: End processing [granny-pliers] error
+[2023-06-03 18:47:50] INFO root fetch - processPackages [firegs]: New version: [0.5] Old Version: [0.4]
+[2023-06-03 18:47:50] INFO root fetch - processPackages [TPDNE-utils]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-06-03 18:47:50] INFO root fetch - processPackages [chromadb-semantic]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-06-03 18:47:50] WARNING root fetch - processPackages [configparsersimplifier]: Skipping, unable to determine old version
+[2023-06-03 18:47:50] INFO root fetch - processPackages [bare-estate]: New version: [0.3] Old Version: [0.2]
+[2023-06-03 18:47:50] INFO root fetch - main [MainThread]: End processing [configparsersimplifier] error
+[2023-06-03 18:47:50] INFO root fetch - processPackages [self-driving-lab-demo]: New version: [0.8.2] Old Version: [0.8.1]
+[2023-06-03 18:47:50] INFO root fetch - processPackages [ciqar]: New version: [0.2.0] Old Version: [0.1.0]
+[2023-06-03 18:47:50] INFO root fetch - processPackages [custom-numbers]: New version: [1.1.1] Old Version: [1.1.0]
+[2023-06-03 18:47:50] INFO root fetch - processPackages [bilireq]: New version: [0.2.5] Old Version: [0.2.4]
+[2023-06-03 18:47:50] INFO root fetch - processPackages [TPDNE-utils]: executing diffoscope
+[2023-06-03 18:47:50] INFO root fetch - processPackages [TPDNE-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/TPDNE-utils-0.0.4.tar.gz tmp/TPDNE-utils-0.0.5.tar.gz --markdown 20230603/T/TPDNE-utils/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-06-03 18:47:50] INFO root fetch - processPackages [bare-estate]: Downloading https://files.pythonhosted.org/packages/73/27/fe049f1afd95c6778dec4c6935a57fe3b5f36c87019e82d4c77c730748d2/bare_estate-0.2.tar.gz
+[2023-06-03 18:47:50] INFO root fetch - processPackages [chromadb-semantic]: Downloading https://files.pythonhosted.org/packages/99/a8/d46d94b330a06a549a8f7c5d7eea52b267b03a389cea0be01bac68f0c4b7/chromadb-semantic-1.0.0.tar.gz
+[2023-06-03 18:47:50] INFO root fetch - processPackages [chromadb-semantic]: Downloading https://files.pythonhosted.org/packages/99/a8/d46d94b330a06a549a8f7c5d7eea52b267b03a389cea0be01bac68f0c4b7/chromadb-semantic-1.0.0.tar.gz
+[2023-06-03 18:47:50] INFO root fetch - processPackages [firegs]: Downloading https://files.pythonhosted.org/packages/13/70/b64095fed2a7889112a6b341a4eb5c11e2d7e1dbf3155cbc76f8893a1629/firegs-0.5.tar.gz
+[2023-06-03 18:47:50] INFO root fetch - processPackages [self-driving-lab-demo]: Downloading https://files.pythonhosted.org/packages/af/42/3312b665890c6f0dba369b406db0dd3fbcad51487d0cac05b381c8c7af8a/self_driving_lab_demo-0.8.1-py3-none-any.whl
+[2023-06-03 18:47:50] INFO root fetch - processPackages [ciqar]: Downloading https://files.pythonhosted.org/packages/c9/32/0abd33dbf3e7008849c0f8f3b566cb8e975b28032817ba7057d16205b24d/ciqar-0.1.0.tar.gz
+[2023-06-03 18:47:50] INFO root fetch - processPackages [custom-numbers]: Downloading https://files.pythonhosted.org/packages/77/21/0c1e62782dcf90f81e69cb0f4ca86ae167e9bcab231dc249690c48ab1c32/custom_numbers-1.1.1.tar.gz
+[2023-06-03 18:47:50] INFO root fetch - processPackages [bilireq]: Downloading https://files.pythonhosted.org/packages/bb/1f/39c400c31ed32e2da8a9f0dfd9ecd3f0ff57e9f328d1dcfd91828c0e6882/bilireq-0.2.4.tar.gz
+[2023-06-03 18:47:50] INFO root fetch - processPackages [firegs]: executing diffoscope
+[2023-06-03 18:47:50] INFO root fetch - processPackages [firegs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/firegs-0.4.tar.gz tmp/firegs-0.5.tar.gz --markdown 20230603/f/firegs/0.4-0.5/diff.md --exclude *.pyd
+[2023-06-03 18:47:50] INFO root fetch - processPackages [custom-numbers]: executing diffoscope
+[2023-06-03 18:47:50] INFO root fetch - processPackages [custom-numbers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/custom_numbers-1.1.0.tar.gz tmp/custom_numbers-1.1.1.tar.gz --markdown 20230603/c/custom-numbers/1.1.0-1.1.1/diff.md --exclude *.pyd
+[2023-06-03 18:47:50] INFO root fetch - processPackages [bare-estate]: Downloading https://files.pythonhosted.org/packages/31/fa/44f1341c32431d5bce827c406b79d2470d511b78c6ed18cc2d52374ee699/bare_estate-0.3.tar.gz
+[2023-06-03 18:47:50] INFO root fetch - processPackages [chromadb-semantic]: Downloading https://files.pythonhosted.org/packages/c8/38/e0324f3e4f17de602495e993f8fabd1c6fa6c8baf77f45eaf2857602308c/chromadb-semantic-1.0.1.tar.gz
+[2023-06-03 18:47:50] INFO root fetch - processPackages [chromadb-semantic]: Downloading https://files.pythonhosted.org/packages/c8/38/e0324f3e4f17de602495e993f8fabd1c6fa6c8baf77f45eaf2857602308c/chromadb-semantic-1.0.1.tar.gz
+[2023-06-03 18:47:50] INFO root fetch - processPackages [ciqar]: Downloading https://files.pythonhosted.org/packages/5d/18/e464d56fafbcbdefce11dcb046dcd3cf5c70a29c92de80da4ec5125d267a/ciqar-0.2.0.tar.gz
+[2023-06-03 18:47:50] INFO root fetch - processPackages [chromadb-semantic]: executing diffoscope
+[2023-06-03 18:47:50] INFO root fetch - processPackages [chromadb-semantic]: executing diffoscope
+[2023-06-03 18:47:50] INFO root fetch - processPackages [bare-estate]: executing diffoscope
+[2023-06-03 18:47:50] INFO root fetch - processPackages [chromadb-semantic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chromadb-semantic-1.0.0.tar.gz tmp/chromadb-semantic-1.0.1.tar.gz --markdown 20230603/c/chromadb-semantic/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-06-03 18:47:50] INFO root fetch - processPackages [chromadb-semantic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chromadb-semantic-1.0.0.tar.gz tmp/chromadb-semantic-1.0.1.tar.gz --markdown 20230603/c/chromadb-semantic/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-06-03 18:47:50] INFO root fetch - processPackages [bare-estate]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bare_estate-0.2.tar.gz tmp/bare_estate-0.3.tar.gz --markdown 20230603/b/bare-estate/0.2-0.3/diff.md --exclude *.pyd
+[2023-06-03 18:47:50] INFO root fetch - processPackages [ciqar]: executing diffoscope
+[2023-06-03 18:47:50] INFO root fetch - processPackages [ciqar]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ciqar-0.1.0.tar.gz tmp/ciqar-0.2.0.tar.gz --markdown 20230603/c/ciqar/0.1.0-0.2.0/diff.md --exclude *.pyd
+[2023-06-03 18:47:50] INFO root fetch - processPackages [bilireq]: Downloading https://files.pythonhosted.org/packages/49/dd/26bc44ababaa4912d6272d3b5a15d5eab4c52868ec59753a478599fa64bc/bilireq-0.2.5.tar.gz
+[2023-06-03 18:47:50] INFO root fetch - processPackages [self-driving-lab-demo]: Downloading https://files.pythonhosted.org/packages/30/e4/a2d2f743fbdffe2fe3af9e1f252b0ac43b8f314dde4c2346ce847de0df99/self_driving_lab_demo-0.8.2-py3-none-any.whl
+[2023-06-03 18:47:50] INFO root fetch - processPackages [bilireq]: executing diffoscope
+[2023-06-03 18:47:50] INFO root fetch - processPackages [bilireq]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bilireq-0.2.4.tar.gz tmp/bilireq-0.2.5.tar.gz --markdown 20230603/b/bilireq/0.2.4-0.2.5/diff.md --exclude *.pyd
+[2023-06-03 18:47:50] INFO root fetch - processPackages [self-driving-lab-demo]: executing diffoscope
+[2023-06-03 18:47:50] INFO root fetch - processPackages [self-driving-lab-demo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/self_driving_lab_demo-0.8.1-py3-none-any.whl.zip tmp/self_driving_lab_demo-0.8.2-py3-none-any.whl.zip --markdown 20230603/s/self-driving-lab-demo/0.8.1-0.8.2/diff.md --exclude *.pyd
+[2023-06-03 18:47:51] INFO root fetch - main [MainThread]: End processing [TPDNE-utils]: success
+[2023-06-03 18:47:51] INFO root fetch - main [MainThread]: End processing [firegs]: success
+[2023-06-03 18:47:51] INFO root fetch - main [MainThread]: End processing [custom-numbers]: success
+[2023-06-03 18:47:52] INFO root fetch - main [MainThread]: End processing [chromadb-semantic]: success
+[2023-06-03 18:47:52] INFO root fetch - main [MainThread]: End processing [bare-estate]: success
+[2023-06-03 18:47:52] INFO root fetch - main [MainThread]: End processing [chromadb-semantic]: success
+[2023-06-03 18:47:52] INFO root fetch - main [MainThread]: End processing [ciqar]: success
+[2023-06-03 18:47:53] INFO root fetch - main [MainThread]: End processing [self-driving-lab-demo]: success
+[2023-06-03 18:47:54] INFO root fetch - main [MainThread]: End processing [bilireq]: success
+[2023-06-03 18:47:54] INFO root fetch - main [MainThread]: Store serial: [18360566]
