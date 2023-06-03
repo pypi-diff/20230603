@@ -10815,3 +10815,34 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-06-03 19:08:47] INFO root fetch - main [MainThread]: End processing [hatch-build-scripts]: success
 [2023-06-03 19:08:47] INFO root fetch - main [MainThread]: End processing [luminesce-sdk-preview]: success
 [2023-06-03 19:08:47] INFO root fetch - main [MainThread]: Store serial: [18360645]
+[2023-06-03 19:13:51] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18360645]
+[2023-06-03 19:13:56] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-06-03 19:13:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: screen-config-watcher
+[2023-06-03 19:13:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: hydrogibs
+[2023-06-03 19:13:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: torch-adapters
+[2023-06-03 19:13:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: atproto
+[2023-06-03 19:13:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: apinum
+[2023-06-03 19:13:56] INFO root fetch - processPackages [screen-config-watcher]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-06-03 19:13:56] INFO root fetch - processPackages [atproto]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-06-03 19:13:56] INFO root fetch - processPackages [hydrogibs]: New version: [0.3.8] Old Version: [0.3.7]
+[2023-06-03 19:13:56] INFO root fetch - processPackages [torch-adapters]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-06-03 19:13:56] WARNING root fetch - processPackages [apinum]: Skipping, unable to determine old version
+[2023-06-03 19:13:56] INFO root fetch - main [MainThread]: End processing [apinum] error
+[2023-06-03 19:13:56] INFO root fetch - processPackages [screen-config-watcher]: Downloading https://files.pythonhosted.org/packages/92/72/91160713a4ffcc8d5b4670c54cb808fd605d8426caff6cd80c8d04d72797/screen-config-watcher-0.0.2.tar.gz
+[2023-06-03 19:13:56] INFO root fetch - processPackages [hydrogibs]: Downloading https://files.pythonhosted.org/packages/f6/f7/3d9fbbc6f8bbdc9d6e53f863fa968aa6e1932bbc728945a136c664c252fb/hydrogibs-0.3.7.tar.gz
+[2023-06-03 19:13:56] INFO root fetch - processPackages [torch-adapters]: Downloading https://files.pythonhosted.org/packages/68/9f/b1c69a66dad9bb2655a0329a124a387a0ce005bca693768bcb96a8712368/torch_adapters-0.0.5.tar.gz
+[2023-06-03 19:13:56] INFO root fetch - processPackages [atproto]: executing diffoscope
+[2023-06-03 19:13:56] INFO root fetch - processPackages [atproto]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/atproto-0.0.8.tar.gz tmp/atproto-0.0.9.tar.gz --markdown 20230603/a/atproto/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-06-03 19:13:56] INFO root fetch - processPackages [screen-config-watcher]: Downloading https://files.pythonhosted.org/packages/9f/37/a0497712cacade23684bd5cce782c66b0341325b6fa90a015e96e10b0bd8/screen-config-watcher-0.0.3.tar.gz
+[2023-06-03 19:13:57] INFO root fetch - processPackages [hydrogibs]: Downloading https://files.pythonhosted.org/packages/29/51/6cbec0aa0d760b4c23bfaad5fedc78f9dc015118f18df62408a27cbc41d0/hydrogibs-0.3.8.tar.gz
+[2023-06-03 19:13:57] INFO root fetch - processPackages [torch-adapters]: executing diffoscope
+[2023-06-03 19:13:57] INFO root fetch - processPackages [torch-adapters]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torch_adapters-0.0.4.tar.gz tmp/torch_adapters-0.0.5.tar.gz --markdown 20230603/t/torch-adapters/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-06-03 19:13:57] INFO root fetch - processPackages [screen-config-watcher]: executing diffoscope
+[2023-06-03 19:13:57] INFO root fetch - processPackages [screen-config-watcher]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/screen-config-watcher-0.0.2.tar.gz tmp/screen-config-watcher-0.0.3.tar.gz --markdown 20230603/s/screen-config-watcher/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-06-03 19:13:57] INFO root fetch - processPackages [hydrogibs]: executing diffoscope
+[2023-06-03 19:13:57] INFO root fetch - processPackages [hydrogibs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hydrogibs-0.3.7.tar.gz tmp/hydrogibs-0.3.8.tar.gz --markdown 20230603/h/hydrogibs/0.3.7-0.3.8/diff.md --exclude *.pyd
+[2023-06-03 19:13:58] INFO root fetch - main [MainThread]: End processing [hydrogibs]: success
+[2023-06-03 19:13:58] INFO root fetch - main [MainThread]: End processing [screen-config-watcher]: success
+[2023-06-03 19:13:58] INFO root fetch - main [MainThread]: End processing [torch-adapters]: success
+[2023-06-03 19:13:58] INFO root fetch - main [MainThread]: End processing [atproto]: success
+[2023-06-03 19:13:58] INFO root fetch - main [MainThread]: Store serial: [18360662]
