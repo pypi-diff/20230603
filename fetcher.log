@@ -12316,3 +12316,61 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-06-03 21:13:18] INFO root fetch - processPackages [iql]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/iql-1.5-py3-none-any.whl.zip tmp/iql-1.6.1rc5-py3-none-any.whl.zip --markdown 20230603/i/iql/1.5-1.6.1rc5/diff.md --exclude *.pyd
 [2023-06-03 21:13:20] INFO root fetch - main [MainThread]: End processing [iql]: success
 [2023-06-03 21:13:20] INFO root fetch - main [MainThread]: Store serial: [18361510]
+[2023-06-03 21:18:24] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18361510]
+[2023-06-03 21:18:29] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-06-03 21:18:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: nemo-library
+[2023-06-03 21:18:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: helpsk
+[2023-06-03 21:18:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: nemo-library
+[2023-06-03 21:18:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: vscode-task-runner
+[2023-06-03 21:18:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: funtoo-metatools
+[2023-06-03 21:18:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: deklinacija
+[2023-06-03 21:18:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: pypose
+[2023-06-03 21:18:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: fish-databricks-jobs
+[2023-06-03 21:18:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: autosrt
+[2023-06-03 21:18:29] INFO root fetch - processPackages [nemo-library]: New version: [1.0.5] Old Version: [1.0.4]
+[2023-06-03 21:18:29] INFO root fetch - processPackages [helpsk]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-06-03 21:18:29] INFO root fetch - processPackages [nemo-library]: New version: [1.0.5] Old Version: [1.0.4]
+[2023-06-03 21:18:29] INFO root fetch - processPackages [vscode-task-runner]: New version: [0.1.6] Old Version: [0.1.5]
+[2023-06-03 21:18:29] INFO root fetch - processPackages [funtoo-metatools]: New version: [1.3.1] Old Version: [1.3.0]
+[2023-06-03 21:18:29] INFO root fetch - processPackages [pypose]: New version: [0.4.4] Old Version: [0.4.3]
+[2023-06-03 21:18:29] INFO root fetch - processPackages [deklinacija]: New version: [1.0.5] Old Version: [1.0.4]
+[2023-06-03 21:18:29] INFO root fetch - processPackages [autosrt]: New version: [1.2.9] Old Version: [1.2.8]
+[2023-06-03 21:18:29] INFO root fetch - processPackages [fish-databricks-jobs]: New version: [0.7.9] Old Version: [0.7.8]
+[2023-06-03 21:18:29] INFO root fetch - processPackages [vscode-task-runner]: executing diffoscope
+[2023-06-03 21:18:29] INFO root fetch - processPackages [vscode-task-runner]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vscode_task_runner-0.1.5.tar.gz tmp/vscode_task_runner-0.1.6.tar.gz --markdown 20230603/v/vscode-task-runner/0.1.5-0.1.6/diff.md --exclude *.pyd
+[2023-06-03 21:18:29] INFO root fetch - processPackages [nemo-library]: Downloading https://files.pythonhosted.org/packages/0d/2e/ff51c1d2b6d4140319017c7273ff46342ec9d029f4274272f3a1a9640ae0/nemo_library-1.0.4.tar.gz
+[2023-06-03 21:18:29] INFO root fetch - processPackages [nemo-library]: Downloading https://files.pythonhosted.org/packages/0d/2e/ff51c1d2b6d4140319017c7273ff46342ec9d029f4274272f3a1a9640ae0/nemo_library-1.0.4.tar.gz
+[2023-06-03 21:18:29] INFO root fetch - processPackages [pypose]: Downloading https://files.pythonhosted.org/packages/4b/1f/6f0e457b8d730a05b1a8c8244ad60c3eb21e7e29f5288a3270011aca1798/pypose-0.4.3.tar.gz
+[2023-06-03 21:18:29] INFO root fetch - processPackages [helpsk]: Downloading https://files.pythonhosted.org/packages/7e/e5/574148f15b10a773950f9b2fd101be96e9157a5986c7b9b2240d8dcb4747/helpsk-0.1.8.tar.gz
+[2023-06-03 21:18:29] INFO root fetch - processPackages [autosrt]: executing diffoscope
+[2023-06-03 21:18:29] INFO root fetch - processPackages [autosrt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/autosrt-1.2.8.tar.gz tmp/autosrt-1.2.9.tar.gz --markdown 20230603/a/autosrt/1.2.8-1.2.9/diff.md --exclude *.pyd
+[2023-06-03 21:18:29] INFO root fetch - processPackages [deklinacija]: Downloading https://files.pythonhosted.org/packages/47/df/2455ab94b3d5ba7212f19af02d1032411f07e4edc61d28319eca4d0e8a5f/deklinacija-1.0.5.tar.gz
+[2023-06-03 21:18:29] INFO root fetch - processPackages [fish-databricks-jobs]: executing diffoscope
+[2023-06-03 21:18:29] INFO root fetch - processPackages [fish-databricks-jobs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fish_databricks_jobs-0.7.8.tar.gz tmp/fish_databricks_jobs-0.7.9.tar.gz --markdown 20230603/f/fish-databricks-jobs/0.7.8-0.7.9/diff.md --exclude *.pyd
+[2023-06-03 21:18:29] INFO root fetch - processPackages [funtoo-metatools]: Downloading https://files.pythonhosted.org/packages/5d/e3/03bb02b1faf6c0e901278c659436be20cd0de01e0672d1a7a58e04a94573/funtoo-metatools-1.3.1.tar.gz
+[2023-06-03 21:18:29] INFO root fetch - processPackages [nemo-library]: Downloading https://files.pythonhosted.org/packages/0f/9c/266028ab235e26c8bc703bffcf2901001f70162fc8ab91d02ed2dd2b5bd5/nemo_library-1.0.5.tar.gz
+[2023-06-03 21:18:29] INFO root fetch - processPackages [nemo-library]: Downloading https://files.pythonhosted.org/packages/0f/9c/266028ab235e26c8bc703bffcf2901001f70162fc8ab91d02ed2dd2b5bd5/nemo_library-1.0.5.tar.gz
+[2023-06-03 21:18:29] INFO root fetch - processPackages [deklinacija]: executing diffoscope
+[2023-06-03 21:18:29] INFO root fetch - processPackages [deklinacija]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/deklinacija-1.0.4.tar.gz tmp/deklinacija-1.0.5.tar.gz --markdown 20230603/d/deklinacija/1.0.4-1.0.5/diff.md --exclude *.pyd
+[2023-06-03 21:18:29] INFO root fetch - processPackages [helpsk]: Downloading https://files.pythonhosted.org/packages/7a/61/5ca41d3a2e951061b9a84780ccf07d6f933fad91cd7264b30495bc0517be/helpsk-0.1.9.tar.gz
+[2023-06-03 21:18:29] INFO root fetch - processPackages [pypose]: Downloading https://files.pythonhosted.org/packages/1a/51/a40611832c185cec76ecb244572140eeb3eeac4c146faa3eea888a70dca4/pypose-0.4.4.tar.gz
+[2023-06-03 21:18:29] INFO root fetch - processPackages [funtoo-metatools]: executing diffoscope
+[2023-06-03 21:18:29] INFO root fetch - processPackages [funtoo-metatools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/funtoo-metatools-1.3.0.tar.gz tmp/funtoo-metatools-1.3.1.tar.gz --markdown 20230603/f/funtoo-metatools/1.3.0-1.3.1/diff.md --exclude *.pyd
+[2023-06-03 21:18:29] INFO root fetch - processPackages [helpsk]: executing diffoscope
+[2023-06-03 21:18:29] INFO root fetch - processPackages [helpsk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/helpsk-0.1.8.tar.gz tmp/helpsk-0.1.9.tar.gz --markdown 20230603/h/helpsk/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-06-03 21:18:29] INFO root fetch - processPackages [pypose]: executing diffoscope
+[2023-06-03 21:18:29] INFO root fetch - processPackages [pypose]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pypose-0.4.3.tar.gz tmp/pypose-0.4.4.tar.gz --markdown 20230603/p/pypose/0.4.3-0.4.4/diff.md --exclude *.pyd
+[2023-06-03 21:18:29] INFO root fetch - processPackages [nemo-library]: executing diffoscope
+[2023-06-03 21:18:30] INFO root fetch - processPackages [nemo-library]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nemo_library-1.0.4.tar.gz tmp/nemo_library-1.0.5.tar.gz --markdown 20230603/n/nemo-library/1.0.4-1.0.5/diff.md --exclude *.pyd
+[2023-06-03 21:18:30] INFO root fetch - processPackages [nemo-library]: executing diffoscope
+[2023-06-03 21:18:30] INFO root fetch - processPackages [nemo-library]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nemo_library-1.0.4.tar.gz tmp/nemo_library-1.0.5.tar.gz --markdown 20230603/n/nemo-library/1.0.4-1.0.5/diff.md --exclude *.pyd
+[2023-06-03 21:18:31] INFO root fetch - main [MainThread]: End processing [fish-databricks-jobs]: success
+[2023-06-03 21:18:31] INFO root fetch - main [MainThread]: End processing [vscode-task-runner]: success
+[2023-06-03 21:18:31] INFO root fetch - main [MainThread]: End processing [deklinacija]: success
+[2023-06-03 21:18:31] INFO root fetch - main [MainThread]: End processing [autosrt]: success
+[2023-06-03 21:18:31] INFO root fetch - main [MainThread]: End processing [nemo-library]: success
+[2023-06-03 21:18:31] INFO root fetch - main [MainThread]: End processing [nemo-library]: success
+[2023-06-03 21:18:32] INFO root fetch - main [MainThread]: End processing [helpsk]: success
+[2023-06-03 21:18:33] INFO root fetch - main [MainThread]: End processing [pypose]: success
+[2023-06-03 21:18:33] INFO root fetch - main [MainThread]: End processing [funtoo-metatools]: success
+[2023-06-03 21:18:33] INFO root fetch - main [MainThread]: Store serial: [18361536]
