@@ -6685,3 +6685,41 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-06-03 10:24:24] INFO root fetch - main [MainThread]: End processing [bclib]: success
 [2023-06-03 10:25:17] INFO root fetch - main [MainThread]: End processing [replicPy]: success
 [2023-06-03 10:25:17] INFO root fetch - main [MainThread]: Store serial: [18357926]
+[2023-06-03 10:30:22] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18357926]
+[2023-06-03 10:30:26] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-06-03 10:30:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: findu
+[2023-06-03 10:30:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mamimo
+[2023-06-03 10:30:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: livereloadx
+[2023-06-03 10:30:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: hotpot-zzy
+[2023-06-03 10:30:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: ifastapi
+[2023-06-03 10:30:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: tinymovr
+[2023-06-03 10:30:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: tf-model-optimization-nightly
+[2023-06-03 10:30:27] WARNING root fetch - processPackages [findu]: Skipping, unable to determine old version
+[2023-06-03 10:30:27] INFO root fetch - main [MainThread]: End processing [findu] error
+[2023-06-03 10:30:27] INFO root fetch - processPackages [ifastapi]: New version: [0.0.3.9] Old Version: [0.0.3.8]
+[2023-06-03 10:30:27] INFO root fetch - processPackages [tinymovr]: New version: [1.5.0] Old Version: [1.4.0]
+[2023-06-03 10:30:27] INFO root fetch - processPackages [livereloadx]: New version: [2.6.9] Old Version: [2.6.8]
+[2023-06-03 10:30:27] WARNING root fetch - processPackages [hotpot-zzy]: Skipping, unable to determine old version
+[2023-06-03 10:30:27] INFO root fetch - processPackages [tf-model-optimization-nightly]: New version: [0.7.5.dev20230602] Old Version: [0.7.5.dev20230527]
+[2023-06-03 10:30:27] INFO root fetch - main [MainThread]: End processing [hotpot-zzy] error
+[2023-06-03 10:30:27] INFO root fetch - processPackages [mamimo]: New version: [0.4.3] Old Version: [0.4.2]
+[2023-06-03 10:30:27] INFO root fetch - processPackages [ifastapi]: executing diffoscope
+[2023-06-03 10:30:27] INFO root fetch - processPackages [ifastapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ifastapi-0.0.3.8-py3-none-any.whl.zip tmp/ifastapi-0.0.3.9-py3-none-any.whl.zip --markdown 20230603/i/ifastapi/0.0.3.8-0.0.3.9/diff.md --exclude *.pyd
+[2023-06-03 10:30:27] INFO root fetch - processPackages [tf-model-optimization-nightly]: executing diffoscope
+[2023-06-03 10:30:27] INFO root fetch - processPackages [tf-model-optimization-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tf_model_optimization_nightly-0.7.5.dev20230527-py2.py3-none-any.whl.zip tmp/tf_model_optimization_nightly-0.7.5.dev20230602-py2.py3-none-any.whl.zip --markdown 20230603/t/tf-model-optimization-nightly/0.7.5.dev20230527-0.7.5.dev20230602/diff.md --exclude *.pyd
+[2023-06-03 10:30:27] INFO root fetch - processPackages [livereloadx]: executing diffoscope
+[2023-06-03 10:30:27] INFO root fetch - processPackages [livereloadx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/livereloadx-2.6.8.tar.gz tmp/livereloadx-2.6.9.tar.gz --markdown 20230603/l/livereloadx/2.6.8-2.6.9/diff.md --exclude *.pyd
+[2023-06-03 10:30:27] INFO root fetch - processPackages [tinymovr]: Downloading https://files.pythonhosted.org/packages/c3/be/8f0590d7b6c6f0b79b2d72319bf80433fe9d6a9bb1c27be740d16662e93c/tinymovr-1.4.0.tar.gz
+[2023-06-03 10:30:27] INFO root fetch - processPackages [mamimo]: Downloading https://files.pythonhosted.org/packages/e9/ad/759b50615e3e1b062c76314451a04c30d52c5fbafa50ed1c3cedac9b0bc4/mamimo-0.4.2.tar.gz
+[2023-06-03 10:30:27] INFO root fetch - processPackages [tinymovr]: Downloading https://files.pythonhosted.org/packages/57/d2/779187e13d2bf2f45a5c0b00a1a45d0df8dbfeb82ba8371902cd27d6d10a/tinymovr-1.5.0.tar.gz
+[2023-06-03 10:30:27] INFO root fetch - processPackages [mamimo]: Downloading https://files.pythonhosted.org/packages/1d/79/35f4c2c6063c133572ed2595709cc5a7e7ca396a1a12d18ac89a9a77bbae/mamimo-0.4.3.tar.gz
+[2023-06-03 10:30:27] INFO root fetch - processPackages [tinymovr]: executing diffoscope
+[2023-06-03 10:30:27] INFO root fetch - processPackages [tinymovr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tinymovr-1.4.0.tar.gz tmp/tinymovr-1.5.0.tar.gz --markdown 20230603/t/tinymovr/1.4.0-1.5.0/diff.md --exclude *.pyd
+[2023-06-03 10:30:27] INFO root fetch - processPackages [mamimo]: executing diffoscope
+[2023-06-03 10:30:27] INFO root fetch - processPackages [mamimo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mamimo-0.4.2.tar.gz tmp/mamimo-0.4.3.tar.gz --markdown 20230603/m/mamimo/0.4.2-0.4.3/diff.md --exclude *.pyd
+[2023-06-03 10:30:28] INFO root fetch - main [MainThread]: End processing [ifastapi]: success
+[2023-06-03 10:30:28] INFO root fetch - main [MainThread]: End processing [livereloadx]: success
+[2023-06-03 10:30:28] INFO root fetch - main [MainThread]: End processing [tf-model-optimization-nightly]: success
+[2023-06-03 10:30:28] INFO root fetch - main [MainThread]: End processing [mamimo]: success
+[2023-06-03 10:30:29] INFO root fetch - main [MainThread]: End processing [tinymovr]: success
+[2023-06-03 10:30:29] INFO root fetch - main [MainThread]: Store serial: [18357949]
