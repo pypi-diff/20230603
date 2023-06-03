@@ -6822,3 +6822,62 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-06-03 10:46:02] INFO root fetch - main [MainThread]: End processing [spreadsheet-migrator]: success
 [2023-06-03 10:46:04] INFO root fetch - main [MainThread]: End processing [tff-nightly]: success
 [2023-06-03 10:46:04] INFO root fetch - main [MainThread]: Store serial: [18358021]
+[2023-06-03 10:51:08] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18358021]
+[2023-06-03 10:51:12] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-06-03 10:51:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: alesha
+[2023-06-03 10:51:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tf-nightly
+[2023-06-03 10:51:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: kot
+[2023-06-03 10:51:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: tfp-nightly
+[2023-06-03 10:51:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: gui-args-framework
+[2023-06-03 10:51:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: ifastapi
+[2023-06-03 10:51:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: django-selenium-clean
+[2023-06-03 10:51:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: tfliteiorewriter
+[2023-06-03 10:51:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: decli
+[2023-06-03 10:51:12] INFO root fetch - processPackages [alesha]: New version: [0.2.0] Old Version: [0.1.2]
+[2023-06-03 10:51:12] INFO root fetch - processPackages [django-selenium-clean]: New version: [0.3.4] Old Version: [0.3.3]
+[2023-06-03 10:51:12] INFO root fetch - processPackages [tfliteiorewriter]: New version: [1.0.0] Old Version: [0.0.2]
+[2023-06-03 10:51:12] INFO root fetch - processPackages [kot]: New version: [0.12.0] Old Version: [0.11.0]
+[2023-06-03 10:51:12] INFO root fetch - processPackages [ifastapi]: New version: [0.0.3.9] Old Version: [0.0.3.8]
+[2023-06-03 10:51:12] INFO root fetch - processPackages [gui-args-framework]: New version: [1.2.2] Old Version: [1.2.1]
+[2023-06-03 10:51:12] INFO root fetch - processPackages [decli]: New version: [0.6.1] Old Version: [0.6.0]
+[2023-06-03 10:51:13] INFO root fetch - processPackages [ifastapi]: executing diffoscope
+[2023-06-03 10:51:13] INFO root fetch - processPackages [ifastapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ifastapi-0.0.3.8-py3-none-any.whl.zip tmp/ifastapi-0.0.3.9-py3-none-any.whl.zip --markdown 20230603/i/ifastapi/0.0.3.8-0.0.3.9/diff.md --exclude *.pyd
+[2023-06-03 10:51:13] INFO root fetch - processPackages [tf-nightly]: New version: [2.14.0.dev20230603] Old Version: [2.14.0.dev20230602]
+[2023-06-03 10:51:13] INFO root fetch - processPackages [django-selenium-clean]: Downloading https://files.pythonhosted.org/packages/c0/2b/fbddd424b1f3ceb2c3157204a24e99f6b02cd9fc3063642da9969bf2ec25/django-selenium-clean-0.3.3.tar.gz
+[2023-06-03 10:51:13] INFO root fetch - processPackages [tfp-nightly]: New version: [0.9.0.dev20200114] Old Version: [0.9.0.dev20200113]
+[2023-06-03 10:51:13] INFO root fetch - processPackages [tfliteiorewriter]: Downloading https://files.pythonhosted.org/packages/85/cf/a23655123f3d567e45ab72bfa54fd7b4f6c70fdb3fb76d637ab564459dc1/tfliteiorewriter-0.0.2.tar.gz
+[2023-06-03 10:51:13] INFO root fetch - processPackages [kot]: Downloading https://files.pythonhosted.org/packages/c2/bb/8b0fd4ff1dffd18e4de689b340b29ad34138adadae4f6aced35370efa8cc/kot-0.11.0.tar.gz
+[2023-06-03 10:51:13] INFO root fetch - processPackages [gui-args-framework]: Downloading https://files.pythonhosted.org/packages/eb/c3/c9f0a3bc78f5ac3513d256c94d03fa418e851d943d37f3752cdb9d81412a/gui_args_framework-1.2.1.tar.gz
+[2023-06-03 10:51:13] INFO root fetch - processPackages [decli]: Downloading https://files.pythonhosted.org/packages/56/2f/3fc5689255b35918179fee6319fab19e68f8394bb570b963c6afad6265be/decli-0.6.0.tar.gz
+[2023-06-03 10:51:13] INFO root fetch - processPackages [alesha]: Downloading https://files.pythonhosted.org/packages/f2/98/61a8bc7f7301991438b5f6a133d9190a6a481da31c15d816892fddf67b51/alesha-0.2.0.tar.gz
+[2023-06-03 10:51:13] INFO root fetch - processPackages [tf-nightly]: Downloading https://files.pythonhosted.org/packages/ea/af/6ab16ffc6a5a0446e3ac847cc055130aa3a39c60b32cc1250b23f1950283/tf_nightly-2.14.0.dev20230602-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2023-06-03 10:51:13] INFO root fetch - processPackages [kot]: Downloading https://files.pythonhosted.org/packages/a4/0f/df88a4ff5f1530d9a516b1bee14e2dd91333fbe378e3b9870c8c52b3a98c/kot-0.12.0.tar.gz
+[2023-06-03 10:51:13] INFO root fetch - processPackages [gui-args-framework]: Downloading https://files.pythonhosted.org/packages/1f/e5/136bc43fa19b52bf305a20177ce27953a8ca86f7fc1a4e64e187dc58fb40/gui_args_framework-1.2.2.tar.gz
+[2023-06-03 10:51:13] INFO root fetch - processPackages [alesha]: executing diffoscope
+[2023-06-03 10:51:13] INFO root fetch - processPackages [alesha]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/alesha-0.1.2.tar.gz tmp/alesha-0.2.0.tar.gz --markdown 20230603/a/alesha/0.1.2-0.2.0/diff.md --exclude *.pyd
+[2023-06-03 10:51:13] WARNING root fetch - processPackages [tf-nightly]: Skipping package: exceeds size limit 488884422>=10485760
+[2023-06-03 10:51:13] INFO root fetch - main [MainThread]: End processing [tf-nightly] error
+[2023-06-03 10:51:13] INFO root fetch - processPackages [tfliteiorewriter]: Downloading https://files.pythonhosted.org/packages/06/19/7870b2cb190da73f83f09e3d83b9ba27d8bf6efeb181883223185568f2cc/tfliteiorewriter-1.0.0.tar.gz
+[2023-06-03 10:51:13] INFO root fetch - processPackages [django-selenium-clean]: Downloading https://files.pythonhosted.org/packages/e7/36/e354db00ed9847aea0a51820165238eb673a47ab38febb42222a44e7e1bd/django-selenium-clean-0.3.4.tar.gz
+[2023-06-03 10:51:13] INFO root fetch - processPackages [kot]: executing diffoscope
+[2023-06-03 10:51:13] INFO root fetch - processPackages [kot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kot-0.11.0.tar.gz tmp/kot-0.12.0.tar.gz --markdown 20230603/k/kot/0.11.0-0.12.0/diff.md --exclude *.pyd
+[2023-06-03 10:51:13] INFO root fetch - processPackages [gui-args-framework]: executing diffoscope
+[2023-06-03 10:51:13] INFO root fetch - processPackages [gui-args-framework]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gui_args_framework-1.2.1.tar.gz tmp/gui_args_framework-1.2.2.tar.gz --markdown 20230603/g/gui-args-framework/1.2.1-1.2.2/diff.md --exclude *.pyd
+[2023-06-03 10:51:13] INFO root fetch - processPackages [tfliteiorewriter]: executing diffoscope
+[2023-06-03 10:51:13] INFO root fetch - processPackages [tfliteiorewriter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tfliteiorewriter-0.0.2.tar.gz tmp/tfliteiorewriter-1.0.0.tar.gz --markdown 20230603/t/tfliteiorewriter/0.0.2-1.0.0/diff.md --exclude *.pyd
+[2023-06-03 10:51:13] INFO root fetch - processPackages [django-selenium-clean]: executing diffoscope
+[2023-06-03 10:51:13] INFO root fetch - processPackages [django-selenium-clean]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-selenium-clean-0.3.3.tar.gz tmp/django-selenium-clean-0.3.4.tar.gz --markdown 20230603/d/django-selenium-clean/0.3.3-0.3.4/diff.md --exclude *.pyd
+[2023-06-03 10:51:13] INFO root fetch - processPackages [decli]: Downloading https://files.pythonhosted.org/packages/2e/9c/b76485e6120795c8b632707bafb4a9a4a2b75584ca5277e3e175c5d02225/decli-0.6.1.tar.gz
+[2023-06-03 10:51:13] INFO root fetch - processPackages [tfp-nightly]: executing diffoscope
+[2023-06-03 10:51:13] INFO root fetch - processPackages [tfp-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tfp_nightly-0.9.0.dev20200113-py2.py3-none-any.whl.zip tmp/tfp_nightly-0.9.0.dev20200114-py2.py3-none-any.whl.zip --markdown 20230603/t/tfp-nightly/0.9.0.dev20200113-0.9.0.dev20200114/diff.md --exclude *.pyd
+[2023-06-03 10:51:13] INFO root fetch - processPackages [decli]: executing diffoscope
+[2023-06-03 10:51:13] INFO root fetch - processPackages [decli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/decli-0.6.0.tar.gz tmp/decli-0.6.1.tar.gz --markdown 20230603/d/decli/0.6.0-0.6.1/diff.md --exclude *.pyd
+[2023-06-03 10:51:14] INFO root fetch - main [MainThread]: End processing [ifastapi]: success
+[2023-06-03 10:51:14] INFO root fetch - main [MainThread]: End processing [alesha]: success
+[2023-06-03 10:51:14] INFO root fetch - main [MainThread]: End processing [gui-args-framework]: success
+[2023-06-03 10:51:14] INFO root fetch - main [MainThread]: End processing [kot]: success
+[2023-06-03 10:51:14] INFO root fetch - main [MainThread]: End processing [decli]: success
+[2023-06-03 10:51:14] INFO root fetch - main [MainThread]: End processing [django-selenium-clean]: success
+[2023-06-03 10:51:28] INFO root fetch - main [MainThread]: End processing [tfp-nightly]: success
+[2023-06-03 10:52:07] INFO root fetch - main [MainThread]: End processing [tfliteiorewriter]: success
+[2023-06-03 10:52:07] INFO root fetch - main [MainThread]: Store serial: [18358043]
