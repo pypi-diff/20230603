@@ -4850,3 +4850,45 @@
 [2023-06-03 06:04:26] INFO root fetch - main [MainThread]: End processing [lazyops]: success
 [2023-06-03 06:04:28] INFO root fetch - main [MainThread]: End processing [llama-hub]: success
 [2023-06-03 06:04:28] INFO root fetch - main [MainThread]: Store serial: [18356783]
+[2023-06-03 06:09:32] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18356783]
+[2023-06-03 06:09:36] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-06-03 06:09:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: naapc
+[2023-06-03 06:09:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: bashbot-package
+[2023-06-03 06:09:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: llama-index
+[2023-06-03 06:09:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: bashbot
+[2023-06-03 06:09:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: gpt-index
+[2023-06-03 06:09:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: OMADS
+[2023-06-03 06:09:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: metpx-sr3
+[2023-06-03 06:09:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: netora
+[2023-06-03 06:09:36] INFO root fetch - processPackages [llama-index]: New version: [0.6.9] Old Version: [0.6.8]
+[2023-06-03 06:09:36] INFO root fetch - processPackages [naapc]: New version: [1.7.1] Old Version: [1.7.0]
+[2023-06-03 06:09:36] INFO root fetch - processPackages [OMADS]: New version: [2.0.0] Old Version: [1.5.0]
+[2023-06-03 06:09:36] WARNING root fetch - processPackages [netora]: Skipping, unable to determine old version
+[2023-06-03 06:09:36] INFO root fetch - processPackages [metpx-sr3]: New version: [3.0.9] Old Version: [3.0.8]
+[2023-06-03 06:09:36] INFO root fetch - main [MainThread]: End processing [netora] error
+[2023-06-03 06:09:36] INFO root fetch - processPackages [gpt-index]: New version: [0.6.9] Old Version: [0.6.8]
+[2023-06-03 06:09:36] WARNING root fetch - processPackages [bashbot-package]: Skipping, unable to determine old version
+[2023-06-03 06:09:36] INFO root fetch - main [MainThread]: End processing [bashbot-package] error
+[2023-06-03 06:09:36] WARNING root fetch - processPackages [bashbot]: Skipping, unable to determine old version
+[2023-06-03 06:09:36] INFO root fetch - main [MainThread]: End processing [bashbot] error
+[2023-06-03 06:09:37] INFO root fetch - processPackages [llama-index]: executing diffoscope
+[2023-06-03 06:09:37] INFO root fetch - processPackages [llama-index]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/llama_index-0.6.8.tar.gz tmp/llama_index-0.6.9.tar.gz --markdown 20230603/l/llama-index/0.6.8-0.6.9/diff.md --exclude *.pyd
+[2023-06-03 06:09:37] INFO root fetch - processPackages [gpt-index]: executing diffoscope
+[2023-06-03 06:09:37] INFO root fetch - processPackages [gpt-index]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gpt_index-0.6.8.tar.gz tmp/gpt_index-0.6.9.tar.gz --markdown 20230603/g/gpt-index/0.6.8-0.6.9/diff.md --exclude *.pyd
+[2023-06-03 06:09:37] INFO root fetch - processPackages [OMADS]: Downloading https://files.pythonhosted.org/packages/4c/b7/839cd8e9b1c110fd34a442e3a467b051ffd83e7b09714c49885c8d948dd3/OMADS-1.5.0.tar.gz
+[2023-06-03 06:09:37] INFO root fetch - processPackages [metpx-sr3]: Downloading https://files.pythonhosted.org/packages/89/06/0f745164c2089adef9236ac31fbe46f4158d18631576d682cf9658757694/metpx_sr3-3.0.8-py3-none-any.whl
+[2023-06-03 06:09:37] INFO root fetch - processPackages [OMADS]: Downloading https://files.pythonhosted.org/packages/10/15/97a4e4ac96098b1af2d9a07d2a1eadef6e9589040652101dc988ff24b1b8/OMADS-2.0.0.tar.gz
+[2023-06-03 06:09:37] INFO root fetch - processPackages [naapc]: Downloading https://files.pythonhosted.org/packages/72/6f/dc3a936283d3f71300cdca764bad597f47dd41dac123d16441069ce11eac/naapc-1.7.1.tar.gz
+[2023-06-03 06:09:37] INFO root fetch - processPackages [naapc]: executing diffoscope
+[2023-06-03 06:09:37] INFO root fetch - processPackages [naapc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/naapc-1.7.0.tar.gz tmp/naapc-1.7.1.tar.gz --markdown 20230603/n/naapc/1.7.0-1.7.1/diff.md --exclude *.pyd
+[2023-06-03 06:09:37] INFO root fetch - processPackages [OMADS]: executing diffoscope
+[2023-06-03 06:09:37] INFO root fetch - processPackages [OMADS]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/OMADS-1.5.0.tar.gz tmp/OMADS-2.0.0.tar.gz --markdown 20230603/O/OMADS/1.5.0-2.0.0/diff.md --exclude *.pyd
+[2023-06-03 06:09:37] INFO root fetch - processPackages [metpx-sr3]: Downloading https://files.pythonhosted.org/packages/a4/8a/64230448bcafc80a1f9a2c5805a6cf7fb4956c1fea5a9c7439c01449480c/metpx_sr3-3.0.9-py3-none-any.whl
+[2023-06-03 06:09:37] INFO root fetch - processPackages [metpx-sr3]: executing diffoscope
+[2023-06-03 06:09:37] INFO root fetch - processPackages [metpx-sr3]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/metpx_sr3-3.0.8-py3-none-any.whl.zip tmp/metpx_sr3-3.0.9-py3-none-any.whl.zip --markdown 20230603/m/metpx-sr3/3.0.8-3.0.9/diff.md --exclude *.pyd
+[2023-06-03 06:09:38] INFO root fetch - main [MainThread]: End processing [naapc]: success
+[2023-06-03 06:09:38] INFO root fetch - main [MainThread]: End processing [OMADS]: success
+[2023-06-03 06:09:40] INFO root fetch - main [MainThread]: End processing [gpt-index]: success
+[2023-06-03 06:09:40] INFO root fetch - main [MainThread]: End processing [llama-index]: success
+[2023-06-03 06:09:40] INFO root fetch - main [MainThread]: End processing [metpx-sr3]: success
+[2023-06-03 06:09:40] INFO root fetch - main [MainThread]: Store serial: [18356818]
