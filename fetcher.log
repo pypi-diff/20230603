@@ -5856,3 +5856,42 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-06-03 08:36:29] INFO root fetch - main [MainThread]: End processing [minidevice]: success
 [2023-06-03 08:36:33] INFO root fetch - main [MainThread]: End processing [umap-project]: success
 [2023-06-03 08:36:33] INFO root fetch - main [MainThread]: Store serial: [18357440]
+[2023-06-03 08:41:37] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18357440]
+[2023-06-03 08:41:42] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-06-03 08:41:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: MetodosNumericosElementares
+[2023-06-03 08:41:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: relevanceai
+[2023-06-03 08:41:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ersciyt
+[2023-06-03 08:41:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: zakupki-saver-models
+[2023-06-03 08:41:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: e6data-python-connector
+[2023-06-03 08:41:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: markdown-it-py
+[2023-06-03 08:41:42] INFO root fetch - processPackages [MetodosNumericosElementares]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-06-03 08:41:42] WARNING root fetch - processPackages [zakupki-saver-models]: Skipping, unable to determine old version
+[2023-06-03 08:41:42] INFO root fetch - main [MainThread]: End processing [zakupki-saver-models] error
+[2023-06-03 08:41:42] INFO root fetch - processPackages [ersciyt]: New version: [1.98] Old Version: [1.97]
+[2023-06-03 08:41:42] INFO root fetch - processPackages [e6data-python-connector]: New version: [1.0.8] Old Version: [1.0.7]
+[2023-06-03 08:41:42] INFO root fetch - processPackages [relevanceai]: New version: [4.0.0] Old Version: [3.2.9]
+[2023-06-03 08:41:42] INFO root fetch - processPackages [markdown-it-py]: New version: [3.0.0] Old Version: [2.2.0]
+[2023-06-03 08:41:42] INFO root fetch - processPackages [MetodosNumericosElementares]: Downloading https://files.pythonhosted.org/packages/4b/12/852b57c8c3f62e4ae0ff883435f37bb99b779cc616cf787f1620d3525f64/metodosnumericoselementares-0.0.2.tar.gz
+[2023-06-03 08:41:42] INFO root fetch - processPackages [markdown-it-py]: Downloading https://files.pythonhosted.org/packages/e4/c0/59bd6d0571986f72899288a95d9d6178d0eebd70b6650f1bb3f0da90f8f7/markdown-it-py-2.2.0.tar.gz
+[2023-06-03 08:41:42] INFO root fetch - processPackages [relevanceai]: Downloading https://files.pythonhosted.org/packages/d1/52/a3506740d87f56aacd41504ed6e0fa64b8116582d5a5b6a120c4e46d45d1/RelevanceAI-3.2.9.tar.gz
+[2023-06-03 08:41:43] INFO root fetch - processPackages [ersciyt]: Downloading https://files.pythonhosted.org/packages/77/9d/a2394e653cd175ced96aba7c8fed2132c9027c8cec229e778176dbceeab1/ersciyt-1.98.tar.gz
+[2023-06-03 08:41:43] INFO root fetch - processPackages [e6data-python-connector]: Downloading https://files.pythonhosted.org/packages/a0/e8/dcb4aa455fd60dcb2270c777f73b8413a71e0e623515316261d8e327809a/e6data-python-connector-1.0.8.tar.gz
+[2023-06-03 08:41:43] INFO root fetch - processPackages [MetodosNumericosElementares]: Downloading https://files.pythonhosted.org/packages/51/03/eee45cc2bbfba9bd463691257166faf47536c9f31d4d335b8abd832d0743/metodosnumericoselementares-0.0.3.tar.gz
+[2023-06-03 08:41:43] INFO root fetch - processPackages [ersciyt]: executing diffoscope
+[2023-06-03 08:41:43] INFO root fetch - processPackages [ersciyt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ersciyt-1.97.tar.gz tmp/ersciyt-1.98.tar.gz --markdown 20230603/e/ersciyt/1.97-1.98/diff.md --exclude *.pyd
+[2023-06-03 08:41:43] INFO root fetch - processPackages [e6data-python-connector]: executing diffoscope
+[2023-06-03 08:41:43] INFO root fetch - processPackages [e6data-python-connector]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/e6data-python-connector-1.0.7.tar.gz tmp/e6data-python-connector-1.0.8.tar.gz --markdown 20230603/e/e6data-python-connector/1.0.7-1.0.8/diff.md --exclude *.pyd
+[2023-06-03 08:41:43] INFO root fetch - processPackages [MetodosNumericosElementares]: executing diffoscope
+[2023-06-03 08:41:43] INFO root fetch - processPackages [MetodosNumericosElementares]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/metodosnumericoselementares-0.0.2.tar.gz tmp/metodosnumericoselementares-0.0.3.tar.gz --markdown 20230603/M/MetodosNumericosElementares/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-06-03 08:41:43] INFO root fetch - processPackages [markdown-it-py]: Downloading https://files.pythonhosted.org/packages/38/71/3b932df36c1a044d397a1f92d1cf91ee0a503d91e470cbd670aa66b07ed0/markdown-it-py-3.0.0.tar.gz
+[2023-06-03 08:41:43] INFO root fetch - processPackages [markdown-it-py]: executing diffoscope
+[2023-06-03 08:41:43] INFO root fetch - processPackages [relevanceai]: Downloading https://files.pythonhosted.org/packages/5d/ea/12710ab9578061f02729bbe55ef5b986e72c32dcbfed02e4309c6088c4a9/relevanceai-4.0.0.tar.gz
+[2023-06-03 08:41:43] INFO root fetch - processPackages [markdown-it-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/markdown-it-py-2.2.0.tar.gz tmp/markdown-it-py-3.0.0.tar.gz --markdown 20230603/m/markdown-it-py/2.2.0-3.0.0/diff.md --exclude *.pyd
+[2023-06-03 08:41:43] INFO root fetch - processPackages [relevanceai]: executing diffoscope
+[2023-06-03 08:41:43] INFO root fetch - processPackages [relevanceai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/RelevanceAI-3.2.9.tar.gz tmp/relevanceai-4.0.0.tar.gz --markdown 20230603/r/relevanceai/3.2.9-4.0.0/diff.md --exclude *.pyd
+[2023-06-03 08:41:44] INFO root fetch - main [MainThread]: End processing [MetodosNumericosElementares]: success
+[2023-06-03 08:41:44] INFO root fetch - main [MainThread]: End processing [e6data-python-connector]: success
+[2023-06-03 08:41:44] INFO root fetch - main [MainThread]: End processing [ersciyt]: success
+[2023-06-03 08:41:44] INFO root fetch - main [MainThread]: End processing [relevanceai]: success
+[2023-06-03 08:41:45] INFO root fetch - main [MainThread]: End processing [markdown-it-py]: success
+[2023-06-03 08:41:45] INFO root fetch - main [MainThread]: Store serial: [18357461]
