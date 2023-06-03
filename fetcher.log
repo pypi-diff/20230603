@@ -13662,3 +13662,27 @@ EOFError: EOF read where object expected
 [2023-06-03 23:48:51] INFO root fetch - main [MainThread]: End processing [flowtask]: success
 [2023-06-03 23:48:52] INFO root fetch - main [MainThread]: End processing [kalpy-kaldi]: success
 [2023-06-03 23:48:52] INFO root fetch - main [MainThread]: Store serial: [18362363]
+[2023-06-03 23:53:56] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18362363]
+[2023-06-03 23:54:01] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-06-03 23:54:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: llnl-thicket
+[2023-06-03 23:54:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: PyTrek-9000
+[2023-06-03 23:54:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: vector-vault
+[2023-06-03 23:54:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: mynacode
+[2023-06-03 23:54:01] WARNING root fetch - processPackages [PyTrek-9000]: Skipping, unable to determine old version
+[2023-06-03 23:54:01] INFO root fetch - main [MainThread]: End processing [PyTrek-9000] error
+[2023-06-03 23:54:01] INFO root fetch - processPackages [llnl-thicket]: New version: [2023.2.0] Old Version: [2023.1.0]
+[2023-06-03 23:54:01] INFO root fetch - processPackages [mynacode]: New version: [1.0.99] Old Version: [1.0.98]
+[2023-06-03 23:54:01] INFO root fetch - processPackages [vector-vault]: New version: [1.7.7.1] Old Version: [1.7.7]
+[2023-06-03 23:54:01] INFO root fetch - processPackages [mynacode]: executing diffoscope
+[2023-06-03 23:54:01] INFO root fetch - processPackages [mynacode]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mynacode-1.0.98-py3-none-any.whl.zip tmp/mynacode-1.0.99-py3-none-any.whl.zip --markdown 20230603/m/mynacode/1.0.98-1.0.99/diff.md --exclude *.pyd
+[2023-06-03 23:54:01] INFO root fetch - processPackages [llnl-thicket]: Downloading https://files.pythonhosted.org/packages/b3/14/7f5e7ecc15f0f360e554686a54fc092d5b53de4e30fddcef8a28395f4d57/llnl-thicket-2023.1.0.tar.gz
+[2023-06-03 23:54:01] INFO root fetch - processPackages [vector-vault]: Downloading https://files.pythonhosted.org/packages/8c/78/3f7b828dbc02e64facbcae37a658cafeb115533e6fa3b5a17d5fc48a0fbf/vector_vault-1.7.7.1.tar.gz
+[2023-06-03 23:54:01] INFO root fetch - processPackages [vector-vault]: executing diffoscope
+[2023-06-03 23:54:01] INFO root fetch - processPackages [vector-vault]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vector_vault-1.7.7.tar.gz tmp/vector_vault-1.7.7.1.tar.gz --markdown 20230603/v/vector-vault/1.7.7-1.7.7.1/diff.md --exclude *.pyd
+[2023-06-03 23:54:02] INFO root fetch - processPackages [llnl-thicket]: Downloading https://files.pythonhosted.org/packages/c5/ef/44d66ab4452f33890eb330fa363e4a9a160d6700c7da35f38a6c1700bc10/llnl-thicket-2023.2.0.tar.gz
+[2023-06-03 23:54:02] INFO root fetch - processPackages [llnl-thicket]: executing diffoscope
+[2023-06-03 23:54:02] INFO root fetch - processPackages [llnl-thicket]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/llnl-thicket-2023.1.0.tar.gz tmp/llnl-thicket-2023.2.0.tar.gz --markdown 20230603/l/llnl-thicket/2023.1.0-2023.2.0/diff.md --exclude *.pyd
+[2023-06-03 23:54:02] INFO root fetch - main [MainThread]: End processing [mynacode]: success
+[2023-06-03 23:54:03] INFO root fetch - main [MainThread]: End processing [vector-vault]: success
+[2023-06-03 23:54:06] INFO root fetch - main [MainThread]: End processing [llnl-thicket]: success
+[2023-06-03 23:54:06] INFO root fetch - main [MainThread]: Store serial: [18362375]
