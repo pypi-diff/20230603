@@ -9483,3 +9483,37 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-06-03 16:23:48] INFO root fetch - main [MainThread]: End processing [cloup]: success
 [2023-06-03 16:23:49] INFO root fetch - main [MainThread]: End processing [tumourkit]: success
 [2023-06-03 16:23:49] INFO root fetch - main [MainThread]: Store serial: [18359803]
+[2023-06-03 16:28:53] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18359803]
+[2023-06-03 16:28:58] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-06-03 16:28:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: spotube
+[2023-06-03 16:28:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: vessel
+[2023-06-03 16:28:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: kube-tests
+[2023-06-03 16:28:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: siat
+[2023-06-03 16:28:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: kube-tests
+[2023-06-03 16:28:58] INFO root fetch - processPackages [vessel]: New version: [4.2.0] Old Version: [4.1.1]
+[2023-06-03 16:28:58] INFO root fetch - processPackages [kube-tests]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-06-03 16:28:58] INFO root fetch - processPackages [kube-tests]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-06-03 16:28:58] INFO root fetch - processPackages [spotube]: New version: [0.5.6] Old Version: [0.5.5]
+[2023-06-03 16:28:58] INFO root fetch - processPackages [siat]: New version: [2.0.9] Old Version: [2.0.8]
+[2023-06-03 16:28:58] INFO root fetch - processPackages [kube-tests]: Downloading https://files.pythonhosted.org/packages/23/34/84bc9d2e4d6e6891bb180e137da81dbc756e9978523a9a01ce28466a60f8/kube-tests-0.0.4.tar.gz
+[2023-06-03 16:28:58] INFO root fetch - processPackages [kube-tests]: Downloading https://files.pythonhosted.org/packages/23/34/84bc9d2e4d6e6891bb180e137da81dbc756e9978523a9a01ce28466a60f8/kube-tests-0.0.4.tar.gz
+[2023-06-03 16:28:58] INFO root fetch - processPackages [spotube]: Downloading https://files.pythonhosted.org/packages/e2/5f/2ee7b586e8ab1f88542c3981acde18a2d679a62cd272992cea1ab5d4b6b0/spotube-0.5.6.tar.gz
+[2023-06-03 16:28:59] INFO root fetch - processPackages [vessel]: Downloading https://files.pythonhosted.org/packages/5a/be/8e909ab80357630eb0326be4b2c5dadbf7be0ad014825071e7ae59240d29/vessel-4.2.0.tar.gz
+[2023-06-03 16:28:59] INFO root fetch - processPackages [spotube]: executing diffoscope
+[2023-06-03 16:28:59] INFO root fetch - processPackages [spotube]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spotube-0.5.5.tar.gz tmp/spotube-0.5.6.tar.gz --markdown 20230603/s/spotube/0.5.5-0.5.6/diff.md --exclude *.pyd
+[2023-06-03 16:28:59] INFO root fetch - processPackages [kube-tests]: Downloading https://files.pythonhosted.org/packages/7d/cc/7b989175e4378125e0c6853db5118bffe2558f23bfeb77623040b2fc0c0b/kube-tests-0.0.5.tar.gz
+[2023-06-03 16:28:59] INFO root fetch - processPackages [siat]: executing diffoscope
+[2023-06-03 16:28:59] INFO root fetch - processPackages [siat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/siat-2.0.8-py3-none-any.whl.zip tmp/siat-2.0.9-py3-none-any.whl.zip --markdown 20230603/s/siat/2.0.8-2.0.9/diff.md --exclude *.pyd
+[2023-06-03 16:28:59] INFO root fetch - processPackages [vessel]: executing diffoscope
+[2023-06-03 16:28:59] INFO root fetch - processPackages [vessel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vessel-4.1.1.tar.gz tmp/vessel-4.2.0.tar.gz --markdown 20230603/v/vessel/4.1.1-4.2.0/diff.md --exclude *.pyd
+[2023-06-03 16:28:59] INFO root fetch - processPackages [kube-tests]: Downloading https://files.pythonhosted.org/packages/7d/cc/7b989175e4378125e0c6853db5118bffe2558f23bfeb77623040b2fc0c0b/kube-tests-0.0.5.tar.gz
+[2023-06-03 16:28:59] INFO root fetch - processPackages [kube-tests]: executing diffoscope
+[2023-06-03 16:28:59] INFO root fetch - processPackages [kube-tests]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kube-tests-0.0.4.tar.gz tmp/kube-tests-0.0.5.tar.gz --markdown 20230603/k/kube-tests/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-06-03 16:28:59] INFO root fetch - processPackages [kube-tests]: executing diffoscope
+[2023-06-03 16:28:59] INFO root fetch - processPackages [kube-tests]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kube-tests-0.0.4.tar.gz tmp/kube-tests-0.0.5.tar.gz --markdown 20230603/k/kube-tests/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-06-03 16:29:00] INFO root fetch - main [MainThread]: End processing [spotube]: success
+[2023-06-03 16:29:00] INFO root fetch - main [MainThread]: End processing [kube-tests]: success
+[2023-06-03 16:29:00] INFO root fetch - main [MainThread]: End processing [kube-tests]: success
+[2023-06-03 16:29:00] INFO root fetch - main [MainThread]: End processing [vessel]: success
+[2023-06-03 16:29:54] INFO root fetch - main [MainThread]: End processing [siat]: success
+[2023-06-03 16:29:54] INFO root fetch - main [MainThread]: Store serial: [18359822]
