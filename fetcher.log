@@ -6605,3 +6605,42 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-06-03 10:13:52] INFO root fetch - main [MainThread]: End processing [mtutils]: success
 [2023-06-03 10:13:53] INFO root fetch - main [MainThread]: End processing [FunPayAPI]: success
 [2023-06-03 10:13:53] INFO root fetch - main [MainThread]: Store serial: [18357883]
+[2023-06-03 10:18:57] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18357883]
+[2023-06-03 10:19:01] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-06-03 10:19:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mtutils
+[2023-06-03 10:19:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: bkapi-bk-apigateway
+[2023-06-03 10:19:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: elements-sdk
+[2023-06-03 10:19:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: LinSATNet
+[2023-06-03 10:19:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: gui-args-framework
+[2023-06-03 10:19:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: autoapi-django
+[2023-06-03 10:19:02] INFO root fetch - processPackages [elements-sdk]: New version: [3.6.1] Old Version: [3.6.0]
+[2023-06-03 10:19:02] INFO root fetch - processPackages [LinSATNet]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-06-03 10:19:02] WARNING root fetch - processPackages [gui-args-framework]: Skipping, unable to determine old version
+[2023-06-03 10:19:02] INFO root fetch - processPackages [autoapi-django]: New version: [0.9.2] Old Version: [0.9.1]
+[2023-06-03 10:19:02] INFO root fetch - main [MainThread]: End processing [gui-args-framework] error
+[2023-06-03 10:19:02] INFO root fetch - processPackages [bkapi-bk-apigateway]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-06-03 10:19:02] INFO root fetch - processPackages [mtutils]: New version: [2.1.9] Old Version: [2.1.8]
+[2023-06-03 10:19:02] INFO root fetch - processPackages [bkapi-bk-apigateway]: Downloading https://files.pythonhosted.org/packages/0a/db/3861de7cccb679c4d42547a9c129815aeb5f6306a0ab76e03865113509a6/bkapi-bk-apigateway-1.0.8.tar.gz
+[2023-06-03 10:19:02] INFO root fetch - processPackages [elements-sdk]: Downloading https://files.pythonhosted.org/packages/8f/72/d99f133091ee69318b03bdb17b605cb42b7e16e66aa016f7184377094027/elements-sdk-3.6.0.tar.gz
+[2023-06-03 10:19:02] INFO root fetch - processPackages [autoapi-django]: Downloading https://files.pythonhosted.org/packages/33/37/fdee8136fc0237aea9075a557a730240a9f626eff149eb5e8328776b4321/autoapi-django-0.9.1.tar.gz
+[2023-06-03 10:19:02] INFO root fetch - processPackages [mtutils]: executing diffoscope
+[2023-06-03 10:19:02] INFO root fetch - processPackages [mtutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mtutils-2.1.8.tar.gz tmp/mtutils-2.1.9.tar.gz --markdown 20230603/m/mtutils/2.1.8-2.1.9/diff.md --exclude *.pyd
+[2023-06-03 10:19:02] INFO root fetch - processPackages [LinSATNet]: Downloading https://files.pythonhosted.org/packages/98/c9/f0af56897d3706a5f9abaae81a99388136b152d68c5f01f7b4437c5ab92b/LinSATNet-0.0.1.tar.gz
+[2023-06-03 10:19:02] INFO root fetch - processPackages [LinSATNet]: Downloading https://files.pythonhosted.org/packages/fc/c6/d352eb44285e98571a93df927080d51c9da96db4c84c44a83ef78705d056/LinSATNet-0.0.2.tar.gz
+[2023-06-03 10:19:02] INFO root fetch - processPackages [autoapi-django]: Downloading https://files.pythonhosted.org/packages/4a/c8/e5fbd22789d51741011533765bab6db3930f338c9225d61686e4dec24027/autoapi-django-0.9.2.tar.gz
+[2023-06-03 10:19:02] INFO root fetch - processPackages [bkapi-bk-apigateway]: Downloading https://files.pythonhosted.org/packages/2c/e7/b4f9cef36ef376855899ded7f75cbeb1a08c683a1c70ae6515c9b0d75f69/bkapi-bk-apigateway-1.0.9.tar.gz
+[2023-06-03 10:19:02] INFO root fetch - processPackages [elements-sdk]: Downloading https://files.pythonhosted.org/packages/76/c2/fb90130f6aef1ae0f2d77419b6b91cd25d52d3bb05739dfb6bffa4bc222e/elements-sdk-3.6.1.tar.gz
+[2023-06-03 10:19:02] INFO root fetch - processPackages [LinSATNet]: executing diffoscope
+[2023-06-03 10:19:02] INFO root fetch - processPackages [LinSATNet]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/LinSATNet-0.0.1.tar.gz tmp/LinSATNet-0.0.2.tar.gz --markdown 20230603/L/LinSATNet/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-06-03 10:19:02] INFO root fetch - processPackages [bkapi-bk-apigateway]: executing diffoscope
+[2023-06-03 10:19:02] INFO root fetch - processPackages [bkapi-bk-apigateway]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bkapi-bk-apigateway-1.0.8.tar.gz tmp/bkapi-bk-apigateway-1.0.9.tar.gz --markdown 20230603/b/bkapi-bk-apigateway/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-06-03 10:19:02] INFO root fetch - processPackages [autoapi-django]: executing diffoscope
+[2023-06-03 10:19:02] INFO root fetch - processPackages [autoapi-django]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/autoapi-django-0.9.1.tar.gz tmp/autoapi-django-0.9.2.tar.gz --markdown 20230603/a/autoapi-django/0.9.1-0.9.2/diff.md --exclude *.pyd
+[2023-06-03 10:19:02] INFO root fetch - processPackages [elements-sdk]: executing diffoscope
+[2023-06-03 10:19:02] INFO root fetch - processPackages [elements-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/elements-sdk-3.6.0.tar.gz tmp/elements-sdk-3.6.1.tar.gz --markdown 20230603/e/elements-sdk/3.6.0-3.6.1/diff.md --exclude *.pyd
+[2023-06-03 10:19:03] INFO root fetch - main [MainThread]: End processing [LinSATNet]: success
+[2023-06-03 10:19:03] INFO root fetch - main [MainThread]: End processing [bkapi-bk-apigateway]: success
+[2023-06-03 10:19:03] INFO root fetch - main [MainThread]: End processing [autoapi-django]: success
+[2023-06-03 10:19:04] INFO root fetch - main [MainThread]: End processing [mtutils]: success
+[2023-06-03 10:19:13] INFO root fetch - main [MainThread]: End processing [elements-sdk]: success
+[2023-06-03 10:19:13] INFO root fetch - main [MainThread]: Store serial: [18357907]
