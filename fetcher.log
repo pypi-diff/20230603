@@ -7963,3 +7963,31 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-06-03 13:26:24] INFO root fetch - main [MainThread]: End processing [tb-nightly]: success
 [2023-06-03 13:26:32] INFO root fetch - main [MainThread]: End processing [ccxt]: success
 [2023-06-03 13:26:32] INFO root fetch - main [MainThread]: Store serial: [18358849]
+[2023-06-03 13:31:37] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18358849]
+[2023-06-03 13:31:42] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-06-03 13:31:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: torchrl-nightly
+[2023-06-03 13:31:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ersciyt
+[2023-06-03 13:31:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: torchrec-nightly
+[2023-06-03 13:31:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: azkv-secrets-loader
+[2023-06-03 13:31:42] INFO root fetch - processPackages [azkv-secrets-loader]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-06-03 13:31:42] INFO root fetch - processPackages [ersciyt]: New version: [2.1] Old Version: [2.0]
+[2023-06-03 13:31:42] INFO root fetch - processPackages [torchrec-nightly]: New version: [2023.6.3] Old Version: [2023.5.8]
+[2023-06-03 13:31:42] INFO root fetch - processPackages [azkv-secrets-loader]: Downloading https://files.pythonhosted.org/packages/f8/71/e1751c74cfc8734581072bc6c4aa74e5f95137db138f2ebe0798f579a2c1/azkv-secrets-loader-0.0.5.tar.gz
+[2023-06-03 13:31:42] INFO root fetch - processPackages [torchrl-nightly]: New version: [2023.6.3] Old Version: [2023.6.2]
+[2023-06-03 13:31:42] INFO root fetch - processPackages [ersciyt]: Downloading https://files.pythonhosted.org/packages/43/99/2f1ca70fac0e4d882ae7d2418ef5ccdb8e114fda41d5c8cb701cfaca4485/ersciyt-2.1.tar.gz
+[2023-06-03 13:31:42] INFO root fetch - processPackages [azkv-secrets-loader]: executing diffoscope
+[2023-06-03 13:31:42] INFO root fetch - processPackages [azkv-secrets-loader]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/azkv-secrets-loader-0.0.4.tar.gz tmp/azkv-secrets-loader-0.0.5.tar.gz --markdown 20230603/a/azkv-secrets-loader/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-06-03 13:31:42] INFO root fetch - processPackages [torchrec-nightly]: Downloading https://files.pythonhosted.org/packages/00/18/5d97d0c5293dc91c217b27f5d20fc738d7703abc592a0fefdcec0e29da54/torchrec_nightly-2023.6.3-py39-none-any.whl
+[2023-06-03 13:31:42] INFO root fetch - processPackages [torchrl-nightly]: Downloading https://files.pythonhosted.org/packages/fd/68/4de9e20c71db4ecf08a36f7e42f8071f0a5e1b005abbce357369dd48c330/torchrl_nightly-2023.6.2-cp39-cp39-win_amd64.whl
+[2023-06-03 13:31:42] INFO root fetch - processPackages [ersciyt]: executing diffoscope
+[2023-06-03 13:31:42] INFO root fetch - processPackages [ersciyt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ersciyt-2.0.tar.gz tmp/ersciyt-2.1.tar.gz --markdown 20230603/e/ersciyt/2.0-2.1/diff.md --exclude *.pyd
+[2023-06-03 13:31:43] INFO root fetch - processPackages [torchrec-nightly]: executing diffoscope
+[2023-06-03 13:31:43] INFO root fetch - processPackages [torchrec-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torchrec_nightly-2023.5.8-py39-none-any.whl.zip tmp/torchrec_nightly-2023.6.3-py39-none-any.whl.zip --markdown 20230603/t/torchrec-nightly/2023.5.8-2023.6.3/diff.md --exclude *.pyd
+[2023-06-03 13:31:43] INFO root fetch - processPackages [torchrl-nightly]: Downloading https://files.pythonhosted.org/packages/cc/7b/f9ccad5f9ae32d97aa7e4fa7e17efa21b42a24f5eaf34e0ea4c743e8211c/torchrl_nightly-2023.6.3-cp39-cp39-win_amd64.whl
+[2023-06-03 13:31:43] INFO root fetch - processPackages [torchrl-nightly]: executing diffoscope
+[2023-06-03 13:31:43] INFO root fetch - processPackages [torchrl-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torchrl_nightly-2023.6.2-cp39-cp39-win_amd64.whl.zip tmp/torchrl_nightly-2023.6.3-cp39-cp39-win_amd64.whl.zip --markdown 20230603/t/torchrl-nightly/2023.6.2-2023.6.3/diff.md --exclude *.pyd
+[2023-06-03 13:31:43] INFO root fetch - main [MainThread]: End processing [azkv-secrets-loader]: success
+[2023-06-03 13:31:43] INFO root fetch - main [MainThread]: End processing [ersciyt]: success
+[2023-06-03 13:31:45] INFO root fetch - main [MainThread]: End processing [torchrl-nightly]: success
+[2023-06-03 13:31:45] INFO root fetch - main [MainThread]: End processing [torchrec-nightly]: success
+[2023-06-03 13:31:45] INFO root fetch - main [MainThread]: Store serial: [18358889]
