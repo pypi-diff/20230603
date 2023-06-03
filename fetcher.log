@@ -6249,3 +6249,16 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-06-03 09:26:52] INFO root fetch - main [MainThread]: End processing [cncd-package]: success
 [2023-06-03 09:26:52] INFO root fetch - main [MainThread]: End processing [wanted-models]: success
 [2023-06-03 09:26:52] INFO root fetch - main [MainThread]: Store serial: [18357665]
+[2023-06-03 09:31:55] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18357665]
+[2023-06-03 09:32:00] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2023-06-03 09:32:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: nonebot-plugin-mcstatus
+[2023-06-03 09:32:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: lldb-dfsan-teemperor
+[2023-06-03 09:32:01] ERROR root fetch - processPackages [lldb-dfsan-teemperor]: Unable to get metadata: No such project 'lldb-dfsan-teemperor'
+[2023-06-03 09:32:01] INFO root fetch - main [MainThread]: End processing [lldb-dfsan-teemperor] error
+[2023-06-03 09:32:01] INFO root fetch - processPackages [nonebot-plugin-mcstatus]: New version: [0.1.8] Old Version: [0.1.7]
+[2023-06-03 09:32:01] INFO root fetch - processPackages [nonebot-plugin-mcstatus]: Downloading https://files.pythonhosted.org/packages/3a/13/e4eaa340b83a51a9af363aae4bb326bafe5ddf8bff51957153419c1bc793/nonebot_plugin_mcstatus-0.1.7.tar.gz
+[2023-06-03 09:32:01] INFO root fetch - processPackages [nonebot-plugin-mcstatus]: Downloading https://files.pythonhosted.org/packages/43/e2/dcb90b5bb2a2a030073c44e7bb2b228528f9cac29bae5a4c7b9c7c6e0bdb/nonebot-plugin-mcstatus-0.1.8.tar.gz
+[2023-06-03 09:32:01] INFO root fetch - processPackages [nonebot-plugin-mcstatus]: executing diffoscope
+[2023-06-03 09:32:01] INFO root fetch - processPackages [nonebot-plugin-mcstatus]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot_plugin_mcstatus-0.1.7.tar.gz tmp/nonebot-plugin-mcstatus-0.1.8.tar.gz --markdown 20230603/n/nonebot-plugin-mcstatus/0.1.7-0.1.8/diff.md --exclude *.pyd
+[2023-06-03 09:32:02] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-mcstatus]: success
+[2023-06-03 09:32:02] INFO root fetch - main [MainThread]: Store serial: [18357674]
