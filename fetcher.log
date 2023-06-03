@@ -9802,3 +9802,41 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-06-03 17:07:39] INFO root fetch - main [MainThread]: End processing [lagrange]: success
 [2023-06-03 17:07:39] INFO root fetch - main [MainThread]: End processing [odoo-addon-account-banking-sepa-direct-debit]: success
 [2023-06-03 17:07:39] INFO root fetch - main [MainThread]: Store serial: [18359969]
+[2023-06-03 17:12:43] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18359969]
+[2023-06-03 17:12:48] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-06-03 17:12:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: propan
+[2023-06-03 17:12:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ovos-classifiers
+[2023-06-03 17:12:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pycyphal
+[2023-06-03 17:12:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pseudocerastes
+[2023-06-03 17:12:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: multidyndnscli
+[2023-06-03 17:12:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: coiled
+[2023-06-03 17:12:48] INFO root fetch - processPackages [pseudocerastes]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-06-03 17:12:48] INFO root fetch - processPackages [propan]: New version: [0.1.2.9] Old Version: [0.1.2.8]
+[2023-06-03 17:12:48] INFO root fetch - processPackages [pycyphal]: New version: [1.9.1] Old Version: [1.9.0b2]
+[2023-06-03 17:12:48] INFO root fetch - processPackages [ovos-classifiers]: New version: [0.0.0a9] Old Version: [0.0.0a8]
+[2023-06-03 17:12:48] INFO root fetch - processPackages [coiled]: New version: [0.7.1.dev6] Old Version: [0.7.1.dev5]
+[2023-06-03 17:12:48] INFO root fetch - processPackages [multidyndnscli]: New version: [0.1.5] Old Version: [0.1.4]
+[2023-06-03 17:12:48] INFO root fetch - processPackages [coiled]: executing diffoscope
+[2023-06-03 17:12:48] INFO root fetch - processPackages [coiled]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/coiled-0.7.1.dev5.tar.gz tmp/coiled-0.7.1.dev6.tar.gz --markdown 20230603/c/coiled/0.7.1.dev5-0.7.1.dev6/diff.md --exclude *.pyd
+[2023-06-03 17:12:48] INFO root fetch - processPackages [ovos-classifiers]: executing diffoscope
+[2023-06-03 17:12:48] INFO root fetch - processPackages [ovos-classifiers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ovos_classifiers-0.0.0a8-py3-none-any.whl.zip tmp/ovos_classifiers-0.0.0a9-py3-none-any.whl.zip --markdown 20230603/o/ovos-classifiers/0.0.0a8-0.0.0a9/diff.md --exclude *.pyd
+[2023-06-03 17:12:48] INFO root fetch - processPackages [pseudocerastes]: Downloading https://files.pythonhosted.org/packages/58/80/fddf6051d7329bbd10e34b9b5d6873484de8b45ff291ece4e9e67efc85a9/pseudocerastes-0.1.2.tar.gz
+[2023-06-03 17:12:48] INFO root fetch - processPackages [pycyphal]: Downloading https://files.pythonhosted.org/packages/4c/b7/d88a03826d7e039947f9bb914a58e83141a8e40a08c30166bbedd2dc154c/pycyphal-1.9.0b2.tar.gz
+[2023-06-03 17:12:48] INFO root fetch - processPackages [multidyndnscli]: Downloading https://files.pythonhosted.org/packages/4c/4e/7702e86dd6d75bb3b98a0d5ed91beca5ffbe8a34b6c9f0b2b480081238ac/multidyndnscli-0.1.5.tar.gz
+[2023-06-03 17:12:48] INFO root fetch - processPackages [pseudocerastes]: executing diffoscope
+[2023-06-03 17:12:48] INFO root fetch - processPackages [pseudocerastes]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pseudocerastes-0.1.1.tar.gz tmp/pseudocerastes-0.1.2.tar.gz --markdown 20230603/p/pseudocerastes/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-06-03 17:12:48] INFO root fetch - processPackages [propan]: Downloading https://files.pythonhosted.org/packages/67/09/b314612d19f8335ff944a14169a7626076b1696df41ecb837405d460f3ed/propan-0.1.2.9.tar.gz
+[2023-06-03 17:12:49] INFO root fetch - processPackages [pycyphal]: Downloading https://files.pythonhosted.org/packages/c5/90/b4a2e3cfbef3ef5d0f13653834aebbfb4b1087ae16a79fcdb3ca6d23028e/pycyphal-1.9.1.tar.gz
+[2023-06-03 17:12:49] INFO root fetch - processPackages [multidyndnscli]: executing diffoscope
+[2023-06-03 17:12:49] INFO root fetch - processPackages [multidyndnscli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/multidyndnscli-0.1.4.tar.gz tmp/multidyndnscli-0.1.5.tar.gz --markdown 20230603/m/multidyndnscli/0.1.4-0.1.5/diff.md --exclude *.pyd
+[2023-06-03 17:12:49] INFO root fetch - processPackages [propan]: executing diffoscope
+[2023-06-03 17:12:49] INFO root fetch - processPackages [propan]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/propan-0.1.2.8.tar.gz tmp/propan-0.1.2.9.tar.gz --markdown 20230603/p/propan/0.1.2.8-0.1.2.9/diff.md --exclude *.pyd
+[2023-06-03 17:12:49] INFO root fetch - processPackages [pycyphal]: executing diffoscope
+[2023-06-03 17:12:49] INFO root fetch - processPackages [pycyphal]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pycyphal-1.9.0b2.tar.gz tmp/pycyphal-1.9.1.tar.gz --markdown 20230603/p/pycyphal/1.9.0b2-1.9.1/diff.md --exclude *.pyd
+[2023-06-03 17:12:50] INFO root fetch - main [MainThread]: End processing [ovos-classifiers]: success
+[2023-06-03 17:12:50] INFO root fetch - main [MainThread]: End processing [pseudocerastes]: success
+[2023-06-03 17:12:50] INFO root fetch - main [MainThread]: End processing [multidyndnscli]: success
+[2023-06-03 17:12:51] INFO root fetch - main [MainThread]: End processing [pycyphal]: success
+[2023-06-03 17:12:51] INFO root fetch - main [MainThread]: End processing [coiled]: success
+[2023-06-03 17:12:52] INFO root fetch - main [MainThread]: End processing [propan]: success
+[2023-06-03 17:12:52] INFO root fetch - main [MainThread]: Store serial: [18359987]
