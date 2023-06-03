@@ -6528,3 +6528,34 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-06-03 10:03:29] INFO root fetch - main [MainThread]: End processing [ediff]: success
 [2023-06-03 10:03:30] INFO root fetch - main [MainThread]: End processing [stemdiff]: success
 [2023-06-03 10:03:30] INFO root fetch - main [MainThread]: Store serial: [18357838]
+[2023-06-03 10:08:34] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18357838]
+[2023-06-03 10:08:38] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-06-03 10:08:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ifastapi
+[2023-06-03 10:08:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: bkapi-paasv3
+[2023-06-03 10:08:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: composabl-dev
+[2023-06-03 10:08:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pyglove
+[2023-06-03 10:08:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: bkapi-bcs-api-gateway
+[2023-06-03 10:08:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: ifastapi
+[2023-06-03 10:08:38] INFO root fetch - processPackages [composabl-dev]: New version: [0.1.1.dev4] Old Version: [0.1.1.dev3]
+[2023-06-03 10:08:38] WARNING root fetch - processPackages [bkapi-paasv3]: Skipping, unable to determine old version
+[2023-06-03 10:08:38] INFO root fetch - main [MainThread]: End processing [bkapi-paasv3] error
+[2023-06-03 10:08:38] WARNING root fetch - processPackages [bkapi-bcs-api-gateway]: Skipping, unable to determine old version
+[2023-06-03 10:08:38] INFO root fetch - main [MainThread]: End processing [bkapi-bcs-api-gateway] error
+[2023-06-03 10:08:38] INFO root fetch - processPackages [ifastapi]: New version: [0.0.3.9] Old Version: [0.0.3.8]
+[2023-06-03 10:08:38] INFO root fetch - processPackages [ifastapi]: New version: [0.0.3.9] Old Version: [0.0.3.8]
+[2023-06-03 10:08:38] INFO root fetch - processPackages [pyglove]: New version: [0.3.1.dev20230603] Old Version: [0.3.1.dev20230602]
+[2023-06-03 10:08:38] INFO root fetch - processPackages [ifastapi]: executing diffoscope
+[2023-06-03 10:08:38] INFO root fetch - processPackages [ifastapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ifastapi-0.0.3.8-py3-none-any.whl.zip tmp/ifastapi-0.0.3.9-py3-none-any.whl.zip --markdown 20230603/i/ifastapi/0.0.3.8-0.0.3.9/diff.md --exclude *.pyd
+[2023-06-03 10:08:38] INFO root fetch - processPackages [ifastapi]: executing diffoscope
+[2023-06-03 10:08:38] INFO root fetch - processPackages [ifastapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ifastapi-0.0.3.8-py3-none-any.whl.zip tmp/ifastapi-0.0.3.9-py3-none-any.whl.zip --markdown 20230603/i/ifastapi/0.0.3.8-0.0.3.9/diff.md --exclude *.pyd
+[2023-06-03 10:08:39] INFO root fetch - processPackages [composabl-dev]: Downloading https://files.pythonhosted.org/packages/25/94/5191ab8e32dddb7241ec7df4c07623c6fc35c605f0983725e5685f8ebabb/composabl_dev-0.1.1.dev4-cp38-cp38-manylinux_2_35_x86_64.whl
+[2023-06-03 10:08:39] INFO root fetch - processPackages [pyglove]: Downloading https://files.pythonhosted.org/packages/c7/95/0cc65d9531624c9473d85abc4e718f3b5abf6c8f26be487c8be8992a1781/pyglove-0.3.1.dev20230603.tar.gz
+[2023-06-03 10:08:39] INFO root fetch - processPackages [pyglove]: executing diffoscope
+[2023-06-03 10:08:39] INFO root fetch - processPackages [pyglove]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyglove-0.3.1.dev20230602.tar.gz tmp/pyglove-0.3.1.dev20230603.tar.gz --markdown 20230603/p/pyglove/0.3.1.dev20230602-0.3.1.dev20230603/diff.md --exclude *.pyd
+[2023-06-03 10:08:39] INFO root fetch - main [MainThread]: End processing [ifastapi]: success
+[2023-06-03 10:08:39] INFO root fetch - main [MainThread]: End processing [ifastapi]: success
+[2023-06-03 10:08:40] INFO root fetch - processPackages [composabl-dev]: executing diffoscope
+[2023-06-03 10:08:40] INFO root fetch - processPackages [composabl-dev]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/composabl_dev-0.1.1.dev3-cp38-cp38-manylinux_2_35_x86_64.whl.zip tmp/composabl_dev-0.1.1.dev4-cp38-cp38-manylinux_2_35_x86_64.whl.zip --markdown 20230603/c/composabl-dev/0.1.1.dev3-0.1.1.dev4/diff.md --exclude *.pyd
+[2023-06-03 10:08:41] INFO root fetch - main [MainThread]: End processing [pyglove]: success
+[2023-06-03 10:08:41] INFO root fetch - main [MainThread]: End processing [composabl-dev]: success
+[2023-06-03 10:08:41] INFO root fetch - main [MainThread]: Store serial: [18357856]
