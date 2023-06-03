@@ -12444,3 +12444,36 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-06-03 21:28:55] INFO root fetch - main [MainThread]: End processing [cyberdrop-dl]: success
 [2023-06-03 21:28:56] INFO root fetch - main [MainThread]: End processing [cyberdrop-dl]: success
 [2023-06-03 21:28:56] INFO root fetch - main [MainThread]: Store serial: [18361577]
+[2023-06-03 21:34:00] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18361577]
+[2023-06-03 21:34:05] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-06-03 21:34:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: particles-sdf
+[2023-06-03 21:34:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: optilogic
+[2023-06-03 21:34:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: streamlit-reveal-slides
+[2023-06-03 21:34:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: verifiNN
+[2023-06-03 21:34:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pyasyncore
+[2023-06-03 21:34:05] INFO root fetch - processPackages [pyasyncore]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-06-03 21:34:05] WARNING root fetch - processPackages [particles-sdf]: Skipping, unable to determine old version
+[2023-06-03 21:34:05] INFO root fetch - processPackages [streamlit-reveal-slides]: New version: [0.1.8] Old Version: [0.1.7]
+[2023-06-03 21:34:05] INFO root fetch - main [MainThread]: End processing [particles-sdf] error
+[2023-06-03 21:34:05] INFO root fetch - processPackages [optilogic]: New version: [2.6.0] Old Version: [2.5.0]
+[2023-06-03 21:34:05] INFO root fetch - processPackages [verifiNN]: New version: [0.0.0.dev9] Old Version: [0.0.0.dev8]
+[2023-06-03 21:34:05] INFO root fetch - processPackages [pyasyncore]: Downloading https://files.pythonhosted.org/packages/4e/80/73d766a3b52cefdaf193f6d75277f4d6e84d57921a62855420c5e57a367c/pyasyncore-1.0.0.tar.gz
+[2023-06-03 21:34:05] INFO root fetch - processPackages [optilogic]: Downloading https://files.pythonhosted.org/packages/5e/5a/bb44e38c66e2a254b77198ffe6d30b66b97294e4e7f719d62b498961d66e/optilogic-2.5.0-py3-none-any.whl
+[2023-06-03 21:34:05] INFO root fetch - processPackages [verifiNN]: Downloading https://files.pythonhosted.org/packages/6b/42/ae78dc6fec010d69bcce211c308f781d2ab5112a6654d4e2ee4b910823ba/verifiNN-0.0.0.dev8-py3-none-any.whl
+[2023-06-03 21:34:06] INFO root fetch - processPackages [streamlit-reveal-slides]: Downloading https://files.pythonhosted.org/packages/6b/fc/11f2f268ab55c27bf3f2d923dd84b7b58cc2c395724bfe656f73ef83bf3b/streamlit-reveal-slides-0.1.8.tar.gz
+[2023-06-03 21:34:06] INFO root fetch - processPackages [optilogic]: Downloading https://files.pythonhosted.org/packages/c2/d3/69aafb82c2b922697f7ae09f1874d76b6150dfd15756d781369ff6d87f79/optilogic-2.6.0-py3-none-any.whl
+[2023-06-03 21:34:06] INFO root fetch - processPackages [pyasyncore]: Downloading https://files.pythonhosted.org/packages/2c/73/19771e58898381fbb68ffbdcffddfc82172ff2a26199127e69dbded33c9c/pyasyncore-1.0.1.tar.gz
+[2023-06-03 21:34:06] INFO root fetch - processPackages [streamlit-reveal-slides]: executing diffoscope
+[2023-06-03 21:34:06] INFO root fetch - processPackages [streamlit-reveal-slides]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/streamlit-reveal-slides-0.1.7.tar.gz tmp/streamlit-reveal-slides-0.1.8.tar.gz --markdown 20230603/s/streamlit-reveal-slides/0.1.7-0.1.8/diff.md --exclude *.pyd
+[2023-06-03 21:34:06] INFO root fetch - processPackages [verifiNN]: Downloading https://files.pythonhosted.org/packages/21/5c/2164c37f5a9201d52cf4842fb6d87e199218a25313176c306179474a8cbe/verifiNN-0.0.0.dev9-py3-none-any.whl
+[2023-06-03 21:34:06] INFO root fetch - processPackages [optilogic]: executing diffoscope
+[2023-06-03 21:34:06] INFO root fetch - processPackages [optilogic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/optilogic-2.5.0-py3-none-any.whl.zip tmp/optilogic-2.6.0-py3-none-any.whl.zip --markdown 20230603/o/optilogic/2.5.0-2.6.0/diff.md --exclude *.pyd
+[2023-06-03 21:34:06] INFO root fetch - processPackages [verifiNN]: executing diffoscope
+[2023-06-03 21:34:06] INFO root fetch - processPackages [verifiNN]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/verifiNN-0.0.0.dev8-py3-none-any.whl.zip tmp/verifiNN-0.0.0.dev9-py3-none-any.whl.zip --markdown 20230603/v/verifiNN/0.0.0.dev8-0.0.0.dev9/diff.md --exclude *.pyd
+[2023-06-03 21:34:06] INFO root fetch - processPackages [pyasyncore]: executing diffoscope
+[2023-06-03 21:34:06] INFO root fetch - processPackages [pyasyncore]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyasyncore-1.0.0.tar.gz tmp/pyasyncore-1.0.1.tar.gz --markdown 20230603/p/pyasyncore/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-06-03 21:34:07] INFO root fetch - main [MainThread]: End processing [optilogic]: success
+[2023-06-03 21:34:07] INFO root fetch - main [MainThread]: End processing [pyasyncore]: success
+[2023-06-03 21:34:07] INFO root fetch - main [MainThread]: End processing [verifiNN]: success
+[2023-06-03 21:34:08] INFO root fetch - main [MainThread]: End processing [streamlit-reveal-slides]: success
+[2023-06-03 21:34:08] INFO root fetch - main [MainThread]: Store serial: [18361596]
