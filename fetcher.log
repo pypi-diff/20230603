@@ -4892,3 +4892,33 @@
 [2023-06-03 06:09:40] INFO root fetch - main [MainThread]: End processing [llama-index]: success
 [2023-06-03 06:09:40] INFO root fetch - main [MainThread]: End processing [metpx-sr3]: success
 [2023-06-03 06:09:40] INFO root fetch - main [MainThread]: Store serial: [18356818]
+[2023-06-03 06:14:44] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18356818]
+[2023-06-03 06:14:49] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-06-03 06:14:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: asyncgnostic
+[2023-06-03 06:14:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tf-nightly-intel
+[2023-06-03 06:14:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: odoo-addons-oca-margin-analysis
+[2023-06-03 06:14:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: odoo14-addon-mis-builder
+[2023-06-03 06:14:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: headless-ida
+[2023-06-03 06:14:49] INFO root fetch - processPackages [odoo-addons-oca-margin-analysis]: New version: [16.0.20230602.0] Old Version: [16.0.20230420.0]
+[2023-06-03 06:14:49] WARNING root fetch - processPackages [asyncgnostic]: Skipping, unable to determine old version
+[2023-06-03 06:14:49] INFO root fetch - main [MainThread]: End processing [asyncgnostic] error
+[2023-06-03 06:14:49] INFO root fetch - processPackages [headless-ida]: New version: [0.4.0] Old Version: [0.3.5]
+[2023-06-03 06:14:49] INFO root fetch - processPackages [odoo14-addon-mis-builder]: New version: [14.0.4.2.1.dev1] Old Version: [14.0.4.2.0]
+[2023-06-03 06:14:49] INFO root fetch - processPackages [tf-nightly-intel]: New version: [2.14.0.dev20230602] Old Version: [2.14.0.dev20230601]
+[2023-06-03 06:14:50] INFO root fetch - processPackages [odoo-addons-oca-margin-analysis]: Downloading https://files.pythonhosted.org/packages/f0/7e/cc451d719e738a01f77f1e83e9d850c7c1167fe9121b34094b9f94ca7dbd/odoo_addons_oca_margin_analysis-16.0.20230420.0-py3-none-any.whl
+[2023-06-03 06:14:50] INFO root fetch - processPackages [odoo14-addon-mis-builder]: Downloading https://files.pythonhosted.org/packages/7e/05/e1fb6e10aebe2c0246acccf8b102b2b1cb17ad45635aeb8e54d36134a1c2/odoo14_addon_mis_builder-14.0.4.2.1.dev1-py3-none-any.whl
+[2023-06-03 06:14:50] INFO root fetch - processPackages [tf-nightly-intel]: Downloading https://files.pythonhosted.org/packages/f5/25/138b68fcaa9ae28964104b5ab133be79af53a31008103e5957dda16e3d37/tf_nightly_intel-2.14.0.dev20230601-cp39-cp39-win_amd64.whl
+[2023-06-03 06:14:50] INFO root fetch - processPackages [headless-ida]: Downloading https://files.pythonhosted.org/packages/fc/2b/87998e9085789b57ee1c40961a1407013154ee6783e74dfc3e97fc75a36d/headless-ida-0.4.0.tar.gz
+[2023-06-03 06:14:50] WARNING root fetch - processPackages [tf-nightly-intel]: Skipping package: exceeds size limit 182812069>=10485760
+[2023-06-03 06:14:50] INFO root fetch - main [MainThread]: End processing [tf-nightly-intel] error
+[2023-06-03 06:14:50] INFO root fetch - processPackages [odoo-addons-oca-margin-analysis]: Downloading https://files.pythonhosted.org/packages/ff/8f/eae5d3e37787ee54167616139f045606f3765f8998dfc1731bd4b8d7bf08/odoo_addons_oca_margin_analysis-16.0.20230602.0-py3-none-any.whl
+[2023-06-03 06:14:50] INFO root fetch - processPackages [headless-ida]: executing diffoscope
+[2023-06-03 06:14:50] INFO root fetch - processPackages [headless-ida]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/headless-ida-0.3.5.tar.gz tmp/headless-ida-0.4.0.tar.gz --markdown 20230603/h/headless-ida/0.3.5-0.4.0/diff.md --exclude *.pyd
+[2023-06-03 06:14:50] INFO root fetch - processPackages [odoo14-addon-mis-builder]: executing diffoscope
+[2023-06-03 06:14:50] INFO root fetch - processPackages [odoo14-addon-mis-builder]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_mis_builder-14.0.4.2.0-py3-none-any.whl.zip tmp/odoo14_addon_mis_builder-14.0.4.2.1.dev1-py3-none-any.whl.zip --markdown 20230603/o/odoo14-addon-mis-builder/14.0.4.2.0-14.0.4.2.1.dev1/diff.md --exclude *.pyd
+[2023-06-03 06:14:50] INFO root fetch - processPackages [odoo-addons-oca-margin-analysis]: executing diffoscope
+[2023-06-03 06:14:50] INFO root fetch - processPackages [odoo-addons-oca-margin-analysis]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addons_oca_margin_analysis-16.0.20230420.0-py3-none-any.whl.zip tmp/odoo_addons_oca_margin_analysis-16.0.20230602.0-py3-none-any.whl.zip --markdown 20230603/o/odoo-addons-oca-margin-analysis/16.0.20230420.0-16.0.20230602.0/diff.md --exclude *.pyd
+[2023-06-03 06:14:51] INFO root fetch - main [MainThread]: End processing [headless-ida]: success
+[2023-06-03 06:14:51] INFO root fetch - main [MainThread]: End processing [odoo-addons-oca-margin-analysis]: success
+[2023-06-03 06:14:52] INFO root fetch - main [MainThread]: End processing [odoo14-addon-mis-builder]: success
+[2023-06-03 06:14:52] INFO root fetch - main [MainThread]: Store serial: [18356839]
