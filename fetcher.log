@@ -4568,3 +4568,77 @@
 [2023-06-03 05:14:27] INFO root fetch - main [MainThread]: End processing [GANDLF]: success
 [2023-06-03 05:16:51] INFO root fetch - main [MainThread]: End processing [duckdb]: success
 [2023-06-03 05:16:51] INFO root fetch - main [MainThread]: Store serial: [18356589]
+[2023-06-03 05:21:55] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18356589]
+[2023-06-03 05:22:00] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2023-06-03 05:22:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: llm-explorer
+[2023-06-03 05:22:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: anova-analysis
+[2023-06-03 05:22:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: odoo-addon-base-ubl
+[2023-06-03 05:22:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: odoo-addon-pdf-helper
+[2023-06-03 05:22:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: odoo-addon-base-edi
+[2023-06-03 05:22:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: usls
+[2023-06-03 05:22:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: ccxtools
+[2023-06-03 05:22:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: nats-py
+[2023-06-03 05:22:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: evadb
+[2023-06-03 05:22:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: synapseclient
+[2023-06-03 05:22:00] INFO root fetch - processPackages [odoo-addon-pdf-helper]: New version: [16.0.1.0.0.4] Old Version: [16.0.1.0.0.2]
+[2023-06-03 05:22:00] INFO root fetch - processPackages [anova-analysis]: New version: [1.0.4] Old Version: [1.0.3]
+[2023-06-03 05:22:00] INFO root fetch - processPackages [odoo-addon-base-ubl]: New version: [16.0.1.0.0.4] Old Version: [16.0.1.0.0.3]
+[2023-06-03 05:22:00] INFO root fetch - processPackages [llm-explorer]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-06-03 05:22:00] INFO root fetch - processPackages [odoo-addon-base-edi]: New version: [16.0.1.0.0.4] Old Version: [16.0.1.0.0.2]
+[2023-06-03 05:22:00] INFO root fetch - processPackages [usls]: New version: [0.2.8] Old Version: [0.2.6]
+[2023-06-03 05:22:00] INFO root fetch - processPackages [nats-py]: New version: [2.3.0] Old Version: [2.2.0]
+[2023-06-03 05:22:00] INFO root fetch - processPackages [evadb]: New version: [0.2.6] Old Version: [0.2.5]
+[2023-06-03 05:22:00] INFO root fetch - processPackages [ccxtools]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-06-03 05:22:00] INFO root fetch - processPackages [synapseclient]: New version: [2.7.2] Old Version: [2.7.1]
+[2023-06-03 05:22:00] INFO root fetch - processPackages [llm-explorer]: Downloading https://files.pythonhosted.org/packages/b0/1b/3aa039403f74a08f64d51e4e83a8e3907acf0bf0a3660054bf18842afe66/llm_explorer-0.0.1.tar.gz
+[2023-06-03 05:22:00] INFO root fetch - processPackages [synapseclient]: Downloading https://files.pythonhosted.org/packages/ff/36/12f430395398752da9e80d2ef220b02858aca9325e936cc0eece6891068b/synapseclient-2.7.1.tar.gz
+[2023-06-03 05:22:00] INFO root fetch - processPackages [evadb]: Downloading https://files.pythonhosted.org/packages/56/a3/4174ebbe8e2643621161a9aca2b9cb3c65c5eaf048ad6bb6210a261493c5/evadb-0.2.6.tar.gz
+[2023-06-03 05:22:00] INFO root fetch - processPackages [ccxtools]: Downloading https://files.pythonhosted.org/packages/2f/81/ac3ab54ce686eaf6c2cbf0b6b8845dc3abcd2ca613864b7c6c242ffd3c56/ccxtools-0.0.8.tar.gz
+[2023-06-03 05:22:00] INFO root fetch - processPackages [nats-py]: Downloading https://files.pythonhosted.org/packages/21/00/831ef555466bcde9419fc953ded17cb83e255733b248bf0e72a0a11759b6/nats-py-2.2.0.tar.gz
+[2023-06-03 05:22:00] INFO root fetch - processPackages [odoo-addon-base-edi]: Downloading https://files.pythonhosted.org/packages/10/31/8a7098d85c1306380e5ebb384b2e777b28222d9a37d42137eec3628a19a8/odoo_addon_base_edi-16.0.1.0.0.2-py3-none-any.whl
+[2023-06-03 05:22:00] INFO root fetch - processPackages [anova-analysis]: Downloading https://files.pythonhosted.org/packages/95/17/2af58964a9ca90c1582b7ec82b691a171ce2bf601e0e501211e55725b060/anova_analysis-1.0.4.tar.gz
+[2023-06-03 05:22:00] INFO root fetch - processPackages [evadb]: executing diffoscope
+[2023-06-03 05:22:00] INFO root fetch - processPackages [evadb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/evadb-0.2.5.tar.gz tmp/evadb-0.2.6.tar.gz --markdown 20230603/e/evadb/0.2.5-0.2.6/diff.md --exclude *.pyd
+[2023-06-03 05:22:00] INFO root fetch - processPackages [anova-analysis]: executing diffoscope
+[2023-06-03 05:22:00] INFO root fetch - processPackages [anova-analysis]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/anova_analysis-1.0.3.tar.gz tmp/anova_analysis-1.0.4.tar.gz --markdown 20230603/a/anova-analysis/1.0.3-1.0.4/diff.md --exclude *.pyd
+[2023-06-03 05:22:00] INFO root fetch - processPackages [odoo-addon-pdf-helper]: Downloading https://files.pythonhosted.org/packages/84/23/b9e0e55dcfb1dc6e0be78614d2496b96da4528b6faebc60916dd59b68398/odoo_addon_pdf_helper-16.0.1.0.0.4-py3-none-any.whl
+[2023-06-03 05:22:00] INFO root fetch - processPackages [usls]: Downloading https://files.pythonhosted.org/packages/20/51/b9d418a763bc3f8d9f053e152cf5ca36475eae1b8c8324b68345ef7ec7a0/usls-0.2.8-py3-none-any.whl
+[2023-06-03 05:22:00] INFO root fetch - processPackages [llm-explorer]: Downloading https://files.pythonhosted.org/packages/39/67/8685427bb315f17293f336907f848f62049574099320d11b300cb68b1759/llm_explorer-0.0.2.tar.gz
+[2023-06-03 05:22:00] INFO root fetch - processPackages [odoo-addon-base-ubl]: Downloading https://files.pythonhosted.org/packages/17/25/73824a0bd554428d23736c0ed50b5d48e963ce2228047f6ee7d104eb069f/odoo_addon_base_ubl-16.0.1.0.0.4-py3-none-any.whl
+[2023-06-03 05:22:00] WARNING root fetch - processPackages [usls]: Skipping package: exceeds size limit 17146240>=10485760
+[2023-06-03 05:22:00] INFO root fetch - processPackages [usls]: Start processing: odoo14-addon-fieldservice-sale
+[2023-06-03 05:22:00] INFO root fetch - main [MainThread]: End processing [usls] error
+[2023-06-03 05:22:01] INFO root fetch - processPackages [odoo14-addon-fieldservice-sale]: New version: [14.0.2.1.1.dev6] Old Version: [14.0.2.1.1.dev4]
+[2023-06-03 05:22:01] INFO root fetch - processPackages [odoo-addon-pdf-helper]: executing diffoscope
+[2023-06-03 05:22:01] INFO root fetch - processPackages [odoo-addon-pdf-helper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_pdf_helper-16.0.1.0.0.2-py3-none-any.whl.zip tmp/odoo_addon_pdf_helper-16.0.1.0.0.4-py3-none-any.whl.zip --markdown 20230603/o/odoo-addon-pdf-helper/16.0.1.0.0.2-16.0.1.0.0.4/diff.md --exclude *.pyd
+[2023-06-03 05:22:01] INFO root fetch - processPackages [odoo-addon-base-edi]: Downloading https://files.pythonhosted.org/packages/a2/b4/cfede81eb23224692d8533b183535490f22cb5f2f4b89d7673e61146ab12/odoo_addon_base_edi-16.0.1.0.0.4-py3-none-any.whl
+[2023-06-03 05:22:01] INFO root fetch - processPackages [llm-explorer]: executing diffoscope
+[2023-06-03 05:22:01] INFO root fetch - processPackages [llm-explorer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/llm_explorer-0.0.1.tar.gz tmp/llm_explorer-0.0.2.tar.gz --markdown 20230603/l/llm-explorer/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-06-03 05:22:01] INFO root fetch - processPackages [ccxtools]: Downloading https://files.pythonhosted.org/packages/4b/e9/6ef44c6be3fb7e41208d0e44d2c881fbe5ece1952bea1b3b096a5201e196/ccxtools-0.0.9.tar.gz
+[2023-06-03 05:22:01] INFO root fetch - processPackages [nats-py]: Downloading https://files.pythonhosted.org/packages/9b/1f/476cf3c7d87a5d791d316518f7ae54cccd9aff3c6e8b89090bb77440257d/nats-py-2.3.0.tar.gz
+[2023-06-03 05:22:01] INFO root fetch - processPackages [odoo-addon-base-ubl]: executing diffoscope
+[2023-06-03 05:22:01] INFO root fetch - processPackages [odoo-addon-base-ubl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_base_ubl-16.0.1.0.0.3-py3-none-any.whl.zip tmp/odoo_addon_base_ubl-16.0.1.0.0.4-py3-none-any.whl.zip --markdown 20230603/o/odoo-addon-base-ubl/16.0.1.0.0.3-16.0.1.0.0.4/diff.md --exclude *.pyd
+[2023-06-03 05:22:01] INFO root fetch - processPackages [odoo-addon-base-edi]: executing diffoscope
+[2023-06-03 05:22:01] INFO root fetch - processPackages [odoo-addon-base-edi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_base_edi-16.0.1.0.0.2-py3-none-any.whl.zip tmp/odoo_addon_base_edi-16.0.1.0.0.4-py3-none-any.whl.zip --markdown 20230603/o/odoo-addon-base-edi/16.0.1.0.0.2-16.0.1.0.0.4/diff.md --exclude *.pyd
+[2023-06-03 05:22:01] INFO root fetch - processPackages [ccxtools]: executing diffoscope
+[2023-06-03 05:22:01] INFO root fetch - processPackages [ccxtools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ccxtools-0.0.8.tar.gz tmp/ccxtools-0.0.9.tar.gz --markdown 20230603/c/ccxtools/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-06-03 05:22:01] INFO root fetch - processPackages [nats-py]: executing diffoscope
+[2023-06-03 05:22:01] INFO root fetch - processPackages [nats-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nats-py-2.2.0.tar.gz tmp/nats-py-2.3.0.tar.gz --markdown 20230603/n/nats-py/2.2.0-2.3.0/diff.md --exclude *.pyd
+[2023-06-03 05:22:01] INFO root fetch - processPackages [odoo14-addon-fieldservice-sale]: Downloading https://files.pythonhosted.org/packages/f0/5c/080430c31247395cf01c11acdb5c62ea58e81849b103fd12d8db236f95c8/odoo14_addon_fieldservice_sale-14.0.2.1.1.dev4-py3-none-any.whl
+[2023-06-03 05:22:01] INFO root fetch - processPackages [synapseclient]: Downloading https://files.pythonhosted.org/packages/06/7d/052e9972b85409c900329a86ba0c7c910fa9cd7e2e2d0c7cab0893caccb6/synapseclient-2.7.2.tar.gz
+[2023-06-03 05:22:01] INFO root fetch - processPackages [synapseclient]: executing diffoscope
+[2023-06-03 05:22:01] INFO root fetch - processPackages [synapseclient]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/synapseclient-2.7.1.tar.gz tmp/synapseclient-2.7.2.tar.gz --markdown 20230603/s/synapseclient/2.7.1-2.7.2/diff.md --exclude *.pyd
+[2023-06-03 05:22:01] INFO root fetch - processPackages [odoo14-addon-fieldservice-sale]: Downloading https://files.pythonhosted.org/packages/5b/0a/de34749c25394a215fd3ff75147374810634da240c3ff417569767ed1081/odoo14_addon_fieldservice_sale-14.0.2.1.1.dev6-py3-none-any.whl
+[2023-06-03 05:22:01] INFO root fetch - processPackages [odoo14-addon-fieldservice-sale]: executing diffoscope
+[2023-06-03 05:22:01] INFO root fetch - processPackages [odoo14-addon-fieldservice-sale]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_fieldservice_sale-14.0.2.1.1.dev4-py3-none-any.whl.zip tmp/odoo14_addon_fieldservice_sale-14.0.2.1.1.dev6-py3-none-any.whl.zip --markdown 20230603/o/odoo14-addon-fieldservice-sale/14.0.2.1.1.dev4-14.0.2.1.1.dev6/diff.md --exclude *.pyd
+[2023-06-03 05:22:02] INFO root fetch - main [MainThread]: End processing [anova-analysis]: success
+[2023-06-03 05:22:02] INFO root fetch - main [MainThread]: End processing [odoo-addon-pdf-helper]: success
+[2023-06-03 05:22:02] INFO root fetch - main [MainThread]: End processing [ccxtools]: success
+[2023-06-03 05:22:02] INFO root fetch - main [MainThread]: End processing [odoo-addon-base-edi]: success
+[2023-06-03 05:22:03] INFO root fetch - main [MainThread]: End processing [llm-explorer]: success
+[2023-06-03 05:22:03] INFO root fetch - main [MainThread]: End processing [nats-py]: success
+[2023-06-03 05:22:03] INFO root fetch - main [MainThread]: End processing [odoo14-addon-fieldservice-sale]: success
+[2023-06-03 05:22:03] INFO root fetch - main [MainThread]: End processing [synapseclient]: success
+[2023-06-03 05:22:05] INFO root fetch - main [MainThread]: End processing [evadb]: success
+[2023-06-03 05:22:08] INFO root fetch - main [MainThread]: End processing [odoo-addon-base-ubl]: success
+[2023-06-03 05:22:08] INFO root fetch - main [MainThread]: Store serial: [18356618]
