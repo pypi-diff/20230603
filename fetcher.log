@@ -1016,3 +1016,57 @@
 [2023-06-03 02:01:01] INFO root fetch - main [MainThread]: End processing [lusid-sdk]: success
 [2023-06-03 02:01:19] INFO root fetch - main [MainThread]: End processing [lusid-sdk-preview]: success
 [2023-06-03 02:01:19] INFO root fetch - main [MainThread]: Store serial: [18354367]
+[2023-06-03 02:06:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18354367]
+[2023-06-03 02:06:28] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-06-03 02:06:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: markdown-badge
+[2023-06-03 02:06:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: opensarlab-oslnotify
+[2023-06-03 02:06:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: motion-python
+[2023-06-03 02:06:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: xcffib
+[2023-06-03 02:06:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: torchdatasets-nightly
+[2023-06-03 02:06:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: mct-nightly
+[2023-06-03 02:06:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: returnn
+[2023-06-03 02:06:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: pigeonsai
+[2023-06-03 02:06:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: jaxkern-nightly
+[2023-06-03 02:06:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: jaxutils-nightly
+[2023-06-03 02:06:28] INFO root fetch - processPackages [markdown-badge]: New version: [1.0.3] Old Version: [1.0.2]
+[2023-06-03 02:06:28] WARNING root fetch - processPackages [opensarlab-oslnotify]: Skipping, unable to determine old version
+[2023-06-03 02:06:28] INFO root fetch - main [MainThread]: End processing [opensarlab-oslnotify] error
+[2023-06-03 02:06:28] INFO root fetch - processPackages [motion-python]: New version: [0.1.54] Old Version: [0.1.53]
+[2023-06-03 02:06:28] WARNING root fetch - processPackages [pigeonsai]: Skipping, unable to determine old version
+[2023-06-03 02:06:28] INFO root fetch - main [MainThread]: End processing [pigeonsai] error
+[2023-06-03 02:06:28] INFO root fetch - processPackages [xcffib]: New version: [v0.1.4] Old Version: [v0.1.3]
+[2023-06-03 02:06:28] INFO root fetch - processPackages [torchdatasets-nightly]: New version: [1685664208] Old Version: [1685577825]
+[2023-06-03 02:06:28] INFO root fetch - processPackages [jaxkern-nightly]: New version: [0.dev20221222] Old Version: [0.dev20221221]
+[2023-06-03 02:06:28] INFO root fetch - processPackages [jaxutils-nightly]: New version: [0.0.8.dev20230602] Old Version: [0.0.8.dev20230601]
+[2023-06-03 02:06:28] INFO root fetch - processPackages [returnn]: New version: [1.20230603.803] Old Version: [1.20230603.5818]
+[2023-06-03 02:06:28] INFO root fetch - processPackages [mct-nightly]: New version: [1.8.0.9052023.post348] Old Version: [1.8.0.9042023.post411]
+[2023-06-03 02:06:28] INFO root fetch - processPackages [markdown-badge]: Downloading https://files.pythonhosted.org/packages/d8/d8/5cdbb4c671020829032dcf1f5906f01fe54a2f1e18e49e796ebb49b10907/markdown-badge-1.0.2.tar.gz
+[2023-06-03 02:06:28] INFO root fetch - processPackages [torchdatasets-nightly]: executing diffoscope
+[2023-06-03 02:06:28] INFO root fetch - processPackages [torchdatasets-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torchdatasets-nightly-1685577825.tar.gz tmp/torchdatasets-nightly-1685664208.tar.gz --markdown 20230603/t/torchdatasets-nightly/1685577825-1685664208/diff.md --exclude *.pyd
+[2023-06-03 02:06:28] INFO root fetch - processPackages [returnn]: executing diffoscope
+[2023-06-03 02:06:28] INFO root fetch - processPackages [jaxutils-nightly]: executing diffoscope
+[2023-06-03 02:06:28] INFO root fetch - processPackages [returnn]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/returnn-1.20230603.5818.tar.gz tmp/returnn-1.20230603.803.tar.gz --markdown 20230603/r/returnn/1.20230603.5818-1.20230603.803/diff.md --exclude *.pyd
+[2023-06-03 02:06:28] INFO root fetch - processPackages [jaxutils-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jaxutils-nightly-0.0.8.dev20230601.tar.gz tmp/jaxutils-nightly-0.0.8.dev20230602.tar.gz --markdown 20230603/j/jaxutils-nightly/0.0.8.dev20230601-0.0.8.dev20230602/diff.md --exclude *.pyd
+[2023-06-03 02:06:28] INFO root fetch - processPackages [jaxkern-nightly]: executing diffoscope
+[2023-06-03 02:06:28] INFO root fetch - processPackages [jaxkern-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jaxkern-nightly-0.dev20221221.tar.gz tmp/jaxkern-nightly-0.dev20221222.tar.gz --markdown 20230603/j/jaxkern-nightly/0.dev20221221-0.dev20221222/diff.md --exclude *.pyd
+[2023-06-03 02:06:28] INFO root fetch - processPackages [mct-nightly]: executing diffoscope
+[2023-06-03 02:06:28] INFO root fetch - processPackages [mct-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mct-nightly-1.8.0.9042023.post411.tar.gz tmp/mct-nightly-1.8.0.9052023.post348.tar.gz --markdown 20230603/m/mct-nightly/1.8.0.9042023.post411-1.8.0.9052023.post348/diff.md --exclude *.pyd
+[2023-06-03 02:06:28] INFO root fetch - processPackages [xcffib]: Downloading https://files.pythonhosted.org/packages/47/16/09cec7b41fe78e31bbb73c9be28cee0bd1fef79afa4726a34172b36c3185/xcffib-v0.1.3.tar.gz
+[2023-06-03 02:06:28] INFO root fetch - processPackages [motion-python]: Downloading https://files.pythonhosted.org/packages/9f/e6/cbbeb3095e75828a184882f79ce900b957d572e7618983f424a6b92af15d/motion_python-0.1.54.tar.gz
+[2023-06-03 02:06:28] INFO root fetch - processPackages [motion-python]: executing diffoscope
+[2023-06-03 02:06:28] INFO root fetch - processPackages [motion-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/motion_python-0.1.53.tar.gz tmp/motion_python-0.1.54.tar.gz --markdown 20230603/m/motion-python/0.1.53-0.1.54/diff.md --exclude *.pyd
+[2023-06-03 02:06:29] INFO root fetch - processPackages [markdown-badge]: Downloading https://files.pythonhosted.org/packages/73/e9/54cb4b0dcd9fafd8004b3ee46fe6af6afbf9982e0fda07091b9f203f9292/markdown-badge-1.0.3.tar.gz
+[2023-06-03 02:06:29] INFO root fetch - processPackages [markdown-badge]: executing diffoscope
+[2023-06-03 02:06:29] INFO root fetch - processPackages [markdown-badge]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/markdown-badge-1.0.2.tar.gz tmp/markdown-badge-1.0.3.tar.gz --markdown 20230603/m/markdown-badge/1.0.2-1.0.3/diff.md --exclude *.pyd
+[2023-06-03 02:06:29] INFO root fetch - processPackages [xcffib]: Downloading https://files.pythonhosted.org/packages/cd/9f/79985ca77854ed03fd69b07407835a57cc91f30b5fc748b1ce7598cf1465/xcffib-v0.1.4.tar.gz
+[2023-06-03 02:06:29] INFO root fetch - processPackages [xcffib]: executing diffoscope
+[2023-06-03 02:06:29] INFO root fetch - processPackages [xcffib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xcffib-v0.1.3.tar.gz tmp/xcffib-v0.1.4.tar.gz --markdown 20230603/x/xcffib/v0.1.3-v0.1.4/diff.md --exclude *.pyd
+[2023-06-03 02:06:30] INFO root fetch - main [MainThread]: End processing [markdown-badge]: success
+[2023-06-03 02:06:30] INFO root fetch - main [MainThread]: End processing [torchdatasets-nightly]: success
+[2023-06-03 02:06:30] INFO root fetch - main [MainThread]: End processing [jaxkern-nightly]: success
+[2023-06-03 02:06:30] INFO root fetch - main [MainThread]: End processing [motion-python]: success
+[2023-06-03 02:06:30] INFO root fetch - main [MainThread]: End processing [jaxutils-nightly]: success
+[2023-06-03 02:06:37] INFO root fetch - main [MainThread]: End processing [mct-nightly]: success
+[2023-06-03 02:06:37] INFO root fetch - main [MainThread]: End processing [returnn]: success
+[2023-06-03 02:07:21] INFO root fetch - main [MainThread]: End processing [xcffib]: success
+[2023-06-03 02:07:21] INFO root fetch - main [MainThread]: Store serial: [18354409]
