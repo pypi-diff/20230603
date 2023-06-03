@@ -4814,3 +4814,39 @@
 [2023-06-03 05:59:15] INFO root fetch - main [MainThread]: End processing [pydantic-tools]: success
 [2023-06-03 05:59:16] INFO root fetch - main [MainThread]: End processing [modulo]: success
 [2023-06-03 05:59:16] INFO root fetch - main [MainThread]: Store serial: [18356751]
+[2023-06-03 06:04:19] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18356751]
+[2023-06-03 06:04:24] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-06-03 06:04:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: llama-hub
+[2023-06-03 06:04:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: perftester
+[2023-06-03 06:04:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: bashbot-build
+[2023-06-03 06:04:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: lazyops
+[2023-06-03 06:04:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: AdminToolsDjango
+[2023-06-03 06:04:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: lab3-python-yuliaatrashonok
+[2023-06-03 06:04:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: PhindersKeepers
+[2023-06-03 06:04:24] INFO root fetch - processPackages [lazyops]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-06-03 06:04:24] INFO root fetch - processPackages [perftester]: New version: [0.6.2] Old Version: [0.6.1]
+[2023-06-03 06:04:24] INFO root fetch - processPackages [AdminToolsDjango]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-06-03 06:04:24] WARNING root fetch - processPackages [bashbot-build]: Skipping, unable to determine old version
+[2023-06-03 06:04:24] WARNING root fetch - processPackages [PhindersKeepers]: Skipping, unable to determine old version
+[2023-06-03 06:04:24] INFO root fetch - main [MainThread]: End processing [bashbot-build] error
+[2023-06-03 06:04:24] WARNING root fetch - processPackages [lab3-python-yuliaatrashonok]: Skipping, unable to determine old version
+[2023-06-03 06:04:24] INFO root fetch - main [MainThread]: End processing [PhindersKeepers] error
+[2023-06-03 06:04:24] INFO root fetch - main [MainThread]: End processing [lab3-python-yuliaatrashonok] error
+[2023-06-03 06:04:24] INFO root fetch - processPackages [llama-hub]: New version: [0.0.2] Old Version: [0.0.1a2]
+[2023-06-03 06:04:24] INFO root fetch - processPackages [lazyops]: executing diffoscope
+[2023-06-03 06:04:24] INFO root fetch - processPackages [lazyops]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lazyops-0.2.8.tar.gz tmp/lazyops-0.2.9.tar.gz --markdown 20230603/l/lazyops/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2023-06-03 06:04:25] INFO root fetch - processPackages [AdminToolsDjango]: Downloading https://files.pythonhosted.org/packages/45/67/e6e256fca6bc17c0830f97575dbfbae74dc5f5e3167af6666e269f481ca4/AdminToolsDjango-1.0.0.tar.gz
+[2023-06-03 06:04:25] INFO root fetch - processPackages [perftester]: Downloading https://files.pythonhosted.org/packages/7b/25/2d777b01dbeb8544d1f506f35efb107a73627499682daed853f857338e8c/perftester-0.6.2.tar.gz
+[2023-06-03 06:04:25] INFO root fetch - processPackages [llama-hub]: Downloading https://files.pythonhosted.org/packages/61/98/9d2aa236b610af75da15a5b0e1a1e0879362bb990d2eebe9a59603f5aef3/llama_hub-0.0.2.tar.gz
+[2023-06-03 06:04:25] INFO root fetch - processPackages [perftester]: executing diffoscope
+[2023-06-03 06:04:25] INFO root fetch - processPackages [perftester]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/perftester-0.6.1.tar.gz tmp/perftester-0.6.2.tar.gz --markdown 20230603/p/perftester/0.6.1-0.6.2/diff.md --exclude *.pyd
+[2023-06-03 06:04:25] INFO root fetch - processPackages [llama-hub]: executing diffoscope
+[2023-06-03 06:04:25] INFO root fetch - processPackages [llama-hub]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/llama_hub-0.0.1a2.tar.gz tmp/llama_hub-0.0.2.tar.gz --markdown 20230603/l/llama-hub/0.0.1a2-0.0.2/diff.md --exclude *.pyd
+[2023-06-03 06:04:25] INFO root fetch - processPackages [AdminToolsDjango]: Downloading https://files.pythonhosted.org/packages/ff/b7/f6a1b739f5d9d2781e4f1aa49a37e13e1ddd478963fb9dc1f290aa687df2/AdminToolsDjango-1.0.1.tar.gz
+[2023-06-03 06:04:25] INFO root fetch - processPackages [AdminToolsDjango]: executing diffoscope
+[2023-06-03 06:04:25] INFO root fetch - processPackages [AdminToolsDjango]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/AdminToolsDjango-1.0.0.tar.gz tmp/AdminToolsDjango-1.0.1.tar.gz --markdown 20230603/A/AdminToolsDjango/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-06-03 06:04:26] INFO root fetch - main [MainThread]: End processing [perftester]: success
+[2023-06-03 06:04:26] INFO root fetch - main [MainThread]: End processing [AdminToolsDjango]: success
+[2023-06-03 06:04:26] INFO root fetch - main [MainThread]: End processing [lazyops]: success
+[2023-06-03 06:04:28] INFO root fetch - main [MainThread]: End processing [llama-hub]: success
+[2023-06-03 06:04:28] INFO root fetch - main [MainThread]: Store serial: [18356783]
