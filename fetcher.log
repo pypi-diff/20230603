@@ -4144,3 +4144,44 @@
 [2023-06-03 04:02:02] INFO root fetch - main [MainThread]: End processing [BatchParse]: success
 [2023-06-03 04:02:50] INFO root fetch - main [MainThread]: End processing [homeassistant-stubs]: success
 [2023-06-03 04:02:50] INFO root fetch - main [MainThread]: Store serial: [18356357]
+[2023-06-03 04:07:54] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18356357]
+[2023-06-03 04:07:59] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-06-03 04:07:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ovos-classifiers
+[2023-06-03 04:07:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: PyCyphORM
+[2023-06-03 04:07:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: flopt
+[2023-06-03 04:07:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ftsnowySerializer
+[2023-06-03 04:07:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: ipylib
+[2023-06-03 04:07:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: PyCyphORM
+[2023-06-03 04:07:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: pixel-font-builder
+[2023-06-03 04:07:59] INFO root fetch - processPackages [PyCyphORM]: New version: [0.1.2.dev0] Old Version: [0.1.2]
+[2023-06-03 04:07:59] WARNING root fetch - processPackages [ftsnowySerializer]: Skipping, unable to determine old version
+[2023-06-03 04:07:59] INFO root fetch - main [MainThread]: End processing [ftsnowySerializer] error
+[2023-06-03 04:07:59] INFO root fetch - processPackages [pixel-font-builder]: New version: [0.0.1] Old Version: [0.0.0]
+[2023-06-03 04:07:59] INFO root fetch - processPackages [ovos-classifiers]: New version: [0.0.0a9] Old Version: [0.0.0a8]
+[2023-06-03 04:07:59] INFO root fetch - processPackages [PyCyphORM]: New version: [0.1.2.dev0] Old Version: [0.1.2]
+[2023-06-03 04:07:59] INFO root fetch - processPackages [ipylib]: New version: [0.2.5] Old Version: [0.2.4]
+[2023-06-03 04:07:59] INFO root fetch - processPackages [flopt]: New version: [0.5.6] Old Version: [0.5.5]
+[2023-06-03 04:08:00] INFO root fetch - processPackages [pixel-font-builder]: executing diffoscope
+[2023-06-03 04:08:00] INFO root fetch - processPackages [pixel-font-builder]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pixel-font-builder-0.0.0.tar.gz tmp/pixel-font-builder-0.0.1.tar.gz --markdown 20230603/p/pixel-font-builder/0.0.0-0.0.1/diff.md --exclude *.pyd
+[2023-06-03 04:08:00] INFO root fetch - processPackages [flopt]: Downloading https://files.pythonhosted.org/packages/92/60/4443e0c5c4485cf9a256cd9924f987702f22c8ca14002fd861e9788790c5/flopt-0.5.5.tar.gz
+[2023-06-03 04:08:00] INFO root fetch - processPackages [PyCyphORM]: Downloading https://files.pythonhosted.org/packages/d9/d8/fb8857558564b833f437cc9eb02590803415aaacf6b00b6f99f4024cff12/PyCyphORM-0.1.2.dev0-py3-none-any.whl
+[2023-06-03 04:08:00] INFO root fetch - processPackages [ipylib]: Downloading https://files.pythonhosted.org/packages/da/a0/94692164c05c9b0091166590d1400fec5681194a5ca7890e3585313f97ae/ipylib-0.2.5.tar.gz
+[2023-06-03 04:08:00] INFO root fetch - processPackages [PyCyphORM]: Downloading https://files.pythonhosted.org/packages/d9/d8/fb8857558564b833f437cc9eb02590803415aaacf6b00b6f99f4024cff12/PyCyphORM-0.1.2.dev0-py3-none-any.whl
+[2023-06-03 04:08:00] INFO root fetch - processPackages [PyCyphORM]: executing diffoscope
+[2023-06-03 04:08:00] INFO root fetch - processPackages [PyCyphORM]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyCyphORM-0.1.2-py3-none-any.whl.zip tmp/PyCyphORM-0.1.2.dev0-py3-none-any.whl.zip --markdown 20230603/P/PyCyphORM/0.1.2-0.1.2.dev0/diff.md --exclude *.pyd
+[2023-06-03 04:08:00] INFO root fetch - processPackages [PyCyphORM]: executing diffoscope
+[2023-06-03 04:08:00] INFO root fetch - processPackages [PyCyphORM]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyCyphORM-0.1.2-py3-none-any.whl.zip tmp/PyCyphORM-0.1.2.dev0-py3-none-any.whl.zip --markdown 20230603/P/PyCyphORM/0.1.2-0.1.2.dev0/diff.md --exclude *.pyd
+[2023-06-03 04:08:00] INFO root fetch - processPackages [ovos-classifiers]: executing diffoscope
+[2023-06-03 04:08:00] INFO root fetch - processPackages [ovos-classifiers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ovos_classifiers-0.0.0a8-py3-none-any.whl.zip tmp/ovos_classifiers-0.0.0a9-py3-none-any.whl.zip --markdown 20230603/o/ovos-classifiers/0.0.0a8-0.0.0a9/diff.md --exclude *.pyd
+[2023-06-03 04:08:00] INFO root fetch - processPackages [ipylib]: executing diffoscope
+[2023-06-03 04:08:00] INFO root fetch - processPackages [ipylib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ipylib-0.2.4.tar.gz tmp/ipylib-0.2.5.tar.gz --markdown 20230603/i/ipylib/0.2.4-0.2.5/diff.md --exclude *.pyd
+[2023-06-03 04:08:00] INFO root fetch - processPackages [flopt]: Downloading https://files.pythonhosted.org/packages/4e/b2/bfac1e099727669ac061391b03e89cfcc853c77f3cbb2a61710af299093a/flopt-0.5.6.tar.gz
+[2023-06-03 04:08:00] INFO root fetch - processPackages [flopt]: executing diffoscope
+[2023-06-03 04:08:00] INFO root fetch - processPackages [flopt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flopt-0.5.5.tar.gz tmp/flopt-0.5.6.tar.gz --markdown 20230603/f/flopt/0.5.5-0.5.6/diff.md --exclude *.pyd
+[2023-06-03 04:08:01] INFO root fetch - main [MainThread]: End processing [pixel-font-builder]: success
+[2023-06-03 04:08:01] INFO root fetch - main [MainThread]: End processing [PyCyphORM]: success
+[2023-06-03 04:08:01] INFO root fetch - main [MainThread]: End processing [PyCyphORM]: success
+[2023-06-03 04:08:01] INFO root fetch - main [MainThread]: End processing [ipylib]: success
+[2023-06-03 04:08:01] INFO root fetch - main [MainThread]: End processing [ovos-classifiers]: success
+[2023-06-03 04:08:02] INFO root fetch - main [MainThread]: End processing [flopt]: success
+[2023-06-03 04:08:02] INFO root fetch - main [MainThread]: Store serial: [18356378]
