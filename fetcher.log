@@ -4347,3 +4347,51 @@
 [2023-06-03 04:39:21] INFO root fetch - main [MainThread]: End processing [cdk8s-plus-24]: success
 [2023-06-03 04:39:21] INFO root fetch - main [MainThread]: End processing [m-abac-test]: success
 [2023-06-03 04:39:21] INFO root fetch - main [MainThread]: Store serial: [18356474]
+[2023-06-03 04:44:25] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18356474]
+[2023-06-03 04:44:30] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-06-03 04:44:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: naif-eop-high-prec
+[2023-06-03 04:44:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cdk8s-plus-25
+[2023-06-03 04:44:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cdk8s-plus-26
+[2023-06-03 04:44:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: odoo-addon-account-comment-template
+[2023-06-03 04:44:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: CodeToCAD
+[2023-06-03 04:44:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: iam-actions
+[2023-06-03 04:44:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: DAJIN2
+[2023-06-03 04:44:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: BatchParse
+[2023-06-03 04:44:30] INFO root fetch - processPackages [odoo-addon-account-comment-template]: New version: [16.0.1.0.0.4] Old Version: [16.0.1.0.0.3]
+[2023-06-03 04:44:30] INFO root fetch - processPackages [naif-eop-high-prec]: New version: [2023.6.3] Old Version: [2023.6.2]
+[2023-06-03 04:44:30] INFO root fetch - processPackages [CodeToCAD]: New version: [0.2.6] Old Version: [0.2.1685760038]
+[2023-06-03 04:44:30] INFO root fetch - processPackages [cdk8s-plus-25]: New version: [2.8.9] Old Version: [2.8.8]
+[2023-06-03 04:44:30] INFO root fetch - processPackages [BatchParse]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-06-03 04:44:30] INFO root fetch - processPackages [DAJIN2]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-06-03 04:44:30] INFO root fetch - processPackages [cdk8s-plus-26]: New version: [2.4.9] Old Version: [2.4.8]
+[2023-06-03 04:44:30] INFO root fetch - processPackages [iam-actions]: New version: [1.2.20230603] Old Version: [1.2.20230602]
+[2023-06-03 04:44:30] INFO root fetch - processPackages [CodeToCAD]: Downloading https://files.pythonhosted.org/packages/96/35/e14a3265dff8663295595b3df95a64e4e64f4e4a86102c42d82b3bb7cc67/CodeToCAD-0.2.1685760038.tar.gz
+[2023-06-03 04:44:30] INFO root fetch - processPackages [DAJIN2]: executing diffoscope
+[2023-06-03 04:44:30] INFO root fetch - processPackages [DAJIN2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/DAJIN2-0.1.8.tar.gz tmp/DAJIN2-0.1.9.tar.gz --markdown 20230603/D/DAJIN2/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-06-03 04:44:30] INFO root fetch - processPackages [cdk8s-plus-26]: executing diffoscope
+[2023-06-03 04:44:30] INFO root fetch - processPackages [cdk8s-plus-26]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk8s-plus-26-2.4.8.tar.gz tmp/cdk8s-plus-26-2.4.9.tar.gz --markdown 20230603/c/cdk8s-plus-26/2.4.8-2.4.9/diff.md --exclude *.pyd
+[2023-06-03 04:44:30] INFO root fetch - processPackages [BatchParse]: Downloading https://files.pythonhosted.org/packages/e0/43/1be6a5fa9a7a3ea5556f7b95d84e444d74419352404e1e34e827f6f829ea/BatchParse-0.0.5.tar.gz
+[2023-06-03 04:44:30] INFO root fetch - processPackages [cdk8s-plus-25]: executing diffoscope
+[2023-06-03 04:44:30] INFO root fetch - processPackages [cdk8s-plus-25]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk8s-plus-25-2.8.8.tar.gz tmp/cdk8s-plus-25-2.8.9.tar.gz --markdown 20230603/c/cdk8s-plus-25/2.8.8-2.8.9/diff.md --exclude *.pyd
+[2023-06-03 04:44:30] INFO root fetch - processPackages [iam-actions]: Downloading https://files.pythonhosted.org/packages/ad/9f/adaf3a16e365be399f3b568803bdd138b47beeb2e78fb6a53c954868aa25/iam_actions-1.2.20230603.tar.gz
+[2023-06-03 04:44:31] INFO root fetch - processPackages [naif-eop-high-prec]: Downloading https://files.pythonhosted.org/packages/8e/56/89109c10a2df4c16bcdfcd4197ac205f1ec4da70c93e6498f0b0ad82df8f/naif_eop_high_prec-2023.6.3.tar.gz
+[2023-06-03 04:44:31] INFO root fetch - processPackages [odoo-addon-account-comment-template]: Downloading https://files.pythonhosted.org/packages/3d/79/901c9f37e3133fd79a8ba244cf8486c70251b6d4eb560fcffdbb21aa4a4d/odoo_addon_account_comment_template-16.0.1.0.0.4-py3-none-any.whl
+[2023-06-03 04:44:31] INFO root fetch - processPackages [BatchParse]: executing diffoscope
+[2023-06-03 04:44:31] INFO root fetch - processPackages [BatchParse]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/BatchParse-0.0.4.tar.gz tmp/BatchParse-0.0.5.tar.gz --markdown 20230603/B/BatchParse/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-06-03 04:44:31] INFO root fetch - processPackages [CodeToCAD]: executing diffoscope
+[2023-06-03 04:44:31] INFO root fetch - processPackages [CodeToCAD]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/CodeToCAD-0.2.1685760038.tar.gz tmp/CodeToCAD-0.2.6.tar.gz --markdown 20230603/C/CodeToCAD/0.2.1685760038-0.2.6/diff.md --exclude *.pyd
+[2023-06-03 04:44:31] INFO root fetch - processPackages [odoo-addon-account-comment-template]: executing diffoscope
+[2023-06-03 04:44:31] INFO root fetch - processPackages [odoo-addon-account-comment-template]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_account_comment_template-16.0.1.0.0.3-py3-none-any.whl.zip tmp/odoo_addon_account_comment_template-16.0.1.0.0.4-py3-none-any.whl.zip --markdown 20230603/o/odoo-addon-account-comment-template/16.0.1.0.0.3-16.0.1.0.0.4/diff.md --exclude *.pyd
+[2023-06-03 04:44:31] INFO root fetch - processPackages [iam-actions]: executing diffoscope
+[2023-06-03 04:44:31] INFO root fetch - processPackages [iam-actions]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/iam_actions-1.2.20230602.tar.gz tmp/iam_actions-1.2.20230603.tar.gz --markdown 20230603/i/iam-actions/1.2.20230602-1.2.20230603/diff.md --exclude *.pyd
+[2023-06-03 04:44:31] INFO root fetch - processPackages [naif-eop-high-prec]: executing diffoscope
+[2023-06-03 04:44:31] INFO root fetch - processPackages [naif-eop-high-prec]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/naif_eop_high_prec-2023.6.2.tar.gz tmp/naif_eop_high_prec-2023.6.3.tar.gz --markdown 20230603/n/naif-eop-high-prec/2023.6.2-2023.6.3/diff.md --exclude *.pyd
+[2023-06-03 04:44:32] INFO root fetch - main [MainThread]: End processing [BatchParse]: success
+[2023-06-03 04:44:32] INFO root fetch - main [MainThread]: End processing [cdk8s-plus-26]: success
+[2023-06-03 04:44:32] INFO root fetch - main [MainThread]: End processing [cdk8s-plus-25]: success
+[2023-06-03 04:44:32] INFO root fetch - main [MainThread]: End processing [CodeToCAD]: success
+[2023-06-03 04:44:32] INFO root fetch - main [MainThread]: End processing [DAJIN2]: success
+[2023-06-03 04:44:32] INFO root fetch - main [MainThread]: End processing [odoo-addon-account-comment-template]: success
+[2023-06-03 04:44:36] INFO root fetch - main [MainThread]: End processing [naif-eop-high-prec]: success
+[2023-06-03 04:44:36] INFO root fetch - main [MainThread]: End processing [iam-actions]: success
+[2023-06-03 04:44:36] INFO root fetch - main [MainThread]: Store serial: [18356497]
