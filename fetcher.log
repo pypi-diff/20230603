@@ -12477,3 +12477,75 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-06-03 21:34:07] INFO root fetch - main [MainThread]: End processing [verifiNN]: success
 [2023-06-03 21:34:08] INFO root fetch - main [MainThread]: End processing [streamlit-reveal-slides]: success
 [2023-06-03 21:34:08] INFO root fetch - main [MainThread]: Store serial: [18361596]
+[2023-06-03 21:39:13] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18361596]
+[2023-06-03 21:39:17] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2023-06-03 21:39:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: toolcat
+[2023-06-03 21:39:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: fim-utils
+[2023-06-03 21:39:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pysmali
+[2023-06-03 21:39:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: rl4co
+[2023-06-03 21:39:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pyasyncore
+[2023-06-03 21:39:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: torchcrepe
+[2023-06-03 21:39:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: deephaven-core
+[2023-06-03 21:39:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: deephaven-server
+[2023-06-03 21:39:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: toolcat
+[2023-06-03 21:39:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: relevanceai
+[2023-06-03 21:39:17] INFO root fetch - processPackages [pyasyncore]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-06-03 21:39:17] INFO root fetch - processPackages [pysmali]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-06-03 21:39:17] INFO root fetch - processPackages [toolcat]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-06-03 21:39:17] INFO root fetch - processPackages [deephaven-core]: New version: [0.25.0] Old Version: [0.24.3]
+[2023-06-03 21:39:17] INFO root fetch - processPackages [toolcat]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-06-03 21:39:17] INFO root fetch - processPackages [torchcrepe]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-06-03 21:39:17] INFO root fetch - processPackages [rl4co]: New version: [0.0.1.dev0] Old Version: [0.0.1]
+[2023-06-03 21:39:17] INFO root fetch - processPackages [deephaven-server]: New version: [0.25.0] Old Version: [0.24.3]
+[2023-06-03 21:39:17] INFO root fetch - processPackages [fim-utils]: New version: [1.5.0rc4] Old Version: [1.5.0rc3]
+[2023-06-03 21:39:17] INFO root fetch - processPackages [relevanceai]: New version: [4.0.9] Old Version: [4.0.8]
+[2023-06-03 21:39:17] WARNING root fetch - processPackages [rl4co]: fallback to get urls: [0.0.1]
+[2023-06-03 21:39:17] WARNING root fetch - processPackages [rl4co]: None
+[2023-06-03 21:39:17] INFO root fetch - processPackages [pysmali]: Downloading https://files.pythonhosted.org/packages/26/ab/289b4a76afa1b1e1f69290ab921f150a7c2e32027de10030c9d36456fef0/pysmali-0.1.2.tar.gz
+[2023-06-03 21:39:17] INFO root fetch - processPackages [deephaven-server]: Downloading https://files.pythonhosted.org/packages/de/b9/812f62c516daf421d47fa9c7e812b551430e7d79350222f600b4111a66a3/deephaven_server-0.24.3-py3-none-any.whl
+[2023-06-03 21:39:17] INFO root fetch - processPackages [toolcat]: Downloading https://files.pythonhosted.org/packages/ce/90/44377e6da3f5cffb1c20f8f76addb9d3250b2adb8d71685ce20c72d2fcba/toolcat-0.0.1.tar.gz
+[2023-06-03 21:39:18] INFO root fetch - processPackages [relevanceai]: Downloading https://files.pythonhosted.org/packages/c9/91/966088b74faac74d84a54ce4fccf3c242d32a910427e183f841cdc4d6756/relevanceai-4.0.8.tar.gz
+[2023-06-03 21:39:18] WARNING root fetch - processPackages [rl4co]: None
+[2023-06-03 21:39:18] INFO root fetch - processPackages [toolcat]: Downloading https://files.pythonhosted.org/packages/ce/90/44377e6da3f5cffb1c20f8f76addb9d3250b2adb8d71685ce20c72d2fcba/toolcat-0.0.1.tar.gz
+[2023-06-03 21:39:18] INFO root fetch - processPackages [fim-utils]: Downloading https://files.pythonhosted.org/packages/68/8d/7228888d79d88fcdb2311f4369e1530bdf175bb801265ca1977e42f8018b/fim_utils-1.5.0rc4.tar.gz
+[2023-06-03 21:39:18] INFO root fetch - processPackages [pyasyncore]: Downloading https://files.pythonhosted.org/packages/01/41/717802afd5c02fef183507f98effa0b7c66960c5f0e4781602f56e8694ac/pyasyncore-1.0.2.tar.gz
+[2023-06-03 21:39:18] WARNING root fetch - processPackages [rl4co]: unable to get url for both version [0.0.1]
+[2023-06-03 21:39:18] INFO root fetch - processPackages [torchcrepe]: Downloading https://files.pythonhosted.org/packages/68/c4/e4d5d28982c406d75a29a4cef1f0768babe08f9c4195727c60a199d2b839/torchcrepe-0.0.8.tar.gz
+[2023-06-03 21:39:18] WARNING root fetch - processPackages [rl4co]: None
+[2023-06-03 21:39:18] INFO root fetch - processPackages [rl4co]: Start processing: yetl-framework
+[2023-06-03 21:39:18] INFO root fetch - main [MainThread]: End processing [rl4co] error
+[2023-06-03 21:39:18] INFO root fetch - processPackages [pyasyncore]: executing diffoscope
+[2023-06-03 21:39:18] INFO root fetch - processPackages [pyasyncore]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyasyncore-1.0.1.tar.gz tmp/pyasyncore-1.0.2.tar.gz --markdown 20230603/p/pyasyncore/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-06-03 21:39:18] INFO root fetch - processPackages [yetl-framework]: New version: [1.4.6] Old Version: [1.4.5]
+[2023-06-03 21:39:18] WARNING root fetch - processPackages [deephaven-server]: Skipping package: exceeds size limit 148242638>=10485760
+[2023-06-03 21:39:18] INFO root fetch - main [MainThread]: End processing [deephaven-server] error
+[2023-06-03 21:39:18] INFO root fetch - processPackages [deephaven-core]: Downloading https://files.pythonhosted.org/packages/8c/d1/c3489444e2d9fa9a3b539f1b16a1c3dd68ee2f424ea81f79abc6f934d906/deephaven_core-0.25.0-py3-none-any.whl
+[2023-06-03 21:39:18] INFO root fetch - processPackages [fim-utils]: executing diffoscope
+[2023-06-03 21:39:18] INFO root fetch - processPackages [fim-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fim_utils-1.5.0rc3.tar.gz tmp/fim_utils-1.5.0rc4.tar.gz --markdown 20230603/f/fim-utils/1.5.0rc3-1.5.0rc4/diff.md --exclude *.pyd
+[2023-06-03 21:39:18] INFO root fetch - processPackages [deephaven-core]: executing diffoscope
+[2023-06-03 21:39:18] INFO root fetch - processPackages [deephaven-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/deephaven_core-0.24.3-py3-none-any.whl.zip tmp/deephaven_core-0.25.0-py3-none-any.whl.zip --markdown 20230603/d/deephaven-core/0.24.3-0.25.0/diff.md --exclude *.pyd
+[2023-06-03 21:39:18] INFO root fetch - processPackages [relevanceai]: Downloading https://files.pythonhosted.org/packages/88/a9/304a5f25a6281e74f45b7c3cd0f88bbb1abd54bbd5efdbbe11914776a926/relevanceai-4.0.9.tar.gz
+[2023-06-03 21:39:18] INFO root fetch - processPackages [toolcat]: Downloading https://files.pythonhosted.org/packages/dc/19/cd1f785718c1fd372212529a5d64426e10ea8330ec29456391a00319776c/toolcat-0.0.2.tar.gz
+[2023-06-03 21:39:18] INFO root fetch - processPackages [toolcat]: Downloading https://files.pythonhosted.org/packages/dc/19/cd1f785718c1fd372212529a5d64426e10ea8330ec29456391a00319776c/toolcat-0.0.2.tar.gz
+[2023-06-03 21:39:18] INFO root fetch - processPackages [yetl-framework]: executing diffoscope
+[2023-06-03 21:39:18] INFO root fetch - processPackages [yetl-framework]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yetl-framework-1.4.5.tar.gz tmp/yetl-framework-1.4.6.tar.gz --markdown 20230603/y/yetl-framework/1.4.5-1.4.6/diff.md --exclude *.pyd
+[2023-06-03 21:39:18] INFO root fetch - processPackages [relevanceai]: executing diffoscope
+[2023-06-03 21:39:18] INFO root fetch - processPackages [relevanceai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/relevanceai-4.0.8.tar.gz tmp/relevanceai-4.0.9.tar.gz --markdown 20230603/r/relevanceai/4.0.8-4.0.9/diff.md --exclude *.pyd
+[2023-06-03 21:39:18] INFO root fetch - processPackages [toolcat]: executing diffoscope
+[2023-06-03 21:39:18] INFO root fetch - processPackages [toolcat]: executing diffoscope
+[2023-06-03 21:39:18] INFO root fetch - processPackages [toolcat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/toolcat-0.0.1.tar.gz tmp/toolcat-0.0.2.tar.gz --markdown 20230603/t/toolcat/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-06-03 21:39:18] INFO root fetch - processPackages [toolcat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/toolcat-0.0.1.tar.gz tmp/toolcat-0.0.2.tar.gz --markdown 20230603/t/toolcat/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-06-03 21:39:18] INFO root fetch - processPackages [pysmali]: Downloading https://files.pythonhosted.org/packages/f4/0d/69d13b253943b924cd7b51b1bfc15e5d4eb76a8e7382cffa223dbfad3db5/pysmali-0.1.3.tar.gz
+[2023-06-03 21:39:18] INFO root fetch - processPackages [pysmali]: executing diffoscope
+[2023-06-03 21:39:18] INFO root fetch - processPackages [pysmali]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pysmali-0.1.2.tar.gz tmp/pysmali-0.1.3.tar.gz --markdown 20230603/p/pysmali/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-06-03 21:39:18] WARNING root fetch - processPackages [torchcrepe]: Skipping package: exceeds size limit 72323458>=10485760
+[2023-06-03 21:39:18] INFO root fetch - main [MainThread]: End processing [torchcrepe] error
+[2023-06-03 21:39:19] INFO root fetch - main [MainThread]: End processing [pyasyncore]: success
+[2023-06-03 21:39:19] INFO root fetch - main [MainThread]: End processing [toolcat]: success
+[2023-06-03 21:39:19] INFO root fetch - main [MainThread]: End processing [toolcat]: success
+[2023-06-03 21:39:19] INFO root fetch - main [MainThread]: End processing [fim-utils]: success
+[2023-06-03 21:39:19] INFO root fetch - main [MainThread]: End processing [pysmali]: success
+[2023-06-03 21:39:20] INFO root fetch - main [MainThread]: End processing [yetl-framework]: success
+[2023-06-03 21:39:20] INFO root fetch - main [MainThread]: End processing [relevanceai]: success
+[2023-06-03 21:39:20] INFO root fetch - main [MainThread]: End processing [deephaven-core]: success
+[2023-06-03 21:39:20] INFO root fetch - main [MainThread]: Store serial: [18361632]
