@@ -10572,3 +10572,21 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-06-03 18:37:30] INFO root fetch - main [MainThread]: End processing [ormdantic]: success
 [2023-06-03 18:37:30] INFO root fetch - main [MainThread]: End processing [PySide2-Fluent-Widgets]: success
 [2023-06-03 18:37:30] INFO root fetch - main [MainThread]: Store serial: [18360513]
+[2023-06-03 18:42:35] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18360513]
+[2023-06-03 18:42:39] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-06-03 18:42:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: iamlistening
+[2023-06-03 18:42:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: telegramweb
+[2023-06-03 18:42:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: chromadb-semantic
+[2023-06-03 18:42:40] INFO root fetch - processPackages [iamlistening]: New version: [0.1.5] Old Version: [0.1.4]
+[2023-06-03 18:42:40] INFO root fetch - processPackages [telegramweb]: New version: [4.6] Old Version: [4.5]
+[2023-06-03 18:42:40] WARNING root fetch - processPackages [chromadb-semantic]: Skipping, unable to determine old version
+[2023-06-03 18:42:40] INFO root fetch - main [MainThread]: End processing [chromadb-semantic] error
+[2023-06-03 18:42:40] INFO root fetch - processPackages [iamlistening]: Downloading https://files.pythonhosted.org/packages/65/06/c4b317b5449ad6ad54afa7f80b0e212cc1231ad176041ffee000c1f04935/iamlistening-0.1.5.tar.gz
+[2023-06-03 18:42:40] INFO root fetch - processPackages [telegramweb]: Downloading https://files.pythonhosted.org/packages/e8/09/07c1a5c7a23f9b6f987c692519a0b9d442675f2c7b1073b5c26a79015f38/telegramweb-4.6.tar.gz
+[2023-06-03 18:42:40] INFO root fetch - processPackages [iamlistening]: executing diffoscope
+[2023-06-03 18:42:40] INFO root fetch - processPackages [iamlistening]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/iamlistening-0.1.4.tar.gz tmp/iamlistening-0.1.5.tar.gz --markdown 20230603/i/iamlistening/0.1.4-0.1.5/diff.md --exclude *.pyd
+[2023-06-03 18:42:40] INFO root fetch - processPackages [telegramweb]: executing diffoscope
+[2023-06-03 18:42:40] INFO root fetch - processPackages [telegramweb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/telegramweb-4.5.tar.gz tmp/telegramweb-4.6.tar.gz --markdown 20230603/t/telegramweb/4.5-4.6/diff.md --exclude *.pyd
+[2023-06-03 18:42:41] INFO root fetch - main [MainThread]: End processing [iamlistening]: success
+[2023-06-03 18:42:41] INFO root fetch - main [MainThread]: End processing [telegramweb]: success
+[2023-06-03 18:42:41] INFO root fetch - main [MainThread]: Store serial: [18360526]
