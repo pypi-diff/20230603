@@ -8825,3 +8825,82 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-06-03 15:02:32] INFO root fetch - main [MainThread]: End processing [flowrunner]: success
 [2023-06-03 15:02:33] INFO root fetch - main [MainThread]: End processing [unitsnet-py]: success
 [2023-06-03 15:02:33] INFO root fetch - main [MainThread]: Store serial: [18359410]
+[2023-06-03 15:07:38] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18359410]
+[2023-06-03 15:07:42] INFO root fetch - main [MainThread]: Found 12 changed packages
+[2023-06-03 15:07:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: InternetSpeedLogger
+[2023-06-03 15:07:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: jekyll-to-hugo
+[2023-06-03 15:07:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: danielutils
+[2023-06-03 15:07:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: sommelier
+[2023-06-03 15:07:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: packages
+[2023-06-03 15:07:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pinit
+[2023-06-03 15:07:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: adua
+[2023-06-03 15:07:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: nsdpy
+[2023-06-03 15:07:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: pyechorobotics
+[2023-06-03 15:07:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: jekyll-to-hugo
+[2023-06-03 15:07:43] INFO root fetch - processPackages [nsdpy]: New version: [0.3.0b0] Old Version: [0.2.4]
+[2023-06-03 15:07:43] INFO root fetch - processPackages [sommelier]: New version: [1.2.25] Old Version: [1.2.24]
+[2023-06-03 15:07:43] INFO root fetch - processPackages [jekyll-to-hugo]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-06-03 15:07:43] INFO root fetch - processPackages [danielutils]: New version: [0.9.0] Old Version: [0.8.7]
+[2023-06-03 15:07:43] INFO root fetch - processPackages [jekyll-to-hugo]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-06-03 15:07:43] INFO root fetch - processPackages [packages]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-06-03 15:07:43] INFO root fetch - processPackages [adua]: New version: [1.2.3] Old Version: [1.0.0]
+[2023-06-03 15:07:43] INFO root fetch - processPackages [pinit]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-06-03 15:07:43] INFO root fetch - processPackages [InternetSpeedLogger]: New version: [1.1.1] Old Version: [1.1.0]
+[2023-06-03 15:07:43] INFO root fetch - processPackages [pyechorobotics]: New version: [0.0.8] Old Version: [0.0.5]
+[2023-06-03 15:07:43] INFO root fetch - processPackages [jekyll-to-hugo]: Downloading https://files.pythonhosted.org/packages/11/8f/6fec7652a55c4a93f556fc03abc7b50c766e935cbbb82102b958b04f83c6/jekyll_to_hugo-0.0.1.tar.gz
+[2023-06-03 15:07:43] INFO root fetch - processPackages [jekyll-to-hugo]: Downloading https://files.pythonhosted.org/packages/11/8f/6fec7652a55c4a93f556fc03abc7b50c766e935cbbb82102b958b04f83c6/jekyll_to_hugo-0.0.1.tar.gz
+[2023-06-03 15:07:43] INFO root fetch - processPackages [sommelier]: Downloading https://files.pythonhosted.org/packages/4a/7e/4299311ba9b66db270a8969f1f8b9cf826745c40b5d2bbd51991d70db774/sommelier-1.2.24-py3-none-any.whl
+[2023-06-03 15:07:43] INFO root fetch - processPackages [adua]: Downloading https://files.pythonhosted.org/packages/ab/1d/24974c10fbf53965740b4c8c0ae4eccf94df9cfbaf87446f73fff1b77eec/adua-1.0.0.tar.gz
+[2023-06-03 15:07:43] INFO root fetch - processPackages [packages]: Downloading https://files.pythonhosted.org/packages/80/e5/d2357ad6c6ad75afb16629f6779d61d84305348f2fec4130042d8244bbf9/packages-0.1.0.tar.gz
+[2023-06-03 15:07:43] INFO root fetch - processPackages [pinit]: Downloading https://files.pythonhosted.org/packages/a0/31/7cf5a49cc3881d5ef1f8aeeb4e549bd0d715ed380e9fa29041b21eadbb71/pinit-0.0.5.tar.gz
+[2023-06-03 15:07:43] INFO root fetch - processPackages [InternetSpeedLogger]: Downloading https://files.pythonhosted.org/packages/78/a4/cde431b840a51394908f15c8eee22e2a7dba9d5abca0032671eb8e34f7c4/InternetSpeedLogger-1.1.1.tar.gz
+[2023-06-03 15:07:43] INFO root fetch - processPackages [nsdpy]: Downloading https://files.pythonhosted.org/packages/06/3e/012a3b5593447b112121a24f04fd0fbcd0252bd0f2d397e349d8c9dd4f35/nsdpy-0.3.0b0.tar.gz
+[2023-06-03 15:07:43] INFO root fetch - processPackages [InternetSpeedLogger]: executing diffoscope
+[2023-06-03 15:07:43] INFO root fetch - processPackages [InternetSpeedLogger]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/InternetSpeedLogger-1.1.0.tar.gz tmp/InternetSpeedLogger-1.1.1.tar.gz --markdown 20230603/I/InternetSpeedLogger/1.1.0-1.1.1/diff.md --exclude *.pyd
+[2023-06-03 15:07:43] INFO root fetch - processPackages [danielutils]: Downloading https://files.pythonhosted.org/packages/96/99/078f699f1edbc15e85977801c88787479af31c5ea25e7e0fc35a5803d886/danielutils-0.9.0.tar.gz
+[2023-06-03 15:07:43] INFO root fetch - processPackages [pyechorobotics]: Downloading https://files.pythonhosted.org/packages/2f/68/ea667a623384f21be53f753032814ae03f312cb4762f767c469ec24e7afb/pyechorobotics-0.0.8.tar.gz
+[2023-06-03 15:07:43] INFO root fetch - processPackages [nsdpy]: executing diffoscope
+[2023-06-03 15:07:43] INFO root fetch - processPackages [jekyll-to-hugo]: Downloading https://files.pythonhosted.org/packages/d1/73/0057a194a93c8212bee34ad91a2ef969217a2d6489d540f30585b4e10250/jekyll_to_hugo-0.0.2.tar.gz
+[2023-06-03 15:07:43] INFO root fetch - processPackages [nsdpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nsdpy-0.2.4.tar.gz tmp/nsdpy-0.3.0b0.tar.gz --markdown 20230603/n/nsdpy/0.2.4-0.3.0b0/diff.md --exclude *.pyd
+[2023-06-03 15:07:43] INFO root fetch - processPackages [pinit]: executing diffoscope
+[2023-06-03 15:07:43] INFO root fetch - processPackages [pinit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pinit-0.0.4.tar.gz tmp/pinit-0.0.5.tar.gz --markdown 20230603/p/pinit/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-06-03 15:07:43] INFO root fetch - processPackages [jekyll-to-hugo]: Downloading https://files.pythonhosted.org/packages/d1/73/0057a194a93c8212bee34ad91a2ef969217a2d6489d540f30585b4e10250/jekyll_to_hugo-0.0.2.tar.gz
+[2023-06-03 15:07:43] INFO root fetch - processPackages [adua]: Downloading https://files.pythonhosted.org/packages/48/c5/8256117a8168ebbd66fd6884f8f505714c54988c05ee9ba856be71a8df57/adua-1.2.3.tar.gz
+[2023-06-03 15:07:43] INFO root fetch - processPackages [packages]: Downloading https://files.pythonhosted.org/packages/23/48/c6383825e71adf23bcaf898afd5e610c79d8a5c85e1858eb293053be5762/packages-0.1.1.tar.gz
+[2023-06-03 15:07:43] INFO root fetch - processPackages [danielutils]: executing diffoscope
+[2023-06-03 15:07:43] INFO root fetch - processPackages [danielutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/danielutils-0.8.7.tar.gz tmp/danielutils-0.9.0.tar.gz --markdown 20230603/d/danielutils/0.8.7-0.9.0/diff.md --exclude *.pyd
+[2023-06-03 15:07:43] INFO root fetch - processPackages [pyechorobotics]: executing diffoscope
+[2023-06-03 15:07:43] INFO root fetch - processPackages [pyechorobotics]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyechorobotics-0.0.5.tar.gz tmp/pyechorobotics-0.0.8.tar.gz --markdown 20230603/p/pyechorobotics/0.0.5-0.0.8/diff.md --exclude *.pyd
+[2023-06-03 15:07:43] INFO root fetch - processPackages [jekyll-to-hugo]: executing diffoscope
+[2023-06-03 15:07:43] INFO root fetch - processPackages [jekyll-to-hugo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jekyll_to_hugo-0.0.1.tar.gz tmp/jekyll_to_hugo-0.0.2.tar.gz --markdown 20230603/j/jekyll-to-hugo/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-06-03 15:07:43] INFO root fetch - processPackages [sommelier]: Downloading https://files.pythonhosted.org/packages/59/e1/f763bfdce81ed22135614e6f68e4417dae53042b151a07b27bab8bf71d3e/sommelier-1.2.25-py3-none-any.whl
+[2023-06-03 15:07:43] INFO root fetch - processPackages [jekyll-to-hugo]: executing diffoscope
+[2023-06-03 15:07:43] INFO root fetch - processPackages [jekyll-to-hugo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jekyll_to_hugo-0.0.1.tar.gz tmp/jekyll_to_hugo-0.0.2.tar.gz --markdown 20230603/j/jekyll-to-hugo/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-06-03 15:07:43] INFO root fetch - processPackages [adua]: executing diffoscope
+[2023-06-03 15:07:43] INFO root fetch - processPackages [adua]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/adua-1.0.0.tar.gz tmp/adua-1.2.3.tar.gz --markdown 20230603/a/adua/1.0.0-1.2.3/diff.md --exclude *.pyd
+[2023-06-03 15:07:43] INFO root fetch - processPackages [packages]: executing diffoscope
+[2023-06-03 15:07:43] INFO root fetch - processPackages [packages]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/packages-0.1.0.tar.gz tmp/packages-0.1.1.tar.gz --markdown 20230603/p/packages/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-06-03 15:07:43] INFO root fetch - processPackages [sommelier]: executing diffoscope
+[2023-06-03 15:07:43] INFO root fetch - processPackages [sommelier]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sommelier-1.2.24-py3-none-any.whl.zip tmp/sommelier-1.2.25-py3-none-any.whl.zip --markdown 20230603/s/sommelier/1.2.24-1.2.25/diff.md --exclude *.pyd
+[2023-06-03 15:07:45] INFO root fetch - processPackages [InternetSpeedLogger]: Start processing: nbdev-stdlib
+[2023-06-03 15:07:45] INFO root fetch - main [MainThread]: End processing [InternetSpeedLogger]: success
+[2023-06-03 15:07:45] INFO root fetch - processPackages [nbdev-stdlib]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-06-03 15:07:45] INFO root fetch - processPackages [nsdpy]: Start processing: agixt
+[2023-06-03 15:07:45] INFO root fetch - main [MainThread]: End processing [nsdpy]: success
+[2023-06-03 15:07:45] INFO root fetch - processPackages [agixt]: New version: [1.1.81b0] Old Version: [1.1.80b0]
+[2023-06-03 15:07:45] INFO root fetch - processPackages [nbdev-stdlib]: executing diffoscope
+[2023-06-03 15:07:45] INFO root fetch - processPackages [nbdev-stdlib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdev-stdlib-0.0.98.tar.gz tmp/nbdev-stdlib-0.0.99.tar.gz --markdown 20230603/n/nbdev-stdlib/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-06-03 15:07:45] INFO root fetch - main [MainThread]: End processing [packages]: success
+[2023-06-03 15:07:45] INFO root fetch - main [MainThread]: End processing [adua]: success
+[2023-06-03 15:07:45] INFO root fetch - main [MainThread]: End processing [jekyll-to-hugo]: success
+[2023-06-03 15:07:45] INFO root fetch - processPackages [agixt]: Downloading https://files.pythonhosted.org/packages/ef/a5/fd7734915aa3f83536c9e2142a02b3f10b901467da09c571ba9148b9c814/agixt-1.1.81b0.tar.gz
+[2023-06-03 15:07:45] INFO root fetch - main [MainThread]: End processing [pinit]: success
+[2023-06-03 15:07:45] INFO root fetch - processPackages [agixt]: executing diffoscope
+[2023-06-03 15:07:45] INFO root fetch - processPackages [agixt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/agixt-1.1.80b0.tar.gz tmp/agixt-1.1.81b0.tar.gz --markdown 20230603/a/agixt/1.1.80b0-1.1.81b0/diff.md --exclude *.pyd
+[2023-06-03 15:07:45] INFO root fetch - main [MainThread]: End processing [jekyll-to-hugo]: success
+[2023-06-03 15:07:45] INFO root fetch - main [MainThread]: End processing [sommelier]: success
+[2023-06-03 15:07:45] INFO root fetch - main [MainThread]: End processing [danielutils]: success
+[2023-06-03 15:07:45] INFO root fetch - main [MainThread]: End processing [pyechorobotics]: success
+[2023-06-03 15:07:46] INFO root fetch - main [MainThread]: End processing [nbdev-stdlib]: success
+[2023-06-03 15:07:47] INFO root fetch - main [MainThread]: End processing [agixt]: success
+[2023-06-03 15:07:47] INFO root fetch - main [MainThread]: Store serial: [18359447]
