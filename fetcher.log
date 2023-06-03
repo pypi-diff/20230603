@@ -13582,3 +13582,40 @@ EOFError: EOF read where object expected
 [2023-06-03 23:38:27] INFO root fetch - processPackages [fetch-features]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fetch_features-0.2.3.tar.gz tmp/fetch_features-0.2.8.tar.gz --markdown 20230603/f/fetch-features/0.2.3-0.2.8/diff.md --exclude *.pyd
 [2023-06-03 23:38:28] INFO root fetch - main [MainThread]: End processing [fetch-features]: success
 [2023-06-03 23:38:28] INFO root fetch - main [MainThread]: Store serial: [18362311]
+[2023-06-03 23:43:32] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18362311]
+[2023-06-03 23:43:37] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-06-03 23:43:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: kalm
+[2023-06-03 23:43:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: whisper-autosrt
+[2023-06-03 23:43:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: UnlimitedGPT
+[2023-06-03 23:43:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: circuitpython-h3lis200dl
+[2023-06-03 23:43:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: kalm
+[2023-06-03 23:43:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: jschon
+[2023-06-03 23:43:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: voyager-dev
+[2023-06-03 23:43:37] WARNING root fetch - processPackages [circuitpython-h3lis200dl]: Skipping, unable to determine old version
+[2023-06-03 23:43:37] INFO root fetch - main [MainThread]: End processing [circuitpython-h3lis200dl] error
+[2023-06-03 23:43:37] INFO root fetch - processPackages [kalm]: New version: [0.6.9] Old Version: [0.6.8]
+[2023-06-03 23:43:37] INFO root fetch - processPackages [whisper-autosrt]: New version: [0.1.0] Old Version: [0.0.6]
+[2023-06-03 23:43:37] INFO root fetch - processPackages [UnlimitedGPT]: New version: [0.1.3] Old Version: [0.1.2.5]
+[2023-06-03 23:43:37] INFO root fetch - processPackages [kalm]: New version: [0.6.9] Old Version: [0.6.8]
+[2023-06-03 23:43:37] WARNING root fetch - processPackages [voyager-dev]: Skipping, unable to determine old version
+[2023-06-03 23:43:37] INFO root fetch - main [MainThread]: End processing [voyager-dev] error
+[2023-06-03 23:43:37] INFO root fetch - processPackages [jschon]: New version: [0.9.0] Old Version: [0.8.5]
+[2023-06-03 23:43:37] INFO root fetch - processPackages [UnlimitedGPT]: Downloading https://files.pythonhosted.org/packages/6a/38/55998453a6481e0d15e9496fe84610fac57b00f93e93125f342c37c41fcc/UnlimitedGPT-0.1.2.5.tar.gz
+[2023-06-03 23:43:38] INFO root fetch - processPackages [whisper-autosrt]: Downloading https://files.pythonhosted.org/packages/f4/24/e06007a933f801627fde744bf7c64cc66efc53212f00b9c1483b2db9911a/whisper_autosrt-0.1.0.tar.gz
+[2023-06-03 23:43:38] INFO root fetch - processPackages [kalm]: executing diffoscope
+[2023-06-03 23:43:38] INFO root fetch - processPackages [kalm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kalm-0.6.8.tar.gz tmp/kalm-0.6.9.tar.gz --markdown 20230603/k/kalm/0.6.8-0.6.9/diff.md --exclude *.pyd
+[2023-06-03 23:43:38] INFO root fetch - processPackages [kalm]: executing diffoscope
+[2023-06-03 23:43:38] INFO root fetch - processPackages [kalm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kalm-0.6.8.tar.gz tmp/kalm-0.6.9.tar.gz --markdown 20230603/k/kalm/0.6.8-0.6.9/diff.md --exclude *.pyd
+[2023-06-03 23:43:38] INFO root fetch - processPackages [whisper-autosrt]: executing diffoscope
+[2023-06-03 23:43:38] INFO root fetch - processPackages [whisper-autosrt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/whisper_autosrt-0.0.6.tar.gz tmp/whisper_autosrt-0.1.0.tar.gz --markdown 20230603/w/whisper-autosrt/0.0.6-0.1.0/diff.md --exclude *.pyd
+[2023-06-03 23:43:38] INFO root fetch - processPackages [UnlimitedGPT]: Downloading https://files.pythonhosted.org/packages/bd/8c/62dd0da5da13887150d0109b766f0cf4e7b3c57ad98801495c7d8d94c9df/UnlimitedGPT-0.1.3.tar.gz
+[2023-06-03 23:43:38] INFO root fetch - processPackages [jschon]: executing diffoscope
+[2023-06-03 23:43:38] INFO root fetch - processPackages [jschon]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jschon-0.8.5.tar.gz tmp/jschon-0.9.0.tar.gz --markdown 20230603/j/jschon/0.8.5-0.9.0/diff.md --exclude *.pyd
+[2023-06-03 23:43:38] INFO root fetch - processPackages [UnlimitedGPT]: executing diffoscope
+[2023-06-03 23:43:38] INFO root fetch - processPackages [UnlimitedGPT]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/UnlimitedGPT-0.1.2.5.tar.gz tmp/UnlimitedGPT-0.1.3.tar.gz --markdown 20230603/U/UnlimitedGPT/0.1.2.5-0.1.3/diff.md --exclude *.pyd
+[2023-06-03 23:43:39] INFO root fetch - main [MainThread]: End processing [kalm]: success
+[2023-06-03 23:43:39] INFO root fetch - main [MainThread]: End processing [whisper-autosrt]: success
+[2023-06-03 23:43:39] INFO root fetch - main [MainThread]: End processing [kalm]: success
+[2023-06-03 23:43:39] INFO root fetch - main [MainThread]: End processing [jschon]: success
+[2023-06-03 23:43:39] INFO root fetch - main [MainThread]: End processing [UnlimitedGPT]: success
+[2023-06-03 23:43:39] INFO root fetch - main [MainThread]: Store serial: [18362338]
