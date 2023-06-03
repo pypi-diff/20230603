@@ -4703,3 +4703,13 @@
 [2023-06-03 05:32:29] INFO root fetch - main [MainThread]: End processing [odoo14-addon-hr-employee-document]: success
 [2023-06-03 05:33:23] INFO root fetch - main [MainThread]: End processing [odoo14-addon-hr-personal-equipment-request]: success
 [2023-06-03 05:33:23] INFO root fetch - main [MainThread]: Store serial: [18356675]
+[2023-06-03 05:38:27] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18356675]
+[2023-06-03 05:38:32] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2023-06-03 05:38:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: betweens
+[2023-06-03 05:38:32] INFO root fetch - processPackages [betweens]: New version: [1.1.1] Old Version: [0.3.0]
+[2023-06-03 05:38:32] INFO root fetch - processPackages [betweens]: Downloading https://files.pythonhosted.org/packages/d7/8e/8117ccc98037c9ec7320a628a8a007b52d01691ddd21e43dffbdc6d132cb/betweens-0.3.0.tar.gz
+[2023-06-03 05:38:33] INFO root fetch - processPackages [betweens]: Downloading https://files.pythonhosted.org/packages/7d/be/661a4e3122381273e23fbc6b4d1bdc875c38e0642be285638f9de22ff85f/betweens-1.1.1.tar.gz
+[2023-06-03 05:38:33] INFO root fetch - processPackages [betweens]: executing diffoscope
+[2023-06-03 05:38:33] INFO root fetch - processPackages [betweens]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/betweens-0.3.0.tar.gz tmp/betweens-1.1.1.tar.gz --markdown 20230603/b/betweens/0.3.0-1.1.1/diff.md --exclude *.pyd
+[2023-06-03 05:38:34] INFO root fetch - main [MainThread]: End processing [betweens]: success
+[2023-06-03 05:38:34] INFO root fetch - main [MainThread]: Store serial: [18356678]
