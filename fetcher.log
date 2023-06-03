@@ -12410,3 +12410,37 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-06-03 21:23:44] INFO root fetch - main [MainThread]: End processing [yetl-framework]: success
 [2023-06-03 21:23:44] INFO root fetch - main [MainThread]: End processing [mack-sdk]: success
 [2023-06-03 21:23:44] INFO root fetch - main [MainThread]: Store serial: [18361558]
+[2023-06-03 21:28:48] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18361558]
+[2023-06-03 21:28:52] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-06-03 21:28:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pref-voting
+[2023-06-03 21:28:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cyberdrop-dl
+[2023-06-03 21:28:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cyberdrop-dl
+[2023-06-03 21:28:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: cyberdrop-dl
+[2023-06-03 21:28:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: staircase-kit
+[2023-06-03 21:28:52] INFO root fetch - processPackages [pref-voting]: New version: [0.4.9] Old Version: [0.4.8]
+[2023-06-03 21:28:52] INFO root fetch - processPackages [staircase-kit]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-06-03 21:28:53] INFO root fetch - processPackages [cyberdrop-dl]: New version: [4.2.71] Old Version: [4.2.66]
+[2023-06-03 21:28:53] INFO root fetch - processPackages [cyberdrop-dl]: New version: [4.2.71] Old Version: [4.2.66]
+[2023-06-03 21:28:53] INFO root fetch - processPackages [cyberdrop-dl]: New version: [4.2.71] Old Version: [4.2.66]
+[2023-06-03 21:28:53] INFO root fetch - processPackages [pref-voting]: executing diffoscope
+[2023-06-03 21:28:53] INFO root fetch - processPackages [pref-voting]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pref_voting-0.4.8.tar.gz tmp/pref_voting-0.4.9.tar.gz --markdown 20230603/p/pref-voting/0.4.8-0.4.9/diff.md --exclude *.pyd
+[2023-06-03 21:28:53] INFO root fetch - processPackages [cyberdrop-dl]: Downloading https://files.pythonhosted.org/packages/90/d2/e7272b582a80a84b8c072745f82cdf997de115aa4b3682c7560397dd9571/cyberdrop-dl-4.2.66.tar.gz
+[2023-06-03 21:28:53] INFO root fetch - processPackages [cyberdrop-dl]: Downloading https://files.pythonhosted.org/packages/90/d2/e7272b582a80a84b8c072745f82cdf997de115aa4b3682c7560397dd9571/cyberdrop-dl-4.2.66.tar.gz
+[2023-06-03 21:28:53] INFO root fetch - processPackages [cyberdrop-dl]: Downloading https://files.pythonhosted.org/packages/90/d2/e7272b582a80a84b8c072745f82cdf997de115aa4b3682c7560397dd9571/cyberdrop-dl-4.2.66.tar.gz
+[2023-06-03 21:28:53] INFO root fetch - processPackages [staircase-kit]: executing diffoscope
+[2023-06-03 21:28:53] INFO root fetch - processPackages [staircase-kit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/staircase_kit-0.1.8.tar.gz tmp/staircase_kit-0.1.9.tar.gz --markdown 20230603/s/staircase-kit/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-06-03 21:28:53] INFO root fetch - processPackages [cyberdrop-dl]: Downloading https://files.pythonhosted.org/packages/92/c2/fc9cd26f5f9e6dbd0c87718f3b14f13b5d6c7da33097dede66252c31b233/cyberdrop-dl-4.2.71.tar.gz
+[2023-06-03 21:28:53] INFO root fetch - processPackages [cyberdrop-dl]: Downloading https://files.pythonhosted.org/packages/92/c2/fc9cd26f5f9e6dbd0c87718f3b14f13b5d6c7da33097dede66252c31b233/cyberdrop-dl-4.2.71.tar.gz
+[2023-06-03 21:28:53] INFO root fetch - processPackages [cyberdrop-dl]: Downloading https://files.pythonhosted.org/packages/92/c2/fc9cd26f5f9e6dbd0c87718f3b14f13b5d6c7da33097dede66252c31b233/cyberdrop-dl-4.2.71.tar.gz
+[2023-06-03 21:28:53] INFO root fetch - processPackages [cyberdrop-dl]: executing diffoscope
+[2023-06-03 21:28:53] INFO root fetch - processPackages [cyberdrop-dl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cyberdrop-dl-4.2.66.tar.gz tmp/cyberdrop-dl-4.2.71.tar.gz --markdown 20230603/c/cyberdrop-dl/4.2.66-4.2.71/diff.md --exclude *.pyd
+[2023-06-03 21:28:53] INFO root fetch - processPackages [cyberdrop-dl]: executing diffoscope
+[2023-06-03 21:28:53] INFO root fetch - processPackages [cyberdrop-dl]: executing diffoscope
+[2023-06-03 21:28:53] INFO root fetch - processPackages [cyberdrop-dl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cyberdrop-dl-4.2.66.tar.gz tmp/cyberdrop-dl-4.2.71.tar.gz --markdown 20230603/c/cyberdrop-dl/4.2.66-4.2.71/diff.md --exclude *.pyd
+[2023-06-03 21:28:53] INFO root fetch - processPackages [cyberdrop-dl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cyberdrop-dl-4.2.66.tar.gz tmp/cyberdrop-dl-4.2.71.tar.gz --markdown 20230603/c/cyberdrop-dl/4.2.66-4.2.71/diff.md --exclude *.pyd
+[2023-06-03 21:28:54] INFO root fetch - main [MainThread]: End processing [pref-voting]: success
+[2023-06-03 21:28:54] INFO root fetch - main [MainThread]: End processing [staircase-kit]: success
+[2023-06-03 21:28:54] INFO root fetch - main [MainThread]: End processing [cyberdrop-dl]: success
+[2023-06-03 21:28:55] INFO root fetch - main [MainThread]: End processing [cyberdrop-dl]: success
+[2023-06-03 21:28:56] INFO root fetch - main [MainThread]: End processing [cyberdrop-dl]: success
+[2023-06-03 21:28:56] INFO root fetch - main [MainThread]: Store serial: [18361577]
