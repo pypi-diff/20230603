@@ -7907,3 +7907,59 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-06-03 13:21:11] INFO root fetch - main [MainThread]: End processing [chater]: success
 [2023-06-03 13:21:11] INFO root fetch - main [MainThread]: End processing [nvfuser-cu117]: success
 [2023-06-03 13:21:11] INFO root fetch - main [MainThread]: Store serial: [18358826]
+[2023-06-03 13:26:15] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18358826]
+[2023-06-03 13:26:20] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-06-03 13:26:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ersciyt
+[2023-06-03 13:26:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tensordict-nightly
+[2023-06-03 13:26:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ccxt
+[2023-06-03 13:26:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: tb-nightly
+[2023-06-03 13:26:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: torchtnt-nightly
+[2023-06-03 13:26:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: torchserve-nightly
+[2023-06-03 13:26:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: torch-model-archiver-nightly
+[2023-06-03 13:26:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: torch-workflow-archiver-nightly
+[2023-06-03 13:26:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: mysql-replication
+[2023-06-03 13:26:20] INFO root fetch - processPackages [ersciyt]: New version: [2.0] Old Version: [1.99]
+[2023-06-03 13:26:20] INFO root fetch - processPackages [torch-workflow-archiver-nightly]: New version: [2023.6.2] Old Version: [2023.6.1]
+[2023-06-03 13:26:20] INFO root fetch - processPackages [torchtnt-nightly]: New version: [2023.6.2] Old Version: [2023.6.1]
+[2023-06-03 13:26:20] INFO root fetch - processPackages [torch-model-archiver-nightly]: New version: [2023.6.2] Old Version: [2023.6.1]
+[2023-06-03 13:26:20] INFO root fetch - processPackages [torchserve-nightly]: New version: [2023.6.2] Old Version: [2023.6.1]
+[2023-06-03 13:26:20] INFO root fetch - processPackages [ccxt]: New version: [3.1.9] Old Version: [3.1.8]
+[2023-06-03 13:26:20] INFO root fetch - processPackages [mysql-replication]: New version: [0.9] Old Version: [0.8]
+[2023-06-03 13:26:20] INFO root fetch - processPackages [tensordict-nightly]: New version: [2023.6.3] Old Version: [2023.6.2]
+[2023-06-03 13:26:20] INFO root fetch - processPackages [torchserve-nightly]: Downloading https://files.pythonhosted.org/packages/b6/5c/0ee2e5ac04f88e96441756e224be47ebaaefb349d4bbef58634442b9151e/torchserve_nightly-2023.6.1-py3-none-any.whl
+[2023-06-03 13:26:20] INFO root fetch - processPackages [torch-model-archiver-nightly]: Downloading https://files.pythonhosted.org/packages/b4/83/7813aff862c10dd90dd70716eb4860cb136077a3155e1b35ad5774b4ef50/torch_model_archiver_nightly-2023.6.2-py3-none-any.whl
+[2023-06-03 13:26:20] INFO root fetch - processPackages [tb-nightly]: New version: [2.9.0a20220502] Old Version: [2.9.0a20220501]
+[2023-06-03 13:26:20] WARNING root fetch - processPackages [torchserve-nightly]: Skipping package: exceeds size limit 23719642>=10485760
+[2023-06-03 13:26:20] INFO root fetch - main [MainThread]: End processing [torchserve-nightly] error
+[2023-06-03 13:26:20] INFO root fetch - processPackages [ersciyt]: Downloading https://files.pythonhosted.org/packages/ad/db/b81d831fe6e50bc5d556c3dded5d89cd7173627a81207f8849d7c3af16e1/ersciyt-2.0.tar.gz
+[2023-06-03 13:26:20] INFO root fetch - processPackages [torch-workflow-archiver-nightly]: Downloading https://files.pythonhosted.org/packages/8c/4b/c7e0fb44091ec06f2c4b6bcdb62f0b662115ae3b73063eacd637e798397f/torch_workflow_archiver_nightly-2023.6.2-py3-none-any.whl
+[2023-06-03 13:26:20] INFO root fetch - processPackages [torchtnt-nightly]: Downloading https://files.pythonhosted.org/packages/57/3b/ed74fec87a96a9b41cf9f5400da787bec35ac0b1506b3c7a1e2e3551dcea/torchtnt-nightly-2023.6.2.tar.gz
+[2023-06-03 13:26:20] INFO root fetch - processPackages [mysql-replication]: Downloading https://files.pythonhosted.org/packages/6e/e0/cea8648ecf06e88aa0c894b32751513dd26d00434017a2a5cec1c3d95c83/mysql-replication-0.8.tar.gz
+[2023-06-03 13:26:20] INFO root fetch - processPackages [torch-model-archiver-nightly]: executing diffoscope
+[2023-06-03 13:26:20] INFO root fetch - processPackages [torch-model-archiver-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torch_model_archiver_nightly-2023.6.1-py3-none-any.whl.zip tmp/torch_model_archiver_nightly-2023.6.2-py3-none-any.whl.zip --markdown 20230603/t/torch-model-archiver-nightly/2023.6.1-2023.6.2/diff.md --exclude *.pyd
+[2023-06-03 13:26:20] INFO root fetch - processPackages [tensordict-nightly]: Downloading https://files.pythonhosted.org/packages/74/05/1ab2be5730f8973ffc82e84493dc3b3bddf19fe1b62dac6a25ae6ee815fb/tensordict_nightly-2023.6.2-py39-none-any.whl
+[2023-06-03 13:26:20] INFO root fetch - processPackages [torch-workflow-archiver-nightly]: executing diffoscope
+[2023-06-03 13:26:20] INFO root fetch - processPackages [torch-workflow-archiver-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torch_workflow_archiver_nightly-2023.6.1-py3-none-any.whl.zip tmp/torch_workflow_archiver_nightly-2023.6.2-py3-none-any.whl.zip --markdown 20230603/t/torch-workflow-archiver-nightly/2023.6.1-2023.6.2/diff.md --exclude *.pyd
+[2023-06-03 13:26:20] INFO root fetch - processPackages [torchtnt-nightly]: executing diffoscope
+[2023-06-03 13:26:20] INFO root fetch - processPackages [torchtnt-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torchtnt-nightly-2023.6.1.tar.gz tmp/torchtnt-nightly-2023.6.2.tar.gz --markdown 20230603/t/torchtnt-nightly/2023.6.1-2023.6.2/diff.md --exclude *.pyd
+[2023-06-03 13:26:20] INFO root fetch - processPackages [ccxt]: executing diffoscope
+[2023-06-03 13:26:20] INFO root fetch - processPackages [ccxt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ccxt-3.1.8.tar.gz tmp/ccxt-3.1.9.tar.gz --markdown 20230603/c/ccxt/3.1.8-3.1.9/diff.md --exclude *.pyd
+[2023-06-03 13:26:20] INFO root fetch - processPackages [ersciyt]: executing diffoscope
+[2023-06-03 13:26:20] INFO root fetch - processPackages [ersciyt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ersciyt-1.99.tar.gz tmp/ersciyt-2.0.tar.gz --markdown 20230603/e/ersciyt/1.99-2.0/diff.md --exclude *.pyd
+[2023-06-03 13:26:20] INFO root fetch - processPackages [tensordict-nightly]: Downloading https://files.pythonhosted.org/packages/7e/dc/7c207847c9101fa5a57f57c9927a518962d8f17a888511f620828a6bc318/tensordict_nightly-2023.6.3-py39-none-any.whl
+[2023-06-03 13:26:20] INFO root fetch - processPackages [mysql-replication]: Downloading https://files.pythonhosted.org/packages/d6/e8/7c4105691668684e3f94cdd223a8f6fa31af67e90092ddee835e4a7d69a1/mysql-replication-0.9.tar.gz
+[2023-06-03 13:26:21] INFO root fetch - processPackages [tb-nightly]: executing diffoscope
+[2023-06-03 13:26:21] INFO root fetch - processPackages [tb-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tb_nightly-2.9.0a20220501-py3-none-any.whl.zip tmp/tb_nightly-2.9.0a20220502-py3-none-any.whl.zip --markdown 20230603/t/tb-nightly/2.9.0a20220501-2.9.0a20220502/diff.md --exclude *.pyd
+[2023-06-03 13:26:21] INFO root fetch - processPackages [mysql-replication]: executing diffoscope
+[2023-06-03 13:26:21] INFO root fetch - processPackages [mysql-replication]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mysql-replication-0.8.tar.gz tmp/mysql-replication-0.9.tar.gz --markdown 20230603/m/mysql-replication/0.8-0.9/diff.md --exclude *.pyd
+[2023-06-03 13:26:21] INFO root fetch - processPackages [tensordict-nightly]: executing diffoscope
+[2023-06-03 13:26:21] INFO root fetch - processPackages [tensordict-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tensordict_nightly-2023.6.2-py39-none-any.whl.zip tmp/tensordict_nightly-2023.6.3-py39-none-any.whl.zip --markdown 20230603/t/tensordict-nightly/2023.6.2-2023.6.3/diff.md --exclude *.pyd
+[2023-06-03 13:26:21] INFO root fetch - main [MainThread]: End processing [torch-model-archiver-nightly]: success
+[2023-06-03 13:26:21] INFO root fetch - main [MainThread]: End processing [torch-workflow-archiver-nightly]: success
+[2023-06-03 13:26:22] INFO root fetch - main [MainThread]: End processing [ersciyt]: success
+[2023-06-03 13:26:22] INFO root fetch - main [MainThread]: End processing [torchtnt-nightly]: success
+[2023-06-03 13:26:22] INFO root fetch - main [MainThread]: End processing [mysql-replication]: success
+[2023-06-03 13:26:22] INFO root fetch - main [MainThread]: End processing [tensordict-nightly]: success
+[2023-06-03 13:26:24] INFO root fetch - main [MainThread]: End processing [tb-nightly]: success
+[2023-06-03 13:26:32] INFO root fetch - main [MainThread]: End processing [ccxt]: success
+[2023-06-03 13:26:32] INFO root fetch - main [MainThread]: Store serial: [18358849]
