@@ -7589,3 +7589,22 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-06-03 12:23:42] INFO root fetch - main [MainThread]: End processing [Pycspace]: success
 [2023-06-03 12:23:42] INFO root fetch - main [MainThread]: End processing [g-batch-prediction-pipeline]: success
 [2023-06-03 12:23:42] INFO root fetch - main [MainThread]: Store serial: [18358464]
+[2023-06-03 12:28:46] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18358464]
+[2023-06-03 12:28:51] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-06-03 12:28:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: clevertable
+[2023-06-03 12:28:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: douyin-tiktok-scraper
+[2023-06-03 12:28:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: hybrid-index
+[2023-06-03 12:28:51] INFO root fetch - processPackages [hybrid-index]: New version: [0.1.0] Old Version: [0.0.5]
+[2023-06-03 12:28:51] INFO root fetch - processPackages [douyin-tiktok-scraper]: New version: [1.2.3] Old Version: [1.2.2]
+[2023-06-03 12:28:51] INFO root fetch - processPackages [clevertable]: New version: [3.0.3] Old Version: [3.0.1]
+[2023-06-03 12:28:51] INFO root fetch - processPackages [hybrid-index]: executing diffoscope
+[2023-06-03 12:28:51] INFO root fetch - processPackages [hybrid-index]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hybrid_index-0.0.5.tar.gz tmp/hybrid_index-0.1.0.tar.gz --markdown 20230603/h/hybrid-index/0.0.5-0.1.0/diff.md --exclude *.pyd
+[2023-06-03 12:28:51] INFO root fetch - processPackages [douyin-tiktok-scraper]: executing diffoscope
+[2023-06-03 12:28:51] INFO root fetch - processPackages [douyin-tiktok-scraper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/douyin_tiktok_scraper-1.2.2.tar.gz tmp/douyin_tiktok_scraper-1.2.3.tar.gz --markdown 20230603/d/douyin-tiktok-scraper/1.2.2-1.2.3/diff.md --exclude *.pyd
+[2023-06-03 12:28:52] INFO root fetch - processPackages [clevertable]: Downloading https://files.pythonhosted.org/packages/24/7a/77882b59312a87abde99bda115800ec798c6a0d8e488f4ab2674d64a7825/clevertable-3.0.3.tar.gz
+[2023-06-03 12:28:52] INFO root fetch - processPackages [clevertable]: executing diffoscope
+[2023-06-03 12:28:52] INFO root fetch - processPackages [clevertable]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/clevertable-3.0.1.tar.gz tmp/clevertable-3.0.3.tar.gz --markdown 20230603/c/clevertable/3.0.1-3.0.3/diff.md --exclude *.pyd
+[2023-06-03 12:28:52] INFO root fetch - main [MainThread]: End processing [hybrid-index]: success
+[2023-06-03 12:28:52] INFO root fetch - main [MainThread]: End processing [douyin-tiktok-scraper]: success
+[2023-06-03 12:28:53] INFO root fetch - main [MainThread]: End processing [clevertable]: success
+[2023-06-03 12:28:53] INFO root fetch - main [MainThread]: Store serial: [18358491]
