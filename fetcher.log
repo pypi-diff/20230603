@@ -7165,3 +7165,48 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-06-03 11:24:29] INFO root fetch - main [MainThread]: End processing [samplics]: success
 [2023-06-03 11:24:29] INFO root fetch - main [MainThread]: End processing [Codefest-text]: success
 [2023-06-03 11:24:29] INFO root fetch - main [MainThread]: Store serial: [18358194]
+[2023-06-03 11:29:33] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18358194]
+[2023-06-03 11:29:38] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-06-03 11:29:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pybeatsaber
+[2023-06-03 11:29:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: colablib
+[2023-06-03 11:29:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pyeCam
+[2023-06-03 11:29:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: tf-nightly-cpu
+[2023-06-03 11:29:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: bclib
+[2023-06-03 11:29:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: calendar-pytba
+[2023-06-03 11:29:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: plumage
+[2023-06-03 11:29:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: tf-nightly-cpu-aws
+[2023-06-03 11:29:38] INFO root fetch - processPackages [colablib]: New version: [0.1.7] Old Version: [0.1.6]
+[2023-06-03 11:29:38] INFO root fetch - processPackages [pyeCam]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-06-03 11:29:38] INFO root fetch - processPackages [bclib]: New version: [3.9.1] Old Version: [3.8.8]
+[2023-06-03 11:29:38] WARNING root fetch - processPackages [pybeatsaber]: Skipping, unable to determine old version
+[2023-06-03 11:29:39] INFO root fetch - main [MainThread]: End processing [pybeatsaber] error
+[2023-06-03 11:29:39] INFO root fetch - processPackages [calendar-pytba]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-06-03 11:29:39] INFO root fetch - processPackages [plumage]: New version: [3.1.0] Old Version: [3.0.0]
+[2023-06-03 11:29:39] INFO root fetch - processPackages [tf-nightly-cpu-aws]: New version: [2.14.0.dev20230602] Old Version: [2.14.0.dev20230516]
+[2023-06-03 11:29:39] INFO root fetch - processPackages [tf-nightly-cpu-aws]: Downloading https://files.pythonhosted.org/packages/af/45/94c14073fffaa495e82a5e9b58723582a916118d31a5b3bb42f765cfd259/tf_nightly_cpu_aws-2.14.0.dev20230516-cp39-cp39-manylinux_2_17_aarch64.manylinux2014_aarch64.whl
+[2023-06-03 11:29:39] INFO root fetch - processPackages [tf-nightly-cpu]: New version: [2.14.0.dev20230603] Old Version: [2.14.0.dev20230602]
+[2023-06-03 11:29:39] INFO root fetch - processPackages [bclib]: executing diffoscope
+[2023-06-03 11:29:39] INFO root fetch - processPackages [bclib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bclib-3.8.8.tar.gz tmp/bclib-3.9.1.tar.gz --markdown 20230603/b/bclib/3.8.8-3.9.1/diff.md --exclude *.pyd
+[2023-06-03 11:29:39] INFO root fetch - processPackages [pyeCam]: executing diffoscope
+[2023-06-03 11:29:39] INFO root fetch - processPackages [pyeCam]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyeCam-0.0.8.tar.gz tmp/pyeCam-0.0.9.tar.gz --markdown 20230603/p/pyeCam/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-06-03 11:29:39] WARNING root fetch - processPackages [tf-nightly-cpu-aws]: Skipping package: exceeds size limit 252135195>=10485760
+[2023-06-03 11:29:39] INFO root fetch - main [MainThread]: End processing [tf-nightly-cpu-aws] error
+[2023-06-03 11:29:39] INFO root fetch - processPackages [plumage]: Downloading https://files.pythonhosted.org/packages/b1/33/ba5e3cca5a02df73fc949cbb46ba6e945b06825ee8e334fa4a73e1f9086d/plumage-3.0.0.tar.gz
+[2023-06-03 11:29:39] INFO root fetch - processPackages [calendar-pytba]: Downloading https://files.pythonhosted.org/packages/8f/96/37a0faa9846f0fdef1249610aeaadb9b9bd2ace117a985eae4a4adfa133a/calendar_pytba-1.0.2.tar.gz
+[2023-06-03 11:29:39] INFO root fetch - processPackages [tf-nightly-cpu]: Downloading https://files.pythonhosted.org/packages/e8/c1/d67c75ba72f4fc191655fa82da15b69d7d429773a746c7657f2cf8614791/tf_nightly_cpu-2.14.0.dev20230602-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2023-06-03 11:29:39] WARNING root fetch - processPackages [tf-nightly-cpu]: Skipping package: exceeds size limit 194213451>=10485760
+[2023-06-03 11:29:39] INFO root fetch - main [MainThread]: End processing [tf-nightly-cpu] error
+[2023-06-03 11:29:39] INFO root fetch - processPackages [colablib]: Downloading https://files.pythonhosted.org/packages/59/83/6dfcbd05ed84c846d4d110dfa910dc5dcde65ac108bfded708ab8c033e06/colablib-0.1.7.tar.gz
+[2023-06-03 11:29:39] INFO root fetch - processPackages [calendar-pytba]: executing diffoscope
+[2023-06-03 11:29:39] INFO root fetch - processPackages [calendar-pytba]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/calendar_pytba-1.0.1.tar.gz tmp/calendar_pytba-1.0.2.tar.gz --markdown 20230603/c/calendar-pytba/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-06-03 11:29:39] INFO root fetch - processPackages [colablib]: executing diffoscope
+[2023-06-03 11:29:39] INFO root fetch - processPackages [colablib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/colablib-0.1.6.tar.gz tmp/colablib-0.1.7.tar.gz --markdown 20230603/c/colablib/0.1.6-0.1.7/diff.md --exclude *.pyd
+[2023-06-03 11:29:39] INFO root fetch - processPackages [plumage]: Downloading https://files.pythonhosted.org/packages/d7/4d/8deca3be4c501a5dc04f1e82ea5f087ca901be6395d6ba4a1cb70cdf5690/plumage-3.1.0.tar.gz
+[2023-06-03 11:29:39] INFO root fetch - processPackages [plumage]: executing diffoscope
+[2023-06-03 11:29:39] INFO root fetch - processPackages [plumage]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/plumage-3.0.0.tar.gz tmp/plumage-3.1.0.tar.gz --markdown 20230603/p/plumage/3.0.0-3.1.0/diff.md --exclude *.pyd
+[2023-06-03 11:29:40] INFO root fetch - main [MainThread]: End processing [pyeCam]: success
+[2023-06-03 11:29:40] INFO root fetch - main [MainThread]: End processing [calendar-pytba]: success
+[2023-06-03 11:29:40] INFO root fetch - main [MainThread]: End processing [colablib]: success
+[2023-06-03 11:29:40] INFO root fetch - main [MainThread]: End processing [bclib]: success
+[2023-06-03 11:29:42] INFO root fetch - main [MainThread]: End processing [plumage]: success
+[2023-06-03 11:29:42] INFO root fetch - main [MainThread]: Store serial: [18358223]
