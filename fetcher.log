@@ -8967,3 +8967,67 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-06-03 15:18:08] INFO root fetch - main [MainThread]: End processing [solders]: success
 [2023-06-03 15:18:08] INFO root fetch - main [MainThread]: End processing [epub2html]: success
 [2023-06-03 15:18:08] INFO root fetch - main [MainThread]: Store serial: [18359496]
+[2023-06-03 15:23:12] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18359496]
+[2023-06-03 15:23:17] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-06-03 15:23:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pinit
+[2023-06-03 15:23:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: asyncgnostic
+[2023-06-03 15:23:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: azureml-automl-runtime
+[2023-06-03 15:23:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: azureml-training-tabular
+[2023-06-03 15:23:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: azureml-train-automl-client
+[2023-06-03 15:23:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: azureml-train-automl-runtime
+[2023-06-03 15:23:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: lidl-plus
+[2023-06-03 15:23:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: funcsforspo-l
+[2023-06-03 15:23:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: EdgeGPT
+[2023-06-03 15:23:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: thetagang
+[2023-06-03 15:23:17] INFO root fetch - processPackages [pinit]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-06-03 15:23:17] INFO root fetch - processPackages [azureml-training-tabular]: New version: [1.51.0.post1] Old Version: [1.51.0]
+[2023-06-03 15:23:17] INFO root fetch - processPackages [lidl-plus]: New version: [0.2.6] Old Version: [0.2.5]
+[2023-06-03 15:23:17] INFO root fetch - processPackages [funcsforspo-l]: New version: [2.1.2] Old Version: [2.1.1]
+[2023-06-03 15:23:17] INFO root fetch - processPackages [asyncgnostic]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-06-03 15:23:17] INFO root fetch - processPackages [azureml-train-automl-client]: New version: [1.9.0.post1] Old Version: [1.9.0]
+[2023-06-03 15:23:17] INFO root fetch - processPackages [thetagang]: New version: [1.6.0] Old Version: [1.5.0]
+[2023-06-03 15:23:17] INFO root fetch - processPackages [azureml-automl-runtime]: New version: [1.9.0.post3] Old Version: [1.9.0.post2]
+[2023-06-03 15:23:17] INFO root fetch - processPackages [azureml-train-automl-runtime]: New version: [1.9.0.post1] Old Version: [1.9.0]
+[2023-06-03 15:23:17] INFO root fetch - processPackages [EdgeGPT]: New version: [0.8.0] Old Version: [0.7.2]
+[2023-06-03 15:23:18] INFO root fetch - processPackages [azureml-training-tabular]: Downloading https://files.pythonhosted.org/packages/dc/ec/8a703396eb9f7d639b4c5c7e101160c095cde7b9bfe7bf1fb97ecc54de55/azureml_training_tabular-1.51.0-py3-none-any.whl
+[2023-06-03 15:23:18] INFO root fetch - processPackages [asyncgnostic]: Downloading https://files.pythonhosted.org/packages/0c/a4/e08092a8c7613e57cd5ad93c0eb4c16849a49c8352bcf27e047b8b22adcf/asyncgnostic-0.1.2.tar.gz
+[2023-06-03 15:23:18] INFO root fetch - processPackages [funcsforspo-l]: Downloading https://files.pythonhosted.org/packages/47/be/50d03a3ad88552cface46e1f715cb5219974a53ce0de05b3061c9042100f/funcsforspo_l-2.1.1.tar.gz
+[2023-06-03 15:23:18] INFO root fetch - processPackages [lidl-plus]: Downloading https://files.pythonhosted.org/packages/f6/6a/98e7d8e03e0384b991207f6b760dcf189301e46c263a60635045d1884b51/lidl-plus-0.2.5.tar.gz
+[2023-06-03 15:23:18] INFO root fetch - processPackages [EdgeGPT]: Downloading https://files.pythonhosted.org/packages/4c/a7/ee0bcba672d761b416e3414169c276c4bc19c7766f11421ffc5124185fe5/EdgeGPT-0.8.0.tar.gz
+[2023-06-03 15:23:18] INFO root fetch - processPackages [thetagang]: Downloading https://files.pythonhosted.org/packages/15/4c/22d551e9395218525822589f7869a3b6d86648ec548643ca993ea118eca2/thetagang-1.5.0.tar.gz
+[2023-06-03 15:23:18] INFO root fetch - processPackages [pinit]: Downloading https://files.pythonhosted.org/packages/6f/85/bb4717efbda4c4da63811340d77203d87daa8b2881d69b053825c7ab1c6b/pinit-0.0.6.tar.gz
+[2023-06-03 15:23:18] INFO root fetch - processPackages [EdgeGPT]: executing diffoscope
+[2023-06-03 15:23:18] INFO root fetch - processPackages [EdgeGPT]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/EdgeGPT-0.7.2.tar.gz tmp/EdgeGPT-0.8.0.tar.gz --markdown 20230603/E/EdgeGPT/0.7.2-0.8.0/diff.md --exclude *.pyd
+[2023-06-03 15:23:18] INFO root fetch - processPackages [pinit]: executing diffoscope
+[2023-06-03 15:23:18] INFO root fetch - processPackages [pinit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pinit-0.0.5.tar.gz tmp/pinit-0.0.6.tar.gz --markdown 20230603/p/pinit/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-06-03 15:23:18] INFO root fetch - processPackages [asyncgnostic]: executing diffoscope
+[2023-06-03 15:23:18] INFO root fetch - processPackages [asyncgnostic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/asyncgnostic-0.1.1.tar.gz tmp/asyncgnostic-0.1.2.tar.gz --markdown 20230603/a/asyncgnostic/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-06-03 15:23:18] INFO root fetch - processPackages [azureml-train-automl-client]: executing diffoscope
+[2023-06-03 15:23:18] INFO root fetch - processPackages [azureml-train-automl-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/azureml_train_automl_client-1.9.0-py3-none-any.whl.zip tmp/azureml_train_automl_client-1.9.0.post1-py3-none-any.whl.zip --markdown 20230603/a/azureml-train-automl-client/1.9.0-1.9.0.post1/diff.md --exclude *.pyd
+[2023-06-03 15:23:18] INFO root fetch - processPackages [azureml-train-automl-runtime]: executing diffoscope
+[2023-06-03 15:23:18] INFO root fetch - processPackages [azureml-train-automl-runtime]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/azureml_train_automl_runtime-1.9.0-py3-none-any.whl.zip tmp/azureml_train_automl_runtime-1.9.0.post1-py3-none-any.whl.zip --markdown 20230603/a/azureml-train-automl-runtime/1.9.0-1.9.0.post1/diff.md --exclude *.pyd
+[2023-06-03 15:23:18] INFO root fetch - processPackages [funcsforspo-l]: Downloading https://files.pythonhosted.org/packages/29/97/f86738bd593b0b71ff1476cc4dc87a1686e3ee8799d4a7822fdbe61ae286/funcsforspo_l-2.1.2.tar.gz
+[2023-06-03 15:23:18] INFO root fetch - processPackages [azureml-training-tabular]: Downloading https://files.pythonhosted.org/packages/16/8d/80336426575351181c420dc79375470a120b88e1573931a09594e870bfd3/azureml_training_tabular-1.51.0.post1-py3-none-any.whl
+[2023-06-03 15:23:18] INFO root fetch - processPackages [lidl-plus]: Downloading https://files.pythonhosted.org/packages/20/96/096ad51b0b257893705d5a8824ff4ec68faa6ead040a9ac76106a9383ea1/lidl-plus-0.2.6.tar.gz
+[2023-06-03 15:23:18] INFO root fetch - processPackages [azureml-automl-runtime]: executing diffoscope
+[2023-06-03 15:23:18] INFO root fetch - processPackages [azureml-automl-runtime]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/azureml_automl_runtime-1.9.0.post2-py3-none-any.whl.zip tmp/azureml_automl_runtime-1.9.0.post3-py3-none-any.whl.zip --markdown 20230603/a/azureml-automl-runtime/1.9.0.post2-1.9.0.post3/diff.md --exclude *.pyd
+[2023-06-03 15:23:18] INFO root fetch - processPackages [thetagang]: Downloading https://files.pythonhosted.org/packages/c1/d0/6410ab2328382dbebb0f51b8f7fa39a471ee3a056f13b6c10bf5be094a4c/thetagang-1.6.0.tar.gz
+[2023-06-03 15:23:18] INFO root fetch - processPackages [funcsforspo-l]: executing diffoscope
+[2023-06-03 15:23:18] INFO root fetch - processPackages [funcsforspo-l]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/funcsforspo_l-2.1.1.tar.gz tmp/funcsforspo_l-2.1.2.tar.gz --markdown 20230603/f/funcsforspo-l/2.1.1-2.1.2/diff.md --exclude *.pyd
+[2023-06-03 15:23:18] INFO root fetch - processPackages [lidl-plus]: executing diffoscope
+[2023-06-03 15:23:18] INFO root fetch - processPackages [lidl-plus]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lidl-plus-0.2.5.tar.gz tmp/lidl-plus-0.2.6.tar.gz --markdown 20230603/l/lidl-plus/0.2.5-0.2.6/diff.md --exclude *.pyd
+[2023-06-03 15:23:18] INFO root fetch - processPackages [thetagang]: executing diffoscope
+[2023-06-03 15:23:18] INFO root fetch - processPackages [thetagang]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/thetagang-1.5.0.tar.gz tmp/thetagang-1.6.0.tar.gz --markdown 20230603/t/thetagang/1.5.0-1.6.0/diff.md --exclude *.pyd
+[2023-06-03 15:23:18] INFO root fetch - processPackages [azureml-training-tabular]: executing diffoscope
+[2023-06-03 15:23:18] INFO root fetch - processPackages [azureml-training-tabular]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/azureml_training_tabular-1.51.0-py3-none-any.whl.zip tmp/azureml_training_tabular-1.51.0.post1-py3-none-any.whl.zip --markdown 20230603/a/azureml-training-tabular/1.51.0-1.51.0.post1/diff.md --exclude *.pyd
+[2023-06-03 15:23:19] INFO root fetch - main [MainThread]: End processing [asyncgnostic]: success
+[2023-06-03 15:23:19] INFO root fetch - main [MainThread]: End processing [EdgeGPT]: success
+[2023-06-03 15:23:20] INFO root fetch - main [MainThread]: End processing [pinit]: success
+[2023-06-03 15:23:20] INFO root fetch - main [MainThread]: End processing [azureml-train-automl-runtime]: success
+[2023-06-03 15:23:20] INFO root fetch - main [MainThread]: End processing [azureml-train-automl-client]: success
+[2023-06-03 15:23:20] INFO root fetch - main [MainThread]: End processing [lidl-plus]: success
+[2023-06-03 15:23:21] INFO root fetch - main [MainThread]: End processing [thetagang]: success
+[2023-06-03 15:23:21] INFO root fetch - main [MainThread]: End processing [azureml-training-tabular]: success
+[2023-06-03 15:23:21] INFO root fetch - main [MainThread]: End processing [funcsforspo-l]: success
+[2023-06-03 15:23:22] INFO root fetch - main [MainThread]: End processing [azureml-automl-runtime]: success
+[2023-06-03 15:23:22] INFO root fetch - main [MainThread]: Store serial: [18359521]
