@@ -13573,3 +13573,12 @@ EOFError: EOF read where object expected
 [2023-06-03 23:32:24] INFO root fetch - main [MainThread]: End processing [compllments]: success
 [2023-06-03 23:33:18] INFO root fetch - main [MainThread]: End processing [sciform]: success
 [2023-06-03 23:33:18] INFO root fetch - main [MainThread]: Store serial: [18362307]
+[2023-06-03 23:38:22] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18362307]
+[2023-06-03 23:38:26] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2023-06-03 23:38:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: fetch-features
+[2023-06-03 23:38:26] INFO root fetch - processPackages [fetch-features]: New version: [0.2.8] Old Version: [0.2.3]
+[2023-06-03 23:38:27] INFO root fetch - processPackages [fetch-features]: Downloading https://files.pythonhosted.org/packages/dc/df/893e3caf3fa5f7fc466072e401d8987b74fefd8b9fa0b63868367b56d403/fetch_features-0.2.8.tar.gz
+[2023-06-03 23:38:27] INFO root fetch - processPackages [fetch-features]: executing diffoscope
+[2023-06-03 23:38:27] INFO root fetch - processPackages [fetch-features]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fetch_features-0.2.3.tar.gz tmp/fetch_features-0.2.8.tar.gz --markdown 20230603/f/fetch-features/0.2.3-0.2.8/diff.md --exclude *.pyd
+[2023-06-03 23:38:28] INFO root fetch - main [MainThread]: End processing [fetch-features]: success
+[2023-06-03 23:38:28] INFO root fetch - main [MainThread]: Store serial: [18362311]
