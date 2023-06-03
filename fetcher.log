@@ -10929,3 +10929,37 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-06-03 19:24:24] INFO root fetch - main [MainThread]: End processing [bmb-martlet-organization-client]: success
 [2023-06-03 19:24:51] INFO root fetch - main [MainThread]: End processing [moto]: success
 [2023-06-03 19:24:51] INFO root fetch - main [MainThread]: Store serial: [18360716]
+[2023-06-03 19:29:55] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18360716]
+[2023-06-03 19:30:00] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-06-03 19:30:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: fgo-api-types
+[2023-06-03 19:30:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: crazy-thursday
+[2023-06-03 19:30:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: envutil
+[2023-06-03 19:30:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: philbot-voice
+[2023-06-03 19:30:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: hydrogibs
+[2023-06-03 19:30:00] INFO root fetch - processPackages [philbot-voice]: New version: [1.7.3] Old Version: [1.7.2]
+[2023-06-03 19:30:00] INFO root fetch - processPackages [fgo-api-types]: New version: [2023.6.3.17.24.33] Old Version: [2023.5.31.14.20.7]
+[2023-06-03 19:30:00] INFO root fetch - processPackages [envutil]: New version: [0.2.0] Old Version: [0.1.0]
+[2023-06-03 19:30:00] INFO root fetch - processPackages [crazy-thursday]: New version: [2023.6.4.0] Old Version: [2023.6.3.1]
+[2023-06-03 19:30:00] INFO root fetch - processPackages [hydrogibs]: New version: [0.3.9] Old Version: [0.3.8]
+[2023-06-03 19:30:00] INFO root fetch - processPackages [envutil]: Downloading https://files.pythonhosted.org/packages/ef/b2/6e890aaab279bf5770f331602329858a5a57afc1e491365821dd5ff64d2d/envutil-0.1.0.tar.gz
+[2023-06-03 19:30:00] INFO root fetch - processPackages [crazy-thursday]: Downloading https://files.pythonhosted.org/packages/2a/7e/496e52d8bc7e44a55aab9d880052f1f4f501e091cf58c4ec36672c76b32b/crazy-thursday-2023.6.4.0.tar.gz
+[2023-06-03 19:30:00] INFO root fetch - processPackages [fgo-api-types]: Downloading https://files.pythonhosted.org/packages/57/c3/e14f85f1a88d50992842f89662d0b10ea1d32a9b2fcf5c39a5f23ab3a1a6/fgo_api_types-2023.6.3.17.24.33.tar.gz
+[2023-06-03 19:30:00] INFO root fetch - processPackages [hydrogibs]: Downloading https://files.pythonhosted.org/packages/13/8a/62234fa4c801082218b9f3702d4a0a9789aa6db4340123e0e42873e9838a/hydrogibs-0.3.9.tar.gz
+[2023-06-03 19:30:00] INFO root fetch - processPackages [crazy-thursday]: executing diffoscope
+[2023-06-03 19:30:00] INFO root fetch - processPackages [crazy-thursday]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/crazy-thursday-2023.6.3.1.tar.gz tmp/crazy-thursday-2023.6.4.0.tar.gz --markdown 20230603/c/crazy-thursday/2023.6.3.1-2023.6.4.0/diff.md --exclude *.pyd
+[2023-06-03 19:30:00] INFO root fetch - processPackages [philbot-voice]: Downloading https://files.pythonhosted.org/packages/2d/ed/ffb19fa688fb49327a714c9e9bae6a6677dbc71bddff8635dcf0b2849c82/philbot_voice-1.7.3.tar.gz
+[2023-06-03 19:30:00] INFO root fetch - processPackages [fgo-api-types]: executing diffoscope
+[2023-06-03 19:30:00] INFO root fetch - processPackages [fgo-api-types]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fgo_api_types-2023.5.31.14.20.7.tar.gz tmp/fgo_api_types-2023.6.3.17.24.33.tar.gz --markdown 20230603/f/fgo-api-types/2023.5.31.14.20.7-2023.6.3.17.24.33/diff.md --exclude *.pyd
+[2023-06-03 19:30:00] INFO root fetch - processPackages [envutil]: Downloading https://files.pythonhosted.org/packages/18/13/d971e84e0ad2ef7fa4d34b4fdb6c6e0b304f5378d4bd5d2bd3ba84a92c0c/envutil-0.2.0.tar.gz
+[2023-06-03 19:30:00] INFO root fetch - processPackages [philbot-voice]: executing diffoscope
+[2023-06-03 19:30:00] INFO root fetch - processPackages [philbot-voice]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/philbot_voice-1.7.2.tar.gz tmp/philbot_voice-1.7.3.tar.gz --markdown 20230603/p/philbot-voice/1.7.2-1.7.3/diff.md --exclude *.pyd
+[2023-06-03 19:30:00] INFO root fetch - processPackages [hydrogibs]: executing diffoscope
+[2023-06-03 19:30:00] INFO root fetch - processPackages [hydrogibs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hydrogibs-0.3.8.tar.gz tmp/hydrogibs-0.3.9.tar.gz --markdown 20230603/h/hydrogibs/0.3.8-0.3.9/diff.md --exclude *.pyd
+[2023-06-03 19:30:00] INFO root fetch - processPackages [envutil]: executing diffoscope
+[2023-06-03 19:30:00] INFO root fetch - processPackages [envutil]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/envutil-0.1.0.tar.gz tmp/envutil-0.2.0.tar.gz --markdown 20230603/e/envutil/0.1.0-0.2.0/diff.md --exclude *.pyd
+[2023-06-03 19:30:01] INFO root fetch - main [MainThread]: End processing [crazy-thursday]: success
+[2023-06-03 19:30:02] INFO root fetch - main [MainThread]: End processing [envutil]: success
+[2023-06-03 19:30:02] INFO root fetch - main [MainThread]: End processing [fgo-api-types]: success
+[2023-06-03 19:30:02] INFO root fetch - main [MainThread]: End processing [philbot-voice]: success
+[2023-06-03 19:30:02] INFO root fetch - main [MainThread]: End processing [hydrogibs]: success
+[2023-06-03 19:30:02] INFO root fetch - main [MainThread]: Store serial: [18360731]
