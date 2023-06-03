@@ -4317,3 +4317,33 @@
 [2023-06-03 04:34:05] INFO root fetch - main [MainThread]: End processing [Bigsansar]: success
 [2023-06-03 04:34:09] INFO root fetch - main [MainThread]: End processing [thirdai]: success
 [2023-06-03 04:34:09] INFO root fetch - main [MainThread]: Store serial: [18356456]
+[2023-06-03 04:39:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18356456]
+[2023-06-03 04:39:19] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-06-03 04:39:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: odoo-addon-account-tax-balance
+[2023-06-03 04:39:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cdk8s-plus-24
+[2023-06-03 04:39:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: archs4py
+[2023-06-03 04:39:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: m-abac-test
+[2023-06-03 04:39:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: np-eyetracking
+[2023-06-03 04:39:19] INFO root fetch - processPackages [odoo-addon-account-tax-balance]: New version: [16.0.1.0.0.6] Old Version: [16.0.1.0.0.5]
+[2023-06-03 04:39:19] INFO root fetch - processPackages [m-abac-test]: New version: [1.0.5] Old Version: [1.0.4]
+[2023-06-03 04:39:19] INFO root fetch - processPackages [archs4py]: New version: [0.1.6] Old Version: [0.1.5]
+[2023-06-03 04:39:19] WARNING root fetch - processPackages [np-eyetracking]: Skipping, unable to determine old version
+[2023-06-03 04:39:19] INFO root fetch - main [MainThread]: End processing [np-eyetracking] error
+[2023-06-03 04:39:19] INFO root fetch - processPackages [cdk8s-plus-24]: New version: [2.8.9] Old Version: [2.8.8]
+[2023-06-03 04:39:20] INFO root fetch - processPackages [archs4py]: Downloading https://files.pythonhosted.org/packages/fb/20/1f35c4af5b6bcdfb0b8f5e48f6f354f41643a613f9c20f9d8a8ff6e7d70d/archs4py-0.1.5.tar.gz
+[2023-06-03 04:39:20] INFO root fetch - processPackages [cdk8s-plus-24]: executing diffoscope
+[2023-06-03 04:39:20] INFO root fetch - processPackages [cdk8s-plus-24]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk8s-plus-24-2.8.8.tar.gz tmp/cdk8s-plus-24-2.8.9.tar.gz --markdown 20230603/c/cdk8s-plus-24/2.8.8-2.8.9/diff.md --exclude *.pyd
+[2023-06-03 04:39:20] INFO root fetch - processPackages [m-abac-test]: Downloading https://files.pythonhosted.org/packages/39/10/b67bb4c7573c927c552663235a408510098b02c2c16d824749c552b12098/m-abac-test-1.0.5.tar.gz
+[2023-06-03 04:39:20] INFO root fetch - processPackages [m-abac-test]: executing diffoscope
+[2023-06-03 04:39:20] INFO root fetch - processPackages [m-abac-test]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/m-abac-test-1.0.4.tar.gz tmp/m-abac-test-1.0.5.tar.gz --markdown 20230603/m/m-abac-test/1.0.4-1.0.5/diff.md --exclude *.pyd
+[2023-06-03 04:39:20] INFO root fetch - processPackages [odoo-addon-account-tax-balance]: Downloading https://files.pythonhosted.org/packages/8d/2f/616dd43b7697d31d824ae390e640ab8f4faf1bbcf11810b5863757d7b461/odoo_addon_account_tax_balance-16.0.1.0.0.6-py3-none-any.whl
+[2023-06-03 04:39:20] INFO root fetch - processPackages [archs4py]: Downloading https://files.pythonhosted.org/packages/70/88/0f3f247ed4ecdb4c6d6e33f87572e66fbaada5bfd9fbefc6f32f6abbf29b/archs4py-0.1.6.tar.gz
+[2023-06-03 04:39:20] INFO root fetch - processPackages [odoo-addon-account-tax-balance]: executing diffoscope
+[2023-06-03 04:39:20] INFO root fetch - processPackages [odoo-addon-account-tax-balance]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_account_tax_balance-16.0.1.0.0.5-py3-none-any.whl.zip tmp/odoo_addon_account_tax_balance-16.0.1.0.0.6-py3-none-any.whl.zip --markdown 20230603/o/odoo-addon-account-tax-balance/16.0.1.0.0.5-16.0.1.0.0.6/diff.md --exclude *.pyd
+[2023-06-03 04:39:20] INFO root fetch - processPackages [archs4py]: executing diffoscope
+[2023-06-03 04:39:20] INFO root fetch - processPackages [archs4py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/archs4py-0.1.5.tar.gz tmp/archs4py-0.1.6.tar.gz --markdown 20230603/a/archs4py/0.1.5-0.1.6/diff.md --exclude *.pyd
+[2023-06-03 04:39:21] INFO root fetch - main [MainThread]: End processing [archs4py]: success
+[2023-06-03 04:39:21] INFO root fetch - main [MainThread]: End processing [odoo-addon-account-tax-balance]: success
+[2023-06-03 04:39:21] INFO root fetch - main [MainThread]: End processing [cdk8s-plus-24]: success
+[2023-06-03 04:39:21] INFO root fetch - main [MainThread]: End processing [m-abac-test]: success
+[2023-06-03 04:39:21] INFO root fetch - main [MainThread]: Store serial: [18356474]
