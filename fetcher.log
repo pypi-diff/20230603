@@ -11231,3 +11231,38 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-06-03 20:02:49] INFO root fetch - main [MainThread]: End processing [vision6D]: success
 [2023-06-03 20:02:49] INFO root fetch - main [MainThread]: End processing [psyke]: success
 [2023-06-03 20:02:49] INFO root fetch - main [MainThread]: Store serial: [18360972]
+[2023-06-03 20:07:53] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18360972]
+[2023-06-03 20:07:58] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-06-03 20:07:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: findi-descent
+[2023-06-03 20:07:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: bspy
+[2023-06-03 20:07:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: libretrofuzz
+[2023-06-03 20:07:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: FLAI-CAUSAL
+[2023-06-03 20:07:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: fim-utils
+[2023-06-03 20:07:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pref-voting
+[2023-06-03 20:07:58] WARNING root fetch - processPackages [findi-descent]: Skipping, unable to determine old version
+[2023-06-03 20:07:58] INFO root fetch - main [MainThread]: End processing [findi-descent] error
+[2023-06-03 20:07:58] INFO root fetch - processPackages [fim-utils]: New version: [1.5.0rc3] Old Version: [1.4.9]
+[2023-06-03 20:07:58] INFO root fetch - processPackages [libretrofuzz]: New version: [2.8.2] Old Version: [2.8.1]
+[2023-06-03 20:07:58] INFO root fetch - processPackages [bspy]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-06-03 20:07:58] INFO root fetch - processPackages [FLAI-CAUSAL]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-06-03 20:07:58] INFO root fetch - processPackages [pref-voting]: New version: [0.4.9] Old Version: [0.4.8]
+[2023-06-03 20:07:58] INFO root fetch - processPackages [FLAI-CAUSAL]: executing diffoscope
+[2023-06-03 20:07:58] INFO root fetch - processPackages [FLAI-CAUSAL]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/FLAI_CAUSAL-1.0.8.tar.gz tmp/FLAI_CAUSAL-1.0.9.tar.gz --markdown 20230603/F/FLAI-CAUSAL/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-06-03 20:07:58] INFO root fetch - processPackages [pref-voting]: executing diffoscope
+[2023-06-03 20:07:58] INFO root fetch - processPackages [pref-voting]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pref_voting-0.4.8.tar.gz tmp/pref_voting-0.4.9.tar.gz --markdown 20230603/p/pref-voting/0.4.8-0.4.9/diff.md --exclude *.pyd
+[2023-06-03 20:07:58] INFO root fetch - processPackages [fim-utils]: Downloading https://files.pythonhosted.org/packages/fc/bd/6724aed8675c532f663d3ff61f8093a4b6c665521c0600def7d8707db141/fim_utils-1.4.9.tar.gz
+[2023-06-03 20:07:59] INFO root fetch - processPackages [libretrofuzz]: Downloading https://files.pythonhosted.org/packages/1e/61/18484af5d79e9f15f987eb0865887ab70774ef5ed356d5de038d4cc819c9/libretrofuzz-2.8.2.tar.gz
+[2023-06-03 20:07:59] INFO root fetch - processPackages [libretrofuzz]: executing diffoscope
+[2023-06-03 20:07:59] INFO root fetch - processPackages [libretrofuzz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/libretrofuzz-2.8.1.tar.gz tmp/libretrofuzz-2.8.2.tar.gz --markdown 20230603/l/libretrofuzz/2.8.1-2.8.2/diff.md --exclude *.pyd
+[2023-06-03 20:07:59] INFO root fetch - processPackages [fim-utils]: Downloading https://files.pythonhosted.org/packages/b7/c6/b8c10d75301fdcb0e88ee943d41839e8a9b51a2fbd0fdf9b67e52f6d7909/fim_utils-1.5.0rc3.tar.gz
+[2023-06-03 20:07:59] INFO root fetch - processPackages [bspy]: Downloading https://files.pythonhosted.org/packages/11/13/d7dfcf91d52f2f30e1eb35f0510223bf6f2aeb6c3191ccde246c2ef8731e/bspy-1.0.2.tar.gz
+[2023-06-03 20:07:59] INFO root fetch - processPackages [bspy]: executing diffoscope
+[2023-06-03 20:07:59] INFO root fetch - processPackages [bspy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bspy-1.0.1.tar.gz tmp/bspy-1.0.2.tar.gz --markdown 20230603/b/bspy/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-06-03 20:07:59] INFO root fetch - processPackages [fim-utils]: executing diffoscope
+[2023-06-03 20:07:59] INFO root fetch - processPackages [fim-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fim_utils-1.4.9.tar.gz tmp/fim_utils-1.5.0rc3.tar.gz --markdown 20230603/f/fim-utils/1.4.9-1.5.0rc3/diff.md --exclude *.pyd
+[2023-06-03 20:07:59] INFO root fetch - main [MainThread]: End processing [FLAI-CAUSAL]: success
+[2023-06-03 20:08:00] INFO root fetch - main [MainThread]: End processing [pref-voting]: success
+[2023-06-03 20:08:00] INFO root fetch - main [MainThread]: End processing [libretrofuzz]: success
+[2023-06-03 20:08:00] INFO root fetch - main [MainThread]: End processing [bspy]: success
+[2023-06-03 20:08:00] INFO root fetch - main [MainThread]: End processing [fim-utils]: success
+[2023-06-03 20:08:00] INFO root fetch - main [MainThread]: Store serial: [18360991]
