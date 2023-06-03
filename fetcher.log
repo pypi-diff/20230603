@@ -5202,3 +5202,24 @@
 [2023-06-03 06:41:07] INFO root fetch - main [MainThread]: End processing [cleanlab-studio]: success
 [2023-06-03 06:41:07] INFO root fetch - main [MainThread]: End processing [nose-py3]: success
 [2023-06-03 06:41:07] INFO root fetch - main [MainThread]: Store serial: [18357048]
+[2023-06-03 06:46:12] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18357048]
+[2023-06-03 06:46:17] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-06-03 06:46:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: automateeda
+[2023-06-03 06:46:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tjax
+[2023-06-03 06:46:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: causalwsnmtes
+[2023-06-03 06:46:17] INFO root fetch - processPackages [automateeda]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-06-03 06:46:17] INFO root fetch - processPackages [causalwsnmtes]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-06-03 06:46:17] INFO root fetch - processPackages [tjax]: New version: [0.9.0] Old Version: [0.8.4]
+[2023-06-03 06:46:17] INFO root fetch - processPackages [tjax]: executing diffoscope
+[2023-06-03 06:46:17] INFO root fetch - processPackages [tjax]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tjax-0.8.4.tar.gz tmp/tjax-0.9.0.tar.gz --markdown 20230603/t/tjax/0.8.4-0.9.0/diff.md --exclude *.pyd
+[2023-06-03 06:46:17] INFO root fetch - processPackages [causalwsnmtes]: Downloading https://files.pythonhosted.org/packages/2f/66/a4289bc8fb26a4022e1df405912f3b0acffe340bd55b67610d8eb638d235/causalwsnmtes-0.1.0.tar.gz
+[2023-06-03 06:46:17] INFO root fetch - processPackages [automateeda]: Downloading https://files.pythonhosted.org/packages/fc/e1/ee49963bf57d2771134e45b4275b9d2542760f55bed88e862f6a95c96060/automateeda-0.0.3.tar.gz
+[2023-06-03 06:46:17] INFO root fetch - processPackages [automateeda]: executing diffoscope
+[2023-06-03 06:46:17] INFO root fetch - processPackages [automateeda]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/automateeda-0.0.2.tar.gz tmp/automateeda-0.0.3.tar.gz --markdown 20230603/a/automateeda/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-06-03 06:46:17] INFO root fetch - processPackages [causalwsnmtes]: Downloading https://files.pythonhosted.org/packages/e0/71/31c3c916a84eacdbddffe19f64e81b790804590c6e1e9553d7a49175ddb4/causalwsnmtes-0.1.1.tar.gz
+[2023-06-03 06:46:18] INFO root fetch - processPackages [causalwsnmtes]: executing diffoscope
+[2023-06-03 06:46:18] INFO root fetch - processPackages [causalwsnmtes]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/causalwsnmtes-0.1.0.tar.gz tmp/causalwsnmtes-0.1.1.tar.gz --markdown 20230603/c/causalwsnmtes/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-06-03 06:46:18] INFO root fetch - main [MainThread]: End processing [automateeda]: success
+[2023-06-03 06:46:19] INFO root fetch - main [MainThread]: End processing [causalwsnmtes]: success
+[2023-06-03 06:47:12] INFO root fetch - main [MainThread]: End processing [tjax]: success
+[2023-06-03 06:47:12] INFO root fetch - main [MainThread]: Store serial: [18357056]
