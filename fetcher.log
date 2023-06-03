@@ -8329,3 +8329,49 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-06-03 14:14:49] INFO root fetch - main [MainThread]: End processing [openedx-django-pyfs]: success
 [2023-06-03 14:14:51] INFO root fetch - main [MainThread]: End processing [kecam]: success
 [2023-06-03 14:14:51] INFO root fetch - main [MainThread]: Store serial: [18359124]
+[2023-06-03 14:19:56] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18359124]
+[2023-06-03 14:20:01] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-06-03 14:20:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: goodway-configs
+[2023-06-03 14:20:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: summa-embed
+[2023-06-03 14:20:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: rechtspraak-citations-extractor
+[2023-06-03 14:20:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: tianhutools
+[2023-06-03 14:20:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pytest-httptesting
+[2023-06-03 14:20:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pykeadhcp
+[2023-06-03 14:20:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: anum
+[2023-06-03 14:20:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: pyhop
+[2023-06-03 14:20:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: jsonfmt
+[2023-06-03 14:20:01] INFO root fetch - processPackages [rechtspraak-citations-extractor]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-06-03 14:20:01] INFO root fetch - processPackages [summa-embed]: New version: [0.15.9] Old Version: [0.15.8]
+[2023-06-03 14:20:01] WARNING root fetch - processPackages [goodway-configs]: Skipping, unable to determine old version
+[2023-06-03 14:20:01] INFO root fetch - main [MainThread]: End processing [goodway-configs] error
+[2023-06-03 14:20:01] WARNING root fetch - processPackages [tianhutools]: Skipping, unable to determine old version
+[2023-06-03 14:20:01] INFO root fetch - main [MainThread]: End processing [tianhutools] error
+[2023-06-03 14:20:01] ERROR root fetch - processPackages [pyhop]: Unable to get metadata: No such project 'pyhop'
+[2023-06-03 14:20:01] INFO root fetch - processPackages [pykeadhcp]: New version: [0.2.0] Old Version: [0.1.3]
+[2023-06-03 14:20:01] INFO root fetch - main [MainThread]: End processing [pyhop] error
+[2023-06-03 14:20:01] WARNING root fetch - processPackages [anum]: Skipping, unable to determine old version
+[2023-06-03 14:20:01] INFO root fetch - main [MainThread]: End processing [anum] error
+[2023-06-03 14:20:01] INFO root fetch - processPackages [pytest-httptesting]: New version: [0.4.0] Old Version: [0.3.1]
+[2023-06-03 14:20:01] INFO root fetch - processPackages [jsonfmt]: New version: [0.2.4] Old Version: [0.2.3]
+[2023-06-03 14:20:01] INFO root fetch - processPackages [rechtspraak-citations-extractor]: Downloading https://files.pythonhosted.org/packages/07/53/5bd08eab90ec1402fe299e85fcccaebdc7b2c9d4b57f48e3bfff65e2a31c/rechtspraak_citations_extractor-1.0.0.tar.gz
+[2023-06-03 14:20:02] INFO root fetch - processPackages [pytest-httptesting]: Downloading https://files.pythonhosted.org/packages/4e/c9/73063252d7bedc498223358fdbcf8fb049318e029876f0b79798beb4e3fc/pytest_httptesting-0.3.1.tar.gz
+[2023-06-03 14:20:02] INFO root fetch - processPackages [pykeadhcp]: Downloading https://files.pythonhosted.org/packages/04/6c/e3c6275e6db35367d88a80412988de7eb821a8b306995d40a1088135b302/pykeadhcp-0.2.0.tar.gz
+[2023-06-03 14:20:02] INFO root fetch - processPackages [rechtspraak-citations-extractor]: Downloading https://files.pythonhosted.org/packages/09/40/ff1331a23e8d025272521ea7ef4113856c3f9285d0c242a5c1bb1d3a3106/rechtspraak_citations_extractor-1.0.1.tar.gz
+[2023-06-03 14:20:02] INFO root fetch - processPackages [jsonfmt]: Downloading https://files.pythonhosted.org/packages/12/e0/8e126430391e2ebbc9616966f705d7c7a37f965a7c6a338fbbb018fe6116/jsonfmt-0.2.4.tar.gz
+[2023-06-03 14:20:02] INFO root fetch - processPackages [pykeadhcp]: executing diffoscope
+[2023-06-03 14:20:02] INFO root fetch - processPackages [pykeadhcp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pykeadhcp-0.1.3.tar.gz tmp/pykeadhcp-0.2.0.tar.gz --markdown 20230603/p/pykeadhcp/0.1.3-0.2.0/diff.md --exclude *.pyd
+[2023-06-03 14:20:02] INFO root fetch - processPackages [summa-embed]: executing diffoscope
+[2023-06-03 14:20:02] INFO root fetch - processPackages [summa-embed]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/summa_embed-0.15.8.tar.gz tmp/summa_embed-0.15.9.tar.gz --markdown 20230603/s/summa-embed/0.15.8-0.15.9/diff.md --exclude *.pyd
+[2023-06-03 14:20:02] INFO root fetch - processPackages [pytest-httptesting]: Downloading https://files.pythonhosted.org/packages/0d/b9/747bd487da200a9a54a3f03a90f198978cdf683380e2c34a203bb3082fd3/pytest_httptesting-0.4.0.tar.gz
+[2023-06-03 14:20:02] INFO root fetch - processPackages [rechtspraak-citations-extractor]: executing diffoscope
+[2023-06-03 14:20:02] INFO root fetch - processPackages [rechtspraak-citations-extractor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rechtspraak_citations_extractor-1.0.0.tar.gz tmp/rechtspraak_citations_extractor-1.0.1.tar.gz --markdown 20230603/r/rechtspraak-citations-extractor/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-06-03 14:20:02] INFO root fetch - processPackages [jsonfmt]: executing diffoscope
+[2023-06-03 14:20:02] INFO root fetch - processPackages [jsonfmt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jsonfmt-0.2.3.tar.gz tmp/jsonfmt-0.2.4.tar.gz --markdown 20230603/j/jsonfmt/0.2.3-0.2.4/diff.md --exclude *.pyd
+[2023-06-03 14:20:02] INFO root fetch - processPackages [pytest-httptesting]: executing diffoscope
+[2023-06-03 14:20:02] INFO root fetch - processPackages [pytest-httptesting]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytest_httptesting-0.3.1.tar.gz tmp/pytest_httptesting-0.4.0.tar.gz --markdown 20230603/p/pytest-httptesting/0.3.1-0.4.0/diff.md --exclude *.pyd
+[2023-06-03 14:20:03] INFO root fetch - main [MainThread]: End processing [jsonfmt]: success
+[2023-06-03 14:20:03] INFO root fetch - main [MainThread]: End processing [rechtspraak-citations-extractor]: success
+[2023-06-03 14:20:03] INFO root fetch - main [MainThread]: End processing [pykeadhcp]: success
+[2023-06-03 14:20:03] INFO root fetch - main [MainThread]: End processing [pytest-httptesting]: success
+[2023-06-03 14:20:04] INFO root fetch - main [MainThread]: End processing [summa-embed]: success
+[2023-06-03 14:20:04] INFO root fetch - main [MainThread]: Store serial: [18359183]
