@@ -13007,3 +13007,23 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-06-03 22:32:05] INFO root fetch - main [MainThread]: End processing [rayasdk]: success
 [2023-06-03 22:32:58] INFO root fetch - main [MainThread]: End processing [ipyflow]: success
 [2023-06-03 22:32:58] INFO root fetch - main [MainThread]: Store serial: [18361993]
+[2023-06-03 22:38:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18361993]
+[2023-06-03 22:38:07] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-06-03 22:38:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: R134aPT
+[2023-06-03 22:38:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tfrecord-lite
+[2023-06-03 22:38:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: datasinda
+[2023-06-03 22:38:07] WARNING root fetch - processPackages [R134aPT]: Skipping, unable to determine old version
+[2023-06-03 22:38:07] INFO root fetch - main [MainThread]: End processing [R134aPT] error
+[2023-06-03 22:38:07] INFO root fetch - processPackages [tfrecord-lite]: New version: [0.0.8] Old Version: [0.0.7]
+[2023-06-03 22:38:07] INFO root fetch - processPackages [datasinda]: New version: [0.0.1] Old Version: [0.0.0]
+[2023-06-03 22:38:07] INFO root fetch - processPackages [tfrecord-lite]: Downloading https://files.pythonhosted.org/packages/de/bb/62d8e6ab99e62c88e0e061357be99f91e38efa6b37b8f569bec1f8751d3b/tfrecord_lite-0.0.7.tar.gz
+[2023-06-03 22:38:08] INFO root fetch - processPackages [datasinda]: Downloading https://files.pythonhosted.org/packages/a6/67/f8fc8f88965e9bffb11258f3c8840273e99991bd002ba38f17c20ab3c8c0/datasinda-0.0.0.tar.gz
+[2023-06-03 22:38:08] INFO root fetch - processPackages [tfrecord-lite]: Downloading https://files.pythonhosted.org/packages/af/9c/9d466e9de1c0db3e0867908f6973e0b7a145a9dd0d981ffb7bb17b5487a1/tfrecord_lite-0.0.8.tar.gz
+[2023-06-03 22:38:08] INFO root fetch - processPackages [datasinda]: Downloading https://files.pythonhosted.org/packages/87/00/fb4a0a64d3615def0396423c340e421d58cba2700ad1e5676489a62795f4/datasinda-0.0.1.tar.gz
+[2023-06-03 22:38:08] INFO root fetch - processPackages [tfrecord-lite]: executing diffoscope
+[2023-06-03 22:38:08] INFO root fetch - processPackages [tfrecord-lite]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tfrecord_lite-0.0.7.tar.gz tmp/tfrecord_lite-0.0.8.tar.gz --markdown 20230603/t/tfrecord-lite/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2023-06-03 22:38:08] INFO root fetch - processPackages [datasinda]: executing diffoscope
+[2023-06-03 22:38:08] INFO root fetch - processPackages [datasinda]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/datasinda-0.0.0.tar.gz tmp/datasinda-0.0.1.tar.gz --markdown 20230603/d/datasinda/0.0.0-0.0.1/diff.md --exclude *.pyd
+[2023-06-03 22:38:09] INFO root fetch - main [MainThread]: End processing [datasinda]: success
+[2023-06-03 22:38:09] INFO root fetch - main [MainThread]: End processing [tfrecord-lite]: success
+[2023-06-03 22:38:09] INFO root fetch - main [MainThread]: Store serial: [18362004]
