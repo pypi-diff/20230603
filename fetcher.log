@@ -6100,3 +6100,48 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-06-03 09:08:38] INFO root fetch - main [MainThread]: End processing [thonny]: success
 [2023-06-03 09:10:48] INFO root fetch - main [MainThread]: End processing [mayan-edms]: success
 [2023-06-03 09:10:48] INFO root fetch - main [MainThread]: Store serial: [18357592]
+[2023-06-03 09:15:52] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18357592]
+[2023-06-03 09:15:57] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-06-03 09:15:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: webint-editor
+[2023-06-03 09:15:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: rl4co
+[2023-06-03 09:15:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: hotsos
+[2023-06-03 09:15:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: wanted-models
+[2023-06-03 09:15:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: lesscode-database
+[2023-06-03 09:15:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: webint-editor
+[2023-06-03 09:15:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: streamlit-nightly
+[2023-06-03 09:15:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: django-imgwidget
+[2023-06-03 09:15:57] INFO root fetch - processPackages [webint-editor]: New version: [0.0.159] Old Version: [0.0.158]
+[2023-06-03 09:15:57] INFO root fetch - processPackages [webint-editor]: New version: [0.0.159] Old Version: [0.0.158]
+[2023-06-03 09:15:57] INFO root fetch - processPackages [django-imgwidget]: New version: [0.0.2.2] Old Version: [0.0.2.1]
+[2023-06-03 09:15:57] INFO root fetch - processPackages [hotsos]: New version: [1.1.14.post9] Old Version: [1.1.14.post8]
+[2023-06-03 09:15:57] WARNING root fetch - processPackages [rl4co]: Skipping, unable to determine old version
+[2023-06-03 09:15:57] INFO root fetch - main [MainThread]: End processing [rl4co] error
+[2023-06-03 09:15:57] INFO root fetch - processPackages [lesscode-database]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-06-03 09:15:57] WARNING root fetch - processPackages [wanted-models]: Skipping, unable to determine old version
+[2023-06-03 09:15:57] INFO root fetch - main [MainThread]: End processing [wanted-models] error
+[2023-06-03 09:15:57] INFO root fetch - processPackages [streamlit-nightly]: New version: [1.9.3.dev20220601] Old Version: [1.9.3.dev20220531]
+[2023-06-03 09:15:57] INFO root fetch - processPackages [streamlit-nightly]: executing diffoscope
+[2023-06-03 09:15:57] INFO root fetch - processPackages [streamlit-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/streamlit-nightly-1.9.3.dev20220531.tar.gz tmp/streamlit-nightly-1.9.3.dev20220601.tar.gz --markdown 20230603/s/streamlit-nightly/1.9.3.dev20220531-1.9.3.dev20220601/diff.md --exclude *.pyd
+[2023-06-03 09:15:57] INFO root fetch - processPackages [webint-editor]: Downloading https://files.pythonhosted.org/packages/bc/e0/e5d00755e918658b07905a6efb39840e72682807cd7aeb687dfc7f2ba454/webint_editor-0.0.158.tar.gz
+[2023-06-03 09:15:57] INFO root fetch - processPackages [webint-editor]: Downloading https://files.pythonhosted.org/packages/bc/e0/e5d00755e918658b07905a6efb39840e72682807cd7aeb687dfc7f2ba454/webint_editor-0.0.158.tar.gz
+[2023-06-03 09:15:57] INFO root fetch - processPackages [django-imgwidget]: Downloading https://files.pythonhosted.org/packages/80/b8/88f5ae29739d034f94242da5ce122b111e2a50c0c001faf3604a026b1b43/django-imgwidget-0.0.2.2.tar.gz
+[2023-06-03 09:15:57] INFO root fetch - processPackages [hotsos]: executing diffoscope
+[2023-06-03 09:15:57] INFO root fetch - processPackages [hotsos]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hotsos-1.1.14.post8.tar.gz tmp/hotsos-1.1.14.post9.tar.gz --markdown 20230603/h/hotsos/1.1.14.post8-1.1.14.post9/diff.md --exclude *.pyd
+[2023-06-03 09:15:57] INFO root fetch - processPackages [lesscode-database]: Downloading https://files.pythonhosted.org/packages/75/2e/90f69796e04b8a4ee3406a483d337f3513f130d0a960d2c3610bd5a8afd7/lesscode_database-0.0.3.tar.gz
+[2023-06-03 09:15:57] INFO root fetch - processPackages [django-imgwidget]: executing diffoscope
+[2023-06-03 09:15:57] INFO root fetch - processPackages [django-imgwidget]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-imgwidget-0.0.2.1.tar.gz tmp/django-imgwidget-0.0.2.2.tar.gz --markdown 20230603/d/django-imgwidget/0.0.2.1-0.0.2.2/diff.md --exclude *.pyd
+[2023-06-03 09:15:57] INFO root fetch - processPackages [lesscode-database]: executing diffoscope
+[2023-06-03 09:15:57] INFO root fetch - processPackages [lesscode-database]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lesscode_database-0.0.2.tar.gz tmp/lesscode_database-0.0.3.tar.gz --markdown 20230603/l/lesscode-database/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-06-03 09:15:57] INFO root fetch - processPackages [webint-editor]: Downloading https://files.pythonhosted.org/packages/b2/ea/677d8e9a44710985948fe28276cff0e1828ccf2e5c0d14d6a06aa7a01e82/webint_editor-0.0.159.tar.gz
+[2023-06-03 09:15:57] INFO root fetch - processPackages [webint-editor]: Downloading https://files.pythonhosted.org/packages/b2/ea/677d8e9a44710985948fe28276cff0e1828ccf2e5c0d14d6a06aa7a01e82/webint_editor-0.0.159.tar.gz
+[2023-06-03 09:15:58] INFO root fetch - processPackages [webint-editor]: executing diffoscope
+[2023-06-03 09:15:58] INFO root fetch - processPackages [webint-editor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/webint_editor-0.0.158.tar.gz tmp/webint_editor-0.0.159.tar.gz --markdown 20230603/w/webint-editor/0.0.158-0.0.159/diff.md --exclude *.pyd
+[2023-06-03 09:15:58] INFO root fetch - processPackages [webint-editor]: executing diffoscope
+[2023-06-03 09:15:58] INFO root fetch - processPackages [webint-editor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/webint_editor-0.0.158.tar.gz tmp/webint_editor-0.0.159.tar.gz --markdown 20230603/w/webint-editor/0.0.158-0.0.159/diff.md --exclude *.pyd
+[2023-06-03 09:15:59] INFO root fetch - main [MainThread]: End processing [lesscode-database]: success
+[2023-06-03 09:15:59] INFO root fetch - main [MainThread]: End processing [django-imgwidget]: success
+[2023-06-03 09:15:59] INFO root fetch - main [MainThread]: End processing [webint-editor]: success
+[2023-06-03 09:15:59] INFO root fetch - main [MainThread]: End processing [webint-editor]: success
+[2023-06-03 09:16:00] INFO root fetch - main [MainThread]: End processing [hotsos]: success
+[2023-06-03 09:16:09] INFO root fetch - main [MainThread]: End processing [streamlit-nightly]: success
+[2023-06-03 09:16:09] INFO root fetch - main [MainThread]: Store serial: [18357620]
