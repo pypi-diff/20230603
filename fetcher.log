@@ -7281,3 +7281,49 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-06-03 11:40:05] INFO root fetch - main [MainThread]: End processing [ynca]: success
 [2023-06-03 11:40:05] INFO root fetch - main [MainThread]: End processing [odoo-addon-account-reconciliation-widget]: success
 [2023-06-03 11:40:05] INFO root fetch - main [MainThread]: Store serial: [18358258]
+[2023-06-03 11:45:09] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18358258]
+[2023-06-03 11:45:14] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-06-03 11:45:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: argos-nac
+[2023-06-03 11:45:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: time-interpret
+[2023-06-03 11:45:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cncd-package
+[2023-06-03 11:45:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: argos-netbox
+[2023-06-03 11:45:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: bmsdna-lakeapi
+[2023-06-03 11:45:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: fbref2pandas
+[2023-06-03 11:45:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: sftp-uploader
+[2023-06-03 11:45:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: aioarp
+[2023-06-03 11:45:14] INFO root fetch - processPackages [argos-netbox]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-06-03 11:45:14] INFO root fetch - processPackages [bmsdna-lakeapi]: New version: [0.6.4] Old Version: [0.6.0]
+[2023-06-03 11:45:14] INFO root fetch - processPackages [cncd-package]: New version: [0.3.5] Old Version: [0.3.4]
+[2023-06-03 11:45:14] INFO root fetch - processPackages [time-interpret]: New version: [0.2.0] Old Version: [0.1.0]
+[2023-06-03 11:45:14] INFO root fetch - processPackages [argos-nac]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-06-03 11:45:14] WARNING root fetch - processPackages [fbref2pandas]: Skipping, unable to determine old version
+[2023-06-03 11:45:14] INFO root fetch - processPackages [sftp-uploader]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-06-03 11:45:14] INFO root fetch - main [MainThread]: End processing [fbref2pandas] error
+[2023-06-03 11:45:14] WARNING root fetch - processPackages [aioarp]: Skipping, unable to determine old version
+[2023-06-03 11:45:14] INFO root fetch - main [MainThread]: End processing [aioarp] error
+[2023-06-03 11:45:14] INFO root fetch - processPackages [cncd-package]: Downloading https://files.pythonhosted.org/packages/26/73/5d21d43b215cf2eaf74a7aabbd883ec8e762b214178f3eeecac9f4571259/cncd_package-0.3.5.tar.gz
+[2023-06-03 11:45:14] INFO root fetch - processPackages [sftp-uploader]: Downloading https://files.pythonhosted.org/packages/3a/1a/38de1459aef91af4b68c6b92e20325060005bc8b1a6f3f8efa3c7648c4c6/sftp_uploader-1.0.8.tar.gz
+[2023-06-03 11:45:14] INFO root fetch - processPackages [time-interpret]: Downloading https://files.pythonhosted.org/packages/48/ce/63c27f3887c0c90dce8564abc320966729f9a1e2a18fc4e0ae6b5cb426b6/time_interpret-0.2.0.tar.gz
+[2023-06-03 11:45:14] INFO root fetch - processPackages [cncd-package]: executing diffoscope
+[2023-06-03 11:45:14] INFO root fetch - processPackages [cncd-package]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cncd_package-0.3.4.tar.gz tmp/cncd_package-0.3.5.tar.gz --markdown 20230603/c/cncd-package/0.3.4-0.3.5/diff.md --exclude *.pyd
+[2023-06-03 11:45:14] INFO root fetch - processPackages [time-interpret]: executing diffoscope
+[2023-06-03 11:45:14] INFO root fetch - processPackages [time-interpret]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/time_interpret-0.1.0.tar.gz tmp/time_interpret-0.2.0.tar.gz --markdown 20230603/t/time-interpret/0.1.0-0.2.0/diff.md --exclude *.pyd
+[2023-06-03 11:45:14] INFO root fetch - processPackages [argos-nac]: Downloading https://files.pythonhosted.org/packages/f1/c3/c66f98312b8be9ca62f7ebb1301fb575c0c89c62f113000a3018f44a7866/argos-nac-0.1.3.tar.gz
+[2023-06-03 11:45:14] INFO root fetch - processPackages [argos-netbox]: Downloading https://files.pythonhosted.org/packages/cb/1a/409977192619b7286babf9e1f3f129c5f3f8cdffd18f7d38fd7e4575c0d6/argos_netbox-0.1.3.tar.gz
+[2023-06-03 11:45:14] INFO root fetch - processPackages [argos-nac]: executing diffoscope
+[2023-06-03 11:45:14] INFO root fetch - processPackages [argos-nac]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/argos-nac-0.1.2.tar.gz tmp/argos-nac-0.1.3.tar.gz --markdown 20230603/a/argos-nac/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-06-03 11:45:14] INFO root fetch - processPackages [sftp-uploader]: Downloading https://files.pythonhosted.org/packages/ba/8e/c719c3a32c41b301a889bc1c3db5df09ba845017c75101a7a2a40020835d/sftp_uploader-1.0.9.tar.gz
+[2023-06-03 11:45:14] INFO root fetch - processPackages [argos-netbox]: executing diffoscope
+[2023-06-03 11:45:14] INFO root fetch - processPackages [argos-netbox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/argos_netbox-0.1.2.tar.gz tmp/argos_netbox-0.1.3.tar.gz --markdown 20230603/a/argos-netbox/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-06-03 11:45:14] INFO root fetch - processPackages [bmsdna-lakeapi]: Downloading https://files.pythonhosted.org/packages/a9/86/ab78c3d9ca2380dffc53ea51a2d444462cd5a044c4748cb5e08180db6e8b/bmsdna_lakeapi-0.6.4.tar.gz
+[2023-06-03 11:45:14] INFO root fetch - processPackages [sftp-uploader]: executing diffoscope
+[2023-06-03 11:45:14] INFO root fetch - processPackages [sftp-uploader]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sftp_uploader-1.0.8.tar.gz tmp/sftp_uploader-1.0.9.tar.gz --markdown 20230603/s/sftp-uploader/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-06-03 11:45:14] INFO root fetch - processPackages [bmsdna-lakeapi]: executing diffoscope
+[2023-06-03 11:45:14] INFO root fetch - processPackages [bmsdna-lakeapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bmsdna_lakeapi-0.6.0.tar.gz tmp/bmsdna_lakeapi-0.6.4.tar.gz --markdown 20230603/b/bmsdna-lakeapi/0.6.0-0.6.4/diff.md --exclude *.pyd
+[2023-06-03 11:45:15] INFO root fetch - main [MainThread]: End processing [cncd-package]: success
+[2023-06-03 11:45:15] INFO root fetch - main [MainThread]: End processing [sftp-uploader]: success
+[2023-06-03 11:45:16] INFO root fetch - main [MainThread]: End processing [bmsdna-lakeapi]: success
+[2023-06-03 11:45:16] INFO root fetch - main [MainThread]: End processing [argos-netbox]: success
+[2023-06-03 11:45:17] INFO root fetch - main [MainThread]: End processing [time-interpret]: success
+[2023-06-03 11:45:23] INFO root fetch - main [MainThread]: End processing [argos-nac]: success
+[2023-06-03 11:45:23] INFO root fetch - main [MainThread]: Store serial: [18358286]
