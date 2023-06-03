@@ -2154,3 +2154,44 @@
 [2023-06-03 03:32:13] INFO root fetch - main [MainThread]: End processing [innerverz]: success
 [2023-06-03 03:32:18] INFO root fetch - main [MainThread]: End processing [webint]: success
 [2023-06-03 03:32:18] INFO root fetch - main [MainThread]: Store serial: [18355176]
+[2023-06-03 03:37:22] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18355176]
+[2023-06-03 03:37:27] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-06-03 03:37:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: jingan
+[2023-06-03 03:37:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: bioregistry
+[2023-06-03 03:37:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: scotthsieh-projen-statemachine
+[2023-06-03 03:37:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: neuralpit
+[2023-06-03 03:37:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: canopy-platform
+[2023-06-03 03:37:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: nbdev-stdlib
+[2023-06-03 03:37:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: nbdev-numpy
+[2023-06-03 03:37:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: botocore-a-la-carte-sagemaker-a2i-runtime
+[2023-06-03 03:37:27] INFO root fetch - processPackages [neuralpit]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-06-03 03:37:27] WARNING root fetch - processPackages [jingan]: Skipping, unable to determine old version
+[2023-06-03 03:37:27] INFO root fetch - main [MainThread]: End processing [jingan] error
+[2023-06-03 03:37:27] INFO root fetch - processPackages [botocore-a-la-carte-sagemaker-a2i-runtime]: New version: [1.29.99] Old Version: [1.29.98]
+[2023-06-03 03:37:27] INFO root fetch - processPackages [canopy-platform]: New version: [0.0.9] Old Version: [0.0.7]
+[2023-06-03 03:37:27] INFO root fetch - processPackages [scotthsieh-projen-statemachine]: New version: [2.0.99] Old Version: [2.0.98]
+[2023-06-03 03:37:27] INFO root fetch - processPackages [nbdev-numpy]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-06-03 03:37:27] INFO root fetch - processPackages [bioregistry]: New version: [0.9.9] Old Version: [0.9.8]
+[2023-06-03 03:37:27] INFO root fetch - processPackages [nbdev-stdlib]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-06-03 03:37:27] INFO root fetch - processPackages [scotthsieh-projen-statemachine]: executing diffoscope
+[2023-06-03 03:37:27] INFO root fetch - processPackages [scotthsieh-projen-statemachine]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scotthsieh_projen_statemachine-2.0.98.tar.gz tmp/scotthsieh_projen_statemachine-2.0.99.tar.gz --markdown 20230603/s/scotthsieh-projen-statemachine/2.0.98-2.0.99/diff.md --exclude *.pyd
+[2023-06-03 03:37:27] INFO root fetch - processPackages [nbdev-numpy]: executing diffoscope
+[2023-06-03 03:37:27] INFO root fetch - processPackages [nbdev-numpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdev-numpy-0.0.98.tar.gz tmp/nbdev-numpy-0.0.99.tar.gz --markdown 20230603/n/nbdev-numpy/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-06-03 03:37:27] INFO root fetch - processPackages [nbdev-stdlib]: executing diffoscope
+[2023-06-03 03:37:27] INFO root fetch - processPackages [nbdev-stdlib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdev-stdlib-0.0.98.tar.gz tmp/nbdev-stdlib-0.0.99.tar.gz --markdown 20230603/n/nbdev-stdlib/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-06-03 03:37:27] INFO root fetch - processPackages [canopy-platform]: executing diffoscope
+[2023-06-03 03:37:27] INFO root fetch - processPackages [canopy-platform]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/canopy-platform-0.0.7.tar.gz tmp/canopy-platform-0.0.9.tar.gz --markdown 20230603/c/canopy-platform/0.0.7-0.0.9/diff.md --exclude *.pyd
+[2023-06-03 03:37:27] INFO root fetch - processPackages [bioregistry]: executing diffoscope
+[2023-06-03 03:37:27] INFO root fetch - processPackages [bioregistry]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bioregistry-0.9.8.tar.gz tmp/bioregistry-0.9.9.tar.gz --markdown 20230603/b/bioregistry/0.9.8-0.9.9/diff.md --exclude *.pyd
+[2023-06-03 03:37:27] INFO root fetch - processPackages [neuralpit]: executing diffoscope
+[2023-06-03 03:37:27] INFO root fetch - processPackages [neuralpit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/neuralpit-1.0.8.tar.gz tmp/neuralpit-1.0.9.tar.gz --markdown 20230603/n/neuralpit/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-06-03 03:37:28] INFO root fetch - processPackages [botocore-a-la-carte-sagemaker-a2i-runtime]: executing diffoscope
+[2023-06-03 03:37:28] INFO root fetch - processPackages [botocore-a-la-carte-sagemaker-a2i-runtime]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/botocore-a-la-carte-sagemaker-a2i-runtime-1.29.98.tar.gz tmp/botocore-a-la-carte-sagemaker-a2i-runtime-1.29.99.tar.gz --markdown 20230603/b/botocore-a-la-carte-sagemaker-a2i-runtime/1.29.98-1.29.99/diff.md --exclude *.pyd
+[2023-06-03 03:37:29] INFO root fetch - main [MainThread]: End processing [nbdev-stdlib]: success
+[2023-06-03 03:37:29] INFO root fetch - main [MainThread]: End processing [canopy-platform]: success
+[2023-06-03 03:37:29] INFO root fetch - main [MainThread]: End processing [nbdev-numpy]: success
+[2023-06-03 03:37:29] INFO root fetch - main [MainThread]: End processing [botocore-a-la-carte-sagemaker-a2i-runtime]: success
+[2023-06-03 03:37:29] INFO root fetch - main [MainThread]: End processing [neuralpit]: success
+[2023-06-03 03:37:29] INFO root fetch - main [MainThread]: End processing [scotthsieh-projen-statemachine]: success
+[2023-06-03 03:39:26] INFO root fetch - main [MainThread]: End processing [bioregistry]: success
+[2023-06-03 03:39:26] INFO root fetch - main [MainThread]: Store serial: [18355200]
