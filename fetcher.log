@@ -6723,3 +6723,43 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-06-03 10:30:28] INFO root fetch - main [MainThread]: End processing [mamimo]: success
 [2023-06-03 10:30:29] INFO root fetch - main [MainThread]: End processing [tinymovr]: success
 [2023-06-03 10:30:29] INFO root fetch - main [MainThread]: Store serial: [18357949]
+[2023-06-03 10:35:33] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18357949]
+[2023-06-03 10:35:38] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-06-03 10:35:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: lovely-grad
+[2023-06-03 10:35:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: findu
+[2023-06-03 10:35:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: anticaptchaofficial
+[2023-06-03 10:35:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: similari-trackers-rs
+[2023-06-03 10:35:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: gui-args-framework
+[2023-06-03 10:35:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: geobatchpy
+[2023-06-03 10:35:38] INFO root fetch - processPackages [findu]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-06-03 10:35:38] INFO root fetch - processPackages [anticaptchaofficial]: New version: [1.0.52] Old Version: [1.0.51]
+[2023-06-03 10:35:38] WARNING root fetch - processPackages [gui-args-framework]: Skipping, unable to determine old version
+[2023-06-03 10:35:38] INFO root fetch - main [MainThread]: End processing [gui-args-framework] error
+[2023-06-03 10:35:38] INFO root fetch - processPackages [similari-trackers-rs]: New version: [0.26.4] Old Version: [0.26.2]
+[2023-06-03 10:35:38] INFO root fetch - processPackages [lovely-grad]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-06-03 10:35:38] INFO root fetch - processPackages [geobatchpy]: New version: [0.2.3] Old Version: [0.2.2]
+[2023-06-03 10:35:38] INFO root fetch - processPackages [findu]: Downloading https://files.pythonhosted.org/packages/12/e2/6db9642256e75929a11a7b049877ec4877e06307c49ff5caeeecc9d5a069/findu-0.0.1.tar.gz
+[2023-06-03 10:35:38] INFO root fetch - processPackages [similari-trackers-rs]: Downloading https://files.pythonhosted.org/packages/0f/ba/e81c03f5e5ca2252c65a589c567039b75e9b7297510f65000a97ccfba123/similari_trackers_rs-0.26.2.tar.gz
+[2023-06-03 10:35:38] INFO root fetch - processPackages [lovely-grad]: Downloading https://files.pythonhosted.org/packages/b8/a1/bfe97fca2113fe8f239308cae290dca669fd418be41edb674e573bce4766/lovely-grad-0.0.1.tar.gz
+[2023-06-03 10:35:38] INFO root fetch - processPackages [geobatchpy]: Downloading https://files.pythonhosted.org/packages/e7/30/537224df6cfa818d177f6e07840866a5421ef1e89b6d3db7fd7f96fbcb95/geobatchpy-0.2.2.tar.gz
+[2023-06-03 10:35:39] INFO root fetch - processPackages [findu]: Downloading https://files.pythonhosted.org/packages/b8/db/28352b73dc81184b6b5cc1386f871000db8dd447a7b18f7cfe9fd54393aa/findu-0.0.2.tar.gz
+[2023-06-03 10:35:39] INFO root fetch - processPackages [anticaptchaofficial]: Downloading https://files.pythonhosted.org/packages/52/ba/5b86beb0e520e63e8832e737cbf1463f3bf9ccedb43035a9d98afdc81b1c/anticaptchaofficial-1.0.52-py3-none-any.whl
+[2023-06-03 10:35:39] INFO root fetch - processPackages [lovely-grad]: Downloading https://files.pythonhosted.org/packages/22/5a/e0fc7679f4ccf203af4d9e439abfcc99d142d3dacded58ec58c747bcdf7f/lovely-grad-0.0.2.tar.gz
+[2023-06-03 10:35:39] INFO root fetch - processPackages [geobatchpy]: Downloading https://files.pythonhosted.org/packages/ed/ee/0d857650cb0a7a74776aef66fefb94d845d82f4d0b4bcdfb1290bf18b0f2/geobatchpy-0.2.3.tar.gz
+[2023-06-03 10:35:39] INFO root fetch - processPackages [findu]: executing diffoscope
+[2023-06-03 10:35:39] INFO root fetch - processPackages [findu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/findu-0.0.1.tar.gz tmp/findu-0.0.2.tar.gz --markdown 20230603/f/findu/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-06-03 10:35:39] INFO root fetch - processPackages [similari-trackers-rs]: Downloading https://files.pythonhosted.org/packages/c6/3d/f0cb4dc4ff1c403e5df388f01d9c79f3883c413dd8a457a1915c39712d68/similari_trackers_rs-0.26.4.tar.gz
+[2023-06-03 10:35:39] INFO root fetch - processPackages [anticaptchaofficial]: executing diffoscope
+[2023-06-03 10:35:39] INFO root fetch - processPackages [anticaptchaofficial]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/anticaptchaofficial-1.0.51-py3-none-any.whl.zip tmp/anticaptchaofficial-1.0.52-py3-none-any.whl.zip --markdown 20230603/a/anticaptchaofficial/1.0.51-1.0.52/diff.md --exclude *.pyd
+[2023-06-03 10:35:39] INFO root fetch - processPackages [geobatchpy]: executing diffoscope
+[2023-06-03 10:35:39] INFO root fetch - processPackages [geobatchpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/geobatchpy-0.2.2.tar.gz tmp/geobatchpy-0.2.3.tar.gz --markdown 20230603/g/geobatchpy/0.2.2-0.2.3/diff.md --exclude *.pyd
+[2023-06-03 10:35:39] INFO root fetch - processPackages [lovely-grad]: executing diffoscope
+[2023-06-03 10:35:39] INFO root fetch - processPackages [lovely-grad]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lovely-grad-0.0.1.tar.gz tmp/lovely-grad-0.0.2.tar.gz --markdown 20230603/l/lovely-grad/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-06-03 10:35:39] INFO root fetch - processPackages [similari-trackers-rs]: executing diffoscope
+[2023-06-03 10:35:39] INFO root fetch - processPackages [similari-trackers-rs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/similari_trackers_rs-0.26.2.tar.gz tmp/similari_trackers_rs-0.26.4.tar.gz --markdown 20230603/s/similari-trackers-rs/0.26.2-0.26.4/diff.md --exclude *.pyd
+[2023-06-03 10:35:40] INFO root fetch - main [MainThread]: End processing [findu]: success
+[2023-06-03 10:35:40] INFO root fetch - main [MainThread]: End processing [anticaptchaofficial]: success
+[2023-06-03 10:35:40] INFO root fetch - main [MainThread]: End processing [lovely-grad]: success
+[2023-06-03 10:35:40] INFO root fetch - main [MainThread]: End processing [geobatchpy]: success
+[2023-06-03 10:35:41] INFO root fetch - main [MainThread]: End processing [similari-trackers-rs]: success
+[2023-06-03 10:35:41] INFO root fetch - main [MainThread]: Store serial: [18357982]
