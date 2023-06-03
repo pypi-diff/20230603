@@ -7383,3 +7383,25 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-06-03 11:50:38] INFO root fetch - main [MainThread]: End processing [p0-script]: success
 [2023-06-03 11:50:39] INFO root fetch - main [MainThread]: End processing [dlplan]: success
 [2023-06-03 11:50:39] INFO root fetch - main [MainThread]: Store serial: [18358313]
+[2023-06-03 11:55:43] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18358313]
+[2023-06-03 11:55:48] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-06-03 11:55:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: upsilonconf
+[2023-06-03 11:55:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: llm-client
+[2023-06-03 11:55:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: horizonai
+[2023-06-03 11:55:48] INFO root fetch - processPackages [llm-client]: New version: [0.3.0] Old Version: [0.2.0]
+[2023-06-03 11:55:48] INFO root fetch - processPackages [upsilonconf]: New version: [0.7.0] Old Version: [0.6.0]
+[2023-06-03 11:55:48] INFO root fetch - processPackages [horizonai]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-06-03 11:55:48] INFO root fetch - processPackages [llm-client]: Downloading https://files.pythonhosted.org/packages/1c/ba/0f52ef8c1413d40eb1343eb2effee7091531764831477fa614cde708aa81/llm_client-0.2.0.tar.gz
+[2023-06-03 11:55:48] INFO root fetch - processPackages [upsilonconf]: Downloading https://files.pythonhosted.org/packages/ab/2b/71a2848e58a4e3ca6718acd2697426bbfab74a13b552e57a061567529769/upsilonconf-0.6.0.tar.gz
+[2023-06-03 11:55:49] INFO root fetch - processPackages [horizonai]: executing diffoscope
+[2023-06-03 11:55:49] INFO root fetch - processPackages [horizonai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/horizonai-0.1.8.tar.gz tmp/horizonai-0.1.9.tar.gz --markdown 20230603/h/horizonai/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-06-03 11:55:49] INFO root fetch - processPackages [upsilonconf]: Downloading https://files.pythonhosted.org/packages/95/51/267eb42f728913316708e24db733391d5057cb790fd00e73222fc636a8f3/upsilonconf-0.7.0.tar.gz
+[2023-06-03 11:55:49] INFO root fetch - processPackages [llm-client]: Downloading https://files.pythonhosted.org/packages/73/6e/9f0dee06a2656b442bc70e2f26c30b9ca2284f5b29fb73206a5406140486/llm_client-0.3.0.tar.gz
+[2023-06-03 11:55:49] INFO root fetch - processPackages [upsilonconf]: executing diffoscope
+[2023-06-03 11:55:49] INFO root fetch - processPackages [upsilonconf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/upsilonconf-0.6.0.tar.gz tmp/upsilonconf-0.7.0.tar.gz --markdown 20230603/u/upsilonconf/0.6.0-0.7.0/diff.md --exclude *.pyd
+[2023-06-03 11:55:49] INFO root fetch - processPackages [llm-client]: executing diffoscope
+[2023-06-03 11:55:49] INFO root fetch - processPackages [llm-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/llm_client-0.2.0.tar.gz tmp/llm_client-0.3.0.tar.gz --markdown 20230603/l/llm-client/0.2.0-0.3.0/diff.md --exclude *.pyd
+[2023-06-03 11:55:50] INFO root fetch - main [MainThread]: End processing [horizonai]: success
+[2023-06-03 11:55:51] INFO root fetch - main [MainThread]: End processing [llm-client]: success
+[2023-06-03 11:56:43] INFO root fetch - main [MainThread]: End processing [upsilonconf]: success
+[2023-06-03 11:56:43] INFO root fetch - main [MainThread]: Store serial: [18358322]
