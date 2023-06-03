@@ -6002,3 +6002,61 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-06-03 08:57:20] INFO root fetch - main [MainThread]: End processing [DedupliPy]: success
 [2023-06-03 08:58:10] INFO root fetch - main [MainThread]: End processing [shaggy]: success
 [2023-06-03 08:58:10] INFO root fetch - main [MainThread]: Store serial: [18357524]
+[2023-06-03 09:03:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18357524]
+[2023-06-03 09:03:19] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2023-06-03 09:03:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: vector-vault
+[2023-06-03 09:03:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mad-gui
+[2023-06-03 09:03:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: dcs-code-injector
+[2023-06-03 09:03:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ersciyt
+[2023-06-03 09:03:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: compel
+[2023-06-03 09:03:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: sound-source-id
+[2023-06-03 09:03:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: koschei-messages
+[2023-06-03 09:03:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: MarsGT
+[2023-06-03 09:03:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: Pycspace
+[2023-06-03 09:03:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: langdash
+[2023-06-03 09:03:19] INFO root fetch - processPackages [dcs-code-injector]: New version: [1.0.4] Old Version: [1.0.2]
+[2023-06-03 09:03:19] INFO root fetch - processPackages [vector-vault]: New version: [1.7.6] Old Version: [1.7.5]
+[2023-06-03 09:03:19] INFO root fetch - processPackages [mad-gui]: New version: [1.0.2] Old Version: [1.0.1a1]
+[2023-06-03 09:03:19] WARNING root fetch - processPackages [MarsGT]: Skipping, unable to determine old version
+[2023-06-03 09:03:19] WARNING root fetch - processPackages [Pycspace]: Skipping, unable to determine old version
+[2023-06-03 09:03:19] INFO root fetch - processPackages [MarsGT]: Start processing: seqio-nightly
+[2023-06-03 09:03:19] INFO root fetch - main [MainThread]: End processing [MarsGT] error
+[2023-06-03 09:03:19] INFO root fetch - main [MainThread]: End processing [Pycspace] error
+[2023-06-03 09:03:19] INFO root fetch - processPackages [langdash]: New version: [0.0.5.dev2] Old Version: [0.0.5.dev1]
+[2023-06-03 09:03:19] INFO root fetch - processPackages [ersciyt]: New version: [1.99] Old Version: [1.98]
+[2023-06-03 09:03:19] WARNING root fetch - processPackages [koschei-messages]: Skipping, unable to determine old version
+[2023-06-03 09:03:19] WARNING root fetch - processPackages [sound-source-id]: Skipping, unable to determine old version
+[2023-06-03 09:03:19] INFO root fetch - processPackages [compel]: New version: [1.1.6] Old Version: [1.1.5]
+[2023-06-03 09:03:19] INFO root fetch - main [MainThread]: End processing [koschei-messages] error
+[2023-06-03 09:03:19] INFO root fetch - main [MainThread]: End processing [sound-source-id] error
+[2023-06-03 09:03:19] INFO root fetch - processPackages [seqio-nightly]: New version: [0.0.8.dev20220907] Old Version: [0.0.8.dev20220906]
+[2023-06-03 09:03:19] INFO root fetch - processPackages [seqio-nightly]: executing diffoscope
+[2023-06-03 09:03:19] INFO root fetch - processPackages [seqio-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/seqio-nightly-0.0.8.dev20220906.tar.gz tmp/seqio-nightly-0.0.8.dev20220907.tar.gz --markdown 20230603/s/seqio-nightly/0.0.8.dev20220906-0.0.8.dev20220907/diff.md --exclude *.pyd
+[2023-06-03 09:03:19] INFO root fetch - processPackages [mad-gui]: Downloading https://files.pythonhosted.org/packages/54/e5/28dd4c9e49eaf214833e980720c852296d62da458da61300b5b6f9219470/mad_gui-1.0.1a1.tar.gz
+[2023-06-03 09:03:19] INFO root fetch - processPackages [compel]: Downloading https://files.pythonhosted.org/packages/64/82/d5363fcbeb01cc22e38defff95dbc14f2aea4a3b3fa4806a8a3c6d4a6bd1/compel-1.1.5.tar.gz
+[2023-06-03 09:03:19] INFO root fetch - processPackages [ersciyt]: Downloading https://files.pythonhosted.org/packages/1b/ca/9bd10b8e60bc6ae443937ee2b98b7487ae7d3a3343522212e40b9d1af6d4/ersciyt-1.99.tar.gz
+[2023-06-03 09:03:19] INFO root fetch - processPackages [dcs-code-injector]: Downloading https://files.pythonhosted.org/packages/dc/a5/274167070d0bc33ed61adff1b80ad8aaf771b06a3f6c602067b7764a286b/dcs-code-injector-1.0.4.tar.gz
+[2023-06-03 09:03:19] INFO root fetch - processPackages [vector-vault]: Downloading https://files.pythonhosted.org/packages/6b/a9/95ea9d6965efc4cffd947a82b0807423aab642eda12947310ad7312e01c0/vector_vault-1.7.6.tar.gz
+[2023-06-03 09:03:19] INFO root fetch - processPackages [ersciyt]: executing diffoscope
+[2023-06-03 09:03:19] INFO root fetch - processPackages [ersciyt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ersciyt-1.98.tar.gz tmp/ersciyt-1.99.tar.gz --markdown 20230603/e/ersciyt/1.98-1.99/diff.md --exclude *.pyd
+[2023-06-03 09:03:19] INFO root fetch - processPackages [langdash]: Downloading https://files.pythonhosted.org/packages/25/5c/53c682158dbc3f7f36d28b80d8e89ce17ddf05fef5a7efc2601468051b9f/langdash-0.0.5.dev2.tar.gz
+[2023-06-03 09:03:19] INFO root fetch - processPackages [vector-vault]: executing diffoscope
+[2023-06-03 09:03:19] INFO root fetch - processPackages [vector-vault]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vector_vault-1.7.5.tar.gz tmp/vector_vault-1.7.6.tar.gz --markdown 20230603/v/vector-vault/1.7.5-1.7.6/diff.md --exclude *.pyd
+[2023-06-03 09:03:19] INFO root fetch - processPackages [dcs-code-injector]: executing diffoscope
+[2023-06-03 09:03:19] INFO root fetch - processPackages [dcs-code-injector]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dcs-code-injector-1.0.2.tar.gz tmp/dcs-code-injector-1.0.4.tar.gz --markdown 20230603/d/dcs-code-injector/1.0.2-1.0.4/diff.md --exclude *.pyd
+[2023-06-03 09:03:19] INFO root fetch - processPackages [langdash]: executing diffoscope
+[2023-06-03 09:03:19] INFO root fetch - processPackages [langdash]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/langdash-0.0.5.dev1.tar.gz tmp/langdash-0.0.5.dev2.tar.gz --markdown 20230603/l/langdash/0.0.5.dev1-0.0.5.dev2/diff.md --exclude *.pyd
+[2023-06-03 09:03:19] INFO root fetch - processPackages [compel]: Downloading https://files.pythonhosted.org/packages/98/4f/ad787baeca3e240708de7caab69bc79af5495aa4d22c4d8da642243c9281/compel-1.1.6.tar.gz
+[2023-06-03 09:03:19] INFO root fetch - processPackages [mad-gui]: Downloading https://files.pythonhosted.org/packages/da/8b/8d4d087b1caeda51913e3e7ee562333d204fb35265dc14158cbe027c3130/mad_gui-1.0.2.tar.gz
+[2023-06-03 09:03:19] INFO root fetch - processPackages [compel]: executing diffoscope
+[2023-06-03 09:03:19] INFO root fetch - processPackages [compel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/compel-1.1.5.tar.gz tmp/compel-1.1.6.tar.gz --markdown 20230603/c/compel/1.1.5-1.1.6/diff.md --exclude *.pyd
+[2023-06-03 09:03:19] INFO root fetch - processPackages [mad-gui]: executing diffoscope
+[2023-06-03 09:03:19] INFO root fetch - processPackages [mad-gui]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mad_gui-1.0.1a1.tar.gz tmp/mad_gui-1.0.2.tar.gz --markdown 20230603/m/mad-gui/1.0.1a1-1.0.2/diff.md --exclude *.pyd
+[2023-06-03 09:03:20] INFO root fetch - main [MainThread]: End processing [ersciyt]: success
+[2023-06-03 09:03:20] INFO root fetch - main [MainThread]: End processing [vector-vault]: success
+[2023-06-03 09:03:21] INFO root fetch - main [MainThread]: End processing [seqio-nightly]: success
+[2023-06-03 09:03:21] INFO root fetch - main [MainThread]: End processing [compel]: success
+[2023-06-03 09:03:21] INFO root fetch - main [MainThread]: End processing [langdash]: success
+[2023-06-03 09:03:21] INFO root fetch - main [MainThread]: End processing [dcs-code-injector]: success
+[2023-06-03 09:03:23] INFO root fetch - main [MainThread]: End processing [mad-gui]: success
+[2023-06-03 09:03:23] INFO root fetch - main [MainThread]: Store serial: [18357568]
