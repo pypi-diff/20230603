@@ -10504,3 +10504,71 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-06-03 18:32:14] INFO root fetch - main [MainThread]: End processing [whisper-autosrt]: success
 [2023-06-03 18:32:17] INFO root fetch - main [MainThread]: End processing [PySide2-Fluent-Widgets]: success
 [2023-06-03 18:32:17] INFO root fetch - main [MainThread]: Store serial: [18360479]
+[2023-06-03 18:37:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18360479]
+[2023-06-03 18:37:28] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2023-06-03 18:37:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: crawler-commons
+[2023-06-03 18:37:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: aklite
+[2023-06-03 18:37:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: PySide2-Fluent-Widgets
+[2023-06-03 18:37:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: probayes
+[2023-06-03 18:37:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: firegs
+[2023-06-03 18:37:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: crdb
+[2023-06-03 18:37:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: ormdantic
+[2023-06-03 18:37:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: PoePT
+[2023-06-03 18:37:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: custom-numbers
+[2023-06-03 18:37:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: mindmate
+[2023-06-03 18:37:28] INFO root fetch - processPackages [probayes]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-06-03 18:37:28] INFO root fetch - processPackages [PySide2-Fluent-Widgets]: New version: [0.9.3.1] Old Version: [0.9.3]
+[2023-06-03 18:37:28] INFO root fetch - processPackages [crawler-commons]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-06-03 18:37:28] INFO root fetch - processPackages [ormdantic]: New version: [1.6.0] Old Version: [1.5.1]
+[2023-06-03 18:37:28] WARNING root fetch - processPackages [aklite]: Skipping, unable to determine old version
+[2023-06-03 18:37:28] INFO root fetch - processPackages [custom-numbers]: New version: [1.1.0] Old Version: [1.0.0]
+[2023-06-03 18:37:28] INFO root fetch - processPackages [aklite]: Start processing: pyverse
+[2023-06-03 18:37:28] INFO root fetch - main [MainThread]: End processing [aklite] error
+[2023-06-03 18:37:28] INFO root fetch - processPackages [firegs]: New version: [0.4] Old Version: [0.3]
+[2023-06-03 18:37:28] INFO root fetch - processPackages [crdb]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-06-03 18:37:28] INFO root fetch - processPackages [PoePT]: New version: [0.2.0] Old Version: [0.1.3]
+[2023-06-03 18:37:28] INFO root fetch - processPackages [mindmate]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-06-03 18:37:28] INFO root fetch - processPackages [crawler-commons]: executing diffoscope
+[2023-06-03 18:37:28] INFO root fetch - processPackages [crawler-commons]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/crawler_commons-0.0.8.tar.gz tmp/crawler_commons-0.0.9.tar.gz --markdown 20230603/c/crawler-commons/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-06-03 18:37:28] INFO root fetch - processPackages [pyverse]: New version: [1.1.0] Old Version: [1.0.0]
+[2023-06-03 18:37:28] INFO root fetch - processPackages [crdb]: executing diffoscope
+[2023-06-03 18:37:28] INFO root fetch - processPackages [crdb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/crdb-0.8.0.tar.gz tmp/crdb-0.9.0.tar.gz --markdown 20230603/c/crdb/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2023-06-03 18:37:28] INFO root fetch - processPackages [probayes]: Downloading https://files.pythonhosted.org/packages/d7/e5/71f57131b951efd58f71a6cf5a0c144ad43af0ee8c75bc2b5ee6f32655a6/probayes-0.0.3.tar.gz
+[2023-06-03 18:37:28] INFO root fetch - processPackages [custom-numbers]: Downloading https://files.pythonhosted.org/packages/81/95/1638e65739dd16cf5767b5fffa6433e2e3f9a8b6a88baa5f09d6daa35458/custom_numbers-1.0.0.tar.gz
+[2023-06-03 18:37:28] INFO root fetch - processPackages [mindmate]: Downloading https://files.pythonhosted.org/packages/6e/59/db7fc0aa499f806f104a61eaaeb47cf81edd67356afd89f59320dbdfed62/mindmate-0.0.5.tar.gz
+[2023-06-03 18:37:28] INFO root fetch - processPackages [PySide2-Fluent-Widgets]: Downloading https://files.pythonhosted.org/packages/07/d4/b29449eab239ae0916163287336086aa4e4f6b3bc708101a1ed2cb14b651/PySide2-Fluent-Widgets-0.9.3.1.tar.gz
+[2023-06-03 18:37:28] INFO root fetch - processPackages [ormdantic]: Downloading https://files.pythonhosted.org/packages/dd/9b/2720a000afa2f5715b0abe441564542be4160759c4a4c640b3fc1fe50ea3/ormdantic-1.5.1.tar.gz
+[2023-06-03 18:37:28] INFO root fetch - processPackages [firegs]: Downloading https://files.pythonhosted.org/packages/17/c4/9f448b467b35090a98faa6e041743cd593ffe7ac2c09aa16c3c97db364f5/firegs-0.4.tar.gz
+[2023-06-03 18:37:28] INFO root fetch - processPackages [pyverse]: Downloading https://files.pythonhosted.org/packages/2a/38/c909eb470f9d658e4943ca552a4883c992aa650b4c9499a04fefbebace1f/pyverse-1.0.0.tar.gz
+[2023-06-03 18:37:28] INFO root fetch - processPackages [firegs]: executing diffoscope
+[2023-06-03 18:37:28] INFO root fetch - processPackages [firegs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/firegs-0.3.tar.gz tmp/firegs-0.4.tar.gz --markdown 20230603/f/firegs/0.3-0.4/diff.md --exclude *.pyd
+[2023-06-03 18:37:28] INFO root fetch - processPackages [PoePT]: Downloading https://files.pythonhosted.org/packages/dc/17/767082b471d1555ab20198e6a1cdbed3906277909a9e1f5c872533062f82/PoePT-0.2.0.tar.gz
+[2023-06-03 18:37:28] INFO root fetch - processPackages [mindmate]: executing diffoscope
+[2023-06-03 18:37:28] INFO root fetch - processPackages [mindmate]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mindmate-0.0.4.tar.gz tmp/mindmate-0.0.5.tar.gz --markdown 20230603/m/mindmate/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-06-03 18:37:28] INFO root fetch - processPackages [custom-numbers]: Downloading https://files.pythonhosted.org/packages/08/73/58008ca5e31e77ebe66f208e38fde098b51e44b18214e13546428a09835a/custom_numbers-1.1.0.tar.gz
+[2023-06-03 18:37:28] INFO root fetch - processPackages [probayes]: Downloading https://files.pythonhosted.org/packages/a8/5e/6d7554a8e6aa7af8f0b4f529669bfbe8ad17032bbd9c71f7be16535e9327/probayes-0.0.4.tar.gz
+[2023-06-03 18:37:28] INFO root fetch - processPackages [PoePT]: executing diffoscope
+[2023-06-03 18:37:28] INFO root fetch - processPackages [PoePT]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PoePT-0.1.3.tar.gz tmp/PoePT-0.2.0.tar.gz --markdown 20230603/P/PoePT/0.1.3-0.2.0/diff.md --exclude *.pyd
+[2023-06-03 18:37:28] INFO root fetch - processPackages [probayes]: executing diffoscope
+[2023-06-03 18:37:28] INFO root fetch - processPackages [probayes]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/probayes-0.0.3.tar.gz tmp/probayes-0.0.4.tar.gz --markdown 20230603/p/probayes/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-06-03 18:37:28] INFO root fetch - processPackages [ormdantic]: Downloading https://files.pythonhosted.org/packages/3d/24/cf3197c58b561d55fa9cf0fcfe81de52bfba8ec4d5cd91025ef32a4f3db3/ormdantic-1.6.0.tar.gz
+[2023-06-03 18:37:28] INFO root fetch - processPackages [custom-numbers]: executing diffoscope
+[2023-06-03 18:37:28] INFO root fetch - processPackages [custom-numbers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/custom_numbers-1.0.0.tar.gz tmp/custom_numbers-1.1.0.tar.gz --markdown 20230603/c/custom-numbers/1.0.0-1.1.0/diff.md --exclude *.pyd
+[2023-06-03 18:37:28] INFO root fetch - processPackages [ormdantic]: executing diffoscope
+[2023-06-03 18:37:28] INFO root fetch - processPackages [ormdantic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ormdantic-1.5.1.tar.gz tmp/ormdantic-1.6.0.tar.gz --markdown 20230603/o/ormdantic/1.5.1-1.6.0/diff.md --exclude *.pyd
+[2023-06-03 18:37:28] INFO root fetch - processPackages [pyverse]: Downloading https://files.pythonhosted.org/packages/ee/e1/445e518528b001143a52d5b15598e93e77129859e743cf62ddd9d39fe9a7/pyverse-1.1.0.tar.gz
+[2023-06-03 18:37:28] INFO root fetch - processPackages [pyverse]: executing diffoscope
+[2023-06-03 18:37:28] INFO root fetch - processPackages [pyverse]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyverse-1.0.0.tar.gz tmp/pyverse-1.1.0.tar.gz --markdown 20230603/p/pyverse/1.0.0-1.1.0/diff.md --exclude *.pyd
+[2023-06-03 18:37:29] INFO root fetch - processPackages [PySide2-Fluent-Widgets]: executing diffoscope
+[2023-06-03 18:37:29] INFO root fetch - processPackages [PySide2-Fluent-Widgets]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230603:/home/abi/fetcher/20230603:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PySide2-Fluent-Widgets-0.9.3.tar.gz tmp/PySide2-Fluent-Widgets-0.9.3.1.tar.gz --markdown 20230603/P/PySide2-Fluent-Widgets/0.9.3-0.9.3.1/diff.md --exclude *.pyd
+[2023-06-03 18:37:29] INFO root fetch - main [MainThread]: End processing [crawler-commons]: success
+[2023-06-03 18:37:29] INFO root fetch - main [MainThread]: End processing [firegs]: success
+[2023-06-03 18:37:29] INFO root fetch - main [MainThread]: End processing [mindmate]: success
+[2023-06-03 18:37:30] INFO root fetch - main [MainThread]: End processing [crdb]: success
+[2023-06-03 18:37:30] INFO root fetch - main [MainThread]: End processing [PoePT]: success
+[2023-06-03 18:37:30] INFO root fetch - main [MainThread]: End processing [pyverse]: success
+[2023-06-03 18:37:30] INFO root fetch - main [MainThread]: End processing [probayes]: success
+[2023-06-03 18:37:30] INFO root fetch - main [MainThread]: End processing [custom-numbers]: success
+[2023-06-03 18:37:30] INFO root fetch - main [MainThread]: End processing [ormdantic]: success
+[2023-06-03 18:37:30] INFO root fetch - main [MainThread]: End processing [PySide2-Fluent-Widgets]: success
+[2023-06-03 18:37:30] INFO root fetch - main [MainThread]: Store serial: [18360513]
